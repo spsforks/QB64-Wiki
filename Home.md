@@ -1,14 +1,12 @@
 QB64 is a modern extended BASIC programming language that retains QBasic / Quick BASIC 4.5 compatibility and compiles native binaries for Windows, Linux, and macOS.
 
-![IDE_macos.png](IDE_macos.png)
-
 ## Getting started
 
 * Grab the latest version of QB64 Phoenix Edition from our active [GitHub repo](https://github.com/QB64Official/qb64/releases/latest).
 
 ### FAQ
 
-* [QB64 FAQ](QB64_FAQ)
+* [QB64 FAQ](QB64-FAQ)
 
 ### Get in touch
 
@@ -17,11 +15,11 @@ QB64 is a modern extended BASIC programming language that retains QBasic / Quick
 ## Keywords
 
 * [Keyword Reference - Alphabetical](Keyword-Reference---Alphabetical)
-* [Keyword Reference - By Usage](Keyword_Reference_-_By_Usage)
+* [Keyword Reference - By Usage](Keyword-Reference---By-Usage)
 
 ### Known issues
 
-* [Keywords currently not supported by QB64](Keywords_currently_not_supported_by_QB64)
+* [Keywords currently not supported by QB64](Keywords-currently-not-supported-by-QB64)
 
 ## Articles and Tutorials
 
