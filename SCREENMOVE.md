@@ -26,7 +26,7 @@ The [_SCREENMOVE](_SCREENMOVE) statement positions the program window on the des
 
 *Example 1:* Calculating the border and header offsets by comparing a coordinate move with _MIDDLE by using trial and error.
 
-'''vb
+```vb
 
 userwidth& = _DESKTOPWIDTH: userheight& = _DESKTOPHEIGHT 'get current screen resolution
 SCREEN _NEWIMAGE(800, 600, 256)
@@ -38,13 +38,13 @@ _SCREENMOVE _MIDDLE  'check centering
 
 END 
 
-'''
+```
 >  When positioning the window, offset the position by -3 columns and - 29 rows to calculate the top left corner coordinate.
 
 
 *Example 2:* Moving a program window to a second monitor positioned to the right of the main desktop.
 
-'''vb
+```vb
 
 wide& = _DESKTOPWIDTH
 high& = _DESKTOPHEIGHT
@@ -61,7 +61,7 @@ PRINT wide2&; "X"; high2&
 _DELAY 4
 _SCREENMOVE _MIDDLE 'moves program back to main monitor 1 
 
-'''
+```
 >  *Notes:* Change the [_SCREENMOVE](_SCREENMOVE) column to negative for a left monitor.
 
 <center>**[_FULLSCREEN](_FULLSCREEN) works in the primary monitor and may push all running programs to a monitor on the right.**</center>

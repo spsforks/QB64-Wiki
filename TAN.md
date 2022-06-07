@@ -19,7 +19,7 @@ The [TAN](TAN) function returns the ratio of [SIN](SIN)e to [COS](COS)ine or tan
 
 *Example:* Spiraling text using the [SIN](SIN) and [TAN](TAN) functions.
 
-'''vb
+```vb
 
 DIM SHARED text AS STRING
 text$ = "S P I R A L"
@@ -80,7 +80,7 @@ DO
 LOOP UNTIL INKEY$ = CHR$(27)
 END SUB 
 
-'''
+```
 <sub>Code by Unseen Machine</sub>
 
 

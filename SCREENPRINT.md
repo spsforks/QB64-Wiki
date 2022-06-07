@@ -16,7 +16,7 @@ The [_SCREENPRINT](_SCREENPRINT) statement simulates typing text into a Windows 
 ***Note: If the focus is not set correctly, the text may be printed to the QB64 IDE, if open, or not printed at all.**
 * Ctrl + letter key shortcuts can be simulated using the appropriate [ASCII](ASCII) Control character codes 1 to 26 shown below:
 
-'''text
+```text
 
  CTRL + A = CHR$(1)   ☺  StartHeader (SOH)    CTRL + B = CHR$(2)   ☻  StartText         (STX)
  CTRL + C = CHR$(3)   ♥  EndText     (ETX)    CTRL + D = CHR$(4)   ♦  EndOfTransmit     (EOT)
@@ -32,7 +32,7 @@ The [_SCREENPRINT](_SCREENPRINT) statement simulates typing text into a Windows 
  CTRL + W = CHR$(23)  ↨  EndTXBlock  (ETB)    CTRL + X = CHR$(24)  ↑  Cancel            (CAN)
  CTRL + Y = CHR$(25)  ↓  EndMedium   (EM)     CTRL + Z = CHR$(26)  →  End Of File(SUB)  (EOF)                           
 
-'''
+```
 
 
 
@@ -40,7 +40,7 @@ The [_SCREENPRINT](_SCREENPRINT) statement simulates typing text into a Windows 
 
 *Example:* Printing text into a Windows text editor (Notepad) and copying to the clipboard. May not work on all systems.
 
-'''vb
+```vb
 
 DEFLNG A-Z
 SCREEN _NEWIMAGE(640, 480, 32)
@@ -83,7 +83,7 @@ SLEEP 2
 _SCREENPRINT CHR$(22) 'CTRL + V paste from clipboard
 END 
 
-'''
+```
 <sub>Code by Galleon</sub>
 > *Explanation:* If the Windows shortcuts are set up properly, printing ASCII Control characters acts like the user selected the control + letter combinations to *Select all* (CHR$(1)), *Copy* (CHR$(3)) and *Paste* (CHR$(22)) the text with the Windows Clipboard. If the editor program's CTRL key combinations are different, use the matching letter [ASCII](ASCII) code from A = 1 to Z = 26 in the text editor.
 

@@ -27,16 +27,16 @@ The [_ALLOWFULLSCREEN](_ALLOWFULLSCREEN) statement allows setting the behavior o
 
 *Example 1:* Allowing only one fullscreen mode with square pixels and no antialiasing:
 
-'''vb
+```vb
 
 _ALLOWFULLSCREEN _SQUAREPIXELS, OFF
 
-'''
+```
 
 
 *Example 2:* Disabling _FULLSCREEN with Alt+ENTER so the combo can be manually trapped:
 
-'''vb
+```vb
 
 DO
     CLS
@@ -77,7 +77,7 @@ DO
     _LIMIT 30
 LOOP
 
-'''
+```
 
 ## See Also
 

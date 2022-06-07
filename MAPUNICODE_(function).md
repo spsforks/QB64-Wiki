@@ -19,7 +19,7 @@ The [_MAPUNICODE](_MAPUNICODE) function returns the [Unicode](Unicode) (UTF-32) 
 
 *Example:* Store function return values in an array for ASCII codes 0 to 255 to restore them later.
 
-'''vb
+```vb
 
 DIM Unicode&(255)
 SCREEN 0
@@ -32,7 +32,7 @@ NEXT
  'rest of program 
 END
 
-'''
+```
 
 
 ## See Also

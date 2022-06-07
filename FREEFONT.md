@@ -25,7 +25,7 @@ The [_FREEFONT](_FREEFONT) statement frees a font handle that was created by [_L
 
 *Example 1:* Previews and creates a file list of valid MONOSPACE TTF fonts by checking the [_LOADFONT](_LOADFONT) handle values.
 
-'''vb
+```vb
 
 SCREEN 12
 path$ = "C:\WINDOWS\Fonts\"                  'path to the font folder
@@ -56,21 +56,21 @@ CLOSE
 PRINT: PRINT: PRINT "Found"; found; "TTF files,"; OK; "can use Monospace,"
 END 
 
-'''
+```
 <sub>Code by Ted Weissgerber</sub>
 
-'''text
+```text
 
 
 Found 106 TTF files, 13 can use Monospace.
 
-'''
+```
 
 
 
 *Example 2:* Using a _FREEFONT sub-procedure. 
 
-'''vb
+```vb
 
 fontpath$ = ENVIRON$("SYSTEMROOT") + "\fonts\lucon.ttf" 
 style$ = "MONOSPACE, ITALIC, BOLD"
@@ -102,7 +102,7 @@ ELSE : PRINT: PRINT "_FREEFONT was not used!"
 END IF
 RETURN 
 
-'''
+```
 
 
 ## See Also

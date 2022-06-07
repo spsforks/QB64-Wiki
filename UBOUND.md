@@ -20,21 +20,21 @@ The [UBOUND](UBOUND) function returns the largest valid index (upper bound) of a
 ## Example(s)
 
 
-'''vb
+```vb
 DIM myArray(5) AS INTEGER
 DIM myOtherArray(1 to 2, 3 to 4) AS INTEGER
 
 PRINT UBOUND(myArray)
 PRINT UBOUND(myOtherArray, 2)
 
-'''
+```
 
-'''text
+```text
 
  5
  4
 
-'''
+```
 
 
 

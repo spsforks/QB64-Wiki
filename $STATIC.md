@@ -16,7 +16,7 @@ The **$STATIC** Metacommand allows the creation of STATIC(un-changeable) arrays.
 
 *Example:* When a variable is used, the array can be resized despite $STATIC. The array becomes [$DYNAMIC]($DYNAMIC).
 
-'''vb
+```vb
 
 '$STATIC
 
@@ -27,7 +27,7 @@ REDIM array(2 * size)
 
 PRINT UBOUND(array) 
 
-'''
+```
 >  *Note:* [DIM](DIM) using a literal numerical size will create a Duplicate definition error.
 
 

@@ -19,7 +19,7 @@ The [_PRINTIMAGE](_PRINTIMAGE) statement prints a colored image on the printer, 
 
 *Example 1:* Shows how to transfer custom font text on screen pages to the printer in Windows. Change the font path for other OS's.
 
-'''vb
+```vb
 PageScale = 10
 PageHeight = 297 * PageScale 'A4 paper size is 210 X 297 mm
 PageWidth = 210 * PageScale
@@ -69,14 +69,14 @@ _DEST 0
 CursorPosY = CursorPosY + FontHeight            'adjust print position down 
 RETURN 
 
-'''
+```
 <sub>Code by Galleon</sub>
 > *Explanation:* CLS with the color white makes sure that the background is not printed a color. The PrintText [GOSUB](GOSUB) sets the [COLOR](COLOR) of the text to red with a transparent background using [_RGBA](_RGBA) to set the [_ALPHA](_ALPHA) transparency to zero or clear black.
 
 
 *Example 2:* Printing an old SCREEN 12 [ASCII](ASCII) table using a deeper sized page to prevent stretching by [_PRINTIMAGE](_PRINTIMAGE).
 
-'''vb
+```vb
 
 _TITLE "Print Preview ASCII Table"
 SCREEN _NEWIMAGE(640, 900, 256)  'size is proportional to 210mm X 297mm(8-1/2 X 11) paper
@@ -163,7 +163,7 @@ Srow = 16 * (Trow - 1): Scol = 8 * (Tcol - 1) 'convert text to graphic coordinat
 COLOR FG: _PRINTSTRING (Scol, Srow), CHR$(ASCode)
 END SUB 
 
-'''
+```
 <sub>Code by Ted Weissgerber</sub>
 > *Explanation:* The [ASCII](ASCII) character table was originally made in [SCREEN](SCREEN) 12 (640 X 480) and was adapted to 256 colors.
 

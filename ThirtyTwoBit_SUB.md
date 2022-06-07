@@ -11,7 +11,7 @@
 
 
 
-'''vb
+```vb
 
 '  ************************************** DEMO CODE **********************************
 ' 
@@ -40,9 +40,9 @@ ThirtyTwoBit 0, 0, x2%, y2%, bmp&, "BobSave.bmp"  ' save actual image as BMP
 
 '              ********************** END DEMO *********************************
 
-'''
+```
 
-'''text
+```text
 
 
 '****************************** Freeware by Bob Seguin *******************************
@@ -133,7 +133,7 @@ PUT #f, 51, SigColors&
 CLOSE #f
 END SUB   
 
-'''
+```
 
 <center>**This SUB procedure can also be [$INCLUDE]($INCLUDE) in a program!**</center>
 

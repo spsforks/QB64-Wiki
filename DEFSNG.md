@@ -29,7 +29,7 @@ PageLegacySupport
 ## Example(s)
 
 
-'''vb
+```vb
 
 DEFSNG A, F-H, M
 
@@ -37,7 +37,7 @@ DEFSNG A, F-H, M
 'will be of type SINGLE, unless they have a type suffix
 'indicating another type or they are dimensioned differently
 
-'''
+```
 
 
 ## See Also

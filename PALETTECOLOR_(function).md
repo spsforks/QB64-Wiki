@@ -20,7 +20,7 @@ The [_PALETTECOLOR (function)](_PALETTECOLOR (function)) function is used to ret
 
 *Example:* How _PALETTECOLOR works on 32 bit RGB compared to a 4 BPP(SCREEN 12) QBasic procedure.
 
-'''vb
+```vb
 
 SCREEN 12                         'can use any QBasic legacy screen mode
 DIM RGB(0 TO 47) AS INTEGER       'color intensity array
@@ -42,7 +42,7 @@ FOR i = 0 TO 47 STEP 3
 NEXT
 END 
 
-'''
+```
 
 > *Explanation:* To save a bitmap or other image you need the RGB color settings or the colors will look all wrong. You can store that information into a larger image array and [GET (graphics statement)](GET (graphics statement)) the image AFTER the color settings. Just GET the image starting at Array(48).
 

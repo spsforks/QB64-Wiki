@@ -19,7 +19,7 @@
 
 
 
-'''text
+```text
 
 
 ' ******************* ICONCUR.BI
@@ -56,17 +56,17 @@ TYPE BMPHEADER           'Bitmap type header found using entry DataOffset + 1
   SigColors AS LONG      'number of important colors used(not normally used)
 END TYPE '40 bytes     **  'palette and/or image data immediately follow this header! **
 
-'''
+```
 
 
-'''vb
+```vb
 
 DIM ICO AS ICONTYPE
 items% = ICO.Count
 DIM SHARED Entry(items%) AS ICONENTRY
 DIM SHARED BMP(items%) AS BMPHEADER 
 
-'''
+```
 
 
 <center>**ICON File Header Information**</center>
@@ -112,7 +112,7 @@ DIM SHARED BMP(items%) AS BMPHEADER
 ## XOR Image Data
 
 
-'''text
+```text
 
 
                                  **Single Image Icon or Cursor**
@@ -158,7 +158,7 @@ DIM SHARED BMP(items%) AS BMPHEADER
       Add one to Offset position when using one TYPE definition GET for the BMP Header data!
                        BPP = bits per pixel B = bytes +2 = padder bytes
 
-'''
+```
 
 
 
@@ -189,7 +189,7 @@ DIM SHARED BMP(items%) AS BMPHEADER
 >  A [CHR$](CHR$) byte or [SPACE$](SPACE$) padder is used in the AND mask for image widths that are not multiples of 4 bytes(32 pixels).
 
 
-'''vb
+```vb
 
 SUB ANDMask   'MASK is B & W. Black area holds XOR colors, white displays background
 BitsOver = Entry(i).PWidth& MOD 32
@@ -214,7 +214,7 @@ DO
 LOOP UNTIL y = -1
 END SUB 
 
-'''
+```
 >  *Note:* Icon widths that are not multiples of 32, such as 16 or 48, are padded 2 extra zero bytes to bring them to specifications.
 
 <p style="text-align: center">([#toc](#toc))</p>
@@ -225,7 +225,7 @@ END SUB
 >  The size of the data is based on the pixel size of the image, any bit padding and the BPP palette intensity data required.
 
 
-'''vb
+```vb
 
 Entry(item%).DataSize = DataSize&(item%) 'example function call
 
@@ -253,13 +253,13 @@ ANDsize& = ((Entry(i).PWidth + ANDpad%) * Entry(i).PDepth) \ 8
 DataSize& = XORsize& + ANDsize& + PaletteBytes% + 40  'header is always 40 bytes
 END FUNCTION 
 
-'''
+```
 >  *NOTE:* A 2 byte padder adds 32 bytes to 16 X 16 and 96 bytes to 48 X 48 AND mask data. 32 and 64 wide have no padders.
 
 
 *Snippet:* Shows how bit padder is calculated and used to calculate the AND mask data size:
 
-'''text
+```text
 
 
 INPUT "Enter an icon width(multiples of 8 or 16 only): ", width
@@ -269,15 +269,15 @@ bytes = (width + bitpad) * width \ 8 'dividing by 8 returns the byte size
 
 PRINT "AND mask size:"; bytes; "bytes with a"; bitpad; "bit padder." 
 
-'''
+```
 
 
-'''text
+```text
 
 Enter an icon width(multiples of 8 or 16 only): 16
 AND mask size: 64 bytes with a 16 bit padder.
 
-'''
+```
 
 
 <p style="text-align: center">([#toc](#toc))</p>

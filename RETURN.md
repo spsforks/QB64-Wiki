@@ -23,7 +23,7 @@
 
 *Example 1:* Returns after a Gosub.
 
-'''vb
+```vb
 
 FOR a = 1 TO 10
 PRINT a
@@ -35,9 +35,9 @@ five:
 PRINT "Aha! Five!"
 RETURN 
 
-'''
+```
 
-'''text
+```text
 
 
  1
@@ -52,13 +52,13 @@ Aha! Five!
  9
  10
 
-'''
+```
 
 
 
 *Example 2:* Returns to a specific line label.
 
-'''vb
+```vb
 
 GOSUB hey 
 PRINT "it didn't go here." 
@@ -69,15 +69,15 @@ END
 hey: 
 RETURN hoho 
 
-'''
+```
 <sub>Code by Cyperium</sub>
 
-'''text
+```text
 
 
 it went here.
 
-'''
+```
 
 
 

@@ -24,7 +24,7 @@ The [_MOUSEY](_MOUSEY) function returns the current vertical (row) mouse cursor 
 
 *Example:* Highlighting a row of text in Screen 0.
 
-'''vb
+```vb
 
 minX = 20: maxX = 60: minY = 10: maxY = 24
 selection = 0 'the screen Y coordinate of the previously highlighted item
@@ -56,7 +56,7 @@ FOR x = x1 TO x2
 NEXT
 END SUB 
 
-'''
+```
 
 
 ## See Also

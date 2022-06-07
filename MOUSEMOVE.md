@@ -31,7 +31,7 @@ The [_MOUSEMOVE](_MOUSEMOVE) statement moves the mouse pointer to a new position
 
 *Example:* How to move the mouse cursor using remembered mouse movements. Press any key to quit.
 
-'''vb
+```vb
 
 SCREEN 12
 i = _MOUSEINPUT 'start reading mouse events before INPUT to hold in memory
@@ -48,7 +48,7 @@ DO: _LIMIT 30
 LOOP UNTIL i = 0 OR INKEY$ > ""
 PRINT "Done!" 
 
-'''
+```
 >  *Explanation:* The [_MOUSEINPUT](_MOUSEINPUT) function will hold previous and _MOUSEMOVE events so press any key when you want to quit.
 
 >  **Note: [INPUT](INPUT), [INPUT$](INPUT$) and [LINE INPUT](LINE INPUT) will allow continued reading of mouse events while awaiting program user input!**

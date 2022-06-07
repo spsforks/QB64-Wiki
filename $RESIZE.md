@@ -23,7 +23,7 @@ The [$RESIZE]($RESIZE) [Metacommand](Metacommand) determines if a program window
 
 *Example:* Resizing a program screen when the user changes it without clearing the entire screen image:
 
-'''vb
+```vb
 
 $RESIZE:ON
 
@@ -110,7 +110,7 @@ FUNCTION CheckResize (CurrentScreen AS _UNSIGNED LONG)
 
 END FUNCTION
 
-'''<sub>Code by waltersmind</sub>
+```<sub>Code by waltersmind</sub>
 
 
 ## See Also

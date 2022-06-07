@@ -17,7 +17,7 @@
 
 *Example 1:* Reading the current RGB color settings used in a bitmap to an array.
 
-'''vb
+```vb
 
  SCREEN 12
  DIM Colors%(47)
@@ -26,12 +26,12 @@
  Colors%(i) = INP(&H3C9) ' moves to next color attribute every 3 loops
  NEXT 
 
-'''
+```
 
 
 *Example 2:* Reading the keyboard Scan Codes as an alternative to [INKEY$](INKEY$)
 
-'''vb
+```vb
 
  DO: SLEEP
     scancode% = INP(&H60)
@@ -39,12 +39,12 @@
     PRINT scancode%; 
  LOOP UNTIL scancode% = 1 ' [ESC] keypress exit 
 
-'''
+```
 
 
 *Example 3:* A simple ping pong game using an array function to read multiple keys for two players.
 
-'''vb
+```vb
 
 DEFINT A-Z
 SCREEN 12
@@ -112,7 +112,7 @@ K$ = INKEY$
 ScanKey% = keyflags%(scancode%)
 END FUNCTION 
 
-'''
+```
 >  *Note:* [_KEYDOWN](_KEYDOWN) can be used to read multiple keys simultaneously and is the **recommended practice**.
 
 

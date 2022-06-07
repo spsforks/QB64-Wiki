@@ -29,7 +29,7 @@
 
 *Example:* Converting the color port RGB intensity palette values 0 to 63 to 32 bit hexadecimal [STRING](STRING) values. 
 
-'''vb
+```vb
 
 SCREEN 12
 DIM hex32$(15)
@@ -53,7 +53,7 @@ FOR i = 1 TO 15
   PRINT "COLOR" + STR$(i) + " = " + hex32$(i) 'returns closest attribute
 NEXT 
 
-'''<sub>Code by Ted Weissgerber</sub>
+```<sub>Code by Ted Weissgerber</sub>
 > *Explanation:* [VAL](VAL) is used to convert the [HEX$](HEX$) [STRING](STRING) values to valid 32 bit color values for [_PALETTECOLOR](_PALETTECOLOR).
 > : No VAL conversion is necessary if the [LONG](LONG) [&H](&H) hexadecimal values are entered into the program directly by the programmer.
 

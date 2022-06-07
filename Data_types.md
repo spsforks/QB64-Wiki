@@ -19,18 +19,18 @@ The range of values that these types can represent is based on their size, in bi
 The signed integer types are: [_BYTE](_BYTE), [INTEGER](INTEGER), [LONG](LONG), [_INTEGER64](_INTEGER64) and [_OFFSET](_OFFSET)
 
 
-'''vb
+```vb
 DIM n AS INTEGER
 n = -1
 PRINT n
 
-'''
+```
 
-'''text
+```text
 
 -1
 
-'''
+```
 
 
 #### Unsigned Integer types
@@ -43,19 +43,19 @@ Types: [_UNSIGNED](_UNSIGNED) [_BYTE](_BYTE), [_UNSIGNED](_UNSIGNED) [INTEGER](I
 
 
 
-'''vb
+```vb
 ' display the largest value representable by an _UNSIGNED INTEGER:
 DIM n AS _UNSIGNED INTEGER
 n = -1
 PRINT n
 
-'''
+```
 
-'''text
+```text
 
 65535
 
-'''
+```
 
 
 
@@ -75,19 +75,19 @@ The floating-point types are: [SINGLE](SINGLE), [DOUBLE](DOUBLE) and [_FLOAT](_F
 
 
 
-'''vb
+```vb
 f! = 76.0
 c! = (5.0 / 9.0) * (f! - 32.0)
 
 PRINT f! ; "degrees Fahrenheit is" ; c! ; "degrees Celcius."
 
-'''
+```
 
-'''text
+```text
 
  76 degrees Fahrenheit is 24.44444 degrees Celcius.
 
-'''
+```
 
 
 ## String types
@@ -103,20 +103,20 @@ Variable length strings are undefined length string variables. Fixed length stri
 
 
 
-'''vb
+```vb
 
  message$ = "Hello"
  message$ = message$ + " world!" 'add to string variables using string concatenation only! 
  PRINT message$
 
-'''
+```
 
-'''text
+```text
 
 
  Hello world!
 
-'''
+```
 
 
 ### Fixed-length strings
@@ -126,21 +126,21 @@ Fixed length strings must be defined in a [DIM](DIM) statement, [SUB](SUB) or [F
 
 
 
-'''vb
+```vb
 
  DIM message AS STRING * 5
  message$ = "Hello"
  message$ = message$ + " world!"
  PRINT message$
 
-'''
+```
 
-'''text
+```text
 
 
  Hello
 
-'''
+```
 
 
 ## Data type limits

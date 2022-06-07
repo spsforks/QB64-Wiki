@@ -25,7 +25,7 @@ The [_DONTBLEND](_DONTBLEND) statement turns off 32 bit alpha blending for the c
 
 *Example 1:* Use _DONTBLEND when you want the 32 bit screen surface to be opaque so that it covers up other backgrounds. [CLS](CLS) works too.
 
-'''vb
+```vb
 
 SCREEN _NEWIMAGE(1280, 720, 32)
 'CLS
@@ -51,12 +51,12 @@ SUB RestoreBackground (Image AS LONG)
 _PUTIMAGE , Image, 0
 END SUB 
 
-'''
+```
 
 
 *Example 2:* Turning off blending to create transparency.
 
-'''vb
+```vb
 
 
 SCREEN _NEWIMAGE(640, 480, 32)
@@ -99,7 +99,7 @@ DO:  _LIMIT 60
   _DISPLAY
 LOOP UNTIL LEN(INKEY$) 
 
-'''<sub>Code by Zom-B</sub>
+```<sub>Code by Zom-B</sub>
 *Explanation:* To make the alpha image, turn alpha blending off. Otherwise PSET blends the pixel to instead of making the sprite transparent.
 
 

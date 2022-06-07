@@ -23,7 +23,7 @@ DISPLAYTITLE:OPTION _EXPLICIT
 
 *Example:* Avoiding simple typos with [OPTION _EXPLICIT](OPTION _EXPLICIT) results shown in the QB64 IDE Status area.
 
-'''vb
+```vb
 OPTION _EXPLICIT
 
 DIM myVariable AS INTEGER
@@ -32,7 +32,7 @@ myVariable = 5
 
 PRINT myVariabe
 
-'''
+```
 
 *QB64 IDE Status will show:*
 **Variable 'myVariabe' (SINGLE) not defined on line 4**

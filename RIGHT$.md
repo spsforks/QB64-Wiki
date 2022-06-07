@@ -22,7 +22,7 @@ The **RIGHT$** function returns a set number of characters in a [STRING](STRING)
 
 *Example 1:* Getting the right portion of a string value such as a person's last name. 
 
-'''vb
+```vb
 
 name$ = "Tom Williams"
 
@@ -30,18 +30,18 @@ Last$ = RIGHT$(name$, LEN(name$) - INSTR(name$, " ")) 'subtract space position f
 
 PRINT Last$ 
 
-'''
+```
 
-'''text
+```text
 
 Williams 
-'''
+```
 
 
 
 *Example 2:* Adding the leading zero in single digit [HEX$](HEX$) values using RIGHT to take the right two hexadecimal string digits.
 
-'''vb
+```vb
 
 SCREEN _NEWIMAGE(640, 480, 32) '32 bit screen modes ONLY!
 red = 255
@@ -58,13 +58,13 @@ PRINT hexadecimal$
 COLOR VAL(hexadecimal$)
 END SUB 
 
-'''
+```
 
-'''text
+```text
 
 **&HFFFF0080**
 **Colored text**
-'''
+```
 
 >  *Note:* When a single hexadecimal digit is returned the resulting value will need the leading zero added. Otherwise the hexa- decimal value created will have a byte missing from the value. EX: Color &HFF000000 is valid while &HFF000 is not.
 

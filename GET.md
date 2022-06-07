@@ -17,14 +17,14 @@ The [GET #](GET #) statement reads data from a file or port device by bytes or r
 * **QB64** can [PUT](PUT) the entire contents of an array to a file and later GET those contents to a targetArray() (include brackets).
 * **GET may ignore the end of a file and return bad data. If the [EOF](EOF) function returns -1 after a GET operation, it indicates that the data has ended.**
 
-'''text
+```text
 
  DO UNTIL EOF(1)
    GET #1, , value%
    IF NOT(EOF(1)) THEN PUT #2, , value%
  LOOP
 
-'''
+```
 
 
 
@@ -32,7 +32,7 @@ The [GET #](GET #) statement reads data from a file or port device by bytes or r
 
 *Example 1:* Opening a RANDOM file using LEN to calculate and LEN = to designate the file record size.
 
-'''vb
+```vb
 
 TYPE variabletype
   x AS INTEGER'       '2 bytes
@@ -65,16 +65,16 @@ PRINT newrec.x, newrec.y, newrec.z
 
 END 
 
-'''
+```
 
-'''text
+```text
 
  16 bytes
  255        Hello worl       65535
  1 records
  255        Hello worl       65535
 
-'''
+```
 
 >  *Explanation:* The byte size of the record [TYPE](TYPE) determines the [LOF](LOF) byte size of the file and can determine the number of records.
 >  To read the last record [GET](GET) the number of records. To add a record, use the number of records + 1 to [PUT](PUT) new record data.
@@ -82,7 +82,7 @@ END
 
 *Example 2:* Placing the contents of a numerical array into a [BINARY](BINARY) file. You may want to put the array size at the beginning too.
 
-'''vb
+```vb
 
 DIM SHARED array(100) AS INTEGER
 
@@ -113,7 +113,7 @@ NEXT
 PRINT "done"
 END SUB 
 
-'''
+```
 >  *Note:* Use empty brackets in QB64 when using [GET](GET) to create an array or [PUT](PUT) to create a [BINARY](BINARY) data file.
 
 

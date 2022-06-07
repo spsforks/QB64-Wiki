@@ -21,34 +21,34 @@ DISPLAYTITLE:_KEYCLEAR
 * This command is best used just before getting input, in order to clear stray key presses from commands such as SLEEP, or just random keyboard bashing by the user. The programmer also ought to be aware of key release events in the _KEYHIT buffer; consider the following code:
 
 
-'''vb
+```vb
 
 INPUT "Name: ", name$
 _KEYCLEAR
 _DELAY 2 'Simulate doing some processing that takes some time.
 PRINT _KEYHIT
 
-'''
+```
 
 * The INPUT statement finishes as soon as the Enter key is struck; the program then proceeds to clear all input buffers. Because this is executed so quickly, it is likely that the user will release the Enter key after the _KEYCLEAR command is executed, leaving a -13 (Enter key release) event in the _KEYHIT buffer.
 * As mentioned above, it is best to place the _KEYCLEAR after the processing, immediately before the PRINT _KEYHIT command:
 
 
-'''vb
+```vb
 
 INPUT "Name: ", name$
 _DELAY 2 'Simulate doing some processing that takes some time.
 _KEYCLEAR
 PRINT _KEYHIT
 
-'''
+```
 
 
 ## Example(s)
 
 Example:
 
-'''vb
+```vb
 
 PRINT "Press a key"
 SLEEP 'Wait for keypress
@@ -59,7 +59,7 @@ SLEEP 'Wait for keypress
 PRINT "In regular buffer, there is "; INKEY$ 'read regular buffer
 PRINT "In _KEYHIT buffer, there is "; _KEYHIT 'read the _KEYHIT buffer
 
-'''
+```
 
 
 ## See Also

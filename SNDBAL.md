@@ -31,18 +31,18 @@ The [_SNDBAL](_SNDBAL) statement attempts to set the balance or 3D position of a
 
 *Example 1:*
 
-'''vb
+```vb
 
 h& = _SNDOPEN("LOL.wav", "SYNC,VOL")
 _SNDBAL h&, 1
 _SNDPLAY h& 
 
-'''
+```
 
 
 *Example:* Loading a sound after **build 20170811/60** - no need to specify "sound capabilities" in [_SNDOPEN](_SNDOPEN). 
 
-'''vb
+```vb
 
 s& = _SNDOPEN("song.ogg")
 PRINT "READY"; s&
@@ -101,7 +101,7 @@ DO
     PRINT xleft, xright, volume, _SNDGETPOS(s&); "   "
 LOOP
 
-'''<sub>Code by Johny B</sub>
+```<sub>Code by Johny B</sub>
 
 
 ## See Also

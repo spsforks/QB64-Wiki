@@ -29,7 +29,7 @@ The [_READBIT](_READBIT) function is used to check the state of a specified bit 
 
 *Example 1:*
 
-'''vb
+```vb
 
 A~%% = _SETBIT(A~%%,4)
 PRINT "Bit 4 is currently ";
@@ -37,20 +37,20 @@ IF _READBIT(A~%%,4) = -1 THEN PRINT "ON" ELSE PRINT "OFF"
 PRINT "And bit 2 is currently ";
 IF _READBIT(A~%%,2) = -1 THEN PRINT "ON" ELSE PRINT "OFF"
 
-'''
+```
 
-'''text
+```text
 
 
 Bit 4 is currently ON
 And bit 2 is currently OFF
 
-'''
+```
 
 
 *Example 2:*
 
-'''vb
+```vb
 
 B& = 12589575
 PRINT "B& ="; B&
@@ -58,15 +58,15 @@ FOR I%% = 31 TO 0 STEP -1 '32 bits for a LONG value
  Binary$ = Binary$ + LTRIM$(STR$(ABS(_READBIT(B&, I%%))))
 NEXT I%%
 PRINT "B& in binary is: "; Binary$
-'''
+```
 
-'''text
+```text
 
 
 B& = 12589575
 B& in binary is: 00000000110000000001101000000111
 
-'''
+```
 
 
 

@@ -14,7 +14,7 @@ Also, for example: **CHAR *** means a pointer to a CHAR.
 <center>**Example using QueryDosDeviceA to enumerate COM ports**</center>
 
 
-'''vb
+```vb
 
 'public domain by Michael Calkins, sept 2011, 
 
@@ -85,7 +85,7 @@ END IF
 buffer = ""
 END 
 
-'''
+```
 
 
 So, you would look at the function prototype in the MSDN article, and match the data types of all of the parameters and the return value to QB64 data types. _OFFSET is the type to use for any kind of pointer. MSDN has a list of data types:
@@ -96,7 +96,7 @@ You can look up the types in that article. Note that many types are derived from
 
 For example, let's look at the **QueryDosDevice** function that is used above:
 
-'''text
+```text
 
 
 DWORD WINAPI QueryDosDevice(
@@ -105,7 +105,7 @@ DWORD WINAPI QueryDosDevice(
   __in      DWORD ucchMax
 ); 
 
-'''
+```
 
 <center>http://msdn.microsoft.com/en-us/library/aa365461(v=VS.85).aspx</center>
 
@@ -116,7 +116,7 @@ So, the function returns a DWORD, and accepts 3 parameters: an LPCTSTR, an LPTST
 
 If the return type were void, it would be a [SUB](SUB). Any return type other than void means a [FUNCTION](FUNCTION). Look up "DWORD" in the data type list. (The URL is given above.)
 
-'''text
+```text
 
 
 A 32-bit unsigned integer. The range is 0 through 4294967295 decimal
@@ -125,32 +125,32 @@ This type is declared in WinDef.h as follows:
 
 typedef unsigned long DWORD;
 
-'''
+```
 
 > Obviously, the QB64 type that corresponds to this is [_UNSIGNED](_UNSIGNED) [LONG](LONG).
 
-'''text
+```text
 
 
 QueryDosDeviceW (Unicode) and QueryDosDeviceA (ANSI)
 
-'''
+```
 
 > In this instance, I chose to use the [ASCII](ASCII) version of the function **QueryDosDeviceA** instead of the [Unicode](Unicode) version (**QueryDosDeviceW**) for simplicity. (A stands for ANSI, W stands for wide, as in wide char.)
 
 So, we have:
 
-'''text
+```text
 
    **FUNCTION QueryDosDeviceA~& (**
 
-'''
+```
 
 
 * **First parameter:**
 Look up LPCTSTR in the data type list:
 
-'''text
+```text
 
 
 An LPCWSTR if UNICODE is defined, an LPCSTR otherwise. 
@@ -165,11 +165,11 @@ This type is declared in WinNT.h as follows:
 #endif
 </nowiki>
 
-'''
+```
 
 > As noted above, I have chosen to use the ASCII version of the function, so it corresponds to LPCSTR. Look that up:
 
-'''text
+```text
 
 
 A pointer to a constant null-terminated string of 8-bit Windows (ANSI) characters. 
@@ -179,18 +179,18 @@ This type is declared in WinNT.h as follows:
 
     typedef __nullterminated CONST CHAR *LPCSTR;
 
-'''
+```
 
 > This tells us that it is a pointer to a string. Since it is a pointer, the QB64 type it corresponds to is [_OFFSET](_OFFSET).
 
 By the way, all parameters, including pointers, will be passed [BYVAL](BYVAL). So, we have:
 
 
-'''text
+```text
 
  **FUNCTION QueryDosDeviceA~& (BYVAL lpDeviceName AS _UNSIGNED _OFFSET,**
 
-'''
+```
 
 
 * **Second parameter:**
@@ -198,7 +198,7 @@ By the way, all parameters, including pointers, will be passed [BYVAL](BYVAL). S
 Look up LPTSTR in the data type list:
 
 
-'''text
+```text
 
 
 LPTSTR   
@@ -214,12 +214,12 @@ This type is declared in WinNT.h as follows:
  typedef LPSTR LPTSTR;
 #endif </nowiki>
 
-'''
+```
 
 >  Again, I decided not to use Unicode this time, so look up LPSTR:
 
 
-'''text
+```text
 
 
 A pointer to a null-terminated string of 8-bit Windows (ANSI) characters. 
@@ -229,28 +229,28 @@ This type is declared in WinNT.h as follows:
 
 typedef CHAR *LPSTR;
 
-'''
+```
 
 >  Again, it is a pointer to a string. Again, pointers correspond to [_OFFSET](_OFFSET).
 
 
-'''text
+```text
 
 
 **FUNCTION QueryDosDeviceA~& (BYVAL lpDeviceName AS _UNSIGNED _OFFSET, BYVAL lpTargetPath AS _UNSIGNED _OFFSET,**
 
-'''
+```
 
 * **Third parameter:**
 
 This is a DWORD. We have already looked up DWORD, and we know it is an [_UNSIGNED](_UNSIGNED) [LONG](LONG). We have finished our function declaration:
 
-'''text
+```text
 
 
 ** FUNCTION QueryDosDeviceA~& (BYVAL lpDeviceName AS _UNSIGNED _OFFSET, BYVAL lpTargetPath AS _UNSIGNED _OFFSET, BYVAL ucchMax AS _UNSIGNED LONG)**
 
-'''
+```
 
 
 
@@ -259,21 +259,21 @@ This is a DWORD. We have already looked up DWORD, and we know it is an [_UNSIGNE
 http://msdn.microsoft.com/en-us/library/windows/desktop/ms679360(v=vs.85).aspx
 
 
-'''text
+```text
 
 
 DWORD WINAPI GetLastError(void);
 
-'''
+```
 
 >  The void in the parameter list means that it accepts no parameters. For the return value, we already know that a DWORD is an [_UNSIGNED](_UNSIGNED) [LONG](LONG):
 
 
-'''text
+```text
 
  **FUNCTION GetLastError~& ()**
 
-'''
+```
 
 
 
@@ -284,14 +284,14 @@ Now that I have declared the function, notice how I use it.
 **The first usage of the QueryDosDevice Function:**
 
 
-'''vb
+```vb
  IF QueryDosDeviceA~&(0, _OFFSET(buffer), sizeofbuffer) = 0 THEN
 
-'''
+```
 
 * **The first parameter:**
 
-'''text
+```text
 
 
 lpDeviceName [in, optional]
@@ -302,13 +302,13 @@ lpDeviceName [in, optional]
  This parameter can be NULL. In that case, the QueryDosDevice function will store a list of
  all existing MS-DOS device names into the buffer pointed to by lpTargetPath.
 
-'''
+```
 
 >  lpDeviceName is an optional pointer to a null terminated ASCII string holding the device name. In this case, I want a list of all of the DOS device names, so I give it a null pointer, 0. This is in harmony with: "If lpDeviceName is NULL, the function retrieves a list of all existing MS-DOS device names." This is why it is referred to as optional, because the pointer can be left null, 0.
 
 * **The second parameter:**
 
-'''text
+```text
 
 
 lpTargetPath [out]
@@ -325,24 +325,24 @@ prior mappings for the device.
 names. Each null-terminated string stored into the buffer is the name of an existing MS-DOS 
 device, for example, \Device\HarddiskVolume1 or \Device\Floppy0.
 
-'''
+```
 
 >  lpTargetPath is a pointer to a buffer to receive the data as null terminated ASCII strings. I give it a pointer to [_OFFSET](_OFFSET)(buffer).
 
 * **The third parameter:**
 
-'''text
+```text
 
 
 ucchMax [in]
 
 The maximum number of TCHARs that can be stored into the buffer pointed to by lpTargetPath.
 
-'''
+```
 
 >  We need to know what a TCHAR is, since it is involved both in ucchMax and in the return value. Look up TCHAR in the data type list:
 
-'''text
+```text
 
 
 A WCHAR if UNICODE is defined, a CHAR otherwise.
@@ -355,7 +355,7 @@ This type is declared in WinNT.h as follows:
  typedef char TCHAR;
 #endif </nowiki>
 
-'''
+```
 
 >  Since we are not using [Unicode](Unicode) this time, it is a char, a byte of an ASCII string. (Note that if we were using Unicode, a TCHAR would be two bytes, as you would find out by looking up WCHAR. Keep this in mind if you ever use [Unicode](Unicode) functions, as buffers will need two bytes per character in that instance.)
 
@@ -368,7 +368,7 @@ This type is declared in WinNT.h as follows:
 
 The function returns an [_UNSIGNED](_UNSIGNED) [LONG](LONG).
 
-'''text
+```text
 
 
 If the function succeeds, the return value is the number of TCHARs stored into the buffer 
@@ -379,7 +379,7 @@ GetLastError.
 
 If the buffer is too small, the function fails and the last error code is ERROR_INSUFFICIENT_BUFFER.
 
-'''
+```
 
 >  So, that is what I test for. If the return value is 0, then I check the error code using GetLastError~&. If the error code is ERROR_INSUFFICIENT_BUFFER, 0x7a, then I try again with a larger buffer.
 
@@ -387,11 +387,11 @@ After a successful call, buffer, the buffer pointed to by lpTargetPath, will con
 
 * **Second Return value:**
 
-'''vb
+```vb
 
 IF QueryDosDeviceA~&(_OFFSET(comports(i * 2)), _OFFSET(buffer), sizeofbuffer) = 0 THEN
 
-'''
+```
 >  The difference this time is in the first parameter. By now I have gone through the list of all device names, and have picked out the ones that start with "COM". I now want to find the current mapping for each of them. lpDeviceName is a pointer to a null terminated ASCII string containing the device name. So I give it _OFFSET(comports(i * 2)), which is exactly that. (As I said in the original post, I leave a terminating null until after this call.)
 
 After a successful call, buffer, the buffer pointed to by lpTargetPath, will contain one or more null terminated strings, with an extra null after the last. I am only interested in the first of these, which is the current mapping.

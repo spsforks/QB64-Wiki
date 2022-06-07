@@ -28,7 +28,7 @@ The [PALETTE](PALETTE) statement can swap color settings, set colors to default 
 *Example:* Displaying all 64 DAC color hues as backgrounds in SCREEN 9 using a PALETTE swap.
 
 
-'''vb
+```vb
 
   SCREEN 9 ' background is default black
   LOCATE 20, 33: PRINT "Press any Key!"  
@@ -37,7 +37,7 @@ The [PALETTE](PALETTE) statement can swap color settings, set colors to default 
    PALETTE 0, i
   NEXT 
 
-'''
+```
 > *Note:* Other attributes (1 to 15) can also be swapped for DAC foreground colors.
 
 

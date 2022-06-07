@@ -38,7 +38,7 @@ RelationalTable
 
 *Example 1:* Using WHILE to clear the keyboard buffer.
 
-'''vb
+```vb
 
 
 DO WHILE INKEY$ <> "": LOOP ' checks evaluation before running loop code
@@ -46,12 +46,12 @@ DO WHILE INKEY$ <> "": LOOP ' checks evaluation before running loop code
 DO: LOOP WHILE INKEY$ <> "" ' checks evaluation after one run of loop code
 
 
-'''
+```
 
 
 *Example 2:* Using UNTIL to clear the keyboard buffer.
 
-'''vb
+```vb
 
 
 DO UNTIL INKEY$ = "": LOOP ' checks evaluation before running loop code
@@ -59,13 +59,13 @@ DO UNTIL INKEY$ = "": LOOP ' checks evaluation before running loop code
 DO: LOOP UNTIL INKEY$ = "" ' checks evaluation after one run of loop code
 
 
-'''
+```
 
 
 *Example 3:* Using a one time DO loop to exit ANY of several FOR LOOPs, without using [GOTO](GOTO). 
 > SUB reads header contents of a [BSAVE](BSAVE) file that may include embedded RGB color settings before the image.
 
-'''vb
+```vb
 
 DEFINT A-Z
 INPUT "Enter a BSAVE file name to read the file for screen mode:"', filenm$
@@ -144,7 +144,7 @@ END SELECT
 
 END SUB 
 
-'''
+```
 <sub>Code by Ted Weissgerber</sub>
 > *Explanation:* The SUB procedure reads a file that was [BSAVE](BSAVE)d previously. If the RGB colors are stored before the image, the values can only be between 0 and 63. Higher values indicate that the image width and height are located there and that there are no stored color values to be read. SUB later displays the dimensions of the file image that [GET (graphics statement)](GET (graphics statement)) placed in the file array. The loop is set to only run once by creating **a TRUE [UNTIL](UNTIL) statement** such as 1 = 1. When a screen mode cannot be determined, the user must select one.
 

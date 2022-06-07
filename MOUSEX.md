@@ -24,7 +24,7 @@ The [_MOUSEX](_MOUSEX) function returns the current horizontal (column) mouse cu
 
 *Example:* A simple mouse drawing board using [_MOUSEX](_MOUSEX) and [_MOUSEY](_MOUSEY) coordinate values. 
 
-'''vb
+```vb
 
 SCREEN 12
 LINE (99, 9)-(601, 401), 7, BF
@@ -46,7 +46,7 @@ DO: K$ = INKEY$
 LOOP UNTIL K$ = CHR$(27)
 SYSTEM 
 
-'''
+```
 
 
 ## See Also

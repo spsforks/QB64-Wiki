@@ -15,7 +15,7 @@ SLEEP pauses the program indefinitely or for a specified number of seconds, prog
 
 *Example:*
 
-'''vb
+```vb
 
 CLS 
 PRINT "Press a key..."
@@ -25,9 +25,9 @@ SLEEP 2
 PRINT "You've waited for 2 seconds."
 PRINT "(or you pressed a key)"
 
-'''
+```
 
-'''text
+```text
 
 
 Press a key...
@@ -35,7 +35,7 @@ You pressed a key, now wait for 2 seconds.
 You've waited for 2 seconds.
 (or you pressed a key)
 
-'''
+```
 
 > *Explanation:* SLEEP without any arguments waits until a key is pressed, next SLEEP statement uses the argument 2 which means that it will wait for 2 seconds, any number of seconds can be specified.
 

@@ -25,13 +25,13 @@ The [$VERSIONINFO]($VERSIONINFO) [Metacommand](Metacommand) adds text metadata t
 
 *Example:* Adding metadata to a Windows exe compiled with QB64:
 
-'''vb
+```vb
 
 $VERSIONINFO:CompanyName=Your company name goes here
 $VERSIONINFO:FILEVERSION#=1,0,0,0
 $VERSIONINFO:PRODUCTVERSION#=1,0,0,0
 
-''' 
+``` 
 
 
 ## See Also

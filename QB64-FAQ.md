@@ -24,7 +24,7 @@ The modern statements are designed to go along with the BASIC philosophy and exp
 
 <center>**QB64 FEATURES INCLUDE:**</center>
 
-'''text
+```text
 
   1) Full graphic functions for [_NEWIMAGE](_NEWIMAGE) up to 32 bit color. [_ALPHA](_ALPHA) transparency supported.
 
@@ -44,7 +44,7 @@ The modern statements are designed to go along with the BASIC philosophy and exp
 
   9) Support for C++, OpenGL, Windows API and other custom Dynamic Link [Libraries](Libraries).
 
-'''
+```
 
 ## Q: How do I install QB64 on Windows, Linux, macOS?
 

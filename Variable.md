@@ -50,7 +50,7 @@ To pass variable values to a sub-procedure without altering or affecting the var
 
 *Example of different usages of variables:*
 
-'''vb
+```vb
 
 max = 1000 
 DIM d(max) 
@@ -62,17 +62,17 @@ PRINT "n = (0-" + LTRIM$(STR$(max)) + "): ";
 INPUT "", n 
 IF n <= max AND n >= 0 THEN PRINT d(n) ELSE PRINT "Invalid value (only 0 to" + STR$(max) + " is permitted)." 
 
-'''
+```
 
 
-'''text
+```text
 
 
 Show the result of the addition from 1 to n (1+2+3...+n)
 n = (1-1000): 10
  55
 
-'''
+```
 
 
 

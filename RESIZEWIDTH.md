@@ -22,7 +22,7 @@ The [_RESIZEWIDTH](_RESIZEWIDTH) function returns the user resized screen pixel 
 
 *Example:* Resize the current screen image according to user's request.
 
-'''vb
+```vb
 
 $RESIZE:ON
 
@@ -49,7 +49,7 @@ DO
     _LIMIT 30
 LOOP
 
-'''
+```
 
 
 ## See Also

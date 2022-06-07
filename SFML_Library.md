@@ -5,7 +5,7 @@
 
 
 
-'''text
+```text
 
 
 //SFML_Wrapper02.h for QB64 version.02 - By John Onyon a.k.a Unseen Machine
@@ -583,7 +583,7 @@ void SF_Push_Events()
 	{	}
 } 
 
-'''
+```
 
 
 

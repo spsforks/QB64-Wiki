@@ -20,7 +20,7 @@ The [_PRINTWIDTH](_PRINTWIDTH) function returns the width in pixels of the text 
 
 *Example:* SUB returns font or screen mode's text block size using _PRINTWIDTH and [_FONTHEIGHT](_FONTHEIGHT) without a handle parameter.
 
-'''vb
+```vb
 
 DO
   INPUT "Enter Screen mode 1, 2 or 7 to 13: ", scr$
@@ -43,7 +43,7 @@ TextWidth& = _PRINTWIDTH("W")     'measure width of one font or text character
 TextHeight& = _FONTHEIGHT         'can measure normal text block heights also   
 END SUB 
 
-'''
+```
 <sub>Code by Ted Weissgerber</sub>
 <center>**Note:** The SUB procedure does not need the font handle for font sizes after [_FONT](_FONT) enables one.</center>
 

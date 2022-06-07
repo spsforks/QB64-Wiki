@@ -4,12 +4,12 @@
 *Usage:* COLOR 14: PRINT [TAB](TAB)(30); "Hello World"
 
 
-'''text
+```text
 
 
                               Hello World
 
-'''
+```
 
 
 
@@ -22,14 +22,14 @@
 
 *Example:* Using too many brackets does not harm the code execution as long as they are paired up.
 
-'''vb
+```vb
 
 nmb$ = STR$(100)
 nmb$ = LTRIM$(((RTRIM$(nmb$))))  'extra bracket pairs do not affect the code
 
 PRINT nmb$ 
 
-'''
+```
 
 
 *See also:*

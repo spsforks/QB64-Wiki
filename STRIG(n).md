@@ -23,7 +23,7 @@ QB64 ## Syntax
 
 *Example:*
 
-'''vb
+```vb
 
 ON STRIG(0) GOSUB 10
 STRIG(0)ON
@@ -42,7 +42,7 @@ FOR x = 1 TO LEN(a$)
 NEXT
 RETURN 
 
-'''
+```
 
 
 ## See Also

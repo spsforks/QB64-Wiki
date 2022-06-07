@@ -16,7 +16,7 @@ The [_ROUND](_ROUND) function rounds to the closest even [INTEGER](INTEGER), [LO
 
 *Example:* Displays how QB64 rounds to the closest even integer value.
 
-'''vb
+```vb
 
 PRINT _ROUND(0.5)
 PRINT _ROUND(1.5)
@@ -25,9 +25,9 @@ PRINT _ROUND(3.5)
 PRINT _ROUND(4.5)
 PRINT _ROUND(5.5) 
 
-'''
+```
 
-'''text
+```text
 
 0
 2
@@ -36,7 +36,7 @@ PRINT _ROUND(5.5)
 4
 6
 
-'''
+```
 
 
 

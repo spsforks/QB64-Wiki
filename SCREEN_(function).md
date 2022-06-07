@@ -24,7 +24,7 @@ The **SCREEN** function returns the [ASCII](ASCII) code of a text character or t
 
 *Example 1:* Finding the text foreground and background colors in SCREEN 0 only:
 
-'''vb
+```vb
 
 SCREEN 0
 COLOR 0, 15
@@ -34,22 +34,22 @@ PRINT "SCREEN ="; SCREEN(1, 1, 1)
 PRINT "FG color:"; SCREEN(1, 1, 1) AND 15 'low nibble
 PRINT "BG color:"; SCREEN(1, 1, 1) \ 16 'high nibble 
 
-'''
+```
 
-'''text
+```text
 
 **SCREEN = 112**
 **FG color: 0**
 **BG color: 7**
 
-'''
+```
 
 >  *Note:* How the SCREEN 0 background color can only be changed to colors 0 through 7! 7 * 16 = 112.
 
 
 *Example 2:* Reading the [ASCII](ASCII) code and color of a text character using the SCREEN function. Graphic colors were not reliable in QBasic!
 
-'''vb
+```vb
 
 SCREEN 12
 row = 10: column = 10
@@ -60,9 +60,9 @@ attrib% = SCREEN(row, column, 1)   ' character color return parameter 1
 COLOR 14: LOCATE 15, 10: PRINT "ASCII:"; code%, "COLOR:"; attrib%
 END 
 
-'''
+```
 
-'''text
+```text
 
 
          Hello
@@ -71,14 +71,14 @@ END
 
          ASCII: 72     COLOR: 9
 
-'''
+```
 
 > *Explanation:* The SCREEN function returns the [ASCII](ASCII) code for "H" and the color 9.
 
 
 *Example 3:* Finding the current program path placed on the screen using [FILES](FILES) and the SCREEN function in SCREEN 0.
 
-'''vb
+```vb
 
 SCREEN 0, 0, 0, 0
 CLS
@@ -97,7 +97,7 @@ SCREEN 0, 0, 0, 0
 LOCATE 3, 1: PRINT "The current directory is: "; a$
 END 
 
-'''
+```
 <sub>Code by Pete from the N54 QB site</sub>
 > *Explanation:* The SCREEN page one is used to hide the [FILES](FILES) display using COLOR 0. The [SCREEN (function)](SCREEN (function)) function reads the top of the screen page text and creates the current path string. It is then printed on the visual page.
 

@@ -29,7 +29,7 @@ The [_MOUSEBUTTON](_MOUSEBUTTON) function returns the button status of a specifi
 
 *Example 1:* Finding the number of mouse buttons available in QB64. This could also be used for other controller devices.
 
-'''vb
+```vb
 
 FOR d = 1 TO _DEVICES  'number of input devices found
   dev$ = _DEVICE$(d)
@@ -37,12 +37,12 @@ FOR d = 1 TO _DEVICES  'number of input devices found
 NEXT
 PRINT buttons; "mouse buttons available" 
 
-'''
+```
 
 
 *Example 2:* How to monitor when a button is down or wait until a mouse button is not held down.
 
-'''vb
+```vb
 
 PRINT "Hold down the left mouse button until you want to quit!"
 DO
@@ -55,12 +55,12 @@ LOOP UNTIL NOT _MOUSEBUTTON(1) '                       button is released
 
 PRINT "DONE!" 
 
-'''
+```
 
 
 *Example 3:* Checking for a click or a double-click by the user.
 
-'''vb
+```vb
 
 DO  'main program loop
 
@@ -84,13 +84,13 @@ DO  'main program loop
   Click = 0: buttondown = 0            'reset where needed
 LOOP UNTIL INKEY$ = CHR$(27) 
 
-'''
+```
 >  *Explanation:* To find the current button status read [_MOUSEINPUT](_MOUSEINPUT) repeatedly. The [TIMER](TIMER) loop looks for a second click.
 
 
 *Example 4:* Verifying that a user clicked and released a mouse button on a program button.
 
-'''vb
+```vb
 
 SCREEN 12
 LINE (250, 250)-(300, 300), 14, BF
@@ -115,24 +115,24 @@ x = _MOUSEX
 y = _MOUSEY
 END SUB 
 
-'''
+```
 >  *Explanation:* The mouse SUB has no internal [_MOUSEINPUT](_MOUSEINPUT) loop so that no button presses, releases or moves are missed.
 >  If the above read procedure goes to another one, it may be advisable to skip over unread input in a [_MOUSEINPUT](_MOUSEINPUT) only loop.
 
-'''text
+```text
 
 SUB Catchup
 DO WHILE _MOUSEINPUT: LOOP 
 END SUB 
 
-'''
+```
 
 >  The above procedure can be used to catch up after [INPUT](INPUT), [LINE INPUT](LINE INPUT) or [INPUT$](INPUT$) delays when mouse input may accumulate.
 
 
 *Example 5:* Combining mouse button or keyboard selections in a menu or test:
 
-'''vb
+```vb
 
 DO 'main program loop in demo only
   LOCATE 10, 10: PRINT "A" 'position A, B & C in same position on every question
@@ -181,7 +181,7 @@ DO 'main program loop in demo only
   END IF
 LOOP 'DEMO only loop use red X box to quit 
 
-''' <sub>Code by Ted Weissgerber</sub>
+``` <sub>Code by Ted Weissgerber</sub>
 >  *Explanation:* User can cancel letter selection by moving pointer off letter before releasing the left mouse button.
 
 

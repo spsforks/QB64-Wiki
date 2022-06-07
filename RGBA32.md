@@ -25,7 +25,7 @@ The [_RGBA32](_RGBA32) function returns the 32-bit *RGBA* color value with the s
 
 *Example:* Changing the [ALPHA](ALPHA) value to fade an image in and out using a 32 bit PNG image.
 
-'''vb
+```vb
 
 SCREEN _NEWIMAGE(600, 400, 32)
 
@@ -50,7 +50,7 @@ FOR i% = 0 TO 255 STEP 5
 NEXT
 END 
 
-'''
+```
 <sub>Code by Unseen Machine</sub>
 
 

@@ -7,14 +7,14 @@ A program can use [SHELL](SHELL) statements in QB64 to execute those operating s
 
 * This code issues the command to display a PC's list of printers and routes the output to a text file:
 
-'''vb
+```vb
 SHELL _HIDE "CMD /C" + "wmic printer get name,default > default.txt"
 
-'''
+```
 
 A sample of the contents of the resulting file is as follows. Notice that the default printer is listed as "TRUE":
 
-'''text
+```text
 
 Default  Name                           
   FALSE    Microsoft XPS Document Writer 
@@ -22,19 +22,19 @@ Default  Name
   FALSE    HP Officejet Pro 8600         
   FALSE    Fax
 
-'''
+```
 
 
 * Here is the code to set the default printer to the "HP Officejet Pro 8600" listed in the sample above:
 
 
-'''vb
+```vb
 SHELL _HIDE "CMD /C" + "wmic printer where name='HP Officejet Pro 8600' call setdefaultprinter" 
-'''
+```
 
 Then running the *get default* [SHELL](SHELL) code again, we see the following contents of the text file:
 
-'''text
+```text
 
 Default  Name                           
   FALSE    Microsoft XPS Document Writer 
@@ -42,7 +42,7 @@ Default  Name
   TRUE     HP Officejet Pro 8600         
   FALSE    Fax
 
-'''
+```
 
 
 Now we see that the "HP Officejet Pro 8600" is marked as "TRUE", and thus is now the default printer for [LPRINT](LPRINT) and [_PRINTIMAGE](_PRINTIMAGE).

@@ -17,7 +17,7 @@ The [INKEY$](INKEY$) function returns user input as [ASCII](ASCII) [STRING](STRI
 * To receive input from a [$CONSOLE]($CONSOLE) window, use [_CINP](_CINP).
 * Returns can be evaluated as certain [ASCII](ASCII) characters or codes.
 
-'''text
+```text
 
 '                                **ASCII Keyboard Codes**
 '
@@ -42,7 +42,7 @@ The [INKEY$](INKEY$) function returns user input as [ASCII](ASCII) [STRING](STRI
 ' **    *Italics* = LCase/NumLock On  * = 2 byte combo only,  + = 2 Byte: CHR$(0) + CHR$(code)**
 '
 
-'''
+```
 
 
 ## Two Byte Combinations
@@ -54,7 +54,7 @@ The [INKEY$](INKEY$) function returns user input as [ASCII](ASCII) [STRING](STRI
 <center>**[ASCII#Two_Byte_Codes](ASCII#Two_Byte_Codes)**</center>
 
 
-'''text
+```text
 
                     **Two Byte Characters        Key                 CHR$(0) + "?" **
 
@@ -95,7 +95,7 @@ The [INKEY$](INKEY$) function returns user input as [ASCII](ASCII) [STRING](STRI
                     CHR$(0) + CHR$(139)        [Alt] + [F11]        "ï"
                     CHR$(0) + CHR$(140)        [Alt] + [F12]        "î"
 
-'''
+```
 
 > In **QB64**, [CVI](CVI) can be used to get the [_KEYDOWN](_KEYDOWN) 2-byte code value. Example: **status <nowiki>=</nowiki> _KEYDOWN(CVI(CHR$(0) + "P"))**
 
@@ -104,31 +104,31 @@ The [INKEY$](INKEY$) function returns user input as [ASCII](ASCII) [STRING](STRI
 
 *Example 1:* Clearing the keyboard buffer after [SLEEP](SLEEP) delays for later [INPUT](INPUT).
 
-'''vb
+```vb
 PRINT "Press any keyboard typing key to end SLEEP"
 SLEEP
 DO: K$ = INKEY$: PRINT K$: LOOP UNTIL K$ = "" 
 
-'''
+```
 > *Explanation:* [SLEEP](SLEEP) key presses will be kept in the keyboard buffer and may be added into an [INPUT](INPUT) later.
 > See also: [_KEYCLEAR](_KEYCLEAR)
 
 
 *Example 2:* Entering a Ctrl + letter keypress combination will print [ASCII](ASCII) Control characters 1 to 26. .
 
-'''vb
+```vb
 DO
     K$ = INKEY$
     IF K$ <> "" THEN PRINT K$; " ";
 LOOP UNTIL K$ = CHR$(27) 'Esc key exit 
 
-'''
+```
 >  *Note:* The above code will print Esc arrow, Backspace symbol, and 2 byte characters led by CHR$(0) in addition to normal keys.
 
 
 *Example 3:* Use [UCASE$](UCASE$)(INKEY$) in a keyboard read loop looking for uppercase "Y" or "N" user inputs to avoid multiple IF statements.
 
-'''vb
+```vb
 
 DO
   PRINT "Do you want to continue? (Y/N): ";  'semicolon saves position for user entry
@@ -138,12 +138,12 @@ DO
   IF K$ = "N" THEN END
 LOOP  
 
-'''
+```
 
 
 *Example 4:* Getting just number values entered by a user in an INKEY$ input loop.
 
-'''vb
+```vb
 
 LOCATE 10, 10: PRINT "Enter a number value: ";
 DO: SLEEP
@@ -159,14 +159,14 @@ DO: SLEEP
   LOCATE 10, 32: PRINT entry$; ' display entry to user (semicolon required for correct POS)
 LOOP UNTIL K$ = CHR$(13) AND L > 0 'assures something is entered 
 
-'''
+```
 
 >  *Explanation:* [SLEEP](SLEEP) waits for a keypress. It also allows background programs to share the processor and it leaves the keypress in the buffer for INKEY$. Keyboard string number characters range from [ASCII](ASCII) codes 48 to 57. Any other entry is ignored by the IF statement. A decimal point (code 46) entry is allowed once in the input. The flag value stops further decimal point additions. Backspacing (code 8) is also allowed if the entry has at least one character. The cursor column returned by [POS](POS)(0) reverts too after the end of the entry when printed each loop. The loop exits when [Enter] (code 13) is pressed and the entry has a length.
 
 
 *Example 5:* Using arrow keys to move a text character. A change from a previous position tells program when to PRINT:
 
-'''vb
+```vb
 movey = 1: movex = 1 'text coordinates can never be 0
 at$ = "@"  'text sprite could be almost any ASCII character
 LOCATE movey, movex: PRINT at$;
@@ -185,12 +185,12 @@ DO
 LOOP UNTIL B$ = CHR$(27) 'ESCape key exit
 END
 
-'''
+```
 
 
 *Example 6:* Using INKEY$ with the arrow or WASD keys to move the QB64 bee image sprite with [_PUTIMAGE](_PUTIMAGE):
 
-'''vb
+```vb
 
 DIM image AS LONG
 DIM x AS INTEGER
@@ -223,13 +223,13 @@ DO
   _PUTIMAGE (x, y), image
 LOOP 
 
-''' <sub>Adapted from code by Daniel</sub>
+``` <sub>Adapted from code by Daniel</sub>
 >  *Note:* The image can be placed off of the screen without error. The image moves 10 pixels to move faster. [CLS](CLS) eliminates any background.
 
 
 *Example 7:* Creating upper [ASCII](ASCII) characters in a QB program using **Alt +** three number keys:
 
-'''vb
+```vb
 
 DO
     A$ = "": WHILE A$ = "": A$ = INKEY$: WEND
@@ -247,12 +247,12 @@ LOOP UNTIL LEN(num$) = 3  ' 3 digit codes only
 PRINT num$
 PRINT CHR$(VAL(num$)
 
-'''<sub>Code by Ted Weissgerber</sub>
+```<sub>Code by Ted Weissgerber</sub>
 
-'''text
+```text
 
  155 ¢ 
-'''
+```
 
 > *Explanation:* Hold down Alt key and press 3 keyboard code number keys. **Number pad keys may not work.** Note that [INKEY$](INKEY$) cannot read Alt, Ctrl or Shift key presses without a key combination and the return is CHR$(0) + CHR$(code).
 

@@ -14,37 +14,37 @@ Expressions may include logical operators as well as mathematical operators and 
 
 (**1000** is the expression)
 
-'''vb
+```vb
 
 PRINT 1000
 
-'''
+```
 
 
-'''text
+```text
 
 
  1000
 
-'''
+```
 
 
 
 (**1 + 1** is the expression) 
 
-'''vb
+```vb
 
 PRINT 1 + 1
 
-'''
+```
 
 
-'''text
+```text
 
 
  2
 
-'''
+```
 
 
 
@@ -56,37 +56,37 @@ PRINT 1 + 1
 
 (**"hello!"** is the expression)
 
-'''vb
+```vb
 
 PRINT "hello!"
 
-'''
+```
 
 
-'''text
+```text
 
 
 hello!
 
-'''
+```
 
 
 
 (**"Hello" + " " + "there!"** is the expression)
 
-'''vb
+```vb
 
 PRINT "Hello" + " " + "there!"
 
-'''
+```
 
 
-'''text
+```text
 
 
 Hello there!
 
-'''
+```
 
 
 

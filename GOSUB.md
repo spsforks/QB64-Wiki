@@ -21,7 +21,7 @@ PageQBasic
 
 *Example:* Simple usage of GOSUB
 
-'''vb
+```vb
 
 PRINT "1. It goes to the subroutine."
 GOSUB subroutine
@@ -33,17 +33,17 @@ PRINT "2. It is at the subroutine."
 RETURN
 
 
-'''
+```
 <sub>Code by Cyperium</sub>
 
-'''text
+```text
 
 
 1. It goes to the subroutine.
 2. It is at the subroutine.
 3. And it returns.
 
-'''
+```
 
 
 
@@ -51,7 +51,7 @@ RETURN
 
 *Example:* What happens if two GOSUB executes then two RETURN's?
 
-'''vb
+```vb
 
 start: 
  
@@ -69,10 +69,10 @@ there:
 PRINT "It went there." 
 RETURN 
 
-'''
+```
 <sub>Code by Cyperium</sub>
 
-'''text
+```text
 
 
 It went here.
@@ -80,7 +80,7 @@ It went there.
 It returned to IF a = 2
 It returned to IF a = 1
 
-'''
+```
 
 *Explanation:* When a = 1 it uses GOSUB to go to "here:", then it uses GOTO to go back to "start:". a is increased by one so when a = 2 it uses GOSUB to go to "there:", and uses RETURN to go the last GOSUB (which is on the IF a = 2 line), it then encounters another RETURN which makes it return to the first GOSUB call we used on the IF a = 1 line.
 

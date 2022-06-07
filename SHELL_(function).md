@@ -19,7 +19,7 @@ The **SHELL** function displays the console and returns the [INTEGER](INTEGER) c
 
 *Example:* Shelling to another QB64 program will return the exit code when one is set in the  program that is run.
 
-'''text
+```text
 
 **'DesktopSize.BAS ** Compile in Windows with QB64 first
 
@@ -41,13 +41,13 @@ FUNCTION trimstr$ (whatever)
 trimstr = LTRIM$(RTRIM$(STR$(whatever)))
 END FUNCTION 
 
-'''
+```
 
 >  *Explanation:* To set a program exit code use an [INTEGER](INTEGER) parameter value after [END](END) or [SYSTEM](SYSTEM) in the called program. 
 
 >  After compiling *DesktopSize.EXE* run the following code in the QB64 IDE. After 1st program is done 3 will appear on screen:
 
-'''vb
+```vb
 
 returncode% = SHELL("DesktopSize") 'replace call with name of any QB64 program EXE
 
@@ -55,12 +55,12 @@ PRINT returncode% 'prints code sent by called program after it is closed
 
 END 
 
-'''
+```
 
-'''text
+```text
 
 3 
-'''
+```
 
 
 

@@ -4,7 +4,7 @@ The following program can be used to view Icon or Cursor images and save them as
 
 <sub>Code by Ted Weissgerber</sub>
 
-'''text
+```text
 
 
 '********************************* IconType.BI INCLUDE FILE ********************************
@@ -41,10 +41,10 @@ TYPE ICONHEADER          'Bitmap type header found using entry DataOffset + 1
 END TYPE '40 byte
 
 
-'''
+```
 
 
-'''vb
+```vb
 
 REM $INCLUDE: 'IconType.BI' 
 DEFINT A-Z
@@ -269,9 +269,9 @@ END SUB
 REM $INCLUDE: '32BitSUB.BM'
 
 
-'''
+```
 
-'''text
+```text
 
 
 
@@ -356,7 +356,7 @@ SUB ThirtyTwoBit (x1%, y1%, x2%, y2%, image&, Filename$)
   CLOSE #f
 END SUB 
 
-'''
+```
 
 <sub>Adapted from code by Bob Seguin</sub>
 <center>**If full code is not displayed, refresh browser!**</center>
@@ -373,7 +373,7 @@ END SUB
 
 The following program uses a conversion function with the [TYPE](TYPE) definitions inside of the function to eliminate an [$INCLUDE]($INCLUDE) library file.
 
-'''vb
+```vb
 
 SCREEN _NEWIMAGE(640, 480, 256)
 _TITLE "Icon Converter"
@@ -472,7 +472,7 @@ CLOSE rf, wf
 Icon2BMP = ICON.Count 'function returns number of images available in icon file
 END FUNCTION 
 
-'''
+```
 <sub>Code by Ted Weissgerber</sub>
 >  *Note:* The index selected or the highest numbered icon image less than the index value is the image displayed.
 

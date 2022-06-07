@@ -33,7 +33,7 @@ A **SUB** procedure is a procedure within a program that can calculate and retur
 
 *Example 1:* Text [PRINT](PRINT) screen centering using [PEEK](PEEK) to find the SCREEN mode width. Call and SUB procedure code:
 
-'''vb
+```vb
 
 DEFINT A-Z
 SCREEN 13
@@ -48,14 +48,14 @@ Tcol = Middle - (LEN(Text$) \ 2)
 COLOR Tclr: LOCATE Trow, Tcol: PRINT Text$; ' end semicolon prevents screen roll
 END SUB 
 
-'''
+```
 
 > *Explanation:* The procedure centers text printed to the screen. The parameters are the text color, row and the text itself as a string or string variable. The maximum width of the screen mode in characters is found and divided in half to find the center point. The text string's length is also divided in half and subtracted from the screen's center position. The procedure will also work when the [WIDTH](WIDTH) statement has been used. When adding variables to Text$ use the + concatenation operator. Not semicolons!
 
 
 *Example 2:* SUB and [FUNCTION](FUNCTION) procedures always return to the place they were called in the main or other sub-procedures:
 
-'''vb
+```vb
 
 a = 10
 Add1 a
@@ -74,15 +74,15 @@ m = m + 2
 PRINT "exit 2"
 END SUB
 
-'''
+```
 
-'''text
+```text
 
 exit 2
 exit 1
  13
 
-'''
+```
 
 >  *Note:* Parameter **a** is used to call the sub-procedures even though parameters **n** and **m** are used internally.
 

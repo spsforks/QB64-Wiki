@@ -36,7 +36,7 @@ The [_PRINTSTRING](_PRINTSTRING) statement prints text [STRING](STRING) using gr
 
 *Example 1:* Printing those unprintable [ASCII](ASCII) control characters is no longer a problem!
 
-'''vb
+```vb
 
 SCREEN _NEWIMAGE(800, 600, 256)
 
@@ -50,20 +50,20 @@ _PRINTSTRING (0, 16), chrstr$
 
 END 
 
-'''
+```
 
-'''text
+```text
 
 
   ☺ ☻ ♥ ♦ ♣ ♠ • ◘ ○ ◙ ♂ ♀ ♪ ♫ ☼ ► ◄ ↕ ‼ ¶ § ▬ ↨ ↑ ↓ → ← ∟ ↔ ▲ ▼
 
-'''
+```
 
 
 
 *Example 2:* Making any **QB64 program window** larger using a SUB that easily converts PRINT to [_PRINTSTRING](_PRINTSTRING). 
 
-'''vb
+```vb
 
 Scr13& = _NEWIMAGE(320, 200, 13)  'this is the old SCREEN 13 image page to set the image
 Big13& = _NEWIMAGE(640, 480, 256) 'use 4 X 3 aspect ratio that QBasic used when full screen
@@ -89,7 +89,7 @@ col% = (POS(0) - 1) * _PRINTWIDTH("W") 'finds current page text or font column w
 _PRINTSTRING (col%, row%), Text$
 END SUB 
 
-'''
+```
 <sub>Code by Ted Weissgerber</sub>
 >  *Explanation:* The procedure above creates a larger version of a SCREEN 13 window by stretching it with [_PUTIMAGE](_PUTIMAGE). It cannot stretch PRINTed text so [_PRINTSTRING](_PRINTSTRING) must be used instead. [LOCATE](LOCATE) sets the PRINT cursor position for [CSRLIN](CSRLIN) and [POS](POS)(0) to read. The SUB then converts the coordinates to graphical ones. Then **change** [PRINT](PRINT) to PRINTS using the IDE **Search Menu**.
 <center>[https://www.dropbox.com/s/tcdik1ajegbeiz4/HOWIE.zip?dl=0 Download of Example 2 Bitmap images]</center>
@@ -97,7 +97,7 @@ END SUB
 
 *Example 3:* Rotating a text string around a graphic object.
 
-'''vb
+```vb
 
 SCREEN 12 
 DIM row AS INTEGER, cnt AS INTEGER, cstart AS SINGLE, cend AS SINGLE
@@ -122,7 +122,7 @@ LOOP UNTIL INKEY$ = CHR$(27) 'escape key exit
 COLOR 15 
 END 
 
-'''
+```
 <sub>Adapted from code by Unseen Machine</sub>
 
 

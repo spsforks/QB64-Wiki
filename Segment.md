@@ -10,7 +10,7 @@ The value in a Segment register is multiplied by 16 or shifted one hexadecimal b
 
 *Example:*
 
-'''text
+```text
 
 
            Segment Address =   F0000 ← shifted left
@@ -18,7 +18,7 @@ The value in a Segment register is multiplied by 16 or shifted one hexadecimal b
                               ------
                                FFACE  or  1,047,246 
 
-'''
+```
 
 
 The Offset value is the position of a value after the segment address. Many pairs can be used to refer to the same memory position.

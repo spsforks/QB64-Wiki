@@ -18,21 +18,21 @@ The [LBOUND](LBOUND) function returns the smallest valid index (lower bound) of 
 ## Example(s)
 
 
-'''vb
+```vb
 DIM myArray(5) AS INTEGER
 DIM myOtherArray(1 to 2, 3 to 4) AS INTEGER
 
 PRINT LBOUND(myArray)
 PRINT LBOUND(myOtherArray, 2)
 
-'''
+```
 
-'''text
+```text
 
  0
  3
 
-'''
+```
 
 
 

@@ -22,7 +22,7 @@ The [_FULLSCREEN](_FULLSCREEN) function returns the present full screen mode set
 
 *Example:* Shows how fonts and the _FULLSCREEN mode can resize a program window.
 
-'''vb
+```vb
 
 CLS
 fontpath$ = ENVIRON$("SYSTEMROOT") + "\fonts\lucon.ttf" 'Find Windows Folder Path.
@@ -98,7 +98,7 @@ IF currentf& <> f& AND f& <> defaultf& THEN _FREEFONT f&
 f& = currentf&
 RETURN 
 
-'''
+```
 
 *Explanation:* The **_FULLSCREEN** function can avoid screen display and monitor problems when used to monitor the success of the full screen operation. If a full screen mode is **not** achieved (the function will return 0), **call [_FULLSCREEN](_FULLSCREEN) OFF**
 

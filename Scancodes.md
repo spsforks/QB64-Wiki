@@ -22,7 +22,7 @@
 * **Linux with foreign keyboards: InlineCode[SHELL](SHELL) [_HIDE](_HIDE) "setxkbmap us"InlineCodeEnd can be used to setup a keyboard to read **US scan codes**.
 * To clear the keyboard buffer, use the [INKEY$](INKEY$) function before or after the [INP](INP) read to avoid buffer overflows and beeps.
 
-'''text
+```text
 
 '                            **Extended Keyboard Press Scancodes**
 '
@@ -41,7 +41,7 @@
 '
 '   QB64 codes only! **Release codes = Press code + 128. Pause/Break may lock code returns.**
 
-'''
+```
  <sub>NOTE: The above commented table can be copied and pasted directly into the QB64 IDE</sub>
 
 
@@ -54,7 +54,7 @@ PageQBasic
 *Example 1:* Displays the scan codes for most any keyboard press or release by the user.
 
 
-'''vb
+```vb
 
 DO
     scancode% = INP(&H60)
@@ -64,7 +64,7 @@ DO
     a$ = INKEY$           ' prevent keyboard beeps
 LOOP UNTIL scancode% = 1  ' [Esc] key exit
 
-'''
+```
 
 *Explanation:* Green is a press code and red is the release code. Num Lock mode may display the Left Shift key press(42) and release(170) codes, plus code 224, but the designated codes are returned also. **QB64** does not return those extra codes.
 
@@ -72,7 +72,7 @@ LOOP UNTIL scancode% = 1  ' [Esc] key exit
 *Example 2:* Unlike QBasic, INP(&H60) in **QB64** reads from a queue so you never miss a key press.
 
 
-'''vb
+```vb
  
 DEFINT A-Z
 DIM SHARED KeyPress(127)
@@ -100,7 +100,7 @@ LOOP UNTIL i = 1
 DEF SEG
 END 
 
-'''
+```
 <sub>Code by Galleon</sub>
 *Explanation:* INP does not clear the keyboard buffer so it may beep. To eliminate the problem use INKEY$ before or after reading with INP(96). INP will still return the press code. The array can hold more than one code return. QBasic users may note that the arrow pad and Home pad keypresses also alternate codes 42 and 170 due to Number Lock setting. That will not happen in **QB64**.
 
@@ -108,7 +108,7 @@ END
 *Example 3:* A simple MULTIKEY demo using the SC Array to hold multiple key presses for diagonal arrow key moves.
 
 
-'''vb
+```vb
 
 DEFINT A-Z
 DIM BG(300), Box(300), SC(127) ' BG holds background images. Box holds the Box image.
@@ -147,7 +147,7 @@ DO  'main loop
     END IF
 LOOP UNTIL SC(1) = 1 ' main loop until [Esc] key (scan code 1) is pressed
 
-'''
+```
 <sub>Code by Ted Weissgerber</sub>
 *Explanation:* The SC array is used to hold all of the scancode status index values as 1 when pressed and 0 if released(see the ELSE statement). If arrow key(s) are pressed then each is moved to new positions on the screen. The coordinates are also checked to keep the box area's [GET (graphics statement)](GET (graphics statement)) and [PUT (graphics statement)](PUT (graphics statement)) statements on the screen to avoid an error. The previous background is PUT using the previous coordinates PX and PY. Then new position background box area is saved with GET before the box is placed with PUT. The box image is 16 X 16 and could use another image.
 

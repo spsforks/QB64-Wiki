@@ -35,11 +35,11 @@ PageLegacySupport
 
 *Example:* CHAIN looks for same file type extension as program module (BAS or EXE).
 
-'''vb
+```vb
 
  CHAIN "Level1" 
 
-'''
+```
 
 *Explanation:* The file referred to is "Level1.BAS" if the program module using the call is a BAS file. If the program was compiled, it would look for "Level1.EXE".
 

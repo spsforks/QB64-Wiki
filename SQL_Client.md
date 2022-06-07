@@ -9,7 +9,7 @@
 
 >  *mysql_helper.h*
 
-'''text
+```text
 
 
   void *offset_to_offset(void* offset){
@@ -19,11 +19,11 @@
    return *offset;
    }
 
-'''
+```
 
 <sub>Code by Galleon</sub>
 
-'''vb
+```vb
 
 DECLARE CUSTOMTYPE LIBRARY "mysql_helper"
     FUNCTION offset_to_string$ ALIAS offset_to_offset (BYVAL offset AS _OFFSET)
@@ -87,12 +87,12 @@ mysql_close con
 
 END 
 
-'''
+```
 
 
 >  Here's some code which uses 'mysql_fetch_fields': 
 
-'''vb
+```vb
 
 DECLARE CUSTOMTYPE LIBRARY "mysql_helper"
     FUNCTION offset_to_string$ ALIAS offset_to_offset (BYVAL offset AS _OFFSET)
@@ -194,7 +194,7 @@ mysql_free_result result
 mysql_close con
 END 
 
-'''
+```
 
 ## SQL Demo
 
@@ -209,7 +209,7 @@ This version has much the same functionality with a few bug fixes, better exampl
 
 
 
-'''vb
+```vb
 
 'the following section is used to help you get started with the examples
 WIDTH 2000, 25
@@ -534,7 +534,7 @@ DO
 LOOP 'infinite loop
 END SUB 
 
-'''
+```
 
 ## Linux Install:
 

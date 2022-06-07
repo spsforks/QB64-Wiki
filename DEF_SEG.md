@@ -24,7 +24,7 @@ PageLegacySupport
 
 *Example:* In a Qbasic(ONLY) file delete, **SEG** forces the parameter to be passed as a far pointer.
 
-'''vb
+```vb
 
 CONST file = "trashme.tmp"  'example temporary file name to delete
 DEFINT A-Z
@@ -64,7 +64,7 @@ END IF
 SHELL "dir " + file
 END 
 
-'''
+```
 <sub>Code by Michael Calkins as Public Domain(2011)</sub>
 -->
 

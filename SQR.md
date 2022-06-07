@@ -13,64 +13,64 @@ The **SQR** function returns the square root of a numerical value.
 
 *Example 1:* Finding the hypotenuse of a right triangle:
 
-'''vb
+```vb
 
  A% = 3: B% = 4
  PRINT "hypotenuse! ="; SQR((A% ^ 2) + (B% ^ 2)) 
 
-'''
+```
 
-'''text
+```text
 
 
  hypotenuse = 5
 
-'''
+```
 
 
 
 *Example 2:* Finding the Cube root of a number. 
 
-'''vb
+```vb
 
  number = 8
  cuberoot = number ^ (1/3)
  PRINT cuberoot 
 
-'''
+```
 
-'''text
+```text
 
 
  2
 
-'''
+```
 
 
 
 *Example 3:* Negative roots return fractional values of one.
 
-'''vb
+```vb
 
  number = 8
  negroot = number ^ -2
  PRINT negroot 
 
-'''
+```
 
-'''text
+```text
 
 
  .015625
 
-'''
+```
 
 > *Explanation:* A negative root means that the exponent value is actually inverted to a fraction of 1. So x ^ -2 actually means the result will be: 1 / (x ^ 2).
 
 
 *Example 4:* Fast Prime number checker limits the numbers checked to the square root (half way).
 
-'''vb
+```vb
 
 DEFLNG P
 DO
@@ -88,15 +88,15 @@ IF PR = 1 THEN PRIME = 0  'MOD returns true but 1 is not a prime by definition
 IF PRIME THEN PRINT "PRIME! How'd you find me? " ELSE PRINT "Not a prime, you lose!"
 LOOP UNTIL PR = 0 
 
-'''
+```
 
-'''text
+```text
 
 
 Enter any number to check up to 2 million (Enter quits): 12379
 PRIME! How'd you find me?
 
-'''
+```
 
 <center>*Note:* Prime numbers cannot be evenly divided by any other number except one.</center>
 

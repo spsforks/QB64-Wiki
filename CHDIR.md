@@ -18,19 +18,19 @@ The [CHDIR](CHDIR) statement changes the program's location from one working dir
 
 *Example 1:* The following code is Windows-specific:
 
-'''vb
+```vb
 
 CHDIR "C:\"      'change to the root drive C (absolute path)
 CHDIR "DOCUME~1" 'change to "C:\Documents and Settings" from root drive (relative path) 
 CHDIR "..\"      'change back to previous folder one up 
 
-'''
+```
 > *Details:* **QB64** can use long or short (8.3 notation) file and path names.
 
 
 *Example 2:* Using the Windows API to find the current program's name and root path. The PATH$ is a shared function value.
 
-'''vb
+```vb
 
 _TITLE "My program"
 PRINT TITLE$
@@ -58,7 +58,7 @@ ELSE TITLE$ = "": PATH$ = ""
 END IF
 END FUNCTION 
 
-'''
+```
 >  **Note:** The program's [_TITLE](_TITLE) name may be different from the actual program module's file name returned by Windows.
 
 

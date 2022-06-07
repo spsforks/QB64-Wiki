@@ -18,7 +18,7 @@ The [_WHEEL](_WHEEL) function returns the relative position of a specified wheel
 
 *Example 1:* Reading multiple controller device buttons, axis and wheels.
 
-'''vb
+```vb
 
 FOR i = 1 TO _DEVICES
   PRINT STR$(i) + ") " + _DEVICE$(i) + " Buttons:"; _LASTBUTTON(i); ",Axis:"; _LASTAXIS(i); ",Wheel:"; _LASTWHEEL(i)
@@ -43,13 +43,13 @@ LOOP UNTIL INKEY$ = CHR$(27) 'escape key exit
 
 END 
 
-'''
+```
 >  *Note:* When there is no device control to read, a [FOR...NEXT](FOR...NEXT) n = 1 TO 0 loop will not run thus avoiding a control function read error.
 
 
 *Example 2:* Why does a mouse have 3 wheels? Relative x and y movements can be read using the first 2 _WHEEL reads.
 
-'''vb
+```vb
 
 ignore = _MOUSEMOVEMENTX 'dummy call to put mouse into relative movement mode
 
@@ -62,7 +62,7 @@ DO: _LIMIT 30  'main loop
   LOOP 
 LOOP UNTIL INKEY$ = CHR$(27) 
 
-'''
+```
 >  *Explanation:* Referencing the [_MOUSEMOVEMENTX](_MOUSEMOVEMENTX) function hides the mouse and sets the mouse to a relative movement mode which can be read by [_WHEEL](_WHEEL). [_DEVICEINPUT](_DEVICEINPUT)(2) returns -1 (true) only when the mouse is moved, scrolled or clicked.
 
 

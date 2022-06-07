@@ -29,7 +29,7 @@ To create your own libraries of your favorite Basic subs and functions, just cop
 
 The following C++ variable types should be used when converting sub-procedure parameters from Libraries to QB64 variable types.
 
-'''text
+```text
 
                             **QB64 Library Conversion Types**
 
@@ -46,12 +46,12 @@ The following C++ variable types should be used when converting sub-procedure pa
 [Unicode](Unicode)     Wide character([Unicode](Unicode)) 	  2 or 4   1 wide character
 [_OFFSET](_OFFSET)       void pointer(void *)           ANY     Pointer or offset
 
-'''
+```
 
 
 ***** The values of the columns Size and Range depend on the system the program is compiled. The values shown above are those found on most 32-bit systems, but for other systems, the general specification is that int has the natural size suggested by the system architecture (one "word") and the four integer types char, short, int and long must each be at least as large as the numerical type preceding it, with char being always one byte in size. The same applies to the floating point types float, double and long double, where each one must provide at least as much precision as the one that preceded it.
 
-'''text
+```text
 
 
 **                             Windows API Data Structures**
@@ -67,7 +67,7 @@ DWORD             4 bytes                      32                       [LONG](L
 QWORD             8 bytes                      64                       [_INTEGER64](_INTEGER64)
 Ptr or LP         Short or Long Pointer name   ANY                      [_OFFSET](_OFFSET)
 
-'''
+```
 
 
 

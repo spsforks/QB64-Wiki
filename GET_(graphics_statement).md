@@ -42,7 +42,7 @@ PageLegacySupport
 
 *Example 1:* How to use GET and PUT to move a sprite with the arrow keys.
 
-'''vb
+```vb
 
  DEFINT A-Z
  DIM BG(300), Box(300), SC(127) ' BG holds background images. Box holds the Box image.
@@ -81,13 +81,13 @@ PageLegacySupport
   END IF
 LOOP UNTIL SC(1) = 1 ' main loop until [Esc] key (scan code 1) is pressed 
 
-'''
+```
 
 
 *Example 2:* How to GET graphics from an image other than the present screen using [_SOURCE](_SOURCE) and [_DEST](_DEST)ination.
 
 
-'''vb
+```vb
 
 DIM img(20 * 20 + 4) AS INTEGER  'create img% array to hold 20 by 20 image data 
 a& = _NEWIMAGE(800, 600, 13)     'larger surface a& emulates screen 13 colors & resolution
@@ -104,7 +104,7 @@ GET (690, 290)-(710, 310), img() 'GET a square screen area similar to a LINE Box
 _DEST 0                          'set destination as the program screen
 PUT (100, 100), img()            'PUT the Top Left Corner of box area to pixel 100, 100
 
-'''
+```
 >  *Notes:* A [_LOADIMAGE](_LOADIMAGE) handle could also be used as a [_SOURCE](_SOURCE) to GET a portion or all of an image file.
 
 

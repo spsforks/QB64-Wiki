@@ -8,7 +8,7 @@ It's a two-part library that can be plugged into any program (using [$INCLUDE]($
 
 *Example BAS Code:* SelectResolution.BAS Demo example should be compiled by QB64 only.
 
-'''vb
+```vb
 
 
 DEFINT A-Z
@@ -52,7 +52,7 @@ i$ = INPUT$(1)
 '$INCLUDE: 'selectResolution.bm'
 
 
-'''
+```
 
 <center>[$INCLUDE]($INCLUDE) the .bi file on top of your program and the .bm file at the bottom, after your own SUBs.</center>
 
@@ -62,7 +62,7 @@ i$ = INPUT$(1)
 
 *SelectResolution.bi Code:*
 
-'''text
+```text
 
 
 
@@ -122,7 +122,7 @@ DATA 2048,2048,7
 DATA ,,
 
 
-'''
+```
 
 
 
@@ -131,7 +131,7 @@ DATA ,,
 
 *SelectResolution.bm Code:*
 
-'''text
+```text
 
 
 '####################################################################################################################
@@ -283,7 +283,7 @@ SUB selectResolution (row%, width%, height%)
 END SUB
 
 
-'''
+```
 
 
 

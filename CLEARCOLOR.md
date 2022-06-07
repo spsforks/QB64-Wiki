@@ -30,7 +30,7 @@ The [_CLEARCOLOR](_CLEARCOLOR) statement sets a specific color to be treated as 
 
 *Example 1:* Using _CLEARCOLOR to "mask" the background color of an image.
 
-'''vb
+```vb
 
 SCREEN 13
 img& = _LOADIMAGE("qb64_trans.png")
@@ -42,12 +42,12 @@ _PUTIMAGE , img&, 0               'place image without white background
 PRINT _CLEARCOLOR(img&)           'displays closest clear color attribute
 END 
 
-'''
+```
 
 
 *Example 2:* Using a _CLEARCOLOR transparency with images created on a [_NEWIMAGE](_NEWIMAGE) page. Does not require an image file.
 
-'''vb
+```vb
 SCREEN _NEWIMAGE(512, 384, 32) ' screen uses handle value
 CIRCLE(50, 50), 50, _RGB(128, 0, 0) ' create a red ball image
 PAINT(50, 50), _RGB(255, 0, 0), _RGB(128, 0, 0)
@@ -60,12 +60,12 @@ DO
  SLEEP 1 ' one second delay
 LOOP UNTIL INKEY$ <> "" 
 
-'''
+```
 
 
 *Example 3:* Fading an image with a _CLEARCOLOR background using a new page image to prevent [_SETALPHA](_SETALPHA) changes.
 
-'''vb
+```vb
 
 mainscreen = _NEWIMAGE(640, 480, 32) ' Main Screen (viewable)
 SCREEN mainscreen
@@ -95,7 +95,7 @@ DO
 LOOP UNTIL a& = 0
 END
 
-'''
+```
 > *Note:* If the _CLEARCOLOR image background was not put onto a separate page, [_SETALPHA](_SETALPHA) would display it also.
 
 

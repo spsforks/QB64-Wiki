@@ -28,7 +28,7 @@ The [_MEMGET](_MEMGET) function returns a value from a specific memory block nam
 
 *Example:* [DEF SEG](DEF SEG) and [VARPTR](VARPTR) are no longer necessary to do things in memory just like [POKE](POKE) and [PEEK](PEEK) do.
 
-'''vb
+```vb
 
 DIM o AS _MEM
 o = _MEM(d&) 'OLD... o% = VARPTR(d&)
@@ -38,7 +38,7 @@ PRINT v     'prints 3
 PRINT d&    'prints 768 because the 2nd byte of d& has been set to 3 or 3 * 256
 _MEMFREE o
 
-'''
+```
 > *Explanation:* The memory block and OFFSET are given by [_MEMPUT](_MEMPUT) and the _MEMGET function, with the designated type.
 
 

@@ -22,19 +22,19 @@ The **PSET** grahics [SCREEN (statement)](SCREEN (statement)) statement sets a p
 
 *Example:* Using PSET to locate and color a [DRAW](DRAW) statement.
 
-'''vb
+```vb
 
 SCREEN 12
 PSET(100, 100), 12
 DRAW "U20 R20 D20 L20" 
 
-'''
+```
 > *Screen results:* A drawn box that is bright red.
 
 
 *Example 2:* Magnifying a box portion of a Mandelbrot image with PSET
 
-'''vb
+```vb
 
 DEFSTR A-Z
 DIM red(15) AS INTEGER, green(15) AS INTEGER, blue(15) AS INTEGER
@@ -151,7 +151,7 @@ SUB rectangle (x1 AS INTEGER, y1 AS INTEGER, x2 AS INTEGER, y2 AS INTEGER)
   NEXT
 END SUB
 
-''' <sub>Code by Codeguy</sub>
+``` <sub>Code by Codeguy</sub>
 >  *Notes:* Left click, to zoom in on the rectangle. Right click, to zoom out. Up arrow makes the rectangle bigger and down arrow makes the rectangle smaller. 
 
 

@@ -20,20 +20,20 @@ The **STEP** keyword is used in [FOR...NEXT](FOR...NEXT) loops to skip through t
 
 *Example:* Stepping down 2 in a FOR counter loop.
 
-'''vb
+```vb
 
 FOR...NEXT i = 10 TO 0 STEP -2
   PRINT i;
 NEXT 
 
-'''
+```
 
-'''text
+```text
 
  
 10 8 6 4 2 0 
 
-'''
+```
 
 > *Note:* The value of i = -2 after the loop is done.
 
@@ -49,13 +49,13 @@ NEXT
 
 *Graphics Example:* Using STEP coordinates to PAINT a circle's interior.
 
-'''vb
+```vb
 
 SCREEN 12
 CIRCLE (100, 100), 50, 12
 PAINT STEP(0, 0), 13, 12 
 
-'''
+```
 > *Explanation:* PAINT uses the CIRCLE's center coordinate position to paint the interior.
 
 

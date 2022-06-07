@@ -23,7 +23,7 @@ The [_WINDOWHANDLE](_WINDOWHANDLE) function returns the window handle assigned t
 
 *Example:* Showing the system-default message box in Windows.
 
-'''vb
+```vb
 
 'Message Box Constant values as defined by Microsoft (MBType)
 CONST MB_OK& = 0                'OK button only
@@ -92,7 +92,7 @@ Focus& = MB_SetFocus&
 MsgBox& = MessageBoxA&(_WINDOWHANDLE, Message$, Title$, BoxType& + Icon& + Mode& + Focus&) 'focus on button
 END FUNCTION 
 
-'''
+```
 > *Explanation:* Notice how the call to the external dynamic library function MessageBoxA& passes _WINDOWHANDLE to the API and how the message box shown is created as a child of your program's window, not allowing the main window to be manipulated while the message box is open.
 
 ## See Also

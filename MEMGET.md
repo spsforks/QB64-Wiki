@@ -24,7 +24,7 @@ The [_MEMGET](_MEMGET) statement reads a portion of a memory block at an OFFSET 
 PageExamples]]
 *Example:* Shows how to read the PSET color values from a program's [SCREEN](SCREEN) memory to an array.
 
-'''vb
+```vb
 
 PSET (0, 0), 123
 PSET (1, 0), 222 'create screen image
@@ -42,7 +42,7 @@ PRINT screen_array(0, 0) 'print 123
 PRINT screen_array(1, 0) 'print 222 
 END 
 
-'''
+```
 
 
 ## See Also

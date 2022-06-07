@@ -12,7 +12,7 @@
 ## Bitmap Header
 
 
-'''text
+```text
 
 
 'Bitmap.BI can be included at start of program
@@ -39,10 +39,10 @@ TYPE BMPHeader          'BMP header also used in Icon and Cursor files(.ICO and 
    SigColors AS LONG       ' Significant Colors(normally 0)         4
 END TYPE                   '                 Total Header bytes =  40 
 
-'''
+```
 
 
-'''vb
+```vb
 
 '$INCLUDE: 'Bitmap.BI'  'use only when including a BI file 
  
@@ -59,24 +59,24 @@ PRINT BMP.PWidth; "X"; BMP.PDepth
 PRINT "BPP ="; BMP.BPP 
 CLOSE #1 
 
-'''
+```
 > *Explanation:* Use two [GET](GET)s to read all of the header information from the start of the bitmap file opened FOR [BINARY](BINARY). It reads all 54 bytes as [STRING](STRING), [INTEGER](INTEGER) and [LONG](LONG) type DOT variable values. [TYPE](TYPE) DOT variables do not require type suffixes!
 
 
 *Snippet:* Use the DOT variable name values like this [GET (graphics statement)](GET (graphics statement)) after you load the bitmap image to the screen:
 
-'''text
+```text
 
 
 GET (0, 0)-(BMP.PWidth - 1, BMP.PDepth - 1), Image(48) 'index after 16 * 3 RGB palette colors(0 to 47) 
 
-'''
+```
 
 The bitmap image is now stored in an [Arrays](Arrays) to [BSAVE](BSAVE) to a file. The RGB color information follows the file header as [ASCII](ASCII) character values read using [ASC](ASC). The color values could be indexed at the start of the Array with the image being offset to: index = NumberOfColors * 3. As determined by the [SCREEN (statement)](SCREEN (statement)) mode used. In SCREEN 13(256 colors) the index would be 768.
 
 
 
-'''text
+```text
 
                                **BITMAP COMPRESSION METHODS**
 
@@ -91,7 +91,7 @@ The bitmap image is now stored in an [Arrays](Arrays) to [BSAVE](BSAVE) to a fil
       * RLE stands for *Run Length Encoding* which counts the number of consecutive pixels 
         that are of the same color instead of assigning each pixel color separately. 
 
-'''
+```
 
 
 <p style="text-align: center">([#toc](#toc))</p>
@@ -99,7 +99,7 @@ The bitmap image is now stored in an [Arrays](Arrays) to [BSAVE](BSAVE) to a fil
 ## Image Data
 
 
-'''text
+```text
 
                                      **Windows/OS2 Bitmaps**
 
@@ -124,7 +124,7 @@ The bitmap image is now stored in an [Arrays](Arrays) to [BSAVE](BSAVE) to a fil
                            │ bytes │ │ bytes │ │ bytes │ │ bytes │
                            └───────┘ └───────┘ └───────┘ └───────┘
 
-'''
+```
  
 <center>**Bits Per Pixel (BPP)**</center>
 BPP returns **1 bit**(Black and white), **4 bit**(16 colors), **8 bit**(256 colors) or **24 bit**(16 million colors) for each pixel. In QBasic 24 bit can only be in greyscale, but QB64 can display them as True Color. 24 bit is also often referred to as 32 bit, but each pixel uses three bytes of information for the Red, Green and Blue color intensity settings. Intensity settings are read as [ASCII](ASCII) characters using [ASC](ASC).
@@ -138,7 +138,7 @@ BPP returns **1 bit**(Black and white), **4 bit**(16 colors), **8 bit**(256 colo
 
 >  Why BGR instead of RGB? Because the [LONG](LONG) [_RGBA32](_RGBA32) value with 0 [_ALPHA](_ALPHA) is written to a file as 4 [MKL$](MKL$) [ASCII](ASCII) characters.
 
-'''vb
+```vb
 
 SCREEN 13 '8 bit, 256 color screen mode
 Q$ = CHR$(34)
@@ -159,7 +159,7 @@ _PRINTSTRING (40, 40), "BGR0 = " + Q$ + MKL$(rgba~&) + Q$ 'rightmost always CHR$
 
 END 
 
-'''
+```
 >  *Note:* 16 colors at 4 bytes each = 64 bytes. 256 colors at 4 bytes each = 1024 bytes in the palette data with [CHR$](CHR$)(0) spacers.
 
 <center>**Warning! Use [_UNSIGNED](_UNSIGNED) [LONG](LONG) when comparing [_RGB](_RGB) or [_RGB32](_RGB32) full [_ALPHA](_ALPHA) values with [POINT](POINT) values!**</center>
@@ -183,7 +183,7 @@ END
 ## One Bit:##  
 Since the pixel value is either on(white) or off(black), eight pixels can be stored in one byte of information. The total byte value determines which pixels are on or off. The **MSB**(highest)value is to the left and each pixel's on value decreases by an exponent of two down to a value of 1 for the **LSB**. However a minimum of 4 bytes of data must be used for each row of data, so a padder is used for other widths. The padder can be determined before the data is read using the following routine:
 
-'''vb
+```vb
  
 SUB OneBit          'Any Screen as Black and White        
 BitsOver = BMP.PWidth MOD 32  'check bitmap width for 4 byte or odd width
@@ -211,7 +211,7 @@ x = 0
 LOOP UNTIL y = -1
 END SUB * *   
 
-'''
+```
 <sub>Code by Bob Seguin</sub>
 >  One bit pixels are also used to create [AND](AND) masks that can blend with a background for icons or cursors which are another form of bitmap. In fact, icons and cursors use a partial (40 byte) bitmap header! They just don't have the first 14 bytes of information. [PSET](PSET) can also use the B&W color values [_RGB](_RGB)(255, 255, 255) and [_RGB](_RGB)(0, 0, 0) when working in 4, 8 or 32 bit screen modes.
 
@@ -221,7 +221,7 @@ END SUB * *
 Pixels can use 16 colors in QBasic legacy [SCREEN (statement)](SCREEN (statement)) modes 7, 8, 9, 12 and 13. After the bitmap header, the color **palette** is read to set the color intensities as explained above. Then the individual pixel attributes are read from the **image data**. Each **pixel** uses half a byte of color **attribute** information. To determine the pixel's attribute, each "nibble" is read by dividing the byte's [ASCII](ASCII) value by 16 for the first pixel's value while the second pixel's value is found using [AND](AND) 15 as shown below: 
 
 
-'''vb
+```vb
 
 SUB FourBIT  ' 4 bit(16 color) Screens 7, 8, 9, 12 or 13 
 IF BMP.PWidth MOD 8 THEN ZeroPAD$ = SPACE$((8 - BMP.PWidth MOD 8) \ 2)
@@ -255,7 +255,7 @@ DO
 LOOP UNTIL y = -1
 END SUB 
 
-'''
+```
 <sub>Code by Bob Seguin</sub>
 
 
@@ -276,7 +276,7 @@ Each half of a byte of image pixel data stores a color attribute value from 0 to
 Pixels can use 256 colors in QBasic legacy [SCREEN (statement)](SCREEN (statement)) mode 13 or a [_NEWIMAGE](_NEWIMAGE) Screen using 256 or "borrowing" screen 13. **Image data** is immediately after the 1024 bytes of **palette data** BGR intensity settings. Pixel **attributes** are each set by reading the byte's [ASCII](ASCII) value directly.  
 
 
-'''vb
+```vb
 
 SUB EightBIT   ' 8 Bit (256 color) Screen 13 Only  
 IF BMP.PWidth MOD 4 THEN ZeroPAD$ = SPACE$(4 - (BMP.PWidth MOD 4)) 'check for padder
@@ -305,7 +305,7 @@ DO: x = 0
 LOOP UNTIL y = -1
 END SUB 
 
-'''
+```
 <sub>Code by Bob Seguin</sub>
 
 <p style="text-align: center">([#toc](#toc))</p>
@@ -315,7 +315,7 @@ END SUB
 For screen modes created by [_NEWIMAGE](_NEWIMAGE) using 24 or 32 bit bitmaps. **Image data** starts immediately after the bitmap header. There is no palette data! Each BGR **color intensity** is one byte of the [ASCII](ASCII) code value directly. Values range from 0 to 255 using **QB64's** [_RGB](_RGB) or [_RGB32](_RGB32) functions to set the [PSET](PSET) colors as below:
 
 
-'''vb
+```vb
 
 SUB TrueCOLOR            '24/32 BIT               
 IF ((BMP.PWidth * 3) MOD 4) <> 0 THEN        '3 byte pixels
@@ -343,7 +343,7 @@ x = 0                               'place image to left side of screen
 LOOP UNTIL y = -1
 END SUB    
 
-'''<sub>Code by Ted Weissgerber</sub>
+```<sub>Code by Ted Weissgerber</sub>
 >  Why BGR instead of RGB? Because the [_RGB](_RGB) [LONG](LONG) value without [_ALPHA](_ALPHA) is written to the file backwards as [LEFT$](LEFT$)([MKL$](MKL$), 3).
 
 
@@ -361,10 +361,10 @@ END SUB
 
 > In [BINARY](BINARY) files, numerical data can also be converted to [ASCII](ASCII) characters by using [MKI$](MKI$) for [INTEGER](INTEGER)s or [MKL$](MKL$) for [LONG](LONG) values. [GET](GET) can convert [_MK$](_MK$) values to numerical values and [PUT](PUT) can convert numerical values to [STRING](STRING) values. When the [LONG](LONG) [MKL$](MKL$) color values are [PUT](PUT) into bitmaps the Red value is placed as the third [ASCII](ASCII) character and the blue becomes the first character. That not only happens to the BGR palette data, but the BGR 24 bit image color values [PUT](PUT) using the [LEFT$](LEFT$) 3 bytes.
 
-'''text
+```text
 
                  pixelcolor$ = LEFT$(MKL$(_RGB(red%, green%, blue%)), 3) 
-'''
+```
 
 
 > After the header, the RGB **color intensity palette** settings for **16** and **256** color bitmaps are created using [MKL$](MKL$) [ASCII](ASCII) characters set backwards as Blue, Green, Red and [CHR$](CHR$)(0) as a spacer. Four and Eight BPP bitmaps require that format.

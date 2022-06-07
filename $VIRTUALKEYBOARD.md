@@ -16,13 +16,13 @@ DISPLAYTITLE:$VIRTUALKEYBOARD
 ## Example(s)
 
 
-'''vb
+```vb
 
 $VIRTUALKEYBOARD:ON
 
 DO: LOOP UNTIL INKEY$ = CHR$(27) 
 
-'''
+```
 
 
 ## See Also

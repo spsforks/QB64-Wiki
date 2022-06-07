@@ -26,7 +26,7 @@ The [_MEMNEW](_MEMNEW) function allocates new memory and returns a [_MEM](_MEM) 
 
 *Example:* Shows how [SINGLE](SINGLE) numerical values can be passed, but non-fixed [STRING](STRING) lengths cannot get the value.
 
-'''vb
+```vb
 
 DIM m AS _MEM
 DIM f AS STRING * 5
@@ -44,15 +44,15 @@ PRINT "d$ = "; d$; LEN(d$) 'prints empty string
 PRINT "e$ = "; e$; LEN(e$)
 PRINT "f = "; f; LEN(f) 
 
-'''
+```
 
-'''text
+```text
 
 b =  12345.6
 d$ =  0
 e$ = Doggy 5
 f = Doggy 5 
-'''
+```
 
 
 

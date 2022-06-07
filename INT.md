@@ -22,20 +22,20 @@ The [INT](INT) function rounds a numeric value down to the next whole number.
 
 *Example:* Displaying the rounding behavior of [INT](INT).
 
-'''vb
+```vb
 
 PRINT INT(2.5)
 PRINT INT(-2.5)
 
-'''
+```
 
-'''text
+```text
 
 
  2 
 -3
 
-'''
+```
 
 
 

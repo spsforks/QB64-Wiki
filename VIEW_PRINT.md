@@ -24,7 +24,7 @@ The [VIEW PRINT](VIEW PRINT) statement defines the boundaries of a text viewport
 
 *Example:* Demonstrates how text scrolls within the text viewport.
 
-'''vb
+```vb
 ' clear the entire screen and show the boundaries of the new text viewport
 CLS
 PRINT "Start at top..."
@@ -52,7 +52,7 @@ _DELAY 4
 CLS
 PRINT "Back to top left after CLS!" 
 
-'''
+```
 >  *Note:* The bottom row of the VIEW PRINT port can be used only when located or prints end with semicolons.
 
 

@@ -22,7 +22,7 @@ The [_WINDOWHASFOCUS](_WINDOWHASFOCUS) function returns true (-1) if the current
 
 *Example:* Detecting if the current program has focus. Windows and Linux-only.
 
-'''vb
+```vb
 
 DO
     IF _WINDOWHASFOCUS THEN
@@ -38,7 +38,7 @@ DO
     _LIMIT 30
 LOOP
 
-'''
+```
 >  *Explanation:* The program will display *"*** Hi There! ***"* while the window is the topmost and is being manipulated by the user. If another window, the taskbar or the desktop are clicked, the program window loses focus and the message *"(ain't nobody looking...)"* is displayed.
 
 

@@ -24,7 +24,7 @@ RelationalTable
 
 *Example 1:* Alternating between two conditions in a program loop.
 
-'''vb
+```vb
 DO
 switch = NOT switch       'NOT changes value from -1 to 0 and vice-versa
 LOCATE 10, 38
@@ -33,23 +33,23 @@ SLEEP
 k$ = INKEY$
 LOOP UNTIL k$ = CHR$(27) ' escape key quit
 
-'''
+```
 
 
 *Example 2:* Reading a file until it reaches the End Of File.
 
-'''vb
+```vb
 DO WHILE NOT EOF(1) 
   INPUT #1, data1, data2, data3
 LOOP 
 
-'''
+```
 > *Explanation:* [EOF](EOF) will return 0 until a file ends. NOT converts 0 to -1 so that the loop continues to run. When EOF becomes -1, NOT converts it to 0 to end the loop.
 
 
 *Example 3:* So why does **NOT 5 = -6**? Because NOT changes every bit of a value into the opposite:
 
-'''vb
+```vb
 PRINT NOT 5
 PRINT
 ReadBits 5
@@ -62,22 +62,22 @@ NEXT
 PRINT
 END SUB 
 
-'''
+```
 
-'''text
+```text
 
 -6
 
 0000000000000101
 1111111111111010
 
-'''
+```
 
 > *Explanation:* The bit values of an [INTEGER](INTEGER) are 2 [_BYTE](_BYTE)s and each bit is an exponent of 2 from 15 to 0 (16 bits). Thus comparing the numerical value with those exponents using [AND](AND) reveals the bit values as "1" for bits on or "0" for bits off as text. 
 
 >  QB64 can use [&B](&B) to convert the above [_BIT](_BIT) values back to [INTEGER](INTEGER) or [_BYTE](_BYTE) values as shown below:
 
-'''vb
+```vb
 '16 bit INTEGER values from -32768 to 32767
 a% = &B0000000000000101
 PRINT a%
@@ -89,7 +89,7 @@ PRINT a%%
 b%% = &B11111010
 PRINT b%%
 
-'''
+```
 
 
 ## See Also

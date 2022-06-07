@@ -18,7 +18,7 @@ The [_LASTWHEEL](_LASTWHEEL) function returns the number of wheels a specified n
 
 *Example:* Checking for the system's input devices and number of wheels available.
 
-'''vb
+```vb
 
 devices = _DEVICES  'MUST be read in order for other 2 device functions to work!
 PRINT "Number of input devices found ="; devices
@@ -27,16 +27,16 @@ FOR i = 1 TO devices
   IF INSTR(_DEVICE$(i), "[WHEEL]") THEN PRINT "Wheels:"; _LASTWHEEL(i)
 NEXT 
 
-'''
+```
 
-'''text
+```text
 
 Number of input devices found = 2
 [KEYBOARD][BUTTON]
 [MOUSE][BUTTON][AXIS][WHEEL]
 Wheels: 3
 
-'''
+```
 
 >  *Note:* A mouse may have 3 wheels listed when there is only one scroll wheel.
 

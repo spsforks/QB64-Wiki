@@ -20,7 +20,7 @@ The [_LASTAXIS](_LASTAXIS) function returns the number of axis a specified numbe
 
 *Example:* Checking for the system's input devices and number of axis.
 
-'''vb
+```vb
 
 devices = _DEVICES  'MUST be read in order for other 2 device functions to work!
 PRINT "Number of input devices found ="; devices
@@ -29,16 +29,16 @@ FOR i = 1 TO devices
   IF INSTR(_DEVICE$(i), "[AXIS]") THEN PRINT "Axis:"; _LASTAXIS(i)
 NEXT 
 
-'''
+```
 
-'''text
+```text
 
 Number of input devices found = 2
 [KEYBOARD][BUTTON]
 [MOUSE][BUTTON][AXIS][WHEEL]
 Axis: 2
 
-'''
+```
 
 > Note: The [STRIG](STRIG)/[STICK](STICK) commands won't read from the keyboard or mouse device the above example lists.
 

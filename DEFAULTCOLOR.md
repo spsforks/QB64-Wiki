@@ -18,7 +18,7 @@ The [_DEFAULTCOLOR](_DEFAULTCOLOR) function returns the current default text col
 
 *Example:* The default color is the color assigned to the text foreground. The [SCREEN](SCREEN) 12 default is [COLOR](COLOR) 15.
 
-'''vb
+```vb
 
 SCREEN 12
 OUT &H3C8, 0: OUT &H3C9, 63: OUT &H3C9, 63: OUT &H3C9, 63  'assign background RGB intensities
@@ -27,7 +27,7 @@ _PRINTMODE  _KEEPBACKGROUND
 COLOR 8                                                    'assign color 8 to text foreground
 PRINT "The default color is attribute"; _DEFAULTCOLOR 
 
-'''
+```
 
 
 ## See Also

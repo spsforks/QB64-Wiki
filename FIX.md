@@ -22,25 +22,25 @@ The [FIX](FIX) function rounds a numerical value to the next whole number closes
 
 *Example 1:* Showing the behavior of [FIX](FIX) with positive and negative decimal point values.
 
-'''vb
+```vb
 
  PRINT FIX(2.5)
  PRINT FIX(-2.5) 
 
-''' 
+``` 
 
-'''text
+```text
 
 2 
 -2
 
-'''
+```
 
 
 
 *Example 2:* The NORMAL arithmetic method (round half up) can be achieved using the function in the example code below:
 
-'''vb
+```vb
 
 PRINT MATHROUND(0.5) 
 PRINT MATHROUND(1.5)
@@ -53,9 +53,9 @@ FUNCTION MATHROUND(n)
     MATHROUND = FIX(n + 0.5 * SGN(n))
 END FUNCTION 
 
-''' 
+``` 
 
-'''text
+```text
 
 1
 2
@@ -64,7 +64,7 @@ END FUNCTION
 5
 6
 
-'''
+```
 
 
 

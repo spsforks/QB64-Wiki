@@ -17,7 +17,7 @@ The [_MOUSEPIPEOPEN](_MOUSEPIPEOPEN) function creates a pipe handle value for a 
 
 *Snippet:* The following snippet isn't runnable/compilable, but it showcases the use of the [_MOUSEPIPEOPEN](_MOUSEPIPEOPEN) function.
 
-'''vb
+```vb
 
     mDown = 0
     mUp = 0
@@ -97,7 +97,7 @@ END IF
     END I
 
 
-'''
+```
 
 >  When using the [$VIRTUALKEYBOARD]($VIRTUALKEYBOARD), the keyboard captures mouse input appropriately whilst selectively letting presses originating on non-key areas of the screen filter through to the default mouse queue.
 

@@ -14,26 +14,26 @@
 
 *Example 1:* Adding quotation marks to a string value using concatenation. Variables cannot be defined using semicolons! 
 
-'''vb
+```vb
 
 quote$ = CHR$(34) + "Hello World!" + CHR$(34)
 
 PRINT "Bill Gates never said "; quote$; " when he answered the telephone!"
 
-'''
+```
 
-'''text
+```text
 
 
 Bill Gates never said "Hello World!" when he answered the telephone!
 
-'''
+```
 
 
 
 *Example 2:* Inserting numerical values in a PRINT string with semicolons, PRINT USING and PRINT with concatenation.
 
-'''vb
+```vb
 
 name$ = "Billy"
 boxes% = 102
@@ -44,16 +44,16 @@ PRINT name$; " sold"; boxes%; "boxes for $"; sales!; "."
 PRINT USING template$; name$; boxes%; sales!
 PRINT name$ + " sold" + STR$(boxes%) + " boxes for $" + LTRIM$(STR$(sales!)) + "." 
 
-''' 
+``` 
 
-'''text
+```text
 
 
 Billy sold 102 boxes for $ 306 .
 Billy sold 102 boxes for $306.00.
 Billy sold 102 boxes for $306.
 
-'''
+```
 
 > *Explanation:* Printed numerical values using semicolons have a space on each side. [PRINT USING](PRINT USING) properly formats the string and displays the cent values when they are zero. [STR$](STR$) converts the number to a string and excludes the right number space, but leaves the sign space. [LTRIM$](LTRIM$) eliminates the leading sign space between the string number and the $ dollar sign.
 

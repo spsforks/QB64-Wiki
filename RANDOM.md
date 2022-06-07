@@ -25,7 +25,7 @@
 
 *Example 1:* Function that finds a RANDOM file's record number for a string value such as a phone number.
 
-'''vb
+```vb
 
 TYPE customer
   age AS INTEGER
@@ -68,13 +68,13 @@ recpos = INSTR(dat$, search$)
 IF recpos THEN RecordPos = recpos \ recLEN + 1 ELSE RecordPos = 0
 END FUNCTION 
 
-'''
+```
 > *Note:* Random files can store records holding various variable types using a [TYPE](TYPE) definition or a [FIELD](FIELD) statement.
 
 
 *Example 2:* When not using a [TYPE](TYPE) or fixed length strings, QB4.5 allows RANDOM files to hold variable length strings up to 2 bytes less than the LEN = record length statement:
 
-'''vb
+```vb
 
 _CONTROLCHR OFF
 OPEN "myfile.txt" FOR OUTPUT AS #1: CLOSE #1: ' clears former file of all entries.
@@ -95,15 +95,15 @@ NEXT
 
 CLOSE 
 
-'''
+```
 
-'''text
+```text
 
 ☺ ABCDEFGHI       11
 ABCDEFGHI         9
 1234              4
 
-'''
+```
 
 >  *Note:* The 2 byte file padders before each string PUT will show the length of a string for GET as [ASCII](ASCII) characters. Padders will always be 2 bytes and strings up to the last one will be 13 bytes each no matter the length up to 11, so the file size can be determined as (2 + 11) + (2 + 9 + 2) + (2 + 4) or 13 + 13 + 2 + 4 = 32 bytes. 
 

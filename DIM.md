@@ -48,79 +48,79 @@ The [DIM](DIM) statement is used to declare a variable or a list of variables as
 
 *Example 1:* Defines Qt variable as a one byte fixed length string.
 
-'''vb
+```vb
 
  DIM Qt AS STRING * 1 
 
-'''
+```
 
 *Example 2:* Dimensions and types an array. 
 
-'''vb
+```vb
 
  DIM Image(2000) AS INTEGER
 
-'''
+```
 
 *Example 3:* Dimensions array with an [INTEGER](INTEGER) type suffix.
 
-'''vb
+```vb
 
  DIM Image%(2000)  
 
-'''
+```
 
 *Example 4:* Dimensions a range of [Arrays](Arrays) elements as [SHARED](SHARED) integers.
 
-'''vb
+```vb
 
  DIM SHARED Image(1 TO 1000) AS INTEGER 
 
-'''
+```
 
 *Example 5:* Dimensions variable as an [Arrays](Arrays) of 8 elements of the type [UNSIGNED](UNSIGNED) BIT.
 
-'''vb
+```vb
 
  DIM bit(8) AS _UNSIGNED _BIT 
 
-'''
+```
 
 
 *Example 6:* QB64 is more flexible than QBasic when it comes to "Duplicate Definition" errors. The following code does not error:
 
-'''vb
+```vb
 
 x = 1 'x is a SINGLE variable
 PRINT x
 DIM x AS LONG
 PRINT x 
 
-'''
+```
 >  *Explanation:* The [SINGLE](SINGLE) variable can be differentiated from the [LONG](LONG) x variable by using suffixes like x! or x& in later code.
 
 
 *Example 7:* The following code will create a "Name already in use" **status error** in QB64 when the variable types are the same.
 
-'''vb
+```vb
 
 x = 1 'x is a SINGLE variable
 PRINT x
 DIM x AS SINGLE
 PRINT x 
 
-'''
+```
 >  *Explanation:* QB64 gives an error because the creation of the new variable would make referring to the existing one impossible.
 
 
 *Example 8:* Using QB64's alternative syntax to declare multiple variables/arrays of the same type.
 
-'''vb
+```vb
 
 DIM AS LONG w, h, id, weight, index 'all of these variables are created as type LONG
 DIM AS SINGLE x, y, z               'all of these variables are created as type SINGLE
 
-'''
+```
 
 
 ## See Also

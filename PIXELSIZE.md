@@ -22,7 +22,7 @@ The [_PIXELSIZE](_PIXELSIZE) function returns the color depth (Bits Per Pixel) o
 
 *Snippet:* Saving Images for later program use. Handle values could be saved to an array. 
 
-'''text
+```text
 
 
   
@@ -36,7 +36,7 @@ _PUTIMAGE (0, 0), sourcehandle&, h&, (sx1, sy1)-(sx2, sy2) 'image is not display
 GetImage& = h&
 END FUNCTION 
 
-'''
+```
 
 <sub>Adapted from code by Galleon</sub>
 

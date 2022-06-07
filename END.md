@@ -26,17 +26,17 @@ The [END](END) statement terminates a program without an immediate exit or ends 
 *Example:* In QB64 you won't return to the IDE unless you are using it to run or edit the program module.
 
 
-'''vb
+```vb
 
 PRINT "Hello world!"
 END
 PRINT "Hello no one!" 
 
-'''
+```
 
 *Returns:*
 
-'''text
+```text
 
 
 Hello world!
@@ -47,7 +47,7 @@ Hello world!
 
 Press any key to continue...
 
-'''
+```
 
 > *Explanation:*"Hello no one!" isn't returned because the program ended with the END statement no matter what is after that.
 > The message "Press any key to continue..." is displayed after the program ends, both in QBasic and in **QB64**.

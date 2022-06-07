@@ -29,7 +29,7 @@ PrintUsingTable
 
 *Example 1:* Printing formatted data using a predefined [STRING](STRING) template variable.
 
-'''vb
+```vb
 
 first$ = "Bobby": last$ = "Smith"
 boxes% = 1510: sales! = 4530
@@ -37,20 +37,20 @@ tmp$ = "Salesperson: & &  #####,.   $$#####,.##"
 
 PRINT USING tmp$; first$; last$; boxes%; sales!
 
-''' 
+``` 
 
-'''text
+```text
 
 Salesperson: Bobby Smith  1,510  $4,530.00
 
-'''
+```
 
 *Explanation:* The *Salesperson:* text precedes the formatted data. The name lengths will change the length of the string template accordingly so columns will not all line up. If \  \ was used, the columns would stay the same, but parts of some names might be lost. If the box or sales values exceed 3 digits, a comma is used in the value every 3 digits.
 
 
 *Example 2:* How to display formatting symbols as normal text using underscores in a PRINT USING template.
 
-'''vb
+```vb
 
 errcode = 35
 PRINT USING "Error ## occurred!!"; errcode
@@ -58,51 +58,51 @@ PRINT USING "Error ## occurred!!"; errcode
 PRINT USING "Error ## occurred_!_!"; errcode
 END *
 
-'''
+```
 
-'''text
+```text
 
 Error 35 occurred
 Error 35 occurred!!
 
-'''
+```
  
 >  *Explanation:* The first template will not print the exclamation points or error when the requested text parameters are omitted.
 
 
 *Example 3:* Exponential notation is designated after the leading digits are formatted. Digit places determine rounded value displayed.
 
-'''vb
+```vb
 
 PRINT USING "##.##^^^^"; 234.56
 PRINT USING ".####^^^^-"; -777777
 PRINT USING "+.##^^^^"; 123
 PRINT USING "+.##^^^^^"; 123 
 
-'''
+```
 
-'''text
+```text
 
  2.35E+02
 .7778E+06-
 +.12E+03
 +.12E+003
 
-'''
+```
 
 >  *Explanation:* Note how 5 carets in the bottom format expands the number of exponent digits to accommodate larger exponent values. 
 
 
 *Example 4:* USING does not necessarily have to immediately follow PRINT, but it must follow it in the code line.
 
-'''vb
+```vb
 
 money = 12345.45
 tmp$ = "$$#######,.##"
 
 PRINT "I have this much money!"; USING tmp$; money 
 
-'''
+```
 >  *Note:* This can also be used to print the USING formatting characters outside of the template.
 
 

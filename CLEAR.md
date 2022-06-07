@@ -19,7 +19,7 @@ The [CLEAR](CLEAR) statement clears all variable and array element values in a p
 
 *Example:* Using CLEAR to clear array elements from [STATIC](STATIC) arrays or arrays created using [DIM](DIM).
 
-'''vb
+```vb
 
 CLS
 DIM array(10)   'create a $STATIC array
@@ -31,7 +31,7 @@ CLEAR
 
 PRINT array(5) 
 
-'''
+```
 > *Note:* If you change DIM to REDIM a "Subscript out of range" error will occur because a [$DYNAMIC]($DYNAMIC) array is removed by CLEAR.
 
 

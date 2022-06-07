@@ -12,7 +12,7 @@ The [PALETTE USING](PALETTE USING) statement sets all RGB screen color intensiti
 ** Color intensities range from 0 to 63.
 * startIndex% indicates the index in the array from which the statement should start reading. The statement will read all color attributes available in that [SCREEN (statement)](SCREEN (statement)) mode. The **number of values required** in the array is listed below:
 
-'''text
+```text
 
 **              Screen mode       Attributes       Colors         Values**
                    0              0 - 15         0 - 63           16
@@ -26,7 +26,7 @@ The [PALETTE USING](PALETTE USING) statement sets all RGB screen color intensiti
                   12              0 - 15         0 - 262,143      16
                   13              0 - 15         0 - 263,143     256 
 
-'''
+```
 
 
 * A color argument of -1 in the array leaves the attribute unchanged. Other negative numbers are invalid.

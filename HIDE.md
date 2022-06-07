@@ -18,7 +18,7 @@ The [_HIDE](_HIDE) action is used to hide the console window opened by a [SHELL]
 
 *Example:* Subprogram that displays long and short filenames using the DIR /X option (WindowsNT or above) in SCREEN 12:
 
-'''vb
+```vb
 
 SUB LFN
  IF LEN(ENVIRON$("OS")) = 0 THEN EXIT SUB   ' /X not available Win 9X and ME 
@@ -53,7 +53,7 @@ SUB LFN
  CLOSE #1
 END SUB 
 
-'''
+```
 
 *Explanation:* The above routine can also be used to place the file name info into string arrays by using the count variable cnt% to determine the index. Long file names are normally returned by **QB64**. To keep older QBasic programs compatible, you may want to only use the short names when displaying the files on the screen.
 

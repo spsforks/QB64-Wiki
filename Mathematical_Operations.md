@@ -146,7 +146,7 @@ Sometimes a calculation may need BASIC to do them in another order or the calcul
 
 
 
-'''text
+```text
 
                                 **Degree to Radian Conversion:**
 FUNCTION Radian (degrees)
@@ -166,7 +166,7 @@ FUNCTION LOG10 (X)    'base 10 logarithm
 IF X > 0 THEN LOG10 = LOG(X) / LOG(10) ELSE BEEP
 END FUNCTION 
 
-'''
+```
 
 
 
@@ -187,7 +187,7 @@ The following Trigonometric functions can be derived from the **BASIC Mathematic
 
 
 
-'''text
+```text
 
 
 FUNCTION SEC (x)  'Secant
@@ -285,10 +285,10 @@ FUNCTION ARCCOTH (x)  ' Inverse Hyperbolic CoTangent
 IF x > 1 THEN ARCCOTH = LOG((x + 1) / (x - 1)) / 2 ELSE BEEP
 END FUNCTION 
 
-'''
+```
 
 
-'''text
+```text
 
 
                            **Hyperbolic Function Relationships:**
@@ -312,7 +312,7 @@ END FUNCTION
                            (COSH(x) ^ 2) - (SINH(x) ^ 2) = 1
 
 
-'''
+```
 
 
 <center>[http://support.microsoft.com/kb/28249 Microsoft's Derived BASIC Functions (KB 28249)]</center>
@@ -382,7 +382,7 @@ RelationalTable
 
 
 
-'''text
+```text
 
 
                    **Comparing the [INTEGER](INTEGER) Base Number Systems**
@@ -427,7 +427,7 @@ RelationalTable
     See the Decimal to Binary conversion function that uses **[HEX$](HEX$)** on the **[&H](&H)** page.
  
 
-'''
+```
 
 
 
@@ -457,7 +457,7 @@ RelationalTable
 > * **"Big-endian"**: MSB is the first bit encountered, decreasing to the LSB as the last bit by position, memory address or time.
 > * **"Little-endian"**: LSB is the first bit encountered, increasing to the MSB as the last bit by position, memory address or time.
 
-'''text
+```text
 
 
          **Offset or Position:    0    1   2   3   4   5   6   7      Example: 11110000**
@@ -465,14 +465,14 @@ RelationalTable
     **Big-Endian Bit On Value:**   128  64  32  16   8   4   2   1                 240
  **Little-Endian Bit On Value:**    1    2   4   8  16  32  64  128                 15
 
-'''
+```
 
 > :The big-endian method compares exponents of 2<sup>7</sup> down to 2<sup>0</sup> while the little-endian method does the opposite. 
 
 <center>**[_BYTE](_BYTE)**</center>
 * [INTEGER](INTEGER) values consist of 2 bytes called the **HI** and **LO** bytes. Anytime that the number of binary digits is a multiple of 16 (2bytes, 4 bytes, etc.) and the HI byte's MSB is on(1), the value returned will be negative, even with [SINGLE](SINGLE) or [DOUBLE](DOUBLE) values. 
 
-'''text
+```text
 
                                  **16 BIT INTEGER OR REGISTER**
               **AH (High Byte Bits)                         AL (Low Byte Bits)**
@@ -482,14 +482,14 @@ RelationalTable
                                                  |
    DEC: -32768 16384 8192 4096 2048 1024 512 256 | 128   64  32   16   8    4   2    1
 
-'''
+```
 
 > :The HI byte's **MSB** is often called the **sign** bit! When the highest bit is on, the signed value returned will be negative.  
 
 
 *Example:* Program displays the bits on for any integer value between -32768 and 32767 or &H80000 and &H7FFF.
 
-'''vb
+```vb
 
 DEFINT A-Z
 SCREEN 12
@@ -535,7 +535,7 @@ COLOR 11: LOCATE 28, 30: PRINT "Press any key to exit!";
 SLEEP
 SYSTEM 
 
-'''
+```
 <sub>Code by Ted Weissgerber</sub>
 
 

@@ -16,7 +16,7 @@ The [_SNDLOOP](_SNDLOOP) statement is like [_SNDPLAY](_SNDPLAY) but the sound is
 
 *Example:* Loading a sound or music file and playing it in a loop until a key is pressed.
 
-'''vb
+```vb
 
 bg = _SNDOPEN("back.ogg") '<<<<<<<<<< change to your sound file name
 _SNDLOOP bg
@@ -27,7 +27,7 @@ LOOP UNTIL INKEY$ <> "" 'key press program exit
 _SNDSTOP bg
 _SNDCLOSE bg 
 
-'''
+```
 
 
 ## See Also

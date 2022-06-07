@@ -26,33 +26,33 @@
 
 ;Example 1:Adding named color constants for SCREEN 0.
 
-'''vb
+```vb
 
 $COLOR:0
 COLOR BrightWhite, Red
 PRINT "Bright white on red."
 
-'''
+```
 OutputStartBG4
 Bright white on red.
 
-'''
+```
 
 
 ;Example 2:Adding named color constants for 32-bit modes.
 
-'''vb
+```vb
 
 SCREEN _NEWIMAGE(640, 400, 32)
 $COLOR:32
 COLOR CrayolaGold, DarkCyan
 PRINT "CrayolaGold on DarkCyan."
 
-'''
+```
 
 ;Example 3:Adding named color constants for 32-bit modes (with $NOPREFIX in effect).
 
-'''vb
+```vb
 
 SCREEN _NEWIMAGE(640, 400, 32)
 $COLOR:32
@@ -61,7 +61,7 @@ COLOR NP_Red, White 'notice the NP_ in front of Red?
 'This is to distinguish the color from the command with $NOPREFIX.
 PRINT "Red on White."
 
-'''
+```
 
 
 ## See Also

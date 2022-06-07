@@ -18,7 +18,7 @@ The [_KEYHIT](_KEYHIT) function returns [ASCII](ASCII) one and two byte, OpenGL 
 * To receive input from a [$CONSOLE]($CONSOLE) window, use [_CINP](_CINP).
 
 
-'''text
+```text
 
 '                                **_KEYHIT Keyboard Codes**
 '
@@ -42,7 +42,7 @@ The [_KEYHIT](_KEYHIT) function returns [ASCII](ASCII) one and two byte, OpenGL 
 '
 '     **    Lower value = LCase/NumLock On __________________ + = add 100000 **
 
-'''
+```
 
 <sub>NOTE: The above commented table can be copied and pasted directly into the QB64 IDE</sub>
  
@@ -61,7 +61,7 @@ The [_KEYHIT](_KEYHIT) function returns [ASCII](ASCII) one and two byte, OpenGL 
 
 *Example:* This routine will return the codes for any keyboard presses.
 
-'''vb
+```vb
 
 DEFLNG A-Z
 SCREEN _NEWIMAGE(800, 600, 8)
@@ -110,7 +110,7 @@ DO
   END IF
 LOOP
 
-'''
+```
 <sub>Code by Galleon</sub>
 
 

@@ -2,7 +2,7 @@ The following code demonstration shows how GET and PUT can be used to place a sp
 
 
 
-'''vb
+```vb
 
 DIM Image(3000) AS INTEGER
 SCREEN 9
@@ -140,7 +140,7 @@ FOR R = Srow TO Erow
 NEXT
 END SUB 
 
-'''
+```
 <sub>Code by Bob Seguin and Ted Weissgerber</sub>
 >  *Note:* The [DATA](DATA) is read as the number of pixels to color and the color attribute in the compressed the data field.
 

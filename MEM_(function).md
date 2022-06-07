@@ -29,7 +29,7 @@ The [_MEM](_MEM) function returns a _MEM block referring to the largest possible
 
 *Example:* Assigning values to reference variables in memory.
 
-'''vb
+```vb
 
 DIM SHARED m(3) AS _MEM
 DIM SHARED Saved(3)
@@ -64,7 +64,7 @@ _MEMPUT m(2), m(2).OFFSET, Saved(2)
 _MEMPUT m(3), m(3).OFFSET, Saved(3)
 END SUB 
 
-'''<sub>Code by SMcNeill</sub>
+```<sub>Code by SMcNeill</sub>
 
 
 ## See Also

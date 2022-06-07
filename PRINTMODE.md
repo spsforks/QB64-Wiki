@@ -26,7 +26,7 @@ The [_PRINTMODE](_PRINTMODE) statement sets the text or [_FONT](_FONT) printing 
 
 *Example:* Using _PRINTMODE with [PRINT](PRINT) in a graphic screen mode. The background used is CHR$(219) = █
 
-'''vb
+```vb
 
 SCREEN 12
 COLOR 8: LOCATE 10, 10: PRINT STRING$(3, 219) 'background 
@@ -34,7 +34,7 @@ _PRINTMODE _KEEPBACKGROUND
 COLOR 15: LOCATE 10, 10: PRINT _PRINTMODE 
 END 
 
-'''
+```
 
 
 ## See Also

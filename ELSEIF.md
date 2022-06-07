@@ -31,18 +31,18 @@ RelationalTable
 
 *Example 1:* IF statement using ELSE IF in one statement line.
 
-'''vb
+```vb
 
 
 IF x = 100 THEN COLOR 10: PRINT x ELSE IF x > 100 THEN COLOR 12: PRINT x ELSE PRINT "< 100"
 
 
-'''
+```
 
 
 *Example 2:* IF statement block
 
-'''vb
+```vb
 
 
 IF x = 100 THEN ' must place ANY code on next line!
@@ -52,7 +52,7 @@ ELSE : PRINT "< 100"
 END IF
 
 
-'''
+```
 
 
 

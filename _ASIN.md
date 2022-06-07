@@ -23,7 +23,7 @@ The [_ASIN](_ASIN) function returns the angle measured in radians based on an in
 
 *Example:* Converting a radian angle to its SINe and using that value to find the angle in degrees again using _ASIN:
 
-'''vb
+```vb
 
 DEFDBL A-Z
 
@@ -35,10 +35,10 @@ A = _ASIN(C)
 PRINT "The ASIN of "; C; " is: "; A
 PRINT "Notice, A is the Angle in Radians.  If we convert it to degrees, the value is "; _R2D(A) 
 
-'''
+```
 <sub>Example by SMcNeill</sub>
 
-'''text
+```text
 
 
 Give me an Angle (in Degrees) => ? 60
@@ -47,7 +47,7 @@ The SINE of the Angle is:  .8660254037844386
 The ACOS of   .8660254037844386  is:   1.047197551196598
 Notice, A is the Angle in Radians.  If we convert it to degrees, we discover the value is  60
 
-'''
+```
 
 
 

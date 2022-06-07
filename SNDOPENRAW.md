@@ -17,7 +17,7 @@ The [_SNDOPENRAW](_SNDOPENRAW) function opens a new channel to fill with _SNDRAW
 
 *Example:* Combining 2 sounds without worrying about mixing:
 
-'''vb
+```vb
 
 a = _SNDOPENRAW
 b = _SNDOPENRAW
@@ -30,7 +30,7 @@ NEXT
 _SNDCLOSE a
 _SNDCLOSE b 
 
-'''<sub>Code by Galleon</sub>
+```<sub>Code by Galleon</sub>
 
 
 ## See Also

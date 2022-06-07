@@ -29,7 +29,7 @@ The [_TOGGLEBIT](_TOGGLEBIT) function is used to toggle a specified bit of a num
 
 *Example 1:*
 
-'''vb
+```vb
 A~%% = 0 '_UNSIGNED _BYTE
 PRINT A~%%
 A~%% = _TOGGLEBIT(A~%%,4) 'toggle the fourth bit of A~%%
@@ -37,16 +37,16 @@ PRINT A~%%
 A~%% = _TOGGLEBIT(A~%%,4) 'toggle the fourth bit of A~%%
 PRINT A~%%
 
-'''
+```
 
-'''text
+```text
 
 
  0
  16
  0
 
-'''
+```
 
 
 

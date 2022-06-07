@@ -19,14 +19,14 @@ The [WAIT](WAIT) statement waits until the value read from an I/O port has certa
 
 > Waiting for vertical retrace
 
-'''vb
+```vb
 ' Either statement can be used to try to reduce screen flickering.
 ' If both statements are used, try changing the order.
 
 WAIT &H3DA, 8 ' finishes whenever the screen isn't being written to
 WAIT &H3DA, 8, 8 ' finishes whenever the screen is being written to
 
-'''
+```
 
 
 ## See Also

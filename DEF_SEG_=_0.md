@@ -22,7 +22,7 @@ The following **DOS BIOS** information can be used on Windows 9x machines. Not n
 * **&H42 (66)**
 > :SETS TIMER CHIP TO PRODUCE A FREQUENCY 20 TO 20,000 HZ:
 
-'''vb
+```vb
 
 
    A = INT(1193182 / F)
@@ -31,7 +31,7 @@ The following **DOS BIOS** information can be used on Windows 9x machines. Not n
    OUT 66, L: OUT 66, H
 
 
-'''
+```
 
 * **&H43 (67)**
 > :OUT 67, 182 PREPARES TIMER CHIP TO RECEIVE A VALUE.
@@ -43,7 +43,7 @@ The following **DOS BIOS** information can be used on Windows 9x machines. Not n
 
 > : USING A ONE TICK TIMER LOOP:
 
-'''vb
+```vb
 
 
  DEF SEG = 0    ' set to PEEK and POKE TIMER
@@ -54,12 +54,12 @@ The following **DOS BIOS** information can be used on Windows 9x machines. Not n
  DEF SEG
 
 
-'''
+```
 * **&H470 = 1136)**
 
 *Example:* DETERMINING THE DATE n DAYS FROM NOW. 
 
-'''vb
+```vb
 
   A$ = DATE$: PRINT A$                'IMPORTANT! save original date!
   IF n <= 255 THEN POKE 1136, n
@@ -70,7 +70,7 @@ The following **DOS BIOS** information can be used on Windows 9x machines. Not n
   PRINT laterdate$                    'resulting date n days from today
   DATE$ = A$                          'restore original computer date! 
 
-'''
+```
 
 
 
@@ -112,21 +112,21 @@ The following **DOS BIOS** information can be used on Windows 9x machines. Not n
 
 *Example:* Determining the status of a drive motor:
 
-'''vb
+```vb
 
 IF PEEK(1087) AND 128 = 128 THEN PRINT "drive write in progress"
 IF PEEK(1087) AND 15  = 0 THEN PRINT "No drive being written to" 
 
-'''
+```
 
 
 *Example:* Drive$ designated is A, B, C or D, and the letter must be in uppercase.
 
-'''vb
+```vb
 
 IF PEEK(1087) AND 2 ^ (ASC (Drive$) - 65) THEN PRINT "Drive: " Drive$ 
 
-'''
+```
 > **NOTE:** These value are not affected if an OUT was used to turn on the motor.
 
 
@@ -134,12 +134,12 @@ IF PEEK(1087) AND 2 ^ (ASC (Drive$) - 65) THEN PRINT "Drive: " Drive$
 
 *Example:* To turn on drive D for n seconds, where n is at MOST 14! :
 
-'''vb
+```vb
                      
 POKE 1088, 18 + 2 * n
 OUT 1010, 2 ^ (ASC("D") - 61) + ASC("D") - 53   '1010 = &H3F2 
 
-'''
+```
 > **NOTE:** Location 1088 holds the countdown, in clock ticks, until the motor is shut off. To turn off all drives, send: OUT 1010, 12
 
 
@@ -167,7 +167,7 @@ bytes = 128 * 2 ^ PEEK(1096)  'number of bytes per sector on a diskette
 
 *Example:* The diskette parameter table consists of 11 bytes
 
-'''vb
+```vb
 
 DEF SEG = 0
 D = PEEK(120) + 256 * PEEK(121) ' get value of Diskette
@@ -188,7 +188,7 @@ HST = PEEK(D + 9) 'number of milliseconds for the heads to stabilize
 MST = PEEK(D + 10) 'number of eighths of a second for motor startup
 DEF SEG 
 
-'''
+```
 > **WARNING: Changing the values of PEEK(D + 3) and PEEK(D + 4) can modify the way that diskettes are read and might require you to format your diskettes manually!**
 
 

@@ -23,7 +23,7 @@ The [COS](COS) function returns the horizontal component or the cosine of an ang
 
 *Example 1:* Converting degree angles to radians for QBasic's trig functions and drawing the line at the angle.
 
-'''vb
+```vb
 
 SCREEN 12
 PI = 4 * ATN(1)
@@ -43,9 +43,9 @@ DO
   PRINT "DEGREES% = RADIANS * 180 / PI ="; DEGREES%
 LOOP UNTIL DEGREES% = 0 
 
-'''
+```
 
-'''text
+```text
 
 
 PI = 4 * ATN(1) = 3.141593
@@ -58,14 +58,14 @@ X = COS(RADIANS) = .7071068
 Y = SIN(RADIANS) = .7071068
 DEGREES% = RADIANS * 180 / PI = 45
 
-'''
+```
 
 >  *Explanation:* When 8.742278E-08(.00000008742278) is returned by [SIN](SIN) or COS the value  is essentially zero.
 
 
 *Example 2:* Creating 12 analog clock hour points using [CIRCLE](CIRCLE)s and [PAINT](PAINT)
 
-'''vb
+```vb
 
  PI2 = 8 * ATN(1)                  '2 * π
  arc! = PI2 / 12                          'arc interval between hour circles
@@ -77,14 +77,14 @@ DEGREES% = RADIANS * 180 / PI = 45
    PAINT STEP(0, 0), 9, 12
  NEXT 
 
-'''
+```
 <sub>Code by Ted Weissgerber</sub>
 *Explanation:* The 12 circles are placed at radian angles that are 1/12 of 6.28318 or .523598 radians apart.
 
 
 *Example 3:* Creating a rotating spiral with COS and [SIN](SIN).
 
-'''vb
+```vb
 
 SCREEN _NEWIMAGE(640, 480, 32)
 
@@ -108,7 +108,7 @@ DO
   _LIMIT 30
 LOOP UNTIL INP(&H60) = 1 'escape exit 
 
-'''
+```
 <sub>Code by Ben</sub>
  
 

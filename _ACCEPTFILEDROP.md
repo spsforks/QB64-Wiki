@@ -25,7 +25,7 @@ The [_ACCEPTFILEDROP](_ACCEPTFILEDROP) statement prepares a program window to re
 
 *Example:* Accepting files dragged from a folder and processing the list received sequentially. 
 
-'''vb
+```vb
 
 SCREEN _NEWIMAGE(128, 25, 0)
 
@@ -55,7 +55,7 @@ DO
     _LIMIT 30
 LOOP
 
-'''
+```
 
 
 ## See Also

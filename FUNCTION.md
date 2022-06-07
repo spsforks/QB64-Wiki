@@ -39,7 +39,7 @@ A [FUNCTION](FUNCTION) block statement is used to create a function procedure to
 
 *Example 1:* A simple function that returns the current path. Place [FUNCTION](FUNCTION) or [SUB](SUB) procedures after the program [END](END).
 
-'''vb
+```vb
 
 PRINT "Current path = "; PATH$
 END
@@ -54,12 +54,12 @@ FUNCTION PATH$
     KILL file$
 END FUNCTION 
 
-'''
+```
 
 
 *Example 2:* Returns a [LONG](LONG) array byte size required for a certain sized graphics screen pixel area [GET (graphics statement)](GET (graphics statement)).
 
-'''vb
+```vb
 
 INPUT "Enter a screen mode: ", mode%
 INPUT "Enter image width: ", wide&
@@ -81,7 +81,7 @@ FUNCTION ImageBufferSize& (Wide&, Deep&, ScreenMode%)
     ImageBufferSize& = 4 + INT((Wide& * BPPlane + 7) / 8) * (Deep& * Planes) 'return the value to function name.
 END FUNCTION 
 
-'''
+```
 > *Explanation:* Function calculates the array byte size required when you [GET (graphics statement)](GET (graphics statement)) an area of a graphics [SCREEN](SCREEN). Each mode may require a different sized array. Since graphics uses [INTEGER](INTEGER) arrays, 2 byte elements, the size returned is divided by 2 in the IntegerArray& calculation function reference. Function returns only 4 for [SCREEN](SCREEN) 0 which is a text only mode.
 
 

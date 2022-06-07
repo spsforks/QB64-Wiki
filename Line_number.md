@@ -6,7 +6,7 @@
 
 The following program can remove line numbers where they are not required by [IF...THEN](IF...THEN), [GOTO](GOTO), [GOSUB](GOSUB), [ERL](ERL), [RUN](RUN) or [RESUME](RESUME): 
 
-'''vb
+```vb
 
 CLS
 REDIM linenumber(100000)
@@ -108,7 +108,7 @@ RETURN
 resnxt:
 RESUME NEXT 
 
-'''
+```
 <sub>Code courtesy of Pete from the Network 54 Qbasic Forum</sub>
 
 

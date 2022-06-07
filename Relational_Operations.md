@@ -18,12 +18,12 @@ For numeric operands, such as [INTEGER](INTEGER) or [DOUBLE](DOUBLE) values, the
 
 *Example:* When a user enters a value greater than or equal to 5, the boolean statement returns -1 . Zero is printed otherwise.
 
-'''vb
+```vb
 
 INPUT "Enter a value from 1 to 10: ", number
 PRINT number >= 5 
 
-'''
+```
 
 ## Comparing string values and variables
 
@@ -36,23 +36,23 @@ If one string is identical to part of the other, [Less_Than](Less_Than) returns 
 
 *Example:* Shows that the left hand string sets the number of characters to evaluate when using > or < and are not equal when longer.
 
-'''vb
+```vb
 
 PRINT "abc" < "abcd"
 PRINT "abc" = "abc"
 PRINT "abc" = "abcd"
 PRINT "abcd" > "abc" 
 
-'''
+```
 
-'''text
+```text
 
  0
 -1
  0
 -1
 
-'''
+```
 
 
 ## Comparing user-defined type variables

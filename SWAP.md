@@ -18,7 +18,7 @@ The [SWAP](SWAP) statement is used to exchange two variable or array element val
 
 *Example 1:* A simple SWAP of [STRING](STRING) values.
 
-'''vb
+```vb
 
 a$ = "one"
 b$ = "two"
@@ -28,20 +28,20 @@ SWAP a$, b$
 PRINT a$
 PRINT b$
 
-'''
+```
 
-'''text
+```text
 
 two
 one
 
-'''
+```
 
 
 
 *Example 2:* Creating Cryptograms by scrambling EVERY capital letter in the alphabet.
 
-'''vb
+```vb
 
 DIM Letter$(65 TO 90)
 RANDOMIZE TIMER
@@ -75,14 +75,14 @@ FOR i = 1 TO L
 NEXT
 END 
 
-'''
+```
 <sub>Code by Ted Weissgerber</sub>
 > * Explanation:* The Letter$ [STRING](STRING) [Arrays](Arrays) is first created with the letters matching the [ASCII](ASCII) code index value. Every index is **swap**ped when the letter matches it's index code until every letter is different. The Code array holds the text code solution.
 
 
 *Example 3:* A very quick array sorting SUB procedure using recursion sorts 10 thousand numbers in milliseconds.
 
-'''vb
+```vb
 
 DEFINT A-Z
 DIM SHARED swap2 AS LONG  'Demo only
@@ -127,14 +127,14 @@ IF Hi > start THEN CALL QuickSort(start, Hi, array())
 IF Lo < finish THEN CALL QuickSort(Lo, finish, array())
 END SUB 
 
-'''
+```
 
-'''text
+```text
 
  array(0)= 0.20200    array(5000)= 525.8505   array(10000)= 999.6196
  Elapsed time: 0.023438 seconds with 33,759 swaps
 
-'''
+```
 
 > **NOTE:** The *swap2* shared value is used to count the swaps for the demo and can be removed from the SUB procedure for speed. 
 

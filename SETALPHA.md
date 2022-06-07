@@ -31,7 +31,7 @@ The [_SETALPHA](_SETALPHA) statement sets the alpha channel transparency level o
 
 *Example:* Using a _SETALPHA color range to fade an image in and out while not affecting the transparent white background.
 
-'''vb
+```vb
 
 main = _NEWIMAGE(640, 480, 32) 
 SCREEN main
@@ -58,7 +58,7 @@ DO
   _DISPLAY
 LOOP UNTIL a& = 0 
 
-'''
+```
 >  *Explanation:* The [POINT](POINT) value minus [_RGBA](_RGBA)(1, 1, 1, 0) subtracts a small amount from the bright white color value so that the top [_SETALPHA](_SETALPHA) color range will not affect the [_CLEARCOLOR](_CLEARCOLOR) transparency of the bright white PNG background.
 
 

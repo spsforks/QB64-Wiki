@@ -22,7 +22,7 @@ If the last error occurred in the main module, [_INCLERRORFILE$](_INCLERRORFILE$
 
 *Example:*
 
-'''vb
+```vb
 
 ON ERROR GOTO DebugLine
 
@@ -40,9 +40,9 @@ IF _INCLERRORLINE THEN
 END IF
 RESUME NEXT 
 
-'''
+```
 
-'''text
+```text
 
 An error occurred. Please contact support with the following details:
 ERROR  250  ON LINE:  6
@@ -51,7 +51,7 @@ An error occurred. Please contact support with the following details:
 ERROR  250  ON LINE:  9
     IN MODULE haserror.bi ( line 1 )
 
-'''
+```
 
 
 

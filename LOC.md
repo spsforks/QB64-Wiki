@@ -16,7 +16,7 @@ The [LOC](LOC) function returns the status of a serial (COM) port received buffe
 
 *Example:* Reading and writing from a COM port opened in Basic.
 
-'''vb
+```vb
 
 OPEN "COM1: 9600,N,8,1,OP0" FOR RANDOM AS #1 LEN = 2048 ' random mode = input and output
   DO: t$ = INKEY$ ' get any transmit keypresses from user
@@ -29,7 +29,7 @@ OPEN "COM1: 9600,N,8,1,OP0" FOR RANDOM AS #1 LEN = 2048 ' random mode = input an
   LOOP UNTIL t$ = CHR$(27) 'escape key exit
 CLOSE # 
 
-'''
+```
 
 
 ## See Also

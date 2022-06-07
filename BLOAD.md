@@ -30,26 +30,26 @@ PageLegacySupport
 
 *Example 1:* Loading data to an array from a BSAVED file.
 
-'''vb
+```vb
 
  DEF SEG = VARSEG(Array(0))
    BLOAD filename$, VARPTR(Array(LBOUND(Array))) ' changeable index
  DEF SEG 
 
-'''
+```
 > *Explanation:* Referance any type of array that matches the data saved. Can work with Integer, Single, Double, Long, fixed length Strings or [TYPE](TYPE) arrays. [LBOUND](LBOUND) determines the starting offset of the array or another index could be used.
 
 
 *Example 2:* Using a QB default colored image.  
 
-'''vb
+```vb
 
  DEF SEG = VARSEG(Image%(0)) ' pointer to first image element of an array
    BLOAD FileName$, VARPTR(Image%(0)) ' place data into array at index position 0
    PUT(Col, Row), Image%(0), PSET ' Put the image on the screen from index 0
  DEF SEG 
 
-'''
+```
 >  *Note:* [PSET](PSET) is used as a [PUT (graphics statement)](PUT (graphics statement)) action that places the image over any background objects.
 
 

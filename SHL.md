@@ -31,38 +31,38 @@ The [_SHL](_SHL) function is used to shift the bits of a numerical value to the 
 
 *Example 1:*
 
-'''vb
+```vb
 A~%% = 1 'set right most bit of an_UNSIGNED _BYTE
 PRINT A~%%
 PRINT _SHL(A~%%,7)
 B~%% = _SHL(A~%%,8) 'shift the bit off the left 'edge'
 PRINT B~%%
 
-'''
+```
 
-'''text
+```text
 
 
  1
  128
  0
 
-'''
+```
 
 
 
 *Example 2:*
 
-'''vb
+```vb
 
 A~%% = 1
 FOR I%% = 0 TO 8
     PRINT _SHL(A~%%, I%%)
 NEXT I%%
 
-'''
+```
 
-'''text
+```text
 
 
    1
@@ -75,7 +75,7 @@ NEXT I%%
  128
  256
 
-'''
+```
 
 * Note: When directly [PRINT](PRINT)ing to screen, the result is calculated internally using a larger variable type so the left most bit is carried to the next value.
 ** To avoid this store the result in a variable of the same type before printing.

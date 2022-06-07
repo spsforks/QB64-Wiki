@@ -18,7 +18,7 @@ The [_ERRORLINE](_ERRORLINE) function returns the source code line number that c
 
 *Example:* Displaying the current program line using a simulated [ERROR](ERROR) code.
 
-'''vb
+```vb
 
 ON ERROR GOTO DebugLine 'can't use GOSUB 
 
@@ -29,7 +29,7 @@ DebugLine:
 PRINT _ERRORLINE 
 RESUME NEXT 
 
-'''
+```
 
 
 ## See Also

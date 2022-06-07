@@ -23,7 +23,7 @@ The [_BLINK](_BLINK) statement toggles blinking colors in text mode (SCREEN 0). 
 ## Example(s)
 
 
-'''vb
+```vb
 COLOR 16, 7
 PRINT "This is printed in black over gray background. Black letters are blinking."
 PRINT "Hit a key..."
@@ -31,7 +31,7 @@ SLEEP
 _BLINK OFF
 PRINT "Now the same text is printed in black over bright white, because blinking was disabled."
 
-'''
+```
 
 
 ## See Also

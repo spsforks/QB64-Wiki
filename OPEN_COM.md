@@ -45,7 +45,7 @@ The [OPEN COM](OPEN COM) statement is used to access a computer's serial port CO
 
 *Example 1:* Checking to see if a COM port exists. If the port does not exist QBasic will cause a Windows access error. 
 
-'''vb
+```vb
 
 ON ERROR GOTO Handler 
 FF = FREEFILE
@@ -62,13 +62,13 @@ errnum = ERR
 PRINT "Error:"; errnum
 RESUME NEXT 
 
-'''
+```
 >  *Explanation:* QB64 may create error 68 if COM is not found. Use a zero CD, CS, DS or OP timeout value to avoid COM timeouts.
 
 
 *Example 2:* Opening a COM port with the BIN, CS0 and DS0 options in **QB64**.
 
-'''vb
+```vb
 
 DIM bytestr AS STRING * 1  'one byte transfers
 INPUT "COM port number #", port$  'any COM port number available
@@ -92,12 +92,12 @@ DO 'main loop
 LOOP UNTIL k$ = CHR$(27)
 CLOSE #1: PRINT "Finished!" 
 
-'''
+```
 
 
 *Example 3:* Sending string data from one COM port to another requires predefined length strings:
 
-'''vb
+```vb
 
 DIM SHARED ByteIn AS STRING * 1 'One byte transfers
 DIM SHARED Byte4 AS STRING * 4 'Four byte transfers
@@ -127,7 +127,7 @@ DO UNTIL LOC(2) = 0 'Read data from COM2 until there is no more data.
 LOOP
 END 
 
-'''<sub>Code courtesy of forum member Hydrofoiler</sub>
+```<sub>Code courtesy of forum member Hydrofoiler</sub>
 
 
 ## See Also

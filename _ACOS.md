@@ -22,7 +22,7 @@ The [_ACOS](_ACOS) function returns the angle measured in radians based on an in
 
 *Example:* Converting a radian angle to its COSine and using that value to find the angle in degrees again using _ACOS:
 
-'''vb
+```vb
 
 DEFDBL A-Z
 
@@ -34,10 +34,10 @@ A = _ACOS(C)
 PRINT "The ACOS of "; C; " is: "; A
 PRINT "Notice, A is the Angle in Radians.  If we convert it to degrees, the value is "; _R2D(A) 
 
-'''
+```
 <sub>Example by SMcNeill</sub>
 
-'''text
+```text
 
 
 Give me an Angle (in Degrees) => ? 60
@@ -46,7 +46,7 @@ The COSINE of the Angle is:  .5000000000000001
 The ACOS of  .5000000000000001  is:  1.047197551196598
 Notice, A is the Angle in Radians.  If we convert it to degrees, we discover the value is  60
 
-'''
+```
 
 
 

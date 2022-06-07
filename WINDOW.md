@@ -12,13 +12,13 @@ Using **WINDOW** with no parameters reverts the effect of any previous calls to 
 
 When a command such as [LINE](LINE), [CIRCLE](CIRCLE) or [_PUTIMAGE](_PUTIMAGE) needs a position in an image specified, it is given as a combination of x (horizontal) and y (vertical) coordinates. Usually these values are measured as pixels from the top-left origin. The **WINDOW** command changes the way these values are measured. This is best illustrated with an example:
 
-'''text
+```text
 
 
 SCREEN _NEWIMAGE(600, 600, 32) '600 pixels in x and y directions and displayed on screen
 WINDOW SCREEN (0, 0)-(6, 6)
 
-'''
+```
 
 The coordinates of the image now run from 0 to 6 in both the x and y directions. The centre of the screen is now referred to as (3, 3) and the bottom-right corner of the screen is (6, 6). The image has not actually just changed size or the number of pixels, just the way the program refers to positions on the image. Despite this example, there is no requirement for the image or scaling coordinates to be square; each direction is scaled independently, and can result in commands such as LINE (0, 0)-(10, 10), , BF drawing a rectangle instead of a square.
 
@@ -34,14 +34,14 @@ The location of the graphics cursor (used to calculate relative positions for ST
 
 Demonstrate a circle's radius only matching the scaling in the horizontal direction by comparing against a box:
 
-'''vb
+```vb
 
 SCREEN _NEWIMAGE(640, 480, 32) 'Not a square image
 WINDOW SCREEN (0, 0)-(10, 10) 'SCREEN keeps the axis direction the same
 LINE (4, 4)-(6, 6), _RGB32(255, 0, 0), BF 'Red square centred on (5, 5); will be stretched into a rectangle
 CIRCLE (5, 5), 1, _RGB32(0, 255, 0) 'Green circle at (5, 5) with radius 1
 
-'''
+```
 
 
 ## See Also

@@ -18,7 +18,7 @@ The [_BACKGROUNDCOLOR](_BACKGROUNDCOLOR) function returns the current background
 
 *Example 1:* Storing a background color for later use.
 
-'''vb
+```vb
 
 SCREEN 0
 COLOR 1, 3
@@ -26,16 +26,16 @@ CLS
 BG% = _BACKGROUNDCOLOR
 PRINT BG%
 
-'''
+```
 OutputStartBG33
 
-'''
+```
 
 
 
 *Example 2:* Understanding the function output
 
-'''vb
+```vb
 
 SCREEN 0
 COLOR 1, 11
@@ -43,10 +43,10 @@ CLS
 BG% = _BACKGROUNDCOLOR
 PRINT BG%                  'prints the attribute as 3 instead of 11
 
-'''
+```
 OutputStartBG33
 
-'''
+```
 
 > *Explanation: SCREEN 0 background colors over 7 will return the lower intensity color attribute values: EX: attribute - 8
 

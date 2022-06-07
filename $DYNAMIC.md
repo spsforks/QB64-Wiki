@@ -20,7 +20,7 @@ The [$DYNAMIC]($DYNAMIC) [Metacommand](Metacommand) allows the creation of dynam
 
 *Example:* [REDIM](REDIM)ing a $DYNAMIC array using [_PRESERVE](_PRESERVE) to retain previous array values.
 
-'''vb
+```vb
 
 REM $DYNAMIC             'create dynamic arrays only
 DIM array(10)            'create array with 11 elements
@@ -34,15 +34,15 @@ FOR i = 10 TO 20
 NEXT
 END 
 
-'''
+```
 
-'''text
-
-0  1  2  3  4  5  6  7  8  9  10
+```text
 
 0  1  2  3  4  5  6  7  8  9  10
 
-'''
+0  1  2  3  4  5  6  7  8  9  10
+
+```
 
 
 

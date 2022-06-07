@@ -29,21 +29,21 @@ The [_SETBIT](_SETBIT) function is used to set a specified bit of a numerical va
 
 *Example 1:*
 
-'''vb
+```vb
 A~%% = 0 '_UNSIGNED _BYTE
 PRINT A~%%
 A~%% = _SETBIT(A~%%,6) 'set the seventh bit of A~%%
 PRINT A~%%
 
-'''
+```
 
-'''text
+```text
 
 
  0
  64
 
-'''
+```
 
 
 

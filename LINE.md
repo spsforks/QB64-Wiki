@@ -31,7 +31,7 @@ The [LINE](LINE) statement is used in graphic [SCREEN (statement)](SCREEN (state
 
 *Example 1:* Following one line with another by omitting the second line's first coordinate parameter bracket entirely:
 
-'''vb
+```vb
 SCREEN 12
 
 LINE (100, 100)-(200, 200), 10    'creates a line
@@ -39,13 +39,13 @@ LINE -(400, 200), 12              'creates a second line from end of first
 
 END 
 
-'''
+```
 > *Explanation:* The full equivalent LINE statement would be: **LINE(200, 200)-(400, 200), 12**
 
 
 *Example 2:* Creating styled lines and boxes with the LINE statement. Different style values create different dashed line spacing.
 
-'''vb
+```vb
 SCREEN 12
 
 LINE (100, 100)-(300, 300), 10, , 63    'creates a styled line
@@ -53,13 +53,13 @@ LINE (100, 100)-(300, 300), 12, B, 255  'creates styled box shape
 
 END 
 
-'''
+```
 > *Explanation:* The first diagonal dashed green line bisects the red dashed square from Top Left to Bottom Right Corners.
 
 
 *Example 3:* The *style* value sets each 16 pixel line section as the value's bits are set on or off:
 
-'''vb
+```vb
 SCREEN 13
 _FULLSCREEN 'required in QB64 only
 _DELAY 5
@@ -76,13 +76,13 @@ FOR i% = 1 TO 2 ^ 15 'use exponential value instead of -32768
     _DELAY .001 'set delay time as required
 NEXT 
 
-'''
+```
 >  *Explanation:* The *style* value's Most Significant Bit (MSB) is set to the left with LSB on right as 16 text blocks are set on or off.
 
 
 *Example 4:* Using [&B](&B) to design a style pattern:
 
-'''vb
+```vb
 SCREEN 12
 
 LINE (100, 100)-(300, 100), 10, , &B0000111100001111 '16-bits
@@ -90,7 +90,7 @@ LINE (100, 110)-(300, 110), 11, , &B0011001100110011
 LINE (100, 120)-(300, 120), 12, , &B0101010101010101
 LINE (100, 130)-(300, 130), 13, , &B1000100010001000
 
-'''
+```
 > *Explanation:* The binary pattern created with 0s and 1s using the [&B](&B) number prefix define the pattern to draw the colored lines.
 
 

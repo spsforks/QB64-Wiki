@@ -16,11 +16,11 @@ The [_SNDPLAYING](_SNDPLAYING) function returns whether a sound is being played.
 ## Example(s)
 
 
-'''vb
+```vb
 
 PRINT _SNDPLAYING(h&) 
 
-'''
+```
 
 
 ## See Also

@@ -21,7 +21,7 @@ In order to use OpenGL drawing commands, you must do so from inside a [SUB](SUB)
 
 
 
-'''vb
+```vb
 
 DIM allowGL AS _BYTE
 
@@ -43,7 +43,7 @@ SUB _GL
     'The code in this area will be run automatically at ~60fps
 END SUB 
 
-'''
+```
 
 
 ## See Also

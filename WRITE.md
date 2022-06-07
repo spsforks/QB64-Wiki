@@ -17,7 +17,7 @@ The [WRITE](WRITE) statement writes a [comma](comma)-separated list of values to
 
 *Example:* Comparing WRITE to the same PRINT statement.
 
-'''vb
+```vb
 a% = 123
 b$ = "Hello"
 c! = 3.1415
@@ -25,15 +25,15 @@ c! = 3.1415
 PRINT a%, b$, c!   'commas display tab spaced data
 WRITE a%, b$, c!   'displays commas between values, strings retain end quotes
 
-'''
+```
 
-'''text
+```text
 
 
 123        Hello      3.1415 
 123,"Hello",3.1415 
 
-'''
+```
 
 
 

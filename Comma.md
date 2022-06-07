@@ -15,35 +15,35 @@ The **comma** is used to [TAB](TAB) the cursor after a [PRINT](PRINT) statement'
 
 *Example 1:* Comparing [TAB](TAB) to [comma](comma) tab spacing.
 
-'''vb
+```vb
 
 PRINT TAB(15); "T"
 
 PRINT , "T" 
 
-'''
+```
 
 
 *Example 2:* Comparing PRINT and WRITE statement displays.
 
-'''vb
+```vb
 
 value1 = 23567: value2 = 45678: value3 = 354126
 COLOR 14: LOCATE 2, 1: PRINT value1, value2, value3
 COLOR 12: LOCATE 4, 1: WRITE value1, value2, value3
 
 
-'''
+```
 
 
-'''text
+```text
 
 
 23567        45678      354126
 
 23567,45678,354126
 
-'''
+```
 
 > *Note:* [WRITE](WRITE) does not space any values. The commas separate the numerical values without the normal PRINT spacing.
 

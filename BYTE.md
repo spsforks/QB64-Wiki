@@ -24,7 +24,7 @@ A [_BYTE](_BYTE) variable can hold signed variable values from -128 to 127 (one 
 > * **"Big-endian"**: MSB is the first bit encountered, decreasing to the LSB as the last bit by position, memory address or time.
 > * **"Little-endian"**: LSB is the first bit encountered, increasing to the MSB as the last bit by position, memory address or time.
 
-'''text
+```text
 
 
          **Offset or Position:    0    1   2   3   4   5   6   7      Example: 11110000**
@@ -32,7 +32,7 @@ A [_BYTE](_BYTE) variable can hold signed variable values from -128 to 127 (one 
     **Big-Endian Bit On Value:**   128  64  32  16   8   4   2   1                 240
  **Little-Endian Bit On Value:**    1    2   4   8  16  32  64  128                 15
 
-'''
+```
 
 > :The big-endian method compares exponents of 2<sup>7</sup> down to 2<sup>0</sup> while the little-endian method does the opposite. 
 
@@ -40,7 +40,7 @@ A [_BYTE](_BYTE) variable can hold signed variable values from -128 to 127 (one 
 <center>**[[_BYTE|BYTES]]**</center>
 * [[INTEGER]] values consist of 2 bytes called the **HI** and **LO** bytes. Anytime that the number of binary digits is a multiple of 16 (2bytes, 4 bytes, etc.) and the HI byte's MSB is on(1), the value returned will be negative. Even with [[SINGLE]] or [[DOUBLE]] values! 
 
-'''text
+```text
 
                                  **16 BIT INTEGER OR REGISTER**
               **AH (High Byte Bits)                         AL (Low Byte Bits)**
@@ -50,7 +50,7 @@ A [_BYTE](_BYTE) variable can hold signed variable values from -128 to 127 (one 
                                                  |
    DEC: -32768 16384 8192 4096 2048 1024 512 256 | 128   64  32   16   8    4   2    1
 
-'''
+```
 
 > :The HI byte's **MSB** is often called the **sign** bit! When all 16 of the integer binary bits are on, the decimal return is -1.  
 
@@ -61,7 +61,7 @@ A [_BYTE](_BYTE) variable can hold signed variable values from -128 to 127 (one 
 > How negative assignments affect the _UNSIGNED value returned by a byte (8 bits).
 
 
-'''vb
+```vb
 
 DIM unsig AS _UNSIGNED _BYTE
 DIM sig AS _BYTE
@@ -91,9 +91,9 @@ PRINT
 PRINT "The signed value needs the MSB bit for the sign."
 PRINT "The most significant bit is furthest to the left."
 
-'''
+```
 
-'''text
+```text
 
 
 &B00000001 = unsigned & signed are both 1
@@ -105,7 +105,7 @@ PRINT "The most significant bit is furthest to the left."
 The signed value needs the MSB bit for the sign.
 The most significant bit is furthest to the left.
 
-'''
+```
 
 
 

@@ -26,20 +26,20 @@ The [MOD](MOD) operator gives the remainder after division of one number by anot
 
 *Example 1:* 
 
-'''vb
+```vb
 
   I% = 100 \ 9 
   R% = 100 MOD 9
   PRINT "Integer division ="; I%, "Remainder ="; R% 
 
-'''
+```
 
-'''text
+```text
 
 
   Integer division = 11        Remainder = 1 
 
-'''
+```
 
 
 *Explanation:* Integer division 100 \ 9 returns 11. 11 [*](*) 9 = 99. So the remainder must be 1 as 100 - 99 = 1. Normal decimal point division would return 11.11111.
@@ -47,7 +47,7 @@ The [MOD](MOD) operator gives the remainder after division of one number by anot
 
 *Example 2:* Comparing normal, integer and remainder division.
 
-'''vb
+```vb
 
 tmp1$ = " Normal:         ####.# / #### = ##.###   "
 tmp2$ = " Integer:        ####.# \ #### = ###      "
@@ -67,12 +67,12 @@ LOCATE 9, 20: PRINT USING tmp3$; numerator; divisor; numerator MOD divisor
 DO: SLEEP: LOOP UNTIL INKEY$ <> ""                              
 NEXT 
 
-'''
+```
 
 
 *Example 3:* Integer division and MOD can be used to convert values to different base numbering systems from base 2 to 36 as [STRING](STRING):
 
-'''vb
+```vb
 
 CLS
 DO
@@ -107,7 +107,7 @@ LOOP UNTIL num& = 0
 BASEN$ = BN$
 END FUNCTION 
 
-'''
+```
 >  *Note:* Base numbering systems over base 10(0 - 9) use alphabetical letters to represent digits greater than 9 like [&H](&H)(0 - F).
 
 

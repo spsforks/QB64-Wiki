@@ -22,7 +22,7 @@ The [_SCREENIMAGE](_SCREENIMAGE) function stores the current desktop image or a 
 
 *Example:* Determining the present screen resolution of user's PC for a screensaver program.
 
-'''vb
+```vb
 
  desktop& = _SCREENIMAGE
  MaxScreenX& = _WIDTH(desktop&)
@@ -31,7 +31,7 @@ The [_SCREENIMAGE](_SCREENIMAGE) function stores the current desktop image or a 
  SCREEN _NEWIMAGE(MaxScreenX&, MaxScreenY&, 256) 'program window is sized to fit
  _SCREENMOVE _MIDDLE
 
-'''
+```
 
 
 ### Sample code to save images to disk

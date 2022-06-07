@@ -22,7 +22,7 @@ The [ON STRIG(n)](ON STRIG(n)) statement is an event procedure that directs prog
 
 *Example 1:* Reading a STRIG event to do something in a [GOSUB](GOSUB) procedure.
 
-'''vb
+```vb
 
 ON STRIG(0) GOSUB 10
 STRIG(0)ON
@@ -41,12 +41,12 @@ FOR x = 1 TO LEN(a$)
 NEXT
 RETURN 
 
-'''
+```
 
 
 *Example 2:* Displays any number of game pad or joystick device button presses.
 
-'''vb
+```vb
 
 FOR j = 1 TO 256
     FOR b = 1 TO 256
@@ -65,7 +65,7 @@ SUB JoyButton (js AS LONG)
 PRINT "Joystick #"; js \ 256 + 1; "button #"; (js AND 255) + 1; "pressed!"
 END SUB 
 
-'''
+```
 > *Explanation:* Up to 256 controllers can be used in QB64 with many buttons to read.
 
 

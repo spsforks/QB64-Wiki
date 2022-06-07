@@ -21,7 +21,7 @@ DISPLAYTITLE:OPTION _EXPLICITARRAY
 
 *Example:* Avoiding simple typos with [OPTION _EXPLICITARRAY](OPTION _EXPLICITARRAY) results shown in the QB64 IDE Status area.
 
-'''vb
+```vb
 OPTION _EXPLICITARRAY
 x = 1 'This is fine, it's not an array so not affected
 
@@ -30,7 +30,7 @@ z(2) = 3 'All good here, we've explicitly DIMmed our array
 
 y(2) = 3 'This now generates an error
 
-'''
+```
 
 *QB64 IDE Status will show:*
 **Array 'y' (SINGLE) not defined on line 7**

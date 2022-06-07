@@ -18,7 +18,7 @@ The **RESTORE** statement is used to reset the DATA pointer to the beginning of 
 
 *Example:* Restoring a labeled DATA field to avoid going past the end of DATA.
 
-'''vb
+```vb
 
 DO
    INPUT "Enter a month number(1 to 12): ", monthnum%
@@ -34,15 +34,15 @@ LOOP UNTIL monthnum% < 1 OR monthnum% > 12
  DATA January, 31, February, 28, March, 31, April, 30, May, 31, June, 30
  DATA July, 31, August, 31, September, 30, October, 31, November, 30, December, 31
 
-'''
+```
 
-'''text
+```text
 
 
 Enter a month number(1 to 12): 6
 The month June has 30 days.
 
-'''
+```
 
 > *Note:* String DATA values do not require quotes unless they have commas, end spaces or QBasic keywords in them.
 
@@ -50,7 +50,7 @@ The month June has 30 days.
 
 *Example:* Using RESTORE to know the number of elements in the DATA in order to dimension and store the items in a array.
 
-'''vb
+```vb
 
 DO
 READ dummy$ 'we won't actually use this string for anything else than to know when there is no more DATA.
@@ -80,11 +80,11 @@ END
 
 DATA "entry1", "entry2", "entry3", "stop"
 
-'''
+```
 <sub>Code By: Cyperium</sub>
 
 
-'''text
+```text
 
 
 The number of relevant entries are: 3
@@ -92,7 +92,7 @@ entry1
 entry2
 entry3
 
-'''
+```
 
 *Note:* Now we can add any number of entries without further compensation to the code.
 

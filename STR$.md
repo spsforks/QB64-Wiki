@@ -22,37 +22,37 @@ The **STR$** function returns the [STRING](STRING) representation of a numerical
 ## Example(s)
 
 
-'''vb
+```vb
 PRINT STR$( 1.0 )
 PRINT STR$( 2.3 )
 PRINT STR$( -4.5 )
 
-'''
+```
 
-'''text
+```text
 
 
  1
  2.3
 -4.5
 
-'''
+```
 
 
 
 
-'''vb
+```vb
 
 a = 33
 PRINT STR$(a) + "10" + "1" + "who" + STR$(a) + STR$(a) + LTRIM$(STR$(a))
 
-'''
+```
 
-'''text
+```text
 
  33101who 33 3333
 
-'''
+```
 
 
 

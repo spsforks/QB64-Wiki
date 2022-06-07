@@ -29,7 +29,7 @@ The [_DIR$](_DIR$) function returns common paths in **Windows** only such as My 
 
 Example: Displaying default paths in Windows only.
 
-'''vb
+```vb
 PRINT "DESKTOP=" + _DIR$("desktop")
 PRINT "DOWNLOADS=" + _DIR$("download")
 PRINT "DOCUMENTS=" + _DIR$("my documents")
@@ -39,9 +39,9 @@ PRINT "VIDEO=" + _DIR$("video")
 PRINT "APPLICATION DATA=" + _DIR$("data")
 PRINT "LOCAL APPLICATION DATA=" + _DIR$("local application data"
 
-'''
+```
 
-'''text
+```text
 
 DESKTOP=C:\Documents and Settings\Administrator\Desktop\
 DOWNLOADS=C:\Documents and Settings\Administrator\Downloads\
@@ -52,7 +52,7 @@ VIDEO=C:\Documents and Settings\Administrator\My Documents\My Videos\
 APPLICATION DATA=C:\Documents and Settings\Administrator\Application Data\
 LOCAL APPLICATION DATA=C:\Documents and Settings\Administrator\Local Settings\Application Data\ 
 
-'''
+```
 
 
 

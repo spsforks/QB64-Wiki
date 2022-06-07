@@ -25,28 +25,28 @@ The [SPACE$](SPACE$) function returns a [STRING](STRING) consisting of a number 
 
 *Example 1:* How to space text in a [PRINT](PRINT) statement using SPACE$ with string [concatenation](concatenation).
 
-'''vb
+```vb
 
 FOR count% = 0 TO 3
     PRINT "abc" + SPACE$( count% ) + "def"
 NEXT count%
 
-'''
+```
 
-'''text
+```text
 
 abcdef
 abc def
 abc  def
 abc   def
 
-'''
+```
 
 
 
 *Example 2:* In [SCREEN](SCREEN) 0 SPACE$ can be used to change the background color to make an American flag.
 
-'''vb
+```vb
 
  USA flag centered on screen with thin horizontal red & white stripes
 ' blue corner field with randomly twinkling stars
@@ -103,7 +103,7 @@ LOOP WHILE stop$ = ""
 COLOR 7, 0
 END
 
-'''<sub>Code by Solitaire</sub>
+```<sub>Code by Solitaire</sub>
 > *Explanation:* In [SCREEN](SCREEN) 0, the background color is only placed with the the printed text and spaces. [CLS](CLS) can color the entire screen.
 
 

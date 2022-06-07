@@ -19,7 +19,7 @@ Function and [Sub (explanatory)](Sub (explanatory)) procedures are placed after 
 
 *Example 1:* Some BASIC functions.
 
-'''vb
+```vb
 
 a = ABS(-1)
 b = INT(2.54)
@@ -29,12 +29,12 @@ PRINT "INT(2.54) gives"; b
 PRINT "CINT(2.54) gives"; c
 PRINT "ATN(1) * 4 gives"; ATN(1) * 4
 
-'''
+```
 
 
 *Example 2:* User-defined function.
 
-'''vb
+```vb
 
 d = dividebyhalf(4)
 
@@ -49,7 +49,7 @@ END IF
 dividebyhalf = half
 END FUNCTION
 
-'''
+```
 > *Explanation:* The calculated value is assigned to the name of the function. When calculations require several changes, use an intermediary variable. Then assign that value to the function name.
 
 

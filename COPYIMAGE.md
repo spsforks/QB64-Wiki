@@ -32,7 +32,7 @@ This function creates an identical designated image in memory with a different n
 
 ;Example 1:Restoring a Legacy SCREEN using the _COPYIMAGE return value.
 
-'''vb
+```vb
 
 SCREEN 13
 CIRCLE (160, 100), 100, 40
@@ -50,13 +50,13 @@ SCREEN oldmode&        'restore original screen
 IF s& < -1 THEN _FREEIMAGE s&
 END
 
-'''
+```
 <sub>Code courtesy of Galleon</sub>
 ;Note:Only free valid handle values with [_FREEIMAGE](_FREEIMAGE) AFTER a new [SCREEN](SCREEN) mode is being used by the program.
 ----
 ;Example 2:Program that copies desktop to a hardware image to form a 3D triangle (**version 1.000 and up**):
 
-'''vb
+```vb
 
 SCREEN _NEWIMAGE(640, 480, 32)
 my_hardware_handle = _COPYIMAGE(_SCREENIMAGE, 33) 'take a screenshot and use it as our texture
@@ -65,7 +65,7 @@ _MAPTRIANGLE (0, 0)-(500, 0)-(250, 500), my_hardware_handle TO_
 _DISPLAY
 DO: _LIMIT 30: LOOP UNTIL INKEY$ <> ""
 
-'''
+```
 <sub>Code courtesy of Galleon</sub>
 
 

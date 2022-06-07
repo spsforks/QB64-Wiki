@@ -19,7 +19,7 @@ The [TAB](TAB) function is used in [PRINT](PRINT) and [LPRINT](LPRINT) statement
 
 *Example:* Comparing TAB to [comma](comma) print spacing which moves the next text print 15 columns.
 
-'''vb
+```vb
 
 PRINT TAB(15); "T" 'TAB spacing
 
@@ -29,9 +29,9 @@ PRINT TAB(15); "T"; TAB(20); "A"; TAB(15); "B" 'semicolons add nothing to positi
 
 PRINT TAB(15); "T", TAB(20); "A"; TAB(15); "B" 'comma moves column position beyond 20 
 
-'''
+```
 
-'''text
+```text
 
               T
               T
@@ -40,7 +40,7 @@ PRINT TAB(15); "T", TAB(20); "A"; TAB(15); "B" 'comma moves column position beyo
               T
                    A
               B
-'''
+```
  
 >  *Explanation:* TAB moves the PRINT down to the next row when the current column position is more than the TAB position.
 

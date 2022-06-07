@@ -29,7 +29,7 @@ The [LINE INPUT](LINE INPUT) statement requests a [STRING](STRING) keyboard entr
 
 *Example:* Preventing screen roll after an input entry on the bottom 2 screen rows. 
 
-'''vb
+```vb
 
 SCREEN 12
 
@@ -42,13 +42,13 @@ COLOR 14'                        change foreground color to yellow
 LOCATE 29, 2: PRINT "Searching..."; 'print message
 SLEEP 
 
-'''
+```
 
-'''text
+```text
 
 Enter a name to search for... █
 
-'''
+```
 
 >  *Explanation:* The red [semicolon](semicolon) after LINE INPUT acts like a semicolon after a [PRINT](PRINT), which keeps the print cursor on the same row.
 

@@ -2,7 +2,7 @@ The following program can create a single icon from square bitmaps up to 128 X 1
 
 
 
-'''vb
+```vb
 
 CONST dat = 14~&
 DIM Dword AS _UNSIGNED LONG
@@ -81,7 +81,7 @@ NEXT
 CLOSE
 SYSTEM
 
-'''
+```
 <sub>Adapted from code by Michael Calkins, Public domain, November 2011</sub>
 
 

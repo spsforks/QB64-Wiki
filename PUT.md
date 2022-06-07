@@ -22,7 +22,7 @@ The **PUT #** file or port statement writes data to a specific byte or record lo
 
 *Example 1:* Using a [TYPE](TYPE) record variable(Contact) to enter a new [RANDOM](RANDOM) record to a file.
 
-'''vb
+```vb
 
 TYPE ContactType
   first AS STRING * 10
@@ -42,13 +42,13 @@ PRINT NumRecords%; "previous records"
 PUT #1, NumRecords% + 1, Contact ' add a new record TYPE record value
 CLOSE #1 
 
-'''
+```
 >  *Note:* The DOT record variable values were created or changed before the PUT. The record length is 32 bytes.
 
 
 *Example 2:* Placing the contents of a numerical array into a [BINARY](BINARY) file. You may want to put the array size at the beginning too.
 
-'''vb
+```vb
 
 DIM SHARED array(100) AS INTEGER
 
@@ -79,7 +79,7 @@ NEXT
 PRINT "done"
 END SUB 
 
-'''
+```
 >  *Note:* Use empty brackets in QB64 when using [GET](GET) to create an array or [PUT](PUT) to create a [BINARY](BINARY) data file.
 
 

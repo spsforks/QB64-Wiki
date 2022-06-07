@@ -21,12 +21,12 @@ The [LOF](LOF) function is used to find the length of an [OPEN](OPEN) file in by
 *Example:* Finding the number of records in a RANDOM file using a [TYPE](TYPE) variable.
 
 
-'''vb
+```vb
 
   OPEN file$ FOR RANDOM AS #1 LEN = LEN(Type_variable)
   NumRecords% = LOF(1) \ RecordLEN%
 
-'''
+```
 
 
 ## See Also

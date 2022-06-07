@@ -15,7 +15,7 @@
 
 
 
-'''vb
+```vb
 
 
 '----------------- Freeware by Bob Seguin 2003 -- (TheBOB) --------------------------|
@@ -59,9 +59,9 @@ SYSTEM
 
             '****************  End DEMO code ***********************
 
-'''
+```
 
-'''vb
+```vb
  
 *
 SUB EightBit (x1%, y1%, x2%, y2%, Filename$)   'SCREEN 13(256 color) bitmap maker
@@ -148,9 +148,9 @@ CLOSE #f%
 END SUB    
 
 
-'''
+```
 
-'''vb
+```vb
 
 
 *
@@ -246,7 +246,7 @@ CLOSE #f%
 END SUB   
 
 
-'''
+```
 <center>**If full code is not displayed, refresh your browser!**</center>
 
 

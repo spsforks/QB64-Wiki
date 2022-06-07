@@ -32,7 +32,7 @@ PageLegacySupport
 
 *Example 1:* Saving array data to a file quickly.
 
-'''vb
+```vb
 
  LB% = LBOUND(Array)
  bytes% = LEN(Array(LB%))
@@ -41,13 +41,13 @@ PageLegacySupport
   BSAVE filename$, VARPTR(Array(LB%)), filesize&  ' changeable index
  DEF SEG 
 
-'''
+```
 >  *Explanation:* Procedure determines the filesize from the array size automatically. [LBOUND](LBOUND) is used with [UBOUND](UBOUND) to determine array size and byte size. Works with any type of array except variable-length strings. Used for saving program data fast.
 
 
 *Example 2:* [BSAVE](BSAVE)ing a bitmap and calculating the file size
 
-'''vb
+```vb
 
  DEF SEG = VARSEG(Image(0))
  PSET(BMPHead.PWidth - 1, BMPHead.PDepth - 1)  'color lower right corner if black
@@ -58,14 +58,14 @@ PageLegacySupport
  BSAVE SaveName$, VARPTR(Image(0)), (2 * ArraySize&) + 200 'file size
  DEF SEG 
 
-'''
+```
 
 >  *Explanation:* The [FOR...NEXT](FOR...NEXT) loop reads backwards through the image array until it finds a value not 0. The [LONG](LONG) ArraySize& value is doubled and 200 is added. BMPhead.PWidth and BMPhead.PDepth are found by reading the bitmap's information header using a [TYPE](TYPE) definition. See [Bitmaps](Bitmaps).
 
 
 *Example 3:* Using [PUT](PUT) and [GET](GET) to write and read array data from a file without using BSAVE or [BLOAD](BLOAD):
 
-'''vb
+```vb
 
 KILL "example2.BIN" 'removes old image file!
 
@@ -99,7 +99,7 @@ FOR i = 0 TO 20 'read all 3 arrays
 NEXT
 PRINT "Array:"; size%, "File:"; fsize%
 
-'''<sub>Code by Ted Weissgerber</sub>
+```<sub>Code by Ted Weissgerber</sub>
 >  *Explanation:* A 10 by 10 pixel box is saved to an array using the [GET (graphics statement)](GET (graphics statement)) and written to a BINARY file using [PUT](PUT) #1. Then [GET](GET) #1 places the file contents into another INTEGER array and places it on the screen with the [PUT (graphics statement)](PUT (graphics statement)).
 
 >  The array contents: 88 is the width in the GET array for [SCREEN](SCREEN) 13 which needs divided by 8 in that mode only. The area is actually 11 X 11. The array size needed can be found by looping backwards through the array until a color value is found. **IF array(i) <> 0 THEN EXIT FOR** (66 integers) or by dividing the created BINARY file size in half (134 bytes) when known to be array sized already.

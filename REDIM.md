@@ -26,7 +26,7 @@ A [REDIM](REDIM) statement can re-dimension one [$DYNAMIC]($DYNAMIC)(flexible) [
 
 *Example 1:* The [$DYNAMIC]($DYNAMIC) Metacommand allows an array to be re-sized using [DIM](DIM) and REDIM.
 
-'''vb
+```vb
 
 '$DYNAMIC
 
@@ -37,12 +37,12 @@ REDIM Array(2 * size)
 
 PRINT UBOUND(Array) 
 
-'''
+```
 
 
 *Example 2:* Shows the difference between REDIM and REDIM [_PRESERVE](_PRESERVE).
 
-'''vb
+```vb
 
 REDIM array(20)
 array(10) = 24
@@ -55,16 +55,16 @@ PRINT array(10)
 REDIM array(15)
 PRINT array(10) 
 
-'''
+```
 
-'''text
+```text
 
 
  24
  24
  0
 
-'''
+```
 
 >  *Explanation:* REDIM without _PRESERVE erases the array data and cannot change the number of dimensions.
 

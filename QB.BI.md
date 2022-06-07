@@ -12,7 +12,7 @@ The **QB.BI** file can be used for [INTERRUPT](INTERRUPT) or [INTERRUPTX](INTERR
 
 > *The QB.BI file contents:*
 
-'''vb
+```vb
 
 
 '**************************************************************************
@@ -82,13 +82,13 @@ DECLARE SUB INT86OLD (intnum AS INTEGER, inarray(1) AS INTEGER, outarray(1) AS I
 '
 DECLARE SUB INT86XOLD (intnum AS INTEGER, inarray(1) AS INTEGER, outarray(1) AS INTEGER) 
 
-'''
+```
 
 
 > *Ethan Winer's compact "RegType.BI" file for [INTERRUPT](INTERRUPT) or [INTERRUPTX](INTERRUPTX):*
 
 
-'''vb
+```vb
 
 
 TYPE RegType
@@ -104,7 +104,7 @@ TYPE RegType
    es AS INTEGER
 END TYPE 
 
-'''
+```
 >  *Explanation:* DECLARE statements in QB4.5 and PDS(7.1) are not required because the Library MUST be included with [INTERRUPT](INTERRUPT), [INTERRUPTX](INTERRUPTX) and [CALL ABSOLUTE](CALL ABSOLUTE) or a "Subprogram not defined" [ERROR Codes](ERROR Codes) will occur. 
 
 

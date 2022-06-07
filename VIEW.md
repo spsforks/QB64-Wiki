@@ -18,24 +18,24 @@ The **VIEW** statement creates a graphics view port area by defining the coordin
 
 *Example 1:* Using SCREEN option with absolute screen coordinates.
 
-'''vb
+```vb
 
  SCREEN 12
  VIEW SCREEN (200, 200)-(400, 400), 1, 9 ' blue BG with light blue border
  CIRCLE (220, 220), 20, 11 ' using the actual screen coordinates
 
-'''
+```
 
 
 *Example 2:* Using coordinates relative to the viewport box area.
 
-'''vb
+```vb
 
  SCREEN 12
  VIEW (200, 200)-(400, 400), 1, 9 
  CIRCLE (20, 20), 20, 11 ' using coordinates inside of the viewport
 
-'''
+```
 
 > *Explanation:* The relative coordinates are automatically adjusted to place the object correctly. Any values outside of the box's area will not be displayed. Both examples should display the same screen image.
 

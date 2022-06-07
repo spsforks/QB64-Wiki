@@ -10,7 +10,7 @@ The [_BLINK](_BLINK) function returns the current blink setting for SCREEN 0 col
 ## Example(s)
 
 
-'''vb
+```vb
 COLOR 16, 7
 
 'Try uncommenting the line below:
@@ -22,7 +22,7 @@ ELSE
     PRINT "I'm not blinking"
 END IF
 
-'''
+```
 
 
 ## See Also

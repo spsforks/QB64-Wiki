@@ -19,7 +19,7 @@ The [_CONSOLEINPUT](_CONSOLEINPUT) function is used to monitor any new mouse or 
 
 *Example 1:* Reading individual key strokes from a console window (Windows).
 
-'''vb
+```vb
 
 $CONSOLE:ONLY
 _DEST _CONSOLE: _SOURCE _CONSOLE
@@ -36,7 +36,7 @@ DO
 LOOP UNTIL c = 1
 END
 
-'''
+```
 
 
 ## See Also

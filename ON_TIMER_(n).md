@@ -45,7 +45,7 @@ The [ON_TIMER(n)](ON_TIMER(n)) statement sets up a timed event to be repeated at
 
 *Example:* Using a numbered TIMER to check the mouse button press status in **QB64**.
 
-'''vb
+```vb
 
 DIM SHARED Button AS LONG    'share variable value with Sub
 
@@ -76,7 +76,7 @@ DO WHILE _MOUSEINPUT
 LOOP
 END SUB 
 
-'''
+```
 
 
 ## See Also

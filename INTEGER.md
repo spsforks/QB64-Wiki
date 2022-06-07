@@ -24,47 +24,47 @@
 
 *Example 1:* QBasic signed integers were limited from -32768 to 32767, but could not exceed 32767 or it would error:
 
-'''vb
+```vb
 
 DO: _LIMIT 2000
   i% = i% + 1
   PRINT i%
 LOOP UNTIL i% = 0 
 
-'''
+```
 > *Explanation:* In **QB64** the count will go to 32767, then count up from -32768 to 0 before repeating the process without error. 
 
 
 *Example 2:* When a signed **QB64** INTEGER value exceeds 32767, the value may become a negative value:
 
-'''vb
+```vb
 
 i% = 38000
 PRINT i% 
 
-'''
-'''text
+```
+```text
 
 -27536
 
-'''
+```
 
 > *Explanation:* Use an [_UNSIGNED](_UNSIGNED) INTEGER or a ~% variable type suffix for only positive integer values up to 65535.
 
 
 *Example 3:* In **QB64** [_UNSIGNED](_UNSIGNED) INTEGER values greater than 65535 cycle over again from zero:
 
-'''vb
+```vb
 
 i~% = 70000
 PRINT i~% 
 
-'''
-'''text
+```
+```text
 
  4464
 
-'''
+```
 
 > *Explanation:* In QB64 an unsigned integer value of 65536 would be 0 with values increasing by the value minus 65536. 
 

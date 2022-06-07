@@ -22,7 +22,7 @@ The [_WIDTH (function)](_WIDTH (function)) function returns the width of an imag
 *Example:* A SUB program that centers text in any graphic screen mode except text mode [SCREEN (statement)](SCREEN (statement)) 0.
 
 
-'''vb
+```vb
 
 
  s& = _NEWIMAGE(800, 600, 256)
@@ -37,7 +37,7 @@ The [_WIDTH (function)](_WIDTH (function)) function returns the width of an imag
  END SUB
 
 
-'''
+```
 
 >  *Explanation:* [_NEWIMAGE](_NEWIMAGE) enlarges a screen to 800 pixels wide which is what [_WIDTH (function)](_WIDTH (function)) function will return. The center is 800 \ 2 or 400. Since the text width is 8 pixels, that is divided by 8 to get 50 as the center text column. Then half of the text length is subtracted to find the starting text print [LOCATE](LOCATE) column.
 

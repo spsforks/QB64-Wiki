@@ -17,7 +17,7 @@ The [RMDIR](RMDIR) statement deletes an empty directory using a designated path 
 ## Example(s)
 
 
-'''vb
+```vb
 
 
 ON ERROR GOTO ErrorHandler
@@ -46,12 +46,12 @@ PRINT
 RESUME NEXT
 
 
-'''
+```
 
 >  This Windows-specific output from two runs of the above program is typical, though your output may vary. User-entered text is in italics.
 
 
-'''text
+```text
 
 
 
@@ -62,7 +62,7 @@ Enter path and name of directory to delete: *C:\temp*
 C:\temp is not empty!
 
 
-'''
+```
 
 
 

@@ -19,7 +19,7 @@ QB64 ## Syntax
 * Returns coordinate values from 1 to 254. QBasic only returned values from 1 to 200.
 * STICK(0) is required to get values from the other STICK functions. Always read it first!
 
-'''text
+```text
 
 **STICK(0) returns the column coordinate of device 1. Enables reads of the other STICK values.**
 **STICK(1) returns row coordinate of device 1.**
@@ -28,7 +28,7 @@ STICK(3) returns row coordinate of device 2 if used. (QBasic maximum was 2 contr
 **STICK(4) returns column coordinate of device 3. (other joysticks if used in QB64 only!)**
 **STICK(5) returns row coordinate of device 3 if used.**
 
-'''
+```
 
 * **QB64** allows more joysticks by extending the numbers in pairs like device 3 above. EX: STICK(6): STICK(7) 'device 4
 * **QB64** allows a dual stick to be read using the same first parameters and 2 as the second parameter. EX: STICK(0, 2)
@@ -37,7 +37,7 @@ STICK(3) returns row coordinate of device 2 if used. (QBasic maximum was 2 contr
 
 *Example 1:* Displays the input from 3 joysticks, all with dual sticks and 3 buttons.
 
-'''vb
+```vb
 
 DO: _LIMIT 10
 
@@ -53,13 +53,13 @@ DO: _LIMIT 10
     
 LOOP UNTIL INKEY$ > "" 
 
-'''
+```
 > *Explanation:* Notice the extra **QB64 only** parameters used to cater for the 2nd stick and the buttons of the 3rd joystick.
 
 
 *Example 2:* Displays the Sidewinder Precision Pro Stick, Slider, Z Axis, and Hat Point of View.
 
-'''vb
+```vb
 
 SCREEN 12
 d = _DEVICES
@@ -81,10 +81,10 @@ DO: _LIMIT 50
   PRINT
 LOOP UNTIL INKEY$ <> "" 
 
-'''
+```
 >  *Explanation:* Each axis on the first controller found is either STICK(0, n) or STICK(1, n) with n increasing when necessary.
 
-'''text
+```text
 
 
 Number of input devices found = 3
@@ -101,7 +101,7 @@ Buttons: 9
                       Buttons
 -0 -1 █ 0  0 █ 0  0 █ 0  0 █ 0  0 █ 0  0 █ 0  0 █ 0  0 █ 0  0 █
 
-'''
+```
 
 >  *Note:* A Sidewinder Precision Pro requires that pins 2 and 7(blue and purple) be connected together for digital USB recognition.
 <center> [http://www.amazon.com/Belkin-F3U200-08INCH-Joystick-Adapter-SideWinder/dp/B000067RIV  Sidewinder Precision Pro game port to USB adapter]</center>

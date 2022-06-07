@@ -20,7 +20,7 @@ The [LPOS](LPOS) function returns the current LPT printer head position.
 
 > Prompts the user for team names and the names of players on each team. It then prints the players and their teams on the printer.
 
-'''vb
+```vb
 CLS
 LPRINT "Team Members"; TAB(76); "TEAM" : LPRINT
 INPUT "How many teams"; TEAMS
@@ -42,7 +42,7 @@ FOR T = 1 TO TEAMS
 LPRINT STRING$(80 - LPOS(0) - LEN(TEAM$),"."); TEAM$
 NEXT T
 
-'''
+```
 
 
 ## See Also

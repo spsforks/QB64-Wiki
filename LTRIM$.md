@@ -18,37 +18,37 @@ The [LTRIM$](LTRIM$) function removes leading space characters from a [STRING](S
 
 *Example 1:* Trimming a positive string number.
 
-'''vb
+```vb
 
 value = 12345
 number$ = LTRIM$(STR$(value)) 'converting number to string removes right PRINT space
 PRINT "[" + number$ + "]" 
 
-'''
+```
 
-'''text
+```text
 
 [12345]
 
-'''
+```
 
 
 
 *Example 2:* Trimming leading spaces from text strings.
 
-'''vb
+```vb
 
 PRINT LTRIM$("some text")
 PRINT LTRIM$("   some text") 
 
-'''
+```
 
-'''text
+```text
 
 some text
 some text
 
-'''
+```
 
 
 
@@ -61,13 +61,13 @@ FUNCTION TRIM$(text$)
 TRIM$ = LTRIM$(RTRIM$(text$))
 END FUNCTION 
 
-'''
+```
 
-'''text
+```text
 
 →Text String←
 
-'''
+```
 
 
 

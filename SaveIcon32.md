@@ -2,7 +2,7 @@ The following Icon creation procedure was adapted from Galleon's [SAVEIMAGE](SAV
 
 **NOTE: QB64 can use .ico files natively for Windows executables with [$EXEICON]($EXEICON).**
 
-'''vb
+```vb
 
 DO
   LINE INPUT "Use 8 bit(256 colors) or 32 bit image? ", bit$
@@ -94,7 +94,7 @@ PUT #f&, , b$
 CLOSE #f&
 END SUB 
 
-'''
+```
 <sub>Code by Ted Weissgerber</sub>
 
 > *Explanation:* The icons created can have a full black [AND](AND) mask for a solid square image when mode% is zero. If mode% is a value other than 0, the AND mask routine looks for black pixels and sets the background pixel on for transparency. Icons with dimensions that are not a multiple of 32 would require padding. In the header, ???? is later replaced with size data. If the image is 24/32 BPP, the size of the [XOR](XOR) image data will triple because each pixel uses 3 bytes for red, green and blue values up to 255.

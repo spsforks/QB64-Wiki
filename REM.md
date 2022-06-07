@@ -16,7 +16,7 @@
 
 *Example:* Avoiding an END IF error.
 
-'''vb
+```vb
 
 REM This is a remark...
 ' This is also a remark...
@@ -24,7 +24,7 @@ IF a = 0 THEN REM (REM follows syntax rules)
 IF a = 0 THEN '(apostrophe doesn't follow syntax rules, so use END IF after this)
 END IF 
 
-'''
+```
 
 
 ## See Also

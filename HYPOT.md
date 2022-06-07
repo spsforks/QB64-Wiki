@@ -22,7 +22,7 @@ The [_HYPOT](_HYPOT) function returns the hypotenuse of a right-angled triangle 
 
 *Example:*
 
-'''vb
+```vb
 
 DIM leg_x AS DOUBLE, leg_y AS DOUBLE, result AS DOUBLE
 leg_x = 3
@@ -30,15 +30,15 @@ leg_y = 4
 result = _HYPOT(leg_x, leg_y)
 PRINT USING "## , ## and ## form a right-angled triangle."; leg_x; leg_y; result
 
-'''
+```
 
 
-'''text
+```text
 
 
  3 , 4 and 5 form a right-angled triangle.
 
-'''
+```
 
 
 

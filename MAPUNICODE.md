@@ -20,7 +20,7 @@ The [_MAPUNICODE](_MAPUNICODE) statement maps a [Unicode](Unicode) value to an [
 
 *Example:* Converting the extended [ASCII](ASCII) characters to other characters using DATA from the Unicode [Code Pages](Code Pages).
 
-'''vb
+```vb
 
 SCREEN 0
 _FONT _LOADFONT("C:\windows\fonts\cour.ttf", 20, "MONOSPACE")
@@ -49,7 +49,7 @@ DATA 9617,9618,9619,9474,9508,8470,167,9559,9565,9496,9484,9608,9604,9612,9616,9
 DATA 945,223,915,960,931,963,181,964,934,920,937,948,8734,966,949,8745
 DATA 8801,177,8805,8804,8992,8993,247,8776,176,8729,183,8730,8319,178,9632,160 
 
-'''
+```
 >  *Note:* The Unicode data field is created by adding DATA before each line listed for the appropriate [Code Pages](Code Pages).
 
 

@@ -16,19 +16,19 @@ The **SGN** function returns the sign of a number value.
 
 *Example:* Checking and changing negative values to positive ones.
 
-'''vb
+```vb
 
 n = -100
 IF SGN(n) = -1 THEN n = ABS(n)
 PRINT n 
 
-'''
+```
 
-'''text
+```text
 
  100
 
-'''
+```
 
 
 

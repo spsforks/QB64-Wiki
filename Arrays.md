@@ -45,11 +45,11 @@ Arrays in QuickBASIC 4.5 and QBasic are limited to 32767 elements, while arrays 
 
 *Example 1:* Dimensions an array named 'Array' that is capable of holding 101 integer values including element 0.
 
-'''vb
+```vb
 
 DIM Array(100) AS INTEGER
 
-'''
+```
 
 An array starts at element 0 unless changed by [OPTION BASE](OPTION BASE) 1 (which can set the start at 1), you can also define the start and end area by [DIM](DIM)ensioning within a range.
 
@@ -57,11 +57,11 @@ An array starts at element 0 unless changed by [OPTION BASE](OPTION BASE) 1 (whi
 
 *Example 2:* dimensions an Integer array that can hold 100 values in indices 1 to 100.
 
-'''vb
+```vb
 
 DIM Array%(1 TO 100)
 
-'''
+```
 
 *Note:* The array type can also be designated by variable suffixes as % designates Integers above.
 
@@ -69,18 +69,18 @@ DIM Array%(1 TO 100)
 
 *Example 3:*
 
-'''vb
+```vb
  
 OPTION BASE 1          ' placed before any arrays are dimensioned 
 REDIM Array$(1000)      ' REDIM creates a dynamic array
 
-'''
+```
 
 **QB64** has a REDIM [_PRESERVE](_PRESERVE) action which can be used in a REDIM statement in order to preserve the data information in the array. 
 
 *Example 4:* REDIM without the _PRESERVE action erases the array contents
 
-'''vb
+```vb
 
  REM $DYNAMIC
  DIM array(20)
@@ -91,21 +91,21 @@ REDIM Array$(1000)      ' REDIM creates a dynamic array
  REDIM array(10)
  PRINT array(10)
 
-'''
+```
 
-'''text
+```text
 
 24
 24
 0
 
-'''
+```
 
 [_PRESERVE](_PRESERVE) also allows the lowest index to be changed. The old starting index data value will always be in the lowest new index when the index range limits are changed.
 
 *Example 5:* Changing the starting index number using the [_PRESERVE](_PRESERVE) action moves the data. 
 
-'''vb
+```vb
 
  REDIM Array$(1 TO 50)
  Array$(1) = "I'm number one!"
@@ -114,23 +114,23 @@ REDIM Array$(1000)      ' REDIM creates a dynamic array
  PRINT Array$(51)              ' display new start index data
  PRINT Array$(100)             ' display new end data
 
-'''
+```
 
-'''text
+```text
 
 I'm number one!
 I'm 50...
 
-'''
+```
 
 *Example 6:* The memory segment address of the array is defined in [DEF SEG](DEF SEG).
 
-'''vb
+```vb
 
  DEF SEG = VARSEG(array(0))
  offset = VARPTR(array(0)) 'program designated offset element 
 
-'''
+```
 
 NOTE: If [OPTION BASE](OPTION BASE) 1 is used change the 0 to 1. The array start index can be changed when some other data is indexed in the array.
 
@@ -140,7 +140,7 @@ Multiple dimensions are possible to create tables of values. QuickBASIC can use 
 
 <center>**Otherwise the data is lost when a program closes.**</center>
 
-'''text
+```text
 
                         ** TWO DIMENSIONAL ARRAY TABLES**
 
@@ -168,25 +168,25 @@ Multiple dimensions are possible to create tables of values. QuickBASIC can use 
                    MonthlySales% = 0       'zero month sales for next months total
                 NEXT
 
-'''
+```
 
 *Example 7:* Creating a two-dimensional array. A comma separates each dimension size.
 
-'''vb
+```vb
 
   DIM Array(12, 10)           ' 2 dimensions can hold 143 data values 
 
-'''
+```
 
 One dimension could hold the month number and the other the number of items sold in 10 categories.
 
 *Example 8:* Dimensioning using index ranges.
 
-'''vb
+```vb
 
   DIM Array(1 TO 12, 1 TO 10) ' 2 dimensions can hold 120 data values
 
-'''
+```
 
 ### Working with the Array Elements
 
@@ -194,7 +194,7 @@ Once an array is created, you have to put something in it. As you may have notic
 
 You can place data into an array using several methods. The slowest method is directly placing data from the user. You can even use the array as the [INPUT](INPUT) variable. It is recommended that ANY program user entries be limited to text as INPUT will give Redo from start errors if a user enters a string value when a numerical input was desired. Numerical string data can be converted from strings simply by using [VAL](VAL). This creates less user errors! NOTE: **QB64** does not return a "Redo from start" error as [INPUT](INPUT) monitors entries.
 
-'''vb
+```vb
 
 DO
   INPUT "Enter your age: ", howold$ 
@@ -207,7 +207,7 @@ PRINT Playerage%(user%)    'print array element to screen to verify entry
 
 user% = user% + 1          'increment user number when all data has been entered
 
-'''
+```
 
 You could use several arrays to hold the player's name, high scores, etc. Once the data is in the array, it can be used until the program ends. Then the data is lost, but you can store the data to a file before closing the program simply by using a loop. See next section.
 
@@ -233,7 +233,7 @@ The next time a program is used, it can [OPEN](OPEN) that file and quickly resto
 
 The [INTEGER](INTEGER) array size can be estimated by multiplying the height by the width of the image area. To find the actual size needed you can use the following routine to count backwards until something is found in the array. The example below returns the array size required to create a 20 by 20 image:
 
-'''vb
+```vb
 
 wide& = 20: deep& = 20  'change the sizes for any image area
 DIM array(wide& * deep&) AS INTEGER
@@ -245,7 +245,7 @@ NEXT
 PRINT arraysize&
 END 
 
-'''
+```
 
 <center>**Note: QB64 can [GET (graphics statement)](GET (graphics statement)) the entire SCREEN 12 area into one array!**</center>
 
@@ -265,7 +265,7 @@ Arrays can be created inside of [SUB](SUB) or [FUNCTION](FUNCTION) procedures by
 
 Arrays can be set as [STATIC](STATIC) to retain the values when a sub-procedure is exited. The values will be retained until changed inside of the procedure. If the procedure creates it's own array, you can use a STATIC True or False variable to determine when to [DIM](DIM) or [REDIM](REDIM) a STATIC array so that values are not lost every call. The *Ready%* variable below DIMs the array when the function is first used:
 
-'''vb
+```vb
 
 FUNCTION ScanKey% (scancode%)
   STATIC Ready%, keyflags%()
@@ -278,7 +278,7 @@ FUNCTION ScanKey% (scancode%)
   IF scancode% = 0 THEN Ready% = 0  'allows program to reset all values to 0 with a REDIM
 END FUNCTION 
 
-'''
+```
 
 > *Explanation:* The STATIC *Ready%* value is always 0 when a procedure is first run. [NOT](NOT) zero makes the IF statement True so the array is created. The *Ready%* value is then changed to anything but zero to make NOT *Ready%* False when the procedure is called again. The FUNCTION is referenced just like an array would be. The value it returns is either 0 or -1 to verify that a certain key was released or pressed respectively. The keyboard status is also updated in the array each call. If the *scancode%* sent is 0(a key scan code that does not exist), the array is reset(re-dimensioned) on the next call as *Ready%* is reset to zero.
 

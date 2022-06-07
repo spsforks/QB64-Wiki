@@ -23,11 +23,11 @@ The [_SNDLIMIT](_SNDLIMIT) statement stops playing a sound after it has been pla
 ## Example(s)
 
 
-'''vb
+```vb
 
 _SNDLIMIT h&, 5.5 
 
-'''
+```
 
 
 ## See Also

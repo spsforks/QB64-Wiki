@@ -8,7 +8,7 @@ QB64 is created to be compatible with Quick Basic 4.5 only as it was the most po
 
 >  VB could use the CURRENCY variable type and had the MKC$ function to convert those values to [ASCII](ASCII) string values. QB64 can convert [_FLOAT](_FLOAT) currency values to **8 byte** strings using [_MK$](_MK$) with [_INTEGER64](_INTEGER64) values:
 
-'''vb
+```vb
 
 SCREEN 12
 value = 12345.6789 '    any currency value with up to 4 decimal point places
@@ -22,14 +22,14 @@ CVal = CurrVal * 10000
 MKC = _MK$(_INTEGER64, CVal)
 END FUNCTION 
 
-'''
+```
 >  The currency amount must be multiplied by 10000 before it is converted to the 8 byte [ASCII](ASCII) string value.
 
 ### CVC
 
 >  VB also had the CVC function to convert MKC$ currency **8 byte** string values back to currency amounts. QB64 can use [_CV](_CV) with [_INTEGER64](_INTEGER64) to convert those values back to [_FLOAT](_FLOAT) currency values:
 
-'''vb
+```vb
 
 SCREEN 12
 DIM currency AS STRING * 8
@@ -49,7 +49,7 @@ CV = _CV(_INTEGER64, CurrStr)
 CVC = CV / 10000
 END FUNCTION 
 
-'''
+```
 >  The currency amount must be divided by 10000 to create up to 4 decimal point places.
 
 ### PUT
@@ -57,7 +57,7 @@ END FUNCTION
 >  Currency values can be [PUT](PUT) directly into [BINARY](BINARY) or [RANDOM](RANDOM) files using an [_INTEGER64](_INTEGER64) variable value.
 
 
-'''vb
+```vb
 
 DIM curr AS _INTEGER64, currency AS _FLOAT
 
@@ -70,14 +70,14 @@ CLOSE #1
 
 END 
 
-'''
+```
 
 ### GET
 
 >  If currency values are [PUT](PUT) directly into a [BINARY](BINARY) or [RANDOM](RANDOM) file, [_INTEGER64](_INTEGER64) can [GET](GET) them directly. Then divide by 10 ^ 4: 
 
 
-'''vb
+```vb
 
 DIM curr AS _INTEGER64, currency AS _FLOAT
 OPEN "currency.bin" FOR BINARY AS #1 ' any binary file holding PDS currency values
@@ -90,7 +90,7 @@ PRINT currency
 
 END 
 
-'''
+```
 >  *Note:* The currency value can be any [SINGLE](SINGLE), [DOUBLE](DOUBLE) or [_FLOAT](_FLOAT) floating decimal point value that will hold the range of values.
 
 <p style="text-align: center">([#toc](#toc))</p>

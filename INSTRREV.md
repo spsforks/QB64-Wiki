@@ -28,26 +28,26 @@ The [_INSTRREV](_INSTRREV) function searches for a substring inside another stri
 
 *Example 1:* Separating a file name from a full path.
 
-'''vb
+```vb
 
 fullPath$ = "C:\Documents and Settings\Administrator\Desktop\qb64\internal\c\libqb\os\win\libqb_1_2_000000000000.o"
 file$ = MID$(fullPath$, _INSTRREV(fullPath$, "\") + 1)
 PRINT file$
 
-'''
+```
 
-'''text
+```text
 
 
 libqb_1_2_000000000000.o
 
-'''
+```
 
 
 
 *Example 2:* Searching for multiple instances of a substring inside a base string, going from the end to the start.
 
-'''vb
+```vb
 
 sentence$ = " This is a string full of spaces, including at start and end... "
 PRINT sentence$
@@ -71,9 +71,9 @@ DO
 LOOP
 PRINT "Total spaces found: "; totalSpaces
 
-'''
+```
 
-'''text
+```text
 
 
  This is a string full of spaces, including at start and end... 
@@ -82,7 +82,7 @@ PRINT "Total spaces found: "; totalSpaces
 Last space found at position 1
 Total spaces found: 13
 
-'''
+```
 
 
 ## See Also

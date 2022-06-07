@@ -34,7 +34,7 @@ The [PRINT (file statement)](PRINT (file statement)) statement prints numeric or
 
 *Example:* Prints data to a text file sequentially and reads it back to the program screen as one line of text.
 
-'''vb
+```vb
 
 filename$ = "testfile.dat" 
 x = 1: y = 2: z$ = "Three" 
@@ -60,22 +60,22 @@ WRITE text$
 
 END 
 
-'''
+```
 >  *File content:* [PRINT (file statement)](PRINT (file statement)) string file values will not include the enclosing quotation marks but can be read by [LINE INPUT (file statement)](LINE INPUT (file statement)) as text.  
 
-'''text
+```text
 
  1             2            Three 
-'''
+```
 
 >  *Screen output:* [PRINT](PRINT) string values will not display enclosing quotation marks. [WRITE](WRITE) screen displays will.
 
-'''text
+```text
 
  1             2            Three
 " 1             2            Three"
 
-'''
+```
 
 
 

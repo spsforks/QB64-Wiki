@@ -22,7 +22,7 @@ The [_OFFSET](_OFFSET) function returns the memory offset of/within a given vari
 
 *Example:* Using memcpy with the _OFFSET function values as parameters.
 
-'''vb
+```vb
 
 DECLARE CUSTOMTYPE LIBRARY
     SUB memcpy (BYVAL dest AS _OFFSET, BYVAL source AS _OFFSET, BYVAL bytes AS LONG)
@@ -34,13 +34,13 @@ b$ = "ABCDEFGHIJ"
 memcpy _OFFSET(a$) + 5, _OFFSET(b$) + 5, 5
 PRINT a$ 
 
-'''
+```
 
-'''text
+```text
 
 12345FGHIJ
 
-'''
+```
 
 
 

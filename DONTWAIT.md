@@ -18,7 +18,7 @@ DISPLAYTITLE:_DONTWAIT
 ## Example(s)
 
 
-'''vb
+```vb
 
 
 SHELL _DONTWAIT "notepad " + filename$
@@ -29,10 +29,10 @@ FOR x = 1 TO 5
 NEXT
 
 
-'''
+```
 (opens up notepad at the same time as counting to 5)
 
-'''text
+```text
 
 
  1
@@ -41,7 +41,7 @@ NEXT
  4
  5
 
-'''
+```
 
 
 

@@ -16,11 +16,11 @@ The [_SNDSTOP](_SNDSTOP) statement stops a playing or paused sound using a handl
 
 *Example:*
 
-'''vb
+```vb
 
 _SNDSTOP h& 
 
-'''
+```
 
 
 ## See Also

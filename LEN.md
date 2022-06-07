@@ -27,24 +27,24 @@ The [LEN](LEN) function returns the number of bytes used by a variable value and
 
 *Example 1:* With a string variable the byte size is the same as the number of characters.
 
-'''vb
+```vb
 
 LastName$ = "Williams"
 PRINT LEN(LastName$); "bytes" 
 
-'''
+```
 
-'''text
+```text
 
  8 bytes
 
-'''
+```
 
 
 
 *Example 2:* Testing [INPUT](INPUT) for numerical [STRING](STRING) entries from a user. 
 
-'''vb
+```vb
 
 INPUT "number: ", num$
 
@@ -53,13 +53,13 @@ L = LEN(value$)
 
 PRINT LEN(num$), L 
 
-'''
+```
 >  *Note:* [&H](&H), [&O](&O), D and E will also be accepted as numerical type data in a [VAL](VAL) conversion, but will add to the entry length.
 
 
 *Example 3:* With numerical value types you MUST use a variable to find the inherent byte length when using LEN.
 
-'''vb
+```vb
 
 DIM I AS INTEGER
 PRINT "INTEGER ="; LEN(I); "bytes"
@@ -74,9 +74,9 @@ PRINT "DOUBLE ="; LEN(D); "bytes"
 DIM F AS _FLOAT
 PRINT "_FLOAT ="; LEN(F); "bytes" 
 
-'''
+```
 
-'''text
+```text
 
 INTEGER = 2 bytes
 LONG = 4 bytes
@@ -85,13 +85,13 @@ SINGLE = 4 bytes
 DOUBLE = 8 bytes
 _FLOAT = 32 bytes
 
-'''
+```
 
 
 
 *Example 4:* Opening a RANDOM file using LEN to calculate and LEN = to designate the file record size.
 
-'''vb
+```vb
 
 TYPE variabletype
   x AS INTEGER'       '2 bytes
@@ -124,16 +124,16 @@ PRINT newrec.x, newrec.y, newrec.z
 
 END 
 
-'''
+```
 
-'''text
+```text
 
  16 bytes
  255        Hello worl       65535
  1 records
  255        Hello worl       65535
 
-'''
+```
 
 >  *Explanation:* The byte size of the record [TYPE](TYPE) determines the [LOF](LOF) byte size of the file and can determine the number of records.
 >  To read the last record [GET](GET) the number of records. To add a record, use the number of records + 1 to [PUT](PUT) new record data.

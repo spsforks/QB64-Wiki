@@ -50,7 +50,7 @@ The [_LOADFONT](_LOADFONT) function loads a TrueType font (.TTF) or an OpenType 
 
 *Example 1:* You need to know that if you are in a text mode (such as SCREEN 0 - the default) then you will only be able to use mono-spaced (fixed width) fonts.
 
-'''vb
+```vb
 
 rootpath$ = ENVIRON$("SYSTEMROOT")          'normally "C:\WINDOWS"
 fontfile$ = rootpath$ + "\Fonts\cour.ttf"   'TTF file in Windows 
@@ -60,16 +60,16 @@ _FONT f&
 PRINT "Hello!"
 
 
-'''
+```
 
-'''text
+```text
 
 
 
 Hello!
 
 
-'''
+```
 
 
 *Note:* 30 means each row of text (including vertical spacing) will be exactly 30 pixels high. This may make some program screens larger. If you don't want a style listed just use style$ = "" if using a [STRING](STRING) variable for different calls.
@@ -79,7 +79,7 @@ Hello!
 *Example 2:* In a 32-bit graphics mode you can alpha blend onto the background:
 
 
-'''vb
+```vb
 
 i& =_NEWIMAGE(800,600,32)
 SCREEN i&
@@ -87,14 +87,14 @@ COLOR &HC0FFFF00,&H200000FF
 f& =_LOADFONT("C:\Windows\Fonts\times.ttf", 25)  'normal style
 PRINT "Hello!"
 
-'''
+```
 
 
-'''text
+```text
 
 Hello!
 
-'''
+```
 
 
 
@@ -103,7 +103,7 @@ Hello!
 
 *Example 3:* Loading a [Unicode](Unicode) font, *cyberbit.ttf*, which was downloaded with QB64:
 
-'''vb
+```vb
 SCREEN 12
 
 DECLARE CUSTOMTYPE LIBRARY 'Directory Information using KERNEL32 provided by Dav
@@ -142,7 +142,7 @@ NEXT
 QuickUTF16toUTF32$ = b$
 END FUNCTION 
 
-'''
+```
 
 
 ## See Also

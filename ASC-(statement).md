@@ -19,7 +19,7 @@ The [ASC (statement)](ASC (statement)) statement allows a **QB64** program to ch
 
 *Example:* Demonstrates how to change existing text characters one letter at a time.
 
-'''vb
+```vb
 
  a$ = "YZC"
  ASC(a$) = 65                 ' CHR$(65) = "A"
@@ -32,17 +32,17 @@ The [ASC (statement)](ASC (statement)) statement allows a **QB64** program to ch
  ASC(a$, 2) = ASC("S")        ' get code value from ASC function
  PRINT a$
 
-'''
+```
 
 
-'''text
+```text
 
 
  ABC
  A C
  ASC
 
-'''
+```
 
 
 

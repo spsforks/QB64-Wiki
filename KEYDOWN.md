@@ -20,7 +20,7 @@ The **_KEYDOWN** function returns whether modifying keys like CTRL, ALT, SHIFT, 
 
 
 
-'''text
+```text
 
                        **The QB64 Virtual Key constant values used: **
 
@@ -51,13 +51,13 @@ The **_KEYDOWN** function returns whether modifying keys like CTRL, ALT, SHIFT, 
 '
 '     **    Lower value = LCase/NumLock On __________________ + = add 100000 **
 
-'''
+```
 
 <sub>NOTE: The above commented table can be copied and pasted directly into the QB64 IDE</sub>
 
 
 
-'''text
+```text
 
          **65536-&H40000000: QB64-specific Virtual Key codes:**
 
@@ -120,12 +120,12 @@ The **_KEYDOWN** function returns whether modifying keys like CTRL, ALT, SHIFT, 
               **Use [_KEYHIT](_KEYHIT) to find the key codes to be monitored by _KEYDOWN! **
 
 
-'''
+```
 
 
 *Example 1:* Comparing the _KEYDOWN returns using [CONST](CONST) values with 2 byte [INKEY$](INKEY$) returns.
 
-'''vb
+```vb
 
 CONST RSHIFT& = 100303
 CONST LSHIFT& = 100304
@@ -143,13 +143,13 @@ DO
     IF k$ = CHR$(0) + CHR$(84) THEN PRINT "INKEY$: SHIFT+F1"
 LOOP UNTIL k$ = CHR$(27)     'escape key exit
 
-'''
+```
 <sub>Code by Galleon</sub>
 
 
 *Example 2:* How to calculate the _KEYDOWN codes of the 2 byte INKEY$ arrow key codes using [CVI](CVI).
 
-'''vb
+```vb
 
 SCREEN 12 
 
@@ -172,7 +172,7 @@ DO
     _LIMIT 100 'limit to 100 frames per second
 LOOP 
 
-'''
+```
 <sub>Code by Galleon</sub>
 > *Explanation:* When [CVI](CVI) is used with a 2 byte code, the code of the first character(0) is added to the second character code which is multiplied by 256. In the example, code zero is added to the [ASCII](ASCII) code of "P" which is 80. CVI multiplies 80 * 256 = 20480.
 

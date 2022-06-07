@@ -9,7 +9,7 @@ The [_OPENCLIENT](_OPENCLIENT) function connects to a Host on the Internet as a 
 *[CLOSE](CLOSE) client_handle closes the client. A failed handle of value 0 does not need to be closed.
 ## Example(s)
 *Example 1:* Attempting to connect to a local host(your host) as a client. A zero return indicates failure.
-'''vb
+```vb
 
 
 client = _OPENCLIENT("TCP/IP:7319:localhost")
@@ -18,10 +18,10 @@ IF client THEN
 ELSE PRINT "[Connection Failed!]"
 END IF 
 
-'''
+```
 > **NOTE:** Try a valid TCP/IP port setting to test this routine!
 *Example 2:* Using a "raw" Download function to download the QB64 bee image and displays it.
-'''vb
+```vb
 
 'replace the fake image address below with a real image address you want to download
 IF Download("www.qb64.org/qb64.png", "qb64logo.png", 10) THEN ' timelimit = 10 seconds
@@ -75,7 +75,7 @@ LOOP UNTIL TIMER > t! + timelimit ' (in seconds)
 CLOSE client
 END FUNCTION 
 
-'''## See Also
+```## See Also
 
 *[_OPENHOST](_OPENHOST), [_OPENCONNECTION](_OPENCONNECTION)
 *[_CONNECTED](_CONNECTED), [_CONNECTIONADDRESS$](_CONNECTIONADDRESS$)

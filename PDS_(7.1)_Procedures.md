@@ -8,7 +8,7 @@ QB64 is created to be compatible with Quick Basic 4.5 only as it was the most po
 
 PDS could use the CURRENCY variable type and had the MKC$ function to convert those values to **8 byte** [ASCII](ASCII) string values. QB64 can convert [_FLOAT](_FLOAT) currency amounts to strings using [_MK$](_MK$) with [_INTEGER64](_INTEGER64) values:
 
-'''vb
+```vb
 
 SCREEN 12
 DIM value AS _FLOAT
@@ -24,14 +24,14 @@ CVal = CurrVal * 10000 '        multiply float value by 10 thousand
 MKC = _MK$(_INTEGER64, CVal)
 END FUNCTION 
 
-'''
+```
 >  *Note:* The [_FLOAT](_FLOAT) currency amount must be multiplied by 10000 before it is converted to the [ASCII](ASCII) string value.
 
 ### CVC
 
 PDS also had the CVC function to convert MKC$ currency string values back to currency amounts. QB64 can use [_CV](_CV) with [_INTEGER64](_INTEGER64) to convert those **8 byte** values back to [_FLOAT](_FLOAT) currency values. The procedure gets the currency string from a file:
 
-'''vb
+```vb
 
 SCREEN 12
 DIM currency AS STRING * 8
@@ -51,7 +51,7 @@ CV = _CV(_INTEGER64, CurrStr)
 CVC = CV / 10000 '                   divide by 10 thousand
 END FUNCTION 
 
-'''
+```
 >  *Note:* The [_FLOAT](_FLOAT) currency amount must be divided by 10000 to create up to 4 decimal point places.
 
 ### PUT
@@ -59,7 +59,7 @@ END FUNCTION
 Currency values can be [PUT](PUT) directly into [BINARY](BINARY) or [RANDOM](RANDOM) files using an [_INTEGER64](_INTEGER64) variable value.
 
 
-'''vb
+```vb
 
 DIM curr AS _INTEGER64, currency AS _FLOAT
 
@@ -72,13 +72,13 @@ CLOSE #1
 
 END 
 
-'''
+```
 
 ### GET
 
 When currency values are [PUT](PUT) directly into a [BINARY](BINARY) or [RANDOM](RANDOM) file, [_INTEGER64](_INTEGER64) can [GET](GET) them directly. Then divide by 10 ^ 4: 
 
-'''vb
+```vb
 
 DIM curr AS _INTEGER64, currency AS _FLOAT
 OPEN "currency.bin" FOR BINARY AS #1 ' any binary file holding PDS currency values
@@ -91,7 +91,7 @@ PRINT currency
 
 END 
 
-'''
+```
 >  *Note:* The currency value can be any [SINGLE](SINGLE), [DOUBLE](DOUBLE) or [_FLOAT](_FLOAT) floating decimal point value that will hold the range of values.
 
 
@@ -103,7 +103,7 @@ END
 
 This PDS(7.1) **derived DIR$ function** returns a filename or a list when more than one exist. The file spec can use a path and/or wildcards.
 
-'''vb
+```vb
 
 FOR i = 1 TO 2
   PRINT
@@ -146,7 +146,7 @@ END IF
 DIR$ = DirList$(Index%)
 END FUNCTION 
 
-''' <sub>Code by Ted Weissgerber</sub>
+``` <sub>Code by Ted Weissgerber</sub>
 > *Explanation:* The function will verify that a file exists (even if it is empty) by returning it's name or it returns an empty string if no file exists. It can return a list of file names by using an empty string parameter("") after sending a wildcard spec to get the first file name. The number of file names found is returned by using the SHARED variable, **DIRCount%**. Unlike the PDS DIR$ function, **it MUST use an empty string parameter until QB64 supports optional parameters!** The function does NOT delete empty files.
 
 

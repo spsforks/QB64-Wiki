@@ -15,7 +15,7 @@ The **TIME$** Function returns a [STRING](STRING) representation of the current 
 
 *Example 1:* A simple clock using [DRAW](DRAW) with Turn Angle.
 
-'''vb
+```vb
 
 SCREEN 12
 DO
@@ -30,14 +30,14 @@ DO
     _LIMIT 1
 LOOP UNTIL INKEY$ = CHR$(27) 
 
-'''
+```
 <sub>Code by Galleon</sub>
 >  Explanation: Note that [VAL](VAL)(TIME$) can just return the hour number 0 to 23 as the read stops at the first colon.
 
 
 *Example 2:* The following Function converts TIME$ to normal 12 hour AM-PM digital clock  format.
 
-'''vb
+```vb
 
 PRINT TIME$
 PRINT Clock$
@@ -54,15 +54,15 @@ END IF
 Clock$ = hour$ + min$ + ampm$
 END FUNCTION 
 
-'''
+```
 
-'''text
+```text
 
 
 14:13:36
  2:13 PM
 
-'''
+```
 
 > *Explanation:* When hours are less than 10 (but not 0), [STR$](STR$)(H%) alone keeps a space ahead of the hour. For 2 digit hours, [LTRIM$](LTRIM$) is used to remove that leading space. For the hours of 10 AM to 12 PM, the hour [STRING](STRING) value is passed from [LEFT$](LEFT$)(TIME$, 2) at the beginning of the function.
 

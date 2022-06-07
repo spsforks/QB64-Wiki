@@ -19,7 +19,7 @@ The [_SNDSETPOS](_SNDSETPOS) statement changes the current/starting playing posi
 
 *Example:* To check the current playing position in an MP3 file, use [_SNDPLAY](_SNDPLAY) with [_SNDGETPOS](_SNDGETPOS) printed in a loop
 
-'''vb
+```vb
 
 SoundFile& = _SNDOPEN("YourSoundFile.mp3") '<<< your MP3 sound file here!
 _SNDSETPOS SoundFile&, 5.5   'set to play sound 5 1/2 seconds into music 
@@ -28,7 +28,7 @@ Do: _LIMIT 60
    LOCATE 5, 2: PRINT "Current play position> "; _SNDGETPOS(SoundFile&)
 LOOP UNTIL _KEYDOWN(27) OR NOT _SNDPLAYING(SoundFile&) 'ESC or end of sound exit
 
-'''
+```
 
 
 ## See Also

@@ -58,7 +58,7 @@ The [_MEMELEMENT](_MEMELEMENT) function returns a [_MEM](_MEM) block referring t
 
 *Example:* Comparing the specifications returned by [_MEM](_MEM) and _MEMELEMENT from an array.
 
-'''vb
+```vb
 
 DIM a(1 TO 100) AS _UNSIGNED _BYTE
 
@@ -73,14 +73,14 @@ PRINT m2.OFFSET, m2.SIZE, m2.TYPE, m2.ELEMENTSIZE
 
 END 
 
-'''
+```
 >  Output using VERSION .954 ONLY .TYPE values: 1 (integer) + 2 (unsigned)
 
-'''text
+```text
 
 28377205        51        3        1
 28377205        1         3        1 
-'''
+```
 
 >  *Explanation:* [_MEM](_MEM) returns the info about the array to that element while _MEMELEMENT returns info about that element only.
 > :* [_MEM](_MEM) value returns the available array .SIZE as 51 bytes from the designated array element.

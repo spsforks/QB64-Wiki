@@ -15,11 +15,11 @@ The [_SNDPAUSED](_SNDPAUSED) function checks if a sound is paused. Uses a handle
 ## Example(s)
 
 
-'''vb
+```vb
 
 PRINT _SNDPAUSED(h&) 
 
-'''
+```
 
 
 ## See Also

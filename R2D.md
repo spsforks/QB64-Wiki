@@ -11,21 +11,21 @@ The [_R2D](_R2D) function converts a **radian** value into a **degree** value.
 
 *Example:* Coverting Radian into Degree.
 
-'''vb
+```vb
 
 INPUT "Give me an angle in Radians ", D
 R = _R2D(D)
 PRINT "That angle in Degrees is "; R
 
-'''
+```
 
-'''text
+```text
 
 
 Give me an angle in Radians 0.5
 That angle in Degrees is    28.64789
 
-'''
+```
 
 
 

@@ -24,16 +24,16 @@ The [_TITLE](_TITLE) statement provides the program name in the title bar of the
 
 *Example 1:* How to create the window title bar.
 
-'''vb
+```vb
 
 _TITLE "My New Program" 
 
-'''
+```
 
 
 *Example 2:* How to find the currently running program module name and current path using a Windows API Library.
 
-'''vb
+```vb
 
 _TITLE "My program"
 _DELAY 5             '5 second delay
@@ -65,7 +65,7 @@ ELSE TITLE$ = "": PATH$ = ""
 END IF
 END FUNCTION 
 
-'''
+```
 >  *Note:* The actual module file name is returned. Not necessarily the Title value. The value returned can be used however.
 
 

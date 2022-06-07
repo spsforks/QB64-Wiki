@@ -15,7 +15,7 @@ The [DATE$](DATE$) function returns the current computer date as a string in the
 
 *Example:* Displaying the weekday and current date.
 
-'''vb
+```vb
 
 PRINT DATE$ 
 month$ = LEFT$(DATE$, 2): M = VAL(month$)
@@ -59,16 +59,16 @@ END SELECT
 WeekDay$ = day$
 END FUNCTION 
 
-'''
+```
 <sub>Code by Ted Weissgerber</sub>
 
-'''text
+```text
 
 
 06-02-2010
 Today is Wednesday, June 2, 2010
 
-'''
+```
   
 
 

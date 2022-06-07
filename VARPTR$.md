@@ -15,7 +15,7 @@
 
 *Example 1:* How VARPTR$ reads consecutive values from memory.
 
-'''vb
+```vb
 
 SCREEN 2
 CLS
@@ -27,13 +27,13 @@ FOR I = 1 TO 10
     DRAW "x" + VARPTR$(ROW$)
 NEXT 
 
-'''
+```
 > *NOTE:* **GWBasic** allows **semicolons** to be used in the ROW$ definition, but QBasic and **QB64** MUST use **+** concatenation.
 
 
 *Example 2:* Using the function to change a Turn Angle value using DRAW.
 
-'''vb
+```vb
 
 SCREEN 12
                            'Demonstrates how string DRAW angles are used with TA
@@ -56,13 +56,13 @@ DO: sec$ = RIGHT$(TIME$, 2)        'get current second value from time
   DRAW "TA=" + VARPTR$(degree) + "U90"  'erase previous second hand draw
 LOOP 
 
-'''
+```
 > *Explanation:* When the VARPTR$ value is used in DRAW, **=** MUST be used to pass the value to the draw! Negative Turn Angle values move clockwise and each second moves the hand 6 degrees. **TA** uses actual degree angles starting at 0 or noon.
 
 
 *Example 3:* Comparing DRAW moves using VARPTR$ and [STR$](STR$) values.
 
-'''vb
+```vb
 
 SCREEN 12
 PSET (200, 200), 12
@@ -76,7 +76,7 @@ C = 100: D = -100
 DRAW "M+" + STR$(C) + "," + STR$(D) 'must add + for positive relative moves
 END 
 
-'''
+```
 >  *Explanation:* A negative STR$ value will move the DRAW relatively where VARPTR$ won't without the sign before the equal.
 
 

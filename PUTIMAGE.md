@@ -65,7 +65,7 @@ DISPLAYTITLE:_PUTIMAGE
 
 *Example 1:*
 
-'''vb
+```vb
 
  SCREEN 13
  a& = _NEWIMAGE(640, 200, 13) ' creates a 640 * 200 image with the LONG handle a&
@@ -73,7 +73,7 @@ DISPLAYTITLE:_PUTIMAGE
  LINE (10, 10)-(100, 100), 12, BF ' draws a filled box (BF) into destination
  _PUTIMAGE (0, 0)-(320, 200), a&, 0, (0, 0)-(320, 200) 
 
-'''
+```
 > *Explanation:* 
 >  1) A graphics mode is set by using [SCREEN (statement)](SCREEN (statement)) 13 which can use up to 256 colors. 
 >  2) A new image is created that is 640 X 200 and uses the palette compatible with SCREEN 13 (256 colors).
@@ -87,7 +87,7 @@ DISPLAYTITLE:_PUTIMAGE
 *Example 2: *You don't need to do anything special to use a .PNG image with alpha/transparency. Here's a simple example:
 
 
-'''vb
+```vb
 
 SCREEN _NEWIMAGE(640, 480, 32)
 CLS , _RGB(0, 255, 0)
@@ -95,14 +95,14 @@ i = _LOADIMAGE(**"QB64.PNG"**) 'any 32 bit image (ie. with alpha channel)
 _PUTIMAGE (0, 0), i ' places image at upper left corner of window w/o stretching it 
 
 
-'''
+```
 
 >  *Explanation:* When QB64 loads a 256 color .PNG file containing a transparent color, that color will be treated as transparent when _PUTIMAGE is used to put it onto another image. So actually, you can use a 256-color .PNG file containing transparency information in a 256 color screen mode in QB64.
 
 
 *Example 3:* Flipping and enlarging an image with _PUTIMAGE by swapping or increasing the desination coordinates.
 
-'''vb
+```vb
 
 DEFLNG A-Z
 dest_handle = _NEWIMAGE(640, 480, 32)
@@ -138,13 +138,13 @@ LOCATE 24, 2:
 PRINT "_PUTIMAGE (dx1, dy1)-((2 * dx2) + dx1, (2 * dy2) + dy1), s_handle, d_handle 
 END 
 
-'''
+```
 <sub>Adapted from code by Darth Who</sub>
 
 
 *Example 4:* Using _PUTIMAGE to scroll a larger image created on a separate [_NEWIMAGE](_NEWIMAGE) screen page with QB64.
 
-'''vb
+```vb
 
 RANDOMIZE TIMER
 ws& = _NEWIMAGE(2560, 1440, 32) 'large image page
@@ -176,12 +176,12 @@ DO
     _DISPLAY
 LOOP 
 
-'''<sub>Code example by SMcNeill</sub>
+```<sub>Code example by SMcNeill</sub>
 
 
 *Example 5:* _PUTIMAGE can be used with no parameters at all if the [_SOURCE](_SOURCE) and [_DEST](_DEST) are already set.
 
-'''vb
+```vb
 
 SCREEN 13
 h& = _NEWIMAGE(640, 480, 256)
@@ -192,7 +192,7 @@ _DEST 0
 _PUTIMAGE
 END 
 
-'''
+```
 
 
 

@@ -27,7 +27,7 @@
 
 *Example:* How parameters are passed in two [SUB](SUB) calls, one with CALL using brackets and one without CALL or brackets:
 
-'''vb
+```vb
 
 DIM a AS INTEGER 'value not shared with SUB
 DIM SHARED b AS INTEGER 'value shared with any SUB
@@ -48,18 +48,18 @@ b = b + 1 'b is a shared value which can increase anywhere
 c = c + 1 'c is a SUB parameter value from a in calls which may increase inside SUB only
 END SUB 
 
-'''
+```
 
 *Returns:*
 
-'''text
+```text
 
 Hello World!
  0            2            1
 Hello World!
  0            3            1 
 
-'''
+```
 
 >  *Explanation:* Variable **a** that is outside of the subroutine isn't [SHARED](SHARED) so it will have no effect inside the subroutine, the variable a inside the subroutine is only valid inside the subroutine, and whatever value a has outside of it makes no difference within the subroutine.
 

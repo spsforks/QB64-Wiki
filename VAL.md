@@ -19,50 +19,50 @@ The **VAL** Function returns the decimal numerical equivalent value of a [STRING
 
 *Example 1:* Differences in values returned with QBasic and QB64:
 
-'''vb
+```vb
 
 PRINT VAL("&H") '203 in QB, 0 in QB64
 PRINT VAL("&HFFFF") ' -1 QB, 65535 in QB64
 PRINT VAL("&HFFFF&") '65535 in both 
 
-'''
+```
 > *Explanation:* A quirk in QBasic returned VAL values of 203 for "&" and "&H" that was never fixed until PDS(7.1).
 
 
 *Example 2:* Converting a string with some number characters
 
-'''vb
+```vb
 
  text$ = "1.23Hello"
  number! = VAL(text$)
  PRINT number! 
 
-'''
+```
 
-'''text
+```text
 
 
 1.23
 
-'''
+```
 
 
 
 *Example 3:* Converting literal and variable [STRING](STRING) values to numerical values.
 
-'''vb
+```vb
 
  a$ = "33"
  PRINT VAL("10") + VAL(a$) + 1 
 
-'''
+```
 
-'''text
+```text
 
 
 44
 
-'''
+```
 
 > *Explanation:* 10 + 33 + 1 = 44, the strings were converted to values.
 
@@ -73,7 +73,7 @@ PRINT VAL("&HFFFF&") '65535 in both
 
 *Example 4:* Converting a hexadecimal value to decimal value using HEX$ with VAL.
 
-'''vb
+```vb
 
  decnumber% = 96
  hexnumber$ = "&H" + HEX$(decnumber%)  'convert decimal value to hex and add hex prefix
@@ -81,15 +81,15 @@ PRINT VAL("&HFFFF&") '65535 in both
  decimal% = VAL(hexnumber$)
  PRINT decimal% 
 
-'''
+```
 
-'''text
+```text
 
 
 &H60
  96
 
-'''
+```
 
 >  *Explanation:* [HEX$](HEX$) converts a decimal number to hexadecimal, but [VAL](VAL) will only recognize it as a valid value with the "&H" prefix. Especially since hexadecimal numbers can use "A" through "F" in them. Create a converter function from this code!
 

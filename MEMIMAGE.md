@@ -24,7 +24,7 @@ The [_MEMIMAGE](_MEMIMAGE) function returns a [_MEM](_MEM) value referring to an
 
 *Example 1:* Darkening an image using memory with [$CHECKING]($CHECKING):OFF for greater speed. Use any 24 bit image file name on the second code line.
 
-'''vb
+```vb
 
 SCREEN _NEWIMAGE(1024, 768, 32)
 i& = _LOADIMAGE("turtle.jpg") '<<<<<<<<<<<<< use any 24 bit image file
@@ -57,13 +57,13 @@ $CHECKING:ON
 _MEMFREE Buffer
 END SUB 
 
-'''<sub>Code by Galleon</sub>
+```<sub>Code by Galleon</sub>
 >  *Explanation:* The second value passed to DarkenImage is a value from 0.0 to 1.0 where 0.0 is full darkness and 1 is none.
 
 
 *Example 2:* Reading information stored in an image with [_MEMIMAGE](_MEMIMAGE) to print [ASC](ASC) text characters to the screen.
 
-'''vb
+```vb
 
 SCREEN 13
 _FULLSCREEN
@@ -86,7 +86,7 @@ LOCATE 10, 1: PRINT LEN(x1$) 'prints 11 as byte length
 PRINT x1$ 'prints HELLO WORLD
 END 
 
-'''
+```
 >  *Notes:* The colors in the upper left corner are the text data used. An image could hold a hidden text message this way.
 
 

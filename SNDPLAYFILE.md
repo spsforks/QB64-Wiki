@@ -22,11 +22,11 @@ The [_SNDPLAYFILE](_SNDPLAYFILE) statement is used to play a sound file without 
 
 *Example:* Playing a sound file at half volume.
 
-'''vb
+```vb
 
 _SNDPLAYFILE "dog.wav", , .5 
 
-'''
+```
 
 
 ## See Also

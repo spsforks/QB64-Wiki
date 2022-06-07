@@ -41,7 +41,7 @@ The [_MAPTRIANGLE](_MAPTRIANGLE) statement maps a triangular portion of an image
 
 *Example 1:* Rotating the an image using a rotation and zoom SUB with _MAPTRIANGLE.
 
-'''vb
+```vb
 
 SCREEN _NEWIMAGE(800, 600, 32)
 
@@ -72,23 +72,23 @@ _MAPTRIANGLE (0, 0)-(0, H& - 1)-(W& - 1, H& - 1), Image& TO(px(0), py(0))-(px(1)
 _MAPTRIANGLE (0, 0)-(W& - 1, 0)-(W& - 1, H& - 1), Image& TO(px(0), py(0))-(px(3), py(3))-(px(2), py(2))
 END SUB 
 
-'''
+```
 <sub>Code by Galleon</sub>
 
-'''text
+```text
 
 
         **Triangle sections of image in code above     __ **  
                                                     **|\2|**
                                                  ** 1→|_\|**
 
-'''
+```
 
 
 
 *Example 2:* A 3D Spinning Cube demo using a software image and [_MAPTRIANGLE](_MAPTRIANGLE):
 
-'''vb
+```vb
 
 ' Copyright (C) 2011 by Andrew L. Ayers
 
@@ -373,12 +373,12 @@ SUB DrawTriangle (x1%, y1%, x2%, y2%, x3%, y3%, col%)
   '
 END SUB 
 
-'''<sub>Demo by Andrew L. Ayers</sub>
+```<sub>Demo by Andrew L. Ayers</sub>
 
 
 *Example 3:* A 3D Spinning Cube demo using a hardware image and **QB64GL** hardware acceleration with [_MAPTRIANGLE](_MAPTRIANGLE):
 
-'''vb
+```vb
 
 ' Copyright (C) 2011 by Andrew L. Ayers
 
@@ -671,12 +671,12 @@ END IF
 '
 END SUB
 
-'''<sub>Adapted from a demo by Andrew L. Ayers</sub>
+```<sub>Adapted from a demo by Andrew L. Ayers</sub>
 
 
 *Example 4:* Using a desktop image with _MAPTRIANGLE _ANTICLOCKWISE rendering.
 
-'''vb
+```vb
 
 SCREEN _NEWIMAGE(800, 600, 32)
 
@@ -714,7 +714,7 @@ DO
     _DISPLAY
 LOOP 
 
-'''
+```
 >  **Tip:** If you are using Linux you might want to replace "[_SCREENIMAGE](_SCREENIMAGE)" with a [_LOADIMAGE](_LOADIMAGE) command if you don't see anything.
 
 

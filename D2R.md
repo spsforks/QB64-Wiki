@@ -11,21 +11,21 @@ The [_D2R](_D2R) function converts a **degree** value into a **radian** value.
 
 *Example:* Coverting Degrees into Radians.
 
-'''vb
+```vb
 
 INPUT "Give me an angle in Degrees ", D
 R = _D2R(D)
 PRINT "That angle in Radians is "; R
 
-'''
+```
 
-'''text
+```text
 
 
 Give me an angle in Degrees 60
 That angle in Radians is 1.047198
 
-'''
+```
 
 
 

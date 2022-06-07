@@ -33,7 +33,7 @@ The **LINE INPUT #** file statement reads an entire line from a text file into a
 
 *Example:* Finding the number of filenames listed in a file to dimension an array to hold them.
 
-'''vb
+```vb
 
 REDIM FileArray$(100) 'create dynamic array
 SHELL _HIDE "DIR /B *.* > D0S-DATA.INF"  
@@ -48,7 +48,7 @@ END IF
 REDIM FileArray$(filecount%)
 PRINT filecount% 
 
-'''
+```
 
 
 ## See Also

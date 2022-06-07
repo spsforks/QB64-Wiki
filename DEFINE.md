@@ -27,7 +27,7 @@ DISPLAYTITLE:_DEFINE
 
 *Example:* Defining variables that start with the letters A, B, C or F as unsigned integers, including the *Add2* [FUNCTION](FUNCTION).
 
-'''vb
+```vb
 
 _DEFINE A-C, F AS _UNSIGNED INTEGER
 
@@ -39,13 +39,13 @@ FUNCTION Add2 (one, two)
 Add2 = one + two
 END FUNCTION 
 
-'''
+```
 
-'''text
+```text
 
 65533
 
-'''
+```
 
 >  *Explanation:* Unsigned integers can only return positive values while ordinary [INTEGER](INTEGER) can also return negative values.
 

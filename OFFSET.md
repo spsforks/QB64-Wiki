@@ -22,7 +22,7 @@ The [_OFFSET](_OFFSET) variable type stores the location of a value in memory. T
 
 *Example:* The SHBrowseForFolder function receives information about the folder selected by the user in Windows XP and 7.
 
-'''vb
+```vb
 
 DECLARE CUSTOMTYPE LIBRARY
     FUNCTION FindWindow& (BYVAL ClassName AS _OFFSET, WindowName$)
@@ -64,7 +64,7 @@ ELSE
     PRINT "Cancel?"
 END IF 
 
-'''
+```
 <sub>Code by Galleon</sub>
 
 

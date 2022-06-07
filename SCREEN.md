@@ -24,7 +24,7 @@ The [SCREEN](SCREEN) statement sets the video display mode and size of the progr
 * Some screen mode text sizes are adjustable with [WIDTH](WIDTH) and all **QB64** screens support [PCOPY](PCOPY) and page flipping.  
 
 
-'''text
+```text
 
                        **LEGACY SCREEN MODES AT A GLANCE**
 
@@ -45,7 +45,7 @@ The [SCREEN](SCREEN) statement sets the video display mode and size of the progr
 
               **QB64 allows video paging and [PCOPY](PCOPY) in ALL screen modes!** 
 
-'''
+```
 
 
 ## QB64 Custom Screen Modes
@@ -146,7 +146,7 @@ The [SCREEN](SCREEN) statement sets the video display mode and size of the progr
 
 > *Example 1:* Shows an example of each legacy screen mode available to QBasic and QB64.
 
-'''vb
+```vb
 
 SCREEN 0
 PRINT "This is SCREEN 0 - only text is allowed!"
@@ -166,14 +166,14 @@ NEXT
 SLEEP
 SYSTEM 
 
-'''
+```
 
-'''text
+```text
 
 
 This is SCREEN 0 - only text is allowed!
 
-'''
+```
 
 > Displays each [SCREEN (statement)](SCREEN (statement)) mode one at a time with a [CIRCLE](CIRCLE) (except for [SCREEN (statement)](SCREEN (statement)) 0)
 

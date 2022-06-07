@@ -16,11 +16,11 @@ The [_SNDPLAY](_SNDPLAY) statement plays a sound designated by a file handle cre
 
 *Example:* Checking a handle value before playing
 
-'''vb
+```vb
 
  IF h& THEN _SNDPLAY h& 
 
-'''
+```
 
 
 ## See Also

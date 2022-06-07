@@ -47,7 +47,7 @@ The [COLOR](COLOR) statement is used to change the foreground and background col
 
 RGB intensity values can be converted to hexadecimal values to create the [LONG](LONG) [_PALETTECOLOR](_PALETTECOLOR) value in non-32-bit screens:
 
-'''vb
+```vb
 
 SCREEN 12
 alpha$ = "FF" 'solid alpha colors only
@@ -68,9 +68,9 @@ FOR attribute = 1 TO 15
   PRINT "COLOR" + STR$(attribute) + " = " + hex32$, red$, grn$, blu$ 'returns closest attribute
 NEXT 
 
-'''
+```
 
-'''text
+```text
 
 Attribute  Hex value      Red        Green       Blue 
 
@@ -90,7 +90,7 @@ COLOR 13 <nowiki>=</nowiki> &HFFFC54FC      FC         54         FC
 COLOR 14 <nowiki>=</nowiki> &HFFFCFC54      FC         FC         54
 COLOR 15 <nowiki>=</nowiki> &HFFFCFCFC      FC         FC         FC
 
-'''
+```
 
 > *Explanation:* The RGB intensity values are multiplied by 4 to get the [_RGB](_RGB) intensity values as [HEX$](HEX$) values. The individual 2 digit [HEX$](HEX$) intensity values can be added to "&HFF" to make up the 32-bit hexadecimal string value necessary for [VAL](VAL) to return to [_PALETTECOLOR](_PALETTECOLOR). The statement is only included in the example to show how that can be done with any 32-bit color value.
 
@@ -117,7 +117,7 @@ COLOR 15 <nowiki>=</nowiki> &HFFFCFCFC      FC         FC         FC
 
 *Example 1:* Reading the default RGB color settings of color attribute 15.
 
-'''vb
+```vb
 
  OUT &H3C7, 15
  red% = INP(&H3C9)
@@ -125,21 +125,21 @@ COLOR 15 <nowiki>=</nowiki> &HFFFCFCFC      FC         FC         FC
  blue% = INP(&H3C9)
  PRINT red%, green%, blue% 
 
-'''
+```
 
 
-'''text
+```text
 
 
  63       63       63
 
-'''
+```
 
 
 
 *Example 2:* Changing the color settings of attribute 0 (the background) to blue in [SCREEN](SCREEN)s 12 or 13.
 
-'''vb
+```vb
 
 SCREEN 12
 OUT &H3C8, 0          'set color port attribute to write
@@ -151,51 +151,51 @@ OUT &H3C7, 0
 PRINT INP(&H3C9); INP(&H3C9); INP(&H3C9)
 END
 
-'''
+```
 OutputStartBG1 0  0  42 
-'''
+```
 
 
 
 *Example 3:* Printing in fullscreen SCREEN 0 mode with a color background under the text only.
 
-'''vb
+```vb
 
 SCREEN 0: _FULLSCREEN ' used for fullscreen instead of window
 COLOR 14, 6: LOCATE 4, 4: PRINT "Hello!" 
 
-'''
+```
 
-'''text
+```text
 
 
 
 
     Hello!
 
-'''
+```
 
 
 
 *Example 4:* Using [CLS](CLS) after setting the background color in SCREEN 0 to make the color cover the entire screen.
 
-'''vb
+```vb
 
 SCREEN 0: _FULLSCREEN
 COLOR , 7: CLS
 COLOR 9: PRINT "Hello" 
 
-'''
+```
 OutputStartBG7
 Hello
 
-'''
+```
 
 
 
 *Example 5:* Using a different foreground color for each letter:
 
-'''vb
+```vb
 
 SCREEN 0
 COLOR 1: PRINT "H";
@@ -209,16 +209,16 @@ COLOR 12: PRINT "R";
 COLOR 13: PRINT "L";
 COLOR 14: PRINT "D" 
 
-'''
+```
 
 
-'''text
+```text
 
 
 HELLO
 WORLD
 
-'''
+```
 
 
 

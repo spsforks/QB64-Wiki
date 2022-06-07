@@ -28,7 +28,7 @@
 
 *Example 1:* 
 
-'''vb
+```vb
 
 $LET ScreenMode = 32
 $IF ScreenMode = 0 THEN
@@ -40,7 +40,7 @@ $END IF
 COLOR Red
 PRINT "Hello World"
 
-'''
+```
 
 *Explanation:* The same CONST is defined twice inside the program.  Normally, defining a CONST more than once generates an error, but the $IF condition here is choosing which CONST will be inside the final program.
 
@@ -51,7 +51,7 @@ The [$LET]($LET) and $IF statements let the programmer control the code that act
 
 *Example 2:* 
 
-'''vb
+```vb
 
 $IF WIN THEN
     CONST Slash = "\"
@@ -61,7 +61,7 @@ $END IF
 
 PRINT "The proper slash for your operating system is "; Slash
 
-'''
+```
 
 *Explanation:* For the above, the CONST slash is defined by the automatic internal flags which returns what operating system is being used at compile time. On a Windows PC, the Slash will be the backslash; for any other OS it will be the forward slash.
 

@@ -31,7 +31,7 @@ The [_FONT](_FONT) statement sets the current [_LOADFONT](_LOADFONT) function fo
 
 *Example:* Previewing a font in SCREEN 0. A different true type font can be substituted below. 
 
-'''vb
+```vb
 
 
 fontpath$ = ENVIRON$("SYSTEMROOT") + "\fonts\lucon.ttf" 'Find Windows Folder Path.
@@ -72,7 +72,7 @@ END IF
 RETURN
 
 
-'''
+```
 **NOTE:** [ENVIRON$](ENVIRON$)("SYSTEMROOT") returns a string value of: "C:\WINDOWS". Add the "\FONTS\" folder and the **.TTF** font file name.
 
 

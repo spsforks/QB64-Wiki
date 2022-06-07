@@ -15,7 +15,7 @@ The [_MOUSEMOVEMENTY](_MOUSEMOVEMENTY) function returns the relative vertical po
 
 *Example:* MOD is used to keep vertical movement of circle and cursor inside of the SCREEN 13 window(200). 
 
-'''vb
+```vb
 
 SCREEN 13, , 1, 0
 DO: _LIMIT 200
@@ -30,7 +30,7 @@ DO: _LIMIT 200
   PCOPY 1, 0
 LOOP UNTIL INKEY$ <> "" 'press any key to exit 
 
-'''
+```
 >  **NOTE:** When using the function this way, give the user a keypress exit option. Make sure the user has some way to exit that is not dependent on clicking the X button. 
 
 

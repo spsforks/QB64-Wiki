@@ -24,7 +24,7 @@
 *Example 1:* Using an error handler that ignores any error.
 
 
-'''vb
+```vb
 
  ON ERROR GOTO Errhandler
    ' Main module program error simulation code
@@ -38,22 +38,22 @@
   BEEP             ' warning beep
  RESUME NEXT       ' moves program to code following the error. 
 
-'''
+```
 
-'''text
+```text
 
 
 Error 7 on program file line 3 
 Error handled...ending program
 
-'''
+```
 
 > *Explanation:* The ON ERROR statement is normally placed at the beginning of the main module code.  Errhandle is the line label sub referred to in the statement. The handler prints the error code and attempts to use the next line of code using [RESUME](RESUME) NEXT which is only used in error handling procedures. [_ERRORLINE](_ERRORLINE) returns the program file's actual text line count found in the IDE.
 
 
 *Example 2:* Using an error handler in a [SUB](SUB) procedure.
 
-'''vb
+```vb
 
 s
 END
@@ -69,7 +69,7 @@ ON ERROR GOTO 0
 PRINT "Done!"
 END SUB 
 
-'''
+```
 >  *Explanation:* The [GOTO](GOTO) procedure must be in the main code area after [END](END) to avoid a [RESUME](RESUME) error later. Use GOTO 0 to clear the ON ERROR set in the sub so that later errors are not handled by it.
 
 

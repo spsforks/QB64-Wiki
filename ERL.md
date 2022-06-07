@@ -17,7 +17,7 @@ The [ERL](ERL) function returns the closest previous line number before the last
 
 *Example:* Using a fake error code to return the line number position in a program.
 
-'''vb
+```vb
 
 ON ERROR GOTO errorfix
 1
@@ -31,15 +31,15 @@ errorfix:
 PRINT ERL
 RESUME NEXT 
 
-'''
+```
 
-'''text
+```text
 
 1
 1
 5
 
-'''
+```
 
 
 

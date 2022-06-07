@@ -23,12 +23,12 @@
 
 *Example:* Embeds a designated icon file into the compiled EXE which can be viewed in Windows Explorer folders.
 
-'''vb
+```vb
 
 $EXEICON:'myexe.ico'
 _ICON
 
-'''<sub>Code and command by Fellippe Heitor</sub> 
+```<sub>Code and command by Fellippe Heitor</sub> 
 
 
 ## See Also

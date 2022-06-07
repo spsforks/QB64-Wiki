@@ -19,7 +19,7 @@ The [_PALETTECOLOR](_PALETTECOLOR) statement sets the color value of a palette e
 
 <center>**Basic's 16 Default Color Attributes (non-[DAC](DAC))**</center>
 
-'''text
+```text
 
      Attribute        Description     Red   Green   Blue   32 HEX    HTML Name 
          0            Black            0      0       0    000000    Black
@@ -39,7 +39,7 @@ The [_PALETTECOLOR](_PALETTECOLOR) statement sets the color value of a palette e
         14            Yellow          63     63      21    FFFF00    Yellow
         15            White           63     63      63    FFFFFF    White 
 
-'''
+```
 
 <center>[http://www.w3schools.com/html/html_colornames.asp HTML Color Table Values and Names] or [http://www.tayloredmktg.com/rgb/#OR Other RGB colors]</center>
 > :: *Note:* **QB64** 32 bit color intensity values from 0 to 255 can be found by multiplying above values by 4.
@@ -51,7 +51,7 @@ The [_PALETTECOLOR](_PALETTECOLOR) statement sets the color value of a palette e
 
 *Example:* Creating custom background colors in SCREEN 0 that follow the text. [CLS](CLS) makes entire background one color.
 
-'''vb
+```vb
 
 _PALETTECOLOR 1, _RGB32(255, 255, 255) ' white.
 _PALETTECOLOR 2, _RGB32(255, 170, 170) ' lighter red.
@@ -70,7 +70,7 @@ COLOR 0, 6: PRINT "black on darker red.
 COLOR 1, 6: PRINT "white on darker red"
 COLOR 2, 6: PRINT "ligher red on darker red" 
 
-'''
+```
 
 >  *Note:* [_PALETTECOLOR](_PALETTECOLOR) expects [LONG](LONG) [_RGB32](_RGB32) or [_RGBA32](_RGBA32) 32 bit color values, not [_RGB](_RGB) or [_RGBA](_RGBA) palette attribute values.
 

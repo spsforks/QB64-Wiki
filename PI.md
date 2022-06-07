@@ -23,18 +23,18 @@ The [_PI](_PI) function returns **�** as a [_FLOAT](_FLOAT) value with an opti
 
 *Example:* Calculating the area of a circle using a [SINGLE](SINGLE) variable in this case.
 
-'''vb
+```vb
 radius = 5
 circlearea = _PI(radius ^ 2)
 PRINT circlearea
 
-''' 
+``` 
 
-'''text
+```text
 
  78.53982
 
-'''
+```
 
 
 

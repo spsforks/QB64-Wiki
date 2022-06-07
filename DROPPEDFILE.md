@@ -28,7 +28,7 @@ The [_DROPPEDFILE](_DROPPEDFILE) function returns the list of items (files or fo
 
 *Example:* Accepting files dragged from a folder and processing the list received by specifying an index. 
 
-'''vb
+```vb
 
 SCREEN _NEWIMAGE(128, 25, 0)
 
@@ -59,7 +59,7 @@ DO
     _LIMIT 30
 LOOP
 
-'''
+```
 
 
 ## See Also

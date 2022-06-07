@@ -27,36 +27,36 @@ The [INPUT$](INPUT$) function is used to receive data from the user's keyboard, 
 
 *Example 1:* A keyboard limited length entry can be made with a fixed blinking cursor. Entry must be completed before it can be shown.
 
-'''vb
+```vb
 
 LOCATE 10, 10, 1         'display fixed cursor at location
 year$ = INPUT$(4)        'waits until all 4 digits are entered
 PRINT year$              'display the text entry 
 
-'''
+```
 
 
 *Example 2:* Reading bytes from a text file for an 80 wide screen mode.
 
-'''vb
+```vb
 
 LOCATE 5, 5, 1                    'locate and display cursor
 OPEN "Diary.txt" FOR INPUT AS #1  'open existing text file
 text$ = INPUT$(70, 1)
 LOCATE 5, 6, 0: PRINT text$       'print text and turn cursor off 
 
-'''
+```
 
 
 *Example 3:* Getting the entire text file data as one string value.
 
-'''vb
+```vb
 
 OPEN "Diary.txt FOR BINARY AS #1  'open an existing file up to 32767 bytes
 IF LOF(1) <= 32767 THEN Text$ = INPUT$(LOF(1), 1)
 CLOSE #1 
 
-'''
+```
 > *Explanation:* The IF statement gets the entire contents when the file size is less than 32768. The program can then work with the string by using [MID$](MID$) or [INSTR](INSTR). Note: A text file string will also have **CrLf** line break end characters [CHR$](CHR$)(13) + [CHR$](CHR$)(10).
 
 

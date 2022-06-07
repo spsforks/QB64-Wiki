@@ -19,7 +19,7 @@ The [OPTION BASE](OPTION BASE) statement is used to set the default lower bound 
 
 *Example 1:* Set the default lower bound for array declarations to one.
 
-'''vb
+```vb
 
 OPTION BASE 1
 
@@ -28,18 +28,18 @@ DIM array(5) AS INTEGER
 
 PRINT LBOUND(array)
 
-'''
+```
 
-'''text
+```text
 
  1
-'''
+```
 
 
 
 *Example 2:* Set the default lower bound for array declarations to zero.
 
-'''vb
+```vb
 
 OPTION BASE 0
 
@@ -50,14 +50,14 @@ DIM array(2, 10 to 15) AS INTEGER
 PRINT LBOUND(array, 1)
 PRINT LBOUND(array, 2)
 
-'''
+```
 
-'''text
+```text
 
  0
  10
 
-'''
+```
 
 
 

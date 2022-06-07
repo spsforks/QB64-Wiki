@@ -27,20 +27,20 @@ The [PAINT](PAINT) statement is used to fill a delimited area in a graphic scree
 
 *Example 1:* Painting a [CIRCLE](CIRCLE) immediately after it is drawn using [STEP](STEP)(0, 0) to paint from the circle's center point.
 
-'''vb
+```vb
 
 SCREEN 12
 x = 200: y = 200
 CIRCLE (x, y), 100, 10
 PAINT STEP(0, 0), 2, 10 
 
-'''
+```
 > *Results:* A circle located at x and y with a bright green border filled in dark green. The last coordinate used was the circle's center point and PAINT used it also with the [STEP](STEP) relative coordinates being zero.
 
 
 *Example 2:* Routine to check a [DRAW](DRAW) string to make sure that the drawn shape is fully closed so that a PAINT does not "leak".
 
-'''vb
+```vb
 
 SCREEN 12
 drw$ = "C15S20R9D4R6U3R3D3R7U5H3U2R9D3G2D6F1D3F5L10D1G1L4H2L7G2L3H2L3U8L2U5R1BF4"
@@ -78,13 +78,13 @@ FOR i = 1 TO LEN(drw$)
 NEXT
 PSET (300, 300): DRAW drw$ 
 
-'''
+```
 >  *Explanation:* If the [DRAW](DRAW) string is fully closed, the end values should each be 0. In the example, the proper result should be 4, 4 as there is a BF4 offset for PAINT which cannot be on a border. The result is 4, 5 because the shape is not completely closed.
 
 
 *Example 3:* Tiling using PAINT to create a red brick pattern inside a yellow border:
 
-'''vb
+```vb
 
 DIM Row$(1 TO 8) 
 SCREEN 12
@@ -103,12 +103,12 @@ SCREEN 12
     LINE (59, 124)-(581, 336), 14, B 'yellow box border to paint inside
     PAINT (320, 240), Tile$, 14 'paints brick tiles within yellow border
 
-'''
+```
 
 
 *Example 4:* Generating a tiling pattern for PAINT from [DATA](DATA) statements:
 
-'''vb
+```vb
 
 ptndata:
 DATA "c4444444"
@@ -149,7 +149,7 @@ FUNCTION loadpattern$
     loadpattern$ = res$
 END FUNCTION
 
-'''
+```
 > : *Code provided by collaborator https://github.com/NEONTEC75*
 
 

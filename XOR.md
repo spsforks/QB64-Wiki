@@ -30,7 +30,7 @@ QB64 does not have AND/OR/NOT operators dedicated to operating on the overall tr
 
 ;Example 1:Use **AND** to mask certain bits in a value. In this example, the 1's in the mask (y&) specify which bits in (x&) we are interested in, forcing all others to 0.
 
-'''vb
+```vb
 
 x& = VAL("&B101010") 'Arbitrary collection of bits
 y& = VAL("&B001100") 'A bit mask
@@ -46,21 +46,21 @@ FUNCTION BIN$ (n&, digits&)
     BIN$ = B$
 END FUNCTION
 
-'''
+```
 
-'''text
+```text
 
 
 Input 1: 101010
 Input 2: 001100
 Output:  001000
 
-'''
+```
 
 
 ;Example 2:Use **OR** to combine bit flags into a single value. The presence of a flag can then be tested by using the flag as a mask with **AND**.
 
-'''vb
+```vb
 
 'The trick here is to give each flag a value corresponding to a different bit being 1
 FLAG_A& = VAL("&B0001")
@@ -76,20 +76,20 @@ IF flags& AND FLAG_B& THEN PRINT "Flag B is set"
 IF flags& AND FLAG_C& THEN PRINT "Flag C is set"
 IF flags& AND FLAG_D& THEN PRINT "Flag D is set"
 
-'''
+```
 
-'''text
+```text
 
 
 Flag A is set
 Flag C is set
 
-'''
+```
 
 
 ;Example 3:Use **XOR** to toggle a bit flag (that is, change its state to the opposite of what it was). This example is the same as the **OR** example above, but with one extra line added. This time we enable flags A & C, then toggle flags A & B. This will disable flag A and enable B.
 
-'''vb
+```vb
 
 'The trick here is to give each flag a value corresponding to a different bit being 1
 FLAG_A& = VAL("&B0001")
@@ -106,15 +106,15 @@ IF flags& AND FLAG_B& THEN PRINT "Flag B is set"
 IF flags& AND FLAG_C& THEN PRINT "Flag C is set"
 IF flags& AND FLAG_D& THEN PRINT "Flag D is set"
 
-'''
+```
 
-'''text
+```text
 
 
 Flag B is set
 Flag C is set
 
-'''
+```
 
 
 

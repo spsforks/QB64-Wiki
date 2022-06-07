@@ -24,7 +24,7 @@ The [SCREEN](SCREEN) statement sets the video display mode and size of the progr
 * Some screen mode text sizes are adjustable with [WIDTH](WIDTH) and all **QB54** screens support [PCOPY](PCOPY) and page flipping. 
 
 
-'''text
+```text
 
                        **LEGACY SCREEN MODES AT A GLANCE**
 
@@ -45,7 +45,7 @@ The [SCREEN](SCREEN) statement sets the video display mode and size of the progr
 
               **QB64 allows video paging and [PCOPY](PCOPY) in ALL screen modes!** 
 
-'''
+```
 
 
 > ::::::::**QB64 Custom Screen Modes**
@@ -155,7 +155,7 @@ The [SCREEN](SCREEN) statement sets the video display mode and size of the progr
 
 > *Example 1:* Shows an example of each legacy screen mode available to QBasic and QB64.
 
-'''vb
+```vb
 
 SCREEN 0
 PRINT "This is SCREEN 0 - only text is allowed!"
@@ -175,21 +175,21 @@ NEXT
 SLEEP
 SYSTEM 
 
-'''
+```
 
-'''text
+```text
 
 
 This is SCREEN 0 - only text is allowed!
 
-'''
+```
 
 > Displays each [SCREEN (statement)](SCREEN (statement)) mode one at a time with a [CIRCLE](CIRCLE) (except for [SCREEN (statement)](SCREEN (statement)) 0)
 
 
 *Example 2:* Making ANY **QB64 legacy screen mode** larger using a SUB that easily converts PRINT to [_PRINTSTRING](_PRINTSTRING). 
 
-'''vb
+```vb
 
 Scr13& = _NEWIMAGE(320, 200, 13)  'this is the old SCREEN 13 image page to set the image
 Big13& = _NEWIMAGE(640, 480, 256) 'use 4 X 3 aspect ratio that Qbasic used when full screen
@@ -215,7 +215,7 @@ col% = (POS(0) - 1) * _PRINTWIDTH("W") 'finds current page text or font column w
 _PRINTSTRING (col%, row%), Text$
 END SUB 
 
-'''
+```
 <sub>Code by Ted Weissgerber</sub>
 >  *Explanation:* The procedure above creates a larger version of a SCREEN 13 window by stretching it with [_PUTIMAGE](_PUTIMAGE). It cannot stretch PRINTed text so [_PRINTSTRING](_PRINTSTRING) must be used instead. [LOCATE](LOCATE) sets the PRINT cursor position for [CSRLIN](CSRLIN) and [POS](POS)(0) to read. The SUB then converts the coordinates to graphical ones. Then **change** [PRINT](PRINT) to PRINTS using the **Search Menu**.
 

@@ -23,18 +23,18 @@ The [CINT](CINT) function rounds decimal point numbers up or down to the nearest
 
 *Example:* Shows how CINT rounds values up or down as in "bankers' rounding". 
 
-'''vb
+```vb
 
 a% = CINT(1.49): b% = CINT(1.50): c = 11.5
 COLOR c: PRINT a%, b%, c 
 
-'''
+```
 
-'''text
+```text
 
 1       2       11.5
 
-'''
+```
 
 
 

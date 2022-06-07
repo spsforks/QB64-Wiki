@@ -4,7 +4,7 @@ GIF files can be one frame or animated images made up of many frames that are di
 
 <center>**NOTE: Include the [FILELIST$ (function)](FILELIST$ (function)) or create your own File INPUT routine!**</center>
 
-'''vb
+```vb
 
 
 '#######################################################################################
@@ -410,7 +410,7 @@ CLOSE gifData.file
 END SUB
 
 
-'''
+```
 <center>**NOTE: If full code is not displayed then refresh browser.**</center>
 
 

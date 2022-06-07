@@ -16,13 +16,13 @@ The [_ECHO](_ECHO) statement allows outputting text to a [$CONSOLE]($CONSOLE) wi
 ## Example(s)
 
 
-'''vb
+```vb
 
 $CONSOLE
 PRINT "this will show in the main window"
 _ECHO "this will show in the console"
 
-'''
+```
 
 
 ## See Also

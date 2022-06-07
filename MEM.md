@@ -12,7 +12,7 @@ The [_MEM](_MEM) variable type can be used when working with memory blocks. It h
 *Variable TYPE:*
 * Memory DOT values are actually part of the built in memory variable [type](type) in QB64. The following [TYPE](TYPE) is built in:
 
-'''text
+```text
 
 TYPE memory_type
   OFFSET AS _OFFSET       'start location of block(changes with byte position)
@@ -26,7 +26,7 @@ The above [TYPE](TYPE) is for clarification purposes only. It **doesn't need** t
 
 *IMPORTANT NOTE: As of Build 20170802/57 onward, mem.TYPE has been changed to be an _OFFSET, just as mem.SIZE and mem.ELEMENTSIZE.*
 
-'''
+```
 
 
 ### Usage
@@ -73,7 +73,7 @@ The above [TYPE](TYPE) is for clarification purposes only. It **doesn't need** t
 
 *Example 1:* Demonstration of .IMAGE to determine an image's dimensions, .TYPE to verify the type and [_MEMEXISTS](_MEMEXISTS) to check image has not been freed
 
-'''vb
+```vb
 
 SCREEN _NEWIMAGE(500, 500, 32)
 i = _LOADIMAGE("qb64_trans.png", 32)
@@ -94,12 +94,12 @@ IF t AND 2048 THEN
   END IF
 END IF 
 
-'''
+```
 
 
 *Example 2:* Converts the current [_DEST](_DEST) [SCREEN](SCREEN) 13 image memory altered by [PSET](PSET) to a [STRING](STRING) value. SCREEN 13 only.
 
-'''vb
+```vb
 
 SCREEN 13
 PSET (0, 0), ASC("H") 'top left corner of screen
@@ -116,30 +116,30 @@ PRINT x1$ 'prints HELLO as ASCII character values
 PRINT m.OFFSET; m.SIZE; m.ELEMENTSIZE
 _MEMFREE m 
 
-'''
+```
 
-'''text
+```text
 
 
  5
 HELLO
  5448320  6400  1
 
-'''
+```
 
 >  *Explanation:* When a numerical [_BYTE](_BYTE) value is converted to a [STRING](STRING), each byte is converted to an [ASCII](ASCII) character. The QB64 IDE will capitalize _MEM dot values.
 
-'''text
+```text
 
                                         m.SIZE = 320 * 200 = 6400 bytes
                                         m.ELEMENTSIZE = 1 byte
 
-'''
+```
 
 
 *Example 3:* Using _MEM to convert _OFFSET to _INTEGER64.
 
-'''vb
+```vb
 
 DIM x AS INTEGER
 DIM m AS _MEM
@@ -165,7 +165,7 @@ $CHECKING:ON
 END FUNCTION
 
 
-'''
+```
 
 *Explanation:* The above will print two numbers for us which should match.  These numbers will vary, as they're representations of where X is stored in memory, and that position is going to vary every time the program is run.  What it should illustrate, however, is a way to convert _OFFSET to _INTEGER64 values, which can sometimes be useful when trying to run calculations involving mem.SIZE, mem.TYPE, or mem.ELEMENTSIZE.
 

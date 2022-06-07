@@ -30,7 +30,7 @@ The multi-modular technique goes back to when QBasic and QuickBASIC had module s
 
 *Example 1:* Shows how RUN can reference multiple line numbers in the main module code. No line number executes first code line.
 
-'''vb
+```vb
 
 PRINT " A", " B", " C", " D"
 10 A = 1
@@ -47,9 +47,9 @@ INPUT "Do you want to quit?(Y/N)", quit$
 IF UCASE$(quit$) = "Y" THEN END ELSE RUN  'RUN without line number executes at first code line
 
 
-''' 
+``` 
 
-'''text
+```text
 
 A       B       C       D
 1       2       3       4
@@ -60,7 +60,7 @@ A       B       C       D
 
 Do you want to quit?(Y/N)_
 
-'''
+```
 
 
 

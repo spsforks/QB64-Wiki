@@ -13,7 +13,7 @@
 
 <center>*Decimal Bit values returned when a bit is on:*</center>
 
-'''text
+```text
 
                                     **Exponent of 2 and Bit #  7 6 5 4 3 2 1 0 **
 
@@ -28,7 +28,7 @@
 
                        All_Bits_On = 1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 = 255
 
-'''
+```
 
 
 >  *Explanation:* The table above only displays the binary value of each bit when on. If a value of 255 was read, the binary number = 11111111 (all bits on). If only bits 2, 3 and 4 are on then the value would be 4 + 8 + 16 = 28 or 00011100.
@@ -45,7 +45,7 @@
 
 > *Example 1:* Converting decimal values to a string binary value. Use [LOCATE](LOCATE) before the SUB call to locate the [PRINT](PRINT).
 
-'''vb
+```vb
 
 DO
   LOCATE 2, 10
@@ -66,14 +66,14 @@ SUB Decimal2Binary(number&)
  PRINT "Binary number = " + Binary$    'binary result
 END SUB 
 
-'''
+```
 > *Explanation:* Displays Binary bits on as 1. Remainder can only be 1 or 0 in each loop. Can return all positive values correctly. The decimal parameter could come from a register return value read by [INP](INP)(address) and 1 would indicate the pins or bits on.
 
 
 > *Example 2:* Turning flip-flop [BIT](BIT) flags on or off and determining the bits on in a [BYTE](BYTE) of program data.
 
 
-'''vb
+```vb
 
 _DEFINE B AS _UNSIGNED _BYTE   'unsigned allows byte values from 128 to 255
 
@@ -95,7 +95,7 @@ LOOP UNTIL _KEYDOWN(27)
 SLEEP
 SYSTEM 
 
-'''
+```
 <sub>Code by Ted Weissgerber</sub>
 > *Explanation:* The byte value is checked to see if the switch is already on. If it is not on, then the bit value is turned on by adding that value to the byte value. If it is on, that value is subtracted. The [FOR...NEXT](FOR...NEXT) loop reads each bit and displays the switches on.
 

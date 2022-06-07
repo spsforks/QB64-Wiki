@@ -20,7 +20,7 @@ The [_CONTROLCHR](_CONTROLCHR) statement can be used to turn OFF control charact
 
 *Example:* Printing the 255 [ASCII](ASCII) characters in [SCREEN](SCREEN) 0 with 32 colors.
 
-'''vb
+```vb
 
 DIM i AS _UNSIGNED _BYTE
 WIDTH 40, 25
@@ -41,7 +41,7 @@ DO
 LOOP WHILE i
 END 
 
-'''
+```
 
 
 ## See Also

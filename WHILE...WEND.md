@@ -27,7 +27,7 @@ RelationalTable
 *Example 1:* Reading an entire file. Example assumes the program has a [OPEN](OPEN) as #1
 
 
-'''vb
+```vb
   
 OPEN "Readme.txt" FOR INPUT AS #1
 WHILE NOT EOF(1)
@@ -37,15 +37,15 @@ WHILE NOT EOF(1)
     PRINT text$
 WEND 
 
-'''
+```
 
 *Example 2:* Clearing the keyboard buffer.
 
-'''vb
+```vb
 
 WHILE INKEY$ <> "" : WEND 
 
-'''
+```
 
 
 ## See Also

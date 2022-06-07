@@ -14,7 +14,7 @@ The **STOP** statement is used to stop program execution when troubleshooting a 
 
 *Example:* When run in the QBasic IDE, the program will return to the IDE at STOP. Press F5 to finish the program.
 
-'''vb
+```vb
 
 PRINT "start"
 
@@ -24,7 +24,7 @@ STOP
 
 PRINT "resumed"
 
-'''
+```
 >  *Explanation:* QB64 will STOP the program and close the window as it does not have an interpreter to run the rest of the code.
 
 

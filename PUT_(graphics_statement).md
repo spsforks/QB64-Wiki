@@ -42,7 +42,7 @@ The **PUT** graphics statement is used to place [GET (graphics statement)](GET (
 
 *Example 1:* How [GET](GET) and PUT can be used with images loaded with [_LOADIMAGE](_LOADIMAGE). The background color is omitted or "masked".
 
-'''vb
+```vb
 
 SCREEN _NEWIMAGE(640, 480, 256)
 _SCREENMOVE _MIDDLE
@@ -59,13 +59,13 @@ _COPYPALETTE image&, 0      'necessary for custom image colors other than screen
 PUT(10, 10), Array(0), PSET , _RGB(255, 255, 255)   'mask white background color
 END 
 
-'''
+```
 >  *Explanation:* **QB64** allows one PUT color to be "masked" to allow odd shaped sprite image backgrounds to be transparent.
 
 
 *Example 2:* Using a [STRING](STRING) instead of an [arrays](arrays) to store [GET](GET) image data that can be PUT later. For images up to 256 colors only.
 
-'''vb
+```vb
 
 a$ = SPACE$(4 + 100)            '4 byte header + 100 pixels for a 10 X 10 image
 SCREEN 13
@@ -79,7 +79,7 @@ CLS
 PRINT a$                        'display string data. Width = CHR$(10 * 8) = "P"
 PUT(100, 100), a$, PSET 
 
-'''
+```
 <sub>Code by Galleon</sub>
 >  *Explanation:* The header holds the [INTEGER](INTEGER) width and depth of the image area as 2 bytes each. Screen 13 width is multiplied by 8.
 

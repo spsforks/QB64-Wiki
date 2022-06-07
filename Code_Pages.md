@@ -16,7 +16,7 @@ Unicode characters can be inserted in Windows by holding down the **Alt key** an
 ## Code Page Listings:
 
 
-'''text
+```text
 
                                   [Code_Pages#CP_437](Code_Pages#CP_437)
 
@@ -36,7 +36,7 @@ Unicode characters can be inserted in Windows by holding down the **Alt key** an
 
                        [Code_Pages#Unicode_Mapping](Code_Pages#Unicode_Mapping)
 
-'''
+```
 
 <center>**See the [Unicode](Unicode) and [_MAPUNICODE](_MAPUNICODE) pages to setup a program language using the data below:**</center>
 
@@ -46,7 +46,7 @@ Unicode characters can be inserted in Windows by holding down the **Alt key** an
 United States MS DOS
 
 
-'''text
+```text
 
 
 'Microsoft_pc_cp437
@@ -60,7 +60,7 @@ United States MS DOS
 8801,177,8805,8804,8992,8993,247,8776,176,8729,183,8730,8319,178,9632,160
 
 
-'''
+```
 
 
 
@@ -68,7 +68,7 @@ United States MS DOS
 
 
 
-'''text
+```text
 
                                **Western [ASC](ASC) code page differences**
 
@@ -78,7 +78,7 @@ United States MS DOS
                   "**÷**" is &HF6 in **CP437**, &HF7 in Windows-**1252**, &HF7 in Unicode.
                   "**Σ**" is &HE4 in **CP437**,                     , &H3A3 in Unicode. 
 
-'''
+```
 
 
 ## CP 737
@@ -87,7 +87,7 @@ United States MS DOS
 Greek MS DOS displays Greek alphabet for algebraic formulas.
 
 
-'''text
+```text
 
 
 'Microsoft_pc_cp737
@@ -101,7 +101,7 @@ Greek MS DOS displays Greek alphabet for algebraic formulas.
 911,177,8805,8804,938,939,247,8776,176,8729,183,8730,8319,178,9632,160
 
 
-'''
+```
 
 
 
@@ -116,7 +116,7 @@ Greek MS DOS displays Greek alphabet for algebraic formulas.
 Estonian, Lithuanian and Latvian languages.
 
 
-'''text
+```text
 
 
 'Microsoft_pc_cp775
@@ -130,7 +130,7 @@ Estonian, Lithuanian and Latvian languages.
 173,177,8220,190,182,167,247,8222,176,8729,183,185,179,178,9632,160
 
 
-'''
+```
 
 
 
@@ -142,7 +142,7 @@ Estonian, Lithuanian and Latvian languages.
 Western Europe, Spain, England
 
 
-'''text
+```text
 
 
 'Microsoft_pc_cp850
@@ -156,7 +156,7 @@ Western Europe, Spain, England
 173,177,8215,190,182,167,247,184,176,168,183,185,179,178,9632,160
 
 
-'''
+```
 
 
 
@@ -172,7 +172,7 @@ Western Europe, Spain, England
 Central European languages that use Latin script such as Bosnian, Croatian, Czech, Hungarian, Polish, Romanian, Serbian or Slovak.
 
 
-'''text
+```text
 
 
 'Microsoft_pc_cp852
@@ -186,7 +186,7 @@ Central European languages that use Latin script such as Bosnian, Croatian, Czec
 173,733,731,711,728,167,247,184,176,168,729,369,344,345,9632,160
 
 
-'''
+```
 
 
 
@@ -198,7 +198,7 @@ Central European languages that use Latin script such as Bosnian, Croatian, Czec
 Cyrillic code page to be used under MS-DOS
 
 
-'''text
+```text
 
 
 'Microsoft_pc_cp855
@@ -212,7 +212,7 @@ Cyrillic code page to be used under MS-DOS
 173,1099,1067,1079,1047,1096,1064,1101,1069,1097,1065,1095,1063,167,9632,160
 
 
-'''
+```
 
 
 
@@ -227,7 +227,7 @@ Cyrillic code page to be used under MS-DOS
 Turkish MS DOS
 
 
-'''text
+```text
 
 
 'Microsoft_pc_cp857
@@ -241,7 +241,7 @@ Turkish MS DOS
 173,177,0,190,182,167,247,184,176,168,183,185,179,178,9632,160
 
 
-'''
+```
 
 
 
@@ -253,7 +253,7 @@ Turkish MS DOS
 Portuguese language. MS DOS
 
 
-'''text
+```text
 
 
 'Microsoft_pc_cp860
@@ -267,7 +267,7 @@ Portuguese language. MS DOS
 8801,177,8805,8804,8992,8993,247,8776,176,8729,183,8730,8319,178,9632,160
 
 
-'''
+```
 
 
 
@@ -282,7 +282,7 @@ Portuguese language. MS DOS
 Icelandic language (as well as other Nordic languages). MS DOS
 
 
-'''text
+```text
 
 
 'Microsoft_pc_cp861
@@ -296,7 +296,7 @@ Icelandic language (as well as other Nordic languages). MS DOS
 8801,177,8805,8804,8992,8993,247,8776,176,8729,183,8730,8319,178,9632,160
 
 
-'''
+```
 
 
 
@@ -308,7 +308,7 @@ Icelandic language (as well as other Nordic languages). MS DOS
 Hebrew letters in positions 80–9A hex, but otherwise it is identical to [Code_Pages#CP_437](Code_Pages#CP_437). Now obsolete, see [Code_Pages#CP_1255](Code_Pages#CP_1255)
 
 
-'''text
+```text
 
 
 'Microsoft_pc_cp862
@@ -322,7 +322,7 @@ Hebrew letters in positions 80–9A hex, but otherwise it is identical to [Code_
 8801,177,8805,8804,8992,8993,247,8776,176,8729,183,8730,8319,178,9632,160
 
 
-'''
+```
 
 
 
@@ -337,7 +337,7 @@ Hebrew letters in positions 80–9A hex, but otherwise it is identical to [Code_
 French language (mainly in Canada). MS DOS
 
 
-'''text
+```text
 
 
 'Microsoft_pc_cp863
@@ -351,7 +351,7 @@ French language (mainly in Canada). MS DOS
 8801,177,8805,8804,8992,8993,247,8776,176,8729,183,8730,8319,178,9632,160
 
 
-'''
+```
 
 
 
@@ -363,7 +363,7 @@ French language (mainly in Canada). MS DOS
 Arabic MS DOS
 
 
-'''text
+```text
 
 
 'Microsoft_pc_cp864
@@ -377,7 +377,7 @@ Arabic MS DOS
 65149,1617,65253,65257,65260,65264,65266,65232,65237,65269,65270,65245,65241,65265,9632,0
 
 
-'''
+```
 
 
 
@@ -392,7 +392,7 @@ Arabic MS DOS
 Nordic languages (except Icelandic, for which CP861 is used). MS DOS
 
 
-'''text
+```text
 
 
 'Microsoft_pc_cp865
@@ -406,7 +406,7 @@ Nordic languages (except Icelandic, for which CP861 is used). MS DOS
 8801,177,8805,8804,8992,8993,247,8776,176,8729,183,8730,8319,178,9632,160
 
 
-'''
+```
 
 
 
@@ -418,7 +418,7 @@ Nordic languages (except Icelandic, for which CP861 is used). MS DOS
 Cyrillic alphabetical order code page to be used with MS-DOS
 
 
-'''text
+```text
 
 
 'Microsoft_pc_cp866
@@ -431,7 +431,7 @@ Cyrillic alphabetical order code page to be used with MS-DOS
 1088,1089,1090,1091,1092,1093,1094,1095,1096,1097,1098,1099,1100,1101,1102,1103
 1025,1105,1028,1108,1031,1111,1038,1118,176,8729,183,8730,8470,164,9632,160 
 
-'''
+```
 
 
 <center>See [Code_Pages#CP_MIK](Code_Pages#CP_MIK) and [Code_Pages#CP_1251](Code_Pages#CP_1251) below</center>
@@ -447,7 +447,7 @@ Cyrillic alphabetical order code page to be used with MS-DOS
 Cyrillic Bulgarian Pravetz 16 for MS-DOS 
 
 
-'''text
+```text
 
 
 'Microsoft_pc_cpMIK
@@ -460,7 +460,7 @@ Cyrillic Bulgarian Pravetz 16 for MS-DOS
 945,223,915,960,931,963,181,964,934,920,937,948,8734,966,949,8745                
 8801,177,8805,8804,8992,8993,247,8776,176,8729,183,8730,8319,178,9632,160 
 
-'''
+```
 
 
 <center>See [Code_Pages#CP_866](Code_Pages#CP_866) above and [Code_Pages#CP_1251](Code_Pages#CP_1251) below</center>
@@ -473,7 +473,7 @@ Cyrillic Bulgarian Pravetz 16 for MS-DOS
 Greek MS DOS. Less popular than [Code_Pages#CP_737](Code_Pages#CP_737)
 
 
-'''text
+```text
 
 
 'Microsoft_pc_cp869
@@ -487,7 +487,7 @@ Greek MS DOS. Less popular than [Code_Pages#CP_737](Code_Pages#CP_737)
 173,177,965,966,967,167,968,901,176,168,969,971,944,974,9632,160
 
 
-'''
+```
 
 
 
@@ -502,7 +502,7 @@ Greek MS DOS. Less popular than [Code_Pages#CP_737](Code_Pages#CP_737)
 Thai MS DOS and Windows
 
 
-'''text
+```text
 
 
 'Microsoft_pc_cp874
@@ -516,7 +516,7 @@ Thai MS DOS and Windows
 3664,3665,3666,3667,3668,3669,3670,3671,3672,3673,3674,3675,0,0,0,0
 
 
-'''
+```
 
 
 
@@ -528,7 +528,7 @@ Thai MS DOS and Windows
 WINDOWS in Central European and Eastern European languages that use Latin script, such as Polish, Czech, Slovak, Hungarian, Slovene, Bosnian, Croatian, Serbian (Latin script), Romanian and Albanian. It may also be used with the German language.
 
 
-'''text
+```text
 
 
 'Microsoft_windows_cp1250
@@ -542,7 +542,7 @@ WINDOWS in Central European and Eastern European languages that use Latin script
 273,324,328,243,244,337,246,247,345,367,250,369,252,253,355,729
 
 
-'''
+```
 
 
 
@@ -557,7 +557,7 @@ WINDOWS in Central European and Eastern European languages that use Latin script
 Cyrillic alphabet such as Russian, Bulgarian, Serbian Cyrillic and other languages. It is the most widely used for encoding the Bulgarian, Serbian and Macedonian languages.
 
 
-'''text
+```text
 
 
 'Microsoft_windows_cp1251
@@ -570,7 +570,7 @@ Cyrillic alphabet such as Russian, Bulgarian, Serbian Cyrillic and other languag
 1072,1073,1074,1075,1076,1077,1078,1079,1080,1081,1082,1083,1084,1085,1086,1087
 1088,1089,1090,1091,1092,1093,1094,1095,1096,1097,1098,1099,1100,1101,1102,1103 
 
-'''
+```
 
 
 <center>See [Code_Pages#CP_MIK](Code_Pages#CP_MIK) and [Code_Pages#CP_866](Code_Pages#CP_866) above</center>
@@ -583,7 +583,7 @@ Cyrillic alphabet such as Russian, Bulgarian, Serbian Cyrillic and other languag
 Windows Western languages with Latin alphabet, used by default in the legacy components of Microsoft Windows in English.
 
 
-'''text
+```text
 
 
 'Microsoft_windows_cp1252
@@ -597,7 +597,7 @@ Windows Western languages with Latin alphabet, used by default in the legacy com
 240,241,242,243,244,245,246,247,248,249,250,251,252,253,254,255
 
 
-'''
+```
 
 
 
@@ -605,7 +605,7 @@ Windows Western languages with Latin alphabet, used by default in the legacy com
 
 
 
-'''text
+```text
 
                                **MS DOS [ASC](ASC) code page differences**
 
@@ -615,7 +615,7 @@ Windows Western languages with Latin alphabet, used by default in the legacy com
                   "**÷**" is &HF6 in **CP437**, &HF7 in Windows-**1252**, &HF7 in Unicode.
                   "**Σ**" is &HE4 in **CP437**,                     , &H3A3 in Unicode. 
 
-'''
+```
 
 
 
@@ -628,7 +628,7 @@ Windows Western languages with Latin alphabet, used by default in the legacy com
 Greek (but not polytonic Greek) Not fully compatible with ISO 8859-7 (Ά is located differently).
 
 
-'''text
+```text
 
 
 'Microsoft_windows_cp1253
@@ -642,7 +642,7 @@ Greek (but not polytonic Greek) Not fully compatible with ISO 8859-7 (Ά is loca
 960,961,962,963,964,965,966,967,968,969,970,971,972,973,974,0
 
 
-'''
+```
 
 
 
@@ -654,7 +654,7 @@ Greek (but not polytonic Greek) Not fully compatible with ISO 8859-7 (Ά is loca
 Turkish
 
 
-'''text
+```text
 
 
 'Microsoft_windows_cp1254
@@ -668,7 +668,7 @@ Turkish
 287,241,242,243,244,245,246,247,248,249,250,251,252,305,351,255
 
 
-'''
+```
 
 
 
@@ -683,7 +683,7 @@ Turkish
 Hebrew Windows. Modern applications prefer [https://en.wikipedia.org/wiki/UTF-8 UTF-8] or [http://www.fileformat.info/info/charset/UTF-16/list.htm UTF-16] to Windows 1255.
 
 
-'''text
+```text
 
 
 'Microsoft_windows_cp1255
@@ -697,7 +697,7 @@ Hebrew Windows. Modern applications prefer [https://en.wikipedia.org/wiki/UTF-8 
 1504,1505,1506,1507,1508,1509,1510,1511,1512,1513,1514,0,0,8206,8207,0
 
 
-'''
+```
 
 
 
@@ -709,7 +709,7 @@ Hebrew Windows. Modern applications prefer [https://en.wikipedia.org/wiki/UTF-8 
 Arabic Latin Windows
 
 
-'''text
+```text
 
 
 'Microsoft_windows_cp1256
@@ -723,7 +723,7 @@ Arabic Latin Windows
 1611,1612,1613,1614,244,1615,1616,247,1617,249,1618,251,252,8206,8207,1746
 
 
-'''
+```
 
 
 
@@ -738,7 +738,7 @@ Arabic Latin Windows
 Estonian (although that can also be written with Windows-1252), Latvian and Lithuanian languages under Microsoft Windows. It is also possible to write Polish and German.
 
 
-'''text
+```text
 
 
 'Microsoft_windows_cp1257
@@ -752,7 +752,7 @@ Estonian (although that can also be written with Windows-1252), Latvian and Lith
 353,324,326,243,333,245,246,247,371,322,347,363,252,380,382,729
 
 
-'''
+```
 
 
 
@@ -764,7 +764,7 @@ Estonian (although that can also be written with Windows-1252), Latvian and Lith
 Vietnamese. [https://en.wikipedia.org/wiki/UTF-8 UTF-8] is the preferred encoding for Vietnamese in modern applications.
 
 
-'''text
+```text
 
 
 'Microsoft_windows_cp1258
@@ -778,7 +778,7 @@ Vietnamese. [https://en.wikipedia.org/wiki/UTF-8 UTF-8] is the preferred encodin
 273,241,803,243,244,417,246,247,248,249,250,251,252,432,8363,255
 
 
-'''
+```
 
 
 
@@ -794,7 +794,7 @@ Vietnamese. [https://en.wikipedia.org/wiki/UTF-8 UTF-8] is the preferred encodin
 Reading CSV data file: Comma separated values are read using [INPUT (file statement)](INPUT (file statement)). Code Page data is pasted directly into a file as CSV.
 <center>**File named CP863.CSV **</center>
 
-'''text
+```text
 
 Microsoft_pc_cp863
 199,252,233,226,194,224,182,231,234,235,232,239,238,8215,192,167
@@ -806,11 +806,11 @@ Microsoft_pc_cp863
 945,223,915,960,931,963,181,964,934,920,937,948,8734,966,949,8745
 8801,177,8805,8804,8992,8993,247,8776,176,8729,183,8730,8319,178,9632,160 
 
-'''
+```
 
 <center>**QB64 BAS module:**</center>
 
-'''vb
+```vb
 
 SCREEN 0
 _FONT _LOADFONT("C:\Windows\Fonts\Cour.ttf", 20, "MONOSPACE")  'select monospace font
@@ -834,7 +834,7 @@ NEXT
 
 END 
 
-'''
+```
 >  Simply copy the code page data after the page name into a text file, commas and all, and read the file with [INPUT (file statement)](INPUT (file statement)) #.
 >  [_MAPUNICODE](_MAPUNICODE) can place the Unicode characters TO any [ASCII](ASCII) code space you desire (0 to 255).
 
@@ -842,7 +842,7 @@ END
 Reading code page as program [DATA](DATA): Simply place DATA before each CSV Code Page data line pasted into a program. 
 
 
-'''vb
+```vb
 
 SCREEN 0
 _FONT _LOADFONT("C:\Windows\Fonts\Cour.ttf", 20, "MONOSPACE")  'select monospace font
@@ -870,7 +870,7 @@ DATA 9576,9572,9573,9561,9560,9554,9555,9579,9578,9496,9484,9608,9604,9612,9616,
 DATA 945,223,915,960,931,963,181,964,934,920,937,948,8734,966,949,8745
 DATA 8801,177,8805,8804,8992,8993,247,8776,176,8729,183,8730,8319,178,9632,160 
 
-'''
+```
 >  Simply copy the code page data and paste it into your program then type DATA before each line following the page name.
 >  Uncomment the code page name to use it as a [DATA](DATA) field name followed by a colon to [RESTORE](RESTORE) when necessary. 
 

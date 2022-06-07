@@ -2,7 +2,7 @@
 
 
 
-'''vb
+```vb
 
 DO
   PRINT
@@ -68,7 +68,7 @@ IF _PIXELSIZE = 4 THEN colors = 32
 ScreenMode& = mode&
 END FUNCTION 
 
-'''
+```
 <sub>Code by Ted Weissgerber</sub>
 >  *Note:* Function returns the negative handle value with up to 256 colors or 32 for 32 bit in QB64 [_NEWIMAGE](_NEWIMAGE) screens.
 

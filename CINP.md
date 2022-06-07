@@ -14,7 +14,7 @@ The [_CINP](_CINP) function returns keyboard key press codes from a [$CONSOLE]($
 * [Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions](Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions).
 
 
-'''text
+```text
 
 '                            **Extended Keyboard Press Scancodes**
 '
@@ -32,7 +32,7 @@ The [_CINP](_CINP) function returns keyboard key press codes from a [$CONSOLE]($
 '   29  91  56        57       56  92   93  29       75  80  77       82          83   28 
 '
 
-'''
+```
 
 
 
@@ -40,7 +40,7 @@ The [_CINP](_CINP) function returns keyboard key press codes from a [$CONSOLE]($
 
 *Example 1:* Reading individual key strokes from a console window (Windows).
 
-'''vb
+```vb
 
 $CONSOLE:ONLY
 _DEST _CONSOLE: _SOURCE _CONSOLE
@@ -57,7 +57,7 @@ DO
 LOOP UNTIL c = 1
 END
 
-'''
+```
 
 
 ## See Also

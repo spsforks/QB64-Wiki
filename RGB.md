@@ -26,7 +26,7 @@ The [_RGB](_RGB) function returns the closest palette attribute index (legacy SC
 
 *Example:* Converting the color port RGB intensity palette values 0 to 63 to 32 bit hexadecimal values. 
 
-'''vb
+```vb
 
 SCREEN 12
 DIM hex32$(15)
@@ -40,9 +40,9 @@ FOR attribute = 1 TO 15
   PRINT "COLOR" + STR$(_RGB(red, grn, blu)) + " = " + hex32$(attribute)  'closest attribute
 NEXT 
 
-'''
+```
 
-'''text
+```text
 
 COLOR 1 <nowiki>=</nowiki> &HFF0000A8
 COLOR 2 <nowiki>=</nowiki> &HFF00A800
@@ -60,7 +60,7 @@ COLOR 13 <nowiki>=</nowiki> &HFFFC54FC
 COLOR 14 <nowiki>=</nowiki> &HFFFCFC54
 COLOR 15 <nowiki>=</nowiki> &HFFFCFCFC
 
-'''
+```
 
 > *Note:* This procedure also shows how the returns from [_RGB](_RGB) and [_RGB32](_RGB32) differ in a non-32 bit screen mode.
 

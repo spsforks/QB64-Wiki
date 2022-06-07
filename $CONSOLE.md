@@ -21,7 +21,7 @@ The [$CONSOLE]($CONSOLE) [Metacommand](Metacommand) creates a console window tha
 
 *Example 1:* Hiding and displaying a console window. Use [_DELAY](_DELAY) to place console in front of main program window.
 
-'''vb
+```vb
 
 $CONSOLE
 _DELAY 4
@@ -33,12 +33,12 @@ _CONSOLE ON
 _DEST _CONSOLE
 PRINT "Close this console window or click main window and press a key!" 
 
-'''
+```
 
 
 *Example 2:* How to use a Console window to copy screen output using the *Edit* menu by right clicking the console title bar.
 
-'''vb
+```vb
 
 $CONSOLE
 _DEST _CONSOLE
@@ -57,9 +57,9 @@ PRINT "Max _INTEGER64 value = "; hx$; " with"; LEN(hx$); "digits"
 hx$ = HEX$(-9223372036854775808)
 PRINT "Min _INTEGER64 value = "; hx$; " with"; LEN(hx$); "digits" 
 
-'''
+```
 
-'''text
+```text
 
 Max hex _BYTE = FF with 2 digits = 255
 Max hex INTEGER = FFFF with 4 digits = 65535
@@ -68,18 +68,18 @@ Max hex _INTEGER64 = FFFFFFFFFFFFFFFF with 16 digits =-1
 Max _INTEGER64 value = 7FFFFFFFFFFFFFFF with 16 digits
 Min _INTEGER64 value = 8000000000000000 with 16 digits
 
-'''
+```
 
 >  *Console:* Right click and select *Edit* > *Select All* (mouse highlight after) then hit Enter or select *Edit* > *Copy* to the clipboard.
 
-'''text
+```text
 
 Max hex _BYTE = FF with 2 digits = 255
 Max hex INTEGER = FFFF with 4 digits = 65535
 Max hex LONG = FFFFFFFF with 8 digits = 4294967295
 Max hex _INTEGER64 = FFFFFFFFFFFFFFFF with 16 digits =-1
 
-'''
+```
 
 > *Copied text:* The above text was copied after *Select All* was selected and the smaller area was re-highlighted with the mouse.
 

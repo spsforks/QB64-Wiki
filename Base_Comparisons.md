@@ -4,7 +4,7 @@ __NOEDITSECTION__
 |}
 
 
-'''text
+```text
 
                         **Comparing the Base Numbering Systems**
 
@@ -46,7 +46,7 @@ __NOEDITSECTION__
     See the Decimal to Binary conversion function that uses **[HEX$](HEX$)** on the **[&H](&H)** page,
     but take it for education only. From QBPE 0.5 just use the new **[_BIN$](_BIN$)** function.
 
-'''
+```
 
 
 
@@ -54,7 +54,7 @@ __NOEDITSECTION__
 
 ;Example: Comparing decimal, hexadecimal, octal and binary string values from 0 to 15.
 
-'''vb
+```vb
 
 tabletop$ = " Decimal | Hexadecimal | Octal | Binary "
 tablesep$ = "---------+-------------+-------+--------"
@@ -66,10 +66,10 @@ FOR n% = 0 TO 15
     LOCATE 4 + n%, 10: PRINT USING tableout$; STR$(n%); HEX$(n%); OCT$(n%); _BIN$(n%)
 NEXT n%
 
-'''
+```
 ;Note:Although the decimal numbers 0-15 have a maximum width of 2 digits only, an extra space in the *tableout$* template is needed when using the (fixed width string) slash output format, as [STR$](STR$) values contain a leading sign placeholder space.
 
-'''text
+```text
 
 
           Decimal | Hexadecimal | Octal | Binary
@@ -91,7 +91,7 @@ NEXT n%
             14    |      E      |   16  |  1110
             15    |      F      |   17  |  1111
 
-'''
+```
 
 
 

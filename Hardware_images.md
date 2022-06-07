@@ -11,7 +11,7 @@
 
 >  The first example uses software images while using between 20 - 30% processor power:
 
-'''vb
+```vb
 SCREEN _NEWIMAGE(640, 480, 32)
 
 'create some software screens
@@ -45,12 +45,12 @@ DO
     _LIMIT 30 'we're doing all this at 30 cycles/second
 LOOP
 
-'''
+```
 
 
 >  The second example converts the foreground and background software screens to hardware using 6-7% processor power:
 
-'''vb
+```vb
 SCREEN _NEWIMAGE(640, 480, 32)
 
 'create some software screens
@@ -92,7 +92,7 @@ DO 'main program loop
     _LIMIT 30 'we're doing all this at 30 cycles/second
 LOOP
 
-'''
+```
 
 
 *See also:*

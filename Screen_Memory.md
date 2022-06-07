@@ -14,7 +14,7 @@
 
 *Example 1:* Printing text with blinking colors in [SCREEN](SCREEN) 0 only.
 
-'''vb
+```vb
 
 DIM s AS STRING
 DIM i AS LONG
@@ -31,12 +31,12 @@ NEXT
 DEF SEG 'restore to default segment
 END 
 
-'''
+```
 
 
 *Example 2:* Displaying and coloring the 256 [ASCII](ASCII) characters using [POKE](POKE) in [SCREEN](SCREEN) 0. 
 
-'''vb
+```vb
 
 SCREEN 12 'set full screen in QBasic only for flashing colors
 SCREEN 0
@@ -56,11 +56,11 @@ NEXT
 DEF SEG                                 'reset to default segment
 END 
 
-'''
+```
 <sub>Code by Ted Weissgerber</sub>
 > *Explanation:* To [POKE](POKE) text characters to the screen in SCREEN 0, DEF SEG sets the memory segment to &HB800. Text values are poked at the even segment offsets starting 640 bytes(4 rows * 80 columns wide * 2 bytes) from the upper left corner 0 offset of the screen memory segment. To space the text it skips an even offset by multiplying by 4 instead of 2. The odd offsets can be written to to set the color. Using the same 4 byte offsets, the text and background are colored using values up to 128. Values over 128 cause the text to flash and the background colors 0 to 7 are repeated. The background color is incremented every 16 values.
 
-'''text
+```text
 
                                 **4000 byte Video Memory Segment**
 
@@ -73,7 +73,7 @@ Byte offset:    0, 1               640     642     644     646     648     650  
 
                          Offset% = (160 * (Row% - 1)) + (2 * (Column% - 1))
 
-'''
+```
 
 
 <center>**Graphic Screen Segment &HA000**</center>

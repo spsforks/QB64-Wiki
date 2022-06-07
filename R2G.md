@@ -11,21 +11,21 @@ The [_R2G](_R2G) function converts a **radian** value into a **gradient** value.
 
 *Example:* Coverting Radian into Gradient.
 
-'''vb
+```vb
 
 INPUT "Give me an angle in Radians ", D
 R = _R2G(D)
 PRINT "That angle in Gradient is "; R
 
-'''
+```
 
-'''text
+```text
 
 
 Give me an angle in Radians 0.5
 That angle in Gradient is   31.83099
 
-'''
+```
 
 
 

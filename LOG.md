@@ -18,20 +18,20 @@ The [LOG](LOG) math function returns the natural logarithm of a specified numeri
 
 *Example 1:* [FUNCTION](FUNCTION) to find the base ten logarithm of a numerical value.
 
-'''vb
+```vb
 
  FUNCTION Log10#(value AS DOUBLE) STATIC
    Log10# = LOG(value) / LOG(10.#) 
  END FUNCTION 
 
-'''
+```
 
 > *Explanation:* The natural logarithm of the value is divided by the base 10 logarithm. The LOG of ten is designated as a DOUBLE precision return by using # after the Log10 value. The return tells you the number of times 10 goes into a value.
 
 
 *Example 2:* A binary FUNCTION to convert [INTEGER](INTEGER) values using LOG to find the number of digits the return will be.
 
-'''vb
+```vb
 
 FUNCTION BIN$ (n&)
   IF n& < 0 THEN EXIT FUNCTION            'positive numbers only! negative error!
@@ -42,7 +42,7 @@ FUNCTION BIN$ (n&)
 END FUNCTION
 
 
-'''
+```
 >  *Explanation:* The LOG of a **positive** [INTEGER](INTEGER) value is divided by the LOG of 2 to determine the number of binary digits that will be returned. The FOR loop compares the value with the exponents of two and determines if a bit is ON or OFF as "1" or "0". 
 
 

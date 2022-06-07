@@ -21,7 +21,7 @@ Console Window text can be copied by highlighting the text holding down the left
 
 *Example:* Copying console window text is as simple as a right click on highlighted text areas. Another right click will close console.
 
-'''vb
+```vb
 
 $SCREENHIDE
 $CONSOLE
@@ -30,7 +30,7 @@ _DEST _CONSOLE
 PRINT
 PRINT "Copy this text by highlighting and right clicking!" 
 
-'''
+```
 >  *Note:* You may have to right click the title bar and select *Edit > Select All* to start a copy. Then re-highlight text area desired and right click *Edit > Copy* or press the *Enter* key. Right click in the title bar area only, not in the program window area!
 
 

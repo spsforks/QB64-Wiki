@@ -20,7 +20,7 @@ The [_DEST](_DEST) statement sets the current write image or page. All graphic a
 
 *Example 1:* Placing a center point and a circle using [_CLEARCOLOR](_CLEARCOLOR) to eliminate the background color black.
 
-'''vb
+```vb
 
 SCREEN 13      'program screen can use 256 colors
 a& = _NEWIMAGE(320,200,13)        'create 2 screen page handles a& and b&
@@ -33,12 +33,12 @@ _CLEARCOLOR 0                     'make page b color 0 (black) transparent
 _PUTIMAGE , b&, a&                'put circle on image b to image a& (a PSET dot)
 _PUTIMAGE , a&, 0                 'put what is on image a& to the screen (handle 0) 
 
-'''
+```
 
 
 *Example 2:* Demonstrates how [PRINT](PRINT) text can be stretched using [_PUTIMAGE](_PUTIMAGE) with [_DEST](_DEST) pages.
 
-'''vb
+```vb
 
 DIM a(10) AS LONG
 DIM b AS LONG
@@ -108,7 +108,7 @@ xa = xa + xm
 ya = ya + ym
 RETURN 
 
-'''
+```
 <sub>Adapted from code by CodeViper</sub> 
 
 

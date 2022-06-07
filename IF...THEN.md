@@ -66,18 +66,18 @@ RelationalTable
 
 *Example 1:* In a one line IF statement, only [REM](REM) can be used to comment out the action without an [END IF](END IF) error:
 
-'''vb
+```vb
 
 INPUT "Enter a number over or under 100: ", x
 IF x > 100 THEN PRINT x 
 IF x > 100 THEN REM PRINT x * '
 
-'''
+```
 
 
 *Example 2:* IF statement blocks require that the IF THEN and END IF statements be separate from the code executed.
 
-'''vb
+```vb
 
 INPUT "Enter a number over or under 100: ", x
 IF x > 100 THEN
@@ -86,51 +86,51 @@ IF x > 100 THEN
   PRINT x
 END IF 
 
-'''
+```
 
 
 *Example 3:* True or False evaluation of a numerical value executes only when the value is not 0. **Cannot evaluate [STRING](STRING) values.**
 
-'''vb
+```vb
 
 INPUT "Enter a number or just hit Enter: ", x
 IF x THEN PRINT x 
 
-'''
+```
 > Example will only print if a numerical value is True (positive or negative). (Equivalent to: IF x > 0 OR x < 0 THEN evaluation)
 
 
 *Example 4:* Multiple evaluations using parenthesis to determine the order.
 
-'''vb
+```vb
 
 INPUT "Enter a number over or under 100 or 50: ", value
 IF (value% > 100 AND value% < 200) OR value% = 50 THEN PRINT "OK" 
 
-'''
+```
 
 
 *Example 5:* Using multiple IF options in a one line statement.
 
-'''vb
+```vb
 
 INPUT "Enter a number over or under 200: ", x
 IF x > 200 THEN PRINT "High" ELSEIF}} x < 0 THEN PRINT "Low" ELSE}} PRINT "OK"
 
 
-'''
+```
 
 
 *Example 6:* [STRING](STRING) values can be compared using greater than, less than, not equal to or equal to operators only.
 
-'''vb
+```vb
 
 PRINT "Press a letter key: ";
 Key$ = INPUT$(1)
 PRINT Key$ 
 IF Key$ >= CHR$(65) AND Key$ <= CHR$(90) THEN PRINT "A to Z"
 
-'''
+```
 >  *Explanation:* Long [STRING](STRING) expression values are compared by their cumulative [ASCII](ASCII) code values.
 
 
@@ -138,7 +138,7 @@ IF Key$ >= CHR$(65) AND Key$ <= CHR$(90) THEN PRINT "A to Z"
 * Floating decimal point numerical values may not be compared as exactly the same value. QB64 will compare them the same.
 > *Example:* QBasic would print *unequal* in the IF comparison code below even though it is exactly the same value printed.
 
-'''vb
+```vb
 
 x# = 5 / 10
 y# = 6 / 10
@@ -146,7 +146,7 @@ z# = x# + y#
 PRINT x#, y#, z#
 IF x# + y# = z# THEN PRINT "equal" ELSE PRINT "unequal" 
 
-'''
+```
 >  Note: QB64 will make the calculation correctly and print *equal*. Change older program code that relies on the error accordingly.
 
 

@@ -1,15 +1,15 @@
 :**HTTP/1.1** protocol downloads can be done using a **GET** request using the following format without HTTP:// in the url:
 
-'''text
+```text
 
 CRLF$ = CHR$(13) + CHR$(10)
 Request$ = "GET " + File_Path + " HTTP/1.1" + CRLF$ + "Host:" + Web_Address + CRLF$ + CRLF$
 
-'''
+```
 
 >  Two carriage returns end the request to the [_OPENCLIENT](_OPENCLIENT) URL. The header that is returned from the site also ends with two carriage returns when there are no errors. The header will also include the requested file's byte size after "content-length:" as below:
 
-'''text
+```text
 
 HTTP/1.1 200 OK
 Server: dbws
@@ -23,7 +23,7 @@ etag: 365n
 pragma: public
 cache-control: max-age=0 
 
-'''
+```
 
 >  Each row of text response sent is ended with a carriage return with the end of header having two. After that comes the file data.
 >  It is recommended that data be loaded immediately by using a [GET (TCP/IP statement)](GET (TCP/IP statement)) loop so that connections are not dropped during a [_DELAY](_DELAY).
@@ -31,7 +31,7 @@ cache-control: max-age=0
 
 >  **A "raw" Download function that downloads an image directly off of a web page using the image name on that page.**
 
-'''vb
+```vb
 
 IF Download("www.qb64.net/qb64.png", "qb64logo.png", 10) THEN ' timelimit = 10 seconds
  SCREEN _LOADIMAGE("qb64logo.png",32)
@@ -83,13 +83,13 @@ LOOP UNTIL TIMER > t! + timelimit ' (in seconds)
 CLOSE client
 END FUNCTION 
 
-''' 
+``` 
 <sub>Code by Galleon</sub>
 
 
 >  **Downloading a [BINARY](BINARY) image file from a download link using [GET](GET) which requires the "content-length" in header.**
 
-'''vb
+```vb
 
 DEFINT A-Z
 
@@ -159,14 +159,14 @@ LOOP UNTIL LOF(1) >= FileSize&
 CLOSE #1, #Client&
 PRINT "Done!" 
 
-'''
+```
 <sub>Adapted from code by Jobert14</sub>
 >  **Note:** Some download links require that a **tag** be added after the file name. Remove that tag if it will be used as the file name.
 
 
 >  **Downloading a sequencial text file from a Drop Box download link using HTTP GET and the  [GET (TCP/IP statement)](GET (TCP/IP statement)) statement.**
 
-'''vb
+```vb
 
 CrLf$ = CHR$(13) + CHR$(10) ' carriage return + line feed ASCII characters
 
@@ -216,7 +216,7 @@ ELSE
   PRINT "Failed to create server connection..."
 END IF 
 
-'''
+```
 <sub>Code suggested by Matt Kilgore</sub>
 
 

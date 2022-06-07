@@ -8,7 +8,7 @@ This version of the FILELIST$ string Function can be set up as a separate Window
 
 
 
-'''vb
+```vb
 
 _TITLE "Demo of FILELIST$ Function by Ted Weissgerber 2010"
 dst& = _NEWIMAGE(800, 600, 32) 'for console bitmap
@@ -34,9 +34,9 @@ LOCATE 35, 10: PRINT filename$, LFN$
 SLEEP
 '------------------------------------- END DEMO CODE -------------------------------
 
-'''
+```
 
-'''text
+```text
 
 
 FUNCTION FILELIST$ (Spec$, xpos%, ypos%)
@@ -198,7 +198,7 @@ END IF
 RETURN
 END FUNCTION * *      
 
-'''
+```
 
 <center>**NOTE: Refresh browser if full code is not displayed!**</center>
 

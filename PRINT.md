@@ -48,7 +48,7 @@ The [PRINT](PRINT) statement prints numeric or string expressions to the program
 
 *Example 1:* Using semicolons, comma tabs or concatenation to insert [ASCII](ASCII) characters and numbers in a PRINT:
 
-'''vb
+```vb
 
 PRINT CHR$(34); "Hello world!"; CHR$(34) ' adding quotation marks
 PRINT 123 'demonstrates the positive leading space
@@ -58,9 +58,9 @@ PRINT a$; a ' demonstrates semicolon in statement
 PRINT a$ + STR$(b) ' concatenation of string numerical values only
 ? "Hello city!" ' a ? changes to PRINT after moving cursor from the code line in IDE
 
-'''
+```
 
-'''text
+```text
 
 "Hello world!"
  123
@@ -69,26 +69,26 @@ Hello country! 321
 Hello country!-321
 Hello city!
 
-'''
+```
 
 > First PRINT prints the text between two quotation marks, then it prints the value 123, notice that there are no quotation marks when printing the value, quotation marks mean that it will be treated like a literal string of text. a$ is set to "Hello country" and 'a' is set to the value 321, the dollar sign is used when a variable holds the text string. The contents of a$ is then printed and the "," means that the value of 'a' is printed separated by a tab and ";" means that there is no separation from the other text except for the leading positive value space.
 
 
 *Example 2:* Changing colors in a line of text using semicolons with colon separators between PRINTs on the same code line.
 
-'''vb
+```vb
 
 COLOR 12: PRINT "Start red "; : COLOR 10: PRINT "and end green."
 COLOR 11: PRINT "Start aqua ";
 COLOR 14: PRINT "and end blue."
 
-'''
+```
 
-'''text
+```text
 
 Start red and end green.
 Start aqua and end blue. 
-'''
+```
 
 
 

@@ -22,13 +22,13 @@ The [$ERROR]($ERROR) metacommand triggers a compilation error.
 ## Example(s)
 
 
-'''vb
+```vb
 
 $IF VERSION < 2.1 OR WINDOWS = 0 THEN
     $ERROR Requires Windows QB64 version 2.1 or above
 $END IF
 
-'''
+```
 *Output*: Compilation check failed: REQUIRES WINDOWS QB64 VERSION 2.1 OR ABOVE on line 2 (assuming your version of QB64 doesn't meet those requirements).
 
 

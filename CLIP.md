@@ -18,7 +18,7 @@ The [_CLIP](_CLIP) option is used in a QB64 graphics [PUT (graphics statement)](
 
 *Example:* Placing an image partially or fully offscreen.
 
-'''vb
+```vb
 
 DIM mypic(500)
 SCREEN 13
@@ -43,7 +43,7 @@ IF sel = 4 THEN PUT (-10, 10), mypic(0), _CLIP PSET, 4 ' doesn't draw red pixels
 
 END 
 
-'''
+```
 
 
 ## See Also

@@ -26,32 +26,32 @@ The [STRING$](STRING$) function returns a [STRING](STRING) consisting of a singl
 
 > Printing 40 asterisks across the screen using an ASCII character code instead of [CHR$](CHR$)(42).
 
-'''vb
+```vb
 PRINT STRING$(40, 42)
 
-'''
+```
 
-'''text
+```text
 
 ****************************************
 
-'''
+```
 
 
 
 > Using a [STRING](STRING) to specify the repeated character.
 
-'''vb
+```vb
 text$ = "B" + STRING$(40, "A") + "D"
 PRINT text$
 
-'''
+```
 
-'''text
+```text
 
 BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD
 
-'''
+```
 
 
 

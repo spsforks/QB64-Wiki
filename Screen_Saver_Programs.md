@@ -15,7 +15,7 @@ either move the file or *Install* it as explained below:
 
 *Example:* A screen saver that un-organizes the Desktop.
 
-'''vb
+```vb
 
 S& = _SCREENIMAGE                  'get the image of the desktop
 RANDOMIZE TIMER
@@ -44,7 +44,7 @@ DO: _LIMIT 10
 LOOP UNTIL INKEY$ > "" OR mx <> 0 OR my <> 0  'check for any key press
 SYSTEM * *                     'close screen saver immediately
 
-'''
+```
 <sub>Code by DSMan</sub>
 
 

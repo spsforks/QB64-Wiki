@@ -24,7 +24,7 @@ The [_CLIPBOARDIMAGE](_CLIPBOARDIMAGE) statement copies a valid QB64 image to th
 
 *Example:* Create a sample image and copy it to the clipboard:
 
-'''vb
+```vb
 SCREEN _NEWIMAGE(800, 600, 32)
 
 'Create image in memory:
@@ -51,7 +51,7 @@ _CLIPBOARDIMAGE = canvas&
 
 PRINT "Image copied to clipboard."
 
-'''
+```
 <sub>Code by Fellippe Heitor</sub>
 
 

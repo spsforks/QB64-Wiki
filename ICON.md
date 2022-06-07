@@ -36,7 +36,7 @@ The [_ICON](_ICON) statement uses an image handle from [_LOADIMAGE](_LOADIMAGE) 
 
 *Example 1:* Loading an image to a 32 bit palette in SCREEN 0 (the default screen mode).
 
-'''vb
+```vb
 
 i& =_LOADIMAGE("RDSWU16.BMP", 32) '<<<<<<< use your image file name here
 
@@ -45,13 +45,13 @@ IF i& < -1 THEN
   _FREEIMAGE i& ' release image handle after setting icon
 END IF
 
-'''
+```
 > *Note:* _ICON images can be freed if the [SCREEN](SCREEN) mode stays the same. Freed image handles can on longer be referenced. 
 
 
 *Example 2:* Function that converts an icon into a temporary bitmap for use in QB64. Function returns the available image count.
 
-'''vb
+```vb
 
 SCREEN _NEWIMAGE(640, 480, 256)
 _TITLE "Icon Converter"
@@ -127,7 +127,7 @@ CLOSE rf, wf
 Icon2BMP = count '             return the number of icons available in the icon file
 END FUNCTION 
 
-'''<sub>Code by Ted Weissgerber</sub>
+```<sub>Code by Ted Weissgerber</sub>
 >  *Note:* Once the file has been loaded into memory, the image handle can still be used even after the file has been deleted.
 
 

@@ -17,7 +17,7 @@ The [ERROR](ERROR) statement is used to simulate a program error or to troublesh
 
 *Example:* Creating custom error codes for a program that can be handled by an [ON ERROR](ON ERROR) handling routine.
 
-'''vb
+```vb
 
 ON ERROR GOTO handler
 
@@ -33,7 +33,7 @@ PRINT ERR, _ERRORLINE
 BEEP
 RESUME NEXT 
 
-'''
+```
 >  **Note: Don't use error codes under 97 or over 200 as QB64 may respond to those errors and interrupt the program.**
 
 

@@ -21,7 +21,7 @@ The [MID$](MID$) statement substitutes one or more new characters for existing c
 *Example:* Using [INSTR](INSTR) to locate the string positions and a [MID$ (statement)](MID$ (statement)) statement to change the words.
 
 
-'''vb
+```vb
 
  text$ = "The cats and dogs were playing, even though dogs don't like cats."
  PRINT text$ 
@@ -35,15 +35,15 @@ The [MID$](MID$) statement substitutes one or more new characters for existing c
  LOOP UNTIL position% = 0       ' no other matches found
  PRINT text$ 
 
-'''
+```
 
-'''text
+```text
 
 
 The cats and dogs were playing, even though dogs don't like cats.
 The cats and rats were playing, even though rats don't like cats.
 
-'''
+```
 
 
 

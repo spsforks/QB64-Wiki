@@ -22,7 +22,7 @@ The [ASC](ASC) function returns the [ASCII](ASCII) code number of a certain [STR
 
 
 
-'''text
+```text
 
 '                                **ASCII Keyboard Codes**
 '
@@ -47,14 +47,14 @@ The [ASC](ASC) function returns the [ASCII](ASCII) code number of a certain [STR
 ' **    *Italics* = LCase/NumLock On  ____________  + = 2 Byte: CHR$(0) + CHR$(code)**
 '<sub>NOTE: The above commented table can be copied and pasted directly into the QB64 IDE</sub>
 
-'''
+```
  
 
 
 <center>**[ASCII#Two_Byte_Codes](ASCII#Two_Byte_Codes)**</center>
 
 
-'''text
+```text
 
                     **Two Byte Characters        Key                 CHR$(0) + "?" **
 
@@ -95,7 +95,7 @@ The [ASC](ASC) function returns the [ASCII](ASCII) code number of a certain [STR
                     CHR$(0) + CHR$(139)        [Alt] + [F11]        "ï"
                     CHR$(0) + CHR$(140)        [Alt] + [F12]        "î"
 
-'''
+```
 
 > In **QB64**, [CVI](CVI) can be used to get the [_KEYDOWN](_KEYDOWN) 2-byte code value. Example: IF _KEYDOWN([CVI](CVI)([CHR$](CHR$)(0) + "P")) THEN
 
@@ -104,24 +104,24 @@ The [ASC](ASC) function returns the [ASCII](ASCII) code number of a certain [STR
 
 *Example 1:* How ASC can be used to find any ASCII code in a string of characters using QB64.
 
-'''vb
+```vb
 
  PRINT ASC("A")
  PRINT ASC("Be a rockstar")
  PRINT ASC("QB64 is not only COMPATIBLE, it can find any part of the string!", 18) 
 
-'''
+```
 
 *Returns:*
 
-'''text
+```text
 
 
  65
  66
  67
 
-'''
+```
 
 
 *Explanation:* The ASCII code for "A" is 65 and the ASCII code for "B" is 66, ASCII code for "C" is 67 and the "C" is at position 18 in the string.
@@ -132,7 +132,7 @@ The [ASC](ASC) function returns the [ASCII](ASCII) code number of a certain [STR
 *Example 2:* Reading the ASCII and two byte code combinations with ASC in **QB64**.
 
 
-'''vb
+```vb
 
 Q$ = CHR$(34) ' quote character
 COLOR 10: LOCATE 5, 22: PRINT "Press some keys or combinations!"
@@ -150,14 +150,14 @@ DO
 LOOP UNTIL code% = 27 * '
 
 
-'''
+```
 <sub>Code by Ted Weissgerber</sub>
 *Explanation:* The keypress read loop checks that ASC will not read an empty string. That would create a program error. [SLEEP](SLEEP) reduces CPU memory usage between keypresses. Normal byte codes returned are indicated by the IF statement when ASC returns a value. Otherwise the routine will return the two byte ASCII code. The extended keyboard keys(Home pad, Arrow pad and Number pad), Function keys or Ctrl, Alt or Shift key combinations will return two byte codes. Ctrl + letter combinations will return control character codes 1 to 26.
 
 
 *Example 3:* Reading only numerical values input by a program user.
 
-'''vb
+```vb
 
  DO: SLEEP ' requires a keypress to run loop once
    K$ = INKEY$}}
@@ -176,7 +176,7 @@ LOOP UNTIL code% = 27 * '
    ' display present entry to user(semicolon required for correct POS return)
  LOOP UNTIL code = 13 AND L 
 
-'''
+```
 
 *Explanation:* [SLEEP](SLEEP) waits for a keypress allowing background programs to use the processor time. It also keeps the press in the keyboard buffer for [INKEY$](INKEY$) to read and guarantees that ASC will not read an empty string value to create an error. Filtered codes 48 to 57 are only number characters. One decimal point is allowed by using the flag. Code 8 is a backspace request which is ignored if the entry has no characters. If it is allowed it removes the last character from the entry and the screen. The loop exits when the user presses the [Enter] key and the entry has a length.
 

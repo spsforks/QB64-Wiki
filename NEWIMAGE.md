@@ -33,36 +33,36 @@ The [_NEWIMAGE](_NEWIMAGE) function prepares a window image surface and returns 
 
 *Example 1:* Shrinking a SCREEN 0 text window's size:
 
-'''vb
+```vb
 
 SCREEN _NEWIMAGE(28, 25, 0) 
 
-'''
+```
 
 
 *Example 2:* Creating an 800 by 600 window version of SCREEN 12 with 256 colors (text 37 X 100):
 
-'''vb
+```vb
 
 handle& = _NEWIMAGE(800, 600, 256) 
 SCREEN handle& 
 
-'''
+```
 
 
 *Example 3:* Setting up a 32 bit SCREEN with _NEWIMAGE for page flipping in QB64.
 
-'''vb
+```vb
 
 SCREEN _NEWIMAGE(640, 480, 32), , 1, 0 
 
-'''
+```
 >  *Note:* [_DISPLAY](_DISPLAY) may be used as a substitute for page flipping or [PCOPY](PCOPY).
 
 
 *Example 4:* Switching between two different SCREEN modes
 
-'''vb
+```vb
 
 _TITLE "Switching SCREEN modes"
 SCREEN _NEWIMAGE (800, 600, 256)
@@ -92,7 +92,7 @@ DO: SLEEP: LOOP UNTIL INKEY$ <> ""
 SCREEN mode2&  'back to small window
 COLOR 14: LOCATE 16, 16: PRINT "LAST " 
 
-'''
+```
 > *Explanation:* The [_DEST (function)](_DEST (function)) function can determine the present screen mode destination handle. The second _NEWIMAGE  handle is created using a SCREEN 13 palette(256 colors also). Each SCREEN is worked on after changing the destination with [_DEST](_DEST) *handle&* statement. Images can be created before viewing them. When a key is pressed the second SCREEN created is displayed and so on. 
 
 > **Legacy SCREEN modes can also return a _DEST value, but the value will create a handle error.** To restore legacy screens get the[_COPYIMAGE](_COPYIMAGE) function value before changing screens. Then restore it using SCREEN oldmode&.

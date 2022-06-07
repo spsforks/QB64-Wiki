@@ -23,7 +23,7 @@ The [STATIC](STATIC) keyword is used in declaration statements to control where 
 
 *Example 1: Finding the binary bit settings from a 32 bit [LONG](LONG) register return using recursion.
 
-'''vb
+```vb
 
 INPUT "Enter a numerical value to see binary value: ", num&
 PRINT Bin$(num&)
@@ -45,13 +45,13 @@ END IF
 IF s$ = "" THEN Bin$ = "0" ELSE Bin$ = s$
 END FUNCTION 
 
-'''
+```
 >  *Explanation:* The [FUNCTION](FUNCTION) above returns a [STRING](STRING) value representing the bits ON in an [INTEGER](INTEGER) value. The string can be printed to the screen to see what is happening in a port register. **STATIC** keeps the function from overloading the memory "Stack" and is normally REQUIRED when recursive calls are used in QBasic! **QB64 procedures will close without warning or error!**
 
 
 *Example 2:* Using a static array to cache factorials, speeding up repeated calculations:
 
-'''vb
+```vb
 
 
 PRINT Factorial(0)
@@ -88,16 +88,16 @@ FUNCTION Factorial# ( n AS DOUBLE )
 END FUNCTION
 
 
-'''
+```
 
-'''text
+```text
 
  
  1
  120
  3.041409320171338D+64
 
-'''
+```
 
 
 

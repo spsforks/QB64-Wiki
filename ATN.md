@@ -23,31 +23,31 @@ The [ATN](ATN) or arctangent function returns the angle in radians of a numerica
 
 *Example 1:* When the [TAN](TAN)gent value equals 1, the line is drawn at a 45 degree angle (.7853982 radians) where [SIN](SIN) / [COS](COS) = 1.
 
-'''vb
+```vb
 
 SCREEN 12
 x = 100 * COS(ATN(1))
 y = 100 * SIN(ATN(1))
 LINE (200, 200)-(200 + x, 200 + y) 
 
-'''
+```
 
 
 *Example 2:* [ATN](ATN) can be used to define � in [SINGLE](SINGLE) or [DOUBLE](DOUBLE) precision. The calculation cannot be used as a [CONST](CONST)ant.
 
-'''vb
+```vb
 
 Pi = 4 * ATN(1)   'SINGLE precision
 Pi# = 4 * ATN(1#) 'DOUBLE precision
 PRINT Pi, Pi# 
 
-'''
+```
 > *Note:* You can use QB64's native [_PI](_PI) function.
 
 
 *Example 3:* Finds the angle from the center point to the mouse pointer. 
 
-'''vb
+```vb
 
 SCREEN _NEWIMAGE(640, 480, 32)
 x1! = 320
@@ -87,7 +87,7 @@ ELSE
 END IF
 END FUNCTION 
 
-'''<sub>Function by Galleon</sub>
+```<sub>Function by Galleon</sub>
 
 
 ## See Also

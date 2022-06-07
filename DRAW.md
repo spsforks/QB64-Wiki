@@ -46,7 +46,7 @@ The [DRAW](DRAW) statement uses a [STRING](STRING) expression to draw lines on t
 *Example 1:* Placing an octagon shape DRAW across the the screen using PSET.
 
 
-'''vb
+```vb
 
  SCREEN 12
  octagon$ = "C12 R10 F10 D10 G10 L10 H10 U10 E10"  'create a DRAW string value
@@ -58,13 +58,13 @@ The [DRAW](DRAW) statement uses a [STRING](STRING) expression to draw lines on t
    _DELAY .5         ' delay for demo 
  NEXT i% 
 
-'''
+```
 *Explanation:* Once a DRAW string variable is created, it can be used to draw a shape throughout the program at any time. 
 
 
 *Example 2:* Creating an analog clock's hour markers using "TA=" + [VARPTR$](VARPTR$)(angle).
 
-'''vb
+```vb
 
  SCREEN 12
  FOR angle = 0 TO 360 STEP 30             ' 360/12 hour circles = 30 degrees apart  
@@ -75,7 +75,7 @@ The [DRAW](DRAW) statement uses a [STRING](STRING) expression to draw lines on t
    SLEEP 1     ' slowed for demo only
  NEXT 
 
-'''
+```
 
 *Explanation:* To place 12 circles in a circle each move is 30 degrees. PSET sets the center of the circular path every loop. TA moves counter-clockwise with positive degree angles. Once TA sets the angle a blind Up move is at that angle. The hour circles use the end point of the blind line as centers using the STEP relative coordinates of 0. After the circles are drawn, a draw "P" string paints the circle centers. DRAW paint strings use the last coordinate position also.
 
@@ -83,7 +83,7 @@ The [DRAW](DRAW) statement uses a [STRING](STRING) expression to draw lines on t
 *Example 3:* Creating a moving second hand for the clock above (SCREEN 12). (See [TIME$](TIME$) example 1)
 
 
-'''vb
+```vb
 
  DO: sec$ = RIGHT$(TIME$, 2) ' get actual seconds from TIME$ function
    degree$ = STR$(VAL(sec$) * -6) ' 60 second moves. TA uses negative angles for clockwise moves
@@ -95,14 +95,14 @@ The [DRAW](DRAW) statement uses a [STRING](STRING) expression to draw lines on t
    DRAW "TA" + degree$ + "U90" ' erases old second hand line using color 0 from PSET
  LOOP
 
-'''
+```
 
 *Explanation:* The degrees to move from the original UP line move is calculated by dividing 360/60 seconds in a full rotation. That value of 6 is made negative to use TA correctly and multiplied by the [VAL](VAL)ue of seconds from the TIME$ function. The degree angle is converted by [STR$](STR$) to a string and added to the DRAW string using the [STRING](STRING) **concatenation +** operator. Do not use semicolons to create DRAW strings. Once the second hand is placed on the screen, a loop waits for the second value to change. It then erases the hand and it repeats the process again.
 
 
 *Example 4:* Creating digital displays using DRAW format strings to create the LED segments. (See [SELECT CASE](SELECT CASE) example 5)
 
-'''vb
+```vb
 
 SCREEN 12
 DO
@@ -144,14 +144,14 @@ DO
   END SELECT
 LOOP UNTIL num > 9 
 
-'''
+```
 <sub>Code by Ted Weissgerber</sub>
 > *Explanation:* The DRAW strings can be used more than once with different [PSET](PSET) positions to create more digits.
 
 
 *Example 5:* Using 32 bit or [_RGB](_RGB) color [STR$](STR$) values when using the DRAW C text statement
 
-'''vb
+```vb
 
 SCREEN _NEWIMAGE(800, 800, 12)
 PRINT _ALPHA(10), _RED(10), _GREEN(10), _BLUE(10)
@@ -172,7 +172,7 @@ FOR repeat = 1 TO 16
   NEXT p
 NEXT repeat
 
-'''
+```
 >  *Explanation:* DRAW strings will ignore spaces between letters and numbers so string trimming is not necessary.
 
 

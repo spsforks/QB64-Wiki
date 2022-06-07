@@ -29,7 +29,7 @@ The [_SNDRAW](_SNDRAW) statement plays sound wave sample frequencies created by 
 
 *Example 1:* Sound using a sine wave with _SNDRAW Amplitude * SIN(8 * ATN(1) * Duration * (Frequency / _SNDRATE))
 
-'''vb
+```vb
 
 FREQ = 400                             'any frequency desired from 36 to 10,000
 Pi2 = 8 * ATN(1)                       '2 * pi 
@@ -43,14 +43,14 @@ NEXT
 DO: LOOP WHILE _SNDRAWLEN
 END 
 
-'''
+```
 <sub>Code by DarthWho</sub>
 > *Explanation:* The loop Duration is determined by the number of seconds times the [_SNDRATE](_SNDRATE) number of samples per second. Square waves can use the same formula with Amplitude * [SGN](SGN)(SIN(8 * ATN(1) * Duration * (Frequency/_SNDRATE))).
 
 
 *Example 2:* A simple ringing bell tone that tapers off.
 
-'''vb
+```vb
 t = 0
 tmp$ = "Sample = ##.#####   Time = ##.#####"
 LOCATE 1, 60: PRINT "Rate:"; _SNDRATE
@@ -71,13 +71,13 @@ DO WHILE _SNDRAWLEN > 0                 'Finish any left over queued sound!
 LOOP
 END 
 
-'''
+```
 <sub>Code by Artelius (responsible for the implementation of _SNDRAW)</sub>
 
 
 *Example 3:* Routine uses _SNDRAW to display and play 12 notes from octaves 1 through 9.
 
-'''vb
+```vb
 
 DIM SHARED rate&
 rate& = _SNDRATE
@@ -111,7 +111,7 @@ LOOP
 DO: LOOP WHILE _SNDRAWLEN   'flush the sound playing buffer
 END SUB 
 
-'''
+```
 <sub>Code by CodeGuy</sub>
 
 

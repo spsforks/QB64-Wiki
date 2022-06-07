@@ -31,16 +31,16 @@ The **RND** function returns a random number with a value between 0 (inclusive) 
 
 *Example 1:* Generating a random integer value between 1 and 6 (inclusive) using INT.
 
-'''vb
+```vb
 
 dice% = INT(RND * 6) + 1 'add one as INT value never reaches 6 
 
-'''
+```
 
 
 *Example 2:* Using uniform random numbers to create random numbers with a gaussian distribution ([http://en.wikipedia.org/wiki/Marsaglia_polar_method| Marsaglia's polar method]).
 
-'''vb
+```vb
 
 DO
   u! = RND * 2 - 1
@@ -51,13 +51,13 @@ s! = SQR(-2 * LOG(s!) / s!) * 0.5
 u! = u! * s!
 v! = v! * s! 
 
-'''
+```
 > *Explanation:* Values *u!* and *v!* are now two independent random numbers with gaussian distribution, centered at 0.
 
 
 *Example 3:* Random flashes from an explosion
 
-'''vb
+```vb
 
 SCREEN _NEWIMAGE(640, 480, 32)
 RANDOMIZE TIMER
@@ -109,7 +109,7 @@ DO
 
 LOOP UNTIL INKEY$ <> "" 
 
-''' <sub>Code by Falcon</sub>
+``` <sub>Code by Falcon</sub>
 
 
 ## See Also

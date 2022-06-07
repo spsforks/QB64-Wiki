@@ -8,7 +8,7 @@
 * Key presses are read consecutively from the keyboard buffer which will retain a [SLEEP](SLEEP) key press.
 
 
-'''text
+```text
 
 '                                **ASCII Keyboard Codes**
 '
@@ -33,7 +33,7 @@
 ' **    *Italics* = LCase/NumLock On  [INKEY$#Two_Byte_Combinations](INKEY$#Two_Byte_Combinations),  + = 2 Byte: CHR$(0) + CHR$(code)**
 '
 
-'''
+```
 
 
 <center>GO TO: [Keyboard_scancodes#INP_Scan_Codes](Keyboard_scancodes#INP_Scan_Codes), 
@@ -47,7 +47,7 @@
 * Keys are assigned only one code irregardless of case or Lock mode with release codes being the press  code + 128.
 
 
-'''text
+```text
 
 '                            **Extended Keyboard Press Scancodes**
 '
@@ -67,7 +67,7 @@
 '   QB64 codes only! **Release codes = Press code + 128. Pause/Break may lock code returns.**
 '
 
-'''
+```
 
 
 <center>[http://www.quadibloc.com/comp/scan.htm Keyboard Scan Codes]........... [http://www.win.tue.nl/~aeb/linux/kbd/scancodes.html Other Keyboards]</center>
@@ -83,7 +83,7 @@
 * Red KEY numbers 1 to 14, 30 or 31 assign predefined one key events using: **[ON KEY(n)](ON KEY(n))(number) [GOSUB](GOSUB) subname**
 
 
-'''text
+```text
 
 '                           **Soft Key Scan Code Values**
 '
@@ -106,7 +106,7 @@
 '        Reserved and function key combinations can be made using the scan code instead.
 '             Add function and/or extended flag values for more key combinations.
 
-'''
+```
 
 
 <center>GO TO:[Keyboard_scancodes#INKEY.24_Codes](Keyboard_scancodes#INKEY.24_Codes), [Keyboard_scancodes#INP_Scan_Codes](Keyboard_scancodes#INP_Scan_Codes), [Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes](Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes), [Keyboard_scancodes#DEVICES_Button](Keyboard_scancodes#DEVICES_Button), [Keyboard_scancodes#Windows_Virtual_Codes](Keyboard_scancodes#Windows_Virtual_Codes)</center>
@@ -118,7 +118,7 @@
 * [_KEYCLEAR](_KEYCLEAR) clears the keyboard buffer memory instantly without a [LOOP](LOOP).
 
 
-'''text
+```text
 
 '                            **QB64 _KEYHIT and _KEYDOWN Values**
 '
@@ -141,7 +141,7 @@
 '                                                                     *     48          46*
 '     **    Lower value = LCase/NumLock On __________________ + = add 100000 **
 
-'''
+```
 
 
 <center>GO TO: [Keyboard_scancodes#INKEY.24_Codes](Keyboard_scancodes#INKEY.24_Codes), [Keyboard_scancodes#INP_Scan_Codes](Keyboard_scancodes#INP_Scan_Codes), [Keyboard_scancodes#ON_KEY_Events](Keyboard_scancodes#ON_KEY_Events), [Keyboard_scancodes#DEVICES_Button](Keyboard_scancodes#DEVICES_Button), [Keyboard_scancodes#Windows_Virtual_Codes](Keyboard_scancodes#Windows_Virtual_Codes)</center>
@@ -160,7 +160,7 @@
 
 
 
-'''text
+```text
 
 '                              **Keyboard Device 1 Button Numbers**
 '
@@ -179,7 +179,7 @@
 '
 '                        **Mouse Device 2 buttons: Left = 1, Middle = 2, Right = 3**
 
-'''
+```
 
 
 
@@ -194,7 +194,7 @@
 
 
 
-'''text
+```text
 
 '                                  **Virtual KeyState Codes**
 '
@@ -215,7 +215,7 @@
 '
 '  **Mouse click returns: LB = 1, RB = 2, MB = 4, etc. [http://msdn.microsoft.com/en-us/library/windows/desktop/dd375731(v=vs.85).aspx Special keys] may also work.**
 
-'''
+```
 
 
 
@@ -226,7 +226,7 @@
 *Example 1:* An [INP](INP) Function that retrieves multiple scancodes (allows 2 players and diagonal moves). Function includes it's own array.
 
 
-'''vb
+```vb
 
 CLS
 x = 40: px = x
@@ -305,9 +305,9 @@ DO WHILE start! + dlay! >= TIMER
 LOOP
 END SUB 
 
-'''
+```
 
-'''text
+```text
 
      
                 UP                                      UP
@@ -325,7 +325,7 @@ END SUB
                                       ☺
                                        ☻ 
 
-'''
+```
 
 <sub>Adapted from Code by Cyperium.</sub>
 > *Explanation:* Displays multiple arrow key presses to move a game character diagonally or allows 2 players to press keys at once. Each keypress is placed into a [STATIC](STATIC) array inside of the ScanKey function. When a key is pressed, the corresponding code index in the array is changed to -1 or True. When a key is released, the scancode returned is over 128 so AND 128 becomes True and the XOR 128 index value is changed to 0. XOR causes 128 to be subtracted from the release code index value which is then changed to 0 (False) from -1. As the main program loop reads the array each of the IF statements look to see if that code is -1. When a statement is True, it prints the appropriate key(s). The example moves two [ASCII](ASCII) sprites. **Note:** [INKEY$](INKEY$) can be removed from the function if it is used elsewhere to help clear the key buffer. 
@@ -335,7 +335,7 @@ END SUB
 
 *Example 2:* How to get Control, Alt and shift key entries from a user using [PEEK](PEEK) in QB64 or QBasic:
 
-'''vb
+```vb
 
 DO
     _LIMIT 50
@@ -353,7 +353,7 @@ DO
     IF x$ <> "" THEN PRINT ASC(x$)  'read other keypress ASCII codes
 LOOP UNTIL x$ = CHR$(27) 'Escape key exit
 
-''' <sub>Derived from code by eoredson</sub>
+``` <sub>Derived from code by eoredson</sub>
 >  Note: Each key must be read individually or sequentially. For combinations use the QB64 [_KEYDOWN](_KEYDOWN) function.
 
 

@@ -11,21 +11,21 @@ The [_D2G](_D2G) function converts a **degree** value into a **gradient** value.
 
 *Example:* Coverting Degrees into Gradient.
 
-'''vb
+```vb
 
 INPUT "Give me an angle in Degrees ", D
 R = _D2G(D)
 PRINT "That angle in Gradient is "; R
 
-'''
+```
 
-'''text
+```text
 
 
 Give me an angle in Degrees 60
 That angle in Gradient is  66.66666
 
-'''
+```
 
 
 

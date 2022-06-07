@@ -29,7 +29,7 @@ PageLegacySupport
 ## Example(s)
 
 
-'''vb
+```vb
 
 DEFINT A, F-H, M
 
@@ -37,7 +37,7 @@ DEFINT A, F-H, M
 'will be of type INTEGER, unless they have a type suffix
 'indicating another type or they are dimensioned differently
 
-'''
+```
 
 
 ## See Also

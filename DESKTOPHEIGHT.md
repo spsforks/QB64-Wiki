@@ -16,7 +16,7 @@ The [_DESKTOPHEIGHT](_DESKTOPHEIGHT) function returns the height of the users cu
 ## Example(s)
 
 
-'''vb
+```vb
 
 
  s& = _NEWIMAGE(800, 600, 256)
@@ -25,7 +25,7 @@ The [_DESKTOPHEIGHT](_DESKTOPHEIGHT) function returns the height of the users cu
  PRINT _WIDTH, _HEIGHT
 
 
-'''
+```
 
 >  *Explanation:* This will print the size of the user desktop (for example *1920, 1080* for a standard hdmi monitor), and then the size of the current [SCREEN](SCREEN) (800, 600).
 

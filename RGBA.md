@@ -25,7 +25,7 @@ The [_RGBA](_RGBA) function returns the closest palette index (legacy SCREEN mod
 
 *Example:* Setting a font's background color alpha to clear to overlay a second text color.
 
-'''vb
+```vb
 
 scrn& = _NEWIMAGE(400, 400, 32)
 SCREEN scrn&
@@ -39,7 +39,7 @@ COLOR _RGB(255, 0, 0), _RGBA(0, 0, 0, 0) 'Foreground set to RED background to TR
 _PRINTSTRING (X% + 2, Y% + 2), "Hello World"
 END 
 
-'''
+```
 <sub>Code by Unseen Machine</sub>
 *Explanation:* [_PRINTSTRING](_PRINTSTRING) allows text or font colors to be alpha blended in 32 bit screens.
 

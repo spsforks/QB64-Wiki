@@ -29,7 +29,7 @@ The [_FULLSCREEN](_FULLSCREEN) statement attempts to make the program window ful
 
 *Example 1:* Setting the screen mode first prevents enlargement of the desktop before the program window is set: 
 
-'''vb
+```vb
 
 SCREEN 12
 _FULLSCREEN
@@ -37,12 +37,12 @@ IF _FULLSCREEN = 0 THEN _FULLSCREEN _OFF 'check that a full screen mode initiali
 
 LINE (100, 100)-(500, 400), 13, BF
 
-'''
+```
 
 
 *Example 2:* How fonts and _FULLSCREEN affect the program's window size.
 
-'''vb
+```vb
 
 SCREEN 0
 DO
@@ -104,12 +104,12 @@ END IF
 RETURN    
  
 
-'''
+```
 
 
 *Example 3:* Testing all fullscreen methods.
 
-'''vb
+```vb
 
 PRINT "Hello, world!"
 PRINT "Hit 1 for windowed mode;
@@ -134,7 +134,7 @@ DO
     _LIMIT 30
 LOOP UNTIL _EXIT
 SYSTEM
-'''
+```
 
 
 ## See Also

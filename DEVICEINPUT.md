@@ -29,7 +29,7 @@ The **_DEVICEINPUT** function returns the device number when a controller device
 
 *Example 1:* Checking device controller interfaces and finding out what devices are being used.
 
-'''vb
+```vb
 
 FOR i = 1 TO _DEVICES
   PRINT STR$(i) + ") " + _DEVICE$(i)
@@ -44,9 +44,9 @@ LOOP UNTIL INKEY$ = CHR$(27) 'escape key exit
 
 END 
 
-'''
+```
 
-'''text
+```text
 
 [KEYBOARD][BUTTON]
 Buttons: 512 Axis: 0 Wheels: 0
@@ -57,14 +57,14 @@ Buttons: 9 Axis: 6 Wheels: 0
 
 Device = 2 Device = 2
 
-'''
+```
 
 >  *Note:* Mouse events must be within the program screen area. Keyboard presses are registered only when program is in focus.
 
 
 *Example 2:* Why does a mouse have 3 wheels? Relative x and y movements can be read using the first 2 [_WHEEL](_WHEEL) reads.
 
-'''vb
+```vb
 
 ignore = _MOUSEMOVEMENTX 'dummy call to put mouse into relative movement mode
 
@@ -77,13 +77,13 @@ DO: _LIMIT 30  'main loop
   LOOP 
 LOOP UNTIL INKEY$ = CHR$(27) 
 
-'''
+```
 >  *Explanation:* Referencing the [_MOUSEMOVEMENTX](_MOUSEMOVEMENTX) function hides the mouse and sets the mouse to a relative movement mode which can be read by [_WHEEL](_WHEEL). [_DEVICEINPUT](_DEVICEINPUT)(2) returns -1 (true) only when the mouse is moved, scrolled or clicked.
 
 
 *Example 3:* Using [ON...GOSUB](ON...GOSUB) with the [_DEVICEINPUT](_DEVICEINPUT) number to add keyboard, mouse and game controller event procedures.
 
-'''vb
+```vb
 
 n = _DEVICES 'required when reading devices
 PRINT "Number of devices found ="; n
@@ -109,7 +109,7 @@ controller:
 PRINT device; "Game control ";
 RETURN 
 
-'''
+```
 <sub>Code by Ted Weissgerber</sub>
 >  *Note:* [ON...GOSUB](ON...GOSUB) and [ON...GOTO](ON...GOTO) events require numerical values to match the order of line labels listed in the event used inside loops.
 

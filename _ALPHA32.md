@@ -25,7 +25,7 @@ The [_ALPHA32](_ALPHA32) function returns the alpha transparency level of a 32 b
 
 *Example:* Finding the alpha transparency level in a 32 bit screen using an [_RGBA](_RGBA)  [_UNSIGNED](_UNSIGNED) [LONG](LONG) color value.
 
-'''vb
+```vb
 
 SCREEN _NEWIMAGE(640, 480, 32)
 
@@ -37,14 +37,14 @@ PRINT "Alpha32:"; _ALPHA32(clr~&)
 
 END 
 
-'''
+```
 
-'''text
+```text
 
 Color: 3237937407
 Alpha32: 192
 
-'''
+```
 
 >  *Notes:* The color value is equivalent to [&H](&H) &HC0FF00FF where &HC0 equals 192. [_RGB](_RGB) alphas are always &HFF(255).
 

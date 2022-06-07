@@ -14,16 +14,16 @@
 
 >  Module Demo Code: Change the _LOADIMAGE filename to an image file you can access.
 
-'''vb
+```vb
 
 i& = _LOADIMAGE("nice.jpg",32) ' loads a 32 bit .JPG file image
 SaveImage i&, "nice"      'saves it as .BMP file "nice.bmp"
 'SaveImage 0, "screenshot" 'saves entire program screen as "screenshot.bmp"
 END
 
-'''
+```
 
-'''vb
+```vb
 
 SUB SaveImage (image AS LONG, filename AS STRING)
 bytesperpixel& = _PIXELSIZE(image&)
@@ -62,7 +62,7 @@ PUT #f&,,b$
 CLOSE #f&
 END SUB * *     
 
-'''
+```
 <sub>Code by Galleon</sub>
 <center>**This SUB program can also be [$INCLUDE]($INCLUDE) with any program!**</center>
 

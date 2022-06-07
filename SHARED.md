@@ -16,17 +16,17 @@ The **SHARED** statement allows variables to be passed automatically to any [SUB
 
 *Example 1:* Defining variable types with [AS](AS) or type suffixes.
 
-'''vb
+```vb
 
 DIM SHARED Qt AS STRING * 1, price AS DOUBLE, ID AS INTEGER
 DIM SHARED Q$, prices#, IDs%
 
-'''
+```
 
 
 *Example 2:* The DIR$ function returns a filename or a list when more than one exist. The file spec can use a path and/or wildcards.
 
-'''vb
+```vb
 
 FOR i = 1 TO 2
   LINE INPUT "Enter a file spec: ", spec$
@@ -65,7 +65,7 @@ END IF
 DIR$ = DirList$(Index%)
 END FUNCTION 
 
-'''<sub>Code by Ted Weissgerber</sub>
+```<sub>Code by Ted Weissgerber</sub>
 >  *Explanation:* The SHARED variable value *DIRcount%* can tell the main program how many files were found using a wildcard spec.
 
 

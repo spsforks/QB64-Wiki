@@ -34,7 +34,7 @@ QB64 ## Syntax
 
 *Example:* How to update the time while [PRINT](PRINT) at the same time in a program.
 
-'''vb
+```vb
 
   TIMER ON ' enable timer event trapping
   LOCATE 4, 2 ' set the starting PRINT position
@@ -50,7 +50,7 @@ QB64 ## Syntax
   LOCATE row, col ' return to last print cursor position 
  RETURN 
 
-'''
+```
 >  NOTE: SLEEP will be interrupted in QBasic.
 
 

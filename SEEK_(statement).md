@@ -19,11 +19,11 @@ The **SEEK** statement sets the next byte or record position of a file for a rea
 *Example:* A SEEK statement using the [SEEK](SEEK) function to move to the next random record in a file.
 
 
-'''vb
+```vb
 
  SEEK 1, SEEK(1) + 1
 
-'''
+```
 
 
 

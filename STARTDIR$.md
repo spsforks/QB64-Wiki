@@ -15,7 +15,7 @@ The [_STARTDIR$](_STARTDIR$) function returns the path a user called a QB64 prog
 
 *Example:* Showcasing QB64 path functions:
 
-'''vb
+```vb
 
 $CONSOLE:ONLY
 _DEST _CONSOLE
@@ -24,7 +24,7 @@ PRINT _CWD$
 PRINT _STARTDIR$
 SYSTEM 
 
-'''<sub>Code by Galleon</sub>
+```<sub>Code by Galleon</sub>
 
 
 ## See Also

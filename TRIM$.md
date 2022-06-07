@@ -19,7 +19,7 @@ The [_TRIM$](_TRIM$) function removes both leading and trailing space characters
 
 *Example: Demonstrating how _TRIM$(text$) can replace LTRIM$(RTRIM$(text$)):
 
-'''vb
+```vb
 
 text$ = SPACE$(10) + "some text" + SPACE$(10)
 PRINT "[" + text$ + "]" 
@@ -28,9 +28,9 @@ PRINT "[" + LTRIM$(text$) + "]"
 PRINT "[" + LTRIM$(RTRIM$(text$)) + "]" 
 PRINT "[" + _TRIM$(text$) + "]" 
 
-'''
+```
 
-'''text
+```text
 
 [          some text          ]
 [          some text]
@@ -38,7 +38,7 @@ PRINT "[" + _TRIM$(text$) + "]"
 [some text]
 [some text]
 
-'''
+```
 
 
 

@@ -26,10 +26,10 @@ The [FILES](FILES) statement is used to print a list of files in the current dir
 
 *Example 1:* Finding a list of all BAS files in the current folder. 
 
-'''vb
+```vb
 FILES "*.BAS"
 
-'''
+```
 <!-- broken link: <center>**[http://i301.photobucket.com/albums/nn53/burger2227/FILESss.jpg Screenshot shows only the end of a long list of files]**</center> -->
 
 
@@ -37,7 +37,7 @@ FILES "*.BAS"
 
 Example 2:* A function that verifies that a file exists if it is not empty. Note: This function will delete empty files.
 
-'''vb
+```vb
 
 Cl "Enter a file name: ", file$
 THEN OPEN file$ FOR INPUT AS #1: found% = -1   'function call demo
@@ -52,14 +52,14 @@ IF LOF(f%) THEN Exist% = -1 ELSE Exist% = 0: CLOSE #f%: KILL filename$ 'delete e
 CLOSE #f% 
 END FUNCTION 
 
-'''<sub>Code by Ted Weissgerber</sub>}}
+```<sub>Code by Ted Weissgerber</sub>}}
 -->
 
 ## Alternative file list solutions
 
 *Alternative 1:* The DIR$ function adapted from PDS (7.1) returns a filename or a list when more than one exist. The file spec can use a path and/or wildcards.
 
-'''vb
+```vb
 
 FOR i = 1 TO 2
   PRINT
@@ -102,7 +102,7 @@ END IF
 DIR$ = DirList$(Index%)
 END FUNCTION 
 
-'''
+```
 <sub>Code by Ted Weissgerber</sub>
 > *Explanation:* The function will verify that a file exists (even if it is empty) by returning its name, or it returns an empty string if no file exists. It can return a list of file names by using an empty string parameter("") after sending a wildcard spec to get the first file name. The number of file names found is returned by using the SHARED variable, **DIRCount%**. Unlike the PDS DIR$ function, **it must use an empty string parameter as QB64 doesn't support optional parameters.** The function does not delete empty files.
 

@@ -19,7 +19,7 @@ The [_CLIPBOARD$](_CLIPBOARD$) function returns the current Operating System's c
 *Example 1:* Passing a string value between two running programs no matter where they are located.
 >  *Program1:*
 
-'''vb
+```vb
 
 PRINT "Start Program2 to read your text entries! Empty entry quits!"
 _CLIPBOARD$ = "Entry program started!"            'set clipboard initially
@@ -32,10 +32,10 @@ LOOP
 
 SYSTEM 
 
-'''
+```
 > *Program2:*
 
-'''vb
+```vb
 
 PRINT "Enter text in Program1 and this program will read it. Esc key quits!"
 
@@ -49,13 +49,13 @@ LOOP UNTIL INKEY$ = CHR$(27)
 
 END  
 
-'''
+```
 > *Explanation:* Compile and run both programs at once to see the interaction. You could also run them on different paths.
 
 
 *Example 2: A minimized program that pops up when Ctrl + Shift is entered anytime in **Windows** and adds clipboard text to be Pasted:
 
-'''vb
+```vb
 
 '"ClippyBoard" program uses GetKeyState Win API to monitor a specific key combination.
 'This demo will maximize the window and focus on program when Shift+A is pressed.
@@ -143,7 +143,7 @@ BEEP
 _DELAY 2
 END SUB 
 
-'''<sub>Code by Ted Weissgerber</sub>
+```<sub>Code by Ted Weissgerber</sub>
 >  *Explanation:* The program will run minimized until Ctrl + Shift is entered and will pop up to ask for a letter choice that contains the text you want in the clipboard. More letter choices can be added. Text can be pasted into a web page or entry box and the program will minimize until it is needed later. The program uses very little resources!
 
 

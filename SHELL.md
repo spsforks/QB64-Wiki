@@ -34,32 +34,32 @@ The [SHELL](SHELL) statement allows a program to run external programs or comman
 
 *Example 1:* When working with file or folder names with spaces, add quotation marks around the path and/or file name with [CHR$](CHR$)(34).
 
-'''vb
+```vb
 
 SHELL _HIDE "dir " + CHR$(34) + "free cell.ico" + CHR$(34) + " /b > temp.dir" 
 SHELL "start Notepad temp.dir" ' display temp file contents in Notepad window 
 
-'''
+```
 > <sub>Contents of *temp.dir* text file:</sub>
 
-'''text
+```text
 
 Free Cell.ico
 
-'''
+```
 
 
 
 *Example 2:* Opening a Windows program (Notepad) to read or print a Basic created text file.
 
-'''vb
+```vb
 
 INPUT "Enter a file name to read in Notepad: ", filename$
 SHELL "CMD /C start /max notepad " + filename$  ' display in Notepad full screen in XP or NT   
 
 'SHELL "start /min notepad /p " + filename$ ' taskbar print using QB64 CMD /C not necessary
 
-'''
+```
 
 > *Explanation:* Notepad is an easy program to open in Windows as no path is needed. Windows NT computers, including XP, use CMD /C where older versions of DOS don't require any command reference. The top command opens Notepad in a normal window for a user to view the file. They can use Notepad to print it. The second command places Notepad file in the taskbar and prints it automatically. The filename variable is added by the program using proper spacing. 
 
@@ -71,7 +71,7 @@ SHELL "CMD /C start /max notepad " + filename$  ' display in Notepad full screen
 
 *Example 3:* Function that returns the program's current working path.
 
-'''vb
+```vb
 
  currentpath$ = Path$ ' function call saves a path for later program use
  PRINT currentpath$
@@ -91,7 +91,7 @@ SHELL "CMD /C start /max notepad " + filename$  ' display in Notepad full screen
    KILL "D0S-DATA.INF"              'deleting the file is optional
  END FUNCTION 
 
-'''
+```
 <sub>Code by Ted Weissgerber</sub>
 > *Explanation:* The **SHELL "CD"** statement requests the current working path. This info is normally printed to the screen, but the **>** pipe character sends the information to the DOS-DATA.INF file instead(**QB64** can use [_HIDE](_HIDE) to not display the DOS window). The function uses the [OPEN](OPEN) FOR [APPEND](APPEND) mode to check for the file and the data([INPUT (file mode)](INPUT (file mode)) would create an error if file does not exist). The current path is listed on one line of the file. The file is opened and [LINE INPUT (file statement)](LINE INPUT (file statement)) returns one line of the file text. The function adds a "\" so that the Path$ returned can be used in another file statement by just adding a file name. Save the Path$ to another variable for later use when the program has moved to another directory.
 >  In **QB64** you can simply use the [_CWD$](_CWD$) statement for the same purpose of the example above.
@@ -99,7 +99,7 @@ SHELL "CMD /C start /max notepad " + filename$  ' display in Notepad full screen
 
 *Example 4:* Determining if a drive or path exists. Cannot use with a file name specification.
 
-'''vb
+```vb
 
 LINE INPUT "Enter a drive or path (no file name): ", DirPath$
 IF PathExist%(DirPath$) THEN PRINT "Drive Path exists!" ELSE PRINT "Drive Path does not exist!"
@@ -116,7 +116,7 @@ CLOSE #1
 KILL "D0S-DATA.INF"               'delete data file optional
 END FUNCTION 
 
-'''
+```
 <sub>Code by Ted Weissgerber</sub>
 > *Explanation: IF Exist* checks for the drive path. *\Nul* allows an emply folder at end of path. *Echo* prints **yes** in the file if it exists.
 >  In **QB64** you can simply use the [_FILEEXISTS](_FILEEXISTS) statement for the same purpose of the example above.
@@ -124,15 +124,15 @@ END FUNCTION
 
 *Snippet 1:* When looking for **printers** this command gives you a file list with the default printer marked as **TRUE**:
 
-'''text
+```text
 
 SHELL _HIDE "CMD /C" + "wmic printer get name,default > default.txt"
 
-'''
+```
 
 **Created file's text:**
 
-'''text
+```text
 
 Default  Name                           
   FALSE    Microsoft XPS Document Writer 
@@ -140,22 +140,22 @@ Default  Name
   FALSE    HP Officejet Pro 8600         
   FALSE    Fax
 
-'''
+```
 
 >  *Explanation:* [LINE INPUT](LINE INPUT) could be used to find the printer names as [STRING](STRING) variables.
 
 
 *Snippet 2:* Here is the code to set the default printer to the "HP Officejet Pro 8600":
 
-'''text
+```text
 
 SHELL _HIDE "CMD /C" + "wmic printer where name='HP Officejet Pro 8600' call setdefaultprinter"
 
-'''
+```
 
 >  After executing this program, and then running the first snippet again, we see the following **contents of the text file:**
 
-'''text
+```text
 
 Default  Name 
   FALSE    Microsoft XPS Document Writer 
@@ -163,7 +163,7 @@ Default  Name
   TRUE     HP Officejet Pro 8600         
   FALSE    Fax
 
-'''
+```
 
 
 

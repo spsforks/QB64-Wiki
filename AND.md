@@ -22,7 +22,7 @@ The logical [AND](AND) numerical operator compares two values in respect of thei
 
 *Example 1:*
 
-'''text
+```text
 
 
          101
@@ -31,7 +31,7 @@ The logical [AND](AND) numerical operator compares two values in respect of thei
         -----
          001
 
-'''
+```
 
 
 > The 101 bit pattern equals 5 and the 011 bit pattern equals 3, it returns the bit pattern 001 which equals 1. Only the Least Significant Bits (LSB) match. So decimal values 5 AND 3 = 1.
@@ -39,7 +39,7 @@ The logical [AND](AND) numerical operator compares two values in respect of thei
 
 *Example 2:*
 
-'''text
+```text
 
 
       11111011
@@ -48,7 +48,7 @@ The logical [AND](AND) numerical operator compares two values in respect of thei
      ----------
       11101011
 
-'''
+```
 
 > Both bits have to be set for the resulting bit to be set. You can use the [AND](AND) operator to get one byte of a two byte integer this way:
 
@@ -61,7 +61,7 @@ The logical [AND](AND) numerical operator compares two values in respect of thei
 
 *Example 3:* Finding the binary bits on in an [INTEGER](INTEGER) value. 
 
-'''vb
+```vb
 
 
  DO
@@ -74,16 +74,16 @@ The logical [AND](AND) numerical operator compares two values in respect of thei
  LOOP UNTIL INTvalue& = 0 'zero entry quits
 
 
-'''
+```
 
 > Example output for 6055.
 
-'''text
+```text
 
 
 0001011110100111
 
-'''
+```
 
 > :*Note:* The value of 32767 sets 15 bits. -1 sets all 16 bits. Negative values will all have the highest bit set. Use [LONG](LONG) variables for input values to prevent overflow errors.
 

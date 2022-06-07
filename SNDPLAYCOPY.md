@@ -27,21 +27,21 @@ The [_SNDPLAYCOPY](_SNDPLAYCOPY) statement copies a sound, plays it, and automat
 
 *Example 1:* Playing a previously opened sound at half volume.
 
-'''vb
+```vb
 
 _SNDPLAYCOPY applause&, 0.5 
 
-'''
+```
 
 
 *Example 2:* Playing a song at random volumes.
 
-'''vb
+```vb
  
 chomp& = _SNDOPEN("chomp.wav") 
 _SNDPLAYCOPY chomp&, 0.5 + RND * 0.49
 
-'''
+```
 
 
 

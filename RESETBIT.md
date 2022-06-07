@@ -29,7 +29,7 @@ The [_RESETBIT](_RESETBIT) function is used to set a specified bit of a numerica
 
 *Example 1:*
 
-'''vb
+```vb
 A~%% = 0 '_UNSIGNED _BYTE
 PRINT A~%%
 A~%% = _SETBIT(A~%%,6) 'set the seventh bit of A~%%
@@ -37,16 +37,16 @@ PRINT A~%%
 A~%% = _RESETBIT(A~%%,6) 'Reset the seventh bit of A~%%
 PRINT A~%%
 
-'''
+```
 
-'''text
+```text
 
 
  0
  64
  0
 
-'''
+```
 
 
 

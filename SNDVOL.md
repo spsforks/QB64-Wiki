@@ -16,13 +16,13 @@ The [_SNDVOL](_SNDVOL) statement sets the volume of a sound loaded in memory usi
 ## Example(s)
 
 
-'''vb
+```vb
 
 h& = _SNDOPEN("bell.wav")
 _SNDVOL h&, 0.5
 _SNDPLAY h& 
 
-'''
+```
 
 
 ## See Also

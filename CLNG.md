@@ -22,20 +22,20 @@ The [CLNG](CLNG) function rounds decimal point numbers up or down to the nearest
 ## Example(s)
 
 
-'''vb
+```vb
 
  a& = CLNG(2345678.51)
  PRINT
 
-'''
+```
 
 
-'''text
+```text
 
 
  2345679 
 
-'''
+```
 
 
 

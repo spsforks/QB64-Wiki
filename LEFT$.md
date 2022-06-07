@@ -23,7 +23,7 @@ The [LEFT$](LEFT$) string function returns a number of characters from the left 
 
 *Example 1:* Getting the left portion of a string value. 
 
-'''vb
+```vb
 
 name$ = "Tom Williams"
 
@@ -31,18 +31,18 @@ First$ = LEFT$(name$, 3)
 
 PRINT First$ 
 
-'''
+```
 
-'''text
+```text
 
 Tom 
-'''
+```
 
 
 
 *Example 2:* A replace function using LEFT$ and [RIGHT$](RIGHT$) with [INSTR](INSTR) to insert a different length word into an existing string. 
 
-'''vb
+```vb
 
 text$ = "This is my sentence to change my words."
 PRINT text$
@@ -68,13 +68,13 @@ LOOP WHILE find
 Replace = count 'function returns the number of replaced words. Comment out in SUB
 END FUNCTION 
 
-'''
+```
 
-'''text
+```text
 
 This is my sentence to change my words.
 This is your sentence to change your words.
-'''
+```
 
 >  *Note:* The [MID$ (statement)](MID$ (statement)) statement can only substitute words or sections of the original string length. It cannot change the string length.
 

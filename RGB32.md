@@ -44,7 +44,7 @@ The [_RGB32](_RGB32) function returns the 32-bit *RGBA* color value with specifi
 
 *Example 1:* Converting the color port RGB intensity palette values 0 to 63 to 32 bit hexadecimal values. 
 
-'''vb
+```vb
 
 SCREEN 12
 DIM hex32$(15)
@@ -58,9 +58,9 @@ FOR attribute = 1 TO 15
   PRINT "COLOR" + STR$(_RGB(red, grn, blu)) + " = " + hex32$(attribute)  'closest attribute
 NEXT 
 
-'''
+```
 
-'''text
+```text
 
 COLOR 1 <nowiki>=</nowiki> &HFF0000A8
 COLOR 2 <nowiki>=</nowiki> &HFF00A800
@@ -78,14 +78,14 @@ COLOR 13 <nowiki>=</nowiki> &HFFFC54FC
 COLOR 14 <nowiki>=</nowiki> &HFFFCFC54
 COLOR 15 <nowiki>=</nowiki> &HFFFCFCFC
 
-'''
+```
 
 > *Note:* This procedure also shows how the returns from [_RGB](_RGB) and [_RGB32](_RGB32) differ in a non-32 bit screen mode.
 
 
 *Example 2:* Working with 32 bit colors.
 
-'''vb
+```vb
 
 SCREEN _NEWIMAGE(640, 480, 32)
 
@@ -114,12 +114,12 @@ LOCATE , 15: PRINT "NEAT, HUH?"
 SLEEP
 SYSTEM 
 
-'''<sub>Code by Steve McNeill</sub>
+```<sub>Code by Steve McNeill</sub>
 
 
 *Example 3:* Comparing the output of the new _RGB32 syntaxes (starting with version 1.3) and their equivalents in previous versions. 
 
-'''vb
+```vb
 
 SCREEN _NEWIMAGE(400, 400, 32)
 
@@ -146,7 +146,7 @@ PRINT "Magenta, 110 alpha"
 COLOR _RGB32(255, 0, 255, 110)
 PRINT "Magenta too, 110 alpha - but with less typing"
 
-'''
+```
 
 
 ## See Also

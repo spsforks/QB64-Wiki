@@ -22,7 +22,7 @@ The [_CLIPBOARD$ (statement)](_CLIPBOARD$ (statement)) statement copies the [STR
 
 *Example:* Set 2 lines of text in the clipboard using a carriage return to end text lines
 
-'''vb
+```vb
 
 DIM CrLf AS STRING * 2            'define as 2 byte STRING
 CrLf = CHR$(13) + CHR$(10)        'carriage return & line feed 
@@ -31,15 +31,15 @@ _CLIPBOARD$ = "This is line 1" + CrLf + "This is line 2"
 PRINT _CLIPBOARD$                 'display what is in the clipboard
 
 
-'''
+```
 
-'''text
+```text
 
 This is line 1
 
 This is line 2
 
-'''
+```
 
 > *Note:* The text in the clipboard could also be sent to a file using [PRINT (file statement)](PRINT (file statement)) [_CLIPBOARD$](_CLIPBOARD$).
 

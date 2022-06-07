@@ -23,7 +23,7 @@ PageParameters
 
 ;Example 1: Comparing decimal, hexadecimal, octal and binary string values from 0 to 15.
 
-'''vb
+```vb
 
 tabletop$ = " Decimal | Hexadecimal | Octal | Binary "
 tablesep$ = "---------+-------------+-------+--------"
@@ -35,10 +35,10 @@ FOR n% = 0 TO 15
     LOCATE 4 + n%, 10: PRINT USING tableout$; STR$(n%); HEX$(n%); OCT$(n%); _BIN$(n%)
 NEXT n%
 
-'''
+```
 ;Note:Although the decimal numbers 0-15 have a maximum width of 2 digits only, an extra space in the *tableout$* template is needed when using the (fixed width string) slash output format, as [STR$](STR$) values contain a leading sign placeholder space.
 
-'''text
+```text
 
 
           Decimal | Hexadecimal | Octal | Binary
@@ -60,27 +60,27 @@ NEXT n%
             14    |      E      |   16  |  1110
             15    |      F      |   17  |  1111
 
-'''
+```
 
 
 
 ;Example 2:Converting a octal value to decimal.
 
-'''vb
+```vb
 
 octvalue$ = OCT$(255)
 PRINT "Oct: "; octvalue$
 PRINT "Converting Oct value to Decimal:"; VAL("&O" + octvalue$)
 
-'''
+```
 
-'''text
+```text
 
 
 Oct: 377
 Converting Oct value to Decimal: 255
 
-'''
+```
 
 
 

@@ -17,7 +17,7 @@ The [_DISPLAY](_DISPLAY) function returns the handle of the current image that i
 
 *Example:* Creating a mouse cursor using a page number that **you create** in memory without setting up page flipping.
 
-'''vb
+```vb
 
 SCREEN _NEWIMAGE(640, 480, 32) 'any graphics mode should work without setting up pages
 _MOUSEHIDE
@@ -41,7 +41,7 @@ _DISPLAY                  'statement shows image
 PCOPY 100, _DISPLAY 'with the function return as destination page
 END SUB 
 
-'''
+```
 *Note:* Works with the **_DISPLAY function** return as the other page. If mouse reads are not crucial, put the [_MOUSEINPUT](_MOUSEINPUT) loop inside of the UpdateCursor SUB.
 
 

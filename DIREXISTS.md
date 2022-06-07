@@ -21,12 +21,12 @@ The [_DIREXISTS](_DIREXISTS) function determines if a designated file path or fo
 
 Example:* Checks if a folder exists before proceeding.
 
-'''vb
+```vb
 
 Cl PRINT "Folder found."
 END IF
 
-'''}}
+```}}
 
 
 ## See Also

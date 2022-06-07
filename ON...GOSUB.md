@@ -23,7 +23,7 @@
 
 *Example:*
 
-'''vb
+```vb
 
 CLS
 a = 2
@@ -43,15 +43,15 @@ RETURN
 PRINT "Line 143, with a = 3 you get to see this!"
 END 
 
-'''
+```
 
-'''text
+```text
 
 
 with a = 2 here we are...return to line after ON.
 Also notice the RETURN statement that can be used with GOSUB!
 
-'''
+```
 
 
 > *Explanation:* Since *a* equals to 2 it goes to the second item in the list (*hereweare*) and branches the program to there. Try changing 'a' to 1 or 3.

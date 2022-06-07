@@ -12,21 +12,21 @@ The [_CONTINUE](_CONTINUE) statement is used in a [DO...LOOP](DO...LOOP), [WHILE
 
 *Example:*
 
-'''vb
+```vb
 
 FOR i = 1 TO 10
     IF i = 5 THEN _CONTINUE
     PRINT i;
 NEXT
 
-'''
+```
 
-'''text
+```text
 
 
  1  2  3  4  6  7  8  9  10
 
-'''
+```
 
 
 

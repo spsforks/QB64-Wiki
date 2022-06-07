@@ -20,7 +20,7 @@ The [_LIMIT](_LIMIT) statement sets the loop repeat rate of a program to so many
 
 *Example:* Limits loop execution to 30 frames per second and limits the program's CPU usage.
 
-'''vb
+```vb
 
 PRINT "To Quit press ESC key!"
 DO
@@ -29,15 +29,15 @@ DO
    IF INKEY$ = CHR$(27) THEN EXIT DO 
 LOOP 
 
-'''
+```
 
-'''text
+```text
 
 
 To Quit press ESC key!
 →→→→→→→→→→→→→→→→→→→→
 
-'''
+```
 
 > *Note:* In the above example, _LIMIT has to be within the loop.
 

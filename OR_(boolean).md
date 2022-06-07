@@ -20,21 +20,21 @@ RelationalTable
 
 *Example:* 
 
-'''vb
+```vb
 
 a% = 100
 b% = 50
 
 IF (a% > b% AND a% < 100) OR b% = 50 THEN PRINT "True"
 
-'''
+```
 
-'''text
+```text
 
 
 True
 
-'''
+```
 
 >  *Explanation:* The first evaluation was False, but the OR evaluation made the statement true and the code was executed.
 

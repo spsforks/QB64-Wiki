@@ -18,12 +18,12 @@ The [_SCREENY](_SCREENY) function returns the current row pixel coordinate of th
 
 *Example:* Clicks and opens program window header menu:
 
-'''vb
+```vb
 _SCREENMOVE _MIDDLE
 _SCREENCLICK _SCREENX + 10, _SCREENY + 10
 PRINT "Hello window!" 
 
-'''
+```
 
 
 ## See Also

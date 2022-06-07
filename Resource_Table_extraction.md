@@ -9,7 +9,7 @@ There are 3 layers to the resource tables, Type, Name, and Language, The Microso
 
 <center>**Image Extraction Procedure**</center>
 
-'''vb
+```vb
 
 DIM nam AS STRING * 8
 DIM fil AS STRING
@@ -334,7 +334,7 @@ DO
 LOOP
 END SUB 
 
-'''
+```
 <sub>Public domain October 2011 by Michael Calkins based on the Microsoft PE and COFF spec, Revision 8.2 - September 21, 2010</sub>
 
 
@@ -345,10 +345,10 @@ END SUB
 > With things like:
 
 
-'''text
+```text
 
                 GET 1, 1 + coff + 20 + 28 + (-4 AND pe32plus), ImageBase 
-'''
+```
 
 
 > That could obviously be optimized by combining the 1 + 20 + 28. By leaving it uncombined, though, it documents itself better in terms of helping the human reader match it up with the specification. 1 because QBASIC's GET/PUT/SEEK idiotically starts at 1 instead of 0. Coff because we want an offset from the start of the coff header, 20 to skip the 20 byte coff main header, 28 because that's the offset of ImageBase in the optional header, and (-4 AND pe32plus) because the offset is 24 if the Magic is PE32+. Either QB64 or GCC will probably optimize it anyway, I would think.
@@ -364,7 +364,7 @@ END SUB
 
 >  I've made a few minor changes to the program. It will show you the first 400 bytes when you choose to export the data. Also, by moving the initialization of sc and so outside the loop, you will now come back to the correct entry upon ascending a level. I experimented with code to PSET the data, but it is commented out.
 
-'''vb
+```vb
 
 'october 2011, michael calkins
 'my code is public domain, but it's based on Microsoft's spec, so I'm not sure
@@ -723,7 +723,7 @@ DO
 LOOP
 END SUB
 
-'''
+```
 
 >  The .ICO format:
 
@@ -743,19 +743,19 @@ http://en.wikipedia.org/wiki/BMP_file_format </center>
 > You can see what I mean: Use Resource Hacker to export the Icon Group as a binary file, named rhig.bin:
 
 
-'''text
+```text
 
                           edit /78 rhig.bin 
-'''
+```
 
 
 >  Delete the first 6 bytes, and save it as rhigmod.bin.
 
 
-'''text
+```text
 
                           edit /14 rhigmod.bin 
-'''
+```
 
 
 >  and you can clearly see the array.
@@ -781,7 +781,7 @@ http://en.wikipedia.org/wiki/BMP_file_format </center>
 
 > I've moved the first horizontal line down 1 line. There is a minor optimization in that there is one less call to rva2fp.
 
-'''vb
+```vb
 
 'revision 20120316, michael calkins
 'october 2011, michael calkins
@@ -1160,7 +1160,7 @@ DO
 LOOP
 END SUB 
 
-'''
+```
 
 
 <p style="text-align: center">([#toc](#toc))</p>
@@ -1175,7 +1175,7 @@ END SUB
 
 >  *Notepad.exe* has 1 group of 9 icons: 48, 32, and 16 pixels; 32, 8, and 4 bpp each. The 4 bpp icons are the old fashioned ones. :-) I like both the old and new. *C:\Windows\System32\shell32.dll* and *pifmgr.dll* have numerous icons.
 
-'''vb
+```vb
 
 'revision date, last person to revise
 'revision 20111101, michael calkins
@@ -1504,7 +1504,7 @@ SELECT CASE n
 END SELECT
 END FUNCTION 
 
-'''
+```
 >  *Note:* Change the file name to .BMP and mode to 1 to extract the icon as a bitmap for QB64 to use. QB64 cannot load icons!
 
 >  Have fun, and don't forget to double check it before relying on it. I appreciate bug reports, but I'm not responsible for errors.
@@ -1518,7 +1518,7 @@ END FUNCTION
 
 
 
-'''vb
+```vb
 
 'revision 20120316, michael calkins
 'october 2011, michael calkins
@@ -1897,7 +1897,7 @@ DO
 LOOP
 END SUB 
 
-'''
+```
 <sub>Code courtesy of Michael Calkins</sub>
 
 

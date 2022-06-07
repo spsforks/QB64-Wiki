@@ -4,12 +4,12 @@ A **colon** can be used to separate two unrelated procedure statements on the sa
 *Usage:* COLOR 10: PRINT "Hello "; : COLOR 12: PRINT "World"
 
 
-'''text
+```text
 
 
 Hello World
 
-'''
+```
 
 
 

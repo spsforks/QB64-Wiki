@@ -28,7 +28,7 @@ The [_MEMCOPY](_MEMCOPY) statement copies a block of bytes from one memory offse
 
 *Example:* Swapping data from one [STRING](STRING) variable to another. Fixed length strings are recommended for speed.
 
-'''vb
+```vb
 
 DIM m AS _MEM
 DIM n AS _MEM
@@ -49,12 +49,12 @@ _MEMGET n, n.OFFSET, b$
 PRINT "out:[" + b$ + "]" 
 _MEMFREE m: _MEMFREE n 'always clear the memory when done 
 
-'''
+```
 
 
 *Snippet:* Instead of copying each array element, one at a time in nested [FOR...NEXT](FOR...NEXT) loops, _MEMCOPY does it in one statement instantly.
 
-'''text
+```text
 
 
 'copy array a to array b one index at a time:
@@ -70,7 +70,7 @@ DIM mb AS _MEM: mb = _MEM(b())
 _MEMCOPY ma, ma.OFFSET, ma.SIZE TO mb, mb.OFFSET
 _MEMFREE ma: _MEMFREE mb 'clear the memory when done 
 
-'''
+```
 
 
 

@@ -153,7 +153,7 @@
 
 * [INKEY$](INKEY$) will return Control + letter key press combinations as the equivalent control characters or bold **function keys** listed below:
 
-'''text
+```text
 
  CTRL + A = CHR$(1)   ?  StartHeader (SOH)    CTRL + B = CHR$(2)   ?  StartText         (STX)
  CTRL + C = CHR$(3)   ?  EndText     (ETX)    CTRL + D = CHR$(4)   ?  EndOfTransmit     (EOT)
@@ -171,7 +171,7 @@
 
    **Red symbols will format text and not [PRINT](PRINT) the symbol. [_PRINTSTRING](_PRINTSTRING) can print in QB64**
 
-'''
+```
 
 * Control characters **1 to 26** can be used to simulate *Ctrl + letter* key shortcuts in Windows programs using [_SCREENPRINT](_SCREENPRINT).
 * [_CONTROLCHR](_CONTROLCHR) OFF can also be used in QB64 to allow control characters to be printed without formatting the text.
@@ -205,7 +205,7 @@
 
 
 
-'''vb
+```vb
 
 SCREEN 12
 COLOR 14: PRINT "Press Control + letter key combinations."
@@ -219,7 +219,7 @@ LOOP UNTIL K$ = CHR$(27)
 
 END 
 
-'''
+```
 
 
 <center>**ASCII Character Usage**</center>
@@ -239,7 +239,7 @@ END
 
 <center>**[ASC](ASC) cannot read empty [INKEY$](INKEY$) = "" loop reads! Check for them before reading [ASC](ASC) key press codes!**</center>
 
-'''text
+```text
 
 '                                **ASCII Keyboard Codes**
 '
@@ -264,7 +264,7 @@ END
 ' **    *Italics* = LCase/NumLock On  ____________  + = 2 Byte: CHR$(0) + CHR$(code)**
 '<sub>NOTE: The above commented table can be copied and pasted directly into the QB64 IDE</sub>
 
-'''
+```
 
 
 
@@ -272,7 +272,7 @@ END
 
 <center>*** See the Two Byte Ctrl, Alt and Shift + Function key combinations below**</center>
 
-'''vb
+```vb
 '             Demo displays all ASCII codes and 2 byte code combinations
 DO: K$ = INKEY$
   IF K$ <> "" THEN      'ASC will return an error if an empty string is read!
@@ -283,7 +283,7 @@ DO: K$ = INKEY$
   END IF
 LOOP UNTIL K$ = CHR$(27) 'escape key press exits 
 
-'''
+```
 >  *Note:* In QB64 [ASC](ASC)(K$, 2) can read the second byte of the 2 byte code when [ASC](ASC)(K$) reads the first byte as 0.
 
 <p style="text-align: center">([#toc](#toc))</p>
@@ -300,7 +300,7 @@ LOOP UNTIL K$ = CHR$(27) 'escape key press exits
 > IF INKEY$ = CHR$(0) + CHR$(80) THEN row = row + 1 **or** IF INKEY$ = CHR$(0) + "P" THEN row = row + 1
 
 
-'''text
+```text
 
                  **Two Byte Character Codes       Key                 CHR$(0) + "?" **
 
@@ -341,7 +341,7 @@ LOOP UNTIL K$ = CHR$(27) 'escape key press exits
                     CHR$(0) + CHR$(139)        [Alt] + [F11]        "ï"
                     CHR$(0) + CHR$(140)        [Alt] + [F12]        "î"
 
-'''
+```
 
 > In **QB64**, [CVI](CVI) can be used to get the [_KEYDOWN](_KEYDOWN) 2-byte code value. Example: **status <nowiki>=</nowiki> _KEYDOWN(CVI(CHR$(0) + "P"))**
 
@@ -352,7 +352,7 @@ LOOP UNTIL K$ = CHR$(27) 'escape key press exits
 
 *Example 1:* Using arrow keys to move a text character. A change from a previous position tells program when to PRINT:
 
-'''vb
+```vb
 movey = 1: movex = 1 'text coordinates can never be 0
 at$ = "@"  'text sprite could be almost any ASCII character
 LOCATE movey, movex: PRINT at$;
@@ -371,13 +371,13 @@ DO
 LOOP UNTIL B$ = CHR$(27) 'ESCape key exit
 END
 
-'''
+```
 
 
 *Example 2:* Routine displays all keypress codes including Ctrl, Alt and Shift combinations. Ctrl + letter = control codes 1 to 26.
 
 
-'''vb
+```vb
 
  * *
  SCREEN 13
@@ -471,7 +471,7 @@ END
  SLEEP 3
  SYSTEM 
 
-'''
+```
 <sub>Code by Ted Weissgerber</sub>
 *Explanation:* The routine checks for a keypress and [SLEEP](SLEEP) guarantees that [ASC](ASC) will never read an empty string from INKEY$. When the keypress is determined to be two bytes ([ASC](ASC)(A$) = 0) the second SELECT CASE routine is used. You can even display non-keyboard extended characters. Just press Alt + numberpad code, release and press enter.
 

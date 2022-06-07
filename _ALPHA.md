@@ -23,7 +23,7 @@ The [_ALPHA](_ALPHA) function returns the alpha channel transparency level of a 
 
 *Example 1:* Alpha transparency levels are always 255 in 4 or 8 bit screen modes.
 
-'''vb
+```vb
 
 SCREEN 13
 
@@ -35,21 +35,21 @@ PRINT "Alpha:"; _ALPHA(clr~&)
 
 END
 
-'''
+```
 
-'''text
+```text
 
 Color 36
 Alpha: 255
 
-'''
+```
 
 >  *Explanation:* [_RGBA](_RGBA) cannot change the [_ALPHA](_ALPHA) level. [_ALPHA32](_ALPHA32) would return 0 on any non-32 bit image or page.
 
 
 *Example 2:* Finding the transparency of a 32 bit screen mode's background before and after [CLS](CLS).
 
-'''vb
+```vb
 
 SCREEN _NEWIMAGE(640, 480, 32)
 BG& = POINT(1, 1)
@@ -59,12 +59,12 @@ CLS
 BG& = POINT(1, 1)
 PRINT "CLS Alpha ="; _ALPHA(BG&) 
 
-'''
+```
 
-'''text
+```text
 
 CLS Alpha = 255   
-'''
+```
 
 >  *Explanation:* Set the ALPHA value to 255 using [CLS](CLS) to make the background opaque when overlaying pages.
 

@@ -17,7 +17,7 @@ The [_AXIS](_AXIS) function returns the relative position of a specified axis nu
 
 *Example:* Reading multiple controller device buttons, axis and wheels.
 
-'''vb
+```vb
 
 FOR i = 1 TO _DEVICES
   PRINT STR$(i) + ") " + _DEVICE$(i) + " Buttons:"; _LASTBUTTON(i); ",Axis:"; _LASTAXIS(i); ",Wheel:"; _LASTWHEEL(i)
@@ -42,7 +42,7 @@ LOOP UNTIL INKEY$ = CHR$(27) 'escape key exit
 
 END 
 
-'''
+```
 >  *Note:* When there is no device control to read, a [FOR...NEXT](FOR...NEXT) n = 1 TO 0 loop will not run thus avoiding a control function read error.
 
 

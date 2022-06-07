@@ -18,13 +18,13 @@ The [_COMMANDCOUNT](_COMMANDCOUNT) function returns the number or arguments pass
 
 *Example:* The code below gets the number of parameters passed to our program from the command line with _COMMANDCOUNT: 
 
-'''vb
+```vb
 limit = _COMMANDCOUNT
 FOR i = 1 TO limit
     PRINT COMMAND$(i)
 NEXT
 
-'''
+```
 >  *Explanation:* If we start *ThisProgram.exe* from the command window with **ThisProgram -l "loadfile.txt" -s "savefile.txt"**, the _COMMANDCOUNT would be 4, "-l", "loadfile.txt", "-s", "savefile.txt" command arguments passed to the program, which we could then read separately with COMMAND$(n).
 
 

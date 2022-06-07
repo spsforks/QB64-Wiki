@@ -30,21 +30,21 @@ The [_PRESERVE](_PRESERVE) [REDIM](REDIM) action preserves the current contents 
 *Example 1:* Changing the upper and lower array bounds
 
 
-'''vb
+```vb
 
 REDIM a(5 TO 10) ' create array as dynamic using REDIM
 a(5) = 123
 REDIM _PRESERVE a(20 TO 40) 
 PRINT a(20)
 
-'''
+```
 > *Explanation:* a(20) is now the 123 value a(5) was. The upper or lower bounds of arrays can be changed, but the type cannot. New array indices like a(40) are null(0) or empty strings. If the array element count is not reduced, all of the data will be preserved.
 
 
 *Example 2:* Sizing an array while storing file data.
 
 
-'''vb
+```vb
 
 REDIM Array$(1)                'create a dynamic string array
 filename$ = "Readme.txt"       'Qb64 information text file
@@ -65,7 +65,7 @@ IF c MOD 20 = 0 THEN k$ = INPUT$(1)
 NEXT 
 END 
 
-'''
+```
 
 
 

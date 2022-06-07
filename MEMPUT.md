@@ -28,7 +28,7 @@ The [_MEMPUT](_MEMPUT) statement writes data to a portion of a designated memory
 
 *Example:* _MEMPUT can be used just like [POKE](POKE) without [DEF SEG](DEF SEG).
 
-'''vb
+```vb
 
 DIM o AS _MEM
 o = _MEM(d&)
@@ -37,7 +37,7 @@ v = _MEMGET(o, o.OFFSET + 1, _UNSIGNED _BYTE) 'PEEK
 PRINT v 'prints 3
 PRINT d& 'print 768 because the 2nd byte of d& has been set to 3 or 3 * 256 
 
-'''
+```
 
 
 ## See Also

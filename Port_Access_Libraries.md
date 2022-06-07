@@ -18,7 +18,7 @@
 
 > *Example 1:* Reading the Parallel Port Data, Status and Control register settings before and after reversing it.
 
-'''vb
+```vb
 
 DECLARE DYNAMIC LIBRARY "inpout32"
     FUNCTION Inp32% (BYVAL PortAddress AS INTEGER)
@@ -49,10 +49,10 @@ PRINT "Control:"; Inp32(address + 2) 'base + 2 read or write. 32 or over reverse
 PRINT
 END SUB 
 
-'''
+```
 <sub>Contributed by Ted Weissgerber</sub>
 
-'''text
+```text
 
 Data: 255
 Status: 120
@@ -66,7 +66,7 @@ Data: 227 π
 Status: 120
 Control: 12
 
-'''
+```
 
 <center>[http://i301.photobucket.com/albums/nn53/burger2227/Inpout32.gif Screenshot of demo without a printer on the port]</center>
 
@@ -75,7 +75,7 @@ Control: 12
 
 <center>*Note:* The normal LPT1 base port is **&H378**(888), but it could also be **&H278**(632) or **&H3BC**(956).</center>
 
-'''text
+```text
 
               __________________________________________________________   
               \                                                        /
@@ -88,7 +88,7 @@ Control: 12
                                     ** DB-25 Female **
              10 Ack, 11 Busy, 12 PaperOut, 13 Select, 14 LFeed, 15 Error
 
-'''
+```
 
 
 <center>**[https://www.google.com/search?q=LPT+pinout&biw=1209&bih=569&tbm=isch&imgil=NfwoAN_aS0iIbM:;_8oZPMerY-hDtM;http://www.firewall.cx/networking-topics/cabling-utp-fibre/120-network-parallel-cable.html&source=iu&pf=m&fir=NfwoAN_aS0iIbM:,_8oZPMerY-hDtM,_&usg=__9NooKAtd0Kyj3aYOxNGvzhfYryk=&ved=0ahUKEwjYjY6JyrPLAhXMdT4KHfhNBo4QyjcIJw&ei=eRPgVpjtCczr-QH4m5nwCA#imgrc=xZhuzmkJ7DEvbM: Parallel Port Pinout]**</center>
@@ -149,7 +149,7 @@ Control: 12
 
 >  *Example 2:* A 3 wire Teletype program that allows two computers to serially communicate through each keyboard:
 
-'''vb
+```vb
 
 DECLARE DYNAMIC LIBRARY "inpout32"
   FUNCTION Inp32% (BYVAL PortAddress AS INTEGER)
@@ -175,7 +175,7 @@ DO: x$ = INKEY$
   END IF                                  
 LOOP 
 
-'''
+```
 <sub>Adapted from code by T3SL4</sub>
 >  Possible port addresses are &H3F8(1016) = COM1, &H2F8(760) = COM2, &H3E8(1000) = COM3 and &H2E8(744) = COM 4.
 >  Connect each COM port transmit line to the opposing receive line on the other PC. Connect both COM grounds together.
@@ -190,7 +190,7 @@ LOOP
 
 <center>Two PC's can communicate between the COM ports using a [http://www.lammertbies.nl/comm/info/RS-232_null_modem.html Null modem cable].</center>
 
-'''text
+```text
 
 
                             _______________________________
@@ -203,7 +203,7 @@ LOOP
 
                                  ** RS-232 Female (DB-9)
 
-'''
+```
 
 
 <center>**[https://www.google.com/search?q=com+port+pinout&hl=en&prmd=imvns&tbm=isch&tbo=u&source=univ&sa=X&ei=6OivT5arEcjq0gG87riHDA&sqi=2&ved=0CHwQsAQ&biw=970&bih=610 Serial Communication Port Pinouts]**</center>
@@ -215,7 +215,7 @@ LOOP
 <center>**Serial Communication Ports Require an External Serial Device or PC COM Port Connection to function!**</center>
 A Serial port can use extra Registers due to the use of a UART chip. When the Base Address is Read, the chip supplies the data from the FIFO(First In First Out) Receive Buffer. When Written to, it sends data to the FIFO Transmit Buffer. If the DLA Bit is On in the LCR register, then the UART base register accepts the Divisor Latch Low Byte data.
 
-'''text
+```text
 
          **Address       DLAB   INP/OUT      Abb.     Register Name**
 
@@ -232,7 +232,7 @@ A Serial port can use extra Registers due to the use of a UART chip. When the Ba
 	 Base + 6      --    Read Only     MSR    Modem Status Register"
 	 Base + 7      --    Read/Write     -     Scratch Register (Unused)"
 
-'''
+```
 
 
 Also there are two Base + 1 Registers. The IER and the DL High Byte. The two Base + 2 Registers (IIR & FCR) act similar to the Base Buffers. The UART chips also use FIFO buffers to receive and send data at the same time. The most common UARTS used today are the 16550 series chips. You can add the bit values to determine the bits you want Written or Read in each register!
@@ -244,7 +244,7 @@ Like the bi-directional Parallel port, the COM Base Address can send data to a d
 <center>**Interrupt Enable Register (BaseAddress + 1)**</center>
 This register is fairly simple to use. The only bits used are 0 to 3. You simply set a bit high to enable the appropriate Interrupt.
 
-'''text
+```text
 
             **Bit #      Bit Value         Interrupt Description**
 	       3           8         Enable Modem Status Interrupt
@@ -252,7 +252,7 @@ This register is fairly simple to use. The only bits used are 0 to 3. You simply
 	       1           2         Enable Transmit Hold Register Empty Interrupt
 	       0           1         Enable Received Data Available Interrupt
 
-'''
+```
 
 Once the Interrupts are set, you can monitor the port Interrupts in the Read only **IIR** Interrupt Identification Register in a COM program routine. You just add the bit on values to use more than one Interrupt Enable and use OUT BaseAdd + 1, bitstotal. The IIR will tell if an Interrupt occurs! The IER register also can be read to find the present settings with INP. Like the Base, the IER is used in DLAB Mode for the Divisor High Byte."
 			
@@ -260,7 +260,7 @@ Once the Interrupts are set, you can monitor the port Interrupts in the Read onl
 <center>**Interrupt Identification Register (BaseAddress + 2)**</center>
 This register is a **Read Only** Register! It monitors the FIFO status and Interrupts sent to the CPU. The Interrupts are enabled in the IER. You can use INP to read it using INP(BaseAddress + 2) AND 2 ^ bitnumber to see if a bit is on or off. The FIFO and Interrupt Status read 2 bits as below:
 
-'''text
+```text
 
                **Bit #          INP Value       Description** 
 	      7 and 6                     FIFO status
@@ -280,7 +280,7 @@ This register is a **Read Only** Register! It monitors the FIFO status and Inter
 	
                       < denotes a byte value less than designated INP value
 
-'''
+```
 
 For FIFO status, just compare the INP status with 192 using AND as below:
 <center>IF (Inp32(BaseAdd% + 2) AND 192) THEN PRINT "FIFO Enabled"</center>
@@ -289,7 +289,7 @@ For FIFO status, just compare the INP status with 192 using AND as below:
 <center>**First In / First Out Control Register (BaseAddress + 2)**</center>
 This Register also uses the BaseAddress + 2 address, but it is **Write Only**! You can NOT try to Read it! That just returns data from the **IIR** Register ONLY! The **FCR** register is just used to set Interrupt triggers and clear the data from the Recieve or Transmit buffers of 16550 or higher UARTS.
 
-'''text
+```text
 
 	       **Bit #            OUT Value     Description **
 	      7 and 6                       Interrupt Trigger Level  
@@ -306,7 +306,7 @@ This Register also uses the BaseAddress + 2 address, but it is **Write Only**! Y
 			    
                      < denotes a byte value less than designated OUT value
 
-'''
+```
 
 If the trigger bytes are found in the FIFO buffer, then the Data Receive Available Interrupt in the IIR will trigger. Bits 1 and 2 clear the buffer when set hi. They will automatically reset to 0 when done. Data is lost when cleared or if bit 0 is set to 0. Be aware of this and use carefully! This register is only normally used to clear the buffers and enable them. The 0 bit must be set to 1 or both FIFO buffers are disabled! Reset it!
 		   
@@ -314,7 +314,7 @@ If the trigger bytes are found in the FIFO buffer, then the Data Receive Availab
 <center>**Line Control Register (BaseAddress + 3)**</center>
 This Register can determine the Word Length, Stop Bits, Parity and help set the Baud Rate of the Serial Port. For instance, OUT (BaseAddress + 3), 3 will set the Word Length to 8 with 1 Stop Bit and No Parity. Similar to OPEN COM, but you can also open COM ports other than COM1 or COM2 in this register. **Be sure to Write a Register value less than 128 after the DLAB baud is set!**
 
-'''text
+```text
 
                 **Bit #         Bit Value      Description**
 	         7              128        Divisor Latch Access Bit (set baud rate)
@@ -336,14 +336,14 @@ This Register can determine the Word Length, Stop Bits, Parity and help set the 
 
                      < denotes a byte value less than designated OUT value
 
-'''
+```
 
 
 
 <center>**The Divisor Latch Access Bit and Setting the Baud Rate**</center>
 You can set the Baud Rate first by sending 128 to the LCR with OUT. This forces the **Base** and **IER** Registers to accept the Divisor Latch Low and High Byte values respectively. In DLAB mode both registers can be written to or read to find the current Divisor byte settings! The Divisor value is the number that 115200 must be divided by to attain the baud rate:
 
-'''text
+```text
 
         **Speed (BPS)      Divisor    High Byte(to Base + 1)  Low Byte(to Base)**
 	       50         2304             &H9  (2304)            &H0    (0) 
@@ -356,11 +356,11 @@ You can set the Baud Rate first by sending 128 to the LCR with OUT. This forces 
 	    19200            6             &H0                    &H6    (6)
 	   115200            1             &H0                    &H1    (1)
 
-'''
+```
 
 The divisor is based on 115,200 as the maximum Baud Rate. Speeds above 300 just send 0 to the IER, but it must be sent too! Below is a routine to set up any COM port without an OPEN statement. Simply use OUT to set it up:
 
-'''text
+```text
 
         BaseAdd% = &H3F8         'use any valid COM base address on your PC
 	Out32 BaseAdd% + 3, &H80 'set DLAB baud rate divisor bit 7 on with 128 (LCR)
@@ -368,7 +368,7 @@ The divisor is based on 115,200 as the maximum Baud Rate. Speeds above 300 just 
 	Out32 BaseAdd%, &H60     'set DL Low Byte to 1200 baud (96) on Base Register
 	Out32 BaseAdd% + 3, &H3  'sets 8 bit Word, 1 Stop Bit, and No Parity (LCR) *	 
 
-'''
+```
 
 >  *Explanation:* Setting the LCR register's value below 128 resets it from DLAB mode to normal Base Buffer and **IER** operations
 
@@ -376,7 +376,7 @@ The divisor is based on 115,200 as the maximum Baud Rate. Speeds above 300 just 
 <center>**Modem Control Register (BaseAddress + 4)**</center>
 Like the LCR Register, it is Read and Write! Bit 4 sets Loopback Mode that sends TD data back to RD buffer. Bits 1 and 0 force RTS and DTR signals. The Auxiliary Outputs are seldom used anymore! Just set those bits to 0.
 
-'''text
+```text
 
              **Bit #         Bit Value         Description**
 	       4              16          LoopBack Mode (Test UART operation)
@@ -385,14 +385,14 @@ Like the LCR Register, it is Read and Write! Bit 4 sets Loopback Mode that sends
 	       1               2          Force Request to Send (RTS) 
 	       0               1          Force Data Terminal Ready (DTR)
 
-'''
+```
 
 
 
 <center>**Line Status Register (BaseAddress + 5)**</center>
 **Read Only** status register used to detect data buffer activity and errors. If ANY data error occurs, bit 7 will be turned on. Specific errors are also listed. Normally only Bit 0 is read, as these errors do not stop the port! Use this register to check for transfer errors.
 
-'''text
+```text
 
              **Bit #         INP Value         Description**
                7              128         Error in Received FIFO 
@@ -404,14 +404,14 @@ Like the LCR Register, it is Read and Write! Bit 4 sets Loopback Mode that sends
 	       1                2         Overrun Error (cannot read fast enough)
 	       0                1         Data Ready (Receiver ready to be read)
 
-'''
+```
 
 
 				 
 <center>**Modem Status Register (BaseAddress + 6)**</center>
 This **Read Only** register monitors each bit each time read. Delta type bits denote any changes since the last time read. Bit 2 On indicates that there was a change from low to high on the RI line since the last read. Often used in modem data transfers!
 
-'''text
+```text
 
               **Bit #         INP Value         Description**
                 7              128         Carrier Detect (CD) 
@@ -423,7 +423,7 @@ This **Read Only** register monitors each bit each time read. Delta type bits de
                 1                2         Delta Data Set Ready 
                 0                1         Delta Clear to Send 
 
-'''
+```
 
 
 

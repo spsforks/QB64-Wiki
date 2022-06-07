@@ -33,7 +33,7 @@ Normally the number 1 device, it usually only has [[BUTTON](BUTTON)] controls. P
 > : [_BUTTON](_BUTTON)(number) returns -1 when a button is pressed and 0 when released.
 
 
-'''text
+```text
 
 '                                  **Keyboard Device Button Numbers**
 '
@@ -52,7 +52,7 @@ Normally the number 1 device, it usually only has [[BUTTON](BUTTON)] controls. P
 '
 
 
-'''
+```
 
 <p style="text-align: center">([#toc](#toc))</p>
 
@@ -129,7 +129,7 @@ Normally device numbers 3 or higher, controllers may have any number of [[AXIS](
 
 >  Displays all keyboard, mouse and game controller button, axis and wheel control input values when each device is being used.
 
-'''vb
+```vb
 
 PRINT "Use relative mouse movement mode with ESC key exit only?(Y/N) ";
 K$ = UCASE$(INPUT$(1))
@@ -169,7 +169,7 @@ LOOP UNTIL INKEY$ = CHR$(27) 'escape key exit
 
 END 
 
-'''
+```
 <sub>Code by Ted Weissgerber</sub>
 > : *Note:* When there is no device control to read, a [FOR...NEXT](FOR...NEXT) n = 1 TO 0 loop will not run thus avoiding a control function read error.
 >  Using [_MOUSEMOVEMENTX](_MOUSEMOVEMENTX) or Y will hide the mouse cursor and return relative mouse movements with the 1 and 2 [_WHEEL](_WHEEL) controls.

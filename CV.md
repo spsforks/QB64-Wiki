@@ -24,7 +24,7 @@ The [_CV](_CV) function is used to convert [_MK$](_MK$), [ASCII](ASCII), [STRING
 
 *Example:* Using the _MK$ and _CV functions:
 
-'''vb
+```vb
 
 DIM i64 AS _INTEGER64
 DIM i64str AS STRING
@@ -38,16 +38,16 @@ PRINT "_MK$: "; i64str
 i64 = _CV(_INTEGER64, i64str)
 PRINT "_CV:"; i64 
 
-'''
+```
 
-'''text
+```text
 
  
 I64: 2305843009213693952
 _MK$:
 _CV: 2305843009213693952
 
-'''
+```
 
 > The _MK$ string result may not print anything to the screen, as in the example above, unless [_CONTROLCHR](_CONTROLCHR) is set to OFF.
 

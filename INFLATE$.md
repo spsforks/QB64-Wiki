@@ -23,7 +23,7 @@ The [_INFLATE$](_INFLATE$) function decompresses a [STRING](STRING) compressed b
 
 *Example 1:* Compressing a long string of text.
 
-'''vb
+```vb
 
 a$ = "The quick brown fox jumps over the lazy dog. "
 PRINT "Original string (a$): "; a$
@@ -39,9 +39,9 @@ PRINT USING "(compressed size is #.###% of the original)"; ((LEN(b$) * 100) / LE
 c$ = _INFLATE$(b$)
 PRINT "After using _INFLATE$ to decompress it, LEN ="; LEN(c$)
  
-'''
+```
 
-'''text
+```text
 
 
 Original string (a$): The quick brown fox jumps over the lazy dog
@@ -50,7 +50,7 @@ After using _DEFLATE$ to compress it, LEN = 4335
 (compressed size is 0.295% of the original)
 After using _INFLATE$ to decompress it, LEN = 1474560
 
-'''
+```
 
 
 ## See Also

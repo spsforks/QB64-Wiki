@@ -18,10 +18,10 @@ The [KEY n](KEY n) statement is used to assign a "soft key" string or a flag and
 * InlineCodeKEY n, text$InlineCodeEnd defines a literal or variable [STRING](STRING) "soft key" function key return value.
 
 
-'''text
+```text
 
         **KEY 1, "Help"** 'returns the string "Help" to [INPUT](INPUT) variable when F1 is pressed
-'''
+```
 
 
 * [KEY LIST](KEY LIST) displays each of the 12 softkey **function key** (F1 to F12) string values going down left side of screen.
@@ -41,7 +41,7 @@ The [KEY n](KEY n) statement is used to assign a "soft key" string or a flag and
 
 <center>**Assigning user defined keys or combinations with: KEY n, CHR$(keyflag) + CHR$(scancode)**</center>
 
-'''text
+```text
 
                    **Function Key Flag Combination Values**
 
@@ -56,11 +56,11 @@ The [KEY n](KEY n) statement is used to assign a "soft key" string or a flag and
 
           Flag values can be added to monitor multiple function key combinations.
 
-'''
+```
 
 * After the keyflag code character the [Scancodes](Scancodes) character is added using one of the two **trapping methods** that follow:
 
-'''text
+```text
 
 '                           **Soft Key Scan Code Values**
 '
@@ -83,7 +83,7 @@ The [KEY n](KEY n) statement is used to assign a "soft key" string or a flag and
 '        Reserved and function key combinations can be made using the scan code instead.
 '             Add function flag values to 128 for Extended key combinations.
 
-'''
+```
 <sub>NOTE: The above commented table can be copied and pasted directly into the QB64 IDE</sub>
 
 
@@ -91,17 +91,17 @@ The [KEY n](KEY n) statement is used to assign a "soft key" string or a flag and
 > Keyboard Flag values can be added to monitor more than one control key. For example, flag combination 12 would flag both the Ctrl and Alt key presses. Since the flag already determines the function key to monitor, you don't necessarily have to use it's scancode. You can look for a key combination such as Ctrl + by using the plus key's scancode which is 13 as shown below: 
 
 
-'''text
+```text
 
       **KEY 15, CHR$(4) + CHR$(13)** 'enabled event when Ctrl and + key are pressed
-'''
+```
 
 
 
 <center>**Trapping Extended keys (Insert, Home, Page Up, Right Ctrl, R.Alt, and cursor arrow pad)**</center>
 * On a 101-key keyboard, you can trap any of the keys on the dedicated cursorpad by assigning the string to any of the keynumber values from 15 to 25 using the 128 keyboard flag. The cursor arrows are not the same as the pre-assigned number pad arrows:
 
-'''text
+```text
 
       **KEY n, [CHR$](CHR$)(128) + [CHR$](CHR$)(scancode) ' where n = 15 to 29. See: [Scancodes](Scancodes)**
 
@@ -113,7 +113,7 @@ The [KEY n](KEY n) statement is used to assign a "soft key" string or a flag and
 
               KEY 18, CHR$(128) + CHR$(80)  'down arrow cursor pad
 
-'''
+```
 
 <center>Use CHR$(0) for the first byte flag for non-function keys. You can substitute a literal [STRING](STRING) value to trap as shown in Example 2.</center>
 
@@ -127,16 +127,16 @@ The [KEY n](KEY n) statement is used to assign a "soft key" string or a flag and
 
 *Example 1:* Shows a list of all the string assignments to the function keys F1-F12 (Prints help every time F1 is pressed in the input)
 
-'''vb
+```vb
 
 KEY 1, "Help"
 KEY LIST
 INPUT "Press F1 or to quit press ENTER: ", a$
 
 
-'''
+```
 
-'''text
+```text
 
 
 F1 Help
@@ -153,13 +153,13 @@ F11
 F12
 Press F1 or to quit press ENTER: HelpHelpHelpHelp
 
-'''
+```
 
 
 
 *Example 2:* Trapping the Control + key combination. Use the Control Keyboard flag 4 and + key scancode 13.
 
-'''vb
+```vb
 
 CLS 
 KEY 15, CHR$(4) + CHR$(13)     'scancode for "=" or "+" key is 13
@@ -176,13 +176,13 @@ control:                             'NUMBER LOCK MUST BE OFF!
 PRINT "Control and + keys pressed!";
 RETURN 
 
-'''
+```
 <sub>Code by Ted Weissgerber</sub>
 
 
 *Example 3:* Differentiating the extended cursor keypad arrows from the predefined Number Pad arrow keys.
 
-'''vb
+```vb
 
 'predefined keys 11 to 14 for number pad arrows only
 ON KEY(11) GOSUB UpNum: KEY(11) ON 'up
@@ -240,7 +240,7 @@ DnNum:
 COLOR 11: LOCATE 11, 26: PRINT "Down number pad "
 RETURN 
 
-'''
+```
 >  *Explanation:* The Number Lock or Caps Lock keys ON may hinder extended key reads in QBasic but not QB64!
 
 

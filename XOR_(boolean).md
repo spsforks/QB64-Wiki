@@ -21,7 +21,7 @@ Template:RelationalTable
 
 *Example:* Dilemma...
 
-'''vb
+```vb
 
 
 True = NOT False
@@ -34,14 +34,14 @@ PRINT "You can't both have won (or lost)!"
 END IF
 
 
-'''
+```
 
-'''text
+```text
 
 
 You can't both have won (or lost)!
 
-'''
+```
 
 
 

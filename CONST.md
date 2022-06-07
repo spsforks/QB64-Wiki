@@ -29,7 +29,7 @@ The [CONST](CONST) statement globally defines one or more named numeric or strin
 
 *Example 1:* Display the circumference and area of circles:
 
-'''vb
+```vb
 ' Declare a numeric constant approximately equal to the ratio of a circle's
 ' circumference to its diameter:
 CONST PI = 3.141593
@@ -46,9 +46,9 @@ DO
     PRINT
 LOOP
 
-'''
+```
 
-'''text
+```text
 
 Enter the radius of a circle or zero to quit? *10*
 The circumference of the circle is 62.83186
@@ -60,21 +60,21 @@ The area of the circle is 47882.23
 
 Enter the radius of a circle or zero to quit? *0*
 
-'''
+```
 
 >  *Explanation:* PI cannot change as it is a mathematical constant so it is fitting to define it as a constant. Trying to change PI will result in a calculation error.
 
 
 *Example 2*: Using _RGB32 to set a constant's value.
 
-'''vb
+```vb
 
 CONST Red = _RGB32(255,0,0)
 
 COLOR Red
 PRINT "Hello World"
 
-'''
+```
 
 ## See Also
 

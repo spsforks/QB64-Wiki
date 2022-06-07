@@ -1,7 +1,7 @@
 The **FILELIST$** function can be used in place of the old QBasic [FILES](FILES) statement to view a list of files. Displays long and short(8.3) DOS filenames with the last modified information. Function name returns the short filename while **SHARED** string variables **LFN$** and **Path$** return the long name and absolute path from the current root drive. The leading underscore should make it compatible with most older QBasic program code run in **QB64**. The function allows mouse click file selection, letter press searches, file name exist verification without a screen display, and many of the DIR options available in DOS. Including sorting by name, extension, attributes and more! **Your program screens are not changed after a display and the function can be integrated into a program using Putimage!**
 
 
-'''text
+```text
 
                              **FILELIST$ Function Features**
 
@@ -33,7 +33,7 @@ The **FILELIST$** function can be used in place of the old QBasic [FILES](FILES)
        10) The newest version sets up the entire process using two position parameters
            so that it can be viewed on your program screen area. See **[FILELIST$](FILELIST$)**
 
-'''
+```
 
 
 <center>**[http://i301.photobucket.com/albums/nn53/burger2227/FILE-ss2.jpg Screenshot]**</center>
@@ -44,7 +44,7 @@ The **FILELIST$** function can be used in place of the old QBasic [FILES](FILES)
 
 
 
-'''vb
+```vb
 
 _TITLE "Demo of FILELIST$ Function by Ted Weissgerber 2010"
 handle& = _NEWIMAGE(800, 600, 256) 'Demo code creates custom sized screen mode
@@ -91,9 +91,9 @@ END FUNCTION
 ' >>>>>>>>> Place INCLUDE file reference here when used as library <<<<<<<<<
 
 
-'''
+```
 
-'''text
+```text
 
 
 '****** NOTE: FILELIST$ Function can also be included as an external library(see below) ******
@@ -240,7 +240,7 @@ LINE (4, 4)-(636, 476), 13, B: LINE (5, 5)-(635, 475), 13, B
 RETURN
 END FUNCTION * *      
 
-'''
+```
 
 
 <center>**Refresh browser if full code is not displayed!**
@@ -267,7 +267,7 @@ Added option for current path to TITLE bar 11/16/2010
 
 
 
-'''text
+```text
 
 
 
@@ -318,7 +318,7 @@ FILELIST$([drive:][path][filename][/A[:]attrib](:]attrib)[/L][/O[:]sortorder](:]
 
  **NOTE: [LINE INPUT](LINE INPUT) allows quoted entries such as: "free cell.ico" for filenames with spaces.**
 
-'''
+```
 
 
 

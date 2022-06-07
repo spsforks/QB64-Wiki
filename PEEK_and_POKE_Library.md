@@ -3,7 +3,7 @@ This header allows you to peek and poke bytes, words, and dwords in QB64. The fu
 
 Create *PeekPoke.h* text file in the QB64 folder:
 
-'''text
+```text
 
 
 /*
@@ -30,13 +30,13 @@ void pokew(void * p, unsigned short int n)
 void poked(void * p, unsigned long int n)
 {*(unsigned long int *)p = n;}</nowiki>
 
-'''
+```
 
 <sub>Public domain, Sept 2011, Michael Calkins</sub>
 
 *PeekPoke.BAS*
 
-'''vb
+```vb
 
 ' peek and poke for bytes, words, and dwords in qb64
 ' requires peekpoke.h
@@ -80,7 +80,7 @@ PRINT "0x" + HEX$(peekd~&(ptr + 9))
 
 END 
 
-'''
+```
 <center>**Note: These functions and statements use a variable name reference pointer in memory instead of [DEF SEG](DEF SEG).**</center>
 
 

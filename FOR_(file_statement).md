@@ -78,7 +78,7 @@ The [OPEN](OPEN) statement is used to open a file or [OPEN_COM](OPEN_COM) serial
 *Example 1:* Function that displays errors and the number of errors in QBasic filenames. Returns 0 when filename is OK.
 
 
-'''vb
+```vb
 
  file$ = "Hello,~1.mp3"      'example call below
  LOCATE 20, 30: errors% = CheckName%(file$): COLOR 14: PRINT "  Total Errors ="; errors% 
@@ -102,23 +102,23 @@ FUNCTION CheckName% (Filename$)
   CheckName% = E%
 END FUNCTION 
 
-'''
+```
 *Note: The QBasic character error list is commented out and the function will return invalid filenames under QB64.
 
 
-'''text
+```text
 
 
                          Hello,~1.mp3  Total Errors<nowiki> = </nowiki>1
 
-'''
+```
 
 > *Note:* The screen output displays filename characters in green except for red comma QBasic error.
 
 
 *Example 2:* When **OPEN "SCRN:" FOR OUTPUT AS #f** is used, **PRINT #f** will print the text to the screen instead of to a file:
 
-'''vb
+```vb
 
 f% = FREEFILE 'should always be 1 at program start
 OPEN "SCRN:" FOR OUTPUT AS #f%
@@ -129,13 +129,13 @@ FOR i = 1 TO 2
     PRINT #i, "Hello World, Screen and File version"
 NEXT 
 
-'''<sub>code by Steve McNeill</sub>
+```<sub>code by Steve McNeill</sub>
 >  *Note:* Linux or Mac file names can use a path destination such as ".\SCRN:" to use SCRN: as an actual file name. 
 
 
 *Example 3:* Showcasing different file modes.
 
-'''vb
+```vb
 
 CLS
 
@@ -158,10 +158,10 @@ KILL "test.tst"
 END
 
 
-'''
+```
 
 
-'''text
+```text
 
 
 If test.tst didn't exist:
@@ -169,7 +169,7 @@ A new file was created named test.tst and then deleted.
 If test.tst did exist:
 It was overwritten with this and deleted.
 
-'''
+```
 
 > **Warning:** Make sure you don't have a file named test.tst before you run this or it will be overwritten.
 

@@ -30,7 +30,7 @@ The [CIRCLE](CIRCLE) statement is used in graphic [SCREEN (statement)](SCREEN (s
 
 *Example 1:* Finding when the mouse is inside of a circular area:
 
-'''vb
+```vb
 
 SCREEN 12
 
@@ -46,13 +46,13 @@ DO
   IF r& ^ 2 >= xy& THEN CIRCLE (cx&, cy&), r&, 10 ELSE CIRCLE (cx&, cy&), r&, 12
 LOOP UNTIL INKEY$ = CHR$(27) 'escape key exit 
 
-'''
+```
 >  *Explanation:* The square of the circle radius will be greater than or equal to the sum of the square of the mouse coordinates minus the center position when the pointer is inside of the circle. In this example the circle color will change from red to green.
 
 
 *Example 2:* Program illustrates how the CIRCLE command using a negative radian value can be used to create the hands of a clock.
 
-'''vb
+```vb
 
 CONST PI = 3.141593 'The mathematical value of PI to six places. You can also use QB64's native _PI.
 DIM clock(60)             'A dimensioned array to hold 60 radian points
@@ -141,7 +141,7 @@ DO
     IF hours% = 0 THEN hours% = 12
 LOOP UNTIL INKEY$ <> "" 'stop program if user presses a key 
 
-'''
+```
 <sub>code by Terry Ritchie</sub>
 
 

@@ -29,7 +29,7 @@ Template:LogicalTruthTable
 *Example 1:* Using 2 different boolean evaluations to determine a leap year.
 
 
-'''vb
+```vb
 
  INPUT "Enter a year greater than 1583: ", annum$
  Y = VAL(annum$)
@@ -37,7 +37,7 @@ Template:LogicalTruthTable
  leap2 = (Y MOD 4 = 0) - (Y MOD 100 = 0) + (Y MOD 400 = 0)
  PRINT "Year = "; annum$, "Leap1 = "; leap1, "Leap2 = "; leap2 
 
-'''
+```
 
 *Explanation:* Both boolean evaluations will return -1 if the year is a leap year. It is not simply every four years as many people think. That is checked by the first evaluation (Y MOD 4 = 0) of each. In new century years like 1900 (which was not a leapyear) there is only one leap year every 400 years. 100 is used with [MOD](MOD) to see if there is a remainder. When that is true, the boolean return of that part of the first evaluation will be 0. The second returns -1 (which is actually added). In both evaluations the result of (Y MOD 400 = 0) indicates a century leap year. 
 
@@ -54,7 +54,7 @@ Template:LogicalTruthTable
 
 *Example 2:* Moving an [ASCII](ASCII) character using the arrow keys and boolean statements to determine the new coordinate.
 
-'''vb
+```vb
 
 SCREEN 12
 COLOR 7
@@ -82,7 +82,7 @@ COLOR 7: LOCATE oldcordy%, oldcordx%: PRINT CHR$(p%); 'replace overwritten scree
 
 LOOP UNTIL k$ = CHR$(27) 
 
-'''
+```
 <sub>Code by AlgoreIthm</sub>
 
 

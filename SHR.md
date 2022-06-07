@@ -31,37 +31,37 @@ The [_SHR](_SHR) function is used to shift the bits of a numerical value to the 
 
 *Example 1:*
 
-'''vb
+```vb
 A~%% = 128 'set left most bit of an_UNSIGNED _BYTE
 PRINT A~%%
 PRINT _SHR(A~%%,7)
 PRINT _SHR(A~%%,8) 'shift the bit off the right 'edge'
 
-'''
+```
 
-'''text
+```text
 
 
  128
  1
  0
 
-'''
+```
 
 
 
 *Example 2:*
 
-'''vb
+```vb
 
 A~%% = 128
 FOR I%% = 0 TO 8
     PRINT _SHR(A~%%, I%%)
 NEXT I%%
 
-'''
+```
 
-'''text
+```text
 
 
  128
@@ -74,7 +74,7 @@ NEXT I%%
   1
   0
 
-'''
+```
 
 
 ## See Also

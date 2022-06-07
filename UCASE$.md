@@ -16,14 +16,14 @@ The [UCASE$](UCASE$) function outputs an all-uppercase version of a [STRING](STR
 
 *Example:* The following code guarantees that all letter key entries are capitalized:
 
-'''vb
+```vb
 PRINT "Do you want to continue? (y/n)"
 
 DO
     K$ = UCASE$(INKEY$)
 LOOP UNTIL K$ = "Y" OR K$ = "N"
 
-'''
+```
 
 
 ## See Also

@@ -20,12 +20,12 @@ The **_FILEEXISTS** function determines if a designated file name exists and ret
 
 Example:* Checks if a file exists before opening it.
 
-'''vb
+```vb
 
 Cl PRINT "Settings file found."
 END IF
 
-'''}}
+```}}
 
 
 ## See Also

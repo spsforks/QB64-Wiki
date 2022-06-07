@@ -44,7 +44,7 @@ The **DECLARE LIBRARY** declaration allows the use of external library [SUB](SUB
 
 *Example 1:* Using an **SDL** library procedure as a program SUB procedure to move the mouse pointer to a coordinate (works in versions prior to 1.000):
 
-'''vb
+```vb
 
 DECLARE LIBRARY
   SUB SDL_WarpMouse (BYVAL column AS LONG, BYVAL row AS LONG) 'SDL procedure name
@@ -64,13 +64,13 @@ SUB MouseMove (x AS LONG, y AS LONG)
 SDL_WarpMouse x, y     'call SDL library procedure
 END SUB 
 
-'''
+```
 <sub>Code by Galleon</sub>
 > *Explanation:* The SDL Library is included and loaded with QB64 versions prior to 1.000, so these procedures are directly available for use. 
 
 <center>**Using [ALIAS](ALIAS) to create a program SUB or FUNCTION** using **QB64 SDL ONLY**</center>
 
-'''vb
+```vb
 
 SCREEN 12
 DECLARE LIBRARY
@@ -82,19 +82,19 @@ MouseMove 100, 100
 _DELAY 2
 MouseMove 200, 200 
 
-'''
+```
 > *Explanation:* When a Library procedure is used to represent another procedure name use [ALIAS](ALIAS) instead. Saves creating a SUB!
 
 
 *Example 2:* Don't know if a C function is defined by C++ or QB64? Try using empty quotes.
 
-'''vb
+```vb
 
 DECLARE LIBRARY ""
     FUNCTION addone& (BYVAL value&)
 END DECLARE 
 
-'''
+```
 > *Explanation:* The C function 'addone' exists in a library QB64 already links to, but it hasn't been defined as a C function or a QB64 function. By using "" we are telling QB64 the function exists in a library which is already linked to and that it must define the C function before calling it, as well as allowing QB64 code to call it. Trying the above code without the "" will fail.
 
 >  **Note: What libraries are or aren't automatically used in the linking process is not formally defined, nor is it guaranteed to stay that way in future versions of QB64.**

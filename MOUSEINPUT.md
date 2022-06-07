@@ -19,7 +19,7 @@ The [_MOUSEINPUT](_MOUSEINPUT) function is used to monitor any new mouse positio
 
 *Example 1:* Mouse coordinate, click and scroll events are returned sequentially inside of a _MOUSEINPUT loop.
 
-'''vb
+```vb
 
 DO
   DO WHILE _MOUSEINPUT '      Check the mouse status
@@ -27,13 +27,13 @@ DO
   LOOP
 LOOP UNTIL INKEY$ <> "" 
 
-'''
+```
 >  *Explanation:* The latest mouse function status can be read after the loop. [_LIMIT](_LIMIT) and [_DELAY](_DELAY) loops will slow returns down.
 
 
 *Example 2:* How to use a _MOUSEINPUT loop to locate [PSET](PSET) positions on a screen using a right mouse button click.
 
-'''vb
+```vb
 
 SCREEN 12
 
@@ -56,12 +56,12 @@ DO ' main program loop
 
 LOOP UNTIL INKEY$ = CHR$(27) 
 
-'''
+```
 
 
 *Example 3:* Clearing any mouse data read before or during an [INPUT](INPUT) entry. Press "I" to enter input:
 
-'''vb
+```vb
 
 PRINT "Press I to enter input! Press Q to quit"
 DO 
@@ -86,7 +86,7 @@ LOOP WHILE _MOUSEINPUT
 PRINT count        'returns the number of loops before mouse data is cleared
 RETURN 
 
-'''
+```
 > *Explanation:* Click the mouse a few times while entering [INPUT](INPUT) text. When Enter is pressed, the number of loops are displayed.
 
 

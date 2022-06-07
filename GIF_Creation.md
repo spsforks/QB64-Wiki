@@ -7,7 +7,7 @@ The following routine can be used with QBasic or QB64 to create a Graphic Inform
 
 
 
-'''vb
+```vb
  '*********************************** DEMO CODE **********************************
 'Save code as a BAS file! Includes the GIFcreate.BI and BM text files. Demo by CodeGuy
 DEFINT A-Z
@@ -28,11 +28,11 @@ MakeGIF "GIFtemp.gif", 0, 0, _WIDTH - 1, _HEIGHT - 1, 256  'use 319 and 199 in Q
 
 '************************************ END DEMO *********************************
 
-'''
+```
 
 <center>*GIFcreate.BM text [$INCLUDE]($INCLUDE) file:*</center>
 
-'''text
+```text
 
  '-----------------------------------------------------------------------------
 '             GIFcreate.BM Compression Routine v1.00 By Rich Geldreich 1992
@@ -264,7 +264,7 @@ LOOP                                     'loop until we don't have a full byte
 RETURN
 END SUB
 
-'''
+```
 
 
 

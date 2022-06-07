@@ -19,7 +19,7 @@ The **POKE** statement sets the value of a specified memory address offset. **QB
 
 > *Example 1:* Turning keyboard Lock and Insert modes on and off.
 
-'''vb
+```vb
 
  DEF SEG = 0
  oldsetting% = PEEK(1047)
@@ -30,10 +30,10 @@ The **POKE** statement sets the value of a specified memory address offset. **QB
  DEF SEG
 
 
-'''
+```
 > *Note: Use [XOR](XOR) instead of [OR](OR) above to alternate between on and off modes.*
 
-'''vb
+```vb
 
  DEF SEG = 0
  oldsetting% = PEEK(1047)
@@ -43,7 +43,7 @@ The **POKE** statement sets the value of a specified memory address offset. **QB
  POKE 1047,PEEK(1047) AND 127 ' TURNS OFF INSERT MODE (127 = 255 - 128)
  DEF SEG 
 
-'''
+```
 > *Note: Using [AND](AND) requires that the bit value is subtracted from 255 to turn off a bit.* The above examples won't work in NT.
 
 > **Warning: The keyboard lights may NOT change so it is a good idea to restore the original settings!**
@@ -51,7 +51,7 @@ The **POKE** statement sets the value of a specified memory address offset. **QB
 
 *Example 2:* A small PEEK and POKE fractal program.
 
-'''vb
+```vb
 
 SCREEN 13
 DEF SEG = &HA000     'set to read screen buffer
@@ -63,12 +63,12 @@ DO
 LOOP UNTIL INKEY$ <> ""
 DEF SEG 
 
-''' 
+``` 
 
 
 *Example 3:* Highlighting a row of text in Screen 0
 
-'''vb
+```vb
 
 minX = 20: maxX = 60: minY = 10: maxY = 24
 selection = 0 'the screen Y coordinate of the previously highlighted item
@@ -100,7 +100,7 @@ FOR x = x1 TO x2
 NEXT
 END SUB 
 
-'''
+```
 
 
 *See Example:* [SelectScreen](SelectScreen) (Screen mode selection) 

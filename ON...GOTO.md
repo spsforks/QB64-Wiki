@@ -22,7 +22,7 @@
 
 *Example:* Changing the program flow when a value is not 0.
 
-'''vb
+```vb
 
 CLS
 a = 2
@@ -38,14 +38,14 @@ END
 PRINT "you don't get to see this neither..."
 END 
 
-'''
+```
 
-'''text
+```text
 
 
 And here we are...
 
-'''
+```
 
 
 *Explanation:* Since *a* equals 2 it goes to the second item in the list (hereweare) and branches to there. Try changing *a' to 1 or 3.

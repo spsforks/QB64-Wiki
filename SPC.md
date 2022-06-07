@@ -22,17 +22,17 @@ The [SPC](SPC) function is used in [PRINT](PRINT) and [LPRINT](LPRINT) statement
 
 *Example:* Using SPC to space a text print.
 
-'''vb
+```vb
 PRINT "123456789"
 PRINT "abc" ; SPC(3) ; "123"
-'''
+```
 
-'''text
+```text
 
 123456789
 abc   123
 
-'''
+```
 
 
 

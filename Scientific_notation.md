@@ -26,7 +26,7 @@
 
 *Example:* A string function that displays extremely small or large exponential decimal values.
 
-'''vb
+```vb
 
 num# = -2.34D-15
 PRINT num#
@@ -53,16 +53,16 @@ END IF
 StrNum$ = sign$ + DP$ + min$ + num$ + add$
 END FUNCTION 
 
-'''
+```
 <sub>Code by Ted Weissgerber</sub>
 
-'''text
+```text
 
 
  -2.34D-15
  -.00000000000000234
 
-'''
+```
 
 
 

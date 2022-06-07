@@ -24,7 +24,7 @@ RelationalTable
 
 *Example:* Using AND in an IF statement.
 
-'''vb
+```vb
 
 
 a% = 100
@@ -33,21 +33,21 @@ b% = 50
 IF a% > b% AND a% < 200 THEN PRINT "True"
 
 
-'''
+```
 
-'''text
+```text
 
 
 True
 
-'''
+```
 
 *Explanation:* Both condition evaluations must be true for the code to be executed.
 
 
 *Example:* Using a AND a more complex way.
 
-'''vb
+```vb
 
 a% = 100
 b% = 50
@@ -61,14 +61,14 @@ ELSE
 PRINT "False"
 END IF 
 
-'''
+```
 
-'''text
+```text
 
 
 True
 
-'''
+```
 
 *Explanation:* The evaluations in the paranteses are evaluated first then the evaluation *of* the paranteses takes place, since all evaluations return True the IF...THEN evaluation returns True. If any of the evaluations returned False then the IF...THEN evaluation would also return False.
 

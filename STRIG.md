@@ -18,7 +18,7 @@ QB64 ## Syntax
 * **QB64** can read many buttons from many devices and allows the use of devices with more than 2 buttons.
 * Returns True(-1) or False(0) button press values for 2 devices. Each leading STRIG checks for missed button press events:
 
-'''text
+```text
 
   **STRIG(0) = -1  'lower button 1 on device 1 pressed since last STRIG(0) read**
   **STRIG(1) = -1  'lower button 1 on device 1 currently pressed**
@@ -33,17 +33,17 @@ QB64 ## Syntax
   STRIG(10) = -1 'button 3 on device 2 pressed since last STRIG(10) read 'QB64 only
   STRIG(11) = -1 'button 3 on device 2 currently pressed
 
-'''
+```
 
 * STRIG(0), STRIG(2), STRIG(4), STRIG(6), STRIG(8), STRIG(10) are used to monitor any presses that might have been missed.
 * **QB64** allows more than two controllers by using the second parameter as the stick number and the odd or even STRIG values:
 
-'''text
+```text
 
 **STRIG(0, 3): STRIG(1, 3): STRIG(4, 3): STRIG(5, 3): STRIG(8, 3): STRIG(9, 3) 'device 3 {odd)**
 STRIG(2, 4): STRIG(3, 4): STRIG(6, 4): STRIG(7, 4): STRIG(10, 4): STRIG(11, 4) 'device 4 (even)
 
-'''
+```
  
 > Odd devices use 0, 1, 4, 5, 8 and 9 and Even devices use 2, 3, 6, 7, 10 and 11 as first parameters with device number following.
 * **There will not be an error if you try to read too many device axis or buttons!**
@@ -51,7 +51,7 @@ STRIG(2, 4): STRIG(3, 4): STRIG(6, 4): STRIG(7, 4): STRIG(10, 4): STRIG(11, 4) '
 
 *Example:* Displays the input from 3 joysticks, all with dual sticks and 3 buttons.
 
-'''vb
+```vb
 
 DO: _LIMIT 10
 
@@ -67,7 +67,7 @@ DO: _LIMIT 10
     
 LOOP UNTIL INKEY$ > "" 
 
-'''
+```
 > *Explanation:* Notice the extra **QB64 only** parameters used to cater for the 2nd stick and the buttons of the 3rd joystick.
 
 

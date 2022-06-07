@@ -16,7 +16,7 @@ The [ERR](ERR) function returns the last QBasic error code number.
 
 *Example:* Simulating an error to test a program error handler that looks for a "Subscript out of range" error.
 
-'''vb
+```vb
 
 ON ERROR GOTO handler
 
@@ -36,7 +36,7 @@ IF ERR = 9 THEN
 END IF
 RESUME NEXT               'RESUME can only be used in error handlers 
 
-'''
+```
 
 
 ## See Also

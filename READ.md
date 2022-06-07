@@ -23,7 +23,7 @@ The **READ** statement reads values from a [DATA](DATA) field and assigns them t
 
 *Example 1:* Placing data into an array.
 
-'''vb
+```vb
 
 DIM A(10) AS SINGLE
 FOR I = 1 TO 10
@@ -37,21 +37,21 @@ END
 DATA 3.08, 5.19, 3.12, 3.98, 4.24
 DATA 5.08, 5.55, 4.00, 3.16, 3.37 
 
-'''
+```
 
-'''text
+```text
 
 
  3.08  5.19  3.12  3.98  4.24  5.08  5.55  4  3.16  3.37
 
-'''
+```
 
 > *Explanation:* This program reads the values from the DATA statements into array A. After execution, the value of A(1) is 3.08, and so on. The DATA statements may be placed anywhere in the program; they may even be placed ahead of the READ statement.
 
 
 *Example 2:* Reading three pieces of data at once.
 
-'''vb
+```vb
 
  PRINT " CITY ", " STATE  ", " ZIP"
  PRINT STRING$(30, "-")  'divider
@@ -60,16 +60,16 @@ DATA 5.08, 5.55, 4.00, 3.16, 3.37
 
  DATA "DENVER,", COLORADO, 80211 
 
-'''
+```
 
-'''text
+```text
 
 
   CITY        STATE       ZIP
  ------------------------------
  DENVER,     COLORADO     80211
 
-'''
+```
 
 > *Note:* String DATA values do not require quotes unless they contain commas, end spaces or QBasic keywords.
 

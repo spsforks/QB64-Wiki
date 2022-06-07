@@ -21,7 +21,7 @@ The [FIELD](FIELD) statement creates a [STRING](STRING) type definition for a [R
 
 *Example:* Comparing a [TYPE](TYPE) definition with a FIELD [STRING](STRING) definition. Demo using a [TYPE](TYPE) definition to create a file:
 
-'''vb
+```vb
 
 TYPE ClientType
    CName AS STRING * 30     '30 bytes
@@ -58,11 +58,11 @@ ClientData:
    DATA "Jim Morrison","19 Doorway Dr.","Belleview","PA","15236"
    DATA "END",0,0,0,0 
 
-'''
+```
 
 Demo using the FIELD statement to read the file:
 
-'''vb
+```vb
 
 CONST NM = 30, AD = 30, CT = 15, ST = 2, ZC = 5  ' Define field and record lengths with constants.
 CONST RLEN = NM + AD + CY + ST + ZC
@@ -87,7 +87,7 @@ LOOP
 CLOSE #1
 END 
 
-'''
+```
 
 
 ## See Also

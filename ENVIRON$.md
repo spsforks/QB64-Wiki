@@ -34,7 +34,7 @@ The [ENVIRON$](ENVIRON$) function returns a [STRING](STRING) environmental value
 *Example 1:* Viewing the list of environmental parameter settings using a counter loop like SET does in DOS.
 
 
-'''vb
+```vb
 
 DO
   i = i + 1
@@ -43,9 +43,9 @@ DO
   IF i MOD 20 = 0 THEN PRINT "Press a key": SLEEP: CLS
 LOOP UNTIL setting$ = ""
 
-'''
+```
 
-'''text
+```text
 
 
 ALLUSERSPROFILE=C:\ProgramData
@@ -72,14 +72,14 @@ USERDOMAIN=TED-LAPTOP
 USERNAME=Ted
 USERPROFILE=C:\Users\Ted
 
-'''
+```
 
 > *Note:* Windows environmental settings are listed alphabetically, 20 at a time. **QB64 may not read all of them or may return an empty string.** The settings above were returned with SET in DOS. PROMPT returned nothing where SET returned $P$G. 
 
 
 *Example 2:* Creating a shortcut on a user's desktop for QB64.EXE using the program's icon. Must be run in program's folder to work!
 
-'''vb
+```vb
 
 '###  Enter the EXE file and ICON or BMP image for the shortcut.
 
@@ -126,7 +126,7 @@ PRINT #f, "IconFile = " + Q$ + PATH$ + ICON$ + Q$ 'Icon path in working folder
 CLOSE #f
 END SUB 
 
-'''
+```
 <sub>Adapted from code by Dav</sub>
 >  *Explanation:* The SUB program finds the current program's path and user's desktop path. It then creates the shortcut on the desktop with a program icon. The custom icon should be in the program's folder. If an environmental path is not found, the shortcut is placed in the program's folder. The SUB can be added to any program. 
 > **NOTE:** A temorary file named PRGMDIR.INF is created and deleted in the example above.

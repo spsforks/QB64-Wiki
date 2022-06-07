@@ -4,10 +4,10 @@ The **semicolon** is used in a [PRINT](PRINT) statement to stop the screen print
 *Usage:* COLOR 13: PRINT "Value ="; value1; value2; value3
 
 
-'''text
+```text
 
 1234  5678  9012
-'''
+```
 
 
 

@@ -25,7 +25,7 @@ The [_MEMFILL](_MEMFILL) statement converts a value to a specified type, then fi
 
 *Example:* Filling array values quickly using FOR loops or a simple memory fill.
 
-'''vb
+```vb
 
 DIM a(100, 100) AS LONG
 DIM b(100, 100) AS LONG
@@ -43,7 +43,7 @@ mema = _MEM(b())
 _MEMFILL mema, mema.OFFSET, mema.SIZE, 13 AS LONG
 _MEMFREE mema 
 
-'''
+```
 
 
 ## See Also

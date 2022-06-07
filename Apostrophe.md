@@ -11,19 +11,19 @@ The **apostrophe** is used to tell the compiler to ignore a statement or program
 ## Example(s)
 
 
-'''vb
+```vb
 
 COLOR 11: PRINT "Print this...." ' PRINT "Don't print this program comment!"
 
-'''
+```
 
 
-'''text
+```text
 
 
 Print this....
 
-'''
+```
 
 
 

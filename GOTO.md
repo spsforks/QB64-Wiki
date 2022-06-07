@@ -22,7 +22,7 @@ The [GOTO](GOTO) statement sends the procedure to a line label or a line number 
 
 *Example:*
 
-'''vb
+```vb
 
 1 PRINT "first line": GOTO gohere
 2 PRINT "second line": GOTO 3
@@ -33,16 +33,16 @@ GOTO 2
 
 3 END 
 
-'''
+```
 
-'''text
+```text
 
 
 first line
 third line
 second line
 
-'''
+```
 
 
 > *Explanation:* After it prints "first line" it goes to the line label "gohere" where it prints "third line", then it goes to the line that is numbered "2" and prints "second line" and goes to line number 3 and an [END](END) statement which ends the program.

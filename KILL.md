@@ -22,11 +22,11 @@ The [KILL](KILL) statement deletes a file designated by a [STRING](STRING) value
 ## Example(s)
  
 
-'''vb
+```vb
 
 KILL "C:\QBasic\data\2000data.dat"
 
-'''
+```
 
 
 ## See Also

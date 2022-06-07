@@ -23,7 +23,7 @@ PageLegacySupport
 * The [TYPE](TYPE) definition below will work for both [INTERRUPT](INTERRUPT) and INTERRUPTX statement calls
 * INTERRUPT can use all of the below TYPE elements when they are required.
 
-'''text
+```text
 
 
 TYPE RegTypeX
@@ -39,14 +39,14 @@ TYPE RegTypeX
    es AS INTEGER
 END TYPE 
 
-'''
+```
 
 
-'''vb
+```vb
 
 DIM SHARED inregs AS RegTypeX, outregs AS RegTypeX
 
-'''
+```
 >  QBasic's *RegType.BI* $INCLUDE file can be used by INTERRUPT or [INTERRUPTX](INTERRUPTX)
 
 

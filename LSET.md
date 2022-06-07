@@ -17,7 +17,7 @@
 
 *Example 1:* Using LSET with a [FIELD](FIELD) definition. Note: May create an empty (unchanged) file that can be deleted.
 
-'''vb
+```vb
 
 OPEN "testfile.dat" FOR RANDOM AS #1 LEN = 15
 FIELD 1, 6 AS a$, 9 AS other$
@@ -28,20 +28,20 @@ PRINT a$, b$, other$, another$
 CLOSE #1
 
 
-'''
+```
 
-'''text
+```text
 
 
 123456            12         123456789     3456123456789 
 
-'''
+```
 
 
 
 *Example 2:* How LSET can define two different string length values in one statement.
 
-'''vb
+```vb
 
 
 TYPE ninestring
@@ -60,15 +60,15 @@ LSET you.head = me.head
 PRINT "me.head: "; me.head
 PRINT "you.head: "; you.head
 
-'''
+```
 
-'''text
+```text
 
 
 me.head: ACHES NOT
 you.head: ACHES
 
-'''
+```
 
 
 

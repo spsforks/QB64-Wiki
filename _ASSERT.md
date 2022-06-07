@@ -23,7 +23,7 @@ The [_ASSERT](_ASSERT) statement can be used to perform tests in code that's in 
 
 *Example:* Adding test checks for parameter inputs in a function. 
 
-'''vb
+```vb
 
 $ASSERTS:CONSOLE
  
@@ -42,7 +42,7 @@ FUNCTION myFunc$ (value AS SINGLE)
     myFunc$ = STRING$(value, "*") + STR$(value) + " star" + plural$ + " :-)"
 END FUNCTION
 
-'''
+```
 
 
 ## See Also

@@ -20,11 +20,11 @@ The [NAME](NAME) statement changes the name of a file or directory to a new name
 ## Example(s)
 
 
-'''vb
+```vb
 
  NAME "BIGBAD.TXT" AS "BADWOLF.TXT"
 
-'''
+```
 
 
 ## See Also

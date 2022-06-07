@@ -11,21 +11,21 @@ The [_G2D](_G2D) function converts a **gradient** value into a **degree** value.
 
 *Example:* Coverting Gradients into Degree.
 
-'''vb
+```vb
 
 INPUT "Give me an angle in Gradients ", D
 R = _G2D(D)
 PRINT "That angle in Degrees is "; R
 
-'''
+```
 
-'''text
+```text
 
 
 Give me an angle in Gradients 60
 That angle in Degrees is     54
 
-'''
+```
 
 
 

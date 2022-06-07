@@ -15,7 +15,7 @@ The **POS** function returns the current print cursor text column position.
 
 *Example:* Column positions after prints.
 
-'''vb
+```vb
 
 PRINT POS(0) 'column position always starts on 1 at top of new or after CLS
 PRINT "hello"; 'column position is 6 on same row immediately after text
@@ -27,7 +27,7 @@ PRINT 'start new row
 PRINT
 PRINT POS(0) ' column position is 1 on next row 
 
-'''
+```
 *Note:* Column tab prints may not always move 9 spaces past the center of the screen. Some may move text to next row.
 
 

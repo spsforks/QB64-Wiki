@@ -39,7 +39,7 @@
 
 *Example 1:* SELECT CASE can use literal or variable [STRING](STRING) or numerical values in CASE comparisons:
 
-'''vb
+```vb
 
 INPUT "Enter a whole number value from 1 to 40: ", value
 value1 = 10
@@ -54,13 +54,13 @@ SELECT CASE value
   CASE ELSE: PRINT "Other value" 'values less than 10
 END SELECT 
 
-'''
+```
 >  *Explanation:* The first true CASE is executed and SELECT CASE is exited. "Other value" is printed for values less than 10.
 
 
 *Example 2:* SELECT CASE will execute the first CASE statement that is true and ignore all CASE evaluations after that:
 
-'''vb
+```vb
 
 a = 100
 SELECT CASE a          'designate the value to compare
@@ -83,21 +83,21 @@ SELECT CASE a          'designate the value to compare
    PRINT "This will only print if it gets this far!"
 END SELECT 
 
-'''
+```
 
-'''text
+```text
 
 This will be displayed when a equals 100
 (and no other case will be checked)
 
-'''
+```
 
 > *Explanation:* The first case where a value is true is shown, the remainder are skipped. Try changing the value of *a*.
 
 
 *Example 3:* Same as Example 2 but, SELECT EVERYCASE will execute every CASE statement that is true.
 
-'''vb
+```vb
 
 a = 100
 SELECT EVERYCASE a          'designate the value to compare
@@ -120,23 +120,23 @@ SELECT EVERYCASE a          'designate the value to compare
    PRINT "This will only print if no other CASE is true!"
 END SELECT 
 
-'''
+```
 
-'''text
+```text
 
 This will be displayed when a equals 100
 (and other cases will be checked)
 This will be shown as 100 is less than 150
 This will be shown as 100 is between 50 and 150
 
-'''
+```
 
 > *Explanation:* [CASE ELSE](CASE ELSE) will only execute if no other CASE was true. See Example 5 for more usages.
 
 
 *Example 4:* SELECT CASE evaluates string values by the [ASC](ASC) code value according to [ASCII](ASCII).
 
-'''vb
+```vb
 
 PRINT "Enter a letter, number or punctuation mark from the keyboard: ";
 valu$ = INPUT$(1)
@@ -153,13 +153,13 @@ SELECT CASE value$
   CASE ELSE: PRINT "other value" 'key entry below A including all numbers
 END SELECT 
 
-'''
+```
 >  *Notes:* [STRING](STRING) values using multiple characters will be compared by the [ASCII](ASCII) code values sequentially from left to right. Once the equivalent code value of one string is larger than the other the evaluation stops. This allows string values to be compared and sorted alphabetically using [Greater Than](Greater Than) or [Less Than](Less Than) and to [SWAP](SWAP) values in [arrays](arrays) regardless of the string lengths.
 
 
 *Example 5:* EVERYCASE is used to draw sections of digital numbers in a simulated LED readout using numbers from 0 to 9:
 
-'''vb
+```vb
 
 SCREEN 12
 DO
@@ -185,7 +185,7 @@ DO
   END SELECT
 LOOP UNTIL num > 9 
 
-'''
+```
 >  **Note:** [CASE ELSE](CASE ELSE) will only execute if no other CASE is true! Changing the comparison value in a CASE may affect later CASE evaluations. **Beware of duplicate variables inside of cases affecting the comparison values and remaining cases.**
 
 

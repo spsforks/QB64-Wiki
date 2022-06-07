@@ -28,7 +28,7 @@ The **_DEVICE$** function returns a [STRING](STRING) value holding the controlle
 
 *Example 1:* Checking for the system's input devices and the number of buttons available.
 
-'''vb
+```vb
 
 devices = _DEVICES  'MUST be read in order for other 2 device functions to work!
 PRINT "Number of input devices found ="; devices
@@ -37,9 +37,9 @@ FOR i = 1 TO devices
   PRINT "Buttons:"; _LASTBUTTON(i); "Axis:"; _LASTAXIS(i); "Wheels:"; _LASTWHEEL(i)
 NEXT 
 
-'''
+```
 
-'''text
+```text
 
 Number of input devices found = 3
 [KEYBOARD][BUTTON]
@@ -49,14 +49,14 @@ Buttons: 3 Axis: 2 Wheels: 3
 [CONTROLLER][NAME][Microsoft Sidewinder Precision Pro (USB)](NAME][Microsoft Sidewinder Precision Pro (USB))[BUTTON][AXIS]
 Buttons: 9 Axis: 6 Wheels: 0
 
-'''
+```
 
 > Note: The [STRIG](STRIG)/[STICK](STICK) commands won't read from the keyboard or mouse device the above example lists. They will only work on controllers.
 
 
 *Example 2:* Finding the number of mouse buttons available in QB64. This could also be used for other devices.
 
-'''vb
+```vb
 
 FOR d = 1 TO _DEVICES  'number of input devices found
   dev$ = _DEVICE$(d)
@@ -64,7 +64,7 @@ FOR d = 1 TO _DEVICES  'number of input devices found
 NEXT
 PRINT buttons; "mouse buttons available" 
 
-'''
+```
 
 
 ## See Also

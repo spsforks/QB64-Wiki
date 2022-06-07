@@ -21,7 +21,7 @@ The [WRITE (file statement)](WRITE (file statement)) file statement writes a lis
 
 *Example:* Writes new data to a text file sequentially and reads it back to the program screen.
 
-'''vb
+```vb
 
 filename$ = "testfile.dat" 
 x = 1: y = 2: z$ = "Three" 
@@ -47,24 +47,24 @@ WRITE a, b, c$
 
 END 
 
-'''
+```
 >  *File content:* [WRITE](WRITE) string values will include quotation marks, but they are not required to read the file.
 
-'''text
+```text
 
 
 1,2,"Three"
 
-'''
+```
 
 >  *Screen output:* [PRINT](PRINT) string values will not display enclosing quotes. [WRITE](WRITE) screen displays will.
 
-'''text
+```text
 
  1           2          Three
 1,2,"Three"
 
-'''
+```
 
 
 

@@ -18,7 +18,7 @@ The [ABS](ABS) function returns the unsigned numerical value of a variable or li
 
 *Example:* Finding the absolute value of positive and negative numerical values.
 
-'''vb
+```vb
 
 a = -6
 b = -7
@@ -28,13 +28,13 @@ b = ABS(b)
 c = ABS(c)
 PRINT a, b, c 
 
-'''
+```
 
-'''text
+```text
 
  6        7        8
 
-'''
+```
 
 
 

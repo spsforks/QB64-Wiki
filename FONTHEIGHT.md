@@ -18,7 +18,7 @@ The [_FONTHEIGHT](_FONTHEIGHT) function returns the font height of a font handle
 
 *Example:* Finding the [_FONT](_FONT) or text block size of printed [STRING](STRING) characters in graphic [SCREEN](SCREEN) modes.
 
-'''vb
+```vb
 
 DO
   INPUT "Enter Screen mode 1, 2 or 7 to 13 or 256, 32 for _NEWIMAGE: ", scr$
@@ -50,7 +50,7 @@ TextWidth& = _PRINTWIDTH("W") 'measure width of one font or text character
 TextHeight& = _FONTHEIGHT 'can measure normal text block heights also
 END SUB 
 
-'''
+```
 
 
 ## See Also

@@ -15,19 +15,19 @@ The [_CEIL](_CEIL) function rounds a numeric value up to the next whole number o
 
 *Example:* Displaying the rounding behavior of [INT](INT), [CINT](CINT) and [FIX](FIX) vs [_CEIL](_CEIL).
 
-'''vb
+```vb
 
 PRINT INT(2.5), CINT(2.5), FIX(2.5), _CEIL(2.5)
 PRINT INT(-2.5), CINT(-2.5), FIX(-2.5), _CEIL(-2.5)
 
-'''
+```
 
-'''text
+```text
 
  2        2         2         3
 -3       -2        -2        -2
 
-'''
+```
 
 
 

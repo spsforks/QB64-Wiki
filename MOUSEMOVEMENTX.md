@@ -17,7 +17,7 @@ The [_MOUSEMOVEMENTX](_MOUSEMOVEMENTX) function returns the relative horizontal 
 
 *Example 1:* Since values returned are relative to the last position, the returns can be positive or negative.
 
-'''vb
+```vb
 
 SCREEN 12
 PX = 320: PY = 240 'center position
@@ -31,12 +31,12 @@ DO: _LIMIT 200
   LOCATE 1, 1: PRINT PX, PY
 LOOP UNTIL INKEY$ = CHR$(27) 'escape key exit 
 
-'''
+```
 
 
 *Example 2:* MOD is used to keep horizontal movement of the circle and cursor inside of the SCREEN 13 window(320). 
 
-'''vb
+```vb
 
 SCREEN 13, , 1, 0
 DO: _LIMIT 200
@@ -51,7 +51,7 @@ DO: _LIMIT 200
   PCOPY 1, 0
 LOOP UNTIL INKEY$ <> "" 'press any key to exit 
 
-'''
+```
 >  **NOTE:** When using the function this way, give the user a keypress exit option. Make sure the user has some way to exit that is not dependent on clicking the X button.
 
 

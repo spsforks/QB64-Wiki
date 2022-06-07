@@ -18,7 +18,7 @@ The [_ERRORMESSAGE$](_ERRORMESSAGE$) function returns a human-readable descripti
 *Example 1:* Using an error handler that ignores any error.
 
 
-'''vb
+```vb
 
  ON ERROR GOTO Errhandler
    ' Main module program error simulation code
@@ -33,7 +33,7 @@ The [_ERRORMESSAGE$](_ERRORMESSAGE$) function returns a human-readable descripti
   BEEP             ' warning beep
  RESUME NEXT       ' moves program to code following the error. 
 
-'''
+```
 
 
 ## See Also

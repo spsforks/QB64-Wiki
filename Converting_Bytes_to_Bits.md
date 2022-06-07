@@ -6,7 +6,7 @@ Bits are numbered from 0 to 7 and normally are read from the most significant bi
 
 >  The following example shows how to convert an [_UNSIGNED](_UNSIGNED) [_BYTE](_BYTE) or [INTEGER](INTEGER) value(0 to 255) to a [Binary](Binary) [STRING](STRING) number in QBasic.
 
-'''vb
+```vb
 
 DIM byte as _UNSIGNED _BYTE
 
@@ -16,13 +16,13 @@ FOR bit = 7 to 0 STEP -1
   IF byte AND 2 ^ bit THEN PRINT "1"; ELSE PRINT "0";
 NEXT 
 
-'''
+```
 >  *Notes:* The above code can be adapted to place a value into a bit [Arrays](Arrays) for up to 8 flag values in a single Byte.
 
 
 >  How upper and lower [_BYTE](_BYTE) bits are read from an [INTEGER](INTEGER) value using whole decimal or [HEX$](HEX$) values. 
 
-'''vb
+```vb
 
 SCREEN 12
 
@@ -61,7 +61,7 @@ DO
 LOOP UNTIL first = 0 OR Num > 32767 OR Num < -32768 OR (Num < -1 AND Num > -32768 
 END
 
-'''<sub>Code by Ted Weissgerber</sub>
+```<sub>Code by Ted Weissgerber</sub>
 
 
 *See also:*

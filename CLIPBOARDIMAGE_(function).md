@@ -23,7 +23,7 @@ The [_CLIPBOARDIMAGE (function)](_CLIPBOARDIMAGE (function)) function pastes an 
 
 *Example:* Monitoring the clipboard for new images copied from other programs:
 
-'''vb
+```vb
 SCREEN _NEWIMAGE(800, 600, 32)
 DO
     CLS
@@ -46,7 +46,7 @@ DO
     _LIMIT 10
 LOOP
 
-'''
+```
 <sub>Code by Fellippe Heitor</sub>
 
 

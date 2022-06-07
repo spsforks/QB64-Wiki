@@ -20,7 +20,7 @@ The [_CONNECTIONADDRESS](_CONNECTIONADDRESS) function returns a connected user's
 
 *Example:* A Host logging new chat clients in a Chat program. See the [_OPENHOST](_OPENHOST) example for the rest of the code used.
 
-'''vb
+```vb
 
 f = FREEFILE
 OPEN "ChatLog.dat" FOR APPEND AS #f ' code at start of host section before DO loop.
@@ -36,7 +36,7 @@ IF newclient THEN
   PRINT #Users(numclients),"Welcome!" ' from Host to new clients only
 END IF 
 
-'''
+```
 >  *Explanation:* The function returns the new client's IP address to the IP$ variable. Prints the IP and the original login position to a log file. The information can later be used by the host for referance  if necessary. The host could set up a ban list too. 
 
 

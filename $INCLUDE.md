@@ -29,9 +29,9 @@
 ## Example(s)
 
 
-'''vb
+```vb
 ** '$INCLUDE:** 'QB.BI'
-'''
+```
 
 
 ### More examples

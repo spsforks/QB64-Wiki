@@ -18,13 +18,13 @@ The [_SCREENEXISTS](_SCREENEXISTS) function returns true (-1) once a screen has 
 
 *Example:* The loop waits until the screen exists to add the title.
 
-'''vb
+```vb
 
 SCREEN 12
 DO: LOOP UNTIL _SCREENEXISTS
 _TITLE "My Title"
 
-'''
+```
 
 
 ## See Also

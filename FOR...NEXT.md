@@ -37,7 +37,7 @@ The [FOR](FOR) statement creates a counter loop using specified start and stop n
 
 *Example 1:* Adding all of the even numbers from 10 to 0.
 
-'''vb
+```vb
 
 FOR i = 10 TO 0 STEP -2
   totaleven% = i + totaleven%
@@ -45,20 +45,20 @@ FOR i = 10 TO 0 STEP -2
 NEXT
 PRINT "After loop, i ="; i 
 
-'''
+```
 
-'''text
+```text
 
 10 18 24 28 30 30 After loop, i = -2
 
-'''
+```
 
 > *Explanation:* The loop counts down from 10 to every even value below it. The counter keeps stepping down until the FOR stop limit is reached or exceeded. Note that the value of i is -2 after the loop is exited. [NEXT](NEXT) always increments the counter one last time.
 
 
 *Example 2:* How an entire FOR loop block is ignored when the start and stop limits do not match the default or [STEP](STEP) increment.
 
-'''vb
+```vb
 
 PRINT "hi"
 
@@ -68,13 +68,13 @@ NEXT
 
 PRINT "bye"
 
-'''
+```
 
-'''text
+```text
 
 hi
 bye 
-'''
+```
 
 
 

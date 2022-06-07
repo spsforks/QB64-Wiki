@@ -320,7 +320,7 @@
 
 *Example:* Setting up Unicode functionality in a program using any monospace font containing characters from a Code Page.
 
-'''vb
+```vb
 
 _FONT _LOADFONT("c:\windows\fonts\cour.ttf", 24, "MONOSPACE")
 'use codepage 850
@@ -354,7 +354,7 @@ DATA 9562,9556,9577,9574,9568,9552,9580,164,240,208,202,203,200,305,205,206,207,
 DATA 9608,9604,166,204,9600,211,223,212,210,245,213,181,254,222,218,219,217,253,221,175,180
 DATA 173,177,8215,190,182,167,247,184,176,168,183,185,179,178,9632,160 
 
-'''
+```
 <sub>Code by Galleon</sub>
 
 

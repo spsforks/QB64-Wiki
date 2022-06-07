@@ -16,14 +16,14 @@ The [LCASE$](LCASE$) function outputs an all-lowercase version of a [STRING](STR
 
 *Example:* The following code guarantees that all user letter entries will be lower case:
 
-'''vb
+```vb
 PRINT "Do you want to continue? (y/n)"
 
 DO
     K$ = LCASE$(INKEY$)
 LOOP UNTIL K$ = "y" OR K$ = "n"
 
-'''
+```
 
 
 ## See Also

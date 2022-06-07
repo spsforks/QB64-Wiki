@@ -22,7 +22,7 @@ The [_CONSOLE](_CONSOLE) statement can be used to turn a console window ON/OFF.
 
 *Example 1:* Hiding and displaying a console window. Use [_DELAY](_DELAY) to place console in front of main program window.
 
-'''vb
+```vb
 
 $CONSOLE
 _CONSOLE OFF 'close original console
@@ -37,13 +37,13 @@ _DEST 0 'destination program window
 PRINT nme$
 END 
 
-'''
+```
 >  *Explanation:* The [_DEST](_DEST) must be changed with [_DEST](_DEST) [_CONSOLE](_CONSOLE) to get [INPUT](INPUT) from the [$CONSOLE]($CONSOLE) screen.
 
 
 *Example 2:* [_CONSOLETITLE](_CONSOLETITLE) can be used to create a console title, but it must be redone every time the console window is restored once turned off:
 
-'''vb
+```vb
 
 $CONSOLE
 
@@ -56,7 +56,7 @@ _DELAY 10
 _CONSOLE ON
 _CONSOLETITLE "secondone"
 
-'''
+```
 >  *Note:* Some versions of Windows may display the program path or Administrator: prefix in console title bars.
 
 

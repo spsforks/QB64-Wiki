@@ -23,7 +23,7 @@
 
 *Example:* Finding the FOR variable value AFTER a simple counter loop to 10.
 
-'''vb
+```vb
 
 FOR i = 1 TO 10
 PRINT i;
@@ -31,14 +31,14 @@ NEXT i
 
 PRINT "AFTER the LOOP, NEXT makes the value of i ="; i 
 
-'''
+```
 
-'''text
+```text
 
 
 1 2 3 4 5 6 7 8 9 10 AFTER the LOOP, NEXT makes the value of i = 11
 
-'''
+```
 
 *Result:* The last value of i = 11 although FOR only looped 10 times. **Only use the count values while inside of the loop or compensate for this behavior in your code.**
 

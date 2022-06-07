@@ -28,7 +28,7 @@ PageLegacySupport
 ## Example(s)
 
 
-'''vb
+```vb
 
 DEFSTR A, F-H, M
 
@@ -36,7 +36,7 @@ DEFSTR A, F-H, M
 'will be of type STRING, unless they have a type suffix
 'indicating another type or they are dimensioned differently
 
-'''
+```
 
 
 ## See Also

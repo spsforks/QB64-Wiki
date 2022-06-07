@@ -39,7 +39,7 @@
 
 *Example 1:* Plays a sound with the volume and note varying from 0 to 50. Maximum note can only be 84.
 
-'''vb
+```vb
 
 PLAY "mll64"
 DO
@@ -54,13 +54,13 @@ DO
 LOOP UNTIL INKEY$ <> ""
 PLAY "v10l1c,l4egl2o5c,o4l4eg" 
 
-'''
+```
 <sub>Code by Galleon</sub>
 
 
 *Example 2:* Plays "Frosty the snowman". The lyric printing is not delayed by PLAY in QB64.
 
-'''vb
+```vb
 
 CLS : PRINT "Frosty the Snow Man" 
 FOR X = 1 TO 2
@@ -96,13 +96,13 @@ PRINT "Thump-et-y thump thump, thump-et-y thump thump, ov-er the hills of snow."
 PLAY "t180g8g8g4g4g4a8g8g4g4g4g8g8g4a4b4o3c2c4p1" 
 END
 
-'''
+```
 <sub>Greg Rismoen 12/09/84</sub>
 
 
 *Example 3:* Clicking on the grid enables various notes to be played simultaneously. 
 
-'''vb
+```vb
 
 DIM SHARED grid(16, 16), grid2(16, 16), cur
 CONST maxx = 512
@@ -187,13 +187,13 @@ FOR y = 0 TO 15
 NEXT y
 END SUB 
 
-'''
+```
 <sub>Code by JP</sub>
 
 
 *Example 4:* Play strings starting with MB allow program code to run while music plays in background.
 
-'''vb
+```vb
 
 ' 2012, 2013 mennonite
 ' license: creative commons cc0 1.0 universal
@@ -301,12 +301,12 @@ gposxp = 1
 glocate gposyp + 1, 1 'gposyp = gposyp + 1
 END SUB 
 
-'''<sub>Code by Mennonite</sub>
+```<sub>Code by Mennonite</sub>
 
 
 *Example 5:* This example uses [PRINT](PRINT) to good effect as string spacing is ignored by PLAY:
 
-'''vb
+```vb
 
 WIDTH 59, 28
 PRINT <nowiki>
@@ -339,7 +339,7 @@ x$ = x$ + "    f1      ,mn>f.d8dc  l1           ml  f,    c,    <a  ,f"</nowiki>
 PRINT x$;
 PLAY x 
 
-'''<sub>Code by Luke</sub>
+```<sub>Code by Luke</sub>
 
 
 *See also:** 

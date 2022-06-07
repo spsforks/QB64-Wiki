@@ -1,7 +1,7 @@
 **Circle.BI Include file or [SUB](SUB) to use when using [PAINT](PAINT) with pie charts or arc slices:**</center>
 
 
-'''text
+```text
 
  'CIRCLE.BI
 '**
@@ -73,7 +73,7 @@ LOOP UNTIL c! >= en!
 IF e% THEN LINE -(cx%, cy%), c~& '                   draw line from center to end radian if needed
 **END SUB**
 
-'''
+```
 
 
 

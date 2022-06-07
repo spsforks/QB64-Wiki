@@ -20,7 +20,7 @@
 * **Note:** SOUND 0, 0 will not stop previous **QB64** sounds like it did in QBasic!
 * SOUND may have clicks or pauses between the sounds generated. [PLAY](PLAY) can be used for musical sounds.
 
-'''text
+```text
 
 
         **                     The Seven Music Octaves ** 
@@ -56,13 +56,13 @@
           F#3 ...... 185  
                                  **# denotes sharp**
 
-'''
+```
 
 
 
 *Example 1:* Playing the seven octaves based on the base note DATA * 2 ^ (octave - 1).
 
-'''vb
+```vb
 
 notes$ = "C C#D D#E F F#G G#A A#B "
 COLOR 9:LOCATE 5, 20: PRINT "Select an octave (1 - 7) to play (8 quits):"
@@ -94,13 +94,13 @@ END
 Octaves:
 DATA 32.7,34.65,36.71,38.9,41.2,43.65,46.25,49,51.91,55,58.27,61.74 
 
-'''
+```
 <sub>Code adapted by Ted Weissgerber from code in [http://www.amazon.com/Running-MS-DOS-QBASIC-Michael-Halvorson/dp/1556153406 "Running MS-DOS QBasic"] by Microsoft Press</sub>
 
 
 *Example 2:* Playing a song called "Bonnie" with [SOUND](SOUND) frequencies. 
 
-'''vb
+```vb
 
 SCREEN 13
 _FULLSCREEN
@@ -138,7 +138,7 @@ DATA 523,8,"O-",494,8,"ver ",523,8,"the ",587,40,"sea ",392,8,"My ",659,8,"Bon-"
 DATA 523,8," lies ",587,8,"O-",523,8,"ver ",440,8,"the ",392,8,"O-",330,32,"cean ",392,8,"Oh "
 DATA 440,8,"bring ",587,8,"back ",523,8,"my ",494,8,"Bon-",440,8,"nie ",494,8,"to ",523,32,"me..!" 
 
-'''
+```
 <sub>Code adapted by Ted Weissgerber from code [http://www.amazon.com/Running-MS-DOS-QBASIC-Michael-Halvorson/dp/1556153406 "Running MS-DOS QBasic"] by Microsoft Press</sub>
 
 

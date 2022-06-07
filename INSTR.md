@@ -33,7 +33,7 @@ The [INSTR](INSTR) function searches for the first occurence of a search [STRING
 
 *Example:* Reading more than one instance of a word in a string using the INSTR return value as the start value plus 1.
 
-'''vb
+```vb
 
 text$ = "The cats and dogs where playing, even though dogs don't like cats."
 DO
@@ -44,15 +44,15 @@ LOOP UNTIL findcats% = 0
 findmonkey% = INSTR(text$, "monkeys")  ' find any occurance?
 PRINT findmonkey%; "'monkeys' were found so it returned:"; findmonkey% 
 
-'''
+```
 
-'''text
+```text
 
 There is 'cats' in the string at position: 5
 There is 'cats' in the string at position: 62
  0 'monkeys' were found so INSTR returned: 0
 
-'''
+```
 
 >  *Explanation:* When the INSTR return value is 0 there are no more instances of a string in a string so the search loop is exited.
 

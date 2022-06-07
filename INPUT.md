@@ -39,19 +39,19 @@ The [INPUT](INPUT) statement requests a [STRING](STRING) or numerical keyboard e
 
 *Example 1:* Using a variable in an input text message using PRINT. INPUT prompts cannot use variables.
 
-'''vb
+```vb
 
 INPUT "Enter your name: ", name$
 PRINT name$ + " please enter your age: ";: INPUT "", age% 'empty string with comma
 PRINT name$ + " how much do you weigh"; : INPUT weight%   'no text adds ? 
 
-'''
+```
 > *Explanation:* Use an empty string with a comma to eliminate the question mark that would appear without the string.
 
 
 *Example 2:* How QB64 avoids a *Redo from start* multiple entry error. Use commas between values.
 
-'''vb
+```vb
 
 DO
   INPUT "What is your name, age, and sex(M/F)"; name$, age%, sex$
@@ -59,22 +59,22 @@ LOOP UNTIL age%        'loop until age is not 0
 IF age% >= 21 THEN PRINT "You can drink beer!" ELSE PRINT "You cannot drink beer yet!"
 END 
 
-'''
+```
 
-'''text
+```text
 
 
 What is your name, age, and sex(M/F)? Tom,24,M
 You can drink beer!
 
-'''
+```
 
 > *Explanation:* Try to enter text for the age value and it will not work. E or D should be allowed as decimal point numerical entries.
 
 
 *Example 3:* Preventing screen roll after an input entry on the bottom 2 screen rows. 
 
-'''vb
+```vb
 
 SCREEN 12
 
@@ -87,13 +87,13 @@ COLOR 14'                        change foreground color to yellow
 LOCATE 29, 2: PRINT "Searching..."; 'print message
 SLEEP 
 
-'''
+```
 
-'''text
+```text
 
 Enter a name to search for... █
 
-'''
+```
 
 >  *Explanation:* The red [semicolon](semicolon) after INPUT acts like a semicolon after a [PRINT](PRINT), which keeps the print cursor on the same row.
 

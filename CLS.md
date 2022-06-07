@@ -31,7 +31,7 @@ The [CLS](CLS) statement clears the [_DEST](_DEST).
 
 *Example 1:* Printing black text on a white background in QB64.
 
-'''vb
+```vb
 
 SCREEN 12
 CLS , 15
@@ -39,13 +39,13 @@ _PRINTMODE  _KEEPBACKGROUND        'keeps the text background visible
 COLOR 0: PRINT "This is black text on a white background!"
 K$ = INPUT$(1
 
-'''
+```
 > *Explanation:* [_PRINTMODE](_PRINTMODE) can be used with [PRINT](PRINT) or [_PRINTSTRING](_PRINTSTRING) to make the text or the text background transparent.
 
 
 *Example 2:* You don't need to do anything special to use a .PNG image with alpha/transparency. Here's a simple example:
 
-'''vb
+```vb
 
 SCREEN _NEWIMAGE(640, 480, 32)
 CLS , _RGB(0, 255, 0)
@@ -53,7 +53,7 @@ i = _LOADIMAGE(**"qb64_trans.png"**) 'see note below examples to get the image
 _PUTIMAGE (0, 0), i 'places image at upper left corner of window w/o stretching it 
 
 
-'''
+```
 
 >  *Explanation:* When QB64 loads a .PNG file containing a transparent color, that color will be properly treated as transparent when _PUTIMAGE is used to put it onto another image. You can use a .PNG file containing transparency information in a 256-color screen mode in QB64. [CLS](CLS) sets the [_CLEARCOLOR](_CLEARCOLOR) setting using [_RGB](_RGB).
 

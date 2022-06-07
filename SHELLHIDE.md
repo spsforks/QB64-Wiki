@@ -22,7 +22,7 @@ The [_SHELLHIDE](_SHELLHIDE) function hides the console window and returns any [
 
 *Example:* Shelling to another QB64 program will return the exit code when one is set in the  program that is run.
 
-'''vb
+```vb
 
 returncode% = _SHELLHIDE("DesktopSize") 'replace call with your program EXE
 
@@ -30,7 +30,7 @@ PRINT returncode%
 
 END 
 
-'''
+```
 >  *Explanation:* To set a program exit code use an [INTEGER](INTEGER) parameter value after [END](END) or [SYSTEM](SYSTEM) in the called program. 
 
 

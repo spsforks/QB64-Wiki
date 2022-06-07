@@ -29,7 +29,7 @@ The [INPUT #](INPUT #) file or port statement reads sequential data using one va
 
 *Example 1:* Writes new data to a text file sequentially and reads it back to the program screen.
 
-'''vb
+```vb
 
 filename$ = "testfile.dat" 
 x = 1: y = 2: z$ = "Three" 
@@ -50,30 +50,30 @@ WRITE a, b, c$
 
 END 
 
-'''
+```
 
-'''text
+```text
 
  1           2          Three
 1,2,"Three"
 
-'''
+```
 
 >  *Screen output:* [PRINT](PRINT) string values will not display enclosing quotes. [WRITE](WRITE) screen displays will.
 
-'''text
+```text
 
 
 1,2,"Three"
 
-'''
+```
 
 >  *File content:* [WRITE (file statement)](WRITE (file statement)) string values will include quotation marks, but they are not required to read the file value as a string.
 
 
 *Example 2:* Commas inside of string values will not affect the INPUT value as those commas are not [WRITE (file statement)](WRITE (file statement)) separators.
 
-'''vb
+```vb
 
 x$ = "Hello, how are you?"
 y$ = "I'm fine."
@@ -91,19 +91,19 @@ CLOSE #1
 PRINT a$, b$ 
 WRITE a$, b$ 
 
-'''
+```
 
-'''text
+```text
 
 Hello, how are you?        I'm fine. 
 "Hello, how are you?","I'm fine."
-'''
+```
 
 
-'''text
+```text
 
 "Hello, how are you?","I'm fine."
-'''
+```
 
 >  *File content:* Commas inside of strings delimited with quotes will be ignored. [WRITE (file statement)](WRITE (file statement)) will always enclose string values in quotes.
 

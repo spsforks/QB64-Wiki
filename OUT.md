@@ -48,7 +48,7 @@
 *Example 1:* Reading the default RGB color settings of color attribute 15.
 
 
-'''vb
+```vb
 
 OUT &H3C7, 15      'set color port attribute 15 for a read
 red% = INP(&H3C9)
@@ -56,44 +56,44 @@ green% = INP(&H3C9)
 blue% = INP(&H3C9)
 PRINT red%, green%, blue% 
 
-'''
+```
 
-'''text
+```text
 
 
  63       63       63
 
-'''
+```
 
 
 
 *Example 2:* Changing the color intensity settings of the [SCREEN](SCREEN) background [COLOR](COLOR) 0 to bright white.
 
-'''vb
+```vb
 
 OUT &H3C8, 0  'attribute number. 0 for black screen background
 OUT &H3C9, 63 'red
 OUT &H3C9, 63 'green
 OUT &H3C9, 63 'blue 
 
-'''
+```
 > *Explanation:* In [SCREEN](SCREEN) 0 this is one way to make high intensity background colors. InlineCode[COLOR](COLOR) ,15InlineCodeEnd is actually grey (7).
 
 
 *Example 3:* Toggling blinking colors in SCREEN beginning with build 20170816/61
 
-'''vb
+```vb
 
 OUT &H3C0, &H10  'disables blinking and enables high intensity backgrounds (colors 16-31)
 OUT &H3C0, 2 ^ 3 'reenables blinking and disables high intensity backgrounds  (colors 16-31)
 
-'''
+```
 >  Note: In QB64, the recommended practice is to use the [_BLINK](_BLINK) {ON|OFF} statement.
 
 
 *Example 4:* Restoring colors to a bitmap from the Red, Green and Blue [BSAVE](BSAVE)d indexed array of color values.
 
-'''vb
+```vb
 
  SCREEN 12
  OUT &H3C8, 0 ' set color port for output at attribute 0
@@ -102,7 +102,7 @@ OUT &H3C0, 2 ^ 3 'reenables blinking and disables high intensity backgrounds  (c
  NEXT
  PUT(clm, row), Image(48) PSET 
 
-'''
+```
 > *Explanation:* The color RGB intensity settings were imported from a file to the Image array using [BLOAD](BLOAD). The color attribute advances to the next one every 3 writes using OUT. The color information was indexed to the start of the array. The image is after the color settings at index 48. Index 48 is the [GET (graphics statement)](GET (graphics statement)) image width and 49 is the height.
 
 

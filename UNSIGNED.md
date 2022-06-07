@@ -21,7 +21,7 @@ DISPLAYTITLE:_UNSIGNED
 
 <center>How negative values affect the [_UNSIGNED](_UNSIGNED) value returned by a [_BYTE](_BYTE) (8 bits). </center>
 
-'''text
+```text
 
 
                         00000001 - unsigned & signed are both 1    
@@ -30,7 +30,7 @@ DISPLAYTITLE:_UNSIGNED
                         11111110 - unsigned is 254 but signed is -2
                         11111101 - unsigned is 253 but signed is -3
 
-'''
+```
 
 
 
@@ -38,41 +38,41 @@ DISPLAYTITLE:_UNSIGNED
 
 *Example 1:*  In **QB64**, when a signed [INTEGER](INTEGER) value exceeds 32767, the value may become a negative value:
 
-'''vb
+```vb
 
 i% = 38000
 PRINT i% 
 
-'''
-'''text
+```
+```text
 
 -27536
 
-'''
+```
 
 > *Explanation:* Use an [_UNSIGNED](_UNSIGNED) [INTEGER](INTEGER) or a ~% variable type suffix for only positive integer values up to 65535.
 
 
 *Example 2:* In **QB64**, [_UNSIGNED](_UNSIGNED) [INTEGER](INTEGER) values greater than 65535 cycle over again from zero:
 
-'''vb
+```vb
 
 i~% = 70000
 PRINT i~% 
 
-'''
-'''text
+```
+```text
 
  4464
 
-'''
+```
 
 > *Explanation:* In QB64 an unsigned integer value of 65536 would be 0 with values increasing by the value minus 65536. 
 
 
 *Example 3:* Demonstrating how _UNSIGNED variables expand the [INTEGER](INTEGER) range.
 
-'''vb
+```vb
 
 DIM n AS _UNSIGNED INTEGER
 DIM pn AS _UNSIGNED INTEGER
@@ -86,9 +86,9 @@ FOR n = 1 TO 80000
 NEXT n
 END 
 
-'''
+```
 
-'''text
+```text
 
 
 
@@ -103,7 +103,7 @@ END
 
 
 
-'''
+```
 
 *Explanation:* The maximum value can only be 65535 (32767 + 32768) so the FOR loop repeats itself. Remove the [_UNSIGNED](_UNSIGNED) parts and run it again.
 

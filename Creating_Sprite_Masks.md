@@ -2,7 +2,7 @@ Sometimes your program may need to place a shaped sprite over background objects
 
 <sub>Code by: Ted Weissgerber</sub>
 
-'''vb
+```vb
 
 FOR xx = minX TO maxX                                   
     FOR yy = minY TO maxY
@@ -11,7 +11,7 @@ FOR xx = minX TO maxX
 NEXT xx
 GET (minX, minY)-(maxX, maxY), Mask(0)
 
-'''
+```
 
 
 The mask routine simply changes all black portions of the sprite image to white and all other colors black. If your sprite uses black in it, you will need to assign the areas to another color attribute and change the RGB values to 0 using [OUT](OUT) or the background will show through the final image. Color 8 could be dark enough. 
@@ -21,13 +21,13 @@ GET the background at the sprite's starting position before trying to place a sp
 
 
 
-'''vb
+```vb
 
     GET (x, y)-(x + 60, y + 60), BG   ' GET BG at start position before sprite is set
     PUT (x, y), Mask, AND             ' PUT mask at start position
     PUT (x, y), Sprite                ' XOR will work fine on a mask 
 
-'''
+```
 
 
 The two PUTs use the same coordinate so moving objects is fairly simple. All you need is a keypress reading loop. Use INP(&H60) [Scancodes](Scancodes) for diagonal moves. 
@@ -37,7 +37,7 @@ But what about the background? Once you create the background you will need to [
 
 
 
-'''vb
+```vb
 
   'user keypress or programmed coordinate changes
 IF x <> PX OR y <> PY THEN               ' look for a changed coordinate value
@@ -49,7 +49,7 @@ IF x <> PX OR y <> PY THEN               ' look for a changed coordinate value
 END IF
 PX = x: PY = y 
 
-'''
+```
 
 
 In **QB64** [_CLEARCOLOR](_CLEARCOLOR) can also be used before using [_PUTIMAGE](_PUTIMAGE) to mask any sprite background color.

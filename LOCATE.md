@@ -30,7 +30,7 @@ The [LOCATE](LOCATE) statement locates the screen text row and column positions 
 
 *Example:* Moving the cursor around (now you can finally create a Commodore 64 emulator!). **Default SCREEN 0 only:**
 
-'''vb
+```vb
 
 crx = 10
 cry = 10
@@ -46,7 +46,7 @@ DO
   END SELECT
 LOOP 
 
-'''
+```
 
 >  Explanation: The CHR$(0) + "H", "P", "K", "M" represents the cursor arrow keys. start = 0, stop = 8 is the tallest cursor, experiment with the start and stop values for different effects (start = 8, stop = 8 is the default producing a _ cursor).
 

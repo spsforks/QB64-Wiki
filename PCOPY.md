@@ -25,7 +25,7 @@ The [PCOPY](PCOPY) statement copies one source screen page to a destination page
 
 *Example 1:* Creating a mouse cursor using a page number that **you create** in memory without setting up page flipping.
 
-'''vb
+```vb
 
 SCREEN _NEWIMAGE(640, 480, 32) 'any graphics mode should work without setting up pages
 _MOUSEHIDE
@@ -49,13 +49,13 @@ _DISPLAY                  'statement shows image
 PCOPY 100, _DISPLAY 'function return as destination page
 END SUB 
 
-'''
+```
 > *Note:* Works with [_DISPLAY (function)](_DISPLAY (function)) as the other page. If mouse reads are not crucial, put the _MOUSEINPUT loop inside of the UpdateCursor Sub.
 
 
 *Example 2:* Bouncing balls
 
-'''vb
+```vb
 
  SCREEN 7, 0, 1, 0
  DIM x(10), y(10), dx(10), dy(10)
@@ -80,7 +80,7 @@ END SUB
  NEXT
  LOOP UNTIL INKEY$ = CHR$(27) ' escape exit
 
-'''
+```
 > *Explanation:* PCOPY reduces the flickering produced by clearing the screen. x(a) = x(a) - 1, etc. is just to be safe that the balls stay within the boundaries. dx(a) = -dx(a), etc. is to keep the actual speed while inverting it (so that the ball "bounces"). The rest should be self-explanatory, but if you are unsure about arrays you might want to look at QB64 Tutorials -> [Arrays](Arrays).
 
 

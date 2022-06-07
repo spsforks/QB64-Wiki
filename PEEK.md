@@ -17,7 +17,7 @@ The **PEEK** function returns the value that is contained at a certain memory ad
 
 *Example:* Checking the 8 keyboard bit settings using a PEEK return value.
 
-'''vb
+```vb
 
  SCREEN 12
  DEF SEG = 0 ' BIOS area
@@ -50,7 +50,7 @@ The **PEEK** function returns the value that is contained at a certain memory ad
  POKE 1047, oldvalue      ' IMPORTANT reset to original settings
  DEF SEG 
 
-'''
+```
 >  **NOTE: Keyboard Port function key settings cannot be reset on NT machines!**
 
 

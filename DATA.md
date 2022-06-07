@@ -27,7 +27,7 @@ The [DATA](DATA) statement creates a line of fixed program information separated
 
 *Example 1:* Creating two DATA fields that can be [READ](READ) repeatedly using [RESTORE](RESTORE) with the appropriate line label.
 
-'''vb
+```vb
 
 RESTORE Database2
 READ A$, B$, C$, D$         'read 4 string values from second DATA field
@@ -48,20 +48,20 @@ DATA 2, 0, 0, 2, 2, 0, 2, 2, 2 :       ' DATA line comments require a colon
 Database2:
 DATA "Hello, ", "world! ", Goodbye, work! 
 
-'''
+```
 
-'''text
+```text
 
 Hello world! Goodbyework!
 1  0  0  1  1  0  1  1  1  2  0  0  2  2  0  2  2  2
 
-'''
+```
 
 
 
 *Example 2:* How to [RESTORE](RESTORE) and [READ](READ) DATA in a [SUB](SUB) procedure in QB64. Line labels can be used for multiple DATA fields.
 
-'''vb
+```vb
 
 DIM SHARED num(10) 'shared array or must be passed as a parameter
 ReadData 2 '<<<<<<< change value to 1 to read other data
@@ -82,12 +82,12 @@ mydata2:
 DATA 10,9,8,7,6,5,4,3,2,1
 END SUB 
 
-'''
+```
 
-'''text
+```text
 
  10  9  8  7  6  5  4  3  2  1 
-'''
+```
 
 
 

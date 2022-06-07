@@ -21,17 +21,17 @@ The [_SNDOPEN](_SNDOPEN) function loads a sound file into memory and returns a [
 
 *Snippet 1:* Loading a sound file to use in the program later. Only load it once and use the handle any time you want.
 
-'''vb
+```vb
 
 h& = _SNDOPEN("dog.wav")
 IF h& = 0 THEN BEEP ELSE _SNDPLAY h&      'check for valid handle before using!
 
-'''
+```
 
 
 *Snippet 2:* Playing a sound from 2 different speakers based on program results.
 
-'''vb
+```vb
 
 Laff& = _SNDOPEN("KONGlaff.ogg") 'load sound file and get LONG handle value 
 IF LaffX! < -1 THEN LaffX! = -1   'set full volume to left speaker
@@ -40,12 +40,12 @@ IF LaffX! > 1 THEN LaffX! = 1     'set full volume to right speaker
 _SNDBAL Laff&, LaffX!             'balance sound to left or right speaker
 _SNDPLAY Laff&                    'play sound 
 
-'''
+```
 
 
 *Example:* Playing a file and controlling playback:
 
-'''vb
+```vb
 
 s& = _SNDOPEN("song.ogg")
 PRINT "READY"; s&
@@ -104,7 +104,7 @@ DO
     PRINT xleft, xright, volume, _SNDGETPOS(s&); "   "
 LOOP
 
-'''<sub>Code by Johny B</sub>
+```<sub>Code by Johny B</sub>
 
 
 

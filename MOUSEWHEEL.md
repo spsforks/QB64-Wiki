@@ -18,7 +18,7 @@ The [_MOUSEWHEEL](_MOUSEWHEEL) function returns a positive or negative [INTEGER]
 
 *Example 1:* Reading the cumulative mouse wheel "clicks".
 
-'''vb
+```vb
 
  DO: _LIMIT 100
     DO WHILE _MOUSEINPUT
@@ -27,12 +27,12 @@ The [_MOUSEWHEEL](_MOUSEWHEEL) function returns a positive or negative [INTEGER]
     LOOP
  LOOP UNTIL INKEY$ = CHR$(13) ' press Enter to quit 
 
-'''
+```
 
 
 *Example 2:* A simple text scrolling routine using the mouse wheel value to read a text array.
 
-'''vb
+```vb
 
 DIM Array$(100)
 LINE INPUT "Enter a file name with 100 or more lines of text: ", file$
@@ -60,7 +60,7 @@ DO
   LOOP
 LOOP UNTIL INKEY$ > "" 
 
-'''
+```
 <sub>Code by Ted Weissgerber</sub>
 <center>Note: You will need a text file that is large enough for this example.</center>
 

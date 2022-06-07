@@ -9,7 +9,7 @@
 
 
 
-'''text
+```text
 
                         **C++ Variable Types**
 
@@ -26,7 +26,7 @@
     [Unicode](Unicode)      Wide character([Unicode](Unicode))       2 or 4
     [_OFFSET](_OFFSET)        void pointer(void *)           ANY        [_OFFSET](_OFFSET)
 
-'''
+```
 
 
 
@@ -35,7 +35,7 @@
 
 
 
-'''text
+```text
 
 
 DECLARE LIBRARY
@@ -109,13 +109,13 @@ SUB strncpy (dest AS STRING, source AS STRING, BYVAL Bytes AS INTEGER) 'Copies f
  'bytes of source to destination. If source ends before number of bytes, dest padded with 0's
 END DECLARE 
 
-'''
+```
 
 
 
 *Example 1:* How to use the SUB **memmove** to transfer [TYPE](TYPE) data when using Libraries.
 
-'''vb
+```vb
 
 TYPE a   'Note: the TYPE must be placed before the DECLARE LIBRARY if used in it!
   b AS DOUBLE
@@ -136,20 +136,20 @@ memmove d(10), d(0), LEN(d()) 'LEN gives the total byte size of the TYPE
 PRINT d(10).b
 PRINT d(10).c 
 
-'''
+```
 
-'''text
+```text
 
 1.5
 99 
-'''
+```
 
 > *Explanation:* When a [TYPE](TYPE) variable is moved to another variable or array index, all [TYPE](TYPE) dot values are moved with it.
 
 
 *Example 2:* Creating different **memset** functions for each variable type to be used.
 
-'''vb
+```vb
 
 DECLARE LIBRARY
 FUNCTION memsetB& ALIAS **memset** (p AS _BYTE, BYVAL c AS _UNSIGNED LONG, BYVAL n AS _UNSIGNED LONG)
@@ -176,7 +176,7 @@ FOR i = 1 TO 10
   PRINT " " + HEX$(Larray(i));           'displays each byte value &H41 = 65
 NEXT i  
 
-'''
+```
 <sub>Code example by stylin</sub>
 >  *Explanation:* When 5 bytes are put into a 4 byte LONG array value, the fifth byte goes into the next array element.
 
@@ -189,7 +189,7 @@ NEXT i
 
 Header file: *Cast.h*
 
-'''text
+```text
 
 
 float bitcast(int t)
@@ -201,11 +201,11 @@ int swap_endian(unsigned int k)
     return (k>>24)|((k<<8) & 0x00FF0000)|((k>>8) & 0x0000FF00)|(k<<24);
 }
 
-'''
+```
 
 <sub>Courtesy of Darth Who</sub>
 
-'''vb
+```vb
 
 DECLARE LIBRARY "Cast"
     FUNCTION bitcast## (BYVAL t AS LONG)
@@ -216,7 +216,7 @@ PRINT HEX$(Value&)
 PRINT bitcast##(Value&)
 PRINT bitcast##(swap_endian(Value&)) 
 
-'''
+```
 
 
 <p style="text-align: center">([#toc](#toc))</p>
@@ -227,7 +227,7 @@ PRINT bitcast##(swap_endian(Value&))
 
 **Fastmath.h** header file. Library to speed up program calculations. Use with [DECLARE LIBRARY](DECLARE LIBRARY) "Fastmath"
 
-'''text
+```text
 
 
 using namespace std;
@@ -879,7 +879,7 @@ long Misc_UnSetRMBit(long x)
   return x & (x - 1);
  } 
 
-'''
+```
 
 <sub>Library created by DarthWho</sub>
 
@@ -889,7 +889,7 @@ long Misc_UnSetRMBit(long x)
 
 *Example 1:* Using **trailzcount** to speed up the process of finding the prime factors of a number.
 
-'''vb
+```vb
 
 DECLARE LIBRARY "fastmath"
     FUNCTION TrailZCount% ALIAS Misc_TrailZCount (BYVAL vals AS LONG)
@@ -913,12 +913,12 @@ WHILE c& <= x&
 WEND
 PRINT 
 
-'''
+```
 
 
 *Example 2:* Using **parity** to detect single bit errors simulated using **unsetrmbit**.
 
-'''vb
+```vb
 
 'parity checking code which may be used in order to detect a download error:
 'will also use the bitset function to simulate a download error .bitset unsets the lowest set bit
@@ -948,7 +948,7 @@ FOR i = 0 TO 1
     END IF
 NEXT 
 
-'''
+```
 
 
 <p style="text-align: center">([#toc](#toc))</p>

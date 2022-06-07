@@ -26,7 +26,7 @@ The [_CWD$](_CWD$) function returns the current working directory path as a stri
 
 *Example:* Get the current working directory, and move around the file system:
 
-'''vb
+```vb
 
 startdir$ = _CWD$
 PRINT "We started at "; startdir$
@@ -37,16 +37,16 @@ CHDIR startdir$
 PRINT "And now we're back in "; _CWD$
 RMDIR "a_temporary_dir"
 
-'''
+```
 
 
-'''text
+```text
 
 We started at C:\QB64
 We are now in C:\QB64\a_temporary_dir
 And now we're back in C:\QB64
 
-'''
+```
 
 
 

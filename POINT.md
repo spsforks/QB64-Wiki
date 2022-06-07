@@ -55,7 +55,7 @@ Graphic cursor position syntax:
 
 *Example 1:* How [_RGB](_RGB) 32 bit values return [DOUBLE](DOUBLE) or [_UNSIGNED](_UNSIGNED) [LONG](LONG) values in QB64.
 
-'''vb
+```vb
 
 DIM clr AS LONG 'DO NOT use LONG in older versions of QB64 (V .936 down)
 SCREEN _NEWIMAGE(640, 480, 32)
@@ -68,24 +68,24 @@ IF clr = _RGB(255, 255, 255) THEN PRINT "Long OK"
 IF POINT(100, 100) = _RGB(255, 255, 255) THEN PRINT "_RGB OK"
 IF POINT(100, 100) = clr THEN PRINT "Type OK" 'will not print with a LONG variable type
 
-'''
+```
 > **Note:** Change the [DIM](DIM) *clr* variable type to [LONG](LONG) to see how the last [IF](IF) statement doesn't [PRINT](PRINT) as shown in the output below:
 
-'''text
+```text
 
 POINT(100, 100) = 4294967295
 Variable clr = -1
 Long OK
 _RGB OK
 
-'''
+```
 
 
 
 
 *Example 2:* Using a [POINT](POINT) mouse routine to get the 32 bit color values of the image.
 
-'''vb
+```vb
 
 SCREEN _NEWIMAGE(640, 480, 32)
 _TITLE "Mouse POINTer 32"
@@ -125,14 +125,14 @@ DO: _LIMIT 100
 LOOP UNTIL INKEY$ > ""
 END 
 
-'''
+```
 <sub>Code by Ted Weissgerber</sub>
 > *Explanation:* Use the mouse pointer to get the background RGB of the image to make it transparent with [_CLEARCOLOR](_CLEARCOLOR).
 
 
 *Snippet:* Creating an image mask to PUT an image over other colored backgrounds. See: [GET and PUT Demo](GET and PUT Demo) to run code.
 
-'''text
+```text
 
 
  FOR c = 0 TO 59    '60 X 60 area from 0 pixel
@@ -142,7 +142,7 @@ END
  NEXT c
  GET(0, 0)-(60, 60), Image(1500) ' save mask in an array(indexed above original image).
 
-'''
+```
 
 > *Explanation:* In the procedure all black areas(background) are changed to white for a PUT using AND over other colored objects. The other image colors are changed to black for a PUT of the original image using XOR. The array images can be [BSAVE](BSAVE)d for later use. **QB64 can also** [PUT](PUT)** a full screen 12 image from an array directly into a** [BINARY](BINARY) **file.**
 

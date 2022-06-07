@@ -43,17 +43,17 @@ The [_LOADIMAGE](_LOADIMAGE) function loads an image into memory and returns val
 
 *Example 1:* To display an image in 32-bit color using its resolution as a program screen:
 
-'''vb
+```vb
 
 i& = _LOADIMAGE("mypic.jpg", 32)
 SCREEN i& 
 
-'''
+```
 
 
 *Example 2:* [DRAW](DRAW)ing and rotating an image 360 degrees using Turn Angle. [POINT](POINT) is used to read the invisible image source.
 
-'''vb
+```vb
 
 SCREEN _NEWIMAGE(800, 600, 32)
 img& = _LOADIMAGE("QB64.PNG")                           'use any 24/32 bit image
@@ -77,7 +77,7 @@ DO
   NEXT
 LOOP UNTIL INKEY$ > "" 
 
-'''
+```
 <sub>Code by Ted Weissgerber</sub>
 
 

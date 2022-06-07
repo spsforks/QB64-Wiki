@@ -30,7 +30,7 @@ The [MID$](MID$) function returns a portion of a [STRING](STRING).
 
 *Example 1:* Getting the hour and minutes from [TIME$](TIME$)
 
-'''vb
+```vb
 
 PRINT TIME$
 
@@ -39,20 +39,20 @@ minutes$ = MID$(TIME$, 4, 2) ' skip hours and the colon (first 3 characters)
 
 PRINT "hour = "; hour$; ": minutes = "; minutes$ 
 
-''' 
+``` 
 
-'''text
+```text
 
 11:23:30
 hour = 11: minutes = 23
 
-'''
+```
 
 
 
 *Example 2:* Comparing MID$, the **QB64** byte position version of [ASC](ASC) and [_MEMGET](_MEMGET) speeds parsing string characters:
 
-'''vb
+```vb
 
 _TITLE "String Speed Test"
 DEFLNG A-Z
@@ -105,16 +105,16 @@ PRINT USING "##.###### seconds for ASC"; t3# - t2#
 PRINT USING "##.###### seconds for _MEMGET String"; t4# - t3#
 PRINT USING "##.###### seconds for _MEMGET Byte"; t5# - t4# 
 
-''' <sub>Code by Steve McNeill</sub>
+``` <sub>Code by Steve McNeill</sub>
 
-'''text
+```text
 
 6.593750 seconds for MID$
 1.044922 seconds for ASC
 0.494141 seconds for _MEMGET String
 0.494141 seconds for _MEMGET Byte
 
-'''
+```
 
 >  *Note:* [_MEMGET](_MEMGET) can be used with [$CHECKING]($CHECKING):OFF to cut the parsing speed even more. [STRING](STRING) * 1 or [_BYTE](_BYTE) are similar speeds.
 

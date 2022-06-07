@@ -21,7 +21,7 @@ The **PMAP** statement returns the physical or [WINDOW](WINDOW) view port coordi
 
 *Example:* Use PMAP to convert coordinate values from view to screen coordinates and from screen coordinates to view coordinates.
 
-'''vb
+```vb
 
 SCREEN 12
  'Coordinates of upper-left corner of the window is defined in following statement are (90,100) 
@@ -55,7 +55,7 @@ CLS 1                    ' clear grahic view port
 WINDOW                   ' end graphic view port
 END 
 
-'''
+```
 >  *Note:* If physical screen coordinates are (0, 0) in the upper-left corner and (639, 479) in the lower-right corner, then the statements return the screen coordinate's equal to the view coordinates 90, 100.
 
 

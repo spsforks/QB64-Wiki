@@ -20,7 +20,7 @@ The [CSRLIN](CSRLIN) function returns the current text row position of the [PRIN
 
 *Example:* A semicolon stops the print cursor immediately after the print.
 
-'''vb
+```vb
 
   LOCATE 5, 5: PRINT "HELLO ";
   Y = CSRLIN 'save the row
@@ -29,10 +29,10 @@ The [CSRLIN](CSRLIN) function returns the current text row position of the [PRIN
   LOCATE Y, X 'restore saved position
   PRINT "GOODBYE" 
 
-'''
+```
 
 
-'''text
+```text
 
 
 
@@ -48,7 +48,7 @@ The [CSRLIN](CSRLIN) function returns the current text row position of the [PRIN
 
 
 
-'''
+```
 
 > *Explanation:* "HELLO " is printed and the semicolon stops the cursor immediately after the text. The [CSRLIN](CSRLIN) variable records the current print cursor's text row in Y. The [POS](POS) function records the current print cursor's text column in X. The second [PRINT](PRINT) statement displays the comment "WORLD" on the 10th line of the screen. The last [LOCATE](LOCATE) statement restores the position of the cursor to the original line and column immediately after the first print.
 

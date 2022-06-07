@@ -21,7 +21,7 @@ The [_FINISHDROP](_FINISHDROP) statement resets [_TOTALDROPPEDFILES](_TOTALDROPP
 
 *Example:* Accepting files dragged from a folder and processing the list received by specifying an index. 
 
-'''vb
+```vb
 
 SCREEN _NEWIMAGE(128, 25, 0)
 
@@ -52,7 +52,7 @@ DO
     _LIMIT 30
 LOOP
 
-'''
+```
 
 
 ## See Also

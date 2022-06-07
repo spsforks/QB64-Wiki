@@ -18,7 +18,7 @@
 
 *Example 1:* Using RANDOMIZE **TIMER** to set a different starting sequence of [RND](RND) numbers every run.
 
-'''vb
+```vb
 RANDOMIZE TIMER
 DO
 randnum% = INT(RND * 11) + 2  'add one to multiplier as INT rounds down and never equals 10
@@ -27,13 +27,13 @@ K$ = INPUT$(1)
 LOOP UNTIL UCASE$(K$) = "Q"  'q = quit
 END 
 
-'''
+```
 > *Explanation:* Procedure generates random integer values from 2 to 12 like a pair of dice.
 
 
 *Example 2:* Repeating a random number sequence with RANDOMIZE **USING** and a specific seed value in **QB64** only.
 
-'''vb
+```vb
 seed = 10
 RANDOMIZE seed
 Print7
@@ -51,13 +51,13 @@ NEXT
 PRINT: PRINT
 END SUB 
 
-'''
+```
 >  *Explanation:* The second RANDOMIZE statement just continues the sequence where USING in the third restarts the sequence.
 
 
 *Example 3:* Random fireworks explosions:
 
-'''vb
+```vb
 RANDOMIZE TIMER
 DEFINT A-Z
 
@@ -103,7 +103,7 @@ DO
 LOOP
 SYSTEM
 
-'''<sub>Code by Ben</sub>
+```<sub>Code by Ben</sub>
 
 
 *See also:* 

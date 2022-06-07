@@ -18,7 +18,7 @@ The **COMMAND$** function returns the command line argument(s) passed when a pro
 
 *Example 1:* Compile both programs. ProgramA [RUN](RUN)s ProgramB with a parameter passed following the filename: 
 
-'''vb
+```vb
 
 LOCATE 12, 36: PRINT "ProgramA"
 
@@ -28,10 +28,10 @@ RUN "ProgramB FS"  'pass FS parameter to ProgramB in QB64 or QB4.5
 
 SYSTEM
 
-'''
+```
 >  *ProgramB* checks for fullscreen parameter pass in QB64 and goes full screen. 
 
-'''vb
+```vb
 
 LOCATE 17, 36: PRINT "ProgramB"
 parameter$ = UCASE$(COMMAND$) 'UCASE$ is needed in QB64 only, as QB4.5 will always return upper case
@@ -40,9 +40,9 @@ IF LEFT$(parameter$, 2) = "FS" THEN _FULLSCREEN 'parameter changes to full scree
 
 END 
 
-'''
+```
 
-'''text
+```text
 
 
                                     ProgramB
@@ -51,33 +51,33 @@ END
 
                                  Parameter = FS.EXE
 
-'''
+```
 
 
 
 *Example 2:* Program gets the number of parameters passed to the program, and then prints those parameters to the screen one at a time. 
 
-'''vb
+```vb
 count = _COMMANDCOUNT
 FOR c = 1 TO count
     PRINT COMMAND$(c) 'or process commands sent
 NEXT
 
-'''
+```
 
-'''text
+```text
 
 -1
 a data file
 
-'''
+```
 
 >  *Explanation: If we start *ThisProgram.exe* with the command line **ThisProgram -l "a data file"**, COMMAND$ will return a single string of "-1 a data file" which might be hard to process and interpret properly, but COMMAND$(1) would return "-l" and COMMAND$(2) would return the quoted "a data file" option as separate entries for easier parsing and processing.
 
 
 *Example 3:* As part of the command array syntax, you can also just read the array to see how many commands were sent (or simply check [_COMMANDCOUNT](_COMMANDCOUNT)): 
 
-'''vb
+```vb
 DO
     count = count + 1
     cmd$ = COMMAND$(count)
@@ -86,7 +86,7 @@ DO
 LOOP
 count = count - 1 'save the number of parameters sent to this program when run
 
-'''
+```
 
 
 ## See Also

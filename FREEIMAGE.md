@@ -23,7 +23,7 @@ The **_FREEIMAGE** statement releases the designated file image created by the [
 
 *Example:* Loading a program splash screen and freeing image when no longer necessary:
 
-'''vb
+```vb
 
 s& = _LOADIMAGE("SPLASH.BMP",32)  'load 32 bit(24 BPP) image
 IF s& < -1 THEN SCREEN s&   'use image as a 32 bit SCREEN 
@@ -32,7 +32,7 @@ SCREEN 0       'MUST change screen mode before freeing a SCREEN image!
 IF s& < -1 THEN _FREEIMAGE s&  'handle value MUST be less than -1 or error!
 CLS 
 
-'''
+```
 >  *Note:* A valid image file name must be used by [_LOADIMAGE](_LOADIMAGE) or the invalid handle memory value will not need to be freed.
 
 

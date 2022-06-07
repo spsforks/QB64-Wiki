@@ -25,7 +25,7 @@ The [_EXIT](_EXIT) function prevents the user from closing a program and indicat
 
 *Example 1:* Using an ON TIMER check to read the _EXIT request return values.
 
-'''vb
+```vb
 
 q = _EXIT 'function read prevents any program exit at start of program
 ON TIMER(5) GOSUB quit
@@ -49,12 +49,12 @@ SELECT CASE q
 END SELECT
 RETURN 
 
-'''
+```
 
 
 *Example 2:* Removing temporary files before closing a program upon a user's exit request.
 
-'''vb
+```vb
 
 x = _EXIT  'initial function call blocks a user exit
 OPEN "t3mpdata.tmp" FOR APPEND AS #1
@@ -62,7 +62,7 @@ DO
 IF _EXIT THEN CLOSE: KILL "t3mpdata.tmp": _DELAY 1: SYSTEM
 LOOP 
 
-'''
+```
 <center>Note: If you have a file named *t3mpdata.tmp* change the file name!</center>
 
 

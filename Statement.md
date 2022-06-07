@@ -9,26 +9,26 @@ The arguments in a statement are usually not enclosed with paranteses. When a gr
 
 *Example 1:* Demonstrates how x- and y-coordinates are enclosed with paranteses (in graphics).
 
-'''vb
+```vb
 
 SCREEN 13
 x = 160
 y = 100
 PSET (x, y), 15
 
-'''
+```
 
 
 *Example 2:* Demonstrates how row- and column-coordinates are not enclosed with paranteses (in text).
 
-'''vb
+```vb
 
 row = 12
 column = 40
 LOCATE row, column
 PRINT "X"
 
-'''
+```
 
 
 
