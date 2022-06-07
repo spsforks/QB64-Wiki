@@ -34,9 +34,9 @@ The underscore prefix is reserved for QB64 _KEYWORDS only.
 * [_BIT](_BIT) (` numerical type) can return only signed values of 0 (bit off) and -1 (bit on). Unsigned 0 or 1.
 * [_BIN$](_BIN$) (function) returns the binary (base 2) [STRING](STRING) representation of the [INTEGER](INTEGER) part of any value.
 * [_BLEND](_BLEND) (statement) statement turns on 32 bit alpha blending for the current image or screen mode and is default.
-* [_BLEND (function)](_BLEND (function)) returns -1 if enabled or 0 if disabled by [_DONTBLEND](_DONTBLEND) statement.
+* [_BLEND (function)](_BLEND-(function)) returns -1 if enabled or 0 if disabled by [_DONTBLEND](_DONTBLEND) statement.
 * [_BLINK](_BLINK) (statement) statement turns blinking colors on/off in SCREEN 0
-* [_BLINK (function)](_BLINK (function)) returns -1 if enabled or 0 if disabled by [_BLINK](_BLINK) statement.
+* [_BLINK (function)](_BLINK-(function)) returns -1 if enabled or 0 if disabled by [_BLINK](_BLINK) statement.
 * [_BLUE](_BLUE) (function) function returns the palette or the blue component intensity of a 32-bit image color.
 * [_BLUE32](_BLUE32) (function) returns the blue component intensity of a 32-bit color value.
 * [_BUTTON](_BUTTON) (function) returns -1 when a controller device button is pressed and 0 when button is released.
@@ -45,16 +45,16 @@ The underscore prefix is reserved for QB64 _KEYWORDS only.
 
 ### _C
 
-* [_CAPSLOCK (function)](_CAPSLOCK (function)) returns -1 when Caps Lock is on
+* [_CAPSLOCK (function)](_CAPSLOCK-(function)) returns -1 when Caps Lock is on
 * [_CAPSLOCK](_CAPSLOCK) (statement) sets Caps Lock key state
 * [$CHECKING]($CHECKING) (QB64 C++ [Metacommand](Metacommand)) turns event error checking OFF or ON.
 * [_CEIL](_CEIL) (function) Rounds x upward, returning the smallest integral value that is not less than x.
 * [_CINP](_CINP) (function) Returns a key code from $CONSOLE input
-* [_CLEARCOLOR (function)](_CLEARCOLOR (function)) returns the current transparent color of an image.
+* [_CLEARCOLOR (function)](_CLEARCOLOR-(function)) returns the current transparent color of an image.
 * [_CLEARCOLOR](_CLEARCOLOR) (statement) sets a specific color index of an image to be transparent
-* [_CLIP](_CLIP) ([PUT (graphics statement)](PUT (graphics statement)) graphics option) allows placement of an image partially off of the screen.
+* [_CLIP](_CLIP) ([PUT (graphics statement)](PUT-(graphics statement)) graphics option) allows placement of an image partially off of the screen.
 * [_CLIPBOARD$](_CLIPBOARD$) (function) returns the operating system's clipboard contents as a [STRING](STRING).
-* [_CLIPBOARD$ (statement)](_CLIPBOARD$ (statement)) sets and overwrites the [STRING](STRING) value in the operating system's clipboard. 
+* [_CLIPBOARD$ (statement)](_CLIPBOARD$-(statement)) sets and overwrites the [STRING](STRING) value in the operating system's clipboard. 
 * [_CLIPBOARDIMAGE (function)](_CLIPBOARDIMAGE (function)) pastes an image from the clipboard into a new QB64 image in memory.
 * [_CLIPBOARDIMAGE](_CLIPBOARDIMAGE) (statement) copies a valid QB64 image to the clipboard.
 * [$COLOR]($COLOR) (metacommand) includes named color constants in a program
@@ -70,11 +70,6 @@ The underscore prefix is reserved for QB64 _KEYWORDS only.
 * [_CONTROLCHR (function)](_CONTROLCHR (function))   returns the current state of _CONTROLCHR as 1 when OFF and 0 when ON.
 * [_COPYIMAGE](_COPYIMAGE) (function) copies an image handle value to a new designated handle.
 * [_COPYPALETTE](_COPYPALETTE) (statement) copies the color palette intensities from one 4 or 8 BPP image to another image.
-* [Mathematical_Operations](Mathematical_Operations) (function)  the mathematical function cotangent defined by 1/TAN.  http://mathworld.wolfram.com/Cotangent.html
-* [Mathematical_Operations](Mathematical_Operations) (function) Returns the hyperbolic cotangent.  http://mathworld.wolfram.com/HyperbolicCotangent.html
-* [Mathematical_Operations](Mathematical_Operations) (function) Returns the hyperbolic cosine of x radians.  http://mathworld.wolfram.com/HyperbolicCosine.html
-* [Mathematical_Operations](Mathematical_Operations) (function)  the mathematical function cosecant defined by 1/SIN.  http://mathworld.wolfram.com/Cosecant.html
-* [Mathematical_Operations](Mathematical_Operations) (function) Returns the hyperbolic cosecant.  http://mathworld.wolfram.com/HyperbolicCosecant.html
 * [_CV](_CV) (function) converts any [_MK$](_MK$) [STRING](STRING) value to the designated numerical type value.
 * [_CWD$](_CWD$) (function) returns the current working directory  as a [STRING](STRING) value.
 
@@ -84,7 +79,7 @@ The underscore prefix is reserved for QB64 _KEYWORDS only.
 * [_D2R](_D2R) (function) converts degrees to radian angle values.
 * [$DEBUG]($DEBUG) (metacommand) enables debugging features, allowing you to step through your code line by line
 * [DECLARE LIBRARY](DECLARE LIBRARY) declares a C++, SDL or Operating System [SUB](SUB) or [FUNCTION](FUNCTION) to be used.
-* [DECLARE DYNAMIC LIBRARY](DECLARE DYNAMIC LIBRARY) declares DYNAMIC, CUSTOMTYPE or STATIC library (DLL) [SUB](SUB) or [FUNCTION](FUNCTION).
+* [DECLARE DYNAMIC LIBRARY](DECLARE-DYNAMIC-LIBRARY) declares DYNAMIC, CUSTOMTYPE or STATIC library (DLL) [SUB](SUB) or [FUNCTION](FUNCTION).
 * [_DEFAULTCOLOR](_DEFAULTCOLOR) (function) returns the current default text color for an image handle or page.
 * [_DEFINE](_DEFINE) (statement) defines a range of variable names according to their first character as a data type.
 * [_DEFLATE$](_DEFLATE$) (function) compresses a string
@@ -111,7 +106,7 @@ The underscore prefix is reserved for QB64 _KEYWORDS only.
 * [_ECHO](_ECHO) (statement) used in conjunction with $IF for the precompiler.
 * [$ELSE]($ELSE) (Pre-Compiler [Metacommand](Metacommand)) used in conjunction with $IF for the precompiler.
 * [$ELSEIF]($ELSEIF) (Pre-Compiler [Metacommand](Metacommand)) used in conjunction with $IF for the precompiler.
-* [$END IF]($END IF) (Pre-Compiler [Metacommand](Metacommand)) used in conjunction with $IF for the precompiler.
+* [$END IF]($END-IF) (Pre-Compiler [Metacommand](Metacommand)) used in conjunction with $IF for the precompiler.
 * [$ERROR]($ERROR)  (precompiler [metacommand](metacommand)) used to trigger compiler errors.
 * [_ERRORLINE](_ERRORLINE) (function) returns the source code line number that caused the most recent runtime error.
 * [_ERRORMESSAGE$](_ERRORMESSAGE$) (function) returns a human-readable message describing the most recent runtime error.
@@ -129,9 +124,9 @@ The underscore prefix is reserved for QB64 _KEYWORDS only.
 * [_FONTWIDTH](_FONTWIDTH) (function) returns the current text or font width.
 * [_FREEFONT](_FREEFONT) (statement) releases the current font handle from memory.
 * [_FREEIMAGE](_FREEIMAGE) (statement) releases a designated image handle from memory.
-* [_FREETIMER](_FREETIMER) (function) returns an unused timer number value to use with [ON TIMER(n)](ON TIMER(n)).
+* [_FREETIMER](_FREETIMER) (function) returns an unused timer number value to use with [ON TIMER(n)](ON-TIMER(n)).
 * [_FULLSCREEN](_FULLSCREEN) (statement) sets the program window to full screen or OFF. Alt + Enter does it manually.
-* [_FULLSCREEN (function)](_FULLSCREEN (function)) returns the fullscreen mode in use by the program.
+* [_FULLSCREEN (function)](_FULLSCREEN-(function)) returns the fullscreen mode in use by the program.
 
 ### _G
 
@@ -257,8 +252,6 @@ The underscore prefix is reserved for QB64 _KEYWORDS only.
 
 ### _S
 
-* [Mathematical_Operations#Derived_Mathematical_Functions](Mathematical_Operations#Derived_Mathematical_Functions) (function)  the mathematical function secant defined by 1/COS.  http://mathworld.wolfram.com/Secant.html
-* [Mathematical_Operations#Derived_Mathematical_Functions](Mathematical_Operations#Derived_Mathematical_Functions) (function) Returns the hyperbolic secant.  http://mathworld.wolfram.com/HyperbolicSecant.html
 * [_SCREENCLICK](_SCREENCLICK) (statement) simulates clicking on a point on the desktop screen with the left mouse button.
 * [_SCREENEXISTS](_SCREENEXISTS) (function) returns a -1 value once a screen has been created.
 * [$SCREENHIDE]($SCREENHIDE) ([QB64 [Metacommand]]) hides the program window from view.
@@ -340,15 +333,15 @@ The underscore prefix is reserved for QB64 _KEYWORDS only.
 ### A
 
 * [ABS](ABS) (function) converts any negative numerical value to a positive value.
-* [CALL ABSOLUTE](CALL ABSOLUTE) (statement) is used to access computer interrupt registers.
+* [CALL ABSOLUTE](CALL-ABSOLUTE) (statement) is used to access computer interrupt registers.
 * [ACCESS](ACCESS) (file statement) sets the read and write access of a file when opened.
 * [ALIAS](ALIAS) (QB64 [DECLARE LIBRARY](DECLARE LIBRARY) statement) denotes the actual name of an imported [FUNCTION](FUNCTION) or [SUB](SUB) procedure.
 * [AND](AND) (logical operator) is used to compare two numerical values bitwise.
-* [AND (boolean)](AND (boolean))  conditonal operator is used to include another evaluation in an [IF...THEN](IF...THEN) or [Boolean](Boolean) statement.
-* [APPEND](APPEND) (file mode) creates a new file or allows an existing file to have data added using [WRITE (file statement)](WRITE (file statement)) or [PRINT (file statement)](PRINT (file statement))
+* [AND (boolean)](AND-(boolean))  conditonal operator is used to include another evaluation in an [IF...THEN](IF...THEN) or [Boolean](Boolean) statement.
+* [APPEND](APPEND) (file mode) creates a new file or allows an existing file to have data added using [WRITE-(file-statement)](WRITE (file statement)) or [PRINT (file statement)](PRINT-(file-statement))
 * [AS](AS) is used to denote a variable type or file number.
 * [ASC](ASC) (function) returns the [ASCII](ASCII) code number of a text [STRING](STRING) character.
-* [ASC (statement)](ASC (statement)) (QB64 only) sets the code value of an [ASCII](ASCII) text character at a designated [STRING](STRING) position.
+* [ASC (statement)](ASC-(statement)) (QB64 only) sets the code value of an [ASCII](ASCII) text character at a designated [STRING](STRING) position.
 * [ATN](ATN) (function) or arctangent returns the angle in radians of a numerical [TAN](TAN) value.
 
 ### B
@@ -362,11 +355,11 @@ The underscore prefix is reserved for QB64 _KEYWORDS only.
 ### C
 
 * [CALL](CALL) (statement) optional statement that sends the program to a [SUB](SUB) procedure.  Requires parameters be enclosed in brackets(parenthesis).
-* [CALL ABSOLUTE](CALL ABSOLUTE) (statement) is used to access computer interrupt registers.
+* [CALL ABSOLUTE](CALL-ABSOLUTE) (statement) is used to access computer interrupt registers.
 * [CALLS](CALLS) (non-BASIC call statement)
-* [CASE](CASE) ([SELECT CASE](SELECT CASE) condition) designates specific conditions in a [SELECT CASE](SELECT CASE) statement block.
-* [CASE ELSE](CASE ELSE) ([SELECT CASE](SELECT CASE) condition) designates an alternative condition to be evaluated in a [SELECT CASE](SELECT CASE) statement block.
-* [CASE IS](CASE IS) ([SELECT CASE](SELECT CASE) condition) designates specific conditions in a [SELECT CASE](SELECT CASE) statement block.
+* [CASE](CASE) ([SELECT CASE](SELECT-CASE) condition) designates specific conditions in a [SELECT CASE](SELECT-CASE) statement block.
+* [CASE ELSE](CASE ELSE) ([SELECT CASE](SELECT-CASE) condition) designates an alternative condition to be evaluated in a [SELECT CASE](SELECT-CASE) statement block.
+* [CASE IS](CASE-IS) ([SELECT CASE](SELECT-CASE) condition) designates specific conditions in a [SELECT CASE](SELECT-CASE) statement block.
 * [CDBL](CDBL) (function) returns the closest [DOUBLE](DOUBLE) value of a number.
 * [CDECL](CDECL) ([DECLARE (non-BASIC statement)](DECLARE (non-BASIC statement)))
 * [CHAIN](CHAIN) (statement) sends a program to another specified program module or compiled program.
@@ -401,7 +394,7 @@ The underscore prefix is reserved for QB64 _KEYWORDS only.
 * [DECLARE (non-BASIC statement)](DECLARE (non-BASIC statement)) declares non-basic [SUB](SUB) or [FUNCTION](FUNCTION) procedures. Not implemented in QB64.
 * [DECLARE LIBRARY](DECLARE LIBRARY) declares a C++, SDL or Operating System [SUB](SUB) or [FUNCTION](FUNCTION) to be used.
 * [DECLARE DYNAMIC LIBRARY](DECLARE DYNAMIC LIBRARY) declares DYNAMIC, CUSTOMTYPE or STATIC  library(DLL) [SUB](SUB) or [FUNCTION](FUNCTION).
-* [DEF SEG](DEF SEG) (statement) defines a segment in memory to be accessed by a memory procedure.
+* [DEF SEG](DEF-SEG) (statement) defines a segment in memory to be accessed by a memory procedure.
 * [DEFDBL](DEFDBL) (statement) defines a set of undefined variable name starting letters as [DOUBLE](DOUBLE) type numerical values.
 * [DEFINT](DEFINT) (statement) defines a set of undefined variable name starting letters as [INTEGER](INTEGER) type numerical values.
 * [DEFLNG](DEFLNG) (statement) defines a set of undefined variable name starting letters as [LONG](LONG) type numerical values.
@@ -417,18 +410,18 @@ The underscore prefix is reserved for QB64 _KEYWORDS only.
 
 * [ELSE](ELSE) ([IF...THEN](IF...THEN) statement) is used to direct program flow when no other condition is evaluated as true.
 * [ELSEIF](ELSEIF) ([IF...THEN](IF...THEN) statement) is used with [THEN](THEN) to set alternate conditional evaluations.
-* [END](END) (statement) sets the end of a program, sub-procedure, statement block, [DECLARE LIBRARY](DECLARE LIBRARY) or [TYPE](TYPE) definition.
+* [END](END) (statement) sets the end of a program, sub-procedure, statement block, [DECLARE LIBRARY](DECLARE-LIBRARY) or [TYPE](TYPE) definition.
 * [IF...THEN](IF...THEN) (statement) [END](END)s an IF...THEN conditional block statement using more than one line of code.
 * [ENVIRON](ENVIRON) (statement) temporarily sets an environmental key/pair value.
 * [ENVIRON$](ENVIRON$) (function) returns a specified string setting or numerical position as an environmental [STRING](STRING) value.
-* [EOF](EOF) (file function) returns -1 when a file [INPUT (file statement)](INPUT (file statement)) or [GET](GET) has reached the end of a file.
+* [EOF](EOF) (file function) returns -1 when a file [INPUT (file statement)](INPUT-(file-statement)) or [GET](GET) has reached the end of a file.
 * [EQV](EQV) (logic operator) is used to compare two numerical values bitwise.
 * [ERASE](ERASE) (statement) clears the values from [$STATIC]($STATIC) arrays and completely removes [$DYNAMIC]($DYNAMIC) arrays.
 * [ERDEV](ERDEV) (function) returns an error code from the last device to create an error.
 * [ERDEV$](ERDEV$) (function) returns the 8 character name of the last device to declare an error as a [STRING](STRING).
 * [ERL](ERL) (error function) returns the closest line number before an error occurred if line numbers are used.
-* [ERR](ERR) (function) returns the [ERROR Codes](ERROR Codes) when a program error occurs.
-* [ERROR](ERROR) (statement) sets a specific [ERROR Codes](ERROR Codes) to be simulated.
+* [ERR](ERR) (function) returns the [ERROR Codes](ERROR-Codes) when a program error occurs.
+* [ERROR](ERROR) (statement) sets a specific [ERROR Codes](ERROR-Codes) to be simulated.
 * [EXIT](EXIT) (statement) immediately exits a program [FOR...NEXT](FOR...NEXT), [DO...LOOP](DO...LOOP), [SUB](SUB) or [FUNCTION](FUNCTION) procedure.
 * [EXP](EXP) (function) returns the value of e to the exponential power specified.
 
@@ -439,7 +432,7 @@ The underscore prefix is reserved for QB64 _KEYWORDS only.
 * [FILES](FILES) (statement) returns a list of files in the current directory path to the [SCREEN](SCREEN).
 * [FIX](FIX) (function) returns the rounded [INTEGER](INTEGER) value of a numerical value.
 * [FOR...NEXT](FOR...NEXT) (statement) creates a recursive loop procedure that loop a specified number of times.
-* [FOR (file statement)](FOR (file statement)) used in an [OPEN](OPEN) file or device statement to indicate the access mode.
+* [FOR (file statement)](FOR-(file-statement)) used in an [OPEN](OPEN) file or device statement to indicate the access mode.
 * [FRE](FRE) (function) returns the number of bytes of Memory available to running programs.
 * [TIMER (statement)](TIMER (statement)) frees a numbered TIMER event in QB64.
 * [FREEFILE](FREEFILE) (file function) returns a file number that is currently not in use by the Operating System.
@@ -448,8 +441,8 @@ The underscore prefix is reserved for QB64 _KEYWORDS only.
 ### G
 
 * [GET](GET) (file statement) reads a file sequencially or at a specific position and returns the value as the variable type used.
-* [GET (TCP/IP statement)](GET (TCP/IP statement)) reads a connection port to return a value.
-* [GET (graphics statement)](GET (graphics statement)) maps an area the current [SCREEN](SCREEN) video information and places it in an [INTEGER](INTEGER) [arrays](arrays).
+* [GET (TCP/IP statement)](GET-(TCP/IP-statement)) reads a connection port to return a value.
+* [GET (graphics statement)](GET-(graphics-statement)) maps an area the current [SCREEN](SCREEN) video information and places it in an [INTEGER](INTEGER) [arrays](arrays).
 * [GOSUB](GOSUB) (statement) sends the program to a designated line label procedure in the main program.
 * [GOTO](GOTO) (statement) sends the program to a designated line number or line label in a procedure.
 
@@ -463,10 +456,10 @@ The underscore prefix is reserved for QB64 _KEYWORDS only.
 * [IMP](IMP) (logic operator) is used to compare two numerical values bitwise.
 * [$INCLUDE]($INCLUDE) ([Metacommand](Metacommand)) designates a text code library file to include with the program.
 * [INKEY$](INKEY$) (function) [ASCII](ASCII) returns a [STRING](STRING) value entry from the keyboard.
-* [INP](INP) (function) returns a numerical value from a specified port register address. See [Keyboard scancodes](Keyboard scancodes)
+* [INP](INP) (function) returns a numerical value from a specified port register address. See [Keyboard scancodes](Keyboard-scancodes)
 * [INPUT](INPUT) (statement) a user input that returns a value to one or more specified variable(s).
-* [INPUT (file mode)](INPUT (file mode)) [OPEN](OPEN) statement that only allows an existing file to be read using [INPUT (file statement)](INPUT (file statement)) or [INPUT$](INPUT$).
-* [INPUT (file statement)](INPUT (file statement)) reads a file sequentially using the variable types designated. 
+* [INPUT (file mode)](INPUT-(file-mode)) [OPEN](OPEN) statement that only allows an existing file to be read using [INPUT (file statement)](INPUT-(file-statement)) or [INPUT$](INPUT$).
+* [INPUT (file statement)](INPUT-(file-statement)) reads a file sequentially using the variable types designated. 
 * [INPUT$](INPUT$) (function) returns a designated number of [STRING](STRING) bytes from the keyboard entry or a file number.
 * [INSTR](INSTR) (function) returns the position in a text [STRING](STRING) where a character sequence match starts.
 * [INT](INT) (function) rounds a numerical value to an [INTEGER](INTEGER) value by removing the decimal point fraction.
@@ -478,9 +471,9 @@ The underscore prefix is reserved for QB64 _KEYWORDS only.
 
 ### K
 
-* [KEY n](KEY n) (statement) used with [ON KEY(n)](ON KEY(n)) events to assign a "softkey" string to a key or create a  user defined key.
-* [KEY(n)](KEY(n)) (statement) used with [ON KEY(n)](ON KEY(n)) events to assign, enable, disable or suspend event trapping.
-* [KEY LIST](KEY LIST) (statement) lists the 12 Function key soft key string assignments going down left side of screen.
+* [KEY n](KEY-n) (statement) used with [ON KEY(n)](ON-KEY(n)) events to assign a "softkey" string to a key or create a  user defined key.
+* [KEY(n)](KEY(n)) (statement) used with [ON KEY(n)](ON-KEY(n)) events to assign, enable, disable or suspend event trapping.
+* [KEY LIST](KEY-LIST) (statement) lists the 12 Function key soft key string assignments going down left side of screen.
 * [KILL](KILL) (statement) deletes the specified file without a warning. Remove empty folders with [RMDIR](RMDIR).
 
 ### L
@@ -491,10 +484,10 @@ The underscore prefix is reserved for QB64 _KEYWORDS only.
 * [LEN](LEN) (function) returns the length or number of characters in a [STRING](STRING) value in bytes.
 * [LET](LET) (statement) assigns a variable a literal value. Not required.
 * [LINE](LINE) (statement) creates a graphic line or box on the [SCREEN](SCREEN).
-* [LINE INPUT](LINE INPUT) (statement) user input can be any text character including commas and quotes as a [STRING](STRING) value only.
-* [LINE INPUT (file statement)](LINE INPUT (file statement)) returns an entire text file line and returns it as a [STRING](STRING) value.
-* [KEY LIST](KEY LIST) displays the current [ON KEY(n)](ON KEY(n)) function key (F1 to F10) "soft key" settings.
-* [LOC](LOC) (function) returns the present file byte position or number of bytes in the [OPEN COM](OPEN COM) buffer.
+* [LINE INPUT](LINE-INPUT) (statement) user input can be any text character including commas and quotes as a [STRING](STRING) value only.
+* [LINE INPUT (file statement)](LINE-INPUT-(file-statement)) returns an entire text file line and returns it as a [STRING](STRING) value.
+* [KEY LIST](KEY-LIST) displays the current [ON KEY(n)](ON-KEY(n)) function key (F1 to F10) "soft key" settings.
+* [LOC](LOC) (function) returns the present file byte position or number of bytes in the [OPEN COM](OPEN-COM) buffer.
 * [LOCATE](LOCATE) (statement) sets the text cursor's row and column position for a [PRINT](PRINT) or [INPUT](INPUT) statement. 
 * [LOCK](LOCK) (statement) restricts access to portions or all of a file by other programs or processes.
 * [LOF](LOF) (function) returns the size of an [OPEN](OPEN) file in bytes.
@@ -503,14 +496,14 @@ The underscore prefix is reserved for QB64 _KEYWORDS only.
 * [DO...LOOP](DO...LOOP) (block statement) bottom end of a recursive DO loop.
 * [LPOS](LPOS) (function) returns the printer head position.
 * [LPRINT](LPRINT) (statement) sends [STRING](STRING) data to the default LPT or USB printer.
-* [LPRINT USING](LPRINT USING) (statement) sends template formatted text to the default LPT or USB  printer.
+* [LPRINT USING](LPRINT-USING) (statement) sends template formatted text to the default LPT or USB  printer.
 * [LSET](LSET) (statement) left justifies the text in a string so that there are no leading spaces.
 * [LTRIM$](LTRIM$) (function) returns a [STRING](STRING) value with no leading spaces.
 
 ### M
 
 * [MID$](MID$) (function) returns a designated portion of a [STRING](STRING).
-* [MID$ (statement)](MID$ (statement)) redefines existing characters in a [STRING](STRING).
+* [MID$ (statement)](MID$-(statement)) redefines existing characters in a [STRING](STRING).
 * [MKD$](MKD$) (function) returns an 8 byte [ASCII](ASCII) [STRING](STRING) representation of a [DOUBLE](DOUBLE) numerical value.
 * [MKDIR](MKDIR) (statement) creates a new folder in the current or designated program path.
 * [MKDMBF$](MKDMBF$) (function) returns an 8 byte Microsoft Binary Format [STRING](STRING) representation of a [DOUBLE](DOUBLE) numerical value.
@@ -531,20 +524,20 @@ The underscore prefix is reserved for QB64 _KEYWORDS only.
 * [OCT$](OCT$) (function) returns the octal (base 8) [STRING](STRING) representation of the [INTEGER](INTEGER) part of any value.
 * [OFF](OFF) (event statement) turns off all [ON](ON) event checking.
 * [ON COM(n)](ON COM(n)) (statement) sets up a COM port event procedure call.
-* [ON ERROR](ON ERROR) (statement) sets up and activates an error event checking procedure call. Use to avoid program errors.
-* [ON KEY(n)](ON KEY(n)) (statement) sets up a keyboard key entry event procedure.
+* [ON ERROR](ON-ERROR) (statement) sets up and activates an error event checking procedure call. Use to avoid program errors.
+* [ON KEY(n)](ON-KEY(n)) (statement) sets up a keyboard key entry event procedure.
 * [ON PEN](ON PEN) (statement) sets up a pen event procedure call.
-* [ON PLAY(n)](ON PLAY(n)) (statement) sets up a [PLAY](PLAY) event procedure call.
-* [ON STRIG(n)](ON STRIG(n)) (statement) sets up a joystick button event procedure call.
-* [ON TIMER(n)](ON TIMER(n)) (statement) sets up a timed event procedure call.
+* [ON PLAY(n)](ON-PLAY(n)) (statement) sets up a [PLAY](PLAY) event procedure call.
+* [ON STRIG(n)](ON-STRIG(n)) (statement) sets up a joystick button event procedure call.
+* [ON TIMER(n)](ON-TIMER(n)) (statement) sets up a timed event procedure call.
 * [ON UEVENT](ON UEVENT) (statement) **Not implemented in QB64.**
 * [ON...GOSUB](ON...GOSUB) (statement) sets up a numerical event procedure call.
 * [ON...GOTO](ON...GOTO) (statement) sets up a numerical event procedure call.
 * [OPEN](OPEN) (file statement) opens a file name for an access mode with a specific file number.
-* [OPEN COM](OPEN COM) (statement) opens a serial communication port for access at a certain speed and mode.
-* [OPTION BASE](OPTION BASE) (statement) can set the lower boundary of all arrays to 1.
+* [OPEN COM](OPEN-COM) (statement) opens a serial communication port for access at a certain speed and mode.
+* [OPTION BASE](OPTION-BASE) (statement) can set the lower boundary of all arrays to 1.
 * [OR](OR) (logic operator) is used to compare two numerical values bitwise.
-* [OR (boolean)](OR (boolean))  conditonal operator is used to include an alternative evaluation in an [IF...THEN](IF...THEN) or [Boolean](Boolean) statement.
+* [OR (boolean)](OR-(boolean))  conditonal operator is used to include an alternative evaluation in an [IF...THEN](IF...THEN) or [Boolean](Boolean) statement.
 * [OUT](OUT) (statement) writes numerical data to a specified register port.
 * [OUTPUT](OUTPUT) (file mode) creates a new file or clears all data from an existing file to acess the file sequencially.
 
@@ -552,7 +545,7 @@ The underscore prefix is reserved for QB64 _KEYWORDS only.
 
 * [PAINT](PAINT) (statement) fills an enclosed area of a graphics [SCREEN](SCREEN) with a color until it encounters a specific colored border.
 * [PALETTE](PALETTE) (statement) sets the Red, Green and Blue color attribute intensities using a RGB multiplier calculation.
-* [PALETTE USING](PALETTE USING) (statement) sets the color intensity settings using a designated [arrays](arrays).
+* [PALETTE USING](PALETTE-USING) (statement) sets the color intensity settings using a designated [arrays](arrays).
 * [PCOPY](PCOPY) (statement) swaps two designated memory page images when page swapping is enabled in the [SCREEN](SCREEN) statement.
 * [PEEK](PEEK) (function) returns a numerical value from a specified segment address in memory. 
 * [PEN](PEN) (function) returns requested information about the lightpen device used.
@@ -565,9 +558,9 @@ The underscore prefix is reserved for QB64 _KEYWORDS only.
 * [POS](POS) (function) returns the current text column position of the text cursor.
 * [PRESET](PRESET) (statement) sets a pixel coordinate to the background color unless one is specified.
 * [PRINT](PRINT) (statement) prints text [STRING](STRING) or numerical values to the [SCREEN](SCREEN).
-* [PRINT (file statement)](PRINT (file statement)) prints text [STRING](STRING) or numerical values to a file.
-* [PRINT USING](PRINT USING) (statement) prints a template formatted [STRING](STRING) to the [SCREEN](SCREEN).
-* [PRINT USING (file statement)](PRINT USING (file statement)) prints a template formatted [STRING](STRING) to a file.
+* [PRINT (file statement)](PRINT-(file-statement)) prints text [STRING](STRING) or numerical values to a file.
+* [PRINT USING](PRINT-USING) (statement) prints a template formatted [STRING](STRING) to the [SCREEN](SCREEN).
+* [PRINT USING (file statement)](PRINT-USING-(file-statement)) prints a template formatted [STRING](STRING) to a file.
 * [PSET](PSET) (statement) sets a pixel coordinate to the current color unless a color is designated.
 * [PUT](PUT) (file I/O statement) writes data sequencially or to a designated position using a variable value.
 * [PUT (TCP/IP statement)](PUT (TCP/IP statement)) sends raw data to a user's connection handle. 
@@ -583,7 +576,7 @@ The underscore prefix is reserved for QB64 _KEYWORDS only.
 * [REM](REM) (statement) or an apostrophe tells the program to ignore statements following it on the same line.
 * [RESET](RESET) (statement)  closes all files and writes the directory information to a diskette before it is removed from a disk drive.
 * [RESTORE](RESTORE) (statement) resets the [DATA](DATA) pointer to the start of a designated field of data.
-* [RESUME](RESUME) (statement) an [ERROR Codes](ERROR Codes) handling procedure exit that can send the program to a line number or the [NEXT](NEXT) code line.
+* [RESUME](RESUME) (statement) an [ERROR Codes](ERROR-Codes) handling procedure exit that can send the program to a line number or the [NEXT](NEXT) code line.
 * [RETURN](RETURN) (statement) returns the program to the code immediately following a [GOSUB](GOSUB) call.
 * [RIGHT$](RIGHT$) (function) returns a specific number of text characters from the right end of a [STRING](STRING).
 * [RMDIR](RMDIR) (statement) removes an empty folder from the current path or the one designated.
@@ -595,16 +588,16 @@ The underscore prefix is reserved for QB64 _KEYWORDS only.
 ### S
 
 * [SADD](SADD) (function) returns the address of a STRING variable as an offset from the current data segment.
-* [SCREEN (function)](SCREEN (function)) can return the [ASCII](ASCII) character code or color of the text at a text designated coordinate.
+* [SCREEN (function)](SCREEN-(function)) can return the [ASCII](ASCII) character code or color of the text at a text designated coordinate.
 * [SCREEN](SCREEN) (statement) sets the display mode and size of the program window.
 * [SEEK](SEEK) (function) returns the present byte position in an [OPEN](OPEN) file.
-* [SEEK (statement)](SEEK (statement)) moves to a specified position in an [OPEN](OPEN) file.
+* [SEEK (statement)](SEEK-(statement)) moves to a specified position in an [OPEN](OPEN) file.
 * [SELECT CASE](SELECT CASE) (statement) a program flow block that can handle numerous conditional evaluations.
 * [SETMEM](SETMEM) (function) sets the memory to use.
 * [SGN](SGN) (function) returns -1 for negative, 0 for zero, and 1 for positive numerical values.
 * [SHARED](SHARED) (statement) designates that a variable can be used by other procedures or the main procedure when in a sub-procedure.
 * [SHELL](SHELL) (statement) sends [STRING](STRING) commands to the command line. SHELL calls will not affect the current path.
-* [SHELL (function)](SHELL (function)) executes an external command or calls another program. Returns codes sent by [END](END) or [SYSTEM](SYSTEM).
+* [SHELL (function)](SHELL-(function)) executes an external command or calls another program. Returns codes sent by [END](END) or [SYSTEM](SYSTEM).
 * [SIGNAL](SIGNAL) (OS 2 event)
 * [SIN](SIN) (function) returns the sine of a radian angle.
 * [SINGLE](SINGLE) (! numerical type) 4 byte floating decimal point values up to 7 decimal places.
@@ -634,7 +627,7 @@ The underscore prefix is reserved for QB64 _KEYWORDS only.
 * [THEN](THEN) ([IF...THEN](IF...THEN) keyword) must be used in a one line [IF...THEN](IF...THEN) program flow statement.
 * [TIME$](TIME$) (function) returns the present time setting of the Operating System as a  format hh:mm:ss [STRING](STRING).
 * [TIMER](TIMER) (function) returns the number of seconds since midnight as a [SINGLE](SINGLE) value. 
-* [TIMER (statement)](TIMER (statement)) events based on the designated time interval and timer number.
+* [TIMER (statement)](TIMER-(statement)) events based on the designated time interval and timer number.
 * [TO](TO) indicates a range of numerical values or an assignment of one value to another.
 * [TYPE](TYPE) (definition) defines a variable type or file record that can include any [STRING](STRING) or numerical types.
 
@@ -649,11 +642,11 @@ The underscore prefix is reserved for QB64 _KEYWORDS only.
 ### V
 
 * [VAL](VAL) (function) returns the numerical value of a [STRING](STRING) number.
-* [VARPTR](VARPTR) (function) returns the [segment](segment) pointer address in memory.
+* [VARPTR](VARPTR) (function) returns the [segment](Segment) pointer address in memory.
 * [VARPTR$](VARPTR$) (function) returns the string value of a numerical value in memory.
-* [VARSEG](VARSEG) (function) returns the [segment](segment) address of a value in memory.
+* [VARSEG](VARSEG) (function) returns the [segment](Segment) address of a value in memory.
 * [VIEW](VIEW) (graphics statement) sets up a graphic view port area of the [SCREEN](SCREEN).
-* [VIEW PRINT](VIEW PRINT) (statement) sets up a text viewport area of the [SCREEN](SCREEN).
+* [VIEW PRINT](VIEW-PRINT) (statement) sets up a text viewport area of the [SCREEN](SCREEN).
 
 ### W
 
@@ -664,7 +657,7 @@ The underscore prefix is reserved for QB64 _KEYWORDS only.
 * [WIDTH](WIDTH) (statement) sets the text column and row sizes in several [SCREEN](SCREEN) modes.
 * [WINDOW](WINDOW) (statement) maps a window size different from the program's window size.
 * [WRITE](WRITE) (screen I/O statement) prints variable values to the screen with commas separating each value.
-* [WRITE (file statement)](WRITE (file statement)) writes data to a file with each variable value separated by commas.
+* [WRITE (file statement)](WRITE-(file-statement)) writes data to a file with each variable value separated by commas.
 
 ### X
 
@@ -1076,19 +1069,19 @@ The underscore prefix is reserved for QB64 _KEYWORDS only.
 > **Print, Input or File Formatting**
 
 * [Semicolon](Semicolon) after a [PRINT](PRINT) stops invisible cursor at end of printed value. Can prevent screen rolling. A [Semicolon](Semicolon) after the [INPUT](INPUT) prompt text will display a question mark after the text. 
-* [Comma](Comma) after a [PRINT](PRINT) tabs invisible cursor past end of printed value. After the [INPUT](INPUT) prompt text a [comma](comma) displays no [Question mark](Question mark).
-* [Quotation mark](Quotation mark) delimits the ends of a literal [STRING](STRING) value in a [PRINT](PRINT), [INPUT](INPUT) or [LINE INPUT](LINE INPUT) statement. 
-* [Question mark](Question mark) is a shortcut substitute for the [PRINT](PRINT) keyword. Will change to PRINT when cursor leaves the code line.
+* [Comma](Comma) after a [PRINT](PRINT) tabs invisible cursor past end of printed value. After the [INPUT](INPUT) prompt text a [comma](comma) displays no [Question mark](Question-mark).
+* [Quotation mark](Quotation-mark) delimits the ends of a literal [STRING](STRING) value in a [PRINT](PRINT), [INPUT](INPUT) or [LINE INPUT](LINE-INPUT) statement. 
+* [Question mark](Question-mark) is a shortcut substitute for the [PRINT](PRINT) keyword. Will change to PRINT when cursor leaves the code line.
 
 > **Program Code Markers**
 
 * [Apostrophe](Apostrophe) ignores a line of code or program comment and MUST be used before a [Metacommand](Metacommand). Same as using [REM](REM).
 * [Comma](Comma) is used to separate [DATA](DATA), [SUB](SUB) or [FUNCTION](FUNCTION) parameter variables. 
 * [Colon](Colon)s can be used to separate two procedure statements on one code line.
-* [Dollar_Sign](Dollar_Sign) prefix denotes a QBasic [Metacommand](Metacommand).
+* [Dollar_Sign](Dollar-Sign) prefix denotes a QBasic [Metacommand](Metacommand).
 * [Parenthesis](Parenthesis) enclose a math or conditional procedure order, [SUB](SUB) or [FUNCTION](FUNCTION) parameters or to pass by value.
-* [+](+) [concatenation](concatenation) operator MUST be used to combine literal string values in a variable definition.
-* [Quotation mark](Quotation mark) designates the ends of a literal [STRING](STRING) value. Use [CHR$](CHR$)(34) to insert quotes in a text [STRING](STRING).
+* [+](+) [concatenation](Concatenation) operator MUST be used to combine literal string values in a variable definition.
+* [Quotation mark](Quotation-mark) designates the ends of a literal [STRING](STRING) value. Use [CHR$](CHR$)(34) to insert quotes in a text [STRING](STRING).
 * [Underscore](Underscore) can be used to continue a line of code to the next program line in **QB64**.
 
 > **Variable Name Type Suffixes**
@@ -1111,7 +1104,7 @@ The underscore prefix is reserved for QB64 _KEYWORDS only.
 * [&O](&O)            Base 8:    Digits 0 to 7
 * [&H](&H) Base 16: Digits 0 to F
 
-> **[Mathematical Operations](Mathematical Operations)**
+> **[Mathematical Operations](Mathematical-Operations)**
 
 *[+](+) operator or sign
 *[-](-) operator or sign
@@ -1121,20 +1114,20 @@ The underscore prefix is reserved for QB64 _KEYWORDS only.
 *[^](^) operator
 *[MOD](MOD) operator
 
-> **[Relational Operations](Relational Operations)**
+> **[Relational Operations](Relational-Operations)**
 
 * [Equal](Equal) Equal to condition
-* [Not_Equal](Not_Equal) Not equal condition
-* [Greater_Than](Greater_Than) Greater than condition
-* [Less_Than](Less_Than) Less than condition
-* [Greater_Than_Or_Equal](Greater_Than_Or_Equal) Greater than or equal to condition
-* [Less_Than_Or_Equal](Less_Than_Or_Equal) Less than or equal to condition
+* [Not_Equal](Not-Equal) Not equal condition
+* [Greater_Than](Greater-Than) Greater than condition
+* [Less_Than](Less-Than) Less than condition
+* [Greater_Than_Or_Equal](Greater-Than-Or-Equal) Greater than or equal to condition
+* [Less_Than_Or_Equal](Less-Than-Or-Equal) Less than or equal to condition
 
 ## References:
 
 **Got a question about something?** 
 
-* [QB64 FAQ](QB64_FAQ)
+* [QB64 FAQ](QB64-FAQ)
 * [Visit the QB64 Main Site](http://qb64.com)
 
 **Links to other QBasic Sites:**
