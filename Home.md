@@ -8,7 +8,7 @@ QB64 is a modern extended BASIC programming language that retains QBasic / Quick
 
 ### FAQ
 
-* [QB64 FAQ](QB64 FAQ)
+* [QB64 FAQ](QB64_FAQ)
 
 ### Get in touch
 
@@ -16,12 +16,12 @@ QB64 is a modern extended BASIC programming language that retains QBasic / Quick
 
 ## Keywords
 
-* [Keyword Reference - Alphabetical](Keyword Reference - Alphabetical)
-* [Keyword Reference - By Usage](Keyword Reference - By usage)
+* [Keyword Reference - Alphabetical](Keyword_Reference_-_Alphabetical)
+* [Keyword Reference - By Usage](Keyword_Reference_-_By_Usage)
 
 ### Known issues
 
-* [Keywords currently not supported by QB64](Keywords currently not supported by QB64)
+* [Keywords currently not supported by QB64](Keywords_currently_not_supported_by_QB64)
 
 ## Articles and Tutorials
 
@@ -32,23 +32,23 @@ QB64 is a modern extended BASIC programming language that retains QBasic / Quick
 * [Binary](Binary)
 * [Boolean](Boolean)
 * [_CLIPBOARD$](_CLIPBOARD$)
-* [Converting Bytes to Bits](Converting Bytes to Bits)
-* [Console Window](Console Window)
-* [Controller Devices](Controller Devices) (Keyboard, Mouse, Joystick, Gamepad)
-* [Downloading Files](Downloading Files) (TCP/IP)
-* [Windows Environment](Windows Environment)
-* [Hardware images](Hardware images)
+* [Converting Bytes to Bits](Converting_Bytes_to_Bits)
+* [Console Window](Console_Window)
+* [Controller Devices](Controller_Devices) (Keyboard, Mouse, Joystick, Gamepad)
+* [Downloading Files](Downloading_Files) (TCP/IP)
+* [Windows Environment](Windows_Environment)
+* [Hardware images](Hardware_images)
 * [Images](Images)
-* [Keyboard scancodes](Keyboard scancodes)
-* [Libraries](Libraries) ([C Libraries](C Libraries), [Windows Libraries](Windows Libraries), [DLL Libraries](DLL Libraries))
-* [Mathematical Operations](Mathematical Operations)
-* [PDS (7.1) Procedures](PDS (7.1) Procedures)
-* [Port Access Libraries](Port Access Libraries)
-* [QB 4.5 Library Ports For QB64](QB 4.5 Library Ports For QB64)
-* [Relational Operations](Relational Operations)
-* [Line numbers](Line numbers)
-* [Line number](Line number)
-* [Resource Table extraction](Resource Table extraction)
-* [Screen Memory](Screen Memory)
-* [Text Using Graphics](Text Using Graphics)
-* [Variable Types](Variable Types)
+* [Keyboard scancodes](Keyboard_scancodes)
+* [Libraries](Libraries) ([C Libraries](C_Libraries), [Windows Libraries](Windows_Libraries), [DLL Libraries](DLL_Libraries))
+* [Mathematical Operations](Mathematical_Operations)
+* [PDS (7.1) Procedures](PDS_(7.1)_Procedures)
+* [Port Access Libraries](Port_Access_Libraries)
+* [QB 4.5 Library Ports For QB64](QB_4.5_Library_Ports_For_QB64)
+* [Relational Operations](Relational_Operations)
+* [Line numbers](Line_numbers)
+* [Line number](Line_number)
+* [Resource Table extraction](Resource_Table_extraction)
+* [Screen Memory](Screen_Memory)
+* [Text Using Graphics](Text_Using_Graphics)
+* [Variable Types](Variable_Types)
