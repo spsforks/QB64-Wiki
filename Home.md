@@ -14,8 +14,8 @@ QB64 is a modern extended BASIC programming language that retains QBasic / Quick
 
 ## Keywords
 
-* [Keyword Reference - Alphabetical](Keyword-Reference---Alphabetical)
-* [Keyword Reference - By Usage](Keyword-Reference---By-Usage)
+* [Keyword Reference - Alphabetical](Keyword-Reference-(Alphabetical))
+* [Keyword Reference - By Usage](Keyword-Reference-(Usage))
 
 ### Known issues
 
