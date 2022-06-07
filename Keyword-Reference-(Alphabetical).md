@@ -18,9 +18,6 @@ The underscore prefix is reserved for QB64 _KEYWORDS only.
 * [_ALLOWFULLSCREEN](_ALLOWFULLSCREEN) (statement) allows setting the behavior of the ALT+ENTER combo.
 * [_ALPHA](_ALPHA) (function) returns the alpha channel transparency level of a color value used on a screen page or image.
 * [_ALPHA32](_ALPHA32) (function) returns the alpha channel transparency level of a color value used on a 32 bit screen page or image.
-* [Mathematical Operations#Derived Mathematical Functions](Mathematical Operations#Derived Mathematical Functions) (function) is the inverse function of the cotangent. .  http://mathworld.wolfram.com/InverseCosecant.html
-* [Mathematical Operations#Derived Mathematical Functions](Mathematical Operations#Derived Mathematical Functions) (function) is the inverse function of the cosecant.  http://mathworld.wolfram.com/InverseCosecant.html
-* [Mathematical Operations#Derived Mathematical Functions](Mathematical Operations#Derived Mathematical Functions) (function) is the inverse function of the secant.  http://mathworld.wolfram.com/InverseSecant.html
 * [_ASIN](_ASIN) (function) Returns the principal value of the arc sine of x, expressed in radians.
 * [_ASINH](_ASINH) (function) Returns the arc hyperbolic sine of x, expressed in radians.
 * [_ASSERT](_ASSERT) (statement) Performs debug tests.
@@ -28,7 +25,7 @@ The underscore prefix is reserved for QB64 _KEYWORDS only.
 * [_ATAN2](_ATAN2) (function) Returns the principal value of the [ATN](ATN) of y/x, expressed in radians.
 * [_ATANH](_ATANH) (function) Returns the arc hyperbolic tangent of x, expressed in radians.
 * [_AUTODISPLAY](_AUTODISPLAY) (statement) enables the automatic display of the screen image changes previously disabled by [_DISPLAY](_DISPLAY).
-* [_AUTODISPLAY (function)](_AUTODISPLAY (function)) returns the current display mode as true (-1) if automatic or false (0) if per request using [_DISPLAY](_DISPLAY).
+* [_AUTODISPLAY (function)](_AUTODISPLAY-(function)) returns the current display mode as true (-1) if automatic or false (0) if per request using [_DISPLAY](_DISPLAY).
 * [_AXIS](_AXIS) (function) returns a [SINGLE](SINGLE) value between -1 and 1 indicating the maximum distance from the device axis center, 0.
 
 ### _B
