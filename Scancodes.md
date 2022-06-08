@@ -16,10 +16,10 @@
 * The keyboard input is stored at decimal register 96 or &H60 hexadecimal.
 * Returns values from 0 to 127 for keypresses. 129 to 255 for key releases. **Codes 91 to 93 are available in QB64 only**.
 * Every key (except Prt Scr/Sys Rq) has an identifying code that will not change with Caps Lock or Shift. 
-* Release codes are the original key press code InlineCode+ 128InlineCodeEnd. Example: [Esc] key press = 1 and  release = 129.
+* Release codes are the original key press code `+ 128`. Example: [Esc] key press = 1 and  release = 129.
 * Extended (added) keys on modern keyboards may alternate codes with Left Shift codes 42 and 170 because of Num Lock mode.
 * **Keyboards with Alt Gr key:** [_KEYHIT](_KEYHIT) may return both Alt (100307) and Ctrl (100306) codes when key is pressed or released.
-* **Linux with foreign keyboards: InlineCode[SHELL](SHELL) [_HIDE](_HIDE) "setxkbmap us"InlineCodeEnd can be used to setup a keyboard to read **US scan codes**.
+* **Linux with foreign keyboards: `[SHELL](SHELL) [_HIDE](_HIDE) "setxkbmap us"` can be used to setup a keyboard to read **US scan codes**.
 * To clear the keyboard buffer, use the [INKEY$](INKEY$) function before or after the [INP](INP) read to avoid buffer overflows and beeps.
 
 ```text

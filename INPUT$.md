@@ -13,7 +13,7 @@ The [INPUT$](INPUT$) function is used to receive data from the user's keyboard, 
 * fileOrPortNumber is the number that was used in the [OPEN](OPEN) AS statement.
 * Returns [STRING](STRING) values including spaces or even extended [ASCII](ASCII) characters.
 * Backspace key results in the [CHR$](CHR$)(8) character being added to an entry.
-* Use InlineCodeLOCATE , , 1InlineCodeEnd to view the cursor entry. Turn the cursor off using InlineCodeLOCATE , , 0InlineCodeEnd.
+* Use `LOCATE , , 1` to view the cursor entry. Turn the cursor off using `LOCATE , , 0`.
 * Use [_DEST](_DEST) [_CONSOLE](_CONSOLE) before INPUT$ is used  to receive input from a [$CONSOLE]($CONSOLE) window.
 
 

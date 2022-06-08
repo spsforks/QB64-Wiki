@@ -16,7 +16,7 @@ PageParameters
 * The function returns the base 8 (octal) representation of the given number as [STRING](STRING).
 * Different from [STR$](STR$), this function does not return a leading sign placeholder space, so no [LTRIM$](LTRIM$) to strip that space from positive numbers is necessary.
 * [VAL](VAL) can convert the returned oct string value back to a decimal value by prefixing the string with "[&O](&O)".
-** Eg. InlineCodedecimal = VAL("&O" + octvalue$)InlineCodeEnd.
+** Eg. `decimal = VAL("&O" + octvalue$)`.
 
 
 ## Example(s)

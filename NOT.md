@@ -9,7 +9,7 @@
 ## Description
 
 * In QBasic, True = -1 and False = 0 in boolean logic and evaluation statements.
-* [NOT](NOT) evaluates a value and returns the bitwise opposite, meaning that InlineCodeNOT 0 = -1InlineCodeEnd.
+* [NOT](NOT) evaluates a value and returns the bitwise opposite, meaning that `NOT 0 = -1`.
 * Often called a negative logic operator, it returns the opposite of a value as true or false.
 * Values are changed by their bit values so that each bit is changed to the opposite of on or off. See example 3 below.
 

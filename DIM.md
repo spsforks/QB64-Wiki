@@ -24,9 +24,9 @@ The [DIM](DIM) statement is used to declare a variable or a list of variables as
 ** [LONG](LONG) (or use variable suffix **&**)
 ** [SINGLE](SINGLE) (or use variable suffix **!** or no suffix by default)
 ** [DOUBLE](DOUBLE) (or use variable suffix **#**)
-** [STRING](STRING) (or use variable suffix **$**). An AS multiplier can set the string [LEN](LEN). Ex: InlineCodeDIM *variable* AS STRING * 8InlineCodeEnd
+** [STRING](STRING) (or use variable suffix **$**). An AS multiplier can set the string [LEN](LEN). Ex: `DIM *variable* AS STRING * 8`
 * **QB64** variable types: 
-** [_BIT](_BIT) (or use variable suffix **`**). An AS multiplier can be used for multiple bits. Ex: InlineCodeDIM *variable* AS _BIT * 8InlineCodeEnd
+** [_BIT](_BIT) (or use variable suffix **`**). An AS multiplier can be used for multiple bits. Ex: `DIM *variable* AS _BIT * 8`
 ** [_BYTE](_BYTE) (or use variable suffix **%%**)
 ** [_INTEGER64](_INTEGER64) (or use variable suffix **&&**)
 ** [_FLOAT](_FLOAT) (or use variable suffix **##**)

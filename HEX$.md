@@ -16,7 +16,7 @@ PageParameters
 * The function returns the base 16 (hexadecimal) representation of the given number as [STRING](STRING).
 * Different from [STR$](STR$), this function does not return a leading sign placeholder space, so no [LTRIM$](LTRIM$) to strip that space from positive numbers is necessary.
 * [VAL](VAL) can convert the returned hex string value back to a decimal value by prefixing the string with "[&H](&H)".
-** Eg. InlineCodedecimal = VAL("&H" + hexvalue$)InlineCodeEnd.
+** Eg. `decimal = VAL("&H" + hexvalue$)`.
 
 
 ## Example(s)

@@ -13,7 +13,7 @@ The [INKEY$](INKEY$) function returns user input as [ASCII](ASCII) [STRING](STRI
 * Some control keys cannot be read by INKEY$ or will return 2 byte [ASCII](ASCII) codes.
 * INKEY$ can also be used to clear a [SLEEP](SLEEP) key press or the keyboard buffer in a loop.
 * Assign the INKEY$ return to a string variable to save the key entry.
-* InlineCodeLOCATE , , 1InlineCodeEnd displays the INKEY$ cursor. Use InlineCodeLOCATE , , 0InlineCodeEnd to turn it off.
+* `LOCATE , , 1` displays the INKEY$ cursor. Use `LOCATE , , 0` to turn it off.
 * To receive input from a [$CONSOLE]($CONSOLE) window, use [_CINP](_CINP).
 * Returns can be evaluated as certain [ASCII](ASCII) characters or codes.
 

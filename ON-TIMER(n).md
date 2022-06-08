@@ -23,7 +23,7 @@ The [ON_TIMER(n)](ON_TIMER(n)) statement sets up a timed event to be repeated at
 
 * **QB64** can use multiple numbered timer events and [SINGLE](SINGLE) floating point second values down to one millisecond (.001).
 * The **TIMER** number% must be obtained from the [_FREETIMER](_FREETIMER) function. Store _FREETIMER numbers in a variable or an array to be able to reference them later.
-* If the **TIMER** number is omitted or InlineCode**ON TIMER**(0, seconds!)InlineCodeEnd is used, then the TIMER used is the *base TIMER* (same as in the legacy syntax above).
+* If the **TIMER** number is omitted or `**ON TIMER**(0, seconds!)` is used, then the TIMER used is the *base TIMER* (same as in the legacy syntax above).
 * [SUB](SUB) procedures are allowed to be referenced, but [CALL](CALL) must not be used. 
 * **[SUB](SUB) parameter values are passed by value and should be [SHARED](SHARED) or literal values.**
 * Specific **TIMER** events can be turned on, suspended, turned off or freed using [TIMER (statement)](TIMER (statement)) ON, STOP, OFF or FREE.

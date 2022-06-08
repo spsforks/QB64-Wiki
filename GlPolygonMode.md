@@ -30,7 +30,7 @@ Three modes are defined and can be specified in mode:
 ##  Examples 
 
 
-To draw a surface with outlined polygons, call InlineCodeglPolygonMode(, )InlineCodeEnd
+To draw a surface with outlined polygons, call `glPolygonMode(, )`
 
 
 ## Notes

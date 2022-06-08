@@ -15,10 +15,10 @@ The [MOD](MOD) operator gives the remainder after division of one number by anot
 
 ## Description
 
-* Floating decimal point *numerator* and *divisor* values are [CINT](CINT) rounded (e.g. InlineCode19 MOD 6.7InlineCodeEnd returns 5 just like InlineCode19 MOD 7InlineCodeEnd would).
+* Floating decimal point *numerator* and *divisor* values are [CINT](CINT) rounded (e.g. `19 MOD 6.7` returns 5 just like `19 MOD 7` would).
 * MOD returns 0 if a number is evenly divisible by integer division ( [\](\) ) or the number divided is 0.  
 * **divisor (second value) must not be between 0 and .5**. This will create a [ERROR Codes](ERROR Codes) due to [CINT](CINT) rounding the value to 0.
-* The result has the same sign as the numerator (e.g. InlineCode-1 MOD 7InlineCodeEnd returns -1, not 6).
+* The result has the same sign as the numerator (e.g. `-1 MOD 7` returns -1, not 6).
 * Division and multiplication operations are performed before addition and subtraction in QBasic's order of operations.
 
 

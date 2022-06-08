@@ -7,7 +7,7 @@ The [DEFINT](DEFINT) statement defines all variables with names starting with th
 
 
 PageLegacySupport
-* **DEF** statements ([DEFDBL](DEFDBL), [DEFSNG](DEFSNG), [DEFLNG](DEFLNG), [DEFINT](DEFINT), [DEFSTR](DEFSTR)) were used when storage space was a concern in older computers, as their usage could save up typing. Instead of InlineCodeDIM a AS INTEGER, a2 AS INTEGER, a3 AS INTEGERInlineCodeEnd, simply having InlineCodeDEFINT AInlineCodeEnd in the code before using variables starting with letter **A** would do the same job.
+* **DEF** statements ([DEFDBL](DEFDBL), [DEFSNG](DEFSNG), [DEFLNG](DEFLNG), [DEFINT](DEFINT), [DEFSTR](DEFSTR)) were used when storage space was a concern in older computers, as their usage could save up typing. Instead of `DIM a AS INTEGER, a2 AS INTEGER, a3 AS INTEGER`, simply having `DEFINT A` in the code before using variables starting with letter **A** would do the same job.
 * For clarity, it is recommended to declare variables with meaningful names.
 
 

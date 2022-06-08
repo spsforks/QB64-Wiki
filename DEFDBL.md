@@ -7,7 +7,7 @@ The [DEFDBL](DEFDBL) statement defines all variables with names starting with th
 
 
 PageLegacySupport
-* **DEF** statements ([DEFDBL](DEFDBL), [DEFSNG](DEFSNG), [DEFLNG](DEFLNG), [DEFINT](DEFINT), [DEFSTR](DEFSTR)) were used when storage space was a concern in older computers, as their usage could save up typing. Instead of InlineCodeDIM a AS DOUBLE, a2 AS DOUBLE, a3 AS DOUBLEInlineCodeEnd, simply having InlineCodeDEFDBL AInlineCodeEnd in the code before using variables starting with letter **A** would do the same job.
+* **DEF** statements ([DEFDBL](DEFDBL), [DEFSNG](DEFSNG), [DEFLNG](DEFLNG), [DEFINT](DEFINT), [DEFSTR](DEFSTR)) were used when storage space was a concern in older computers, as their usage could save up typing. Instead of `DIM a AS DOUBLE, a2 AS DOUBLE, a3 AS DOUBLE`, simply having `DEFDBL A` in the code before using variables starting with letter **A** would do the same job.
 * For clarity, it is recommended to declare variables with meaningful names.
 
 

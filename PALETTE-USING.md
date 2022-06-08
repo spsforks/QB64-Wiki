@@ -8,7 +8,7 @@ The [PALETTE USING](PALETTE USING) statement sets all RGB screen color intensiti
 
 ## Description
 
-* The [Arrays](Arrays) holds the RGB color value using the color value as InlineCodered% + 256 * green% + 65536 * blue%InlineCodeEnd.
+* The [Arrays](Arrays) holds the RGB color value using the color value as `red% + 256 * green% + 65536 * blue%`.
 ** Color intensities range from 0 to 63.
 * startIndex% indicates the index in the array from which the statement should start reading. The statement will read all color attributes available in that [SCREEN (statement)](SCREEN (statement)) mode. The **number of values required** in the array is listed below:
 

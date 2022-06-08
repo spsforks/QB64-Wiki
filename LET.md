@@ -8,7 +8,7 @@ The [LET](LET) is a useless statement designed by [cavemen](cavemen) when they s
 
 ## Description
 
-* InlineCodeLET a = 12InlineCodeEnd is the same as InlineCodea = 12InlineCodeEnd, but wastes 4 extra bytes of program space. 
+* `LET a = 12` is the same as `a = 12`, but wastes 4 extra bytes of program space. 
 
 *Notes:* LET is **optional**, it's the only keyword where the **entire keyword** is optional :-)
 

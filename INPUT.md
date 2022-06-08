@@ -20,7 +20,7 @@ The [INPUT](INPUT) statement requests a [STRING](STRING) or numerical keyboard e
 * **QB64** does not return *Redo from start* errors like QBasic did, as user input is limited to the scope of the variable [Data types](Data types) used.
 * Text entries (with a [STRING](STRING) variable]] can receive any characters, including numerical. **QB64 will ignore commas in single variable text entries.**
 * The [Data types](Data types) of the variable used to store user input determines the valid numerical range for value entries in QB64, with non-numerical characters limited to D, E, [&H](&H), [&O](&O) or [&B](&B).
-** For example, if you use an [INTEGER](INTEGER) variable, as in InlineCodeINPUT "Initial value: ", myValue%InlineCodeEnd, the valid range is -32768 to 32767.
+** For example, if you use an [INTEGER](INTEGER) variable, as in `INPUT "Initial value: ", myValue%`, the valid range is -32768 to 32767.
 ** [INTEGER](INTEGER), [LONG](LONG), and [_INTEGER64](_INTEGER64) entries will ignore decimal points entered and will use all numbers.
 * INPUT can be used to get more than one variable value from the user. Do so by separating input variables with commas in the code.
 ** The program must inform the user that more than one variable is requested, in order to enter each value separated with a comma at runtime.

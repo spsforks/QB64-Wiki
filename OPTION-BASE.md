@@ -12,7 +12,7 @@ The [OPTION BASE](OPTION BASE) statement is used to set the default lower bound 
 * When used, [OPTION BASE](OPTION BASE) must come before any array declarations ([DIM](DIM)) to be affected.
 * By default, the lower bound for arrays is zero, and may be changed to one using the statement.
 * Otherwise, arrays will be dimensioned from element 0 if you DIM just the upper bounds.
-* You can also set other array boundaries by using [TO](TO) in the DIM declaration such as InlineCodeDIM array(5 TO 10)InlineCodeEnd
+* You can also set other array boundaries by using [TO](TO) in the DIM declaration such as `DIM array(5 TO 10)`
 
 
 ## Example(s)

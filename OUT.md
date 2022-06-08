@@ -26,11 +26,11 @@
 ## Color Port Palette access using OUT
 
 
-> ::::InlineCodeOUT &H3C7, attributeInlineCodeEnd : Set port to read RGB settings for start attribute
-> ::::InlineCode[INP](INP) &H3C9, colorIntensityInlineCodeEnd : Reads RGB color intensity settings in order
+> ::::`OUT &H3C7, attribute` : Set port to read RGB settings for start attribute
+> ::::`[INP](INP) &H3C9, colorIntensity` : Reads RGB color intensity settings in order
 
-> ::::InlineCodeOUT &H3C8, attributeInlineCodeEnd : Set port to write RGB settings for start attribute
-> ::::InlineCodeOUT &H3C9, colorIntensityInlineCodeEnd : Writes RGB color intensity settings in order
+> ::::`OUT &H3C8, attribute` : Set port to write RGB settings for start attribute
+> ::::`OUT &H3C9, colorIntensity` : Writes RGB color intensity settings in order
 
 > :::* Every 3 reads or writes, changes to next color attribute without a set
 > :::* Color setting is Red, Green and Blue attribute intensities in order. 
@@ -77,7 +77,7 @@ OUT &H3C9, 63 'green
 OUT &H3C9, 63 'blue 
 
 ```
-> *Explanation:* In [SCREEN](SCREEN) 0 this is one way to make high intensity background colors. InlineCode[COLOR](COLOR) ,15InlineCodeEnd is actually grey (7).
+> *Explanation:* In [SCREEN](SCREEN) 0 this is one way to make high intensity background colors. `[COLOR](COLOR) ,15` is actually grey (7).
 
 
 *Example 3:* Toggling blinking colors in SCREEN beginning with build 20170816/61

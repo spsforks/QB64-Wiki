@@ -9,7 +9,7 @@ The [_PRINTIMAGE](_PRINTIMAGE) statement prints a colored image on the printer, 
 
 
 * imageHandle& is created by the [_LOADIMAGE](_LOADIMAGE), [_NEWIMAGE](_NEWIMAGE) or [_COPYIMAGE](_COPYIMAGE) functions.
-* Use a white background to save ink. InlineCode[CLS](CLS) , _RGB(255, 255, 255)InlineCodeEnd can be used to set the white background in any [SCREEN](SCREEN) mode.
+* Use a white background to save ink. `[CLS](CLS) , _RGB(255, 255, 255)` can be used to set the white background in any [SCREEN](SCREEN) mode.
 * The image may be stretched disproportionately using normal screen sizes. To compensate, use a [_NEWIMAGE](_NEWIMAGE) screen that is proportional to the paper size. *e.g.* A 640 X 900 SCREEN page is roughly the same as 3 times a 210mm X 297mm paper size.
 * [_NEWIMAGE](_NEWIMAGE) or graphic screen pages can use [_PRINTSTRING](_PRINTSTRING) to print different sized text [_FONT](_FONT)s.
 * [Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions](Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions)

@@ -7,7 +7,7 @@ The [DEFSNG](DEFSNG) statement defines all variables with names starting with th
 
 
 PageLegacySupport
-* **DEF** statements ([DEFDBL](DEFDBL), [DEFSNG](DEFSNG), [DEFLNG](DEFLNG), [DEFINT](DEFINT), [DEFSTR](DEFSTR)) were used when storage space was a concern in older computers, as their usage could save up typing. Instead of InlineCodeDIM a AS SINGLE, a2 AS SINGLE, a3 AS SINGLEInlineCodeEnd, simply having InlineCodeDEFSNG AInlineCodeEnd in the code before using variables starting with letter **A** would do the same job.
+* **DEF** statements ([DEFDBL](DEFDBL), [DEFSNG](DEFSNG), [DEFLNG](DEFLNG), [DEFINT](DEFINT), [DEFSTR](DEFSTR)) were used when storage space was a concern in older computers, as their usage could save up typing. Instead of `DIM a AS SINGLE, a2 AS SINGLE, a3 AS SINGLE`, simply having `DEFSNG A` in the code before using variables starting with letter **A** would do the same job.
 * For clarity, it is recommended to declare variables with meaningful names.
 
 

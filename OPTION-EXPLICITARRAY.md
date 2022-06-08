@@ -8,8 +8,8 @@ DISPLAYTITLE:OPTION _EXPLICITARRAY
 
 ## Description
 
-* Normally statements like InlineCodex(2) = 3InlineCodeEnd will implicitly create an array x(). [OPTION _EXPLICITARRAY](OPTION _EXPLICITARRAY) requires a preceding declaration for the array, helping to catch mistyped array and function names.
-* Unlike [OPTION _EXPLICIT](OPTION _EXPLICIT), simple variables can still be used without a declaration. Example: InlineCodei = 1InlineCodeEnd
+* Normally statements like `x(2) = 3` will implicitly create an array x(). [OPTION _EXPLICITARRAY](OPTION _EXPLICITARRAY) requires a preceding declaration for the array, helping to catch mistyped array and function names.
+* Unlike [OPTION _EXPLICIT](OPTION _EXPLICIT), simple variables can still be used without a declaration. Example: `i = 1`
 
 ## Error(s)
 

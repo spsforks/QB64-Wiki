@@ -15,7 +15,7 @@ The [KEY n](KEY n) statement is used to assign a "soft key" string or a flag and
 
 * n% is the number 1 to 10 (F1 to F10), 30 or 31 (F11 or F12) of the function key to assign the soft key string.
 * Instead of using an [ON KEY(n)](ON KEY(n)) [GOSUB](GOSUB) statement, Function keys F1 to F12 can be assigned a "soft key" string value to return.
-* InlineCodeKEY n, text$InlineCodeEnd defines a literal or variable [STRING](STRING) "soft key" function key return value.
+* `KEY n, text$` defines a literal or variable [STRING](STRING) "soft key" function key return value.
 
 
 ```text

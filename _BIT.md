@@ -21,11 +21,11 @@ The [_BIT](_BIT) datatype can return only values of 0 (bit off) and -1 (bit on).
 
 ***Suffix Symbols** The [_BIT](_BIT) type suffix used is below the grave accent (`), usually located under the tilde (~) key (not an apostrophe). Foreign keyboards may not have the ` key. Try Alt+96 in the IDE.
 
-> You can define a bit on-the-fly by adding a ` after the variable, like this: InlineCodevariable` = -1InlineCodeEnd
+> You can define a bit on-the-fly by adding a ` after the variable, like this: `variable` = -1`
 
-> If you want an unsigned bit you can define it on-the-fly by adding ~` instead, like this: InlineCodevariable~` = 1InlineCodeEnd
+> If you want an unsigned bit you can define it on-the-fly by adding ~` instead, like this: `variable~` = 1`
 
-> You can set the number of bits on the fly by just adding that number - this defines it as being two bits: InlineCodevariable`2 = -1InlineCodeEnd
+> You can set the number of bits on the fly by just adding that number - this defines it as being two bits: `variable`2 = -1`
 
 
 <center>**[_BIT](_BIT)**</center>

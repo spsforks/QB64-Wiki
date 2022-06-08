@@ -10,7 +10,7 @@
 * Address can be a decimal or hexadecimal [INTEGER](INTEGER) value.
 * [INP](INP) reads directly from a register or port address.
 * It does not require a [DEF SEG](DEF SEG) memory segment address like [PEEK](PEEK) or [POKE](POKE) do.
-* Reads color port intensity settings after InlineCode[OUT](OUT) &H3C7, attributeInlineCodeEnd sets the starting attribute read mode.
+* Reads color port intensity settings after `[OUT](OUT) &H3C7, attribute` sets the starting attribute read mode.
 
 
 ## Example(s)
