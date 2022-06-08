@@ -1,19 +1,16 @@
 The **RND** function returns a random number with a value between 0 (inclusive) and 1 (exclusive).
 
-
 ## Syntax
  
-> : result! = [RND](RND) [(*n*)]
-
+> result! = [RND](RND) [(*n*)]
 
 ## Parameter(s)
 
 * *n* is a [SINGLE](SINGLE) numeric value that defines the behavior of the RND function but is **NOT normally required**:
-> :n parameter omitted: Returns next random number in the sequence.
-> :n = 0: Return the last value returned.
-> :n < 0: Always returns the same value for any given n
-> :n > 0: the sequence of numbers generated will not change unless [RANDOMIZE](RANDOMIZE) is initiated. 
-
+    - :n parameter omitted: Returns next random number in the sequence.
+    - n = 0: Return the last value returned.
+    - n < 0: Always returns the same value for any given n
+    - n > 0: the sequence of numbers generated will not change unless [RANDOMIZE](RANDOMIZE) is initiated. 
 
 ## Description
 
@@ -28,6 +25,7 @@ The **RND** function returns a random number with a value between 0 (inclusive) 
 * Use [RANDOMIZE](RANDOMIZE) [TIMER](TIMER) for different random number results each time a program is run. 
 * [RUN](RUN) should reset the [RANDOMIZE](RANDOMIZE) sequence to the starting [RND](RND) function value.(Not yet in QB64)
 
+## Example(s)
 
 *Example 1:* Generating a random integer value between 1 and 6 (inclusive) using INT.
 
@@ -36,7 +34,6 @@ The **RND** function returns a random number with a value between 0 (inclusive) 
 dice% = INT(RND * 6) + 1 'add one as INT value never reaches 6 
 
 ```
-
 
 *Example 2:* Using uniform random numbers to create random numbers with a gaussian distribution ([http://en.wikipedia.org/wiki/Marsaglia_polar_method| Marsaglia's polar method]).
 
@@ -52,8 +49,8 @@ u! = u! * s!
 v! = v! * s! 
 
 ```
-> *Explanation:* Values *u!* and *v!* are now two independent random numbers with gaussian distribution, centered at 0.
 
+> *Explanation:* Values *u!* and *v!* are now two independent random numbers with gaussian distribution, centered at 0.
 
 *Example 3:* Random flashes from an explosion
 
@@ -109,14 +106,10 @@ DO
 
 LOOP UNTIL INKEY$ <> "" 
 
-``` <sub>Code by Falcon</sub>
-
+```
+<sub>Code by Falcon</sub>
 
 ## See Also
 
 * [RANDOMIZE](RANDOMIZE), [TIMER](TIMER)
 * [INT](INT), [CINT](CINT), [FIX](FIX)
-
-
-
-

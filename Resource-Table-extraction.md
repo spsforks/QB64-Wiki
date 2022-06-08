@@ -4,10 +4,9 @@ The following information was supplied by Michael Calkins in a member's request 
 
 There are 3 layers to the resource tables, Type, Name, and Language, The Microsoft PE and COFF specifications can be found here: 
 
-<center>http://msdn.microsoft.com/en-us/windows/hardware/gg463119</center>
+[http://msdn.microsoft.com/en-us/windows/hardware/gg463119](http://msdn.microsoft.com/en-us/windows/hardware/gg463119)
 
-
-<center>**Image Extraction Procedure**</center>
+**Image Extraction Procedure**
 
 ```vb
 
@@ -337,28 +336,23 @@ END SUB
 ```
 <sub>Public domain October 2011 by Michael Calkins based on the Microsoft PE and COFF spec, Revision 8.2 - September 21, 2010</sub>
 
-
 > If you open *c:\windows\system32\shell32.dll*, and save the first item (descend the first entry, then the first entry of the next level, etc), it's an .AVI file of a flashlight searching a folder. If you go down the first entry of the first level, but the last entry of the second level, it's an .AVI of a globe throwing a page at a folder. Save both files as AVI to view the video.
 
 > I wouldn't consider the program finished. There's some double checking, tweaking, and optimizing that could be done. For example, the dump sub could probably use an extra variable, and could probably use some increased functionality. I wrote it to help me debug the part that reads the resource tables. As I say in the comments, the part that gives the address of either the "leaf" or the next table lower seems to be relative to the start of the main table or section, not an actual RVA. 
 
 > With things like:
 
-
 ```text
 
                 GET 1, 1 + coff + 20 + 28 + (-4 AND pe32plus), ImageBase 
-```
 
+```
 
 > That could obviously be optimized by combining the 1 + 20 + 28. By leaving it uncombined, though, it documents itself better in terms of helping the human reader match it up with the specification. 1 because QBASIC's GET/PUT/SEEK idiotically starts at 1 instead of 0. Coff because we want an offset from the start of the coff header, 20 to skip the 20 byte coff main header, 28 because that's the offset of ImageBase in the optional header, and (-4 AND pe32plus) because the offset is 24 if the Magic is PE32+. Either QB64 or GCC will probably optimize it anyway, I would think.
 
 > In the Section table, the name of the field is VirtualAddress, but the description seems to say that it is an RVA. My program assumes that it is an RVA. The rva2fp function finds which section a given RVA is in, and then uses the difference between the RVA and the file pointer for that section to turn the given RVA into a file pointer.
 
 > Regards, Michael Calkins
-
-
-
 
 ## Revision 2
 
@@ -727,12 +721,9 @@ END SUB
 
 >  The .ICO format:
 
-<center>http://en.wikipedia.org/wiki/ICO_(file_format)
-
-http://www.iconolog.org/info/icoFormat.html
-
-http://en.wikipedia.org/wiki/BMP_file_format </center>
-
+* [http://en.wikipedia.org/wiki/ICO_(file_format)](http://en.wikipedia.org/wiki/ICO_(file_format))
+* [http://www.iconolog.org/info/icoFormat.html](http://www.iconolog.org/info/icoFormat.html)
+* [http://en.wikipedia.org/wiki/BMP_file_format](http://en.wikipedia.org/wiki/BMP_file_format)
 
 > Note that the BMP file header is excluded, but the DIB information header is included. My observations from using Resource Hacker on *c:\windows\notepad.exe*:
 
@@ -742,38 +733,33 @@ http://en.wikipedia.org/wiki/BMP_file_format </center>
 
 > You can see what I mean: Use Resource Hacker to export the Icon Group as a binary file, named rhig.bin:
 
-
 ```text
 
                           edit /78 rhig.bin 
+
 ```
 
-
 >  Delete the first 6 bytes, and save it as rhigmod.bin.
-
 
 ```text
 
                           edit /14 rhigmod.bin 
-```
 
+```
 
 >  and you can clearly see the array.
 
 >  Note that, according to:
 
-<center>http://www.iconolog.org/info/icoFormat.html</center>
+[http://www.iconolog.org/info/icoFormat.html](http://www.iconolog.org/info/icoFormat.html)
 
 >  There is supposed to be a 2x Height difference between the ICONDIRENTRY structure in the icon file, and the DIB header within the icon file, with the DIB header having 2x the Height. However, when Resource Hacker exported the Icon file, it put 2x the Height in the ICONDIRENTRY structure also, doubling it from the Icon Group data. Icons seem to be Type ID 0x3, and Icon Groups seem to be Type ID 0xe. This seems consistent with:
 
-<center>http://msdn.microsoft.com/en-us/library/ms648009(v=VS.85).aspx</center>
+[http://msdn.microsoft.com/en-us/library/ms648009(v=VS.85).aspx](http://msdn.microsoft.com/en-us/library/ms648009(v=VS.85).aspx)
 
 >  I'll probably write some code in the next day or two to automate the process of extracting icons from a PE. My observations would need to be double checked before being relied upon. (as always)
 
 > Regards, Michael Calkins
-
-
-
 
 ## Revision 3
 
@@ -1162,14 +1148,11 @@ END SUB
 
 ```
 
-
-
-
 ## Extract Icon
 
 >  Here is a program to extract an icon from a PE file. You specify the PE file, the index of the icon group (the first is 0), the maximum width and colors, and the output file. It will try to find the best matching icon, and extract the icon from the first language. I had earlier said that Resource Hacker gets the information for the ICO header from the icon group data. It could, but it could also get the data from the DIB header. Resource Hacker seems to use several fields that are reserved according to:
 
-<center>http://www.iconolog.org/info/icoFormat.html</center>
+[http://www.iconolog.org/info/icoFormat.html](http://www.iconolog.org/info/icoFormat.html)
 
 > I use some of those fields in the icon group data to select the best icon from the group.
 
@@ -1505,18 +1488,14 @@ END SELECT
 END FUNCTION 
 
 ```
->  *Note:* Change the file name to .BMP and mode to 1 to extract the icon as a bitmap for QB64 to use. QB64 cannot load icons!
 
->  Have fun, and don't forget to double check it before relying on it. I appreciate bug reports, but I'm not responsible for errors.
+> *Note:* Change the file name to .BMP and mode to 1 to extract the icon as a bitmap for QB64 to use. QB64 cannot load icons!
 
->  Regards, Michael Calkins
+> Have fun, and don't forget to double check it before relying on it. I appreciate bug reports, but I'm not responsible for errors.
 
-
-
+> Regards, Michael Calkins
 
 ## Extract Resources
-
-
 
 ```vb
 
@@ -1900,17 +1879,8 @@ END SUB
 ```
 <sub>Code courtesy of Michael Calkins</sub>
 
-
-
-
-## References
-
 ## See Also
 
-* [Icons and Cursors](Icons and Cursors)
+* [Icons and Cursors](Icons-and-Cursors)
 * [Bitmaps](Bitmaps), [_ICON](_ICON), [$EXEICON]($EXEICON)
 * [SaveIcon32](SaveIcon32) (create icons from any image)
-
-
-
-

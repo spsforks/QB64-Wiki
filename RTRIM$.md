@@ -5,14 +5,11 @@ The [RTRIM$](RTRIM$) function removes trailing space characters from a [STRING](
 
 > return$ = [RTRIM$](RTRIM$)(value$)
 
-
 ## Description
 
 * value$ is the [STRING](STRING) value to trim.
 * If value$ contains no trailing space characters, value$ is returned unchanged.
 * Convert fixed length [STRING](STRING) values by using a different return$ variable.
-
-
 
 ## Example(s)
 
@@ -27,6 +24,7 @@ name$ = RTRIM$(contact.name) ' trims spaces from end of fixed length TYPE value.
 Trimming text string ends:
 
 ```vb
+
 PRINT RTRIM$("some text") + "."
 PRINT RTRIM$("some text   ") + "."
 PRINT RTRIM$("Tommy    ")
@@ -41,14 +39,7 @@ Tommy
 
 ```
 
-
-
 ## See Also
 
 * [LTRIM$](LTRIM$), [STR$](STR$)
-
 * [LSET](LSET), [RSET](RSET)
-
-
-
-

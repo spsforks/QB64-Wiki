@@ -2,21 +2,17 @@
 
 The multi-modular technique goes back to when QBasic and QuickBASIC had module size constraints. In QB64 it has been implemented so that that older code can still be compiled, though **it is advisable to use single modules for a single project (not counting [$INCLUDE]($INCLUDE) libraries), for ease of sharing and also because the module size constraints no longer exist.**
 
-
-
 ## Syntax
 
-> : **RUN** [{*line_number* | *filespec$*}] [*command_parameter(s)*]
-
+> **RUN** [{*line_number* | *filespec$*}] [*command_parameter(s)*]
 
 ## Parameter(s)
 
 * *line number* specifies a line number in the main module code. 
 * An optional *filespec* specifies a program to load into memory and run. 
->  * BAS or EXE extensions are assumed to be the same as the calling module's extension, EXE or BAS (QBasic only).
->  * *file names specs* with other extensions must use the full filename. No extension requires a dot.
+    * BAS or EXE extensions are assumed to be the same as the calling module's extension, EXE or BAS (QBasic only).
+    * *file names specs* with other extensions must use the full filename. No extension requires a dot.
 * In **QB64** *command line parameters* can follow the program file name and be read using the [COMMAND$](COMMAND$) function later.
-
 
 ## Usage
 
@@ -28,6 +24,7 @@ The multi-modular technique goes back to when QBasic and QuickBASIC had module s
 * RUN resets the [RANDOMIZE](RANDOMIZE) sequence to the starting [RND](RND) function value.
 * **Note: Calling RUN repeatedly may cause a stack leak in QB64 if it is called from within a [SUB](SUB) or [FUNCTION](FUNCTION). Avoid when possible.**
 
+## Example(s)
 
 *Example 1:* Shows how RUN can reference multiple line numbers in the main module code. No line number executes first code line.
 
@@ -47,7 +44,6 @@ PRINT " A", " B", " C", " D"
 INPUT "Do you want to quit?(Y/N)", quit$
 IF UCASE$(quit$) = "Y" THEN END ELSE RUN  'RUN without line number executes at first code line
 
-
 ``` 
 
 ```text
@@ -63,13 +59,7 @@ Do you want to quit?(Y/N)_
 
 ```
 
-
-
 ## See Also
  
 * [CHAIN](CHAIN), [SHELL](SHELL)
 * [COMMAND$](COMMAND$)
-
-
-
-

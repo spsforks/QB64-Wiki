@@ -1,10 +1,8 @@
 **RANDOMIZE** is used with a seed value to generate different random number sequences using the [RND](RND) function.
 
-
 ## Syntax
 
-> : **RANDOMIZE** [USING] **{*seednumber*|TIMER}**
-
+> **RANDOMIZE** [USING] **{*seednumber*|TIMER}**
 
 * The *seed number* can be ANY positive or negative numerical type value. The [TIMER](TIMER) value is often used to change [RND](RND) output each run.
 * If the *seed number* is omitted, the program will display: **Random-number seed (-32768 to 32767)?** request on screen.
@@ -15,10 +13,12 @@
 * Using a [TIMER](TIMER) starting value ensures that the initial return sequence values are different almost every time the program is run!
 * [RUN](RUN) should reset the [RANDOMIZE](RANDOMIZE) sequence to the starting [RND](RND) function value.(Not yet in QB64)
 
+## Example(s)
 
 *Example 1:* Using RANDOMIZE **TIMER** to set a different starting sequence of [RND](RND) numbers every run.
 
 ```vb
+
 RANDOMIZE TIMER
 DO
 randnum% = INT(RND * 11) + 2  'add one to multiplier as INT rounds down and never equals 10
@@ -28,12 +28,13 @@ LOOP UNTIL UCASE$(K$) = "Q"  'q = quit
 END 
 
 ```
-> *Explanation:* Procedure generates random integer values from 2 to 12 like a pair of dice.
 
+> *Explanation:* Procedure generates random integer values from 2 to 12 like a pair of dice.
 
 *Example 2:* Repeating a random number sequence with RANDOMIZE **USING** and a specific seed value in **QB64** only.
 
 ```vb
+
 seed = 10
 RANDOMIZE seed
 Print7
@@ -52,12 +53,13 @@ PRINT: PRINT
 END SUB 
 
 ```
->  *Explanation:* The second RANDOMIZE statement just continues the sequence where USING in the third restarts the sequence.
 
+> *Explanation:* The second RANDOMIZE statement just continues the sequence where USING in the third restarts the sequence.
 
 *Example 3:* Random fireworks explosions:
 
 ```vb
+
 RANDOMIZE TIMER
 DEFINT A-Z
 
@@ -103,14 +105,10 @@ DO
 LOOP
 SYSTEM
 
-```<sub>Code by Ben</sub>
-
+```
+<sub>Code by Ben</sub>
 
 ## See Also
  
 * [RND](RND), [INT](INT), [CINT](CINT)
 * [TIMER](TIMER)
-
-
-
-

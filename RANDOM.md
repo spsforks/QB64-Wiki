@@ -1,27 +1,24 @@
 **RANDOM** is used in an [OPEN](OPEN) statement to read([GET](GET)) from or write([PUT](PUT)) to a file. 
 
-
-
 ## Syntax
 
-> : OPEN Filename$ FOR RANDOM AS #1 [LEN = *recordlength%*]
-
+> OPEN Filename$ FOR RANDOM AS #1 [LEN = *recordlength%*]
 
 * RANDOM is the Default mode if no mode is given in the [OPEN](OPEN) statement.
 * It creates the file if the legal file name given does NOT exist.
 * As a RANDOM file, it can read or write any record using [GET](GET) and/or [PUT](PUT) statements. 
 * *Recordlength%* is determined by getting the LEN of a [TYPE](TYPE) variable or a [FIELD](FIELD) statement.
-> : [STRING](STRING) = 1 byte/character, [INTEGER](INTEGER) = 2 bytes, [LONG](LONG) = 4 bytes, [SINGLE](SINGLE) = 4 bytes [DOUBLE](DOUBLE) = 8 bytes 
-> : [_BYTE](_BYTE) = 1 byte, [_INTEGER64](_INTEGER64) = 8 bytes, [_FLOAT](_FLOAT) = 10 bytes (so far)
-
+  - [STRING](STRING) = 1 byte/character, [INTEGER](INTEGER) = 2 bytes, [LONG](LONG) = 4 bytes, [SINGLE](SINGLE) = 4 bytes [DOUBLE](DOUBLE) = 8 bytes 
+  - [_BYTE](_BYTE) = 1 byte, [_INTEGER64](_INTEGER64) = 8 bytes, [_FLOAT](_FLOAT) = 10 bytes (so far)
 * If no record length is used in the [OPEN](OPEN) statement, the default record size is 128 bytes except for the last record.
 * A record length cannot exceed 32767 or an [ERROR Codes](ERROR Codes) will occur!
 * To determine the number of records in a file the records% = [LOF](LOF) \ recordlength%. 
 * When **variable length strings** are PUT into RANDOM files the record length must exceed the maximum string entry by: 
-> : 2 bytes are reserved for recording variable string lengths up to 32767 bytes (LEN = longest + 2) 
-> : 8 bytes are reserved for recording variable string lengths exceeding 32767 bytes (LEN = longest + 8)
+  - 2 bytes are reserved for recording variable string lengths up to 32767 bytes (LEN = longest + 2) 
+  - 8 bytes are reserved for recording variable string lengths exceeding 32767 bytes (LEN = longest + 8)
 * A serial communication port can also be opened for RANDOM in an [OPEN COM](OPEN COM) statement.
 
+## Example(s)
 
 *Example 1:* Function that finds a RANDOM file's record number for a string value such as a phone number.
 
@@ -69,8 +66,8 @@ IF recpos THEN RecordPos = recpos \ recLEN + 1 ELSE RecordPos = 0
 END FUNCTION 
 
 ```
-> *Note:* Random files can store records holding various variable types using a [TYPE](TYPE) definition or a [FIELD](FIELD) statement.
 
+> *Note:* Random files can store records holding various variable types using a [TYPE](TYPE) definition or a [FIELD](FIELD) statement.
 
 *Example 2:* When not using a [TYPE](TYPE) or fixed length strings, QB4.5 allows RANDOM files to hold variable length strings up to 2 bytes less than the LEN = record length statement:
 
@@ -105,15 +102,10 @@ ABCDEFGHI         9
 
 ```
 
->  *Note:* The 2 byte file padders before each string PUT will show the length of a string for GET as [ASCII](ASCII) characters. Padders will always be 2 bytes and strings up to the last one will be 13 bytes each no matter the length up to 11, so the file size can be determined as (2 + 11) + (2 + 9 + 2) + (2 + 4) or 13 + 13 + 2 + 4 = 32 bytes. 
-
+> *Note:* The 2 byte file padders before each string PUT will show the length of a string for GET as [ASCII](ASCII) characters. Padders will always be 2 bytes and strings up to the last one will be 13 bytes each no matter the length up to 11, so the file size can be determined as (2 + 11) + (2 + 9 + 2) + (2 + 4) or 13 + 13 + 2 + 4 = 32 bytes. 
 
 ## See Also
  
 * [GET](GET), [PUT](PUT), [FIELD](FIELD)
 * [BINARY](BINARY) 
-* [SEEK](SEEK), [SEEK (statement)](SEEK (statement))
-
-
-
-
+* [SEEK](SEEK), [SEEK (statement)](SEEK-(statement))

@@ -1,11 +1,8 @@
-DISPLAYTITLE:_RESIZE (function)
 The [_RESIZE](_RESIZE) function returns true (-1) when a user has attempted to resize the program window and [$RESIZE]($RESIZE):ON has allowed it.
-
 
 ## Syntax
 
->  IF **_RESIZE** THEN rx& = [_RESIZEWIDTH](_RESIZEWIDTH): ry& = [_RESIZEHEIGHT](_RESIZEHEIGHT)
-
+> IF **_RESIZE** THEN rx& = [_RESIZEWIDTH](_RESIZEWIDTH): ry& = [_RESIZEHEIGHT](_RESIZEHEIGHT)
 
 ## Description
 
@@ -13,16 +10,9 @@ The [_RESIZE](_RESIZE) function returns true (-1) when a user has attempted to r
 * After the function returns -1, [_RESIZEWIDTH](_RESIZEWIDTH) and [_RESIZEHEIGHT](_RESIZEHEIGHT) can return the new requested dimensions in pixels.
 * The [$RESIZE]($RESIZE):ON [metacommand](metacommand) must be used so the program is created with a user resizable window.
 
-
-## Availability
-
-* **Version 1.000 and up**.
-
-
 ## Example(s)
 
-## Example(s)
- Resize the current screen image according to user's request.
+Resize the current screen image according to user's request.
 
 ```vb
 
@@ -53,13 +43,8 @@ LOOP
 
 ```
 
-
 ## See Also
 
 * [$RESIZE]($RESIZE) (metacommand)
 * [_RESIZE](_RESIZE)
 * [_RESIZEWIDTH](_RESIZEWIDTH), [_RESIZEHEIGHT](_RESIZEHEIGHT) (requested pixel dimensions)
-
-
-
-

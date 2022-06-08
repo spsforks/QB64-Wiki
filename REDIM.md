@@ -1,10 +1,8 @@
 A [REDIM](REDIM) statement can re-dimension one [$DYNAMIC]($DYNAMIC)(flexible) [Arrays](Arrays) or a [comma](comma) separated list of arrays.
 
-
 ## Syntax
 
 > [REDIM](REDIM) [[_PRESERVE](_PRESERVE)] [[SHARED](SHARED)] ArrayName[*typesuffix*] ({*max_element*|low_element[[TO](TO) *upper_element*, ...]}) [[AS](AS) [TYPE](TYPE)]
-
 
 ## Description
 
@@ -23,6 +21,7 @@ A [REDIM](REDIM) statement can re-dimension one [$DYNAMIC]($DYNAMIC)(flexible) [
 * **NOTE: Many QBasic keyword variable names CAN be used with a [STRING](STRING) suffix($) ONLY! You CANNOT use them without the suffix, use a numerical suffix or use [DIM](DIM), [REDIM](REDIM), [_DEFINE](_DEFINE), [BYVAL](BYVAL) or [TYPE](TYPE) variable [AS](AS) statements!**
 * **Warning! Do not use negative array upper bound index values as OS access or "Out of Memory" [ERROR Codes](ERROR Codes) will occur!**
 
+## Example(s)
 
 *Example 1:* The [$DYNAMIC]($DYNAMIC) Metacommand allows an array to be re-sized using [DIM](DIM) and REDIM.
 
@@ -38,7 +37,6 @@ REDIM Array(2 * size)
 PRINT UBOUND(Array) 
 
 ```
-
 
 *Example 2:* Shows the difference between REDIM and REDIM [_PRESERVE](_PRESERVE).
 
@@ -59,15 +57,13 @@ PRINT array(10)
 
 ```text
 
-
  24
  24
  0
 
 ```
 
->  *Explanation:* REDIM without _PRESERVE erases the array data and cannot change the number of dimensions.
-
+> *Explanation:* REDIM without _PRESERVE erases the array data and cannot change the number of dimensions.
 
 ## See Also
 
@@ -75,7 +71,3 @@ PRINT array(10)
 * [DIM](DIM), [SHARED](SHARED)
 * [_PRESERVE](_PRESERVE), [ERASE](ERASE)
 * [$DYNAMIC]($DYNAMIC), [$STATIC]($STATIC)
-
-
-
-

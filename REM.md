@@ -1,10 +1,8 @@
 **REM** or an apostrophe is used for programmer remarks, comments or to stop the execution of program code.
 
-
 ## Syntax
 
-> : REM program comment or ignore code
-
+> REM program comment or ignore code
 
 ## Description
 
@@ -13,9 +11,9 @@
 * Code can also be commented out for program testing purposes.
 * QBasic Metacommands such as [$DYNAMIC]($DYNAMIC) and [$INCLUDE]($INCLUDE) require the use of REM or the apostrophe.  
 
-
 ## Example(s)
- Avoiding an END IF error.
+
+Avoiding an END IF error.
 
 ```vb
 
@@ -27,12 +25,7 @@ END IF
 
 ```
 
-
 ## See Also
  
 * [Apostrophe](Apostrophe)
 * [$DYNAMIC]($DYNAMIC), [$STATIC]($STATIC), [$INCLUDE]($INCLUDE)
-
-
-
-
