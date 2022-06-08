@@ -1,23 +1,20 @@
-The [WRITE (file statement)](WRITE (file statement)) file statement writes a list of comma separated variable values to a sequential file or port.
-
+The [WRITE (file statement)](WRITE-(file-statement)) file statement writes a list of comma separated variable values to a sequential file or port.
 
 ## Syntax
 
 > [WRITE (file statement)](WRITE (file statement))filenumber&[, expressionList]
-
 
 ## Description
 
 * filenumber& is the number of the file or device [OPEN](OPEN)ed in the [OUTPUT](OUTPUT) or [APPEND](APPEND) modes. See: [FREEFILE](FREEFILE).
 * expressionList is a comma-separated list of values to be written to the file or device.
 * WRITE can place any number and types of variable values needed in a file record separated by commas.
-* String values will have quotation marks although quotes are not required to read strings in CSV files with [INPUT (file statement)](INPUT (file statement)) #.
+* String values will have quotation marks although quotes are not required to read strings in CSV files with [INPUT (file statement)](INPUT-(file-statement)) #.
 * Data files using WRITE normally will have the same number of values listed on each file line.
 * Data containing commas must be in quotation marks. Number commas are illegal!
 * WRITE created files are normally read with INPUT #.
 * CSV files created can be read by Excel using a .CSV file name extension. Strings may or may not include quotation marks.
 * [Semicolon](Semicolon)s cannot be used in or following the WRITE statement!
-
 
 *Example:* Writes new data to a text file sequentially and reads it back to the program screen.
 
@@ -48,16 +45,16 @@ WRITE a, b, c$
 END 
 
 ```
->  *File content:* [WRITE](WRITE) string values will include quotation marks, but they are not required to read the file.
+
+> *File content:* [WRITE](WRITE) string values will include quotation marks, but they are not required to read the file.
 
 ```text
-
 
 1,2,"Three"
 
 ```
 
->  *Screen output:* [PRINT](PRINT) string values will not display enclosing quotes. [WRITE](WRITE) screen displays will.
+> *Screen output:* [PRINT](PRINT) string values will not display enclosing quotes. [WRITE](WRITE) screen displays will.
 
 ```text
 
@@ -66,15 +63,9 @@ END
 
 ```
 
-
-
 ## See Also
 
-* [PRINT (file statement)](PRINT (file statement))
-* [INPUT (file statement)](INPUT (file statement))
-* [LINE INPUT (file statement)](LINE INPUT (file statement))
-* [SQL Client](SQL Client) (library)
-
-
-
-
+* [PRINT (file statement)](PRINT-(file-statement))
+* [INPUT (file statement)](INPUT-(file-statement))
+* [LINE INPUT (file statement)](LINE-INPUT-(file-statement))
+* [SQL Client](SQL-Client) (library)

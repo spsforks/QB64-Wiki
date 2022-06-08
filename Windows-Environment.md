@@ -1,6 +1,5 @@
 You can try to set environmental values for a program. The program doesn't affect anything other than itself and its child processes.
 
-
 ```vb
 
 DECLARE DYNAMIC LIBRARY "kernel32"
@@ -28,9 +27,10 @@ END
 
 ```
 <sub>Public domain, Feb 2012, Michael Calkins</sub>
->  *Note:* The current user's account and related processes will only be affected by the environmental changes until program ends!
->  To verify that the values are reset, Run... 'cmd.exe' and type command 'set|more' to see the values after the program is done.
 
+> *Note:* The current user's account and related processes will only be affected by the environmental changes until program ends!
+
+> To verify that the values are reset, Run... 'cmd.exe' and type command 'set|more' to see the values after the program is done.
 
 This program sets environment variables in the registry, for both the system, and the current user, then removes them:
 
@@ -166,18 +166,17 @@ PRINT "Please verify that they are deleted."
 END 
 
 ```
-<center>**[http://i301.photobucket.com/albums/nn53/burger2227/RegistryCalkins.gif Screenshot of Windows Environmental variables when program is run.]**</center>
+
+<center>**[Screenshot of Windows Environmental variables when program is run.](http://i301.photobucket.com/albums/nn53/burger2227/RegistryCalkins.gif)**</center>
+
 >  When prompted, open the "Environment Variables" window within System Properties(Control Panel - Performance and Maintenance - System - Advanced - Environment Variables) to see the changes or open a new *cmd.exe* console to see it.
 
 <center>**Administrator privileges are required to change System-wide environmental values, but not current user account values.**</center> 
 
-*See also:*
-* [DECLARE LIBRARY](DECLARE LIBRARY)
+## See Also
+
+* [DECLARE LIBRARY](DECLARE-LIBRARY)
 * [Libraries](Libraries)
-* [Windows Libraries](Windows Libraries)
-* [Windows Registry Access](Windows Registry Access)
-* [Windows Libraries#Windows User](Windows Libraries#Windows User)
-
-
-
-
+* [Windows Libraries](Windows-Libraries)
+* [Windows Registry Access](Windows-Registry-Access)
+* [Windows Libraries#Windows User](Windows-Libraries#Windows User)

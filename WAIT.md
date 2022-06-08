@@ -1,10 +1,8 @@
 The [WAIT](WAIT) statement waits until the value read from an I/O port has certain bits set.
 
-
 ## Syntax
 
-> [WAIT](WAIT) port%, andMask%[, xorMask%]
-
+> [WAIT](WAIT) port%, andMask% [, xorMask%]
 
 ## Description
 
@@ -14,12 +12,12 @@ The [WAIT](WAIT) statement waits until the value read from an I/O port has certa
 * If the final value is non-zero, [WAIT](WAIT) returns. Otherwise, another value is read from port% and checked again.
 * The [WAIT](WAIT) statement returns immediately if port% is not supported.
 
-
 ## Example(s)
 
 > Waiting for vertical retrace
 
 ```vb
+
 ' Either statement can be used to try to reduce screen flickering.
 ' If both statements are used, try changing the order.
 
@@ -28,12 +26,7 @@ WAIT &H3DA, 8, 8 ' finishes whenever the screen is being written to
 
 ```
 
-
 ## See Also
 
 * [INP](INP), [OUT](OUT)
 * [Scancodes](Scancodes)
-
-
-
-

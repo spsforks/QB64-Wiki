@@ -1,30 +1,29 @@
-The [VIEW PRINT](VIEW PRINT) statement defines the boundaries of a text viewport [PRINT](PRINT) area.
-
+The [VIEW PRINT](VIEW-PRINT) statement defines the boundaries of a text viewport [PRINT](PRINT) area.
 
 ## Syntax
 
 >  **VIEW PRINT** [topRow% **TO** bottomRow%]
-
 
 ## Parameter(s)
 
 * topRow% and bottomRow% specify the upper and lower rows of the text viewport. 
 * If topRow% and bottomRow% are not specified when first used, the text viewport is defined to be the entire screen.
 
-
 ## Description
 
-* A second [VIEW PRINT](VIEW PRINT) statement without parameters can also disable a viewport when no longer needed.  
+* A second [VIEW PRINT](VIEW-PRINT) statement without parameters can also disable a viewport when no longer needed.  
 * [CLS](CLS) or [CLS](CLS) statement will clear the active text viewport area only, and reset the cursor location to topRow%.
 * A [SCREEN](SCREEN) mode change or [RUN](RUN) statement can also clear and disable viewports.
 * After active viewport is disabled, normal screen printing and clearing can begin.
 * Row coordinates may vary when a [WIDTH](WIDTH) statement has been used.
 * **Note: QB64 [RUN](RUN) statements will not close [VIEW PRINT](VIEW PRINT), [VIEW](VIEW) or [WINDOW](WINDOW) view ports presently!**
 
+## Example(s)
 
 *Example:* Demonstrates how text scrolls within the text viewport.
 
 ```vb
+
 ' clear the entire screen and show the boundaries of the new text viewport
 CLS
 PRINT "Start at top..."
@@ -53,8 +52,8 @@ CLS
 PRINT "Back to top left after CLS!" 
 
 ```
->  *Note:* The bottom row of the VIEW PRINT port can be used only when located or prints end with semicolons.
 
+> *Note:* The bottom row of the VIEW PRINT port can be used only when located or prints end with semicolons.
 
 ## See Also
 
@@ -62,7 +61,3 @@ PRINT "Back to top left after CLS!"
 * [WINDOW](WINDOW)
 * [VIEW](VIEW) (graphics view port)
 * [LOCATE](LOCATE), [PRINT](PRINT)
-
-
-
-

@@ -1,17 +1,12 @@
 **QB64 uses more variable types than QBasic ever did. The variable type determines the size of values that numerical variables can hold.**
 
-
-
 DataTypeTable
 
 If no suffix is used and no DEFxxx or _DEFINE command has been used and the variable hasn't been [DIM](DIM)med the **default variable type is [SINGLE](SINGLE)**. **[_MEM](_MEM) and [_OFFSET](_OFFSET) variable types cannot be cast to other variable types!**
 
-
 All types dealing with number values are signed as a default. The symbol to define unsigned variables is ~ and is used just before the type suffix (~` is [_UNSIGNED](_UNSIGNED) _BIT, ~%% is [_UNSIGNED](_UNSIGNED) _BYTE, etc.).
 
-
 <center>**[SINGLE](SINGLE), [DOUBLE](DOUBLE) and [_FLOAT](_FLOAT) floating decimal point values cannot be [_UNSIGNED](_UNSIGNED)!**</center>
-
 
 **Defining variable types:**
 
@@ -28,15 +23,6 @@ Where *range1* and *range2* are the range of first letters to be defined as the 
 
 *variable* is the name of the variable to be defined in the DIM statement.
 
-
 **More information:**
 
-More information on this page: [Data types](Data types)
-
-
-
-
-
-
-[Category:Done](Category:Done)
-
+More information on this page: [Data types](Data-types)

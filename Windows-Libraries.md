@@ -1,6 +1,4 @@
-__NOEDITSECTION__
-__NOTOC__
-QB64 can support the **specific Windows Operating System Libraries** on your PC. They should be located in the **System32** folder. Use [DECLARE LIBRARY](DECLARE LIBRARY) with the appropriate [ALIAS](ALIAS). Loaded DLL files are NOT required to be named in the Declaration!
+QB64 can support the **specific Windows Operating System Libraries** on your PC. They should be located in the **System32** folder. Use [DECLARE LIBRARY](DECLARE-LIBRARY) with the appropriate [ALIAS](ALIAS). Loaded DLL files are NOT required to be named in the Declaration!
 
 <center> **Note: C++ Header files should be placed in the QB64 folder and are not required after a program is compiled.**</center>
 
@@ -32,9 +30,7 @@ QB64 can support the **specific Windows Operating System Libraries** on your PC.
 |9 [#File Times](#File Times)||18 [#Mouse Area](#Mouse Area)||27 [#Windows API](#Windows API)||36 [#Reference](#Reference)
 |}
 
-
 ```text
-
 
 **                         Windows API Data Structures**
 
@@ -58,7 +54,6 @@ LP or hwnd     Short or Long Pointer     ANY [INTEGER](INTEGER)       [_OFFSET](
 
 <center>**[http://doc.pcsoft.fr/en-US/?6510001 Windows 32 API constant values]**</center>
 
-
 ## Computer Date/Time
 
 **NOTE: You might need to run this program as Administrator**
@@ -66,28 +61,17 @@ LP or hwnd     Short or Long Pointer     ANY [INTEGER](INTEGER)       [_OFFSET](
 ```vb
 
 '#### 
-
-
-
 'DATE&TIME.BAS
 '#### 
-
-
 
 'A DATE$ and TIME$ alternative.
 'Gets & Sets System DATE & TIME using Windows API.
 'Coded for QB64 by Dav FEB/2012
 
 '#### #### #### #### #### #### #### #### #### #### #### #### #### #### #### =
-
-
-
 'NOTE: THIS DEMO WILL ATTEMPT TO CHANGE YOUR SYSTEM DATE FOR 5 SECONDS.
 '     AFTER 5 SECONDS IT WILL ATTEMPT TO RESTORE ORIGINAL DATE SETTING.
 '#### #### #### #### #### #### #### #### #### #### #### #### #### #### #### =
-
-
-
 
 TYPE SYSTEMTIME
     wYear AS INTEGER
@@ -122,7 +106,6 @@ PRINT "Current System DATE & TIME is..."
 PRINT "DATE:"; CurrentTime.wMonth; "-"; CurrentTime.wDay; "-"; CurrentTime.wYear
 PRINT "TIME:"; CurrentTime.wHour; ":"; CurrentTime.wMinute; ":"; CurrentTime.wSecond
 PRINT "--------------------------------"
-
 
 '###  Now Set new DATE only
 '###  NOTICE we're using CurrentTime TIME value's '<
@@ -206,25 +189,13 @@ END
 ```
 <sub>Code by Dav</sub>
 
-
-<p style="text-align: center">([#toc](#toc))</p>
-
-
 ## Borderless Window
-
-
 
 ```vb
 
 '### 
-
-
-
 'NOBORDER.BAS
 '### 
-
-
-
 
 DECLARE CUSTOMTYPE LIBRARY
     FUNCTION FindWindow& (BYVAL ClassName AS _OFFSET, WindowName$)
@@ -257,9 +228,6 @@ a& = SetWindowPos&(hwnd&, 0, 0, 0, 0, 0, 39)
 PRINT "The end" 
 
 ```<sub>Code by Dav</sub>
-
-
-<p style="text-align: center">([#toc](#toc))</p>
 
 ## Color Dialog Box
 
@@ -355,13 +323,12 @@ END FUNCTION
 
 ```
 <sub>Adapted from code by Jobert14</sub>
->  *Note:* The ChooseColor value is converted using [_RGB32](_RGB32) with the Blue and Red values being swapped.
 
+> *Note:* The ChooseColor value is converted using [_RGB32](_RGB32) with the Blue and Red values being swapped.
 
 <center>**Converting 32 bit Dialog Box Color values for 4 or 8 BPP Screen modes**</center>
 
 ```text
-
 
 SCREEN _NEWIMAGE(640, 480, 12) 'change from screen 12 to 32 to see the difference
 rgbresult& = &H8080FF 'Dialog box long color reverse HEX$ return value
@@ -369,13 +336,10 @@ clr~& = _RGB(_BLUE32(rgbresult&), _GREEN32(rgbresult&), _RED32(rgbresult&)) 'swa
 COLOR clr~&: PRINT clr~&, HEX$(clr~&) '_UNSIGNED LONG color values
 
 ```
->  *Note:* The [_RGB](_RGB) value returned is full [_ALPHA](_ALPHA). Use _ALPHA or [_RGBA](_RGBA) to set the transparency in a program.
 
-<p style="text-align: center">([#toc](#toc))</p>
-
+> *Note:* The [_RGB](_RGB) value returned is full [_ALPHA](_ALPHA). Use _ALPHA or [_RGBA](_RGBA) to set the transparency in a program.
 
 ## Desktop Size
-
 
 >  Returns the Left, Top, Right and Bottom coordinates of the current desktop area.
 
@@ -413,8 +377,6 @@ _FREEIMAGE scr&
 END 
 
 ```
-
-<p style="text-align: center">([#toc](#toc))</p>
 
 ## Directory Environment
 
@@ -459,7 +421,6 @@ END
 ```
 <sub>Windows APIs courtesy of Dav</sub>
 
-
 >  Returns the DOS 8.3 path and file name. The DLL used is in the QB64 folder.
 
 ```vb
@@ -480,9 +441,7 @@ END
 
 ## Disk Drives
 
-
 Uses Kernel32 API to lists all available drives on system. Shows the drives type: HD/CD/DVD/RAM/NET/Removable/Unknown
-
 
 ```vb
 
@@ -521,13 +480,10 @@ NEXT
 
 ```
 <sub>Adapted from code by Dav</sub>
+
 >  *Note:* The length of the string returned by *GetLogicalDriveStringsA* can be divided by 4 to tell the number of physical and ram drives.
 
-<p style="text-align: center">([#toc](#toc))</p>
-
 ## File Attributes
-
-
 
 ```vb
 DECLARE LIBRARY
@@ -559,9 +515,7 @@ PRINT a 'notice, it prints 1 here and not 32.  We didn't add a flag, we changed 
 
 ```
 
-
 ## File Open and Save Dialog
-
 
 <center>**Open and Save Dialog Boxes get file names**</center>
 
@@ -762,21 +716,16 @@ END FUNCTION
 
 ```
 <sub>Code courtesy of Jobert14</sub>
->  *Note:* The Open and Save Dialog boxes get user selections and do not actually open or create a file! Your program must do that.
+
+> *Note:* The Open and Save Dialog boxes get user selections and do not actually open or create a file! Your program must do that.
 
 <center>**[http://msdn.microsoft.com/en-us/library/aa155724(v=office.10).aspx Microsoft MSDN]**
 
-
 **[http://msdn.microsoft.com/en-us/library/aa259317(v=vs.60).aspx Common Dialog Flag Constants]**</center>
 
-> ::::In VB6, variable-length strings in user [TYPE](TYPE)s are actually pointer [_OFFSET](_OFFSET)s to those strings.
-
-<p style="text-align: center">([#toc](#toc))</p>
-
+> In VB6, variable-length strings in user [TYPE](TYPE)s are actually pointer [_OFFSET](_OFFSET)s to those strings.
 
 ## File Times
-
-
 
 ```vb
 
@@ -864,17 +813,12 @@ END
 
 ```
 <sub>Code courtesy of Michael Calkins</sub>
+
 <center>Use your own existing file name and path in this procedure.</center>
-
-
-<p style="text-align: center">([#toc](#toc))</p>
-
-
 
 ## Focus
 
-
->  **Sets Focus on program with *SetForegroundWindow* after maximizing a minimized program when Shift+A is pressed.** (See [Windows_Libraries#Top_Most_Window](Windows_Libraries#Top_Most_Window))
+>  **Sets Focus on program with *SetForegroundWindow* after maximizing a minimized program when Shift+A is pressed.** (See [Windows-Libraries#Top_Most_Window](Windows_Libraries#Top_Most_Window))
 
 ```vb
 
@@ -899,9 +843,6 @@ PRINT "Minimize window, click another then Press Shift+A to bring it back up."
 _DELAY 4
 x& = ShowWindow&(hwnd%&, 2)
 '#### #### #### #### ## 
-
-
-
 
 DO
   IF GetKeyState(16) < 0 AND GetKeyState(ASC("A")) < 0 THEN '<####  Shift+A
@@ -929,22 +870,18 @@ DO
 
 LOOP 
 
-```<sub>Adapted by Ted Weissgerber from code by Dav</sub>
-<center>The *[Windows_Libraries#Window Focus](Windows_Libraries#Window Focus)* function finds the process currently in focus. See: [Windows_Libraries#Hot_Keys_.28maximize.29](Windows_Libraries#Hot_Keys_.28maximize.29)</center>
+```
+<sub>Adapted by Ted Weissgerber from code by Dav</sub>
 
+<center>The *[Windows_Libraries#Window Focus](Windows-Libraries#Window Focus)* function finds the process currently in focus. See: [Windows_Libraries#Hot_Keys_.28maximize.29](Windows-Libraries#Hot_Keys_.28maximize.29)</center>
 
 >  **Always brings unfocused or minimized program to the top with focus when Shift+A hotkey combination is pressed.**
 
 ```vb
 
 '## 
-
-
-
 'HOTKEYS.BAS
 '## 
-
-
 
 'Windows Hotkey example.
 'This demo sets Shift+A hotkey to maximize the program window when minimized.
@@ -996,19 +933,16 @@ DO: _LIMIT 1
 LOOP UNTIL INKEY$ = CHR$(27)
 END 
 
-```<sub>Adapted from code by Dav</sub>
+```
+<sub>Adapted from code by Dav</sub>
+
 >  **Note:** The *SetHotKey* message tells the designated Windows program ID when to do *DefWondowProcA* to focus the window.
 
 <center>**This can also focus on other program IDs! See also: [Windows_Libraries#Hot_Keys_.28maximize.29](Windows_Libraries#Hot_Keys_.28maximize.29)**</center>
 
-
 <center>Note: Minimized programs will always lose focus when minimized unless clicked in taskbar.</center>
 
-<p style="text-align: center">([#toc](#toc))</p>
-
-
 ## Folder Dialog Box
-
 
 >  The SHBrowseForFolder function receives information about the folder selected by the user in Windows XP to 7.
 
@@ -1054,14 +988,12 @@ ELSE
     PRINT "Cancel?"
 END IF 
 
-```<sub>Code by Galleon</sub>
-
-<p style="text-align: center">([#toc](#toc))</p>
+```
+<sub>Code by Galleon</sub>
 
 ## Font Dialog Box
 
-
-<center>This dialog box does not return the actual font file name. Refer to the [Windows_Libraries#Registered_Fonts](Windows_Libraries#Registered_Fonts) procedure below this one.</center>
+<center>This dialog box does not return the actual font file name. Refer to the [Windows_Libraries#Registered_Fonts](Windows-Libraries#Registered_Fonts) procedure below this one.</center>
 
 ```vb
 
@@ -1228,11 +1160,10 @@ END FUNCTION
 
 ```
 <sub>Code by Michael Calkins and Ted Weissgerber</sub>
+
 <center>**Warning! This dialog box may error for no apparent reason! See [http://msdn.microsoft.com/en-us/library/windows/desktop/ms646916(v=vs.85).aspx CommDlgExtendedError] for more info!**</center>
 
-
->  *Snippet:* Shows how to compare a Font Dialog Box request with [STRING](STRING) file data created by the [Windows_Libraries#Registered_Fonts](Windows_Libraries#Registered_Fonts) below:
-
+>  *Snippet:* Shows how to compare a Font Dialog Box request with [STRING](STRING) file data created by the [Windows_Libraries#Registered_Fonts](Windows-Libraries#Registered_Fonts) below:
 
 ```text
 
@@ -1265,15 +1196,12 @@ NEXT
 
 >  *Note:* The Font Dialog name will not normally have descriptions such as Regular, Bold, Italics or (TrueType) so it ignores them.
 
-
 <center>**[http://www.functionx.com/win32/Lesson14.htm GDI Tools - Font Guidlines]**</center>
-
-<p style="text-align: center">([#toc](#toc))</p>
 
 ## Registered Fonts
 
-
 > The Registry lists the Font Names and associated TTF file names that are needed with the [Windows_Libraries#Font_Dialog_Box](Windows_Libraries#Font_Dialog_Box) in a program.
+
 > The following program uses Registry functions from *advapi32.dll* to read the list of registered fonts and put them into a file.
 
 ```vb
@@ -1471,22 +1399,18 @@ END FUNCTION
 
 ```
 <sub>Code courtesy of Michael Calkins</sub>
->  *Note:* The names used in a Font Dialog Box and the actual file names are saved to the *F0NTList.INF*(name uses zero) file to be compared with user entries. To check for *Bold* and *Italics* or combined types of font requests see [Windows_Libraries#Font_Dialog_Box](Windows_Libraries#Font_Dialog_Box) above.
+
+> *Note:* The names used in a Font Dialog Box and the actual file names are saved to the *F0NTList.INF*(name uses zero) file to be compared with user entries. To check for *Bold* and *Italics* or combined types of font requests see [Windows_Libraries#Font_Dialog_Box](Windows-Libraries#Font_Dialog_Box) above.
+
 <center>**Note: The above procedure only reads the Registry. Edit or alter the Registry at your own peril!**</center>
 
-
 <center>[Windows Registry Access](Windows Registry Access)</center>
-
-
-<p style="text-align: center">([#toc](#toc))</p>
-
 
 ## Game Pad
 
 > Function *joyGetPosEx* allows for more buttons and dual analog multiple sticks
 
 ```text
-
 
 DECLARE DYNAMIC LIBRARY "winmm"
     FUNCTION joyGetNumDevs% () ' Number of joysticks supported on system
@@ -1528,12 +1452,9 @@ DO
 LOOP UNTIL INKEY$ <> "" 
 
 ```
-
 <sub>Code courtesy of Unseenmachine</sub>
 
-
 ```text
-
 
 DECLARE DYNAMIC LIBRARY "winmm"
     FUNCTION joyGetNumDevs% () ' Number of joysticks supported on system
@@ -1564,7 +1485,6 @@ TYPE PadCalibration
 END TYPE
 
 DIM MyJoyCal AS PadCalibration, MyJoy AS JOYINFO
-
 
 '// Simple calibration.
 
@@ -1751,10 +1671,6 @@ END FUNCTION
 
 ```
 
-
-
-<p style="text-align: center">([#toc](#toc))</p>
-
 ## Hot Keys (maximize)
 
 >  **Maximizing a minimized program window not in focus using Shift + A as read by the Windows *GetKeyState* function.**
@@ -1762,13 +1678,8 @@ END FUNCTION
 ```vb
 
 '#### #### 
-
-
-
 'CHEAPO-HOTKEY.BAS
 '#### #### 
-
-
 
 'Uses GetKeyState Win API to monitor a Key state.
 'This demo will maximize the window when Shift+A is pressed at any time.
@@ -1790,9 +1701,6 @@ PRINT "Minimize this window, then Press Shift+A to bring it back up."
 'x& = ShowWindow&(hwnd&, 2)
 '#### #### #### #### ## 
 
-
-
-
 DO
   IF GetKeyState(16) < 0 AND GetKeyState(ASC("A")) < 0 THEN '<####  Shift+A
       y& = ShowWindow&(hwnd&, 1)
@@ -1803,7 +1711,9 @@ DO
   _LIMIT 30 'Don't be a hog
 LOOP 
 
-``` <sub>Code courtesy of Dav</sub>
+```
+<sub>Code courtesy of Dav</sub>
+
 > **Note:** Virtual Hot keys can be used when a QB64 program is **not in focus** too! See **[Windows_Libraries#Focus](Windows_Libraries#Focus)** to bring a QB64 program into focus.
 
 ```text
@@ -1831,7 +1741,6 @@ LOOP
 
 <sub>NOTE: The above commented table can be copied and pasted directly into the QB64 IDE</sub>
 
-
 >  **Invisible key and mouse logger that does not require program focus. Press ESCape key to view the logged activity. **
 
 ```vb
@@ -1843,8 +1752,6 @@ PRINT
 PRINT "Press ESC to quit logging keys and see results.":
 _DEST 0
 '#### #### #### #### #### ##  End Demo Console Code #### #### #### #### #### ## 
-
-
 
 DO : LOOP UNTIL _SCREENEXISTS 'to prevent unexpected freezing
 _SCREENHIDE 'makes the program invisible to the user. Escape key displays log!
@@ -1919,13 +1826,12 @@ FOR b = 0 TO a
   IF b MOD 20 = 19 THEN COLOR 12: PRINT "press any key": SLEEP: COLOR 7
 NEXT 
 
-```<sub>Code by Cyperium</sub>
->  *Note:* The program will run invisibly without a program icon appearing in the task bar until the ESC key is pressed and the log will be displayed.
+```
+<sub>Code by Cyperium</sub>
 
-<p style="text-align: center">([#toc](#toc))</p>
+> *Note:* The program will run invisibly without a program icon appearing in the task bar until the ESC key is pressed and the log will be displayed.
 
 ## Keyboard Lock Settings
-
 
 Change Cap Lock, Scroll Lock and Number Lock settings and respective lights or onscreen indicators.
 
@@ -2006,14 +1912,10 @@ END
 
 ```
 <sub>Code by Michael Calkins</sub>
->  *Note:* In QB64 the number pad lock does not affect the [INP](INP)(&H60) release code returns of the [extended keys](extended keys) like it did in QBasic.
 
-
-<p style="text-align: center">([#toc](#toc))</p>
+> *Note:* In QB64 the number pad lock does not affect the [INP](INP)(&H60) release code returns of the [extended keys](extended keys) like it did in QBasic.
 
 ## Message Box
-
-
 
 ```vb
 
@@ -2085,14 +1987,10 @@ MsgBox& = MessageBox&(0, Message$, Title$, BoxType& + Icon& + Mode& + Focus&) 'f
 END FUNCTION 
 
 ```
+
 > **Note:** The demo above can show all of the possible message box options. The actual code necessary is quite simple.
 
-
-<p style="text-align: center">([#toc](#toc))</p>
-
-
 ## Mouse Area
-
 
 >  Program limits the mouse to a box portion of the Windows desktop using the Rectangle [TYPE](TYPE) to define the mouse area.
 
@@ -2136,14 +2034,10 @@ SetCursorPos 40, 36 'attempts to move mouse to left
 SYSTEM 
 
 ```
->  *Note:* The left and top positions must be less than the bottom and right pixel position values. Click mouse to exit box area. Click program window to quit.
 
-
-<p style="text-align: center">([#toc](#toc))</p>
+> *Note:* The left and top positions must be less than the bottom and right pixel position values. Click mouse to exit box area. Click program window to quit.
 
 ## Open another Program
-
-
 
 ```vb
 
@@ -2184,14 +2078,10 @@ END
 
 ```
 <sub>Code by Dav</sub>
+
 > *Note:* The Library file can only run valid Windows executable programs. Not DOS console EXE programs!
 
-
-<p style="text-align: center">([#toc](#toc))</p>
-
 ## Play WAV Sounds
-
-
 
 ```vb
 
@@ -2217,17 +2107,12 @@ retval% = PlaySound(FileName$, 0, Synch)
 
 ```
 <sub>Code by Ted Weissgerber</sub>
->  *Note:* ASYNC allows the program to stop the sound by sending a null file name. Flag constants can be added so loop and ASYNC would total 9.
 
+> *Note:* ASYNC allows the program to stop the sound by sending a null file name. Flag constants can be added so loop and ASYNC would total 9.
 
-<center>**[http://msdn.microsoft.com/en-us/library/ms712636 WINMM.DLL Functions]**</center>
-
-
-<p style="text-align: center">([#toc](#toc))</p>
-
+<center>**[WINMM.DLL Functions](http://msdn.microsoft.com/en-us/library/ms712636)**</center>
 
 ## Run One Instance
-
 
 Program catches another instance of the program descriptor label running and closes it
 
@@ -2260,30 +2145,21 @@ DO UNTIL INKEY$ = CHR$(&H1B)
 LOOP
 SYSTEM
 
-```<sub>Code courtesy of Michael Calkins</sub>
+```
+<sub>Code courtesy of Michael Calkins</sub>
+
 > *Explanation:* The same identification string is used in both instances of the running program. Compile example, run the EXE and try to compile and run another instance. 'Sorry. There can be only one.' will be printed to the screen and then it will close.
 
-
-<p style="text-align: center">([#toc](#toc))</p>
-
 ## Send Keys
-
-
 
 ```vb
 
 '### 
-
-
-
 'SENDKEYS.BAS
 '### 
 
-
-
 'A kind of SENDKEYS clone for QB64. Sends keystrokes to active application.
 'Coded for QB64 by Dav, JAN/2013
-
 
 DECLARE DYNAMIC LIBRARY "user32"
     SUB SENDKEYS ALIAS keybd_event (BYVAL bVk AS LONG, BYVAL bScan AS LONG, BYVAL dwFlags AS LONG, BYVAL dwExtraInfo AS LONG)
@@ -2356,8 +2232,8 @@ PRINT "That's all. have a nice day."
 
 END 
 
-```<sub>Code courtesy of Dav</sub>
-
+```
+<sub>Code courtesy of Dav</sub>
 
 ```text
 
@@ -2384,11 +2260,7 @@ END
 
 <sub>NOTE: The above commented table can be copied and pasted directly into the QB64 IDE</sub>
 
-
-<p style="text-align: center">([#toc](#toc))</p>
-
 ## System Metrics
-
 
 >  Returns the dimensions of the current user's desktop. Can be used to get various Windows settings.
 
@@ -2450,13 +2322,9 @@ END FUNCTION
 
 ```
 
-
-<p style="text-align: center">([#toc](#toc))</p>
-
 ## Top Most Window
 
-
->  This Windows only procedure will make the program window always stay on top of other windows, but not always in focus. (See [Windows_Libraries#Focus](Windows_Libraries#Focus))
+>  This Windows only procedure will make the program window always stay on top of other windows, but not always in focus. (See [Windows_Libraries#Focus](Windows-Libraries#Focus))
 
 ```vb
 
@@ -2516,23 +2384,25 @@ IF hWnd <> x%& THEN _SCREENCLICK 240, 240 'add 40 to x and y to focus on positio
 
 END 
 
-```<sub>Adapted from code by Michael Calkins</sub>
->  *Explanation:* When other windows are clicked on, this program window will stay on top. Click it to return focus.
-> : *SetWindowPos* can also move the window's TLC corner position and re-size the window when not flagged.
-> : When the window is moved to a position, [_SCREENCLICK](_SCREENCLICK) can be used to focus on the program window.
-<center>***[Windows_Libraries#Focus](Windows_Libraries#Focus)* will not work with the *SetWindowPos*!**</center>
+```
+<sub>Adapted from code by Michael Calkins</sub>
 
+> *Explanation:* When other windows are clicked on, this program window will stay on top. Click it to return focus.
+
+> *SetWindowPos* can also move the window's TLC corner position and re-size the window when not flagged.
+
+> When the window is moved to a position, [_SCREENCLICK](_SCREENCLICK) can be used to focus on the program window.
+
+<center>***[Windows_Libraries#Focus](Windows_Libraries#Focus)* will not work with the *SetWindowPos*!**</center>
 
 <center>[http://msdn.microsoft.com/en-us/library/ms633545(v=vs.85) http://msdn.microsoft.com/en-us/library/ms633545(v=vs.85)]</center>
 
-<p style="text-align: center">([#toc](#toc))</p>
-
 ## Video File Player
-
 
 Video player for MPG or AVI video files:
 
 ```vb
+
 DECLARE DYNAMIC LIBRARY "WINMM"
     FUNCTION mciSendStringA% (lpstrCommand AS STRING, lpstrReturnString AS STRING, BYVAL uReturnLength AS INTEGER, BYVAL hwndCallback AS INTEGER)
     ' mciSendStringA function plays media files and returns the following:
@@ -2555,18 +2425,14 @@ DECLARE DYNAMIC LIBRARY "WINMM"
     ' uLength is the length of the lpstrBuffer string buffer.
     '#### #### #### #### #### #### #### #### #### #### #### #### #### #### ### 
 
-
-
 END DECLARE
 
 DECLARE CUSTOMTYPE LIBRARY
     FUNCTION FindWindow& (BYVAL ClassName AS _OFFSET, WindowName$)
 END DECLARE
 
-
 handle& = _NEWIMAGE(800, 600, 256)
 SCREEN handle&
-
 
 _TITLE "QB64 Video"
 hwnd& = _WINDOWHANDLE 'FindWindow(0, "QB64 Video" + CHR$(0))
@@ -2592,14 +2458,10 @@ ELSE
     x% = mciSendStringA%("close " + filename$, "", 0, 0)
 END IF
 
-```<sub>Code courtesy of Dav</sub>
-
-
-
-
+```
+<sub>Code courtesy of Dav</sub>
 
 ## Web Page Download
-
 
 >  Downloads the contents of a web page as an HTML or text file. Text can be edited for page information.
 
@@ -2622,14 +2484,10 @@ PRINT "Sleeping 7 secs to do the deed..."
 SLEEP 7
 PRINT a% 
 
-``` <sub>Code courtesy of Dav</sub>
-
-
-<p style="text-align: center">([#toc](#toc))</p>
+```
+<sub>Code courtesy of Dav</sub>
 
 ## Windows API
-
-
 
 >  Program finds the window handle by the [_TITLE](_TITLE) and then does various things with the window using that handle [_OFFSET](_OFFSET) value.
 
@@ -2681,14 +2539,14 @@ PRINT "Process ID:"; PID&
 
 END 
 
-```<sub>Adapted from header code by Cyperium and Unseenmachine</sub>
->  *Note:* *SetWindowPos&* function sets the pixel location on the desktop and the window dimensions. It can also set the window's Z order priority.
+```
+<sub>Adapted from header code by Cyperium and Unseenmachine</sub>
+
+> *Note:* *SetWindowPos&* function sets the pixel location on the desktop and the window dimensions. It can also set the window's Z order priority.
+
 <center>**The window handle value and process ID never change! Even when the title is changed.**</center>
 
-<p style="text-align: center">([#toc](#toc))</p>
-
 ## Window Focus
-
 
 Windows API routine can tell a program when it has lost focus by the user clicking on a different program window or the desktop.
 
@@ -2715,14 +2573,12 @@ END
 
 ```
 <sub>Adapted from code by Michael Calkins</sub>
->  *Note:* [CHR$](CHR$)(0) could actually be added to the original title string and it wouldn't hurt anything. Compared values are [_OFFSET](_OFFSET)s.
 
-<center>**See [Windows_Libraries#Focus](Windows_Libraries#Focus) on program.**</center>
+> *Note:* [CHR$](CHR$)(0) could actually be added to the original title string and it wouldn't hurt anything. Compared values are [_OFFSET](_OFFSET)s.
 
-<p style="text-align: center">([#toc](#toc))</p>
+<center>**See [Windows_Libraries#Focus](Windows-Libraries#Focus) on program.**</center>
 
 ## Windows Menu
-
 
 <center>**Creates a menu bar in the program window with a name that can be clicked on to execute a procedure.**</center>
 
@@ -2815,19 +2671,15 @@ LOOP WHILE INKEY$ = ""
 
 ```
 <sub>Code by Galleon</sub>
+
 > Links/References: 
->            [http://msdn.microsoft.com/en-us/library/windows/desktop/ms647980(v=vs.85).aspx http://msdn.microsoft.com/en-us/library/windows/desktop/ms647980(v=vs.85).aspx]
-
-
-<p style="text-align: center">([#toc](#toc))</p>
+>   [http://msdn.microsoft.com/en-us/library/windows/desktop/ms647980(v=vs.85).aspx](http://msdn.microsoft.com/en-us/library/windows/desktop/ms647980(v=vs.85).aspx)
 
 ## Windows Notification
-
 
 The following code creates a pop-up notification balloon in the Windows task bar or from the Windows 10 side bar.
 
 ```vb
-
 
 'public domain, 2012 feb, michael calkins
 
@@ -2947,24 +2799,22 @@ END IF
 
 END 
 
-```<sub>Adapted from code by Michael Calkins</sub>
+```
+<sub>Adapted from code by Michael Calkins</sub>
+
 <center>**NOTE: The program emulates a FALSE Low Battery warning!</center>
 
-
 >  *MSDN References:*
-<center>[http://msdn.microsoft.com/en-us/library/windows/desktop/ms633499(v=vs.85).aspx http://msdn.microsoft.com/en-us/library/windows/desktop/ms633499(v=vs.85).aspx]
+<center>[http://msdn.microsoft.com/en-us/library/windows/desktop/ms633499(v=vs.85).aspx](http://msdn.microsoft.com/en-us/library/windows/desktop/ms633499(v=vs.85).aspx)
 
-[http://msdn.microsoft.com/en-us/library/windows/desktop/ms648072(v=vs.85).aspx http://msdn.microsoft.com/en-us/library/windows/desktop/ms648072(v=vs.85).aspx]
+[http://msdn.microsoft.com/en-us/library/windows/desktop/ms648072(v=vs.85).aspx](http://msdn.microsoft.com/en-us/library/windows/desktop/ms648072(v=vs.85).aspx)
 
-[http://msdn.microsoft.com/en-us/library/windows/desktop/bb762159(v=vs.85).aspx http://msdn.microsoft.com/en-us/library/windows/desktop/bb762159(v=vs.85).aspx]
+[http://msdn.microsoft.com/en-us/library/windows/desktop/bb762159(v=vs.85).aspx](http://msdn.microsoft.com/en-us/library/windows/desktop/bb762159(v=vs.85).aspx)
 
-[http://msdn.microsoft.com/en-us/library/windows/desktop/bb773352(v=vs.85).aspx http://msdn.microsoft.com/en-us/library/windows/desktop/bb773352(v=vs.85).aspx] </center>
+[http://msdn.microsoft.com/en-us/library/windows/desktop/bb773352(v=vs.85).aspx](http://msdn.microsoft.com/en-us/library/windows/desktop/bb773352(v=vs.85).aspx) </center>
 
-
-<p style="text-align: center">([#toc](#toc))</p>
 
 ## Windows Ports
-
 
 >  The following library uses QueryDosDeviceA to find the COM or LPT ports on a Windows computer only.
 
@@ -3040,14 +2890,10 @@ buffer = ""
 
 END 
 
-```<sub>Code courtesy of Michael Calkins</sub>
-
-
-<p style="text-align: center">([#toc](#toc))</p>
-
+```
+<sub>Code courtesy of Michael Calkins</sub>
 
 ## Windows Sounds
-
 
 >  MessageBeep plays Windows alert sound files located in the *C:\windows\media* folder. Some may not be set!
 
@@ -3082,13 +2928,15 @@ SLEEP 2
 PRINT "Asterisk"
 MessageBeep MB_ICONASTERISK
 
-```<sub>Code by Ted Weissgerber</sub>
->  *Note:* The sounds can be set in *Control Panel: Sounds and Audio Devices/Sounds* settings tab if not already assigned.
+```
+<sub>Code by Ted Weissgerber</sub>
 
+> *Note:* The sounds can be set in *Control Panel: Sounds and Audio Devices/Sounds* settings tab if not already assigned.
 
 >  PlaySound plays Windows System sounds on most PC's:
 
 ```vb
+
 'SDL-SPECIFIC CHANGES! GL only needs DECLARE LIBRARY without DLL name
 
 DECLARE DYNAMIC LIBRARY "Winmm"
@@ -3101,17 +2949,11 @@ x = PlaySound("SystemExclamation" + CHR$(0), 0, SND_ALIAS + SND_ASYNC)
 
 ```
 
->  Use "SystemDefault", "SystemExclamation", "SystemExit", "SystemHand", "SystemQuestion", "SystemStart" or "SystemWelcome"
-
-
-
-<p style="text-align: center">([#toc](#toc))</p>
+> Use "SystemDefault", "SystemExclamation", "SystemExit", "SystemHand", "SystemQuestion", "SystemStart" or "SystemWelcome"
 
 ## Window Transparency
 
-
-
->  Program changes transparency of the window. Plus key increases visibility while minus key can make it completely invisible.
+> Program changes transparency of the window. Plus key increases visibility while minus key can make it completely invisible.
 
 ```vb
 
@@ -3180,13 +3022,10 @@ Crap = SetLayeredWindowAttributes(hWnd, 0, Level, LWA_ALPHA)
 
 END SUB 
 
-```<sub>Code by Jobert</sub>
-
-
-<p style="text-align: center">([#toc](#toc))</p>
+```
+<sub>Code by Jobert</sub>
 
 ## Windows User
-
 
 >  Finds the current user's *My Documents* folder as a [STRING](STRING) value. Other environmental constants are listed below code.
 
@@ -3227,10 +3066,10 @@ END
 
 ```
 <sub>Code courtesy of Michael Calkins</sub>
->  *Note:* When the SHGetFolderPathA& function returns a non-zero value, the 0x hexadecimal error number is printed instead.
 
-<center>**[http://msdn.microsoft.com/en-us/library/bb776911(v=vs.85) Vista and newer versions of Windows can also use SHGetKnownFolderPath and similar Constant values]**</center>
+> *Note:* When the SHGetFolderPathA& function returns a non-zero value, the 0x hexadecimal error number is printed instead.
 
+<center>**[Vista and newer versions of Windows can also use SHGetKnownFolderPath and similar Constant values](http://msdn.microsoft.com/en-us/library/bb776911(v=vs.85))**</center>
 
 ```text
 
@@ -3297,14 +3136,9 @@ END
 
 ```
 
-<p style="text-align: center">([#toc](#toc))</p>
-
-
 ## Windows Version
 
-
 <center>**Note that QB64 will not run on Windows 95 to ME computers currently!**</center>
-
 
 ```vb
 
@@ -3334,29 +3168,22 @@ IF INSTR(1, b$, "7600") THEN PRINT "Windows 7"
 
 ```
 <sub>Code courtesy of Dav</sub>
-**NOTE**: Microsoft depreciated GetVersion() for Windows 8 and higher - [https://docs.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversion https://docs.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversion]
 
-<p style="text-align: center">([#toc](#toc))</p>
+**NOTE**: Microsoft depreciated GetVersion() for Windows 8 and higher - [https://docs.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversion](https://docs.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversion)
 
 ## Reference
 
-
 <center> **Note: C++ Header files should be placed in the QB64 folder and are not required after a program is compiled.**</center>
-
 
 <center>**Your code contribution using the Windows Libraries could end up here!**</center>
 
+## See Also
 
-*See also:*
 * [_WINDOWHANDLE](_WINDOWHANDLE)
-* [Windows Environment](Windows Environment)
-* [DECLARE LIBRARY](DECLARE LIBRARY), [BYVAL](BYVAL), [ALIAS](ALIAS)
-* [_OFFSET](_OFFSET), [_OFFSET (function)](_OFFSET (function)) (lp, ptr and p names)
-* [SDL Libraries](SDL Libraries), [DLL Libraries](DLL Libraries), [C Libraries](C Libraries)
+* [Windows Environment](Windows-Environment)
+* [DECLARE LIBRARY](DECLARE-LIBRARY), [BYVAL](BYVAL), [ALIAS](ALIAS)
+* [_OFFSET](_OFFSET), [_OFFSET-(function)](_OFFSET-(function)) (lp, ptr and p names)
+* [SDL Libraries](SDL-Libraries), [DLL Libraries](DLL-Libraries), [C Libraries](C-Libraries)
 * [Libraries#C++_Variable_Types](Libraries#C++_Variable_Types)
-* [VB Script](VB Script)
-* [Windows Printer Settings](Windows Printer Settings)
-
-
-
-
+* [VB Script](VB-Script)
+* [Windows Printer Settings](Windows-Printer-Settings)

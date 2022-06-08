@@ -2,11 +2,9 @@ QB64 is created to be compatible with Quick Basic 4.5 only as it was the most po
 
 ## CURRENCY
 
-
-
 ### MKC$
 
->  VB could use the CURRENCY variable type and had the MKC$ function to convert those values to [ASCII](ASCII) string values. QB64 can convert [_FLOAT](_FLOAT) currency values to **8 byte** strings using [_MK$](_MK$) with [_INTEGER64](_INTEGER64) values:
+> VB could use the CURRENCY variable type and had the MKC$ function to convert those values to [ASCII](ASCII) string values. QB64 can convert [_FLOAT](_FLOAT) currency values to **8 byte** strings using [_MK$](_MK$) with [_INTEGER64](_INTEGER64) values:
 
 ```vb
 
@@ -17,13 +15,14 @@ _PRINTSTRING (1, 50), "[" + MKC$(value) + "]" ' show ASCII string value
 END
 
 FUNCTION MKC$ (CurrVal AS _FLOAT) 'converts currency amount to currency string
-DIM CVal AS _INTEGER64
-CVal = CurrVal * 10000
-MKC = _MK$(_INTEGER64, CVal)
+  DIM CVal AS _INTEGER64
+  CVal = CurrVal * 10000
+  MKC = _MK$(_INTEGER64, CVal)
 END FUNCTION 
 
 ```
->  The currency amount must be multiplied by 10000 before it is converted to the 8 byte [ASCII](ASCII) string value.
+
+> The currency amount must be multiplied by 10000 before it is converted to the 8 byte [ASCII](ASCII) string value.
 
 ### CVC
 
@@ -44,18 +43,18 @@ _PRINTSTRING (1, 30), STR$(CVC##(currency))
 END
 
 FUNCTION CVC## (CurrStr AS STRING) 'converts currency string to currency amount
-DIM CV AS _INTEGER64
-CV = _CV(_INTEGER64, CurrStr)
-CVC = CV / 10000
+  DIM CV AS _INTEGER64
+  CV = _CV(_INTEGER64, CurrStr)
+  CVC = CV / 10000
 END FUNCTION 
 
 ```
->  The currency amount must be divided by 10000 to create up to 4 decimal point places.
+
+> The currency amount must be divided by 10000 to create up to 4 decimal point places.
 
 ### PUT
 
 >  Currency values can be [PUT](PUT) directly into [BINARY](BINARY) or [RANDOM](RANDOM) files using an [_INTEGER64](_INTEGER64) variable value.
-
 
 ```vb
 
@@ -76,7 +75,6 @@ END
 
 >  If currency values are [PUT](PUT) directly into a [BINARY](BINARY) or [RANDOM](RANDOM) file, [_INTEGER64](_INTEGER64) can [GET](GET) them directly. Then divide by 10 ^ 4: 
 
-
 ```vb
 
 DIM curr AS _INTEGER64, currency AS _FLOAT
@@ -91,16 +89,10 @@ PRINT currency
 END 
 
 ```
->  *Note:* The currency value can be any [SINGLE](SINGLE), [DOUBLE](DOUBLE) or [_FLOAT](_FLOAT) floating decimal point value that will hold the range of values.
 
-<p style="text-align: center">([#toc](#toc))</p>
+> *Note:* The currency value can be any [SINGLE](SINGLE), [DOUBLE](DOUBLE) or [_FLOAT](_FLOAT) floating decimal point value that will hold the range of values.
 
 ## References
 
-
-*See also:*
-* [PDS (7.1) Procedures](PDS (7.1) Procedures)
-
-
-
-
+## See Also
+* [PDS (7.1) Procedures](PDS-(7.1)-Procedures)

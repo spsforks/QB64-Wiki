@@ -1,10 +1,8 @@
 **VARPTR$** is a memory function that returns a [STRING](STRING) representation of a variable's memory address value for use in a [DRAW](DRAW) or [PLAY](PLAY) statement.
 
-
 ## Syntax
 
-> : string_value$ = VARPTR$(*variable*)
-
+> string_value$ = VARPTR$(*variable*)
 
 * Can use any [STRING](STRING) or numerical variable reference **existing** in memory.
 * If the parameter value is from an array it must be dimensioned already. Cannot use fixed length string arrays.
@@ -12,6 +10,7 @@
 * Always use variable X as in "X" + VARPTR$(*string_variable$*) to [DRAW](DRAW) or [PLAY](PLAY) another [STRING](STRING) value.
 * DRAW relative Moves use a + or - before the equal sign. EX: DRAW "M+=" + VARPTR$(x%) + ",-=" + VARPTR$(y%)
 
+## Example(s)
 
 *Example 1:* How VARPTR$ reads consecutive values from memory.
 
@@ -28,8 +27,8 @@ FOR I = 1 TO 10
 NEXT 
 
 ```
-> *NOTE:* **GWBasic** allows **semicolons** to be used in the ROW$ definition, but QBasic and **QB64** MUST use **+** concatenation.
 
+> *NOTE:* **GWBasic** allows **semicolons** to be used in the ROW$ definition, but QBasic and **QB64** MUST use **+** concatenation.
 
 *Example 2:* Using the function to change a Turn Angle value using DRAW.
 
@@ -57,8 +56,8 @@ DO: sec$ = RIGHT$(TIME$, 2)        'get current second value from time
 LOOP 
 
 ```
-> *Explanation:* When the VARPTR$ value is used in DRAW, **=** MUST be used to pass the value to the draw! Negative Turn Angle values move clockwise and each second moves the hand 6 degrees. **TA** uses actual degree angles starting at 0 or noon.
 
+> *Explanation:* When the VARPTR$ value is used in DRAW, **=** MUST be used to pass the value to the draw! Negative Turn Angle values move clockwise and each second moves the hand 6 degrees. **TA** uses actual degree angles starting at 0 or noon.
 
 *Example 3:* Comparing DRAW moves using VARPTR$ and [STR$](STR$) values.
 
@@ -77,13 +76,10 @@ DRAW "M+" + STR$(C) + "," + STR$(D) 'must add + for positive relative moves
 END 
 
 ```
->  *Explanation:* A negative STR$ value will move the DRAW relatively where VARPTR$ won't without the sign before the equal.
 
+> *Explanation:* A negative STR$ value will move the DRAW relatively where VARPTR$ won't without the sign before the equal.
 
-*See also:* 
+## See Also
+
 * [VARPTR](VARPTR), [STR$](STR$) 
 * [DRAW](DRAW), [PLAY](PLAY)
-
-
-
-

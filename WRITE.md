@@ -1,10 +1,8 @@
 The [WRITE](WRITE) statement writes a [comma](comma)-separated list of values to the screen without spacing.
 
-
 ## Syntax
 
 > [WRITE](WRITE) [expression, List]
-
 
 ## Description
 
@@ -14,10 +12,10 @@ The [WRITE](WRITE) statement writes a [comma](comma)-separated list of values to
 * [STRING](STRING) [quotation mark](quotation mark)s will also be displayed.
 * [Semicolon](Semicolon)s cannot be used in or following the WRITE statement!
 
-
 *Example:* Comparing WRITE to the same PRINT statement.
 
 ```vb
+
 a% = 123
 b$ = "Hello"
 c! = 3.1415
@@ -29,21 +27,14 @@ WRITE a%, b$, c!   'displays commas between values, strings retain end quotes
 
 ```text
 
-
 123        Hello      3.1415 
 123,"Hello",3.1415 
 
 ```
 
-
-
 ## See Also
 
-* [WRITE (file statement)](WRITE (file statement))
-* [INPUT (file statement)](INPUT (file statement))
-* [PRINT](PRINT), [PRINT (file statement)](PRINT (file statement))
-* [PRINT USING](PRINT USING)
-
-
-
-
+* [WRITE (file statement)](WRITE-(file-statement))
+* [INPUT (file statement)](INPUT-(file-statement))
+* [PRINT](PRINT), [PRINT (file statement)](PRINT-(file-statement))
+* [PRINT USING](PRINT-USING)

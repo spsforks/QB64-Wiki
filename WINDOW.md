@@ -4,7 +4,8 @@ The **WINDOW** command scales the graphics coordinate system of the current [_DE
 
 >  **WINDOW** [ [ **SCREEN**] (*x1!*, *y1!*) - (*x2!*, *y2!*)]
 
-PageParameters
+## Parameters
+
 Where (*x1!*, *y1!*)-(*x2!*, *y2!*) specifies the new dimensions of the image to scale to. Non-integer values may be used.
 Using **WINDOW** with no parameters reverts the effect of any previous calls to it.
 
@@ -12,8 +13,7 @@ Using **WINDOW** with no parameters reverts the effect of any previous calls to 
 
 When a command such as [LINE](LINE), [CIRCLE](CIRCLE) or [_PUTIMAGE](_PUTIMAGE) needs a position in an image specified, it is given as a combination of x (horizontal) and y (vertical) coordinates. Usually these values are measured as pixels from the top-left origin. The **WINDOW** command changes the way these values are measured. This is best illustrated with an example:
 
-```text
-
+```vb
 
 SCREEN _NEWIMAGE(600, 600, 32) '600 pixels in x and y directions and displayed on screen
 WINDOW SCREEN (0, 0)-(6, 6)
@@ -43,12 +43,8 @@ CIRCLE (5, 5), 1, _RGB32(0, 255, 0) 'Green circle at (5, 5) with radius 1
 
 ```
 
-
 ## See Also
 
 * [PMAP](PMAP)
 * [VIEW](VIEW)
-* [VIEW PRINT](VIEW PRINT)
-
-
-
+* [VIEW PRINT](VIEW-PRINT)
