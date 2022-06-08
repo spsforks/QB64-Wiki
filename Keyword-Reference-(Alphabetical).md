@@ -106,7 +106,7 @@
 * [FOR...NEXT](FOR...NEXT) (statement) creates a recursive loop procedure that loop a specified number of times.
 * [FOR (file statement)](FOR-(file-statement)) used in an [OPEN](OPEN) file or device statement to indicate the access mode.
 * [FRE](FRE) (function) returns the number of bytes of Memory available to running programs.
-* [TIMER (statement)](TIMER (statement)) frees a numbered TIMER event in QB64.
+* [FREE (QB64 TIMER statement)](TIMER) frees a numbered TIMER event in QB64.
 * [FREEFILE](FREEFILE) (file function) returns a file number that is currently not in use by the Operating System.
 * [FUNCTION](FUNCTION) (procedure block) sub-procedure that can calculate and return one value to a program in its name.
 
