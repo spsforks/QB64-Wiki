@@ -195,14 +195,14 @@
 
 * [OCT$](OCT$) (function) returns the octal (base 8) [STRING](STRING) representation of the [INTEGER](INTEGER) part of any value.
 * [OFF](OFF) (event statement) turns off all [ON](ON) event checking.
-* [ON COM(n)](ON COM(n)) (statement) sets up a COM port event procedure call.
+* [ON COM(n)](ON-COM(n)) (statement) sets up a COM port event procedure call.
 * [ON ERROR](ON-ERROR) (statement) sets up and activates an error event checking procedure call. Use to avoid program errors.
 * [ON KEY(n)](ON-KEY(n)) (statement) sets up a keyboard key entry event procedure.
-* [ON PEN](ON PEN) (statement) sets up a pen event procedure call.
+* [ON PEN](ON-PEN) (statement) sets up a pen event procedure call.
 * [ON PLAY(n)](ON-PLAY(n)) (statement) sets up a [PLAY](PLAY) event procedure call.
 * [ON STRIG(n)](ON-STRIG(n)) (statement) sets up a joystick button event procedure call.
 * [ON TIMER(n)](ON-TIMER(n)) (statement) sets up a timed event procedure call.
-* [ON UEVENT](ON UEVENT) (statement) **Not implemented in QB64.**
+* [ON UEVENT](ON-UEVENT) (statement) **Not implemented in QB64.**
 * [ON...GOSUB](ON...GOSUB) (statement) sets up a numerical event procedure call.
 * [ON...GOTO](ON...GOTO) (statement) sets up a numerical event procedure call.
 * [OPEN](OPEN) (file statement) opens a file name for an access mode with a specific file number.
@@ -264,7 +264,7 @@
 * [SCREEN](SCREEN) (statement) sets the display mode and size of the program window.
 * [SEEK](SEEK) (function) returns the present byte position in an [OPEN](OPEN) file.
 * [SEEK (statement)](SEEK-(statement)) moves to a specified position in an [OPEN](OPEN) file.
-* [SELECT CASE](SELECT CASE) (statement) a program flow block that can handle numerous conditional evaluations.
+* [SELECT CASE](SELECT-CASE) (statement) a program flow block that can handle numerous conditional evaluations.
 * [SETMEM](SETMEM) (function) sets the memory to use.
 * [SGN](SGN) (function) returns -1 for negative, 0 for zero, and 1 for positive numerical values.
 * [SHARED](SHARED) (statement) designates that a variable can be used by other procedures or the main procedure when in a sub-procedure.
@@ -381,7 +381,7 @@ Keywords beginning with underscores are QB64 specific. **To use them without the
 * [_CINP](_CINP) (function) Returns a key code from $CONSOLE input
 * [_CLEARCOLOR (function)](_CLEARCOLOR-(function)) returns the current transparent color of an image.
 * [_CLEARCOLOR](_CLEARCOLOR) (statement) sets a specific color index of an image to be transparent
-* [_CLIP](_CLIP) ([PUT (graphics statement)](PUT-(graphics statement)) graphics option) allows placement of an image partially off of the screen.
+* [_CLIP](_CLIP) ([PUT (graphics statement)](PUT-(graphics-statement)) graphics option) allows placement of an image partially off of the screen.
 * [_CLIPBOARD$](_CLIPBOARD$) (function) returns the operating system's clipboard contents as a [STRING](STRING).
 * [_CLIPBOARD$ (statement)](_CLIPBOARD$-(statement)) sets and overwrites the [STRING](STRING) value in the operating system's clipboard. 
 * [_CLIPBOARDIMAGE (function)](_CLIPBOARDIMAGE (function)) pastes an image from the clipboard into a new QB64 image in memory.
@@ -407,7 +407,7 @@ Keywords beginning with underscores are QB64 specific. **To use them without the
 * [_D2G](_D2G) (function) converts degrees to gradient angle values.
 * [_D2R](_D2R) (function) converts degrees to radian angle values.
 * [$DEBUG]($DEBUG) (metacommand) enables debugging features, allowing you to step through your code line by line
-* [DECLARE LIBRARY](DECLARE LIBRARY) declares a C++, SDL or Operating System [SUB](SUB) or [FUNCTION](FUNCTION) to be used.
+* [DECLARE LIBRARY](DECLARE-LIBRARY) declares a C++, SDL or Operating System [SUB](SUB) or [FUNCTION](FUNCTION) to be used.
 * [DECLARE DYNAMIC LIBRARY](DECLARE-DYNAMIC-LIBRARY) declares DYNAMIC, CUSTOMTYPE or STATIC library (DLL) [SUB](SUB) or [FUNCTION](FUNCTION).
 * [_DEFAULTCOLOR](_DEFAULTCOLOR) (function) returns the current default text color for an image handle or page.
 * [_DEFINE](_DEFINE) (statement) defines a range of variable names according to their first character as a data type.
@@ -537,13 +537,13 @@ Keywords beginning with underscores are QB64 specific. **To use them without the
 
 ### _O
 
-* [_OFFSET (function)](_OFFSET (function)) returns the memory offset of a variable when used with [DECLARE LIBRARY](DECLARE LIBRARY) or [_MEM](_MEM) only.
-* [_OFFSET](_OFFSET) (%& numerical type) can be used store the value of an offset in memory when using [DECLARE LIBRARY](DECLARE LIBRARY) or [MEM](MEM) only.
+* [_OFFSET (function)](_OFFSET (function)) returns the memory offset of a variable when used with [DECLARE LIBRARY](DECLARE-LIBRARY) or [_MEM](_MEM) only.
+* [_OFFSET](_OFFSET) (%& numerical type) can be used store the value of an offset in memory when using [DECLARE LIBRARY](DECLARE-LIBRARY) or [MEM](MEM) only.
 * [_OPENCLIENT](_OPENCLIENT) (TCP/IP function) connects to a Host on the Internet as a Client and returns the Client status handle.
 * [_OPENCONNECTION](_OPENCONNECTION) (TCP/IP function) open's a connection from a client that the host has detected and returns a status handle.
 * [_OPENHOST](_OPENHOST) (TCP/IP function) opens a Host and returns a Host status handle.
-* [OPTION _EXPLICIT](OPTION _EXPLICIT) (Pre-compiler directive) instructs the compiler to require variable declaration with [DIM](DIM) or an equivalent statement.
-* [OPTION _EXPLICITARRAY](OPTION _EXPLICITARRAY) (Pre-compiler directive) instructs the compiler to require array declaration with [DIM](DIM) or an equivalent statement. 
+* [OPTION _EXPLICIT](OPTION-_EXPLICIT) (Pre-compiler directive) instructs the compiler to require variable declaration with [DIM](DIM) or an equivalent statement.
+* [OPTION _EXPLICITARRAY](OPTION-_EXPLICITARRAY) (Pre-compiler directive) instructs the compiler to require array declaration with [DIM](DIM) or an equivalent statement. 
 * [_OS$](_OS$) (function) returns the QB64 compiler version in which the program was compiled as [WINDOWS], [LINUX] or [MACOSX] and [32BIT] or [64BIT].
 
 ### _P
@@ -657,10 +657,11 @@ Keywords beginning with underscores are QB64 specific. **To use them without the
 
 ## OpenGL specific keywords:
 
-<center>**All QB64 OpenGL keywords must use the underscore _gl prefix with the alphabetically listed function names.**</center>
-<center>Use [$NOPREFIX]($NOPREFIX) to enable these to be used without the leading underscore.</center>
+**All QB64 OpenGL keywords must use the underscore _gl prefix with the alphabetically listed function names.**
 
-* Important: See [SUB _GL](SUB _GL)
+Use [$NOPREFIX]($NOPREFIX) to enable these to be used without the leading underscore.
+
+* Important: See [SUB _GL](SUB-_GL)
 
 ### _glA
 
@@ -1054,9 +1055,9 @@ Keywords beginning with underscores are QB64 specific. **To use them without the
 
 ## Symbols:
 
-<center>**QB64 and QB Symbols:**</center>
+**QB64 and QB Symbols:**
 
-<center>*[Note: All symbols below can also be used inside of literal quoted strings except for quotation marks.]*</center>
+*[Note: All symbols below can also be used inside of literal quoted strings except for quotation marks.]*
 
 > **Print, Input or File Formatting**
 
@@ -1098,13 +1099,13 @@ Keywords beginning with underscores are QB64 specific. **To use them without the
 
 > **[Mathematical Operations](Mathematical-Operations)**
 
-*[+](+) operator or sign
-*[-](-) operator or sign
-*[*](*) operator
-*[/](/) (floating decimal point) operator
-*[\](\) operator
-*[^](^) operator
-*[MOD](MOD) operator
+* [+](+) operator or sign
+* [-](-) operator or sign
+* [*](*) operator
+* [/](/) (floating decimal point) operator
+* [\](\) operator
+* [^](^) operator
+* [MOD](MOD) operator
 
 > **[Relational Operations](Relational-Operations)**
 
