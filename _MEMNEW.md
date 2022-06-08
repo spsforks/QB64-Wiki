@@ -1,4 +1,3 @@
-DISPLAYTITLE:_MEMNEW
 The [_MEMNEW](_MEMNEW) function allocates new memory and returns a [_MEM](_MEM) memory block referring to it.
 
 

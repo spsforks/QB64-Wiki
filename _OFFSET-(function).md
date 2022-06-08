@@ -1,4 +1,3 @@
-DISPLAYTITLE:_OFFSET (function)
 The [_OFFSET](_OFFSET) function returns the memory offset of/within a given variable.
 
 

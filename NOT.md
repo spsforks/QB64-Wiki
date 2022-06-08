@@ -1,10 +1,8 @@
 [NOT](NOT) is a [Boolean](Boolean) logical operator that will change a false statement to a true one and vice-versa. 
 
-
 ## Syntax
 
->  *True* = -1: *False* = [NOT](NOT) True
-
+> *True* = -1: *False* = [NOT](NOT) True
 
 ## Description
 
@@ -13,12 +11,7 @@
 * Often called a negative logic operator, it returns the opposite of a value as true or false.
 * Values are changed by their bit values so that each bit is changed to the opposite of on or off. See example 3 below.
 
-
-RelationalTable
-
-
-
-
+MISSING: Relational Table
 
 ## Example(s)
 
@@ -35,7 +28,6 @@ LOOP UNTIL k$ = CHR$(27) ' escape key quit
 
 ```
 
-
 *Example 2:* Reading a file until it reaches the End Of File.
 
 ```vb
@@ -44,12 +36,13 @@ DO WHILE NOT EOF(1)
 LOOP 
 
 ```
-> *Explanation:* [EOF](EOF) will return 0 until a file ends. NOT converts 0 to -1 so that the loop continues to run. When EOF becomes -1, NOT converts it to 0 to end the loop.
 
+> *Explanation:* [EOF](EOF) will return 0 until a file ends. NOT converts 0 to -1 so that the loop continues to run. When EOF becomes -1, NOT converts it to 0 to end the loop.
 
 *Example 3:* So why does **NOT 5 = -6**? Because NOT changes every bit of a value into the opposite:
 
 ```vb
+
 PRINT NOT 5
 PRINT
 ReadBits 5
@@ -78,6 +71,7 @@ END SUB
 >  QB64 can use [&B](&B) to convert the above [_BIT](_BIT) values back to [INTEGER](INTEGER) or [_BYTE](_BYTE) values as shown below:
 
 ```vb
+
 '16 bit INTEGER values from -32768 to 32767
 a% = &B0000000000000101
 PRINT a%
@@ -91,14 +85,9 @@ PRINT b%%
 
 ```
 
-
 ## See Also
 
 * [_BIT](_BIT), [&B](&B), [_BYTE](_BYTE)  
 * [AND](AND), [XOR](XOR), [OR](OR)
 * [Binary](Binary), [Boolean](Boolean) 
-* [Mathematical Operations](Mathematical Operations)
-
-
-
-
+* [Mathematical Operations](Mathematical-Operations)

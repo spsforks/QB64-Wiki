@@ -1,4 +1,3 @@
-DISPLAYTITLE:_MOUSEMOVEMENTX
 The [_MOUSEMOVEMENTX](_MOUSEMOVEMENTX) function returns the relative horizontal position of the mouse cursor as positive or negative values.  
 
 

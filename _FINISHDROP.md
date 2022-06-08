@@ -1,4 +1,3 @@
-DISPLAYTITLE:_FINISHDROP
 The [_FINISHDROP](_FINISHDROP) statement resets [_TOTALDROPPEDFILES](_TOTALDROPPEDFILES) and clears the [_DROPPEDFILE](_DROPPEDFILE) list of items (files/folders).
 
 

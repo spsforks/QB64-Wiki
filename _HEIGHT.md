@@ -1,4 +1,3 @@
-DISPLAYTITLE:_HEIGHT
 The [_HEIGHT](_HEIGHT) function returns the height of an image handle or of the current write page.
 
 

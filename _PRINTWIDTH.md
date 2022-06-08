@@ -1,4 +1,3 @@
-DISPLAYTITLE:_PRINTWIDTH
 The [_PRINTWIDTH](_PRINTWIDTH) function returns the width in pixels of the text [STRING](STRING) specified.
 
 

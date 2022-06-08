@@ -1,4 +1,3 @@
-DISPLAYTITLE:_OPENHOST
 The [_OPENHOST](_OPENHOST) function opens a Host which listens for new connections and returns a Host status handle.
 
 

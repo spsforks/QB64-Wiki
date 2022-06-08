@@ -1,4 +1,3 @@
-DISPLAYTITLE:_SNDRAWLEN
 The [_SNDRAWLEN](_SNDRAWLEN) function returns the length, in seconds, of a [_SNDRAW](_SNDRAW) sound currently queued.
 
 
@@ -7,7 +6,8 @@ The [_SNDRAWLEN](_SNDRAWLEN) function returns the length, in seconds, of a [_SND
 >  length# = [_SNDRAWLEN](_SNDRAWLEN) [pipeHandle&]
 
 
-PageParameters
+## Parameters
+
 * The optional pipeHandle& parameter refers to the sound pipe opened using [_SNDOPENRAW](_SNDOPENRAW). 
 
 

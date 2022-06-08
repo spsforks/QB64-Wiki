@@ -1,4 +1,3 @@
-DISPLAYTITLE:_MOUSEMOVEMENTY
 The [_MOUSEMOVEMENTY](_MOUSEMOVEMENTY) function returns the relative vertical position of the mouse cursor as positive or negative values. 
 
 

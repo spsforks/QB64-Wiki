@@ -1,4 +1,3 @@
-DISPLAYTITLE:_SCREENEXISTS
 The [_SCREENEXISTS](_SCREENEXISTS) function returns true (-1) once a screen has been created.
 
 

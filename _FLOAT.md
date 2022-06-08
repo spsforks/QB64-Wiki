@@ -1,4 +1,3 @@
-DISPLAYTITLE:_FLOAT
 **_FLOAT** numerical values offer the maximum floating-point decimal precision available using **QB64**.
 
 

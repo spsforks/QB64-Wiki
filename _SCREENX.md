@@ -1,4 +1,3 @@
-DISPLAYTITLE:_SCREENX
 The [_SCREENX](_SCREENX) function returns the current column pixel coordinate of the program window on the desktop.
 
 

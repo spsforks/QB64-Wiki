@@ -1,4 +1,3 @@
-DISPLAYTITLE:_SNDRAW
 The [_SNDRAW](_SNDRAW) statement plays sound wave sample frequencies created by a program. 
 
 

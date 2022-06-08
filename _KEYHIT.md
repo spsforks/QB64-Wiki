@@ -1,4 +1,3 @@
-DISPLAYTITLE:_KEYHIT
 The [_KEYHIT](_KEYHIT) function returns [ASCII](ASCII) one and two byte, OpenGL Virtual Key and Unicode keyboard key press codes.
 
 

@@ -1,4 +1,3 @@
-DISPLAYTITLE:_ERRORLINE
 The [_ERRORLINE](_ERRORLINE) function returns the source code line number that caused the most recent runtime error.
 
 

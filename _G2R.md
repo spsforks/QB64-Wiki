@@ -1,4 +1,3 @@
-DISPLAYTITLE:_G2R
 The [_G2R](_G2R) function converts a **gradient** value into a **radian** value. 
 
 

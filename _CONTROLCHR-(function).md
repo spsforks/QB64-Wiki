@@ -1,5 +1,3 @@
-DISPLAYTITLE:_CONTROLCHR (function)
-
 The [_CONTROLCHR (function)](_CONTROLCHR (function)) function returns the current state of the [_CONTROLCHR](_CONTROLCHR) statement as -1 when OFF and 0 when ON.
 
 

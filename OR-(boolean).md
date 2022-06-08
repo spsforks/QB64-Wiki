@@ -1,10 +1,8 @@
 The **OR** conditional operator evaluates an expression to true (-1) if any of the arguments is also true.
 
-
 ## Syntax
 
->  [IF](IF) expression1 **OR** expression2 THEN {code}
-
+> [IF](IF) expression1 **OR** expression2 THEN {code}
 
 ## Description
 
@@ -12,14 +10,9 @@ The **OR** conditional operator evaluates an expression to true (-1) if any of t
 * Parenthesis may be used to clarify the order of comparisons in an evaluation.
 * Not to be confused with the [AND](AND) and [OR](OR) numerical operations.
 
-
-RelationalTable
-
+MISSING: Relational Table
 
 ## Example(s)
-
-## Example(s)
- 
 
 ```vb
 
@@ -32,20 +25,14 @@ IF (a% > b% AND a% < 100) OR b% = 50 THEN PRINT "True"
 
 ```text
 
-
 True
 
 ```
 
 >  *Explanation:* The first evaluation was False, but the OR evaluation made the statement true and the code was executed.
 
-
 ## See Also
 
 * [AND](AND), [OR](OR) (logical operators)
-* [AND (boolean)](AND (boolean)), [XOR (boolean)](XOR (boolean))
+* [AND (boolean)](AND-(boolean)), [XOR (boolean)](XOR-(boolean))
 * [IF...THEN](IF...THEN)
-
-
-
-

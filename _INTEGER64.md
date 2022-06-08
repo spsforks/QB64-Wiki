@@ -1,4 +1,3 @@
-DISPLAYTITLE:_INTEGER64
 [_INTEGER64](_INTEGER64) is an 8 byte number type definition that can hold whole numerical values. 
 
 

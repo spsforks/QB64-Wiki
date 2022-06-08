@@ -1,4 +1,3 @@
-DISPLAYTITLE:_MAPTRIANGLE
 The [_MAPTRIANGLE](_MAPTRIANGLE) statement maps a triangular portion of an image onto a destination image or screen page.
 
 

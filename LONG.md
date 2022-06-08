@@ -1,10 +1,8 @@
 [LONG](LONG) defines a variable as a 4 byte number type definition for larger [INTEGER](INTEGER) values.
 
-
 ## Syntax
 
 >  [DIM](DIM) variable AS [LONG](LONG)
-
 
 * [LONG](LONG) integer values range from -2147483648 to 2147483647.
 * **QB64**'s [_UNSIGNED](_UNSIGNED) [LONG](LONG) integer values range from 0 to 4294967295.
@@ -16,7 +14,6 @@
 * **When a variable has not been assigned or has no type suffix, the type defaults to [SINGLE](SINGLE).**
 * **Warning: QBasic keyword names cannot be used as numerical variable names with or without the type suffix.**
 
-
 ## See Also
 
 * [DIM](DIM), [DEFLNG](DEFLNG)
@@ -25,8 +22,4 @@
 * [INTEGER](INTEGER), [_INTEGER64](_INTEGER64)
 * [SINGLE](SINGLE), [DOUBLE](DOUBLE)
 * [_DEFINE](_DEFINE), [_UNSIGNED](_UNSIGNED)
-* [Variable Types](Variable Types)
-
-
-
-
+* [Variable Types](Variable-Types)

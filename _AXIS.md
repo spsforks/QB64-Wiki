@@ -1,4 +1,3 @@
-DISPLAYTITLE:_AXIS
 The [_AXIS](_AXIS) function returns the relative position of a specified axis number on a controller device.
 
 

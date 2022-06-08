@@ -1,4 +1,3 @@
-DISPLAYTITLE:_STARTDIR$
 The [_STARTDIR$](_STARTDIR$) function returns the path a user called a QB64 program from.
 
 ## Syntax

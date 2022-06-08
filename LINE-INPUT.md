@@ -1,10 +1,9 @@
-The [LINE INPUT](LINE INPUT) statement requests a [STRING](STRING) keyboard entry from a program user.
-
+The [LINE INPUT](LINE-INPUT) statement requests a [STRING](STRING) keyboard entry from a program user.
 
 ## Syntax
 
->  [LINE INPUT](LINE INPUT) [;] "[text prompt or question]"{,|;} stringVariable$
->  [LINE INPUT](LINE INPUT) ; stringVariable$
+>  [LINE INPUT](LINE-INPUT) [;] "[text prompt or question]"{,|;} stringVariable$
+>  [LINE INPUT](LINE-INPUT) ; stringVariable$
 
 
 ## Parameter(s)
@@ -12,7 +11,6 @@ The [LINE INPUT](LINE INPUT) statement requests a [STRING](STRING) keyboard entr
 * A [semicolon](semicolon) immediately after LINE INPUT stops the cursor after the entry and prevents screen roll on the lowest two screen rows.
 * *text prompt or question* is optional, but quotes are necessary unless just a semicolon is used before the stringVariable$.
 * Requires only one [STRING](STRING) variable to hold the entire text entry.
-
 
 ## Description
 
@@ -24,11 +22,9 @@ The [LINE INPUT](LINE INPUT) statement requests a [STRING](STRING) keyboard entr
 * Use [_DEST](_DEST) [_CONSOLE](_CONSOLE) before LINE INPUT statements to receive input from a [$CONSOLE]($CONSOLE) window.
 * **Note: QB64** will not remove CHR$(0) from the end of LINE INPUT string return values like QBasic did.
 
-
 ## Example(s)
 
-## Example(s)
- Preventing screen roll after an input entry on the bottom 2 screen rows. 
+Preventing screen roll after an input entry on the bottom 2 screen rows. 
 
 ```vb
 
@@ -51,17 +47,12 @@ Enter a name to search for... █
 
 ```
 
->  *Explanation:* The red [semicolon](semicolon) after LINE INPUT acts like a semicolon after a [PRINT](PRINT), which keeps the print cursor on the same row.
-
+> *Explanation:* The red [semicolon](semicolon) after LINE INPUT acts like a semicolon after a [PRINT](PRINT), which keeps the print cursor on the same row.
 
 ## See Also
  
-* [INPUT (file mode)](INPUT (file mode)), [INPUT (file statement)](INPUT (file statement)), [LINE INPUT (file statement)](LINE INPUT (file statement))
+* [INPUT (file mode)](INPUT-(file-mode)), [INPUT (file statement)](INPUT-(file-statement)), [LINE INPUT (file statement)](LINE-INPUT-(file-statement))
 * [INPUT](INPUT), [INPUT$](INPUT$) (keyboard input)
 * [COLOR](COLOR), [LOCATE](LOCATE) 
 * [INKEY$](INKEY$)
 * [_KEYHIT](_KEYHIT), [_KEYDOWN](_KEYDOWN)
-
-
-
-

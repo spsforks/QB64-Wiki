@@ -1,4 +1,3 @@
-DISPLAYTITLE:_CONSOLETITLE
 The [_CONSOLETITLE](_CONSOLETITLE) statement creates the title of the console window using a literal or variable [STRING](STRING).
 
 

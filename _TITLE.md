@@ -1,4 +1,3 @@
-DISPLAYTITLE:_TITLE
 The [_TITLE](_TITLE) statement provides the program name in the title bar of the program window.
 
 

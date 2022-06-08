@@ -1,4 +1,3 @@
-DISPLAYTITLE:_DELAY
 The [_DELAY](_DELAY) statement suspends program execution for a [SINGLE](SINGLE) value of seconds.
 
 

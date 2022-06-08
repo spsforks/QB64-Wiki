@@ -1,4 +1,3 @@
-DISPLAYTITLE:_SETBIT
 The [_SETBIT](_SETBIT) function is used to set a specified bit of a numerical value to 1 (on state).
 
 

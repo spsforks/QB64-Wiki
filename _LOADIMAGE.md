@@ -1,5 +1,3 @@
-DISPLAYTITLE:_LOADIMAGE
-
 The [_LOADIMAGE](_LOADIMAGE) function loads an image into memory and returns valid [LONG](LONG) image handle values that are less than -1. 
 
 

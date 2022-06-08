@@ -1,4 +1,3 @@
-DISPLAYTITLE:_RGB32
 The [_RGB32](_RGB32) function returns the 32-bit *RGBA* color value with specified red, green and blue component intensities and optional alpha.
 
 

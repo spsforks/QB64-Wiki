@@ -1,4 +1,3 @@
-DISPLAYTITLE:_FREEFONT
 The [_FREEFONT](_FREEFONT) statement frees a font handle that was created by [_LOADFONT](_LOADFONT).
 
 

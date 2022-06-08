@@ -1,4 +1,3 @@
-DISPLAYTITLE:_BACKGROUNDCOLOR
 The [_BACKGROUNDCOLOR](_BACKGROUNDCOLOR) function returns the current background color.
 
 

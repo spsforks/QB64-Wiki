@@ -1,4 +1,3 @@
-DISPLAYTITLE:_MEMEXISTS
 The [_MEMEXISTS](_MEMEXISTS) function returns true (-1) if the memory block variable name specified exists in memory and false (0) if it does not.
 
 

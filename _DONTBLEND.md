@@ -1,4 +1,3 @@
-DISPLAYTITLE:_DONTBLEND
 The [_DONTBLEND](_DONTBLEND) statement turns off 32 bit alpha blending for the current image or screen mode where [_BLEND](_BLEND) is default.
 
 

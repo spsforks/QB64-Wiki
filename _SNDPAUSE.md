@@ -1,4 +1,3 @@
-DISPLAYTITLE:_SNDPAUSE
 The [_SNDPAUSE](_SNDPAUSE) statement pauses a sound using a handle from the [_SNDOPEN](_SNDOPEN) function.
 
 

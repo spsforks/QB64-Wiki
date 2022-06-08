@@ -1,4 +1,3 @@
-DISPLAYTITLE:_ALPHA32
 The [_ALPHA32](_ALPHA32) function returns the alpha transparency level of a 32 bit color value.
 
 

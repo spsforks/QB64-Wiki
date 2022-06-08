@@ -1,5 +1,4 @@
-The [ON STRIG(n)](ON STRIG(n)) statement is an event procedure that directs program flow upon the press of a specified joystick button.
-
+The [ON STRIG(n)](ON-STRIG(n)) statement is an event procedure that directs program flow upon the press of a specified joystick button.
 
 ## Syntax
 
@@ -7,16 +6,13 @@ The [ON STRIG(n)](ON STRIG(n)) statement is an event procedure that directs prog
 
 >  **ON STRIG**(buttonFunction[, joystickNumber]) {[GOSUB](GOSUB) {lineNumber|lineLabel} | [SUB](SUB)procedure}
 
-
 * In **QB64** the value can be any button function number with any number of joysticks. See [STRIG](STRIG) and [STICK](STICK) for parameters.
 * There are two buttonFunction for each button. The even numbered function is always the event of any press since last read.
 * The statement sends the procedure to a line number, line label or [SUB](SUB) procedure when a button event occurs.
 
-
 ## QBasic/QuickBASIC
 
 * In QBasic, value of *n* could only be a number from 0 to 3 only as it could only monitor 2 joystick buttons and 2 joysticks.
-
 
 ## Example(s)
 
@@ -43,7 +39,6 @@ RETURN
 
 ```
 
-
 *Example 2:* Displays any number of game pad or joystick device button presses.
 
 ```vb
@@ -66,20 +61,15 @@ PRINT "Joystick #"; js \ 256 + 1; "button #"; (js AND 255) + 1; "pressed!"
 END SUB 
 
 ```
-> *Explanation:* Up to 256 controllers can be used in QB64 with many buttons to read.
 
+> *Explanation:* Up to 256 controllers can be used in QB64 with many buttons to read.
 
 ## See Also
 
-* [STRIG ](STRIG ), [STICK](STICK) (functions)
+* [STRIG](STRIG), [STICK](STICK) (functions)
 * [STRIG(n)](STRIG(n)) (statement)
 * [_DEVICES](_DEVICES), [_DEVICE$](_DEVICE$), [_LASTBUTTON](_LASTBUTTON)
 
-
 ### External links
 
-* [http://en.wikipedia.org/wiki/Analog_stick Single and Dual Stick Controllers]
-
-
-
-
+* [Single and Dual Stick Controllers](http://en.wikipedia.org/wiki/Analog_stick)

@@ -1,4 +1,3 @@
-DISPLAYTITLE:_MEMIMAGE
 The [_MEMIMAGE](_MEMIMAGE) function returns a [_MEM](_MEM) value referring to an image's memory using a designated image handle.
 
 

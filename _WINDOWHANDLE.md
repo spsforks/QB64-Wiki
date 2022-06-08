@@ -1,4 +1,3 @@
-DISPLAYTITLE:_WINDOWHANDLE
 The [_WINDOWHANDLE](_WINDOWHANDLE) function returns the window handle assigned to the current program by the OS. Windows-only.
 
 

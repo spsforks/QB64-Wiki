@@ -1,11 +1,10 @@
-DISPLAYTITLE:_GLRENDER
-
 ## Syntax
 
 > **_GLRENDER ***mode*
 
 
-PageParameters
+## Parameters
+
 
 Mode can be:
 * _BEHIND - renders OpenGL context behind the software rendering

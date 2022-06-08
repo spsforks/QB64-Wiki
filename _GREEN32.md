@@ -1,4 +1,3 @@
-DISPLAYTITLE:_GREEN32
 The [_GREEN32](_GREEN32) function returns the green component intensity of a 32-bit image or surface color.
 
 

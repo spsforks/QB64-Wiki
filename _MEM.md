@@ -1,4 +1,3 @@
-DISPLAYTITLE:_MEM
 The [_MEM](_MEM) variable type can be used when working with memory blocks. It has no variable [type](type) suffix.
 
 

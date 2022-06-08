@@ -1,10 +1,8 @@
 The [MKL$](MKL$) function encodes a [LONG](LONG) numerical value into a 4-byte [ASCII](ASCII) [STRING](STRING) value.
 
-
 ## Syntax
 
 >  result$ = [MKL$](MKL$)(longVariableOrLiteral&)
-
 
 ## Description
 
@@ -15,20 +13,13 @@ The [MKL$](MKL$) function encodes a [LONG](LONG) numerical value into a 4-byte [
 * [CVL](CVL) can convert the value back to a [LONG](LONG) numerical value.
 * [LONG](LONG) numerical variable values [PUT](PUT) into a [BINARY](BINARY) file are automatically placed as an MKL$ [ASCII](ASCII) string value.
 
-
 ## Example(s)
 
-See examples in:
 * [SAVEIMAGE](SAVEIMAGE)
 * [SaveIcon32](SaveIcon32)
-
 
 ## See Also
 
 * [MKI$](MKI$), [MKS$](MKS$), [MKD$](MKD$)
 * [CVD](CVD), [CVI](CVI), [CVS](CVS), [CVL](CVL)
 * [_MK$](_MK$), [_CV](_CV)
-
-
-
-

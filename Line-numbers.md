@@ -1,15 +1,13 @@
 **Line numbers** or **line labels** are used to denote [GOTO](GOTO), [RUN](RUN) or [GOSUB](GOSUB) procedure lines or all code lines as in GW Basic.
 
+## Number Syntax 
 
-##  Number Syntax 
+> **10** [GOTO](GOTO) {line number| line label}
 
-> : **10** [GOTO](GOTO) {line number| line label}
+## Label Syntax 
 
-##  Label Syntax 
-
-> :**PictureData:**
-> : [DATA](DATA) 0, 0, 12, 12, 14, 12, 12, 0, 0
-
+> **PictureData:**
+>   [DATA](DATA) 0, 0, 12, 12, 14, 12, 12, 0, 0
 
 * Line numbers are used to denote a specific line of code. No colon required.
 * Line labels are used to denote a specific line of code with a [colon](colon) when separating it from a code line.
@@ -20,15 +18,10 @@
 * Line numbers are no longer required in QB or QB64 except for [GOSUB](GOSUB), [RUN](RUN) or [GOTO](GOTO) situations.
 * Line numbers and labels are not allowed after SUB/FUNCTION blocks. They are allowed inside SUB/FUNCTIONS though.
 
-
 ## See Also
 
 * [GOTO](GOTO), [RUN](RUN) 
 * [GOSUB](GOSUB), [RETURN](RETURN)
 * [DATA](DATA), [RESTORE](RESTORE)
-* [ON ERROR](ON ERROR), [RESUME](RESUME), [NEXT](NEXT)
+* [ON ERROR](ON-ERROR), [RESUME](RESUME), [NEXT](NEXT)
 * [Line_number](Line_number)
-
-
-
-

@@ -1,4 +1,3 @@
-DISPLAYTITLE:_ROUND
 The [_ROUND](_ROUND) function rounds to the closest even [INTEGER](INTEGER), [LONG](LONG) or [_INTEGER64](_INTEGER64) numerical value.
 
 

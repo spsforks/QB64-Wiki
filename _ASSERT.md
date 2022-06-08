@@ -1,4 +1,3 @@
-DISPLAYTITLE:_ASSERT
 The [_ASSERT](_ASSERT) statement can be used to perform tests in code that's in development, for debugging purposes.
 
 

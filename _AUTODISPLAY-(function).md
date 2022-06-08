@@ -1,4 +1,3 @@
-DISPLAYTITLE:_AUTODISPLAY (function)
 The [_AUTODISPLAY (function)](_AUTODISPLAY (function)) function returns the current display mode as true (-1) if automatic or false (0) if disabled using [_DISPLAY](_DISPLAY).
 
 

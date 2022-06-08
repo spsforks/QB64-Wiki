@@ -1,4 +1,3 @@
-DISPLAYTITLE:_FONTWIDTH
 The [_FONTWIDTH](_FONTWIDTH) function returns the font width of a MONOSPACE font handle created by [_LOADFONT](_LOADFONT).
 
 

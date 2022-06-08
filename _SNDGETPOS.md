@@ -1,4 +1,3 @@
-DISPLAYTITLE:_SNDGETPOS
 The [_SNDGETPOS](_SNDGETPOS) function returns the current playing position in seconds using a handle from [_SNDOPEN](_SNDOPEN).
 
 

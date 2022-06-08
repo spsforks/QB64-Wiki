@@ -1,4 +1,3 @@
-DISPLAYTITLE:_BYTE
 A [_BYTE](_BYTE) variable can hold signed variable values from -128 to 127 (one byte or 8 [_BIT](_BIT)s). [_UNSIGNED](_UNSIGNED) from 0 to 255.
 
 

@@ -1,4 +1,3 @@
-DISPLAYTITLE:_LASTAXIS
 The [_LASTAXIS](_LASTAXIS) function returns the number of axis a specified number INPUT device on your computer has.
 
 

@@ -1,4 +1,3 @@
-DISPLAYTITLE:_DEVICES
 The [_DEVICES](_DEVICES) function returns the number of INPUT devices on your computer including keyboard, mouse and game devices.
 
 

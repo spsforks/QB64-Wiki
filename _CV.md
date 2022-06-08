@@ -1,4 +1,3 @@
-DISPLAYTITLE:_CV
 The [_CV](_CV) function is used to convert [_MK$](_MK$), [ASCII](ASCII), [STRING](STRING) values to numerical values.
 
 

@@ -1,4 +1,3 @@
-DISPLAYTITLE:_MOUSESHOW
 The [_MOUSESHOW](_MOUSESHOW) statement displays the mouse cursor and can change its shape.
 
 

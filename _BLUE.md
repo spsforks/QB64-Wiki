@@ -1,4 +1,3 @@
-DISPLAYTITLE:_BLUE
 The [_BLUE](_BLUE) function returns the palette intensity or the blue component intensity of a 32-bit image color.
 
 

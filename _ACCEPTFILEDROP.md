@@ -1,4 +1,3 @@
-DISPLAYTITLE:_ACCEPTFILEDROP
 The [_ACCEPTFILEDROP](_ACCEPTFILEDROP) statement prepares a program window to receive files dropped from Windows Explorer in a drag/drop operation.
 
 

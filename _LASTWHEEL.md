@@ -1,4 +1,3 @@
-DISPLAYTITLE:_LASTWHEEL
 The [_LASTWHEEL](_LASTWHEEL) function returns the number of wheels a specified number INPUT device on your computer has.
 
 

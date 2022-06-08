@@ -1,4 +1,3 @@
-DISPLAYTITLE:_PRINTSTRING
 The [_PRINTSTRING](_PRINTSTRING) statement prints text [STRING](STRING) using graphic column and row coordinate positions.
 
 

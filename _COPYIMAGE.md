@@ -1,4 +1,3 @@
-DISPLAYTITLE:_COPYIMAGE
 This function creates an identical designated image in memory with a different negative [LONG](LONG) handle value.
 
 

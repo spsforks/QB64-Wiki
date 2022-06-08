@@ -1,4 +1,3 @@
-DISPLAYTITLE:_SNDPLAY
 The [_SNDPLAY](_SNDPLAY) statement plays a sound designated by a file handle created by [_SNDOPEN](_SNDOPEN).
 
 

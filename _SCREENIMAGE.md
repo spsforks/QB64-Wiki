@@ -1,4 +1,3 @@
-DISPLAYTITLE:_SCREENIMAGE
 The [_SCREENIMAGE](_SCREENIMAGE) function stores the current desktop image or a portion of it and returns an image handle.
 
 

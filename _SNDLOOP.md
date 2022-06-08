@@ -1,4 +1,3 @@
-DISPLAYTITLE:_SNDLOOP
 The [_SNDLOOP](_SNDLOOP) statement is like [_SNDPLAY](_SNDPLAY) but the sound is looped. Uses a handle from the [_SNDOPEN](_SNDOPEN) function.
 
 

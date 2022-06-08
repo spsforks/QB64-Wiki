@@ -1,4 +1,3 @@
-DISPLAYTITLE:_COPYPALETTE
 The [_COPYPALETTE](_COPYPALETTE) statement copies the color palette intensities from one 4 or 8 BPP image to another image or a [_NEWIMAGE](_NEWIMAGE) screen page using 256 or less colors.
 
 

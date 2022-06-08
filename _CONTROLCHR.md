@@ -1,4 +1,3 @@
-DISPLAYTITLE:_CONTROLCHR
 The [_CONTROLCHR](_CONTROLCHR) statement can be used to turn OFF control character attributes and allow them to be printed.
 
 

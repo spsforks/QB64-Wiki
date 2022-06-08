@@ -1,4 +1,3 @@
-DISPLAYTITLE:_FREETIMER
 The [_FREETIMER](_FREETIMER) function returns a free [TIMER](TIMER) number for multiple [ON TIMER(n)](ON TIMER(n)) events.
 
 

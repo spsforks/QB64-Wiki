@@ -1,17 +1,14 @@
 The [MOD](MOD) operator gives the remainder after division of one number by another (sometimes called modulus).
 
-
 ## Syntax
 
->  remainder = numerator [MOD](MOD) divisor
-
+> remainder = numerator [MOD](MOD) divisor
 
 ## Parameter(s)
 
 * Returns the integer division remainder as a whole [INTEGER](INTEGER), [LONG](LONG) or [_INTEGER64](_INTEGER64) value.
 * numerator is the [INTEGER](INTEGER) value to divide. 
 * divisor is the [INTEGER](INTEGER) value to divide by.
-
 
 ## Description
 
@@ -20,7 +17,6 @@ The [MOD](MOD) operator gives the remainder after division of one number by anot
 * **divisor (second value) must not be between 0 and .5**. This will create a [ERROR Codes](ERROR Codes) due to [CINT](CINT) rounding the value to 0.
 * The result has the same sign as the numerator (e.g. `-1 MOD 7` returns -1, not 6).
 * Division and multiplication operations are performed before addition and subtraction in QBasic's order of operations.
-
 
 ## Example(s)
 
@@ -36,14 +32,11 @@ The [MOD](MOD) operator gives the remainder after division of one number by anot
 
 ```text
 
-
   Integer division = 11        Remainder = 1 
 
 ```
 
-
 *Explanation:* Integer division 100 \ 9 returns 11. 11 [*](*) 9 = 99. So the remainder must be 1 as 100 - 99 = 1. Normal decimal point division would return 11.11111.
-
 
 *Example 2:* Comparing normal, integer and remainder division.
 
@@ -68,7 +61,6 @@ DO: SLEEP: LOOP UNTIL INKEY$ <> ""
 NEXT 
 
 ```
-
 
 *Example 3:* Integer division and MOD can be used to convert values to different base numbering systems from base 2 to 36 as [STRING](STRING):
 
@@ -108,16 +100,12 @@ BASEN$ = BN$
 END FUNCTION 
 
 ```
->  *Note:* Base numbering systems over base 10(0 - 9) use alphabetical letters to represent digits greater than 9 like [&H](&H)(0 - F).
 
+> *Note:* Base numbering systems over base 10(0 - 9) use alphabetical letters to represent digits greater than 9 like [&H](&H)(0 - F).
 
 ## See Also
 
 * [/](/)
 * [\](\)
 * [INT](INT), [CINT](CINT), [FIX](FIX), [_ROUND](_ROUND), [_CEIL](_CEIL)
-* [Mathematical Operations](Mathematical Operations)
-
-
-
-
+* [Mathematical Operations](Mathematical-Operations)

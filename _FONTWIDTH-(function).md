@@ -1,5 +1,3 @@
-DISPLAYTITLE:_FONTWIDTH (function)
-
 The [_FONTWIDTH (function)](_FONTWIDTH (function)) function returns the point-size width of a monospace font.
 
 

@@ -1,5 +1,3 @@
-DISPLAYTITLE:_CONTINUE
-
 The [_CONTINUE](_CONTINUE) statement is used in a [DO...LOOP](DO...LOOP), [WHILE...WEND](WHILE...WEND) or [FOR...NEXT](FOR...NEXT) block to skip the remaining lines of code in a block (without exiting it) and start the next iteration. It works as a shortcut to a [GOTO](GOTO), but without the need for a [line numbers](line numbers). 
 
 

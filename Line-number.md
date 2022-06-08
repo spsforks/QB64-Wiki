@@ -1,8 +1,6 @@
 **Line numbers** or line labels are used in QBasic as references to code lines. Numbers are required with [GOTO](GOTO) and numbers or label names are required with [GOSUB](GOSUB). Although not required in QBasic, other older programming languages such as GW Basic often required them. Line labels require a colon after them to differentiate them from keywords and variable names.
 
-
-**[ftp://ftp.microsoft.com/services/technet/windows/msdos/RESKIT/SUPPDISK/REMLINE.BAS Microsoft's REMLINE.BAS program removes unnecessary line numbers]**
-
+**[Microsoft's REMLINE.BAS program removes unnecessary line numbers](ftp://ftp.microsoft.com/services/technet/windows/msdos/RESKIT/SUPPDISK/REMLINE.BAS)**
 
 The following program can remove line numbers where they are not required by [IF...THEN](IF...THEN), [GOTO](GOTO), [GOSUB](GOSUB), [ERL](ERL), [RUN](RUN) or [RESUME](RESUME): 
 
@@ -111,7 +109,6 @@ RESUME NEXT
 ```
 <sub>Code courtesy of Pete from the Network 54 Qbasic Forum</sub>
 
-
 ## See Also
 
 * [GOTO](GOTO) , [RUN](RUN)
@@ -119,6 +116,3 @@ RESUME NEXT
 * [RESUME](RESUME), [NEXT](NEXT)
 * [RESTORE](RESTORE)
 * [IF...THEN](IF...THEN)
-
-
-

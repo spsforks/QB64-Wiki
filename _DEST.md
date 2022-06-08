@@ -1,4 +1,3 @@
-DISPLAYTITLE:_DEST
 The [_DEST](_DEST) statement sets the current write image or page. All graphic and print changes will be done to this image.
 
 

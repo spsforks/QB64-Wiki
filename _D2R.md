@@ -1,4 +1,3 @@
-DISPLAYTITLE:_D2R
 The [_D2R](_D2R) function converts a **degree** value into a **radian** value. 
 
 

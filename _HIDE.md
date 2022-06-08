@@ -1,4 +1,3 @@
-DISPLAYTITLE:_HIDE
 The [_HIDE](_HIDE) action is used to hide the console window opened by a [SHELL](SHELL) statement.
 
 

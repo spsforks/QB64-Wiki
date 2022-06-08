@@ -1,19 +1,18 @@
 **DLL, C++ and the Windows API Libraries**
-* Working with QB64 Declarations: [C Libraries](C Libraries), [DLL Libraries](DLL Libraries), [Windows Libraries](Windows Libraries)
-* QB64 Library Keywords: [DECLARE LIBRARY](DECLARE LIBRARY), [DECLARE DYNAMIC LIBRARY](DECLARE DYNAMIC LIBRARY), [ALIAS](ALIAS), [BYVAL](BYVAL)
-* [PEEK](PEEK) and [POKE](POKE) Library: [PEEK and POKE Library](PEEK and POKE Library)
-* COM and LPT *Inpout32.dll* [OUT](OUT): [Port Access Libraries](Port Access Libraries)
-* Setting Windows environment values and changing them in the Registry: [Windows Environment](Windows Environment)
-* SFML sound library: [SFML Library](SFML Library)
-* Windows program [Windows_Libraries#Focus](Windows_Libraries#Focus) and [Windows_Libraries#Hot_Keys_.28maximize.29](Windows_Libraries#Hot_Keys_.28maximize.29) that do not require focus of the program.
-* Windows Registry Library: [Windows_Registry_Access](Windows_Registry_Access)
-* Windows or Linux SQL Database Library: [SQL Client](SQL Client)
 
+* Working with QB64 Declarations: [C Libraries](C-Libraries), [DLL Libraries](DLL-Libraries), [Windows Libraries](Windows-Libraries)
+* QB64 Library Keywords: [DECLARE LIBRARY](DECLARE-LIBRARY), [DECLARE DYNAMIC LIBRARY](DECLARE-DYNAMIC-LIBRARY), [ALIAS](ALIAS), [BYVAL](BYVAL)
+* [PEEK](PEEK) and [POKE](POKE) Library: [PEEK and POKE Library](PEEK-and-POKE-Library)
+* COM and LPT *Inpout32.dll* [OUT](OUT): [Port Access Libraries](Port-Access-Libraries)
+* Setting Windows environment values and changing them in the Registry: [Windows Environment](Windows-Environment)
+* SFML sound library: [SFML Library](SFML-Library)
+* Windows program [Windows_Libraries#Focus](Windows-Libraries#Focus) and [Windows_Libraries#Hot_Keys_.28maximize.29](Windows-Libraries#Hot_Keys_.28maximize.29) that do not require focus of the program.
+* Windows Registry Library: [Windows_Registry_Access](Windows-Registry-Access)
+* Windows or Linux SQL Database Library: [SQL Client](SQL-Client)
 
 **Creating your own $INCLUDE Text Libraries**
 
 To create your own libraries of your favorite Basic subs and functions, just copy the QB64 code to a text file and save it as a BI or BM file. Then all you need to do is [$INCLUDE]($INCLUDE) the text file name after all of the [SUB](SUB) and [FUNCTION](FUNCTION) code in the program. Once it is compiled, the text file is no longer needed. Save it for other programs you create! No more Object or QLB files to mess with either!
-
 
 * Variable DEF, [DIM](DIM), [SHARED](SHARED), [TYPE](TYPE) and [DATA](DATA) statements should be [$INCLUDE]($INCLUDE)d in a **BI** text file at the start of the program.
 
@@ -21,9 +20,7 @@ To create your own libraries of your favorite Basic subs and functions, just cop
 
 * QB64 also allows [TYPE](TYPE) declarations to be placed inside of [SUB](SUB) or [FUNCTION](FUNCTION) procedures!
 
-
 **Note: QB64 requires all DLL files to either be with the program or in the C:\WINDOWS\SYSTEM32 folder!**
-
 
 ## C++ Variable Types
 
@@ -48,11 +45,9 @@ The following C++ variable types should be used when converting sub-procedure pa
 
 ```
 
-
-***** The values of the columns Size and Range depend on the system the program is compiled. The values shown above are those found on most 32-bit systems, but for other systems, the general specification is that int has the natural size suggested by the system architecture (one "word") and the four integer types char, short, int and long must each be at least as large as the numerical type preceding it, with char being always one byte in size. The same applies to the floating point types float, double and long double, where each one must provide at least as much precision as the one that preceded it.
+The values of the columns Size and Range depend on the system the program is compiled. The values shown above are those found on most 32-bit systems, but for other systems, the general specification is that int has the natural size suggested by the system architecture (one "word") and the four integer types char, short, int and long must each be at least as large as the numerical type preceding it, with char being always one byte in size. The same applies to the floating point types float, double and long double, where each one must provide at least as much precision as the one that preceded it.
 
 ```text
-
 
 **                             Windows API Data Structures**
 
@@ -68,7 +63,3 @@ QWORD             8 bytes                      64                       [_INTEGE
 Ptr or LP         Short or Long Pointer name   ANY                      [_OFFSET](_OFFSET)
 
 ```
-
-
-
-

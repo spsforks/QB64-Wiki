@@ -1,4 +1,3 @@
-DISPLAYTITLE:_ATAN2
 The [_ATAN2](_ATAN2) function returns the radian angle between the positive x-axis of a plane and the point given by the coordinates (x, y).
 
 

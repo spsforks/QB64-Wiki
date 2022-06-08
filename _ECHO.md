@@ -1,4 +1,3 @@
-DISPLAYTITLE:_ECHO
 The [_ECHO](_ECHO) statement allows outputting text to a [$CONSOLE]($CONSOLE) window without having to alternate between [_DEST](_DEST) pages.
 
 

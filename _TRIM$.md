@@ -1,4 +1,3 @@
-DISPLAYTITLE:_TRIM$
 The [_TRIM$](_TRIM$) function removes both leading and trailing space characters from a [STRING](STRING) value.
 
 

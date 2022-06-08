@@ -1,4 +1,3 @@
-DISPLAYTITLE:_SNDRATE
 The [_SNDRATE](_SNDRATE) function returns the sample rate frequency per second of the current computer's sound card.
 
 

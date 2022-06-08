@@ -1,4 +1,3 @@
-DISPLAYTITLE:_MEMGET
 The [_MEMGET](_MEMGET) statement reads a portion of a memory block at an OFFSET position into a variable, array or user defined type.
 
 

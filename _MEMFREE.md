@@ -1,4 +1,3 @@
-DISPLAYTITLE:_MEMFREE
 The [_MEMFREE](_MEMFREE) statement frees the designated memory block [_MEM](_MEM) value and must be used with all memory functions. 
 
 

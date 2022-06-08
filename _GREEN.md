@@ -1,4 +1,3 @@
-DISPLAYTITLE:_GREEN
 The [_GREEN](_GREEN) function returns the palette index or the green component intensity of a 32-bit image color.
 
 

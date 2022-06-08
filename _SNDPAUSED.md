@@ -1,4 +1,3 @@
-DISPLAYTITLE:_SNDPAUSED
 The [_SNDPAUSED](_SNDPAUSED) function checks if a sound is paused. Uses a handle parameter passed from [_SNDOPEN](_SNDOPEN).
 
 

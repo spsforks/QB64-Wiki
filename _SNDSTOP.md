@@ -1,4 +1,3 @@
-DISPLAYTITLE:_SNDSTOP
 The [_SNDSTOP](_SNDSTOP) statement stops a playing or paused sound using a handle from the [_SNDOPEN](_SNDOPEN) or [_SNDCOPY](_SNDCOPY) functions.
 
 

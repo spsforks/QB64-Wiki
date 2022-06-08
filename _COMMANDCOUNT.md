@@ -1,4 +1,3 @@
-DISPLAYTITLE:_COMMANDCOUNT
 The [_COMMANDCOUNT](_COMMANDCOUNT) function returns the number or arguments passed from the command line to the [COMMAND$](COMMAND$) function.
 
 

@@ -1,4 +1,3 @@
-DISPLAYTITLE:_SNDPLAYING
 The [_SNDPLAYING](_SNDPLAYING) function returns whether a sound is being played. Uses a handle from the [_SNDOPEN](_SNDOPEN) or [_SNDCOPY](_SNDCOPY) functions.
 
 

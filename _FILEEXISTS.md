@@ -1,4 +1,3 @@
-DISPLAYTITLE:_FILEEXISTS
 The **_FILEEXISTS** function determines if a designated file name exists and returns true (-1) or false (0).
 
 

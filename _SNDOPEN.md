@@ -1,4 +1,3 @@
-DISPLAYTITLE:_SNDOPEN
 The [_SNDOPEN](_SNDOPEN) function loads a sound file into memory and returns a [LONG](LONG) handle value above 0.
 
 

@@ -1,4 +1,3 @@
-DISPLAYTITLE:_MOUSEY
 The [_MOUSEY](_MOUSEY) function returns the current vertical (row) mouse cursor position when read after [_MOUSEINPUT](_MOUSEINPUT).
 
 

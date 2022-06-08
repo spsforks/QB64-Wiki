@@ -1,4 +1,3 @@
-DISPLAYTITLE:_MOUSEMOVE
 The [_MOUSEMOVE](_MOUSEMOVE) statement moves the mouse pointer to a new position on the screen as determined by the column and row coordinates.
 
 

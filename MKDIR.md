@@ -1,10 +1,8 @@
 The [MKDIR](MKDIR) statement creates a new folder (**dir**ectory) at a specified path.
 
-
 ## Syntax
 
 >  [MKDIR](MKDIR) pathSpec$
-
 
 ## Description
 
@@ -15,14 +13,9 @@ The [MKDIR](MKDIR) statement creates a new folder (**dir**ectory) at a specified
 * If a path is specified, the path must exist or a [ERROR Codes](ERROR Codes) will occur. See [_DIREXISTS](_DIREXISTS).
 * [SHELL](SHELL) can use the DOS command "MD " or "MKDIR " + path$ + newfolder$ to do the same thing.
 
-
 ## See Also
 
 * [SHELL](SHELL), [CHDIR](CHDIR), [FILES](FILES)
 * [NAME](NAME), [KILL](KILL), [RMDIR](RMDIR)
 * [_DIREXISTS](_DIREXISTS)
-* [Windows_Libraries#File_Dialog_Boxes](Windows_Libraries#File_Dialog_Boxes)
-
-
-
-
+* [Windows_Libraries#File_Dialog_Boxes](Windows-Libraries#File_Dialog_Boxes)

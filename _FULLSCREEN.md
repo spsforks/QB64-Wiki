@@ -1,4 +1,3 @@
-DISPLAYTITLE:_FULLSCREEN
 The [_FULLSCREEN](_FULLSCREEN) statement attempts to make the program window fullscreen. 
 
 

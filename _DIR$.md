@@ -1,4 +1,3 @@
-DISPLAYTITLE:_DIR$
 The [_DIR$](_DIR$) function returns common paths in **Windows** only such as My Documents, My Pictures, My Music, Desktop.
 
 

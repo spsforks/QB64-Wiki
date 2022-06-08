@@ -1,12 +1,12 @@
 The [LOCK](LOCK) statement restricts access to parts of a file by other programs or processes.
 
-
 ## Syntax
 
 > [LOCK](LOCK) [#]fileNumber%
-> [LOCK](LOCK) [#]fileNumber%, record&
-> [LOCK](LOCK) [#]fileNumber%, [firstRecord&] TO lastRecord&
 
+> [LOCK](LOCK) [#]fileNumber%, record&
+
+> [LOCK](LOCK) [#]fileNumber%, [firstRecord&] TO lastRecord&
 
 ## Description
 
@@ -17,20 +17,14 @@ The [LOCK](LOCK) statement restricts access to parts of a file by other programs
 * For files opened in [BINARY](BINARY) mode, each record corresponds to a single byte.
 * [LOCK](LOCK) and [UNLOCK](UNLOCK) statements are always used in pairs and each statement must match the other one.
 * Files must be unlocked using [UNLOCK](UNLOCK) before other programs can access them, and before the file is closed.
-* [Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions](Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions)
-
+* [Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions](Keywords-currently-not-supported-by-QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions)
 
 ## QBasic/QuickBASIC
 
 * Required DOS **SHARED.EXE** to be run for QBasic to use networking access modes. No longer required.
-
 
 ## See Also
 
 * [UNLOCK](UNLOCK)
 * [OPEN](OPEN)
 * [ACCESS](ACCESS)
-
-
-
-

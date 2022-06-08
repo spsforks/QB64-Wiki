@@ -1,4 +1,3 @@
-DISPLAYTITLE:_PRINTIMAGE
 The [_PRINTIMAGE](_PRINTIMAGE) statement prints a colored image on the printer, stretching it to full paper size first.
  
 

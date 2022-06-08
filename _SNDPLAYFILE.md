@@ -1,4 +1,3 @@
-DISPLAYTITLE:_SNDPLAYFILE 
 The [_SNDPLAYFILE](_SNDPLAYFILE) statement is used to play a sound file without generating a handle, automatically closing it after playback finishes.
 
 

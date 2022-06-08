@@ -1,4 +1,3 @@
-DISPLAYTITLE:_MOUSEWHEEL
 The [_MOUSEWHEEL](_MOUSEWHEEL) function returns a positive or negative [INTEGER](INTEGER) value indicating mouse scroll events since the last read of [_MOUSEINPUT](_MOUSEINPUT).
 
 

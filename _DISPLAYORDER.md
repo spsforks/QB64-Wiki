@@ -1,4 +1,3 @@
-DISPLAYTITLE:_DISPLAYORDER
 The [_DISPLAYORDER](_DISPLAYORDER) statement defines the order to render software, hardware and custom-OpenGL-code.
 
 

@@ -1,4 +1,3 @@
-DISPLAYTITLE:_CONNECTED
 The [_CONNECTED](_CONNECTED) function returns the status of a TCP/IP connection handle.
 
 

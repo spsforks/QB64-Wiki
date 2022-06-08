@@ -1,4 +1,3 @@
-DISPLAYTITLE:_WINDOWHASFOCUS
 The [_WINDOWHASFOCUS](_WINDOWHASFOCUS) function returns true (-1) if the current program's window has focus. Windows-only.
 
 

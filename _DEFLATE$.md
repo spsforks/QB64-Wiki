@@ -1,4 +1,3 @@
-DISPLAYTITLE:_DEFLATE$
 The [_DEFLATE$](_DEFLATE$) function compresses a [STRING](STRING).
 
 

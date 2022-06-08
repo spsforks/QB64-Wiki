@@ -1,4 +1,3 @@
-DISPLAYTITLE:_EXIT (function)
 The [_EXIT](_EXIT) function prevents the user from closing a program and indicates if a user has clicked the close button in the window title (**X** button) or used CTRL + BREAK.
 
 

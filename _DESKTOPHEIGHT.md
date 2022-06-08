@@ -1,4 +1,3 @@
-DISPLAYTITLE:_DESKTOPHEIGHT
 The [_DESKTOPHEIGHT](_DESKTOPHEIGHT) function returns the height of the users current desktop.
 
 

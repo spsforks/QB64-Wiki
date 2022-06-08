@@ -1,4 +1,3 @@
-DISPLAYTITLE:_SNDCLOSE
 The [_SNDCLOSE](_SNDCLOSE) statement frees and unloads an open sound using a [_SNDOPEN](_SNDOPEN) or [_SNDCOPY](_SNDCOPY) handle.
 
 

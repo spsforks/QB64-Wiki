@@ -1,4 +1,3 @@
-DISPLAYTITLE:_MEM (function)
 The [_MEM](_MEM) function returns a _MEM block referring to the largest possible continuous memory region beginning at a variable's offset.
 
 

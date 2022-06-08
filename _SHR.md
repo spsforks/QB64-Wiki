@@ -1,4 +1,3 @@
-DISPLAYTITLE:_SHR
 The [_SHR](_SHR) function is used to shift the bits of a numerical value to the right.
 
 

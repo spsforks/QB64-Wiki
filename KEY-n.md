@@ -1,43 +1,35 @@
-The [KEY n](KEY n) statement is used to assign a "soft key" string or a flag and scan code to a function key or display function soft key assignments. 
+The [KEY n](KEY-n) statement is used to assign a "soft key" string or a flag and scan code to a function key or display function soft key assignments. 
 
 ## Syntax
- 
 
 >  **KEY *n%*, *textString$***
 
 >  **KEY *n%*, CHR$(*keyFlag%*) + CHR$(*scanCode*)**
 
-
 ## Function Soft Key Strings (1 to 10, 30 & 31)
-
 
 **Assigning "Softkey" [STRING](STRING) values to function key press events**
 
 * n% is the number 1 to 10 (F1 to F10), 30 or 31 (F11 or F12) of the function key to assign the soft key string.
-* Instead of using an [ON KEY(n)](ON KEY(n)) [GOSUB](GOSUB) statement, Function keys F1 to F12 can be assigned a "soft key" string value to return.
+* Instead of using an [ON KEY(n)](ON-KEY(n)) [GOSUB](GOSUB) statement, Function keys F1 to F12 can be assigned a "soft key" string value to return.
 * `KEY n, text$` defines a literal or variable [STRING](STRING) "soft key" function key return value.
-
 
 ```text
 
         **KEY 1, "Help"** 'returns the string "Help" to [INPUT](INPUT) variable when F1 is pressed
+
 ```
 
-
-* [KEY LIST](KEY LIST) displays each of the 12 softkey **function key** (F1 to F12) string values going down left side of screen.
-* [KEY LIST](KEY LIST) displays or hides the softkey values of function keys F1 to F10 at the bottom of the screen.
-
+* [KEY LIST](KEY-LIST) displays each of the 12 softkey **function key** (F1 to F12) string values going down left side of screen.
+* [KEY LIST](KEY-LIST) displays or hides the softkey values of function keys F1 to F10 at the bottom of the screen.
 
 ## Number Pad Arrow Keys (11 to 14)
-
 
 * Arrow keys on the Number Pad are predefined KEY numbers 11 to 14 and only work with Number Lock off.
 * Soft Key [STRING](STRING)s cannot be assigned to these key numbers!
 * To use the extended arrow keys on a keyboard use the Extended Key Flag 128 with corresponding Scan code as User Defined Keys.
 
-
 ## User Defined Keys (15 to 29)
-
 
 **Assigning user defined keys or combinations with: KEY n, CHR$(keyflag) + CHR$(scancode)**
 
@@ -84,22 +76,22 @@ The [KEY n](KEY n) statement is used to assign a "soft key" string or a flag and
 '             Add function flag values to 128 for Extended key combinations.
 
 ```
+
 <sub>NOTE: The above commented table can be copied and pasted directly into the QB64 IDE</sub>
 
-
 **Trapping Ctrl, Alt and Shift key combinations**
-> Keyboard Flag values can be added to monitor more than one control key. For example, flag combination 12 would flag both the Ctrl and Alt key presses. Since the flag already determines the function key to monitor, you don't necessarily have to use it's scancode. You can look for a key combination such as Ctrl + by using the plus key's scancode which is 13 as shown below: 
 
+> Keyboard Flag values can be added to monitor more than one control key. For example, flag combination 12 would flag both the Ctrl and Alt key presses. Since the flag already determines the function key to monitor, you don't necessarily have to use it's scancode. You can look for a key combination such as Ctrl + by using the plus key's scancode which is 13 as shown below: 
 
 ```text
 
       **KEY 15, CHR$(4) + CHR$(13)** 'enabled event when Ctrl and + key are pressed
+
 ```
 
-
-
 **Trapping Extended keys (Insert, Home, Page Up, Right Ctrl, R.Alt, and cursor arrow pad)**
-* On a 101-key keyboard, you can trap any of the keys on the dedicated cursorpad by assigning the string to any of the keynumber values from 15 to 25 using the 128 keyboard flag. The cursor arrows are not the same as the pre-assigned number pad arrows:
+
+On a 101-key keyboard, you can trap any of the keys on the dedicated cursorpad by assigning the string to any of the keynumber values from 15 to 25 using the 128 keyboard flag. The cursor arrows are not the same as the pre-assigned number pad arrows:
 
 ```text
 
@@ -117,13 +109,7 @@ The [KEY n](KEY n) statement is used to assign a "soft key" string or a flag and
 
 Use CHR$(0) for the first byte flag for non-function keys. You can substitute a literal [STRING](STRING) value to trap as shown in Example 2.
 
-
-
-
-
 ## Examples
-
-
 
 *Example 1:* Shows a list of all the string assignments to the function keys F1-F12 (Prints help every time F1 is pressed in the input)
 
@@ -137,7 +123,6 @@ INPUT "Press F1 or to quit press ENTER: ", a$
 ```
 
 ```text
-
 
 F1 Help
 F2
@@ -154,8 +139,6 @@ F12
 Press F1 or to quit press ENTER: HelpHelpHelpHelp
 
 ```
-
-
 
 *Example 2:* Trapping the Control + key combination. Use the Control Keyboard flag 4 and + key scancode 13.
 
@@ -178,7 +161,6 @@ RETURN
 
 ```
 <sub>Code by Ted Weissgerber</sub>
-
 
 *Example 3:* Differentiating the extended cursor keypad arrows from the predefined Number Pad arrow keys.
 
@@ -241,19 +223,12 @@ COLOR 11: LOCATE 11, 26: PRINT "Down number pad "
 RETURN 
 
 ```
->  *Explanation:* The Number Lock or Caps Lock keys ON may hinder extended key reads in QBasic but not QB64!
 
-
-
-
+> *Explanation:* The Number Lock or Caps Lock keys ON may hinder extended key reads in QBasic but not QB64!
 
 ## See Also
  
-* [KEY LIST](KEY LIST), [ON KEY(n)](ON KEY(n)) 
+* [KEY LIST](KEY-LIST), [ON KEY(n)](ON-KEY(n)) 
 * [KEY(n)](KEY(n)), [INKEY$](INKEY$)
 * [_KEYHIT](_KEYHIT), [_KEYDOWN](_KEYDOWN)
-* [Keyboard scancodes](Keyboard scancodes)
-
-
-
-
+* [Keyboard scancodes](Keyboard-scancodes)

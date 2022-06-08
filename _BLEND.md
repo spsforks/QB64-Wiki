@@ -1,4 +1,3 @@
-DISPLAYTITLE:_BLEND
 The [_BLEND](_BLEND) statement turns on 32 bit alpha blending for an image or screen mode and is on by default.
 
 

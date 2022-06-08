@@ -1,10 +1,8 @@
 The [MKD$](MKD$) function encodes a [DOUBLE](DOUBLE) numerical value into an 8-byte [ASCII](ASCII) [STRING](STRING) value.
 
-
 ## Syntax
 
 >  result$ = [MKD$](MKD$)(doublePrecisionVariableOrLiteral#)
-
 
 ## Description
 
@@ -13,12 +11,8 @@ The [MKD$](MKD$) function encodes a [DOUBLE](DOUBLE) numerical value into an 8-b
 * The string value can be converted back to a DOUBLE numerical value using [CVD](CVD).
 * [DOUBLE](DOUBLE) numerical variable values [PUT](PUT) into a [BINARY](BINARY) file are automatically placed as an MKD$ [ASCII](ASCII) string value.
 
-
 ## See Also
 
 * [MKI$](MKI$), [MKS$](MKS$), [MKL$](MKL$)
 * [CVD](CVD), [CVI](CVI), [CVS](CVS), [CVL](CVL)
 * [_MK$](_MK$), [_CV](_CV)
-
-
-

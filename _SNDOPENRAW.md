@@ -1,4 +1,3 @@
-DISPLAYTITLE:_SNDOPENRAW
 The [_SNDOPENRAW](_SNDOPENRAW) function opens a new channel to fill with _SNDRAW content to manage multiple dynamically generated sounds.
 
 

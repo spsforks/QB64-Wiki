@@ -1,4 +1,3 @@
-DISPLAYTITLE:_GL
 In order to use OpenGL drawing commands, you must do so from inside a [SUB](SUB) procedure called **_GL**, which enables the commands to be rendered.
 
 

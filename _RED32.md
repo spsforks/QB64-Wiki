@@ -1,4 +1,3 @@
-DISPLAYTITLE:_RED32
 The [_RED32](_RED32) function returns the red component intensity of a 32-bit image or surface color.
 
 

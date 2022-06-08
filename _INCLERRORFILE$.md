@@ -1,4 +1,3 @@
-DISPLAYTITLE:_INCLERRORFILE$  
 The [_INCLERRORFILE$](_INCLERRORFILE$) function returns the name of the original source code [$INCLUDE]($INCLUDE) module that caused the most recent error.
 
 

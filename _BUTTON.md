@@ -1,4 +1,3 @@
-DISPLAYTITLE:_BUTTON
 The [_BUTTON](_BUTTON) function returns -1 when specified button number on a controller device is pressed.
 
 

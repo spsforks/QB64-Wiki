@@ -1,4 +1,3 @@
-DISPLAYTITLE:_WHEEL
 The [_WHEEL](_WHEEL) function returns the relative position of a specified wheel number on a controller device.
 
 

@@ -1,4 +1,3 @@
-DISPLAYTITLE:_RESETBIT
 The [_RESETBIT](_RESETBIT) function is used to set a specified bit of a numerical value to 0 (OFF state).
 
 

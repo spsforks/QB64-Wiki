@@ -1,4 +1,3 @@
-DISPLAYTITLE:_PRINTMODE
 The [_PRINTMODE](_PRINTMODE) statement sets the text or [_FONT](_FONT) printing mode on a background image when using [PRINT](PRINT) or [_PRINTSTRING](_PRINTSTRING).
 
 

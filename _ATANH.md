@@ -1,4 +1,3 @@
-DISPLAYTITLE:_ATANH
 The [_ATANH](_ATANH) returns the arc hyperbolic tangent of x!, expressed in radians.
 
 

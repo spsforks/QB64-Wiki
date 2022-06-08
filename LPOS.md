@@ -1,26 +1,24 @@
 The [LPOS](LPOS) function returns the current LPT printer head position.
 
-
 ## Syntax
 
 >  result% = [LPOS](LPOS)(index%)
 
-
 ## Description
 
 * index% is the index of the printer, which can have the following values:
-** 0 - LPT1:
-** 1 - LPT1:
-** 2 - LPT2:
-** 3 - LPT3:
+    - 0 - LPT1:
+    - 1 - LPT1:
+    - 2 - LPT2:
+    - 3 - LPT3:
 * The LPOS function does not necessarily give the physical position of the print head because it does not expand tab characters. In addition, some printers may buffer characters.
-
 
 ## Example(s)
 
 > Prompts the user for team names and the names of players on each team. It then prints the players and their teams on the printer.
 
 ```vb
+
 CLS
 LPRINT "Team Members"; TAB(76); "TEAM" : LPRINT
 INPUT "How many teams"; TEAMS
@@ -44,11 +42,6 @@ NEXT T
 
 ```
 
-
 ## See Also
 
 * [LPRINT](LPRINT)
-
-
-
-

@@ -1,4 +1,3 @@
-DISPLAYTITLE:_SCREENCLICK
 The [_SCREENCLICK](_SCREENCLICK) statement simulates clicking on a pixel coordinate on the desktop screen with the left mouse button.
 
 

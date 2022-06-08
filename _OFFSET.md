@@ -1,4 +1,3 @@
-DISPLAYTITLE:_OFFSET
 The [_OFFSET](_OFFSET) variable type stores the location of a value in memory. The byte size varies as required by the system.
 
 

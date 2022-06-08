@@ -1,4 +1,3 @@
-DISPLAYTITLE:_AUTODISPLAY
 The [_AUTODISPLAY](_AUTODISPLAY) statement enables the automatic display of the screen image changes previously disabled by [_DISPLAY](_DISPLAY).
 
 

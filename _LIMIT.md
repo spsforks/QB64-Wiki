@@ -1,4 +1,3 @@
-DISPLAYTITLE:_LIMIT
 The [_LIMIT](_LIMIT) statement sets the loop repeat rate of a program to so many per second, relinquishing spare CPU cycles to other applications. 
 
 

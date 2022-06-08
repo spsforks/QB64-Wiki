@@ -1,4 +1,3 @@
-DISPLAYTITLE:_DONTWAIT
 [_DONTWAIT](_DONTWAIT) is used with the [SHELL](SHELL) statement in **QB64** to specify that the program shouldn't wait until the external command/program is finished (which it otherwise does by default).
 
 

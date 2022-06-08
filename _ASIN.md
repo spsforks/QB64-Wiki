@@ -1,4 +1,3 @@
-DISPLAYTITLE:_ASIN
 The [_ASIN](_ASIN) function returns the angle measured in radians based on an input [SIN](SIN)e value ranging from -1 to 1.
 
 

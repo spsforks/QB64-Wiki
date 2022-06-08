@@ -1,4 +1,3 @@
-DISPLAYTITLE:_MOUSEINPUT
 The [_MOUSEINPUT](_MOUSEINPUT) function is used to monitor any new mouse positions, button presses or movements of the scroll wheel. Must be called before other mouse information becomes available.
 
 

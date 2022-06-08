@@ -1,4 +1,3 @@
-DISPLAYTITLE:_UNSIGNED
 [_UNSIGNED](_UNSIGNED) defines a numerical value as being only positive.
 
 

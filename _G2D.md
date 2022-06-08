@@ -1,4 +1,3 @@
-DISPLAYTITLE:_G2D
 The [_G2D](_G2D) function converts a **gradient** value into a **degree** value. 
 
 

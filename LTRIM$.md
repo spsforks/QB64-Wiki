@@ -1,10 +1,8 @@
 The [LTRIM$](LTRIM$) function removes leading space characters from a [STRING](STRING) value.
 
-
 ## Syntax
 
 > return$ = [LTRIM$](LTRIM$)(text$)
-
 
 ## Description
 
@@ -12,7 +10,6 @@ The [LTRIM$](LTRIM$) function removes leading space characters from a [STRING](S
 * If text$ contains no leading space characters, it is returned unchanged.
 * Convert fixed length [STRING](STRING) values by using a different return$ variable.
 * Can be used to trim the leading space of a positive numerical value converted to a string value by [STR$](STR$).
-
 
 ## Example(s)
 
@@ -32,8 +29,6 @@ PRINT "[" + number$ + "]"
 
 ```
 
-
-
 *Example 2:* Trimming leading spaces from text strings.
 
 ```vb
@@ -50,10 +45,10 @@ some text
 
 ```
 
-
-
 *Example 3:* A TRIM$ function to trim spaces off of both ends of a string.
-codeStart
+
+```vb
+
 text$ = "        Text String           "
 trimmed$ = TRIM$(text$)
 PRINT CHR$(26) + trimmed$ + CHR$(27) 
@@ -69,14 +64,8 @@ END FUNCTION
 
 ```
 
-
-
 ## See Also
 
 * [RTRIM$](RTRIM$), [STR$](STR$)
 * [LEFT$](LEFT$), [RIGHT$](RIGHT$)
 * [HEX$](HEX$), [MID$](MID$)
-
-
-
-

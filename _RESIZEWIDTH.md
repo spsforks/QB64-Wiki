@@ -1,4 +1,3 @@
-DISPLAYTITLE:_RESIZEWIDTH
 The [_RESIZEWIDTH](_RESIZEWIDTH) function returns the user resized screen pixel width if [$RESIZE]($RESIZE):ON allows it and [_RESIZE (function)](_RESIZE (function)) returns -1 
 
 

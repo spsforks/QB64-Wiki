@@ -1,6 +1,5 @@
 **Metacommands** are program wide commands that start with $.
 
-
 ## Legacy metacommands (QBasic/QuickBASIC)
 
 ### Syntax
@@ -19,7 +18,6 @@
 * [$DYNAMIC]($DYNAMIC) allows larger arrays that are changeable in size at runtime.
 * [$STATIC]($STATIC) makes all arrays unchangeable in size.
 * **QBasic metacommands should have their own program line because they are commented.**
-
 
 ## QB64 metacommands
 
@@ -41,7 +39,6 @@
 
 > [$IF]($IF)...[$END IF]($END IF) 'precompiler directive
 
-
 ### Description
 
 * [$INCLUDE]($INCLUDE) can be used at the beginning or at the end of program SUB procedures.
@@ -52,16 +49,9 @@
 * [$IF]($IF)...[$END IF]($END IF) allows selective inclusion of code in the final program.
 * **Do not comment out with ' or [REM](REM) QB64-specific metacommands.**
 
-
 ## See Also
 
-* [Statement](Statement), [Function (explanatory)](Function (explanatory))
+* [Statement](Statement), [Function (explanatory)](Function-(explanatory))
 * [REM](REM)
 * [DIM](DIM), [REDIM](REDIM)
-* [ON TIMER(n)](ON TIMER(n))
-
-
-
-
-
-
+* [ON TIMER(n)](ON-TIMER(n))

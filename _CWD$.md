@@ -1,5 +1,3 @@
-DISPLAYTITLE:_CWD$
-
 The [_CWD$](_CWD$) function returns the current working directory path as a string value without a trailing path separator.
 
 

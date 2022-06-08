@@ -1,4 +1,3 @@
-DISPLAYTITLE:_DEST (function)
 The [_DEST](_DEST) function returns the handle value of the current write page (the image used for drawing).
 
 

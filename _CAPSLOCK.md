@@ -1,4 +1,3 @@
-DISPLAYTITLE:_CAPSLOCK
 The [_CAPSLOCK](_CAPSLOCK) statement sets the state of the Caps Lock key.
 
 

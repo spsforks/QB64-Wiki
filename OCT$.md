@@ -1,15 +1,13 @@
 This function returns the octal (base 8) representation of any numeric value.
 
-
 ## Syntax
 
->  octvalue$ = [OCT$](OCT$)(number)
+> octvalue$ = [OCT$](OCT$)(number)
 
+## Parameters
 
-PageParameters
 * number can be any [INTEGER](INTEGER), [LONG](LONG) or [_INTEGER64](_INTEGER64) value, positive or negative.
 * number can also be any [SINGLE](SINGLE), [DOUBLE](DOUBLE) or [_FLOAT](_FLOAT) value, but only the integer part of the value is converted in that case. That is, from the value *-123.45* the function would convert the *-123* only.
-
 
 ## Description
 
@@ -18,10 +16,9 @@ PageParameters
 * [VAL](VAL) can convert the returned oct string value back to a decimal value by prefixing the string with "[&O](&O)".
 ** Eg. `decimal = VAL("&O" + octvalue$)`.
 
-
 ## Example(s)
 
-;Example 1: Comparing decimal, hexadecimal, octal and binary string values from 0 to 15.
+Example 1: Comparing decimal, hexadecimal, octal and binary string values from 0 to 15.
 
 ```vb
 
@@ -36,10 +33,10 @@ FOR n% = 0 TO 15
 NEXT n%
 
 ```
-;Note:Although the decimal numbers 0-15 have a maximum width of 2 digits only, an extra space in the *tableout$* template is needed when using the (fixed width string) slash output format, as [STR$](STR$) values contain a leading sign placeholder space.
+
+Note: Although the decimal numbers 0-15 have a maximum width of 2 digits only, an extra space in the *tableout$* template is needed when using the (fixed width string) slash output format, as [STR$](STR$) values contain a leading sign placeholder space.
 
 ```text
-
 
           Decimal | Hexadecimal | Octal | Binary
          ---------+-------------+-------+--------
@@ -62,9 +59,7 @@ NEXT n%
 
 ```
 
-
-
-;Example 2:Converting a octal value to decimal.
+Example 2: Converting a octal value to decimal.
 
 ```vb
 
@@ -76,20 +71,13 @@ PRINT "Converting Oct value to Decimal:"; VAL("&O" + octvalue$)
 
 ```text
 
-
 Oct: 377
 Converting Oct value to Decimal: 255
 
 ```
 
-
-
 ## See Also
 
 * [_BIN$](_BIN$), [HEX$](HEX$), [STR$](STR$), [VAL](VAL)
 * [&B](&B) (binary), [&H](&H) (hexadecimal), [&O](&O) (octal)
-* [Base Comparisons](Base Comparisons)
-
-
-
-
+* [Base Comparisons](Base-Comparisons)

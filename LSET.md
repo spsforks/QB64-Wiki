@@ -1,17 +1,14 @@
 [LSET](LSET) left-justifies a fixed length string expression based on the size of the [STRING](STRING) variable and string expression.
 
-
 ## Syntax
 
 >  [LSET](LSET) {stringVariable = stringExpression | stringExpression1 = stringExpression2}
-
 
 ## Description
 
 * If the string expression is longer than a fixed length string variable the value is truncated from the right side in LSET or [RSET](RSET).
 * If the LSET string expression is smaller, spaces will occupy the extra positions to the right in the string. 
 * LSET can be used with a [FIELD](FIELD) or [TYPE](TYPE) definition to set the buffer position before a [PUT](PUT).
-
 
 ## Example(s)
 
@@ -32,17 +29,13 @@ CLOSE #1
 
 ```text
 
-
 123456            12         123456789     3456123456789 
 
 ```
 
-
-
 *Example 2:* How LSET can define two different string length values in one statement.
 
 ```vb
-
 
 TYPE ninestring
 head AS STRING * 9
@@ -64,19 +57,12 @@ PRINT "you.head: "; you.head
 
 ```text
 
-
 me.head: ACHES NOT
 you.head: ACHES
 
 ```
 
-
-
 ## See Also
 
 * [RSET](RSET), [RTRIM$](RTRIM$)
 * [FIELD](FIELD), [TYPE](TYPE)
-
-
-
-

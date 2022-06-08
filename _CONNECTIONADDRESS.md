@@ -1,4 +1,3 @@
-DISPLAYTITLE:_CONNECTIONADDRESS
 The [_CONNECTIONADDRESS](_CONNECTIONADDRESS) function returns a connected user's [STRING](STRING) IP address value.
 
 

@@ -1,4 +1,3 @@
-DISPLAYTITLE:_SNDSETPOS
 The [_SNDSETPOS](_SNDSETPOS) statement changes the current/starting playing position in seconds of a sound.
 
 

@@ -1,4 +1,3 @@
-DISPLAYTITLE:_NEWIMAGE
 The [_NEWIMAGE](_NEWIMAGE) function prepares a window image surface and returns the [LONG](LONG) [handle](handle) value.
 
 

@@ -1,4 +1,3 @@
-DISPLAYTITLE:_BUTTONCHANGE
 The [_BUTTONCHANGE](_BUTTONCHANGE) function returns -1 or 1 when a specified button number on a controller device has been pressed or released.
 
 

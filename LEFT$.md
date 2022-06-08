@@ -1,23 +1,19 @@
 The [LEFT$](LEFT$) string function returns a number of characters from the left of a [STRING](STRING).
 
-
 ## Syntax
 
->  [LEFT$](LEFT$)(stringValue$, numberOfCharacters%)
-
+> [LEFT$](LEFT$)(stringValue$, numberOfCharacters%)
 
 ## Parameter(s)
 
 * stringValue$ can be any [STRING](STRING) literal or variable.
 * numberOfCharacters% [INTEGER](INTEGER) determines the number of characters to return from left of string.
 
-
 ## Description
 
 * If the number of characters exceeds the string length the entire string is returned. Use [LEN](LEN) to determine a string's length.
 * [LEFT$](LEFT$) returns always start at the first character of the string, even if it's a space. [LTRIM$](LTRIM$) can remove leading spaces.
 * **numberOfCharacters% cannot be a negative value.**
-
 
 ## Example(s)
 
@@ -36,9 +32,8 @@ PRINT First$
 ```text
 
 Tom 
+
 ```
-
-
 
 *Example 2:* A replace function using LEFT$ and [RIGHT$](RIGHT$) with [INSTR](INSTR) to insert a different length word into an existing string. 
 
@@ -74,18 +69,14 @@ END FUNCTION
 
 This is my sentence to change my words.
 This is your sentence to change your words.
+
 ```
 
->  *Note:* The [MID$ (statement)](MID$ (statement)) statement can only substitute words or sections of the original string length. It cannot change the string length.
-
+> *Note:* The [MID$ (statement)](MID$ (statement)) statement can only substitute words or sections of the original string length. It cannot change the string length.
 
 ## See Also
 
 * [RIGHT$](RIGHT$), [MID$](MID$)
 * [LTRIM$](LTRIM$), [RTRIM$](RTRIM$)
-* [MID$ (statement)](MID$ (statement))
+* [MID$ (statement)](MID$-(statement))
 * [INSTR](INSTR), [LEN](LEN)
-
-
-
-

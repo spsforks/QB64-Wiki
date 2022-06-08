@@ -1,4 +1,3 @@
-DISPLAYTITLE:_R2G
 The [_R2G](_R2G) function converts a **radian** value into a **gradient** value. 
 
 

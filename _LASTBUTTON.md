@@ -1,4 +1,3 @@
-DISPLAYTITLE:_LASTBUTTON
 The [_LASTBUTTON](_LASTBUTTON) function returns the number of buttons a specified INPUT device on your computer has.
 
 

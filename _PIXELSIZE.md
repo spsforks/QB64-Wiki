@@ -1,4 +1,3 @@
-DISPLAYTITLE:_PIXELSIZE
 The [_PIXELSIZE](_PIXELSIZE) function returns the color depth (Bits Per Pixel) of an image as 0 for text, 1 for 1 to 8 BPP or 4 for 32 bit.
 
 

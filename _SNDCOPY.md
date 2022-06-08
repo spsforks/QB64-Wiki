@@ -1,4 +1,3 @@
-DISPLAYTITLE:_SNDCOPY
 The [_SNDCOPY](_SNDCOPY) function copies a sound to a new handle so that two or more of the same sound can be played at once. The passed handle parameter is from the [_SNDOPEN](_SNDOPEN) function.
 
 

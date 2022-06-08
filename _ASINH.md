@@ -1,4 +1,3 @@
-DISPLAYTITLE:_ASINH
 The [_ASINH](_ASINH) returns the arc hyperbolic sine of x, expressed in radians.
 
 

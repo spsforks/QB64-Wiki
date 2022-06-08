@@ -1,4 +1,3 @@
-DISPLAYTITLE:_CINP
 The [_CINP](_CINP) function returns keyboard key press codes from a [$CONSOLE]($CONSOLE) window. Windows-only.
 
 

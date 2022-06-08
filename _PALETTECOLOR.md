@@ -1,4 +1,3 @@
-DISPLAYTITLE:_PALETTECOLOR
 The [_PALETTECOLOR](_PALETTECOLOR) statement sets the color value of a palette entry of an image using 256 color modes or less (4 or 8 BPP).
 
 

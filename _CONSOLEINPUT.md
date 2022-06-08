@@ -1,4 +1,3 @@
-DISPLAYTITLE:_CONSOLEINPUT
 The [_CONSOLEINPUT](_CONSOLEINPUT) function is used to monitor any new mouse or keyboard input coming from a $CONSOLE window. It must be called in order for [_CINP](_CINP) to return valid values. Windows-only.
 
 

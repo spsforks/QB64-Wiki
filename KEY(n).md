@@ -1,10 +1,8 @@
 **KEY(n)** assigns, enables, disables or suspends event trapping of a keypress by setting the flag [ON](ON), [STOP](STOP) or [OFF](OFF).
 
-
 ## Syntax
 
->  KEY(number) {[ON](ON) | [OFF](OFF) | [STOP](STOP)}
-
+> KEY(number) {[ON](ON) | [OFF](OFF) | [STOP](STOP)}
 
 ## Description
 
@@ -22,10 +20,9 @@
 * Keypresses can be read during [INKEY$](INKEY$), [INPUT$](INPUT$) or [INPUT](INPUT) procedures without losing the input. 
 * Key event reads will also interrupt [SLEEP](SLEEP). 
 * [KEY(n)](KEY(n)) specific status modes are:
-****ON** enables specific keypress events to be monitored. 
-****STOP** suspends specific keypress reads, but remembers them. When re-enabled the key presses will be returned.
-****OFF** disables specified keypress reads and will not remember the event.
-
+     - **ON** enables specific keypress events to be monitored. 
+     - **STOP** suspends specific keypress reads, but remembers them. When re-enabled the key presses will be returned.
+     - **OFF** disables specified keypress reads and will not remember the event.
 
 ## Example(s)
 
@@ -54,7 +51,6 @@ RETURN
 
 ```
 
-
 *Example 2:* Trapping the F5 keypress.
 
 ```vb
@@ -73,13 +69,8 @@ SLEEP
 
 ```
 
-
 ## See Also
 
-* [ON KEY(n)](ON KEY(n)), [KEY n](KEY n) (softkeys)
+* [ON KEY(n)](ON-KEY(n)), [KEY n](KEY-n) (softkeys)
 * [_KEYHIT](_KEYHIT), [_KEYDOWN](_KEYDOWN)
-* [Keyboard scancodes](Keyboard scancodes)
-
-
-
-
+* [Keyboard scancodes](Keyboard-scancodes)

@@ -1,4 +1,3 @@
-DISPLAYTITLE:_FULLSCREEN (function)
 The [_FULLSCREEN](_FULLSCREEN) function returns the present full screen mode setting of the screen window.
 
 

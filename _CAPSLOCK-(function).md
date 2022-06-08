@@ -1,4 +1,3 @@
-DISPLAYTITLE:_CAPSLOCK (function)
 The [_CAPSLOCK (function)](_CAPSLOCK (function)) function returns the current state of the Caps Lock key as on (-1) or off (0).
 
 

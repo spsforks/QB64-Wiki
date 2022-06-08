@@ -8,7 +8,8 @@
 > :  void **_glClear**(GLbitfield mask);
 
 
-PageParameters
+## Parameters
+
 * *mask* that indicate the buffer [OR](OR) buffers to be cleared. The three masks are [_GL_COLOR_BUFFER_BIT](_GL_COLOR_BUFFER_BIT), [_GL_DEPTH_BUFFER_BIT](_GL_DEPTH_BUFFER_BIT), and [_GL_STENCIL_BUFFER_BIT](_GL_STENCIL_BUFFER_BIT).
 
 

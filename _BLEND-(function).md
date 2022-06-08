@@ -1,4 +1,3 @@
-DISPLAYTITLE:_BLEND (function)
 The [_BLEND (function)](_BLEND (function)) function returns enabled or disabled for the current window or a specified image handle when 32 bit.
 
 

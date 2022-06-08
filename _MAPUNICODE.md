@@ -1,7 +1,4 @@
-DISPLAYTITLE:_MAPUNICODE
 The [_MAPUNICODE](_MAPUNICODE) statement maps a [Unicode](Unicode) value to an [ASCII](ASCII) character code value.
-
-
 
 ## Syntax
 

@@ -1,4 +1,3 @@
-DISPLAYTITLE:_LOADFONT
 The [_LOADFONT](_LOADFONT) function loads a TrueType font (.TTF) or an OpenType font (.OTF) file in a specific size and style and returns a [LONG](LONG) font handle.
 
 

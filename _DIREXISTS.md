@@ -1,4 +1,3 @@
-DISPLAYTITLE:_DIREXISTS
 The [_DIREXISTS](_DIREXISTS) function determines if a designated file path or folder exists and returns true (-1) or false (0).
 
 

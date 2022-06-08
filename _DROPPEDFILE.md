@@ -1,4 +1,3 @@
-DISPLAYTITLE:_DROPPEDFILE
 The [_DROPPEDFILE](_DROPPEDFILE) function returns the list of items (files or folders) dropped in a program's window after [_ACCEPTFILEDROP](_ACCEPTFILEDROP) is enabled.
 
 

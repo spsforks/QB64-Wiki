@@ -1,4 +1,3 @@
-DISPLAYTITLE:_RESIZE  
 The [_RESIZE](_RESIZE) statement sets resizing of the window ON or OFF and sets the method as _STRETCH or _SMOOTH.
 
 

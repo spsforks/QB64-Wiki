@@ -1,4 +1,3 @@
-DISPLAYTITLE:_FREEIMAGE
 The **_FREEIMAGE** statement releases the designated file image created by the [_LOADIMAGE](_LOADIMAGE), [_NEWIMAGE](_NEWIMAGE) or [_COPYIMAGE](_COPYIMAGE) functions from memory when they are no longer needed.
 
 

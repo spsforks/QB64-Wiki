@@ -1,4 +1,3 @@
-DISPLAYTITLE:_ALPHA
 The [_ALPHA](_ALPHA) function returns the alpha channel transparency level of a color value used on a screen page or image.
 
 

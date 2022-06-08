@@ -1,4 +1,3 @@
-DISPLAYTITLE:_FONTHEIGHT
 The [_FONTHEIGHT](_FONTHEIGHT) function returns the font height of a font handle created by [_LOADFONT](_LOADFONT).
 
 

@@ -1,4 +1,3 @@
-DISPLAYTITLE:_DEFAULTCOLOR
 The [_DEFAULTCOLOR](_DEFAULTCOLOR) function returns the current default text color for an image handle or page.
 
 

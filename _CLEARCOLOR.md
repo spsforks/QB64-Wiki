@@ -1,4 +1,3 @@
-DISPLAYTITLE:_CLEARCOLOR
 The [_CLEARCOLOR](_CLEARCOLOR) statement sets a specific color to be treated as transparent when an image is later put (via [_PUTIMAGE](_PUTIMAGE)) onto another image. 
 
 {|align="right"

@@ -1,4 +1,3 @@
-DISPLAYTITLE:_SNDLIMIT
 The [_SNDLIMIT](_SNDLIMIT) statement stops playing a sound after it has been playing for a set number of seconds. 
 
 

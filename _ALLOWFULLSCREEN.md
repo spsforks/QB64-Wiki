@@ -1,4 +1,3 @@
-DISPLAYTITLE:_ALLOWFULLSCREEN
 The [_ALLOWFULLSCREEN](_ALLOWFULLSCREEN) statement allows setting the behavior of the ALT+ENTER combo.
 
 

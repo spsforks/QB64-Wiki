@@ -1,4 +1,3 @@
-DISPLAYTITLE:_MEMCOPY
 The [_MEMCOPY](_MEMCOPY) statement copies a block of bytes from one memory offset to another offset in memory.
 
 

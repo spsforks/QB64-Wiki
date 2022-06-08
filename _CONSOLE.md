@@ -1,4 +1,3 @@
-DISPLAYTITLE:_CONSOLE
 The [_CONSOLE](_CONSOLE) statement can be used to turn a console window ON/OFF.
 
 

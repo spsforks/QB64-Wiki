@@ -1,11 +1,8 @@
 The [MID$](MID$) statement substitutes one or more new characters for existing characters of a previously defined [STRING](STRING).
 
-
-
 ## Syntax
 
 >  [MID$](MID$)(baseString$, startPosition%[, bytes%]) = replacementString$
-
 
 ## Description
 
@@ -15,12 +12,9 @@ The [MID$](MID$) statement substitutes one or more new characters for existing c
 * The replacementString$ should be as long as the byte length reserved.
 * The length of the original string is not changed in any case. If replacementString$ is longer, it gets clipped.
 
-
 ## Example(s)
 
-## Example(s)
- Using [INSTR](INSTR) to locate the string positions and a [MID$ (statement)](MID$ (statement)) statement to change the words.
-
+Using [INSTR](INSTR) to locate the string positions and a [MID$ (statement)](MID$-(statement)) statement to change the words.
 
 ```vb
 
@@ -40,13 +34,10 @@ The [MID$](MID$) statement substitutes one or more new characters for existing c
 
 ```text
 
-
 The cats and dogs were playing, even though dogs don't like cats.
 The cats and rats were playing, even though rats don't like cats.
 
 ```
-
-
 
 ## See Also
 
@@ -54,7 +45,3 @@ The cats and rats were playing, even though rats don't like cats.
 * [LEFT$](LEFT$), [RIGHT$](RIGHT$) 
 * [INSTR](INSTR), [ASCII](ASCII),  [STR$](STR$), [HEX$](HEX$), [Bitmaps](Bitmaps) (example)
 * [MKI$](MKI$), [MKL$](MKL$), [MKS$](MKS$), [MKD$](MKD$)
-
-
-
-

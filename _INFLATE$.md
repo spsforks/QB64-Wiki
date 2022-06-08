@@ -1,4 +1,3 @@
-DISPLAYTITLE:_INFLATE$
 The [_INFLATE$](_INFLATE$) function decompresses a [STRING](STRING) compressed by the [_DEFLATE$](_DEFLATE$) function.
 
 

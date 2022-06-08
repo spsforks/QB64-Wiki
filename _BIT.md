@@ -1,4 +1,3 @@
-DISPLAYTITLE:_BIT
 The [_BIT](_BIT) datatype can return only values of 0 (bit off) and -1 (bit on). 
 
 

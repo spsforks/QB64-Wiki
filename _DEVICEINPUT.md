@@ -1,4 +1,3 @@
-DISPLAYTITLE:_DEVICEINPUT
 The **_DEVICEINPUT** function returns the device number when a controller device button, wheel or axis event occurs.
 
 

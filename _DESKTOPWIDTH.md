@@ -1,4 +1,3 @@
-DISPLAYTITLE:_DESKTOPWIDTH
 The [_DESKTOPWIDTH](_DESKTOPWIDTH) function returns the width of the users current desktop.
 
 

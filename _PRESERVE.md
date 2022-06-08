@@ -1,4 +1,3 @@
-DISPLAYTITLE:_PRESERVE
 The [_PRESERVE](_PRESERVE) [REDIM](REDIM) action preserves the current contents of [$DYNAMIC]($DYNAMIC) [arrays](arrays), when resizing or changing indices.
 
 

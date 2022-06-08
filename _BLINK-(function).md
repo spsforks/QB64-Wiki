@@ -1,4 +1,3 @@
-DISPLAYTITLE:_BLINK (function)
 The [_BLINK](_BLINK) function returns the current blink setting for SCREEN 0 colors. If enabled, returns -1 (default), otherwise returns 0.
 
 

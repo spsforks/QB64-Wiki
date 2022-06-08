@@ -1,4 +1,3 @@
-DISPLAYTITLE:_DEFINE
 [_DEFINE](_DEFINE) defines a set of variable names according to their first character as a specified data type.
 
 

@@ -1,19 +1,16 @@
-The [OPTION BASE](OPTION BASE) statement is used to set the default lower bound of arrays.
-
+The [OPTION BASE](OPTION-BASE) statement is used to set the default lower bound of arrays.
 
 ## Syntax
 
->  [OPTION BASE](OPTION BASE) {0|1}
-
+> [OPTION BASE](OPTION-BASE) {0|1}
 
 ## Description
 
 * This statement affects array declarations where the lower bound of a dimension is not specified.
-* When used, [OPTION BASE](OPTION BASE) must come before any array declarations ([DIM](DIM)) to be affected.
+* When used, [OPTION BASE](OPTION-BASE) must come before any array declarations ([DIM](DIM)) to be affected.
 * By default, the lower bound for arrays is zero, and may be changed to one using the statement.
 * Otherwise, arrays will be dimensioned from element 0 if you DIM just the upper bounds.
 * You can also set other array boundaries by using [TO](TO) in the DIM declaration such as `DIM array(5 TO 10)`
-
 
 ## Example(s)
 
@@ -33,9 +30,8 @@ PRINT LBOUND(array)
 ```text
 
  1
+
 ```
-
-
 
 *Example 2:* Set the default lower bound for array declarations to zero.
 
@@ -59,13 +55,7 @@ PRINT LBOUND(array, 2)
 
 ```
 
-
-
 ## See Also
 
 * [Arrays](Arrays), [LBOUND](LBOUND), [UBOUND](UBOUND)
 * [DIM](DIM), [REDIM](REDIM), [STATIC](STATIC), [COMMON](COMMON)
-
-
-
-

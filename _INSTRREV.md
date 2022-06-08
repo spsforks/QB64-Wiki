@@ -1,4 +1,3 @@
-DISPLAYTITLE:_INSTRREV
 The [_INSTRREV](_INSTRREV) function searches for a substring inside another string, but unlike [INSTR](INSTR) it searches from right to left.
 
 

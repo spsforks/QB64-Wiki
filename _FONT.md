@@ -1,4 +1,3 @@
-DISPLAYTITLE:_FONT
 The [_FONT](_FONT) statement sets the current [_LOADFONT](_LOADFONT) function font handle to be used by [PRINT](PRINT). 
 
 

@@ -1,4 +1,3 @@
-DISPLAYTITLE:_MEMPUT
 The [_MEMPUT](_MEMPUT) statement writes data to a portion of a designated memory block at an [OFFSET](OFFSET) position.
 
 

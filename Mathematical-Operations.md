@@ -1,8 +1,3 @@
-__NOEDITSECTION__
-{|align="right"
-|__TOC__
-|}
-
 ## Basic and QB64 Numerical Types
 
 **QBasic Number Types**
@@ -13,29 +8,23 @@ __NOEDITSECTION__
 * [DOUBLE](DOUBLE) [#]: 8 byte signed floating decimal point values of up to 15 decimal place accuracy. **Cannot be unsigned.**
 * To get **one byte** values, can use an [ASCII](ASCII) [STRING](STRING) character to represent values from 0 to 255 as in [BINARY](BINARY) files.
 
-
 **QB64 Number Types**
 
 * [_BIT](_BIT) [**`**]: 1 bit signed whole number values of 0 or -1 signed or 0 or 1 unsigned. [_BIT](_BIT) * 8 can hold a signed or unsigned [_BYTE](_BYTE) value.
 * [_BYTE](_BYTE) [**%%**]: 1 byte signed whole number values from -128 to 127. Unsigned values from 0 to 255.
 * [_INTEGER64](_INTEGER64) [**&&**]: 8 byte signed whole number values from -9223372036854775808 to 9223372036854775807
 * [_FLOAT](_FLOAT) [##]: currently set as 10 byte signed floating decimal point values up to 1.1897E+4932. **Cannot be unsigned.**
-* [_OFFSET](_OFFSET) [%&]: undefined flexable length integer offset values used in [DECLARE DYNAMIC LIBRARY](DECLARE DYNAMIC LIBRARY) declarations. 
-
+* [_OFFSET](_OFFSET) [%&]: undefined flexable length integer offset values used in [DECLARE DYNAMIC LIBRARY](DECLARE-DYNAMIC-LIBRARY) declarations. 
 
 **Signed and Unsigned Integer Values**
 
 Negative (signed) numerical values can affect calculations when using any of the BASIC operators. SQR cannot use negative values! There may be times that a calculation error is made using those negative values. The SGN function returns the sign of a value as -1 for negative, 0 for zero and 1 for unsigned positive values. ABS always returns an unsigned value.
 
-> :::* [SGN](SGN)(n) returns the value's sign as -1 if negative, 0 if zero or 1 if positive.
-> :::* [ABS](ABS)(n) changes negative values to the equivalent positive values.
-> :::* **QB64:** [_UNSIGNED](_UNSIGNED) in a [DIM](DIM), [AS](AS) or [_DEFINE](_DEFINE) statement for only positive [INTEGER](INTEGER) values.
-
+* [SGN](SGN)(n) returns the value's sign as -1 if negative, 0 if zero or 1 if positive.
+* [ABS](ABS)(n) changes negative values to the equivalent positive values.
+* **QB64:** [_UNSIGNED](_UNSIGNED) in a [DIM](DIM), [AS](AS) or [_DEFINE](_DEFINE) statement for only positive [INTEGER](INTEGER) values.
 
 [_UNSIGNED](_UNSIGNED) integer, byte and bit variable values can use the tilde ~ suffix before the type suffix to define the type.
-
-
-[#toc](#toc)
 
 ## Mathematical Operation Symbols
 
@@ -58,9 +47,7 @@ Most of the BASIC math operators are ones that require no introduction. The addi
 | align="center" |[/](/) ||  Division  || align="center" | c = a / b || align="center" | Second
 |}
 
-
 BASIC can also use two other operators for **[INTEGER](INTEGER) division**. Integer division returns only whole number values. [MOD](MOD) **remainder division** returns a value only if an integer division cannot divide a number exactly. Returns 0 if a value is exactly divisible.
-
 
 {| align="center" border=1
 !Symbol
@@ -73,12 +60,9 @@ BASIC can also use two other operators for **[INTEGER](INTEGER) division**. Inte
 | align="center" |[MOD](MOD) ||  Remainder division  || align="center" | c = a MOD b || align="center" | Second
 |}
 
-
 ***It is an [ERROR](ERROR) to divide by zero or to take the remainder modulo zero.***
 
-
 There is also an operator for **exponential** calculations. The exponential operator is used to raise a number's value to a designated exponent of itself. In QB the exponential return values are [DOUBLE](DOUBLE) values. The [SQR](SQR) function can return a number's Square Root. For other **exponential roots** the operator can be used with fractions such as (1 / 3) designating the cube root of a number. 
-
 
 {| align="center" border=1
 !Symbol
@@ -97,27 +81,20 @@ There is also an operator for **exponential** calculations. The exponential oper
 * Exponent fractions should be enclosed in () brackets in order to be treated as a root rather than as division.
 * Negative exponential values must be enclosed in () brackets in QB64.
 
-
-[#toc](#toc)
-
 ## Basic's Order of Operations
-
 
 When a normal calculation is made, BASIC works from left to right, but it does certain calculations in the following order:
 
-
-> ::# Exponential and exponential Root calculations including [SQR](SQR).
-> ::# Negation (Note that this means that *- 3 ^ 2* is treated as *-(3 ^ 2)* and not as *(-3) ^ 2.)*
-> ::# Multiplication, normal Division, [INTEGER](INTEGER) Division and Remainder([MOD](MOD)) Division calculations
-> ::# Addition and Subtraction calculations
-
+* Exponential and exponential Root calculations including [SQR](SQR).
+* Negation (Note that this means that *- 3 ^ 2* is treated as *-(3 ^ 2)* and not as *(-3) ^ 2.)*
+* Multiplication, normal Division, [INTEGER](INTEGER) Division and Remainder([MOD](MOD)) Division calculations
+* Addition and Subtraction calculations
 
 **Using Parenthesis to Define the Operation Order**
 
 Sometimes a calculation may need BASIC to do them in another order or the calculation will return bad results. BASIC allows the programmer to decide the order of operations by using [parenthesis](parenthesis) around parts of the equation. BASIC will do the calculations inside of the [parenthesis](parenthesis) brackets  first and the others from left to right in the normal operation order.
 
 ## Basic's Mathematical Functions
-
 
 {| align=center border=1
  ! Function
@@ -142,9 +119,7 @@ Sometimes a calculation may need BASIC to do them in another order or the calcul
  | [TAN](TAN)(angle*) ||  returns the tangent of an angle in radians
  |}
 
- *** angles measured in radians**
-
-
+*** angles measured in radians**
 
 ```text
 
@@ -168,27 +143,17 @@ END FUNCTION
 
 ```
 
-
-
 **The numerical value of n in the [LOG](LOG)(n) evaluation must be a positive value.**
 
 **The numerical value of n in the [EXP](EXP)(n) evaluation must be less than or equal to 88.02969.**
 
 **The numerical value of n in the [SQR](SQR)(n) evaluation *cannot* be a negative value.**
 
-
-[#toc](#toc)
-
 ## Derived Mathematical Functions
-
-
 
 The following Trigonometric functions can be derived from the **BASIC Mathematical Functions** listed above. Each function checks that certain values can be used without error or a [BEEP](BEEP) will notify the user that a value could not be returned. An error handling routine can be substituted if desired. **Note:** Functions requiring **π** use 4 * [ATN](ATN)(1) for [SINGLE](SINGLE) accuracy. Use [ATN](ATN)(1.#) for [DOUBLE](DOUBLE) accuracy.
 
-
-
-```text
-
+```vb
 
 FUNCTION SEC (x)  'Secant
 IF COS(x) <> 0 THEN SEC = 1 / COS(x) ELSE BEEP
@@ -287,7 +252,6 @@ END FUNCTION
 
 ```
 
-
 ```text
 
 
@@ -314,42 +278,25 @@ END FUNCTION
 
 ```
 
-
-[http://support.microsoft.com/kb/28249 Microsoft's Derived BASIC Functions (KB 28249)]
-
-
-[#toc](#toc)
+[Microsoft's Derived BASIC Functions (KB 28249)](http://support.microsoft.com/kb/28249)
 
 ## Mathematical Logical Operators
 
-
 The following logical operators compare numerical values using bitwise operations. The two numbers are compared by the number's [Binary](Binary) bits on and the result of the operation determines the value returned in decimal form. [NOT](NOT) checks one value and returns the opposite. It returns 0 if a value is not 0 and -1 if it is 0. See [Binary](Binary) for more on bitwise operations.
-
 
 **Truth table of the 6 BASIC Logical Operators**
 
-
-
-
 BASIC can accept any + or - value that is not 0 to be True when used in an evaluation.
-
-
-[#toc](#toc)
 
 ## Relational Operators
 
-Relational Operations are used to compare values in a Conditional [IF...THEN](IF...THEN), [SELECT CASE](SELECT CASE), [UNTIL](UNTIL) or [WHILE](WHILE) statement.
+Relational Operations are used to compare values in a Conditional [IF...THEN](IF...THEN), [SELECT CASE](SELECT-CASE), [UNTIL](UNTIL) or [WHILE](WHILE) statement.
 
-
-RelationalTable
-
-
-[#toc](#toc)
+MISSING: Relational Table
 
 ## Basic's Rounding Functions
 
-
->  Rounding is used when the program needs a certain number value or type. There are 4 [INTEGER](INTEGER) or [LONG](LONG) Integer functions and one function each for closest [SINGLE](SINGLE) and closest [DOUBLE](DOUBLE) numerical types. Closest functions use "bankers" rounding which rounds up if the decimal point value is over one half. Variable types should match the return value.
+> Rounding is used when the program needs a certain number value or type. There are 4 [INTEGER](INTEGER) or [LONG](LONG) Integer functions and one function each for closest [SINGLE](SINGLE) and closest [DOUBLE](DOUBLE) numerical types. Closest functions use "bankers" rounding which rounds up if the decimal point value is over one half. Variable types should match the return value.
 
 {| align=center border=1
 ! Name
@@ -375,12 +322,7 @@ RelationalTable
 
 * Each of the above functions define the value's type in addition to rounding the values.
 
-[#toc](#toc)
-
 ## Base Number Systems
-
-
-
 
 ```text
 
@@ -429,36 +371,27 @@ RelationalTable
 
 ```
 
-
-
 **[VAL](VAL) converts [STRING](STRING) numbers to Decimal values.**
 
 * VAL reads the string from left to right and converts numerical string values, - and . to decimal values until it finds a character other than those 3 characters. Commas are not read.
 * HEXadecimal and OCTal base values can be read with [&H](&H) or [&O](&O).
 
-
 **The [OCT$](OCT$) [STRING](STRING) function return can be converted to a decimal value using [VAL](VAL)("&O" + OCT$(n)).**
 
 **The [HEX$](HEX$) [STRING](STRING) function return can be converted to a decimal value using [VAL](VAL)("&H" + HEX$(n)).**
 
-
 > [STR$](STR$) converts numerical values to string characters for [PRINT](PRINT) or variable strings. It also removes the right number PRINT space.
-
-
-
-[#toc](#toc)
 
 ## Bits and Bytes
 
-
 **[_BIT](_BIT)**
-* The **MSB** is the most significant(largest) bit value and **LSB** is the least significant bit of a binary or register memory address value. The order in which the bits are read determines the binary or decimal byte value. There are two common ways to read a byte:
 
-> * **"Big-endian"**: MSB is the first bit encountered, decreasing to the LSB as the last bit by position, memory address or time.
-> * **"Little-endian"**: LSB is the first bit encountered, increasing to the MSB as the last bit by position, memory address or time.
+The **MSB** is the most significant(largest) bit value and **LSB** is the least significant bit of a binary or register memory address value. The order in which the bits are read determines the binary or decimal byte value. There are two common ways to read a byte:
+
+* **"Big-endian"**: MSB is the first bit encountered, decreasing to the LSB as the last bit by position, memory address or time.
+* **"Little-endian"**: LSB is the first bit encountered, increasing to the MSB as the last bit by position, memory address or time.
 
 ```text
-
 
          **Offset or Position:    0    1   2   3   4   5   6   7      Example: 11110000**
                               ----------------------------------             --------
@@ -467,10 +400,11 @@ RelationalTable
 
 ```
 
-> :The big-endian method compares exponents of 2<sup>7</sup> down to 2<sup>0</sup> while the little-endian method does the opposite. 
+> The big-endian method compares exponents of 2<sup>7</sup> down to 2<sup>0</sup> while the little-endian method does the opposite. 
 
 **[_BYTE](_BYTE)**
-* [INTEGER](INTEGER) values consist of 2 bytes called the **HI** and **LO** bytes. Anytime that the number of binary digits is a multiple of 16 (2bytes, 4 bytes, etc.) and the HI byte's MSB is on(1), the value returned will be negative, even with [SINGLE](SINGLE) or [DOUBLE](DOUBLE) values. 
+
+[INTEGER](INTEGER) values consist of 2 bytes called the **HI** and **LO** bytes. Anytime that the number of binary digits is a multiple of 16 (2bytes, 4 bytes, etc.) and the HI byte's MSB is on(1), the value returned will be negative, even with [SINGLE](SINGLE) or [DOUBLE](DOUBLE) values. 
 
 ```text
 
@@ -484,11 +418,11 @@ RelationalTable
 
 ```
 
-> :The HI byte's **MSB** is often called the **sign** bit! When the highest bit is on, the signed value returned will be negative.  
-
+> The HI byte's **MSB** is often called the **sign** bit! When the highest bit is on, the signed value returned will be negative.  
 
 ## Example(s)
- Program displays the bits on for any integer value between -32768 and 32767 or &H80000 and &H7FFF.
+
+Program displays the bits on for any integer value between -32768 and 32767 or &H80000 and &H7FFF.
 
 ```vb
 
@@ -539,27 +473,16 @@ SYSTEM
 ```
 <sub>Code by Ted Weissgerber</sub>
 
-
-[#toc](#toc)
-
 ## OFFSET
 
-
-* [_OFFSET (function)](_OFFSET (function)) returns the memory offset position as a flexible sized value for a designated variable. See [Using _OFFSET](Using _OFFSET).
-
+[_OFFSET (function)](_OFFSET (function)) returns the memory offset position as a flexible sized value for a designated variable. See [Using _OFFSET](Using _OFFSET).
 
 **Warning: [_OFFSET](_OFFSET) values cannot be reassigned to other variable [TYPE](TYPE).**
 
-
 **[_OFFSET](_OFFSET) values can only be used in conjunction with [_MEM](_MEM)ory and [DECLARE DYNAMIC LIBRARY](DECLARE DYNAMIC LIBRARY) procedures.**
-
-## References
 
 ## See Also
 
 * [_OFFSET](_OFFSET), [_MEM](_MEM)
 * [DIM](DIM), [_DEFINE](_DEFINE)
 * [TYPE](TYPE)
-
-
-

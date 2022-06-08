@@ -1,4 +1,3 @@
-DISPLAYTITLE:_SCREENMOVE
 The [_SCREENMOVE](_SCREENMOVE) statement positions the program window on the desktop using designated coordinates.
 
 

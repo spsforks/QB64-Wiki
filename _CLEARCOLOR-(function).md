@@ -1,4 +1,3 @@
-DISPLAYTITLE:_CLEARCOLOR (function)
 The [_CLEARCOLOR (function)](_CLEARCOLOR (function)) function returns the current transparent color of an image or page.
 
 

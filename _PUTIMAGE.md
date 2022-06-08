@@ -1,4 +1,3 @@
-DISPLAYTITLE:_PUTIMAGE
 [_PUTIMAGE](_PUTIMAGE) puts an area of a source image to an area of a destination image in one operation, like [GET (graphics statement)](GET (graphics statement)) and [PUT (graphics statement)](PUT (graphics statement)).
 
 

@@ -1,4 +1,3 @@
-DISPLAYTITLE:_MOUSEBUTTON
 The [_MOUSEBUTTON](_MOUSEBUTTON) function returns the button status of a specified mouse button when read after [_MOUSEINPUT](_MOUSEINPUT).
 
 

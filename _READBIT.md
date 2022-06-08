@@ -1,4 +1,3 @@
-DISPLAYTITLE:_READBIT
 The [_READBIT](_READBIT) function is used to check the state of a specified bit of a integer value.
 
 

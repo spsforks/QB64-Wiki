@@ -1,4 +1,3 @@
-DISPLAYTITLE:_DEPTHBUFFER
 The [_DEPTHBUFFER](_DEPTHBUFFER) statement turns depth buffering ON or OFF, LOCKs or _CLEARS the buffer.
 
 

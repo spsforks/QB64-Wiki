@@ -1,4 +1,3 @@
-DISPLAYTITLE:_DISPLAY
 The [_DISPLAY](_DISPLAY) statement turns off the automatic display while only displaying the screen changes when called. 
 
 

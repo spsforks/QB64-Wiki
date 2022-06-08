@@ -1,4 +1,3 @@
-DISPLAYTITLE:_DISPLAY (function)
 The [_DISPLAY](_DISPLAY) function returns the handle of the current image that is displayed on the screen.
 
 

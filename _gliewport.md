@@ -1,4 +1,3 @@
-DISPLAYTITLE:_glViewport
 **_glViewport:** set the viewport
 
 

@@ -1,4 +1,3 @@
-DISPLAYTITLE:_SNDLEN
 The [_SNDLEN](_SNDLEN) function returns the length in seconds of a loaded sound using a handle from the [_SNDOPEN](_SNDOPEN) function.
 
 

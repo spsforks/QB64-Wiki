@@ -1,4 +1,3 @@
-DISPLAYTITLE:_SCREENY
 The [_SCREENY](_SCREENY) function returns the current row pixel coordinate of the program window on the desktop.
 
 

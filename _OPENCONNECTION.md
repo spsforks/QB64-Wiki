@@ -1,4 +1,3 @@
-DISPLAYTITLE:_OPENCONNECTION
 The [_OPENCONNECTION](_OPENCONNECTION) function opens a connection from a client that the host has detected and returns a status handle.
 
 

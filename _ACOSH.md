@@ -1,4 +1,3 @@
-DISPLAYTITLE:_ACOSH
 The [_ACOSH](_ACOSH) returns the nonnegative arc hyperbolic cosine of x!, expressed in radians.
 
 

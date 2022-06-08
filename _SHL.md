@@ -1,4 +1,3 @@
-DISPLAYTITLE:_SHL
 The [_SHL](_SHL) function is used to shift the bits of a numerical value to the left.
 
 

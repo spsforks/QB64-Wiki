@@ -1,17 +1,14 @@
 The [MID$](MID$) function returns a portion of a [STRING](STRING).
 
-
 ## Syntax
 
 >  portion$ = [MID$](MID$)(stringValue$, startPosition%[, bytes%])
-
 
 ## Parameter(s)
 
 * stringValue$ can be any literal or variable non-empty [STRING](STRING) value. Use [LEN](LEN) to check the length of a string.
 * startPosition% designates the non-zero position of the first character to be returned by the function.
 * bytes% (optional) tells the function how many characters to return including the first character at startPosition%. 
-
 
 ## Description
 
@@ -20,11 +17,9 @@ The [MID$](MID$) function returns a portion of a [STRING](STRING).
 * If the bytes% value is 0 or the startPosition% is 0 or greater than the [LEN](LEN) of the string, an empty string is returned (no error is triggered).
 * In **QB64**, [ASC](ASC) string byte position reads are about **5 times faster** than MID$ when parsing strings. See *Example 2* below.
 
-
 ## QBasic/QuickBASIC
 
-* In QBasic the startPosition% could not be zero (0) or an [ERROR Codes](ERROR Codes) would occur.
-
+* In QBasic the startPosition% could not be zero (0) or an [ERROR Codes](ERROR-Codes) would occur.
 
 ## Example(s)
 
@@ -47,8 +42,6 @@ PRINT "hour = "; hour$; ": minutes = "; minutes$
 hour = 11: minutes = 23
 
 ```
-
-
 
 *Example 2:* Comparing MID$, the **QB64** byte position version of [ASC](ASC) and [_MEMGET](_MEMGET) speeds parsing string characters:
 
@@ -118,15 +111,10 @@ PRINT USING "##.###### seconds for _MEMGET Byte"; t5# - t4#
 
 >  *Note:* [_MEMGET](_MEMGET) can be used with [$CHECKING]($CHECKING):OFF to cut the parsing speed even more. [STRING](STRING) * 1 or [_BYTE](_BYTE) are similar speeds.
 
-
 ## See Also
 
-* [MID$ (statement)](MID$ (statement)), [ASC](ASC)
+* [MID$ (statement)](MID$-(statement)), [ASC](ASC)
 * [LEFT$](LEFT$), [RIGHT$](RIGHT$)
 * [LTRIM$](LTRIM$), [RTRIM$](RTRIM$) 
 * [INSTR](INSTR), [LEN](LEN)
 * [_MEMPUT](_MEMPUT), [_MEMGET](_MEMGET) 
-
-
-
-

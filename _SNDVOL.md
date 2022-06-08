@@ -1,4 +1,3 @@
-DISPLAYTITLE:_SNDVOL
 The [_SNDVOL](_SNDVOL) statement sets the volume of a sound loaded in memory using a handle from the [_SNDOPEN](_SNDOPEN) function.
 
 

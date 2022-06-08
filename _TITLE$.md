@@ -1,4 +1,3 @@
-DISPLAYTITLE:_TITLE$
 The [_TITLE$](_TITLE$) function returns the program title last set by the [_TITLE](_TITLE) statement.
 
 

@@ -1,4 +1,3 @@
-DISPLAYTITLE:_KEYDOWN
 The **_KEYDOWN** function returns whether modifying keys like CTRL, ALT, SHIFT, and any other keys are pressed.
 
 

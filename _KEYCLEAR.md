@@ -1,4 +1,3 @@
-DISPLAYTITLE:_KEYCLEAR
 [_KEYCLEAR](_KEYCLEAR) clears all keyboard input buffers.
 
 ## Syntax

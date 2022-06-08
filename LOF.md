@@ -1,11 +1,8 @@
 The [LOF](LOF) function is used to find the length of an [OPEN](OPEN) file in bytes.
 
-
-
 ## Syntax
 
->  *totalBytes&* = [LOF](LOF)([#]fileNumber)
-
+> *totalBytes&* = [LOF](LOF)([#]fileNumber)
 
 ## Description
 
@@ -15,12 +12,9 @@ The [LOF](LOF) function is used to find the length of an [OPEN](OPEN) file in by
 * Can also be used to avoid reading an empty file, which would create an error.
 * LOF in **QB64** can return up to 9 GB (9,223,372,036 bytes) file sizes.
 
-
 ## Example(s)
 
-## Example(s)
- Finding the number of records in a RANDOM file using a [TYPE](TYPE) variable.
-
+Finding the number of records in a RANDOM file using a [TYPE](TYPE) variable.
 
 ```vb
 
@@ -29,11 +23,6 @@ The [LOF](LOF) function is used to find the length of an [OPEN](OPEN) file in by
 
 ```
 
-
 ## See Also
 
 * [LEN](LEN), [EOF](EOF), [BINARY](BINARY), [RANDOM](RANDOM), [TYPE](TYPE)
-
-
-
-

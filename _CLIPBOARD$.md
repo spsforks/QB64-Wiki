@@ -1,4 +1,3 @@
-DISPLAYTITLE:_CLIPBOARD$
 The [_CLIPBOARD$](_CLIPBOARD$) function returns the current Operating System's clipboard contents as a [STRING](STRING).
 
 

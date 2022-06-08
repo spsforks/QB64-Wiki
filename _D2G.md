@@ -1,4 +1,3 @@
-DISPLAYTITLE:_D2G
 The [_D2G](_D2G) function converts a **degree** value into a **gradient** value. 
 
 

@@ -1,4 +1,3 @@
-DISPLAYTITLE:_SNDBAL
 The [_SNDBAL](_SNDBAL) statement attempts to set the balance or 3D position of a sound.
 
 

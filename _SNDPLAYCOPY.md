@@ -1,4 +1,3 @@
-DISPLAYTITLE:_SNDPLAYCOPY
 The [_SNDPLAYCOPY](_SNDPLAYCOPY) statement copies a sound, plays it, and automatically closes the copy using a handle parameter passed from [_SNDOPEN](_SNDOPEN) or [_SNDCOPY](_SNDCOPY)
 
 

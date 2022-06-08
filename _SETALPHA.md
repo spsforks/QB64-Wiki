@@ -1,4 +1,3 @@
-DISPLAYTITLE:_SETALPHA
 The [_SETALPHA](_SETALPHA) statement sets the alpha channel transparency level of some or all of the pixels of an image.
 
 

@@ -1,4 +1,3 @@
-DISPLAYTITLE:_RED
 The [_RED](_RED) function returns the palette index or the red component intensity of a 32-bit image color.
 
 

@@ -1,4 +1,3 @@
-DISPLAYTITLE:_glScissor
 This will define the scissor box.
 
 
@@ -8,7 +7,8 @@ This will define the scissor box.
 ; C/C++: void [_glScissor](_glScissor)(GLint x, GLint y, GLsizei width, GLsizei height);
 
 
-PageParameters
+## Parameters
+
 * x, y Specify the lower left corner of the scissor box. Initially (0, 0).
 * width, height Specify the width and height of the scissor box. When a GL context is first attached to a window, width and height are set to the dimensions of that window.
 

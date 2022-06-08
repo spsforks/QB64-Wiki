@@ -1,4 +1,3 @@
-DISPLAYTITLE:_ACOS
 The [_ACOS](_ACOS) function returns the angle measured in radians based on an input [COS](COS)ine value ranging from -1 to 1.
 
 

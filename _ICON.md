@@ -1,4 +1,3 @@
-DISPLAYTITLE:_ICON
 The [_ICON](_ICON) statement uses an image handle from [_LOADIMAGE](_LOADIMAGE) for the program header and icon image in the OS.
 
 

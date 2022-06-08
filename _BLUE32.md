@@ -1,4 +1,3 @@
-DISPLAYTITLE:_BLUE32
 The [_BLUE32](_BLUE32) function returns the blue component intensity of a 32-bit image or surface color.
 
 

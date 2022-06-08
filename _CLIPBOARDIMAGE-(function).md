@@ -1,4 +1,3 @@
-DISPLAYTITLE:_CLIPBOARDIMAGE (function)
 The [_CLIPBOARDIMAGE (function)](_CLIPBOARDIMAGE (function)) function pastes an image from the clipboard into a new 32-bit image in memory.
 
 

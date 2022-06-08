@@ -1,4 +1,3 @@
-DISPLAYTITLE:_MAPUNICODE (function)
 The [_MAPUNICODE](_MAPUNICODE) function returns the [Unicode](Unicode) (UTF-32) code point value of a mapped [ASCII](ASCII) character code.
 
 

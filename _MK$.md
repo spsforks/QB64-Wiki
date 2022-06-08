@@ -1,4 +1,3 @@
-DISPLAYTITLE:_MK$
 The [_MK$](_MK$) function can convert any numerical type into an [ASCII](ASCII) [STRING](STRING) value that can be converted back using [_CV](_CV).
 
 

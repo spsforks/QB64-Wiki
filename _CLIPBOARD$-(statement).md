@@ -1,4 +1,3 @@
-DISPLAYTITLE:_CLIPBOARD$ (statement)
 The [_CLIPBOARD$ (statement)](_CLIPBOARD$ (statement)) statement copies the [STRING](STRING) value into the system clipboard.
 
 

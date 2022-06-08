@@ -1,4 +1,3 @@
-DISPLAYTITLE:_MEMELEMENT
 The [_MEMELEMENT](_MEMELEMENT) function returns a [_MEM](_MEM) block referring to a variable's memory, but not past it.
 
 

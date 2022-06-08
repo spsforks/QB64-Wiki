@@ -1,4 +1,3 @@
-DISPLAYTITLE:_ERRORMESSAGE$
 The [_ERRORMESSAGE$](_ERRORMESSAGE$) function returns a human-readable description of the most recent runtime error, or the description of an arbitrary error code passed to it.
 
 

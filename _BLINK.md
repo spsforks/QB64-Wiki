@@ -1,4 +1,3 @@
-DISPLAYTITLE:_BLINK
 The [_BLINK](_BLINK) statement toggles blinking colors in text mode (SCREEN 0). Default state is ON.
 
 

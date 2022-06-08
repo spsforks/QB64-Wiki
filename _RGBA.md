@@ -1,4 +1,3 @@
-DISPLAYTITLE:_RGBA
 The [_RGBA](_RGBA) function returns the closest palette index (legacy SCREEN modes) OR the 32-bit [LONG](LONG) color value (32-bit screens).
 
 

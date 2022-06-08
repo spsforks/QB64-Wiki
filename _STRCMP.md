@@ -1,5 +1,3 @@
-DISPLAYTITLE:_STRCMP
-
 The [_STRCMP](_STRCMP) function compares the relationship between two strings, comparing upper or lower case.
 
 

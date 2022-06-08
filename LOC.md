@@ -1,21 +1,17 @@
 The [LOC](LOC) function returns the status of a serial (COM) port received buffer or the current byte position in an open file.
 
-
 ## Syntax
 
->  bytes% = LOC(fileOrPortNumber%)
-
+> bytes% = LOC(fileOrPortNumber%)
 
 * fileOrPortNumber% is the number used in the port [OPEN](OPEN) AS statement.
 * Returns 0 if the buffer is empty. Any value above 0 indicates the COM port has received data.
 * Use it in conjunction with [INPUT$](INPUT$) to get the data bytes received.
 * Can also be used to read the current position in a file routine. See [SEEK](SEEK).
 
-
 ## Example(s)
 
-## Example(s)
- Reading and writing from a COM port opened in Basic.
+Reading and writing from a COM port opened in Basic.
 
 ```vb
 
@@ -32,11 +28,7 @@ CLOSE #
 
 ```
 
-
 ## See Also
 
-* [PRINT](PRINT), [OPEN COM](OPEN COM), [PRINT (file statement)](PRINT (file statement))
+* [PRINT](PRINT), [OPEN COM](OPEN-COM), [PRINT (file statement)](PRINT-(file-statement))
 * [SEEK](SEEK)
-
-
-

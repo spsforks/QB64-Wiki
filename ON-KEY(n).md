@@ -1,11 +1,9 @@
-The [ON KEY(n)](ON KEY(n)) statement defines a line number or label to go to (or a [SUB](SUB) to run) when a specified key is pressed.
-
+The [ON KEY(n)](ON-KEY(n)) statement defines a line number or label to go to (or a [SUB](SUB) to run) when a specified key is pressed.
 
 ## Syntax
 
->  [ON KEY(n)](ON KEY(n)) [GOSUB](GOSUB) linelabel|linenumber
->  [ON KEY(n)](ON KEY(n)) [SUB](SUB)procedure
-
+>  [ON KEY(n)](ON-KEY(n)) [GOSUB](GOSUB) linelabel|linenumber
+>  [ON KEY(n)](ON-KEY(n)) [SUB](SUB)procedure
 
 ## Description
 
@@ -20,9 +18,8 @@ The [ON KEY(n)](ON KEY(n)) statement defines a line number or label to go to (or
 
 ```
 
-* See the [KEY n](KEY n) page for user defined key or key combination presses and F function softkey assignments.
+* See the [KEY n](KEY-n) page for user defined key or key combination presses and F function softkey assignments.
 * [GOSUB](GOSUB) with a linelabel or linenumber  or a [SUB](SUB) procedure (without the [CALL](CALL) keyword) can be triggered in **QB64**.
-
 
 ## Example(s)
 
@@ -42,11 +39,9 @@ RETURN
 
 ```
 
-
 *Example 2:* Setting multiple ON KEY statements to send different values to a [SUB](SUB) procedure.
 
 ```vb
-
   
 FOR n = 1 TO 10
   KEY n, STR$(n)  '   assigns soft key as a numerical string 
@@ -66,13 +61,8 @@ END SUB
 
 ```
 
-
 ## See Also
 
-* [KEY(n)](KEY(n)), [KEY n](KEY n) (soft key)
+* [KEY(n)](KEY(n)), [KEY n](KEY-n) (soft key)
 * [ON...GOSUB](ON...GOSUB), [Scancodes](Scancodes)
 * [_KEYHIT](_KEYHIT), [_KEYDOWN](_KEYDOWN)
-
-
-
-

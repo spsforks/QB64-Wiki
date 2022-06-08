@@ -1,4 +1,3 @@
-DISPLAYTITLE:_DEVICE$
 The **_DEVICE$** function returns a [STRING](STRING) value holding the controller type, name and input types of the input devices on a computer.
 
 

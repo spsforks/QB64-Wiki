@@ -1,4 +1,3 @@
-DISPLAYTITLE:_MEMFILL
 The [_MEMFILL](_MEMFILL) statement converts a value to a specified type, then fills memory with that type including any non-whole remainder.
 
 

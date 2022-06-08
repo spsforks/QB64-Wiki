@@ -1,4 +1,3 @@
-DISPLAYTITLE:_SOURCE
 The [_SOURCE](_SOURCE) statement establishes the image SOURCE using a handle created by [_LOADIMAGE](_LOADIMAGE), [_NEWIMAGE](_NEWIMAGE) or [_COPYIMAGE](_COPYIMAGE).
 
 

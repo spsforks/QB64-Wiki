@@ -1,4 +1,3 @@
-DISPLAYTITLE:_RESIZEHEIGHT
 The [_RESIZEHEIGHT](_RESIZEHEIGHT) function returns the user resized screen pixel height if [$RESIZE]($RESIZE):ON allows it and [_RESIZE (function)](_RESIZE (function)) returns -1 
 
 

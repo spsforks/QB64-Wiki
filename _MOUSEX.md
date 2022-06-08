@@ -1,4 +1,3 @@
-DISPLAYTITLE:_MOUSEX
 The [_MOUSEX](_MOUSEX) function returns the current horizontal (column) mouse cursor position when read after [_MOUSEINPUT](_MOUSEINPUT).
 
 

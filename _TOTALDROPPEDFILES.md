@@ -1,4 +1,3 @@
-DISPLAYTITLE:_TOTALDROPPEDFILES
 The [_TOTALDROPPEDFILES](_TOTALDROPPEDFILES) function returns the number of items (files or folders) dropped in a program's window after [_ACCEPTFILEDROP](_ACCEPTFILEDROP) is enabled.
 
 

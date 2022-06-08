@@ -1,4 +1,3 @@
-DISPLAYTITLE:_CLIPBOARDIMAGE
 The [_CLIPBOARDIMAGE](_CLIPBOARDIMAGE) statement copies a valid QB64 image to the clipboard.
 
 

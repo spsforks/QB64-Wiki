@@ -1,4 +1,3 @@
-DISPLAYTITLE:_SCREENPRINT
 The [_SCREENPRINT](_SCREENPRINT) statement simulates typing text into a Windows focused program.
 
 

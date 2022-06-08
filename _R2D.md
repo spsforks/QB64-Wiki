@@ -1,4 +1,3 @@
-DISPLAYTITLE:_R2D
 The [_R2D](_R2D) function converts a **radian** value into a **degree** value. 
 
 

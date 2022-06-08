@@ -1,4 +1,3 @@
-DISPLAYTITLE:_RGB
 The [_RGB](_RGB) function returns the closest palette attribute index (legacy SCREEN modes) OR the [LONG](LONG) 32-bit color value (32-bit screens). 
 
 

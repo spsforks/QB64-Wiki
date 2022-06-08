@@ -1,4 +1,3 @@
-DISPLAYTITLE:_INCLERRORLINE  
 The [_INCLERRORFILE$](_INCLERRORFILE$) function returns the line number in an [$INCLUDE]($INCLUDE) file that caused the most recent error.
 
 

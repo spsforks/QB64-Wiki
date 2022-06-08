@@ -1,4 +1,3 @@
-DISPLAYTITLE:_SCREENHIDE
 The **_SCREENHIDE** statement can be used to hide the main program window in a section of code.
 
 

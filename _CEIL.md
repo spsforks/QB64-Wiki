@@ -1,4 +1,3 @@
-DISPLAYTITLE:_CEIL
 The [_CEIL](_CEIL) function rounds a numeric value up to the next whole number or [INTEGER](INTEGER) value. 
 
 
