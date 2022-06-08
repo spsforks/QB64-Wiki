@@ -1,9 +1,3 @@
-__NOEDITSECTION__
-{|align="right"
-|__TOC__
-|}
-
-
 ```text
 
                         **Comparing the Base Numbering Systems**
@@ -44,15 +38,13 @@ __NOEDITSECTION__
                        hexadecimal =  2  + B  + 8 +  8  + 9 = &H2B889 
 
     See the Decimal to Binary conversion function that uses **[HEX$](HEX$)** on the **[&H](&H)** page,
-    but take it for education only. From QBPE 0.5 just use the new **[_BIN$](_BIN$)** function.
+    but take it for education only.
 
 ```
 
-
-
 ## Example(s)
 
-;Example: Comparing decimal, hexadecimal, octal and binary string values from 0 to 15.
+Example: Comparing decimal, hexadecimal, octal and binary string values from 0 to 15.
 
 ```vb
 
@@ -67,7 +59,8 @@ FOR n% = 0 TO 15
 NEXT n%
 
 ```
-;Note:Although the decimal numbers 0-15 have a maximum width of 2 digits only, an extra space in the *tableout$* template is needed when using the (fixed width string) slash output format, as [STR$](STR$) values contain a leading sign placeholder space.
+
+Note: Although the decimal numbers 0-15 have a maximum width of 2 digits only, an extra space in the *tableout$* template is needed when using the (fixed width string) slash output format, as [STR$](STR$) values contain a leading sign placeholder space.
 
 ```text
 
@@ -93,13 +86,7 @@ NEXT n%
 
 ```
 
-
-
 ## See Also
 
 * [_BIN$](_BIN$), [HEX$](HEX$), [OCT$](OCT$), [VAL](VAL)
 * [&H](&H) (hexadecimal), [&O](&O) (octal), [&B](&B) (binary)   
-
-
-
-

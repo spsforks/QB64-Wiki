@@ -1,8 +1,6 @@
-__NOEDITSECTION__
-__NOTOC__
-This page lists all the error codes defined in QB64 that can occur in a program when running. Unless overridden with an [ON ERROR](ON ERROR) handler, these result in a dialog box appearing. Due to legacy holdovers from previous BASIC dialects, not all of these errors may actually occur in a program (unless manually triggered with [ERROR](ERROR)).
+This page lists all the error codes defined in QB64 that can occur in a program when running. Unless overridden with an [ON ERROR](ON-ERROR) handler, these result in a dialog box appearing. Due to legacy holdovers from previous BASIC dialects, not all of these errors may actually occur in a program (unless manually triggered with [ERROR](ERROR)).
 
-If you encounter an error while editing in the QB64 IDE or when compiling (especially a "C++ Compilation Failed" message), or believe your program is correct, please report the error at https://github.com/QB64-Phoenix-Edition/QB64pe/issues.
+If you encounter an error while editing in the QB64 IDE or when compiling (especially a "C++ Compilation Failed" message), or believe your program is correct, please report the error at https://github.com/QB64Official/qb64/issues.
 
 It's a good idea to exclude qb64.exe from any real-time anti-virus scanning to prevent generic strange errors when editing or compiling.
 
@@ -200,11 +198,6 @@ Any code not listed above may be used as a custom error code with [ERROR](ERROR)
 
 ## See also
 
-
-*[ERROR](ERROR) (simulates error), [ERR](ERR) (error code number), [ERL](ERL) (closest line number when line numbers are used)
-*[ON ERROR](ON ERROR) (calls error handing routine using [GOTO](GOTO) only), [_ERRORLINE](_ERRORLINE) (actual text code line)
-*[_INCLERRORLINE](_INCLERRORLINE), [_INCLERRORFILE$](_INCLERRORFILE$), [_ERRORMESSAGE$](_ERRORMESSAGE$)
-
-
-
-
+* [ERROR](ERROR) (simulates error), [ERR](ERR) (error code number), [ERL](ERL) (closest line number when line numbers are used)
+* [ON ERROR](ON-ERROR) (calls error handing routine using [GOTO](GOTO) only), [_ERRORLINE](_ERRORLINE) (actual text code line)
+* [_INCLERRORLINE](_INCLERRORLINE), [_INCLERRORFILE$](_INCLERRORFILE$), [_ERRORMESSAGE$](_ERRORMESSAGE$)
