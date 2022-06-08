@@ -1,13 +1,13 @@
-[CALL ABSOLUTE](CALL ABSOLUTE) is used to access interrupts on the computer or execute assembly type procedures.
+[CALL ABSOLUTE](CALL-ABSOLUTE) is used to access interrupts on the computer or execute assembly type procedures.
 
 
 ## Syntax
 
->  [CALL ABSOLUTE](CALL ABSOLUTE)([argumentList,] integerOffset)
+>  [CALL ABSOLUTE](CALL-ABSOLUTE)([argumentList,] integerOffset)
 
 
 PageLegacySupport
-* [CALL ABSOLUTE](CALL ABSOLUTE) is implemented to support older code and is not recommended practice. To handle mouse input, use [_MOUSEINPUT](_MOUSEINPUT) and related functions.
+* [CALL ABSOLUTE](CALL-ABSOLUTE) is implemented to support older code and is not recommended practice. To handle mouse input, use [_MOUSEINPUT](_MOUSEINPUT) and related functions.
 
 
 ## Description

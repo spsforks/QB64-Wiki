@@ -1,21 +1,18 @@
 The **SHELL** function displays the console and returns the [INTEGER](INTEGER) code value sent when the external program exits.
 
-
 ## Syntax
 
-> :: return_code = **SHELL(*DOScommand$*)**
-
+> return_code = **SHELL(*DOScommand$*)**
 
 ## Parameter(s)
 
 * The literal or variable [STRING](STRING) *command* parameter can be any valid external command or call to another program.
 
-
 *Usage:*
+
 * A SHELL to a QB64 EXE program with an exit return code parameter after [END](END) or [SYSTEM](SYSTEM) will return that code value.
 * The return_code is usually 0 when the external program ends with no errors.
 * The console window may appear when using the SHELL function. The [_SHELLHIDE](_SHELLHIDE) function will hide the console from view.
-
 
 *Example:* Shelling to another QB64 program will return the exit code when one is set in the  program that is run.
 
@@ -38,7 +35,7 @@ PRINT _WIDTH(s&); "X"; _HEIGHT(s&)
 END 3 '<<<<<< add a code to return after END or SYSTEM in any program
 
 FUNCTION trimstr$ (whatever)
-trimstr = LTRIM$(RTRIM$(STR$(whatever)))
+  trimstr = LTRIM$(RTRIM$(STR$(whatever)))
 END FUNCTION 
 
 ```
@@ -60,17 +57,12 @@ END
 ```text
 
 3 
+
 ```
 
+## See Also
 
-
-
-*See also:*
 * [_SHELLHIDE](_SHELLHIDE) (function)
 * [SHELL](SHELL), [_HIDE](_HIDE)
 * [_CONSOLE](_CONSOLE), [$CONSOLE]($CONSOLE)
 * [SYSTEM](SYSTEM), [END](END)
-
-
-
-

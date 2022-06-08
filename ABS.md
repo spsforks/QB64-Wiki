@@ -43,7 +43,7 @@ PRINT a, b, c
 * [SGN](SGN), [DIM](DIM)
 * [_UNSIGNED](_UNSIGNED)
 * [_DEFINE](_DEFINE)
-* [Mathematical Operations](Mathematical Operations)
+* [Mathematical Operations](Mathematical-Operations)
 
 
 

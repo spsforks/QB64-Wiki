@@ -1,4 +1,4 @@
-The [OPEN](OPEN) statement is used to open a file or [OPEN_COM](OPEN_COM) serial communications port for program input or output.
+The [OPEN](OPEN) statement is used to open a file or [OPEN-COM](OPEN-COM) serial communications port for program input or output.
 
 
 ## Syntax
@@ -14,7 +14,7 @@ The [OPEN](OPEN) statement is used to open a file or [OPEN_COM](OPEN_COM) serial
 ## Parameter(s)
 
 * The fileName$ is a [STRING](STRING) variable or literal file name (path optional) in quotes. 
-* FOR mode can be: [APPEND](APPEND) (write to end), [BINARY](BINARY) (read/write), [INPUT (file mode)](INPUT (file mode)) (read), [OUTPUT](OUTPUT) (write new) or [RANDOM](RANDOM) (read/write).
+* FOR mode can be: [APPEND](APPEND) (write to end), [BINARY](BINARY) (read/write), [INPUT (file mode)](INPUT-(file-mode)) (read), [OUTPUT](OUTPUT) (write new) or [RANDOM](RANDOM) (read/write).
 * GW-BASIC's modeLetter$ is a [STRING](STRING) variable or the letter "A", "B", "I", "O" or "R" designating the OPEN modes above.
 * fileNumber& can be any **positive** [INTEGER](INTEGER) or [LONG](LONG) whole number value or an unused value determined by the [FREEFILE](FREEFILE) function.
 * [LEN](LEN) = or recordLength is optional to denote the RANDOM file record byte length (default = 128) or sequential (default = 512) load buffer.
