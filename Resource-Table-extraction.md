@@ -358,7 +358,7 @@ END SUB
 > Regards, Michael Calkins
 
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## Revision 2
 
@@ -773,7 +773,7 @@ http://en.wikipedia.org/wiki/BMP_file_format </center>
 > Regards, Michael Calkins
 
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## Revision 3
 
@@ -1163,7 +1163,7 @@ END SUB
 ```
 
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## Extract Icon
 
@@ -1512,7 +1512,7 @@ END FUNCTION
 >  Regards, Michael Calkins
 
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## Extract Resources
 
@@ -1901,7 +1901,7 @@ END SUB
 <sub>Code courtesy of Michael Calkins</sub>
 
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## References
 

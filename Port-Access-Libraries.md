@@ -140,7 +140,7 @@ Control: 12
 
 >  Use OUT32 with [OR](OR) to turn a bit on or [XOR](XOR) to change the current bit status. INP32 with [AND](AND) can determine if a bit is on or off(0).
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## COM Ports
 
@@ -183,7 +183,7 @@ LOOP
 <center>**Serial Communication Ports Require an External Serial Device or PC COM Port Connection to function!**</center>
 
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## Serial Communication Registers
 
@@ -430,7 +430,7 @@ This **Read Only** register monitors each bit each time read. Delta type bits de
 <center>**The Scratch Register (BaseAddress + 7)**</center>
 This unused register can be Read and Written to. You can use it to hold data for later use. It can also be used to test for a valid COM port with a device or loopback plug on it. To test a port, Read this register and try to change it. Then Read it again. If the second reading has changed, then the COM port is accessible and ready to use with a device. Normally a Scratch Register will always read 255 if there is no device connected! **COM port registers will not work if the port is not connected to a serial device!**
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## Reference
 

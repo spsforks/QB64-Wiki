@@ -54,7 +54,7 @@ Normally the number 1 device, it usually only has [[BUTTON](BUTTON)] controls. P
 
 ```
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## [MOUSE]
 
@@ -93,7 +93,7 @@ Normally the number 2 device, a mouse usually has [[AXIS](AXIS)], [[BUTTON](BUTT
 
 <center>WHEEL values can be added for a cumulative movement value when needed. Scroll reads can be off program screen.</center>
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## [CONTROLLER]
 
@@ -122,7 +122,7 @@ Normally device numbers 3 or higher, controllers may have any number of [[AXIS](
 >  [_LASTWHEEL](_LASTWHEEL)(device_number) will return the number of wheel controls a device has. 
 > : [_WHEEL](_WHEEL)(number) returns -1 when wheel is scrolled up or forward and 1 when wheel is scrolled down or backward.
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## Example
 
@@ -175,7 +175,7 @@ END
 >  Using [_MOUSEMOVEMENTX](_MOUSEMOVEMENTX) or Y will hide the mouse cursor and return relative mouse movements with the 1 and 2 [_WHEEL](_WHEEL) controls.
 <center>[_MOUSESHOW](_MOUSESHOW) will return the mouse coordinate reads to the [_AXIS](_AXIS) control after it is used!</center>
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## Reference
 

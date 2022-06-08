@@ -118,7 +118,7 @@ The [KEY n](KEY n) statement is used to assign a "soft key" string or a flag and
 <center>Use CHR$(0) for the first byte flag for non-function keys. You can substitute a literal [STRING](STRING) value to trap as shown in Example 2.</center>
 
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 
 ## Examples
@@ -244,7 +244,7 @@ RETURN
 >  *Explanation:* The Number Lock or Caps Lock keys ON may hinder extended key reads in QBasic but not QB64!
 
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 
 ## See Also

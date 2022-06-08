@@ -234,7 +234,7 @@ END
 * Character **253**(small 2) can be found as the first character byte of a [BSAVE](BSAVE)d image file opened in [BINARY](BINARY) mode.
 * Character **255** can be used as the NBSP(non-breaking space) character on web pages to fill in extra spaces.
 * Can be used to crudely encrypt a file so others cannot read it by shifting the code values. See [CHR$](CHR$) example 2.
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## [ASC](ASC) Codes
 
@@ -287,7 +287,7 @@ LOOP UNTIL K$ = CHR$(27) 'escape key press exits
 ```
 >  *Note:* In QB64 [ASC](ASC)(K$, 2) can read the second byte of the 2 byte code when [ASC](ASC)(K$) reads the first byte as 0.
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## Two Byte Codes
 
@@ -347,7 +347,7 @@ LOOP UNTIL K$ = CHR$(27) 'escape key press exits
 > In **QB64**, [CVI](CVI) can be used to get the [_KEYDOWN](_KEYDOWN) 2-byte code value. Example: **status <nowiki>=</nowiki> _KEYDOWN(CVI(CHR$(0) + "P"))**
 
 <center>**See [Scancodes](Scancodes) for other keyboard function keys.**</center>
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## Code Examples
 
@@ -477,7 +477,7 @@ END
 *Explanation:* The routine checks for a keypress and [SLEEP](SLEEP) guarantees that [ASC](ASC) will never read an empty string from INKEY$. When the keypress is determined to be two bytes ([ASC](ASC)(A$) = 0) the second SELECT CASE routine is used. You can even display non-keyboard extended characters. Just press Alt + numberpad code, release and press enter.
 
 > ::Note: Ctrl + letter keys will list the contol keys as normal codes. EX: Ctrl + G will BEEP (CHR$(7)).
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## References
 

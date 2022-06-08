@@ -107,7 +107,7 @@ DIM SHARED BMP(items%) AS BMPHEADER
 
 
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## XOR Image Data
 
@@ -179,7 +179,7 @@ DIM SHARED BMP(items%) AS BMPHEADER
 >  The color intensity of each 24 bit pixel is read as blue, green and red bytes. See the [Bitmaps](Bitmaps) page for more information.
 
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## AND Mask Data
 
@@ -217,7 +217,7 @@ END SUB
 ```
 >  *Note:* Icon widths that are not multiples of 32, such as 16 or 48, are padded 2 extra zero bytes to bring them to specifications.
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## Calculating Data Size
 
@@ -280,7 +280,7 @@ AND mask size: 64 bytes with a 16 bit padder.
 ```
 
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## References
 

@@ -181,7 +181,7 @@ NEXT i
 >  *Explanation:* When 5 bytes are put into a 4 byte LONG array value, the fifth byte goes into the next array element.
 
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 
 ## Bit Casting
@@ -219,7 +219,7 @@ PRINT bitcast##(swap_endian(Value&))
 ```
 
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 
 ## Fast Math
@@ -951,7 +951,7 @@ NEXT
 ```
 
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 
 ## See Also

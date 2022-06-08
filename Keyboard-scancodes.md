@@ -357,7 +357,7 @@ LOOP UNTIL x$ = CHR$(27) 'Escape key exit
 >  Note: Each key must be read individually or sequentially. For combinations use the QB64 [_KEYDOWN](_KEYDOWN) function.
 
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## Reference
 

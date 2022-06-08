@@ -94,7 +94,7 @@ The bitmap image is now stored in an [Arrays](Arrays) to [BSAVE](BSAVE) to a fil
 ```
 
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## Image Data
 
@@ -178,7 +178,7 @@ END
 > * **24 BPP:** minimum pixel widths of multiples of 4 (3 bytes/pixel = 12 bytes) per row. Padder bytes = 4 - ((width * 3) MOD 4)
 
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## One Bit:##  
 Since the pixel value is either on(white) or off(black), eight pixels can be stored in one byte of information. The total byte value determines which pixels are on or off. The **MSB**(highest)value is to the left and each pixel's on value decreases by an exponent of two down to a value of 1 for the **LSB**. However a minimum of 4 bytes of data must be used for each row of data, so a padder is used for other widths. The padder can be determined before the data is read using the following routine:
@@ -215,7 +215,7 @@ END SUB * *
 <sub>Code by Bob Seguin</sub>
 >  One bit pixels are also used to create [AND](AND) masks that can blend with a background for icons or cursors which are another form of bitmap. In fact, icons and cursors use a partial (40 byte) bitmap header! They just don't have the first 14 bytes of information. [PSET](PSET) can also use the B&W color values [_RGB](_RGB)(255, 255, 255) and [_RGB](_RGB)(0, 0, 0) when working in 4, 8 or 32 bit screen modes.
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## Four Bit:##  
 Pixels can use 16 colors in QBasic legacy [SCREEN (statement)](SCREEN (statement)) modes 7, 8, 9, 12 and 13. After the bitmap header, the color **palette** is read to set the color intensities as explained above. Then the individual pixel attributes are read from the **image data**. Each **pixel** uses half a byte of color **attribute** information. To determine the pixel's attribute, each "nibble" is read by dividing the byte's [ASCII](ASCII) value by 16 for the first pixel's value while the second pixel's value is found using [AND](AND) 15 as shown below: 
@@ -269,7 +269,7 @@ Each half of a byte of image pixel data stores a color attribute value from 0 to
 
 >  **QB64** can [GET (graphics statement)](GET (graphics statement)) a full Screen 12 image into one [BINARY](BINARY) file with [PUT](PUT) using an 80K [INTEGER](INTEGER) array instead of using 3 in QBasic!
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## Eight Bit:
 
@@ -308,7 +308,7 @@ END SUB
 ```
 <sub>Code by Bob Seguin</sub>
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## Twenty Four Bit:
 
@@ -354,7 +354,7 @@ END SUB
 
 <center>*See:* [Grey Scale Bitmaps](Grey Scale Bitmaps)</center>
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## Creating Bitmaps
 
@@ -379,7 +379,7 @@ END SUB
 * [Program ScreenShots](Program ScreenShots) (Member program for Qbasic's legacy screen modes)
 * [ThirtyTwoBit SUB](ThirtyTwoBit SUB) (QB64 32 bit Image area to bitmap)
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## References
 

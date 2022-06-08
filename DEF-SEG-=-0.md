@@ -75,7 +75,7 @@ The following **DOS BIOS** information can be used on Windows 9x machines. Not n
 
 
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## HARDWARE
 
@@ -89,7 +89,7 @@ The following **DOS BIOS** information can be used on Windows 9x machines. Not n
 > :POKE (97),PEEK(97) AND 127 ' ENABLES PC/XT KEYBOARDS.
 
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## PRINTER
 
@@ -103,7 +103,7 @@ The following **DOS BIOS** information can be used on Windows 9x machines. Not n
 > :|  POKE 108, 240: POKE 109, 32: POKE 110,3: POKE 111,12 ' ENABLES CTRL-BRK.
 
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## DISK
 
@@ -219,7 +219,7 @@ PEEK (1043) + 256 * PEEK(1044) 'indicates the RAM installed in kilobytes
 OUT 1010, 12 'will turn off all drives
 
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## PORTS
 
@@ -361,7 +361,7 @@ You can use OUT Pn, m to write the character with ASCII value m to the serial
 
 
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## DISPLAY
 
@@ -521,7 +521,7 @@ Background color and palette selected by COLOR bg,fc :
 
 
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## KEYBOARD
 
@@ -632,7 +632,7 @@ To enable keyboard interrupts: OUT 33, 128.
 
 
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## OTHER
 
@@ -643,7 +643,7 @@ To enable keyboard interrupts: OUT 33, 128.
 
 
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 
 > :::::**SPEAKER &H61**
@@ -700,7 +700,7 @@ To enable keyboard interrupts: OUT 33, 128.
 > :::::NOTE: DEF SEG BASIC(A) MEMORY PORT ADDRESSES
 
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 
 > :::**PORT # | FUNCTION, DESCRIPTION OR COMMENTS FOR USE**
@@ -814,7 +814,7 @@ To enable keyboard interrupts: OUT 33, 128.
 
 
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## REFERENCE
 

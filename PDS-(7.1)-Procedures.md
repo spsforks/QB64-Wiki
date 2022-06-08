@@ -95,7 +95,7 @@ END
 >  *Note:* The currency value can be any [SINGLE](SINGLE), [DOUBLE](DOUBLE) or [_FLOAT](_FLOAT) floating decimal point value that will hold the range of values.
 
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## DIR$
 
@@ -150,7 +150,7 @@ END FUNCTION
 > *Explanation:* The function will verify that a file exists (even if it is empty) by returning it's name or it returns an empty string if no file exists. It can return a list of file names by using an empty string parameter("") after sending a wildcard spec to get the first file name. The number of file names found is returned by using the SHARED variable, **DIRCount%**. Unlike the PDS DIR$ function, **it MUST use an empty string parameter until QB64 supports optional parameters!** The function does NOT delete empty files.
 
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## References
 

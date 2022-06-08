@@ -41,7 +41,7 @@ The [COLOR](COLOR) statement is used to change the foreground and background col
 * Colors can be mixed by using [_BLEND](_BLEND) (default) in 32-bit screen modes. [_DONTBLEND](_DONTBLEND) disables blending.
 * **NOTE: Default 32-bit backgrounds are clear black or [_RGBA](_RGBA)(0, 0, 0, 0). Use [CLS](CLS) to make the black opaque.**
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 ## RGB Palette Intensities
 
@@ -110,7 +110,7 @@ COLOR 15 <nowiki>=</nowiki> &HFFFCFCFC      FC         FC         FC
 * Color port setting of red, green and blue intensities can be done in ascending order.
 * Color port attribute intensity values range from 0 to 63 (1/4 of the 32-bit values) in QBasic's legacy 4 and 8 bit screen modes.
 
-<p style="text-align: center">([#toc](#toc))</p>
+
 
 
 ## Example(s)
