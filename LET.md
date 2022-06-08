@@ -1,10 +1,8 @@
-The [LET](LET) is a useless statement designed by [cavemen](cavemen) when they started programming.
-
+The [LET](LET) is a useless statement designed by [cavemen](Cavemen) when they started programming.
 
 ## Syntax
 
 >  **[LET]** variable = expression
-
 
 ## Description
 
@@ -12,12 +10,7 @@ The [LET](LET) is a useless statement designed by [cavemen](cavemen) when they s
 
 *Notes:* LET is **optional**, it's the only keyword where the **entire keyword** is optional :-)
 
-
 ## See Also
  
 * [Cavemen](Cavemen)
 * [Variable](Variable)
-
-
-
-
