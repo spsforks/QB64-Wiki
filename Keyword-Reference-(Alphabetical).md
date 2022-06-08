@@ -7,7 +7,7 @@
 * [ABS](ABS) (function) converts any negative numerical value to a positive value.
 * [CALL ABSOLUTE](CALL-ABSOLUTE) (statement) is used to access computer interrupt registers.
 * [ACCESS](ACCESS) (file statement) sets the read and write access of a file when opened.
-* [ALIAS](ALIAS) (QB64 [DECLARE LIBRARY](DECLARE LIBRARY) statement) denotes the actual name of an imported [FUNCTION](FUNCTION) or [SUB](SUB) procedure.
+* [ALIAS](ALIAS) (QB64 [DECLARE LIBRARY](DECLARE-LIBRARY) statement) denotes the actual name of an imported [FUNCTION](FUNCTION) or [SUB](SUB) procedure.
 * [AND](AND) (logical operator) is used to compare two numerical values bitwise.
 * [AND (boolean)](AND-(boolean))  conditonal operator is used to include another evaluation in an [IF...THEN](IF...THEN) or [Boolean](Boolean) statement.
 * [APPEND](APPEND) (file mode) creates a new file or allows an existing file to have data added using [WRITE-(file-statement)](WRITE (file statement)) or [PRINT (file statement)](PRINT-(file-statement))
