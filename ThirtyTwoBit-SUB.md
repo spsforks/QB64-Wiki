@@ -1,4 +1,4 @@
-<center>** ThirtyTwoBit Screen Shot SUB for QB64 Screen and Image Handles**</center>
+** ThirtyTwoBit Screen Shot SUB for QB64 Screen and Image Handles**
 
 ## Syntax
 
@@ -132,7 +132,7 @@ END SUB
 
 ```
 
-<center>**This SUB procedure can also be [$INCLUDE]($INCLUDE) in a program!**</center>
+**This SUB procedure can also be [$INCLUDE]($INCLUDE) in a program!**
 
 ## See Also
 

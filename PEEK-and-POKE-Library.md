@@ -81,7 +81,7 @@ PRINT "0x" + HEX$(peekd~&(ptr + 9))
 END 
 
 ```
-<center>**Note: These functions and statements use a variable name reference pointer in memory instead of [DEF SEG](DEF SEG).**</center>
+**Note: These functions and statements use a variable name reference pointer in memory instead of [DEF SEG](DEF SEG).**
 
 
 ## See Also

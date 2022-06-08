@@ -1,4 +1,4 @@
-<center> **Creating Screenshot Bitmaps inside of your Programs**</center>
+ **Creating Screenshot Bitmaps inside of your Programs**
 
 
 *Syntax:* EightBit Minimum_Column%, Minimum_Row%, Maximum_Column%, Maximum_Row%, NewFileName$
@@ -10,7 +10,7 @@
 * FourBit SUB creates 4 BPP(16 color) and EightBit SUB creates 8 BPP(256 color) bitmaps.
 
 
-<center>**QB64 Custom Screens**</center>
+**QB64 Custom Screens**
 * See the [ThirtyTwoBit SUB](ThirtyTwoBit SUB) routine to create QB64 screenshots of [_NEWIMAGE](_NEWIMAGE) screen pages or copy images loaded using  [_LOADIMAGE](_LOADIMAGE). Creates 256 or 24/32 bit color bitmaps using the QB64 image and page handles.
 
 
@@ -247,7 +247,7 @@ END SUB
 
 
 ```
-<center>**If full code is not displayed, refresh your browser!**</center>
+**If full code is not displayed, refresh your browser!**
 
 
 ## See Example(s)

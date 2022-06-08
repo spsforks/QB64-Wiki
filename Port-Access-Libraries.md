@@ -1,19 +1,19 @@
 [INP](INP) and [OUT](OUT) are often used to access port registers, but in QB64 this capability is limited so here are some DLL Libraries:
 
 
-<center>**INPOUT32.DLL**</center>
+**INPOUT32.DLL**
 > The following download links have the DLL and sample BAS file to show how it works with an LPT (parallel) port at &H378(888):
-<center>**[http://dl.dropbox.com/u/8440706/inpout32.zip Download InpOut32.DLL and example program]**</center>
+**[http://dl.dropbox.com/u/8440706/inpout32.zip Download InpOut32.DLL and example program]**
 
-<center>**[http://www.highrez.co.uk/scripts/download.asp?package=InpOutBinaries Download of 32 and 64 bit versions of INPOUT]**</center>
+**[http://www.highrez.co.uk/scripts/download.asp?package=InpOutBinaries Download of 32 and 64 bit versions of INPOUT]**
 
-<center>**Note: QB64 requires all DLL files to either be with the program or in the C:\WINDOWS\SYSTEM32 or WOW folder!**</center>
+**Note: QB64 requires all DLL files to either be with the program or in the C:\WINDOWS\SYSTEM32 or WOW folder!**
 
 
 ## LPT Ports
 
 
-<center>**Parallel Ports do Not Require an External LPT Device Connection to Function.**</center>
+**Parallel Ports do Not Require an External LPT Device Connection to Function.**
 
 
 > *Example 1:* Reading the Parallel Port Data, Status and Control register settings before and after reversing it.
@@ -68,12 +68,12 @@ Control: 12
 
 ```
 
-<center>[http://i301.photobucket.com/albums/nn53/burger2227/Inpout32.gif Screenshot of demo without a printer on the port]</center>
+[http://i301.photobucket.com/albums/nn53/burger2227/Inpout32.gif Screenshot of demo without a printer on the port]
 
 
 ## Parallel Port Registers
 
-<center>*Note:* The normal LPT1 base port is **&H378**(888), but it could also be **&H278**(632) or **&H3BC**(956).</center>
+*Note:* The normal LPT1 base port is **&H378**(888), but it could also be **&H278**(632) or **&H3BC**(956).
 
 ```text
 
@@ -91,51 +91,51 @@ Control: 12
 ```
 
 
-<center>**[https://www.google.com/search?q=LPT+pinout&biw=1209&bih=569&tbm=isch&imgil=NfwoAN_aS0iIbM:;_8oZPMerY-hDtM;http://www.firewall.cx/networking-topics/cabling-utp-fibre/120-network-parallel-cable.html&source=iu&pf=m&fir=NfwoAN_aS0iIbM:,_8oZPMerY-hDtM,_&usg=__9NooKAtd0Kyj3aYOxNGvzhfYryk=&ved=0ahUKEwjYjY6JyrPLAhXMdT4KHfhNBo4QyjcIJw&ei=eRPgVpjtCczr-QH4m5nwCA#imgrc=xZhuzmkJ7DEvbM: Parallel Port Pinout]**</center>
+**[https://www.google.com/search?q=LPT+pinout&biw=1209&bih=569&tbm=isch&imgil=NfwoAN_aS0iIbM:;_8oZPMerY-hDtM;http://www.firewall.cx/networking-topics/cabling-utp-fibre/120-network-parallel-cable.html&source=iu&pf=m&fir=NfwoAN_aS0iIbM:,_8oZPMerY-hDtM,_&usg=__9NooKAtd0Kyj3aYOxNGvzhfYryk=&ved=0ahUKEwjYjY6JyrPLAhXMdT4KHfhNBo4QyjcIJw&ei=eRPgVpjtCczr-QH4m5nwCA#imgrc=xZhuzmkJ7DEvbM: Parallel Port Pinout]**
 
 >  **DO NOT RUN HIGH CURRENT DEVICES with the 5 volt DC output! Use [http://en.wikipedia.org/wiki/Opto-isolator opto-isolators!] with a separate power supply.**
 > : **Use appropriate grounding between devices with the 8 ground pins(green in Pinout diagram) provided!**
 
 
-<center>**Data Register (BaseAddress)**</center>
+**Data Register (BaseAddress)**
 >  **Read or Write** in normal operation.  D0 to D7 data byte values from 0 to 255 can be converted to [ASCII](ASCII) characters in a device. Setting the byte value can turn certain pins on or off to control switching devices. **Read only** to read input in reverse mode set by C5 bit on.
-<center>**Software control in normal output mode. Data pin voltages can be set to 0 or 5 volts DC in Reverse mode only!**</center>
+**Software control in normal output mode. Data pin voltages can be set to 0 or 5 volts DC in Reverse mode only!**
 
 
 > :* Pin [_BIT](_BIT) values on: **D0**(+ 1), **D1**(+ 2), **D2**(+ 4), **D3**(+ 8), **D4**(+ 16), **D5**(+ 32), **D6**(+ 64), **D7**(+ 128)
 
-<center>**Note:** The Data port will be in normal output mode and set to 255 with all pins on at startup or reboot!</center>
-<center>Reverse read only mode may set all byte values to 0 or 255 if all pins are held high by the port for pull down input.</center>
+**Note:** The Data port will be in normal output mode and set to 255 with all pins on at startup or reboot!
+Reverse read only mode may set all byte values to 0 or 255 if all pins are held high by the port for pull down input.
 
 
-<center>**Status Register (BaseAddress + 1)**</center>
+**Status Register (BaseAddress + 1)**
 > **Read only!** Register normally used to **monitor the status of a printer or other device that is connected to the parallel port**. Pins S3 to S6 are held high by resistors so that it will read 120(or 127) when nothing is connected to the pins. A device can manipulate the read only status port value by grounding certain pins. When 5 volts is fed to a pin, bit will stay on. S7 is inverted so that it adds 128 to the port value when it is grounded. Otherwise S7 is 0 by default. S0, the timeout bit, can be reset off by software when set by EPP mode. Bits S1 and S2 are not used. **If the port reads 255 the parallel port is not installed.**
-<center>**Pin voltages can be set to 0 or 5 volts DC by chip devices or grounding switches to turn bits 3 to 6 off or bit 7 on.</center>
+**Pin voltages can be set to 0 or 5 volts DC by chip devices or grounding switches to turn bits 3 to 6 off or bit 7 on.
 > :* **S0** Low can be set in EPP mode timeout only(normally off). **INP32**(889) [AND](AND) 1 = 1 when bit is on **(no pin)**
 > :* **S3** Low for error, offline or paper end(normally on). **INP32**(889) [AND](AND) 8 = 8 when bit is on, pin is high
 > :* **S4** High for printer selected(normally on). **INP32**(889) [AND](AND) 16 = 16 when bit is on, pin is high
 > :* **S5** High for out of paper(normally on). **INP32**(889) [AND](AND) 32 = 32 when bit is on, pin is high
 > :* **S6** Low for Acknowledge(normally on). **INP32**(889) [AND](AND) 64 = 64 when bit is on, pin is high
 > :* **S7** High for busy, offline, error.(normally off) **INP32**(889) [AND](AND) 128 = 128 when bit is on, pin is pulled low
-<center>**Bit S0 has no pin and can be set at a timeout or reset to 0 by software in EPP mode only.**</center>
-<center>**Pin S7 is inverted so that a low pin signal turns the bit on.**</center>
+**Bit S0 has no pin and can be set at a timeout or reset to 0 by software in EPP mode only.**
+**Pin S7 is inverted so that a low pin signal turns the bit on.**
 
 
 
-<center>4 bit binary data can be read using pins S3 to S6. The port byte value can be divided by 8 to get the decimal values 0 to 15.</center>
+4 bit binary data can be read using pins S3 to S6. The port byte value can be divided by 8 to get the decimal values 0 to 15.
 
 
-<center>**Control Register (BaseAddress + 2)**</center>
+**Control Register (BaseAddress + 2)**
 >  **Read or Write.** Register is used to send messages to a printer or other device that is connected to the port. Usually the port sets itself to read 12(C2 and C3 on) after about 30 seconds. The C0, C1, and C3 pins are inverted while C2 is not. Inverted pins are set on when a bit is set low(off). C4 and C5 have no pins, but can be set internally by a program. Setting C4(16) can turn off the IRQ interrupt. When C5 is on(32) the Data port is reversed to read data sent from a device.
-<center>**WARNING! Software or port hardware controls the port. Do NOT attempt to change pin voltages!**</center>
+**WARNING! Software or port hardware controls the port. Do NOT attempt to change pin voltages!**
 > :* **C0** Low(bit on) pulse strobe data sent.(normally off) **OUT32** 890, **INP32**(890) [OR](OR) 1 turns bit on, pin low
 > :* **C1** Low(bit on) linefeed or auto feed.(normally off) **OUT32** 890, **INP32**(890) [OR](OR) 2 turns bit on, pin low
 > :* **C2** Low(bit off) pulse Initiate.(normally on) **OUT32** 890, **INP32**(890) [OR](OR) 4 turns bit on, pin high
 > :* **C3** Low(bit on) printer select in.(normally on) **OUT32** 890, **INP32**(890) [OR](OR) 8 turns bit on, pin low
 > :* **C4** High(bit on) IRQ interrupt off(normally off). **OUT32** 890, **INP32**(890) [OR](OR) 16 turns bit on **(no pin)**
 > :* **C5** High(bit on) reverse data port for input read only(normally off). **OUT32** 890, **INP32**(890) [OR](OR) 32 turns bit on **(no pin)**
-<center>**Red pin numbers are inverted so that bits on set corresponding output pins low and bits off set pins high.**</center>
-<center>**Bits C4 and C5 designate internal(no pin) software enabled control port register bits**</center>
+**Red pin numbers are inverted so that bits on set corresponding output pins low and bits off set pins high.**
+**Bits C4 and C5 designate internal(no pin) software enabled control port register bits**
 
 
 >  Use OUT32 with [OR](OR) to turn a bit on or [XOR](XOR) to change the current bit status. INP32 with [AND](AND) can determine if a bit is on or off(0).
@@ -144,7 +144,7 @@ Control: 12
 
 ## COM Ports
 
-<center>**Serial Communication Ports Require an External Serial Device or PC COM Port Connection to function!**</center>
+**Serial Communication Ports Require an External Serial Device or PC COM Port Connection to function!**
 
 
 >  *Example 2:* A 3 wire Teletype program that allows two computers to serially communicate through each keyboard:
@@ -180,7 +180,7 @@ LOOP
 >  Possible port addresses are &H3F8(1016) = COM1, &H2F8(760) = COM2, &H3E8(1000) = COM3 and &H2E8(744) = COM 4.
 >  Connect each COM port transmit line to the opposing receive line on the other PC. Connect both COM grounds together.
 
-<center>**Serial Communication Ports Require an External Serial Device or PC COM Port Connection to function!**</center>
+**Serial Communication Ports Require an External Serial Device or PC COM Port Connection to function!**
 
 
 
@@ -188,7 +188,7 @@ LOOP
 ## Serial Communication Registers
 
 
-<center>Two PC's can communicate between the COM ports using a [http://www.lammertbies.nl/comm/info/RS-232_null_modem.html Null modem cable].</center>
+Two PC's can communicate between the COM ports using a [http://www.lammertbies.nl/comm/info/RS-232_null_modem.html Null modem cable].
 
 ```text
 
@@ -206,13 +206,13 @@ LOOP
 ```
 
 
-<center>**[https://www.google.com/search?q=com+port+pinout&hl=en&prmd=imvns&tbm=isch&tbo=u&source=univ&sa=X&ei=6OivT5arEcjq0gG87riHDA&sqi=2&ved=0CHwQsAQ&biw=970&bih=610 Serial Communication Port Pinouts]**</center>
+**[https://www.google.com/search?q=com+port+pinout&hl=en&prmd=imvns&tbm=isch&tbo=u&source=univ&sa=X&ei=6OivT5arEcjq0gG87riHDA&sqi=2&ved=0CHwQsAQ&biw=970&bih=610 Serial Communication Port Pinouts]**
 
-<center> DCD = Data Carrier Detect, RXD = Receive Data, TXD = Transmit Data, DTR = Data Terminal Ready, GND = Signal Ground</center>
-<center> DSR = Data Set Ready, RTS = Request to Send, CTS = Clear to Send, RI = Ring Indicator</center>
+ DCD = Data Carrier Detect, RXD = Receive Data, TXD = Transmit Data, DTR = Data Terminal Ready, GND = Signal Ground
+ DSR = Data Set Ready, RTS = Request to Send, CTS = Clear to Send, RI = Ring Indicator
 
 
-<center>**Serial Communication Ports Require an External Serial Device or PC COM Port Connection to function!**</center>
+**Serial Communication Ports Require an External Serial Device or PC COM Port Connection to function!**
 A Serial port can use extra Registers due to the use of a UART chip. When the Base Address is Read, the chip supplies the data from the FIFO(First In First Out) Receive Buffer. When Written to, it sends data to the FIFO Transmit Buffer. If the DLA Bit is On in the LCR register, then the UART base register accepts the Divisor Latch Low Byte data.
 
 ```text
@@ -237,11 +237,11 @@ A Serial port can use extra Registers due to the use of a UART chip. When the Ba
 
 Also there are two Base + 1 Registers. The IER and the DL High Byte. The two Base + 2 Registers (IIR & FCR) act similar to the Base Buffers. The UART chips also use FIFO buffers to receive and send data at the same time. The most common UARTS used today are the 16550 series chips. You can add the bit values to determine the bits you want Written or Read in each register!
 
-<center>**The COM Data Register (BaseAddress)**</center>
+**The COM Data Register (BaseAddress)**
 Like the bi-directional Parallel port, the COM Base Address can send data to a device and also can receive data at the same time. It accomplishes this by using two FIFO (First In First Out) buffers. To send Data you can use [PRINT (file statement)](PRINT (file statement)) or [OUT](OUT) a value to the Base Address. To read data you can use [INP](INP)(baseaddress) or use [OPEN COM](OPEN COM) with [INPUT$](INPUT$) (bytes, [OPEN COM](OPEN COM)) while [LOC](LOC)([OPEN COM](OPEN COM)) checks for data in the receive buffer. The Base can also set the **Divisor Latch Low Byte**, which can also help set the baud rate of the port.
 
 
-<center>**Interrupt Enable Register (BaseAddress + 1)**</center>
+**Interrupt Enable Register (BaseAddress + 1)**
 This register is fairly simple to use. The only bits used are 0 to 3. You simply set a bit high to enable the appropriate Interrupt.
 
 ```text
@@ -257,7 +257,7 @@ This register is fairly simple to use. The only bits used are 0 to 3. You simply
 Once the Interrupts are set, you can monitor the port Interrupts in the Read only **IIR** Interrupt Identification Register in a COM program routine. You just add the bit on values to use more than one Interrupt Enable and use OUT BaseAdd + 1, bitstotal. The IIR will tell if an Interrupt occurs! The IER register also can be read to find the present settings with INP. Like the Base, the IER is used in DLAB Mode for the Divisor High Byte."
 			
 
-<center>**Interrupt Identification Register (BaseAddress + 2)**</center>
+**Interrupt Identification Register (BaseAddress + 2)**
 This register is a **Read Only** Register! It monitors the FIFO status and Interrupts sent to the CPU. The Interrupts are enabled in the IER. You can use INP to read it using INP(BaseAddress + 2) AND 2 ^ bitnumber to see if a bit is on or off. The FIFO and Interrupt Status read 2 bits as below:
 
 ```text
@@ -283,10 +283,10 @@ This register is a **Read Only** Register! It monitors the FIFO status and Inter
 ```
 
 For FIFO status, just compare the INP status with 192 using AND as below:
-<center>IF (Inp32(BaseAdd% + 2) AND 192) THEN PRINT "FIFO Enabled"</center>
+IF (Inp32(BaseAdd% + 2) AND 192) THEN PRINT "FIFO Enabled"
 		       
 
-<center>**First In / First Out Control Register (BaseAddress + 2)**</center>
+**First In / First Out Control Register (BaseAddress + 2)**
 This Register also uses the BaseAddress + 2 address, but it is **Write Only**! You can NOT try to Read it! That just returns data from the **IIR** Register ONLY! The **FCR** register is just used to set Interrupt triggers and clear the data from the Recieve or Transmit buffers of 16550 or higher UARTS.
 
 ```text
@@ -311,7 +311,7 @@ This Register also uses the BaseAddress + 2 address, but it is **Write Only**! Y
 If the trigger bytes are found in the FIFO buffer, then the Data Receive Available Interrupt in the IIR will trigger. Bits 1 and 2 clear the buffer when set hi. They will automatically reset to 0 when done. Data is lost when cleared or if bit 0 is set to 0. Be aware of this and use carefully! This register is only normally used to clear the buffers and enable them. The 0 bit must be set to 1 or both FIFO buffers are disabled! Reset it!
 		   
 
-<center>**Line Control Register (BaseAddress + 3)**</center>
+**Line Control Register (BaseAddress + 3)**
 This Register can determine the Word Length, Stop Bits, Parity and help set the Baud Rate of the Serial Port. For instance, OUT (BaseAddress + 3), 3 will set the Word Length to 8 with 1 Stop Bit and No Parity. Similar to OPEN COM, but you can also open COM ports other than COM1 or COM2 in this register. **Be sure to Write a Register value less than 128 after the DLAB baud is set!**
 
 ```text
@@ -340,7 +340,7 @@ This Register can determine the Word Length, Stop Bits, Parity and help set the 
 
 
 
-<center>**The Divisor Latch Access Bit and Setting the Baud Rate**</center>
+**The Divisor Latch Access Bit and Setting the Baud Rate**
 You can set the Baud Rate first by sending 128 to the LCR with OUT. This forces the **Base** and **IER** Registers to accept the Divisor Latch Low and High Byte values respectively. In DLAB mode both registers can be written to or read to find the current Divisor byte settings! The Divisor value is the number that 115200 must be divided by to attain the baud rate:
 
 ```text
@@ -373,7 +373,7 @@ The divisor is based on 115,200 as the maximum Baud Rate. Speeds above 300 just 
 >  *Explanation:* Setting the LCR register's value below 128 resets it from DLAB mode to normal Base Buffer and **IER** operations
 
 		    
-<center>**Modem Control Register (BaseAddress + 4)**</center>
+**Modem Control Register (BaseAddress + 4)**
 Like the LCR Register, it is Read and Write! Bit 4 sets Loopback Mode that sends TD data back to RD buffer. Bits 1 and 0 force RTS and DTR signals. The Auxiliary Outputs are seldom used anymore! Just set those bits to 0.
 
 ```text
@@ -389,7 +389,7 @@ Like the LCR Register, it is Read and Write! Bit 4 sets Loopback Mode that sends
 
 
 
-<center>**Line Status Register (BaseAddress + 5)**</center>
+**Line Status Register (BaseAddress + 5)**
 **Read Only** status register used to detect data buffer activity and errors. If ANY data error occurs, bit 7 will be turned on. Specific errors are also listed. Normally only Bit 0 is read, as these errors do not stop the port! Use this register to check for transfer errors.
 
 ```text
@@ -408,7 +408,7 @@ Like the LCR Register, it is Read and Write! Bit 4 sets Loopback Mode that sends
 
 
 				 
-<center>**Modem Status Register (BaseAddress + 6)**</center>
+**Modem Status Register (BaseAddress + 6)**
 This **Read Only** register monitors each bit each time read. Delta type bits denote any changes since the last time read. Bit 2 On indicates that there was a change from low to high on the RI line since the last read. Often used in modem data transfers!
 
 ```text
@@ -427,7 +427,7 @@ This **Read Only** register monitors each bit each time read. Delta type bits de
 
 
 
-<center>**The Scratch Register (BaseAddress + 7)**</center>
+**The Scratch Register (BaseAddress + 7)**
 This unused register can be Read and Written to. You can use it to hold data for later use. It can also be used to test for a valid COM port with a device or loopback plug on it. To test a port, Read this register and try to change it. Then Read it again. If the second reading has changed, then the COM port is accessible and ready to use with a device. Normally a Scratch Register will always read 255 if there is no device connected! **COM port registers will not work if the port is not connected to a serial device!**
 
 

@@ -42,10 +42,10 @@
 Template:RelationalTable
 
 
-<center> When evaluating a number value, no IF value > 0 operation is necessary for values not 0. Use: IF value THEN </center>
+ When evaluating a number value, no IF value > 0 operation is necessary for values not 0. Use: IF value THEN 
 
 
-<center>**Boolean Conditional Operators:**</center>
+**Boolean Conditional Operators:**
 
 
 > ::::* [AND (boolean)](AND (boolean)) can be used to add extra conditions to a boolean statement evaluation.
@@ -53,13 +53,13 @@ Template:RelationalTable
 > ::::* Parenthesis are allowed inside of boolean statements to clarify an evaluation.
 
 
-<center>**Mathematical Logical operators:**</center>
-<center>* Truth table of the 6 BASIC Logical Operators:</center>
+**Mathematical Logical operators:**
+* Truth table of the 6 BASIC Logical Operators:
 
 
 Template:LogicalTruthTable
 
-<center>* **Note that Basic returns -1 for True and 0 for False.**</center>
+* **Note that Basic returns -1 for True and 0 for False.**
 
 
 ## Example(s)
@@ -134,7 +134,7 @@ IF Key$ >= CHR$(65) AND Key$ <= CHR$(90) THEN PRINT "A to Z"
 >  *Explanation:* Long [STRING](STRING) expression values are compared by their cumulative [ASCII](ASCII) code values.
 
 
-<center>**QBasic decimal point value comparison errors**</center>
+**QBasic decimal point value comparison errors**
 * Floating decimal point numerical values may not be compared as exactly the same value. QB64 will compare them the same.
 > ## Example(s)
  QBasic would print *unequal* in the IF comparison code below even though it is exactly the same value printed.

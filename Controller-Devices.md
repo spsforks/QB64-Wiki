@@ -70,7 +70,7 @@ Normally the number 2 device, a mouse usually has [[AXIS](AXIS)], [[BUTTON](BUTT
 > :: [_AXIS](_AXIS)(1) returns the horizontal axis position in normal movement mode only.
 > :: [_AXIS](_AXIS)(2) returns the vertical axis position in normal movement mode only. 
 
-<center>Program window pointer AXIS values change from 0 at the center to -1 or + 1 values at the window borders.</center>
+Program window pointer AXIS values change from 0 at the center to -1 or + 1 values at the window borders.
 
 
 >  [_LASTBUTTON](_LASTBUTTON)(2) will normally return 3 buttons when mouse has a center or scroll wheel button.
@@ -80,7 +80,7 @@ Normally the number 2 device, a mouse usually has [[AXIS](AXIS)], [[BUTTON](BUTT
 > :: [_BUTTON](_BUTTON)(2) returns Center button presses like [_MOUSEBUTTON](_MOUSEBUTTON)(3) and [_BUTTONCHANGE](_BUTTONCHANGE)(2) returns events.
 > :: [_BUTTON](_BUTTON)(3) returns Right button presses like [_MOUSEBUTTON](_MOUSEBUTTON)(2) and [_BUTTONCHANGE](_BUTTONCHANGE)(3) returns events.
 
-<center>**Note that middle _BUTTON(2) is equivalent to [_MOUSEBUTTON](_MOUSEBUTTON)(3)!**</center>
+**Note that middle _BUTTON(2) is equivalent to [_MOUSEBUTTON](_MOUSEBUTTON)(3)!**
 
 
 >  [_LASTWHEEL](_LASTWHEEL)(2) will normally return 3 wheels where the first two return relative coordinate movements when set. 
@@ -89,9 +89,9 @@ Normally the number 2 device, a mouse usually has [[AXIS](AXIS)], [[BUTTON](BUTT
 > :: [_WHEEL](_WHEEL)(2) returns relative vertical pixel moves after [_MOUSEMOVEMENTX](_MOUSEMOVEMENTX) or Y enables relative mode.
 > :: [_WHEEL](_WHEEL)(3) returns -1 when scroll wheel is moved forward or up and 1 when scrolled backward or down.
 
-<center>Relative WHEEL move values are negative when mouse is moved up or left. Positive when mouse is moved down or right.</center>
+Relative WHEEL move values are negative when mouse is moved up or left. Positive when mouse is moved down or right.
 
-<center>WHEEL values can be added for a cumulative movement value when needed. Scroll reads can be off program screen.</center>
+WHEEL values can be added for a cumulative movement value when needed. Scroll reads can be off program screen.
 
 
 
@@ -111,7 +111,7 @@ Normally device numbers 3 or higher, controllers may have any number of [[AXIS](
 > :: [_AXIS](_AXIS)(1) returns the horizontal axis position.
 > :: [_AXIS](_AXIS)(2) returns the vertical axis position. 
 
-<center>**Note: Some slide controls may only have one axis!**</center>
+**Note: Some slide controls may only have one axis!**
 
 
 >  [_LASTBUTTON](_LASTBUTTON)(device_number) will return the number of buttons or triggers a device has.
@@ -173,7 +173,7 @@ END
 <sub>Code by Ted Weissgerber</sub>
 > : *Note:* When there is no device control to read, a [FOR...NEXT](FOR...NEXT) n = 1 TO 0 loop will not run thus avoiding a control function read error.
 >  Using [_MOUSEMOVEMENTX](_MOUSEMOVEMENTX) or Y will hide the mouse cursor and return relative mouse movements with the 1 and 2 [_WHEEL](_WHEEL) controls.
-<center>[_MOUSESHOW](_MOUSESHOW) will return the mouse coordinate reads to the [_AXIS](_AXIS) control after it is used!</center>
+[_MOUSESHOW](_MOUSESHOW) will return the mouse coordinate reads to the [_AXIS](_AXIS) control after it is used!
 
 
 

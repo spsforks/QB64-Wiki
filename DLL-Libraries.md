@@ -27,7 +27,7 @@ PRINT result
 * [Port Access Libraries](Port Access Libraries) (COM or LPT)
 
 
-<center>**Note: QB64 requires all DLL files to either be with the program or in the C:\WINDOWS\SYSTEM32 folder!**</center>
+**Note: QB64 requires all DLL files to either be with the program or in the C:\WINDOWS\SYSTEM32 folder!**
 
 
 

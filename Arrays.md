@@ -138,7 +138,7 @@ NOTE: If [OPTION BASE](OPTION BASE) 1 is used change the 0 to 1. The array start
 
 Multiple dimensions are possible to create tables of values. QuickBASIC can use up to 60 dimensions. In **QB64** the number of dimensions possible depends on your system memory (a lot more than 60 dimensions). Array data can be saved and restored using file data. 
 
-<center>**Otherwise the data is lost when a program closes.**</center>
+**Otherwise the data is lost when a program closes.**
 
 ```text
 
@@ -247,7 +247,7 @@ END
 
 ```
 
-<center>**Note: QB64 can [GET (graphics statement)](GET (graphics statement)) the entire SCREEN 12 area into one array!**</center>
+**Note: QB64 can [GET (graphics statement)](GET (graphics statement)) the entire SCREEN 12 area into one array!**
 
 See also: [Creating Sprite Masks](Creating_Sprite_Masks)
 
@@ -286,4 +286,4 @@ END FUNCTION
 
 [_PRESERVE](_PRESERVE) can preserve data when [REDIM](REDIM) or [$DYNAMIC]($DYNAMIC) is used to create dynamic arrays. The current array data can be preserved while changing the array element size. Increasing the size will preserve data inside of existing indices in the resized array. If the size is decreased, only the existing indices values will be preserved. **The array [TYPE](TYPE) and number of array dimensions cannot be changed!**
 
-<center>**REDIM _PRESERVE ArrayName(1 TO 100)**</center>
+**REDIM _PRESERVE ArrayName(1 TO 100)**

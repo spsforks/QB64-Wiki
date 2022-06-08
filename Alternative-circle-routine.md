@@ -1,4 +1,4 @@
-**Circle.BI Include file or [SUB](SUB) to use when using [PAINT](PAINT) with pie charts or arc slices:**</center>
+**Circle.BI Include file or [SUB](SUB) to use when using [PAINT](PAINT) with pie charts or arc slices:**
 
 
 ```text

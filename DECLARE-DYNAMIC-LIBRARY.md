@@ -98,8 +98,8 @@ END FUNCTION
 >  **Note:** SUB procedures using CUSTOMTYPE LIBRARY API procedures inside may error. Try DYNAMIC with "KERNEL32".
 
 
-<center>**QB64 version 1.000 and up produce standalone executables. External DLL files must be distributed with your program.**</center>
-<center>**Note: QB64 versions prior to 1.000 require all default DLL files to either be with the program or in the C:\WINDOWS\SYSTEM32 folder.**</center>
+**QB64 version 1.000 and up produce standalone executables. External DLL files must be distributed with your program.**
+**Note: QB64 versions prior to 1.000 require all default DLL files to either be with the program or in the C:\WINDOWS\SYSTEM32 folder.**
 
 
 ## See Also

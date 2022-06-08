@@ -30,7 +30,7 @@ The [FILES](FILES) statement is used to print a list of files in the current dir
 FILES "*.BAS"
 
 ```
-<!-- broken link: <center>**[http://i301.photobucket.com/albums/nn53/burger2227/FILESss.jpg Screenshot shows only the end of a long list of files]**</center> -->
+<!-- broken link: **[http://i301.photobucket.com/albums/nn53/burger2227/FILESss.jpg Screenshot shows only the end of a long list of files]** -->
 
 
 <!-- function obsoleted by _FILEEXISTS; function doesn't use the FILES statement and is not relevant in this context; may be moved to an exclusive page if desired;

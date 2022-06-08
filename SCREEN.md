@@ -88,7 +88,7 @@ The [SCREEN](SCREEN) statement sets the video display mode and size of the progr
 
 * **[SCREEN](SCREEN) [_LOADIMAGE](_LOADIMAGE)**(imagehandle&, colors) can load a program screen of an image file handle in **QB64** using 256 or 32 bit. 
 
-<center>**QB64 can use page flipping with any number of pages in any screen mode!**</center>
+**QB64 can use page flipping with any number of pages in any screen mode!**
 
 ## Text and Graphics
 

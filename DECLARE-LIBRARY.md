@@ -68,7 +68,7 @@ END SUB
 <sub>Code by Galleon</sub>
 > *Explanation:* The SDL Library is included and loaded with QB64 versions prior to 1.000, so these procedures are directly available for use. 
 
-<center>**Using [ALIAS](ALIAS) to create a program SUB or FUNCTION** using **QB64 SDL ONLY**</center>
+**Using [ALIAS](ALIAS) to create a program SUB or FUNCTION** using **QB64 SDL ONLY**
 
 ```vb
 
@@ -100,8 +100,8 @@ END DECLARE
 >  **Note: What libraries are or aren't automatically used in the linking process is not formally defined, nor is it guaranteed to stay that way in future versions of QB64.**
 
 
-<center>**QB64 version 1.000 and up produce standalone executables. External DLL files must be distributed with your program.**</center>
-<center>**Note: QB64 versions prior to 1.000 require all default DLL files to either be with the program or in the C:\WINDOWS\SYSTEM32 folder.**</center>
+**QB64 version 1.000 and up produce standalone executables. External DLL files must be distributed with your program.**
+**Note: QB64 versions prior to 1.000 require all default DLL files to either be with the program or in the C:\WINDOWS\SYSTEM32 folder.**
 
 
 ## See Also

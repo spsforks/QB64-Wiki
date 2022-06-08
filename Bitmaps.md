@@ -1,4 +1,4 @@
-<center>**Bitmaps** are image files with the .BMP file name extension.</center>
+**Bitmaps** are image files with the .BMP file name extension.
 
 {| align="right"
   | __TOC__
@@ -126,14 +126,14 @@ The bitmap image is now stored in an [Arrays](Arrays) to [BSAVE](BSAVE) to a fil
 
 ```
  
-<center>**Bits Per Pixel (BPP)**</center>
+**Bits Per Pixel (BPP)**
 BPP returns **1 bit**(Black and white), **4 bit**(16 colors), **8 bit**(256 colors) or **24 bit**(16 million colors) for each pixel. In QBasic 24 bit can only be in greyscale, but QB64 can display them as True Color. 24 bit is also often referred to as 32 bit, but each pixel uses three bytes of information for the Red, Green and Blue color intensity settings. Intensity settings are read as [ASCII](ASCII) characters using [ASC](ASC).
 
 
-<center>**Palette Data (4 and 8 Bit Only)**</center>
+**Palette Data (4 and 8 Bit Only)**
 * **Attribute** color intensities for **4** and **8 BPP** are set by the bitmap itself using the **Palette data** immediately following the bitmap header. The data is read as Blue, Green and Red color intensities with a one byte padder following each BGR setting. This is true for ALL Windows/OS2 bitmap color intensities including 24 bit, which reads the intensities directly from the **image pixel data**!
-<center>**The Four Bit Palette is 64 bytes and the Eight Bit is 1024 bytes. One Bit and 24/32 Bit have no palette data!**</center>
-<center>**Note: [_COPYPALETTE](_COPYPALETTE) may be required to adapt the [SCREEN](SCREEN) palette to the custom colors of the bitmap.</center>
+**The Four Bit Palette is 64 bytes and the Eight Bit is 1024 bytes. One Bit and 24/32 Bit have no palette data!**
+**Note: [_COPYPALETTE](_COPYPALETTE) may be required to adapt the [SCREEN](SCREEN) palette to the custom colors of the bitmap.
 
 
 >  Why BGR instead of RGB? Because the [LONG](LONG) [_RGBA32](_RGBA32) value with 0 [_ALPHA](_ALPHA) is written to a file as 4 [MKL$](MKL$) [ASCII](ASCII) characters.
@@ -162,15 +162,15 @@ END
 ```
 >  *Note:* 16 colors at 4 bytes each = 64 bytes. 256 colors at 4 bytes each = 1024 bytes in the palette data with [CHR$](CHR$)(0) spacers.
 
-<center>**Warning! Use [_UNSIGNED](_UNSIGNED) [LONG](LONG) when comparing [_RGB](_RGB) or [_RGB32](_RGB32) full [_ALPHA](_ALPHA) values with [POINT](POINT) values!**</center>
+**Warning! Use [_UNSIGNED](_UNSIGNED) [LONG](LONG) when comparing [_RGB](_RGB) or [_RGB32](_RGB32) full [_ALPHA](_ALPHA) values with [POINT](POINT) values!**
 
 
-<center>**Image Data**</center>
+**Image Data**
 * **Image data** starts immediately after the bitmap header with **One Bit** and **24 Bit** colors. Immediately after the palette data with **4 Bit** and **8 Bit** colors. Image pixel data is read starting with the data from the **BOTTOM** row of the image. This is another idiosyncrasy of the Windows/OS2 bitmap. The pixel columns thankfully are read left to right. You may notice the image being drawn from the bottom up in QBasic. The size of the data in a 24 Bit bitmap is almost triple the size of an 8 Bit one!
-<center>**NOTE: The header Offset sets the position as the byte preceding the image data!**</center>
+**NOTE: The header Offset sets the position as the byte preceding the image data!**
 
 
-<center>**Image Data Padding Prevents Image Skewing**</center>
+**Image Data Padding Prevents Image Skewing**
 * Image data is **byte padded** for odd bitmap widths and a minimum pixel byte width as set below:
 > * **1 BPP:** minimum pixel widths of multiples of 32 (32 bits = 4 bytes) per row. Use: Padder bytes = 32 - (width MOD 32)
 > * **4 BPP:** minimum pixel widths of multiples of 8 (32 bits = 4 bytes) per row. Padder bytes = (8 - (width MOD 8)) \ 2
@@ -259,7 +259,7 @@ END SUB
 <sub>Code by Bob Seguin</sub>
 
 
-<center>**How Nibble values are read**</center>
+**How Nibble values are read**
 Each half of a byte of image pixel data stores a color attribute value from 0 to 15 or from 0000 to 1111 in binary with 1 designating that the bit is on. So when the two halves are added the [Binary](Binary) byte value for two white pixels totals 111111111 binary or 255. 
 
 > * To get the high nibble, divide the byte value by 16(&H10) using integer division: HiNibble = 255 \ 16 = 15
@@ -347,12 +347,12 @@ END SUB
 >  Why BGR instead of RGB? Because the [_RGB](_RGB) [LONG](LONG) value without [_ALPHA](_ALPHA) is written to the file backwards as [LEFT$](LEFT$)([MKL$](MKL$), 3).
 
 
-<center>**Converting to Grey Scale or Black and White**</center>
+**Converting to Grey Scale or Black and White**
 
-<center>The palettes can be set to greyscale by ignoring the actual **palette data** and/or averaging the pixel's RGB **image data**.</center>
-<center> It may also be necessary when trying to view 24 BPP bitmaps in SCREEN 12 or 13.</center>
+The palettes can be set to greyscale by ignoring the actual **palette data** and/or averaging the pixel's RGB **image data**.
+ It may also be necessary when trying to view 24 BPP bitmaps in SCREEN 12 or 13.
 
-<center>*See:* [Grey Scale Bitmaps](Grey Scale Bitmaps)</center>
+*See:* [Grey Scale Bitmaps](Grey Scale Bitmaps)
 
 
 

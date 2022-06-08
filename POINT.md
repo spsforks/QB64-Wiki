@@ -39,14 +39,14 @@ Graphic cursor position syntax:
 * **POINT cannot be used in SCREEN 0!** Use the [SCREEN (function)](SCREEN (function)) function to point text character codes and colors in SCREEN 0.
 
 
-<center>**POINT in QBasic Legacy Graphic SCREEN Modes:**</center>
+**POINT in QBasic Legacy Graphic SCREEN Modes:**
 * The [INTEGER](INTEGER) color attributes returned are limited by the number of colors in the legacy SCREEN mode used.
 * *Column* and *row* [INTEGER](INTEGER) parameters denote the graphic pixel coordinate to read.
 * In **QB64** the offscreen or off image value returned is -1. Use IF POINT(x, y) <> -1 THEN...
 * In QBasic the coordinates MUST be on the screen or an [ERROR Codes](ERROR Codes) will occur. 
 
 
-<center>**POINT in QB64 32 Bit Graphic [_NEWIMAGE](_NEWIMAGE) or [_LOADIMAGE](_LOADIMAGE) Modes:**</center>
+**POINT in QB64 32 Bit Graphic [_NEWIMAGE](_NEWIMAGE) or [_LOADIMAGE](_LOADIMAGE) Modes:**
 * Returns [_UNSIGNED](_UNSIGNED) [LONG](LONG) 32 bit color values. Use [_UNSIGNED](_UNSIGNED) values when you don't want negative values.
 *  **[_UNSIGNED](_UNSIGNED) [LONG](LONG) variables should be used when comparing POINT returns with [_RGB](_RGB) or [_RGB32](_RGB32) [_ALPHA](_ALPHA) bit values**
 * Convert 32 bit color values to RGB intensities(0 to 255) using the [_RED32](_RED32), [_GREEN32](_GREEN32) and [_BLUE32](_BLUE32) functions.

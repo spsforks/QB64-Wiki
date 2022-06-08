@@ -36,8 +36,8 @@
 ```
 
 
-<center>GO TO: [Keyboard_scancodes#INP_Scan_Codes](Keyboard_scancodes#INP_Scan_Codes), 
-[Keyboard_scancodes#ON_KEY_Events](Keyboard_scancodes#ON_KEY_Events),  [Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes](Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes), [Keyboard_scancodes#DEVICES_Button](Keyboard_scancodes#DEVICES_Button), [Keyboard_scancodes#Windows_Virtual_Codes](Keyboard_scancodes#Windows_Virtual_Codes)</center>
+GO TO: [Keyboard_scancodes#INP_Scan_Codes](Keyboard_scancodes#INP_Scan_Codes), 
+[Keyboard_scancodes#ON_KEY_Events](Keyboard_scancodes#ON_KEY_Events),  [Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes](Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes), [Keyboard_scancodes#DEVICES_Button](Keyboard_scancodes#DEVICES_Button), [Keyboard_scancodes#Windows_Virtual_Codes](Keyboard_scancodes#Windows_Virtual_Codes)
 
 ## INP and _CINP Scan Codes
 
@@ -70,10 +70,10 @@
 ```
 
 
-<center>[http://www.quadibloc.com/comp/scan.htm Keyboard Scan Codes]........... [http://www.win.tue.nl/~aeb/linux/kbd/scancodes.html Other Keyboards]</center>
+[http://www.quadibloc.com/comp/scan.htm Keyboard Scan Codes]........... [http://www.win.tue.nl/~aeb/linux/kbd/scancodes.html Other Keyboards]
 
 
-<center>GO TO:[Keyboard_scancodes#INKEY.24_Codes](Keyboard_scancodes#INKEY.24_Codes), [Keyboard_scancodes#ON_KEY_Events](Keyboard_scancodes#ON_KEY_Events), [Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes](Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes), [Keyboard_scancodes#DEVICES_Button](Keyboard_scancodes#DEVICES_Button), [Keyboard_scancodes#Windows_Virtual_Codes](Keyboard_scancodes#Windows_Virtual_Codes)</center>
+GO TO:[Keyboard_scancodes#INKEY.24_Codes](Keyboard_scancodes#INKEY.24_Codes), [Keyboard_scancodes#ON_KEY_Events](Keyboard_scancodes#ON_KEY_Events), [Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes](Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes), [Keyboard_scancodes#DEVICES_Button](Keyboard_scancodes#DEVICES_Button), [Keyboard_scancodes#Windows_Virtual_Codes](Keyboard_scancodes#Windows_Virtual_Codes)
 
 ## ON KEY Events
 
@@ -109,7 +109,7 @@
 ```
 
 
-<center>GO TO:[Keyboard_scancodes#INKEY.24_Codes](Keyboard_scancodes#INKEY.24_Codes), [Keyboard_scancodes#INP_Scan_Codes](Keyboard_scancodes#INP_Scan_Codes), [Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes](Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes), [Keyboard_scancodes#DEVICES_Button](Keyboard_scancodes#DEVICES_Button), [Keyboard_scancodes#Windows_Virtual_Codes](Keyboard_scancodes#Windows_Virtual_Codes)</center>
+GO TO:[Keyboard_scancodes#INKEY.24_Codes](Keyboard_scancodes#INKEY.24_Codes), [Keyboard_scancodes#INP_Scan_Codes](Keyboard_scancodes#INP_Scan_Codes), [Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes](Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes), [Keyboard_scancodes#DEVICES_Button](Keyboard_scancodes#DEVICES_Button), [Keyboard_scancodes#Windows_Virtual_Codes](Keyboard_scancodes#Windows_Virtual_Codes)
 
 ## KEYHIT and KEYDOWN Codes
 
@@ -144,12 +144,12 @@
 ```
 
 
-<center>GO TO: [Keyboard_scancodes#INKEY.24_Codes](Keyboard_scancodes#INKEY.24_Codes), [Keyboard_scancodes#INP_Scan_Codes](Keyboard_scancodes#INP_Scan_Codes), [Keyboard_scancodes#ON_KEY_Events](Keyboard_scancodes#ON_KEY_Events), [Keyboard_scancodes#DEVICES_Button](Keyboard_scancodes#DEVICES_Button), [Keyboard_scancodes#Windows_Virtual_Codes](Keyboard_scancodes#Windows_Virtual_Codes)</center>
+GO TO: [Keyboard_scancodes#INKEY.24_Codes](Keyboard_scancodes#INKEY.24_Codes), [Keyboard_scancodes#INP_Scan_Codes](Keyboard_scancodes#INP_Scan_Codes), [Keyboard_scancodes#ON_KEY_Events](Keyboard_scancodes#ON_KEY_Events), [Keyboard_scancodes#DEVICES_Button](Keyboard_scancodes#DEVICES_Button), [Keyboard_scancodes#Windows_Virtual_Codes](Keyboard_scancodes#Windows_Virtual_Codes)
 
 >  Most keys use [ASCII](ASCII) key code values. Function key code values can be calculated using the [INKEY$](INKEY$), two byte values with [CVI](CVI).
-<center>Example: **status <nowiki>=</nowiki> _KEYDOWN(CVI(CHR$(0) + "P"))**</center>
+Example: **status <nowiki>=</nowiki> _KEYDOWN(CVI(CHR$(0) + "P"))**
 
-<center>[INKEY$#Two_Byte_Combinations](INKEY$#Two_Byte_Combinations)</center>
+[INKEY$#Two_Byte_Combinations](INKEY$#Two_Byte_Combinations)
 
 ## [DEVICES](DEVICES) Button
 
@@ -183,8 +183,8 @@
 
 
 
-<center>GO TO: [Keyboard_scancodes#INKEY.24_Codes](Keyboard_scancodes#INKEY.24_Codes), [Keyboard_scancodes#INP_Scan_Codes](Keyboard_scancodes#INP_Scan_Codes), [Keyboard_scancodes#ON_KEY_Events](Keyboard_scancodes#ON_KEY_Events), [Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes](Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes), 
-[Keyboard_scancodes#Windows_Virtual_Codes](Keyboard_scancodes#Windows_Virtual_Codes)</center>
+GO TO: [Keyboard_scancodes#INKEY.24_Codes](Keyboard_scancodes#INKEY.24_Codes), [Keyboard_scancodes#INP_Scan_Codes](Keyboard_scancodes#INP_Scan_Codes), [Keyboard_scancodes#ON_KEY_Events](Keyboard_scancodes#ON_KEY_Events), [Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes](Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes), 
+[Keyboard_scancodes#Windows_Virtual_Codes](Keyboard_scancodes#Windows_Virtual_Codes)
 
 ## Windows Virtual Codes
 
@@ -219,7 +219,7 @@
 
 
 
-<center>GO TO: [Keyboard_scancodes#INKEY.24_Codes](Keyboard_scancodes#INKEY.24_Codes), [Keyboard_scancodes#INP_Scan_Codes](Keyboard_scancodes#INP_Scan_Codes), [Keyboard_scancodes#ON_KEY_Events](Keyboard_scancodes#ON_KEY_Events), [Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes](Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes), [Keyboard_scancodes#DEVICES_Button](Keyboard_scancodes#DEVICES_Button), </center>
+GO TO: [Keyboard_scancodes#INKEY.24_Codes](Keyboard_scancodes#INKEY.24_Codes), [Keyboard_scancodes#INP_Scan_Codes](Keyboard_scancodes#INP_Scan_Codes), [Keyboard_scancodes#ON_KEY_Events](Keyboard_scancodes#ON_KEY_Events), [Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes](Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes), [Keyboard_scancodes#DEVICES_Button](Keyboard_scancodes#DEVICES_Button), 
 
 ## Example Code
 
@@ -330,7 +330,7 @@ END SUB
 <sub>Adapted from Code by Cyperium.</sub>
 > *Explanation:* Displays multiple arrow key presses to move a game character diagonally or allows 2 players to press keys at once. Each keypress is placed into a [STATIC](STATIC) array inside of the ScanKey function. When a key is pressed, the corresponding code index in the array is changed to -1 or True. When a key is released, the scancode returned is over 128 so AND 128 becomes True and the XOR 128 index value is changed to 0. XOR causes 128 to be subtracted from the release code index value which is then changed to 0 (False) from -1. As the main program loop reads the array each of the IF statements look to see if that code is -1. When a statement is True, it prints the appropriate key(s). The example moves two [ASCII](ASCII) sprites. **Note:** [INKEY$](INKEY$) can be removed from the function if it is used elsewhere to help clear the key buffer. 
 
-<center>**The Scankey Function array can be cleared by sending 0 as the *scancode%* or press the *Print Scrn/SysReq* key.**</center>
+**The Scankey Function array can be cleared by sending 0 as the *scancode%* or press the *Print Scrn/SysReq* key.**
 
 
 *Example 2:* How to get Control, Alt and shift key entries from a user using [PEEK](PEEK) in QB64 or QBasic:

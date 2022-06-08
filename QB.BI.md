@@ -7,13 +7,11 @@ The **QB.BI** file can be used for [INTERRUPT](INTERRUPT) or [INTERRUPTX](INTERR
 * In QBasic the BI library or support file MUST be included in a program package or download!
 * **QB64** programs do not require any INCLUDED files once the BAS file is compiled!
 
-
 ## Example(s)
 
 > *The QB.BI file contents:*
 
 ```vb
-
 
 '**************************************************************************
 ' QB.BI - Assembly Support Include File
@@ -105,15 +103,9 @@ TYPE RegType
 END TYPE 
 
 ```
->  *Explanation:* DECLARE statements in QB4.5 and PDS(7.1) are not required because the Library MUST be included with [INTERRUPT](INTERRUPT), [INTERRUPTX](INTERRUPTX) and [CALL ABSOLUTE](CALL ABSOLUTE) or a "Subprogram not defined" [ERROR Codes](ERROR Codes) will occur. 
 
-
+> *Explanation:* DECLARE statements in QB4.5 and PDS(7.1) are not required because the Library MUST be included with [INTERRUPT](INTERRUPT), [INTERRUPTX](INTERRUPTX) and [CALL ABSOLUTE](CALL-ABSOLUTE) or a "Subprogram not defined" [ERROR Codes](ERROR-Codes) will occur. 
 
 ## See Also
 
 * [$INCLUDE]($INCLUDE), [INTERRUPT](INTERRUPT), [INTERRUPTX](INTERRUPTX)
-
-
-
-
-

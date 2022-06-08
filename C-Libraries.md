@@ -884,7 +884,7 @@ long Misc_UnSetRMBit(long x)
 <sub>Library created by DarthWho</sub>
 
 
-<center>**[http://dl.dropbox.com/u/12359848/fastmath.h Latest Fast Math Update]**</center>
+**[http://dl.dropbox.com/u/12359848/fastmath.h Latest Fast Math Update]**
 
 
 *Example 1:* Using **trailzcount** to speed up the process of finding the prime factors of a number.

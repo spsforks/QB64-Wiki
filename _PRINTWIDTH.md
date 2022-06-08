@@ -46,7 +46,7 @@ END SUB
 
 ```
 <sub>Code by Ted Weissgerber</sub>
-<center>**Note:** The SUB procedure does not need the font handle for font sizes after [_FONT](_FONT) enables one.</center>
+**Note:** The SUB procedure does not need the font handle for font sizes after [_FONT](_FONT) enables one.
 
 
 ## See Also

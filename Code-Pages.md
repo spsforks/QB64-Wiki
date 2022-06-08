@@ -1,15 +1,15 @@
 __NOTOC__
-<center>**UNICODE CODE PAGES**</center>
+**UNICODE CODE PAGES**
 
 This is a list of the current Code Pages supported by the **QB64 IDE**. The data can be copied to a file or made into a [DATA](DATA) field. Each section has a description of the Code Page, the data required for **characters 128 TO 255**, and a LINK to the Code Table.
 
 > ::**NOTE: When copying data to create a CSV file, make sure the cursor ends up below last line at home!**
-<center>**See: [Code_Pages#Unicode Mapping](Code_Pages#Unicode Mapping)**</center>
+**See: [Code_Pages#Unicode Mapping](Code_Pages#Unicode Mapping)**
 
 Unicode characters can be inserted in Windows by holding down the **Alt key** and entering a **zero** followed by the character's **three-digit decimal code on the number pad**. By omitting the zero, characters from older code pages can be entered like code page 437 in the US and England or code page 850 in Western Europe. In some versions of Windows it is necessary to change the regional settings to another language before entering that region's page codes.
 
 
-<center>**Setting up a typing language in the QB64 IDE:**</center>
+**Setting up a typing language in the QB64 IDE:**
 > ::Step 1: In the OPTIONS menu select **DISPLAY**, then check the CUSTOM FONT check-box.
 > ::Step 2: In the OPTIONS menu select **LANGUAGE**, then select a Code Page (CP850 for example) and click OK.
 
@@ -38,7 +38,7 @@ Unicode characters can be inserted in Windows by holding down the **Alt key** an
 
 ```
 
-<center>**See the [Unicode](Unicode) and [_MAPUNICODE](_MAPUNICODE) pages to setup a program language using the data below:**</center>
+**See the [Unicode](Unicode) and [_MAPUNICODE](_MAPUNICODE) pages to setup a program language using the data below:**
 
 ## CP 437
 
@@ -64,7 +64,7 @@ United States MS DOS
 
 
 
-<center>[http://en.wikipedia.org/wiki/Code_page_437 Code Table 437]</center>
+[http://en.wikipedia.org/wiki/Code_page_437 Code Table 437]
 
 
 
@@ -105,10 +105,10 @@ Greek MS DOS displays Greek alphabet for algebraic formulas.
 
 
 
-<center>[http://en.wikipedia.org/wiki/Code_page_737 Code Table 737]</center>
+[http://en.wikipedia.org/wiki/Code_page_737 Code Table 737]
 
 
-<center>[Code_Pages#Code_Page_Listings:](Code_Pages#Code_Page_Listings:)</center>
+[Code_Pages#Code_Page_Listings:](Code_Pages#Code_Page_Listings:)
 
 ## CP 775
 
@@ -134,7 +134,7 @@ Estonian, Lithuanian and Latvian languages.
 
 
 
-<center>[http://en.wikipedia.org/wiki/Code_page_775 Code Table 775]</center>
+[http://en.wikipedia.org/wiki/Code_page_775 Code Table 775]
 
 ## CP 850
 
@@ -160,11 +160,11 @@ Western Europe, Spain, England
 
 
 
-<center>[http://en.wikipedia.org/wiki/Code_page_850 Western European Unicode CP850] .......... [http://en.wikipedia.org/wiki/CP858 Western European CP858] (with Euro)</center>
+[http://en.wikipedia.org/wiki/Code_page_850 Western European Unicode CP850] .......... [http://en.wikipedia.org/wiki/CP858 Western European CP858] (with Euro)
 
-<center>Euro currency sign: ASCII code = 213 Unicode value = 8364 (replaces 305)</center>
+Euro currency sign: ASCII code = 213 Unicode value = 8364 (replaces 305)
 
-<center>[Code_Pages#Code_Page_Listings:](Code_Pages#Code_Page_Listings:)</center>
+[Code_Pages#Code_Page_Listings:](Code_Pages#Code_Page_Listings:)
 
 ## CP 852
 
@@ -190,7 +190,7 @@ Central European languages that use Latin script such as Bosnian, Croatian, Czec
 
 
 
-<center>[http://en.wikipedia.org/wiki/Code_page_852 Code Table 852]</center>
+[http://en.wikipedia.org/wiki/Code_page_852 Code Table 852]
 
 ## CP 855
 
@@ -216,10 +216,10 @@ Cyrillic code page to be used under MS-DOS
 
 
 
-<center>[http://en.wikipedia.org/wiki/Code_page_855 Code Table 855]</center>
+[http://en.wikipedia.org/wiki/Code_page_855 Code Table 855]
 
 
-<center>[Code_Pages#Code_Page_Listings:](Code_Pages#Code_Page_Listings:)</center>
+[Code_Pages#Code_Page_Listings:](Code_Pages#Code_Page_Listings:)
 
 ## CP 857
 
@@ -245,7 +245,7 @@ Turkish MS DOS
 
 
 
-<center>[http://en.wikipedia.org/wiki/Code_page_857 Code Table]</center>
+[http://en.wikipedia.org/wiki/Code_page_857 Code Table]
 
 ## CP 860
 
@@ -271,10 +271,10 @@ Portuguese language. MS DOS
 
 
 
-<center>[http://en.wikipedia.org/wiki/Code_page_860 Code Table 860]</center>
+[http://en.wikipedia.org/wiki/Code_page_860 Code Table 860]
 
 
-<center>[Code_Pages#Code_Page_Listings:](Code_Pages#Code_Page_Listings:)</center>
+[Code_Pages#Code_Page_Listings:](Code_Pages#Code_Page_Listings:)
 
 ## CP 861
 
@@ -300,7 +300,7 @@ Icelandic language (as well as other Nordic languages). MS DOS
 
 
 
-<center>[http://en.wikipedia.org/wiki/Code_page_861 Code Table 861]</center>
+[http://en.wikipedia.org/wiki/Code_page_861 Code Table 861]
 
 ## CP 862
 
@@ -326,10 +326,10 @@ Hebrew letters in positions 80–9A hex, but otherwise it is identical to [Code_
 
 
 
-<center>[http://en.wikipedia.org/wiki/Code_page_862 Code Table 862]</center>
+[http://en.wikipedia.org/wiki/Code_page_862 Code Table 862]
 
 
-<center>[Code_Pages#Code_Page_Listings:](Code_Pages#Code_Page_Listings:)</center>
+[Code_Pages#Code_Page_Listings:](Code_Pages#Code_Page_Listings:)
 
 ## CP 863
 
@@ -355,7 +355,7 @@ French language (mainly in Canada). MS DOS
 
 
 
-<center>[http://en.wikipedia.org/wiki/Code_page_863 Code Table 863]</center>
+[http://en.wikipedia.org/wiki/Code_page_863 Code Table 863]
 
 ## CP 864
 
@@ -381,10 +381,10 @@ Arabic MS DOS
 
 
 
-<center>[http://ascii-table.com/codepage.php?864 Code Table 864]</center>
+[http://ascii-table.com/codepage.php?864 Code Table 864]
 
 
-<center>[Code_Pages#Code_Page_Listings:](Code_Pages#Code_Page_Listings:)</center>
+[Code_Pages#Code_Page_Listings:](Code_Pages#Code_Page_Listings:)
 
 ## CP 865
 
@@ -410,7 +410,7 @@ Nordic languages (except Icelandic, for which CP861 is used). MS DOS
 
 
 
-<center>[http://en.wikipedia.org/wiki/Code_page_865 Code Table 865]</center>
+[http://en.wikipedia.org/wiki/Code_page_865 Code Table 865]
 
 ## CP 866
 
@@ -434,12 +434,12 @@ Cyrillic alphabetical order code page to be used with MS-DOS
 ```
 
 
-<center>See [Code_Pages#CP_MIK](Code_Pages#CP_MIK) and [Code_Pages#CP_1251](Code_Pages#CP_1251) below</center>
+See [Code_Pages#CP_MIK](Code_Pages#CP_MIK) and [Code_Pages#CP_1251](Code_Pages#CP_1251) below
 
-<center>[http://en.wikipedia.org/wiki/Code_page_866 Code Table 866]</center>
+[http://en.wikipedia.org/wiki/Code_page_866 Code Table 866]
 
 
-<center>[Code_Pages#Code_Page_Listings:](Code_Pages#Code_Page_Listings:)</center>
+[Code_Pages#Code_Page_Listings:](Code_Pages#Code_Page_Listings:)
 
 ## CP MIK
 
@@ -463,9 +463,9 @@ Cyrillic Bulgarian Pravetz 16 for MS-DOS
 ```
 
 
-<center>See [Code_Pages#CP_866](Code_Pages#CP_866) above and [Code_Pages#CP_1251](Code_Pages#CP_1251) below</center>
+See [Code_Pages#CP_866](Code_Pages#CP_866) above and [Code_Pages#CP_1251](Code_Pages#CP_1251) below
 
-<center>[http://en.wikipedia.org/wiki/MIK_Code_page#Code_page_layout Code Table MIK]</center>
+[http://en.wikipedia.org/wiki/MIK_Code_page#Code_page_layout Code Table MIK]
 
 ## CP 869
 
@@ -491,10 +491,10 @@ Greek MS DOS. Less popular than [Code_Pages#CP_737](Code_Pages#CP_737)
 
 
 
-<center>[http://en.wikipedia.org/wiki/Code_page_869 Code Table 869]</center>
+[http://en.wikipedia.org/wiki/Code_page_869 Code Table 869]
 
 
-<center>[Code_Pages#Code_Page_Listings:](Code_Pages#Code_Page_Listings:)</center>
+[Code_Pages#Code_Page_Listings:](Code_Pages#Code_Page_Listings:)
 
 ## CP 874
 
@@ -520,7 +520,7 @@ Thai MS DOS and Windows
 
 
 
-<center>[http://en.wikipedia.org/wiki/Windows-874 Code Table 874]</center>
+[http://en.wikipedia.org/wiki/Windows-874 Code Table 874]
 
 ## CP 1250
 
@@ -546,10 +546,10 @@ WINDOWS in Central European and Eastern European languages that use Latin script
 
 
 
-<center>[http://en.wikipedia.org/wiki/Windows-1250 Code Table 1250]</center>
+[http://en.wikipedia.org/wiki/Windows-1250 Code Table 1250]
 
 
-<center>[Code_Pages#Code_Page_Listings:](Code_Pages#Code_Page_Listings:)</center>
+[Code_Pages#Code_Page_Listings:](Code_Pages#Code_Page_Listings:)
 
 ## CP 1251
 
@@ -573,9 +573,9 @@ Cyrillic alphabet such as Russian, Bulgarian, Serbian Cyrillic and other languag
 ```
 
 
-<center>See [Code_Pages#CP_MIK](Code_Pages#CP_MIK) and [Code_Pages#CP_866](Code_Pages#CP_866) above</center>
+See [Code_Pages#CP_MIK](Code_Pages#CP_MIK) and [Code_Pages#CP_866](Code_Pages#CP_866) above
 
-<center>[http://en.wikipedia.org/wiki/Windows-1251 Code Table 1251]</center>
+[http://en.wikipedia.org/wiki/Windows-1251 Code Table 1251]
 
 ## CP 1252
 
@@ -601,7 +601,7 @@ Windows Western languages with Latin alphabet, used by default in the legacy com
 
 
 
-<center>[http://en.wikipedia.org/wiki/Windows-1252 Code Table 1252]</center>
+[http://en.wikipedia.org/wiki/Windows-1252 Code Table 1252]
 
 
 
@@ -620,7 +620,7 @@ Windows Western languages with Latin alphabet, used by default in the legacy com
 
 
 
-<center>[Code_Pages#Code_Page_Listings:](Code_Pages#Code_Page_Listings:)</center>
+[Code_Pages#Code_Page_Listings:](Code_Pages#Code_Page_Listings:)
 
 ## CP 1253
 
@@ -646,7 +646,7 @@ Greek (but not polytonic Greek) Not fully compatible with ISO 8859-7 (Ά is loca
 
 
 
-<center>[http://en.wikipedia.org/wiki/Windows-1253 Code Table 1253]</center>
+[http://en.wikipedia.org/wiki/Windows-1253 Code Table 1253]
 
 ## CP 1254
 
@@ -672,10 +672,10 @@ Turkish
 
 
 
-<center>[http://en.wikipedia.org/wiki/Windows-1254 Code Table 1254]</center>
+[http://en.wikipedia.org/wiki/Windows-1254 Code Table 1254]
 
 
-<center>[Code_Pages#Code_Page_Listings:](Code_Pages#Code_Page_Listings:)</center>
+[Code_Pages#Code_Page_Listings:](Code_Pages#Code_Page_Listings:)
 
 ## CP 1255
 
@@ -701,7 +701,7 @@ Hebrew Windows. Modern applications prefer [https://en.wikipedia.org/wiki/UTF-8 
 
 
 
-<center>[http://en.wikipedia.org/wiki/Windows-1255 Code Table 1255]</center>
+[http://en.wikipedia.org/wiki/Windows-1255 Code Table 1255]
 
 ## CP 1256
 
@@ -727,10 +727,10 @@ Arabic Latin Windows
 
 
 
-<center>[http://msdn.microsoft.com/en-us/goglobal/cc305149.aspx Code Table 1256]</center>
+[http://msdn.microsoft.com/en-us/goglobal/cc305149.aspx Code Table 1256]
 
 
-<center>[Code_Pages#Code_Page_Listings:](Code_Pages#Code_Page_Listings:)</center>
+[Code_Pages#Code_Page_Listings:](Code_Pages#Code_Page_Listings:)
 
 ## CP 1257
 
@@ -756,7 +756,7 @@ Estonian (although that can also be written with Windows-1252), Latvian and Lith
 
 
 
-<center>[http://en.wikipedia.org/wiki/Windows-1257 Code Table 1257]</center>
+[http://en.wikipedia.org/wiki/Windows-1257 Code Table 1257]
 
 ## CP 1258
 
@@ -782,17 +782,17 @@ Vietnamese. [https://en.wikipedia.org/wiki/UTF-8 UTF-8] is the preferred encodin
 
 
 
-<center>[http://en.wikipedia.org/wiki/Windows-1258 Code Table 1258]</center>
+[http://en.wikipedia.org/wiki/Windows-1258 Code Table 1258]
 
 
-<center>[Code_Pages#Code_Page_Listings:](Code_Pages#Code_Page_Listings:)</center>
+[Code_Pages#Code_Page_Listings:](Code_Pages#Code_Page_Listings:)
 
 ## Unicode Mapping
 
-<center>**[_MAPUNICODE](_MAPUNICODE) can place the Unicode characters TO any [ASCII](ASCII) code space you desire (0 to 255)**.</center>
+**[_MAPUNICODE](_MAPUNICODE) can place the Unicode characters TO any [ASCII](ASCII) code space you desire (0 to 255)**.
 
 Reading CSV data file: Comma separated values are read using [INPUT (file statement)](INPUT (file statement)). Code Page data is pasted directly into a file as CSV.
-<center>**File named CP863.CSV **</center>
+**File named CP863.CSV **
 
 ```text
 
@@ -808,7 +808,7 @@ Microsoft_pc_cp863
 
 ```
 
-<center>**QB64 BAS module:**</center>
+**QB64 BAS module:**
 
 ```vb
 
@@ -877,7 +877,7 @@ DATA 8801,177,8805,8804,8992,8993,247,8776,176,8729,183,8730,8319,178,9632,160
 > Unicode values can be taken from any of the above code page data to make custom extended code characters for a program.
 
 
-<center>[Code_Pages#Code_Page_Listings:](Code_Pages#Code_Page_Listings:)</center>
+[Code_Pages#Code_Page_Listings:](Code_Pages#Code_Page_Listings:)
 
 ## Reference:
 

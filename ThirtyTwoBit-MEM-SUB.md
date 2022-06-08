@@ -1,4 +1,4 @@
-<center>**Fast Bitmap Export routine using memory for use with 32-bit color images ONLY**</center>
+**Fast Bitmap Export routine using memory for use with 32-bit color images ONLY**
 
 ```vb
 
@@ -105,7 +105,7 @@ END SUB
 ```
 <sub>Code by Steve McNeill</sub>
 
-<center>**SUB for 32 BIT COLOR IMAGES ONLY!**</center>
+**SUB for 32 BIT COLOR IMAGES ONLY!**
 
 ## See Also
 

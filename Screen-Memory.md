@@ -1,6 +1,6 @@
-<center>**SCREEN Memory Segments**</center>
+**SCREEN Memory Segments**
 
-<center>**Screen 0 Text Segment &HB800**</center>
+**Screen 0 Text Segment &HB800**
 
 * The text video memory segment is located at hexadecimal memory address B800 or 47104 decimal.
 * The normal [SCREEN](SCREEN) 0 [WIDTH](WIDTH) is 25 rows by 80 columns wide capable of up to 2000 text characters.
@@ -75,7 +75,7 @@ Byte offset:    0, 1               640     642     644     646     648     650  
 
 ```
 
-<center>**Graphic Screen Segment &HA000**</center>
+**Graphic Screen Segment &HA000**
 
 * The graphic video memory segment is located at hexadecimal memory address A000 or 40960 decimal.
 * Legacy graphic screen modes include 1, 2, 7, 8, 9, 10, 11, 12 and 13 with varying pixel widths, heights and color attributes.

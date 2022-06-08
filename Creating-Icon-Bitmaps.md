@@ -359,14 +359,14 @@ END SUB
 ```
 
 <sub>Adapted from code by Bob Seguin</sub>
-<center>**If full code is not displayed, refresh browser!**</center>
+**If full code is not displayed, refresh browser!**
 
 
-<center>**NOTE: Black areas of an image may become "see through" unless another color attribute is used and set to black!**</center>
+**NOTE: Black areas of an image may become "see through" unless another color attribute is used and set to black!**
 
 >  This can be done by changing another color attribute's RGB settings to 0 or almost 0 and creating a mask after using it in solid black areas of a 4 or 8 BPP palette image. This can also be done using [_PUTIMAGE](_PUTIMAGE) with 32 bit [_CLEARCOLOR](_CLEARCOLOR) settings.
 
-<center>*See the following page:* [Creating Sprite Masks](Creating Sprite Masks)</center>
+*See the following page:* [Creating Sprite Masks](Creating Sprite Masks)
 
 ## Icon to Bitmap Conversion Function
 

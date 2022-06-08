@@ -92,7 +92,7 @@ The [SCREEN](SCREEN) statement sets the video display mode and size of the progr
 
 * **[SCREEN](SCREEN) [_LOADIMAGE](_LOADIMAGE)**(imagehandle&, colors) can load a program screen of an image file handle in **QB64** using 256 or 32 bit. 
 
-<center>**QB64 can use page flipping with any number of pages in any screen mode!**</center>
+**QB64 can use page flipping with any number of pages in any screen mode!**
 
 ## Text and Graphics
 
@@ -193,9 +193,9 @@ END SUB
 
 > *Explanation:* The procedure above creates a larger version of a SCREEN 13 window by stretching it with [_PUTIMAGE](_PUTIMAGE). It cannot stretch PRINTed text so [_PRINTSTRING](_PRINTSTRING) must be used instead. [LOCATE](LOCATE) sets the PRINT cursor position for [CSRLIN](CSRLIN) and [POS](POS)(0) to read. The SUB then converts the coordinates to graphical ones. Then **change** [PRINT](PRINT) to PRINTS using the **Search Menu**.
 
-<center>[Download of Example 2 Bitmap images](http://dl.dropbox.com/u/8440706/HOWIE.zip)</center>
+[Download of Example 2 Bitmap images](http://dl.dropbox.com/u/8440706/HOWIE.zip)
 
-<center>You can easily change PRINT to the PRINTS sub-procedure name in your code using the IDE *Search*  Menu *Change* option.</center>
+You can easily change PRINT to the PRINTS sub-procedure name in your code using the IDE *Search*  Menu *Change* option.
 
 ## See Example(s)
 

@@ -302,7 +302,7 @@
 
 **CP437** is the character set of the original IBM PC. It is also known as DOS-US, OEM-US or IBM Extended character set. They also may erroneously be referred to as the OEM font, Extended ASCII or High ASCII.
 
-<center>[http://en.wikipedia.org/wiki/Code_page_437 Code Page 437]</center>
+[http://en.wikipedia.org/wiki/Code_page_437 Code Page 437]
 
 * Unicode references:
 > * 1) What is the glyph represented by that UNICODE value: [http://www.fileformat.info/info/unicode/char/search.htm Unicode Format Info]
@@ -313,8 +313,8 @@
 > Step 1: In the OPTIONS menu select DISPLAY, then check the CUSTOM FONT check-box.
 > Step 2: In the OPTIONS menu select LANGUAGE, then select a Code Page (CP850 for example) and click OK.
 * Font **cyberbit.ttf**, included with QB64 as of **V0.92**(October 2010), is required to facilitate the **IME**(in Chinese settings) only. The 12.7 MB font is free for **non-commercial** use and is not loaded unless the user switches to the **Input Mode Editor**.
-<center>[http://www.fileformat.info/tip/microsoft/enter_unicode.htm Setting up the Unicode Input Method Editor in Windows]</center>
-<center>If you need help with IME support in **Vista** see the following article: [http://blogs.msdn.com/b/michkap/archive/2006/07/20/671835.aspx Setting up IME in Vista]</center>
+[http://www.fileformat.info/tip/microsoft/enter_unicode.htm Setting up the Unicode Input Method Editor in Windows]
+If you need help with IME support in **Vista** see the following article: [http://blogs.msdn.com/b/michkap/archive/2006/07/20/671835.aspx Setting up IME in Vista]
 > QB64 can use several Windows fonts when 'cyberbit' is not present so it is not necessary to include with program packages. 
 
 
@@ -359,9 +359,9 @@ DATA 173,177,8215,190,182,167,247,184,176,168,183,185,179,178,9632,160
 <sub>Code by Galleon</sub>
 
 
-<center>[http://en.wikipedia.org/wiki/Code_page_850 Western European Unicode CP850] .......... [http://en.wikipedia.org/wiki/CP858 Western European(euro) CP858]</center>
+[http://en.wikipedia.org/wiki/Code_page_850 Western European Unicode CP850] .......... [http://en.wikipedia.org/wiki/CP858 Western European(euro) CP858]
 
-<center>[http://en.wikipedia.org/wiki/Code_page_862 Hebrew Unicode CP862(80–9A hex)]</center> 
+[http://en.wikipedia.org/wiki/Code_page_862 Hebrew Unicode CP862(80–9A hex)] 
 
 ## See Also
  

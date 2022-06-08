@@ -92,7 +92,7 @@ PRINT f! ; "degrees Fahrenheit is" ; c! ; "degrees Celcius."
 
 ## String types
 
-QB64 has built-in support for strings, which are contiguous sequences of characters represented as <tt>[_UNSIGNED](_UNSIGNED) [_BYTE](_BYTE)</tt> values. Strings are usually used to store and manipulate text, but can also be used as a general storage area for arbitrary data (like a binary file).
+QB64 has built-in support for strings, which are contiguous sequences of characters represented as [_UNSIGNED](_UNSIGNED) [_BYTE](_BYTE) values. Strings are usually used to store and manipulate text, but can also be used as a general storage area for arbitrary data (like a binary file).
 
 Strings have a property called *length*, which is the number of characters currently stored in the string, and QB64 supports two kinds of string types based on this property: *variable-length strings* and *fixed-length strings*.
 

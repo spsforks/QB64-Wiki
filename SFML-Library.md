@@ -1,6 +1,6 @@
 **SFML** is a sound library that allows users to record and play sounds.
 
-<center>[SFML.RAR Download(Includes Library header file)](http://dl.dropbox.com/u/8822351/SFML.rar</center>
+[SFML.RAR Download(Includes Library header file)](http://dl.dropbox.com/u/8822351/SFML.rar
 
 ```text
 

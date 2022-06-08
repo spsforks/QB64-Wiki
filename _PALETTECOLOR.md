@@ -17,7 +17,7 @@ The [_PALETTECOLOR](_PALETTECOLOR) statement sets the color value of a palette e
 * If destHandle& is an invalid handle value, an [ERROR Codes](ERROR Codes) error occurs.
 
 
-<center>**Basic's 16 Default Color Attributes (non-[DAC](DAC))**</center>
+**Basic's 16 Default Color Attributes (non-[DAC](DAC))**
 
 ```text
 
@@ -41,7 +41,7 @@ The [_PALETTECOLOR](_PALETTECOLOR) statement sets the color value of a palette e
 
 ```
 
-<center>[http://www.w3schools.com/html/html_colornames.asp HTML Color Table Values and Names] or [http://www.tayloredmktg.com/rgb/#OR Other RGB colors]</center>
+[http://www.w3schools.com/html/html_colornames.asp HTML Color Table Values and Names] or [http://www.tayloredmktg.com/rgb/#OR Other RGB colors]
 > :: *Note:* **QB64** 32 bit color intensity values from 0 to 255 can be found by multiplying above values by 4.
 
 *Summary:* The red, green, and blue intensity values can be changed using [OUT](OUT) or [PALETTE](PALETTE) statements. Some **QBasic** RGB color attribute values can be changed in [DAC](DAC) [SCREEN (statement)](SCREEN (statement)) modes and the [DAC](DAC) RGB intensity settings may be different. 

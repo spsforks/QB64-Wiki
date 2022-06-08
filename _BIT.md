@@ -28,7 +28,7 @@ The [_BIT](_BIT) datatype can return only values of 0 (bit off) and -1 (bit on).
 > You can set the number of bits on the fly by just adding that number - this defines it as being two bits: `variable`2 = -1`
 
 
-<center>**[_BIT](_BIT)**</center>
+**[_BIT](_BIT)**
 * The **MSB** is the most significant(largest) bit value and **LSB** is the least significant bit of a binary or register memory address value. The order in which the bits are read determines the binary or decimal byte value. There are two common ways to read a byte:
 
 > * **"Big-endian"**: MSB is the first bit encountered, decreasing to the LSB as the last bit by position, memory address or time.
@@ -46,7 +46,7 @@ The [_BIT](_BIT) datatype can return only values of 0 (bit off) and -1 (bit on).
 
 > :The big-endian method compares exponents of 2<sup>7</sup> down to 2<sup>0</sup> while the little-endian method does the opposite. 
 
-<center>**[_BYTE](_BYTE)**</center>
+**[_BYTE](_BYTE)**
 * [INTEGER](INTEGER) values consist of 2 bytes called the **HI** and **LO** bytes. Anytime that the number of binary digits is a multiple of 16 (2bytes, 4 bytes, etc.) and the HI byte's MSB is on(1), the value returned will be negative. Even with [SINGLE](SINGLE) or [DOUBLE](DOUBLE) values! 
 
 ```text

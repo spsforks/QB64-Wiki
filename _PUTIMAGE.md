@@ -44,7 +44,7 @@ DISPLAYTITLE:_PUTIMAGE
 ** sy2 = the row coordinate of the bottom-most pixel to include of the source. Can be omitted to get rest of image.
 * *_SMOOTH* applies linear filtering (**version 1.000 and up**).
 
-<center>**Note: The [PUT (graphics statement)](PUT (graphics statement)) options PSET, PRESET, AND, OR and XOR are not available with _PUTIMAGE. QB64 can use [_ALPHA](_ALPHA) of colors to achieve the same results.**</center>
+**Note: The [PUT (graphics statement)](PUT (graphics statement)) options PSET, PRESET, AND, OR and XOR are not available with _PUTIMAGE. QB64 can use [_ALPHA](_ALPHA) of colors to achieve the same results.**
 
 
 ## Description

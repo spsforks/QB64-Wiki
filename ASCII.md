@@ -1,12 +1,12 @@
 ## ASCII and Extended Codes
 
-<center>[http://en.wikipedia.org/wiki/Code_page_437 MS-DOS code page 437]:</center>
+[http://en.wikipedia.org/wiki/Code_page_437 MS-DOS code page 437]:
 {| border="1" cellpadding="2" align="center"
 ! colspan="8"|[http://ascii.cl/control-characters.htm ASCII Control 0 to 31]   |        ASCII Keyboard Character Codes 32 to 127
 |-
-! Code ||Character <tt>[key]</tt> || Code || Character || Code || Character || Code || Character
+! Code ||Character [key] || Code || Character || Code || Character || Code || Character
 |-
-|  0 ||        (NUL)  || 32 ||  [<tt>[SPACE$](SPACE$)</tt>]|| 64 ||  <tt>@</tt> ||  96 ||  <tt>`</tt>
+|  0 ||        (NUL)  || 32 ||  [[SPACE$](SPACE$)]|| 64 ||  @ ||  96 ||  `
 |-
 |  1 ||  ?   (SOH) || 33 ||  ! || 65 ||  A ||  97 ||  a
 |-
@@ -20,11 +20,11 @@
 |-
 |  6 ||  ?   (ACK) || 38 ||  & || 70 ||  F || 102 ||  f
 |-
-|  7 ||  •   (BEL)   <tt>[BEEP](BEEP)</tt>|| 39 ||  ' || 71 ||  G || 103 ||  g
+|  7 ||  •   (BEL)   [BEEP](BEEP)|| 39 ||  ' || 71 ||  G || 103 ||  g
 |-
-|  8 ||  ?    [<tt>BackSpace</tt>] **|| 40 ||  ( || 72 ||  H || 104 ||  h
+|  8 ||  ?    [BackSpace] **|| 40 ||  ( || 72 ||  H || 104 ||  h
 |-
-|  9 ||  ?   (HT)    [<tt>TAB</tt>] **|| 41 ||  ) || 73 ||  I || 105 ||   i
+|  9 ||  ?   (HT)    [TAB] **|| 41 ||  ) || 73 ||  I || 105 ||   i
 |-
 | 10 ||  ?   (LineFeed)  **|| 42 ||  * || 74 ||  J || 106 ||  j
 |-
@@ -32,7 +32,7 @@
 |-
 | 12 ||  ?   (FormFeed) **|| 44 ||  , || 76 ||  L || 108 ||  l
 |-
-| 13 ||  ?   (CR) [<tt>Enter</tt>] **|| 45 ||  - || 77 ||  M || 109 ||  m
+| 13 ||  ?   (CR) [Enter] **|| 45 ||  - || 77 ||  M || 109 ||  m
 |-
 | 14 ||  ?   (SO) || 46 ||  . || 78 ||  N || 110 ||  n
 |-
@@ -58,9 +58,9 @@
 |-
 | 25 ||  ?   (EM)  || 57 ||  9 || 89 ||  Y || 121 ||  y
 |-
-| 26 ||  ?   (SUB)    <tt>[EOF](EOF)</tt> || 58 ||  : || 90 ||  Z || 122 ||  z
+| 26 ||  ?   (SUB)    [EOF](EOF) || 58 ||  : || 90 ||  Z || 122 ||  z
 |-
-| 27 ||  ?   (ESC)   [<tt>Esc</tt>]|| 59 ||  ; || 91 ||  [ || 123 ||  {
+| 27 ||  ?   (ESC)   [Esc]|| 59 ||  ; || 91 ||  [ || 123 ||  {
 |-
 | 28 ||  ?   (FS) **|| 60 ||  < || 92 ||  \ || 124 ||  <nowiki>|</nowiki>
 |-
@@ -143,10 +143,10 @@
 > **** Control characters 8 to 13 and 28 to 31 can move text formatting when [PRINT](PRINT) and do not display**
 > ***** NBSP is a Non-breaking Space used to indent text. Some browsers may handle this character differently**
 
-<center>[http://www.lammertbies.nl/comm/info/ascii-characters.html More information about ASCII  Control Characters] </center>
+[http://www.lammertbies.nl/comm/info/ascii-characters.html More information about ASCII  Control Characters] 
 
 
-<center>[Unicode](Unicode)</center>
+[Unicode](Unicode)
 
 ## Control Characters
 
@@ -177,7 +177,7 @@
 * [_CONTROLCHR](_CONTROLCHR) OFF can also be used in QB64 to allow control characters to be printed without formatting the text.
 
 
-<center>**ASCII in Text and Printing**</center>
+**ASCII in Text and Printing**
 
 * Characters **0**(NULL) and **255**(NBSP) can also be used to print spaces(**32**). Useful for making file names harder to delete too.
 * Character **7** will create a [BEEP](BEEP) sound when printed in **QB64** or an error sound in QBasic using a **SCREEN 0** window.
@@ -202,7 +202,7 @@
 * Character **26** can be used to designate the end of a file. See [EOF](EOF).
 * Character **27** **?** is returned when the **Escape** key is pressed.
 
-<center>**Control character [PRINT](PRINT) actions can be controlled using [_CONTROLCHR](_CONTROLCHR) OFF or ON in QB64.**</center>
+**Control character [PRINT](PRINT) actions can be controlled using [_CONTROLCHR](_CONTROLCHR) OFF or ON in QB64.**
 
 
 
@@ -223,7 +223,7 @@ END
 ```
 
 
-<center>**ASCII Character Usage**</center>
+**ASCII Character Usage**
 
 * Characters are one byte and take up one space(byte) in a [STRING](STRING) value or variable.
 * Extended(non-keyboard) characters can be entered by holding down *Alt* key and entering the code number on the Number pad.
@@ -238,7 +238,7 @@ END
 
 ## [ASC](ASC) Codes
 
-<center>**[ASC](ASC) cannot read empty [INKEY$](INKEY$) = "" loop reads! Check for them before reading [ASC](ASC) key press codes!**</center>
+**[ASC](ASC) cannot read empty [INKEY$](INKEY$) = "" loop reads! Check for them before reading [ASC](ASC) key press codes!**
 
 ```text
 
@@ -269,9 +269,9 @@ END
 
 
 
-<center>Use **ASC(RIGHT$(key$, 1))** or **ASC(key$, 2)** in QB64 to read a two byte code when **ASC(key$) <nowiki>=</nowiki> 0**</center>
+Use **ASC(RIGHT$(key$, 1))** or **ASC(key$, 2)** in QB64 to read a two byte code when **ASC(key$) <nowiki>=</nowiki> 0**
 
-<center>*** See the Two Byte Ctrl, Alt and Shift + Function key combinations below**</center>
+*** See the Two Byte Ctrl, Alt and Shift + Function key combinations below**
 
 ```vb
 '             Demo displays all ASCII codes and 2 byte code combinations
@@ -291,7 +291,7 @@ LOOP UNTIL K$ = CHR$(27) 'escape key press exits
 
 ## Two Byte Codes
 
-<center>**Two Byte ASCII Keyboard Return Values**</center>
+**Two Byte ASCII Keyboard Return Values**
 
 * [INKEY$](INKEY$) returns both bytes when two byte keys or key combinations are pressed. The second byte = [RIGHT$](RIGHT$)(keypress$, 1)
 * If the character returned is a two byte code, [ASC](ASC) will return 0. **Warning:** ASC cannot read empty [INKEY$](INKEY$) string values!
@@ -346,7 +346,7 @@ LOOP UNTIL K$ = CHR$(27) 'escape key press exits
 
 > In **QB64**, [CVI](CVI) can be used to get the [_KEYDOWN](_KEYDOWN) 2-byte code value. Example: **status <nowiki>=</nowiki> _KEYDOWN(CVI(CHR$(0) + "P"))**
 
-<center>**See [Scancodes](Scancodes) for other keyboard function keys.**</center>
+**See [Scancodes](Scancodes) for other keyboard function keys.**
 
 
 ## Code Examples

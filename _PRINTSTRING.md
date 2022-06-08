@@ -92,7 +92,7 @@ END SUB
 ```
 <sub>Code by Ted Weissgerber</sub>
 >  *Explanation:* The procedure above creates a larger version of a SCREEN 13 window by stretching it with [_PUTIMAGE](_PUTIMAGE). It cannot stretch PRINTed text so [_PRINTSTRING](_PRINTSTRING) must be used instead. [LOCATE](LOCATE) sets the PRINT cursor position for [CSRLIN](CSRLIN) and [POS](POS)(0) to read. The SUB then converts the coordinates to graphical ones. Then **change** [PRINT](PRINT) to PRINTS using the IDE **Search Menu**.
-<center>[https://www.dropbox.com/s/tcdik1ajegbeiz4/HOWIE.zip?dl=0 Download of Example 2 Bitmap images]</center>
+[https://www.dropbox.com/s/tcdik1ajegbeiz4/HOWIE.zip?dl=0 Download of Example 2 Bitmap images]
 
 
 *Example 3:* Rotating a text string around a graphic object.

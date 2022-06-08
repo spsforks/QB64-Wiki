@@ -51,7 +51,7 @@ The [ASC](ASC) function returns the [ASCII](ASCII) code number of a certain [STR
  
 
 
-<center>**[ASCII#Two_Byte_Codes](ASCII#Two_Byte_Codes)**</center>
+**[ASCII#Two_Byte_Codes](ASCII#Two_Byte_Codes)**
 
 
 ```text

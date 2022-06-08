@@ -11,7 +11,7 @@
 * A four bit reading or writing mode is called a nibble mode.
 
 
-<center>*Decimal Bit values returned when a bit is on:*</center>
+*Decimal Bit values returned when a bit is on:*
 
 ```text
 
@@ -35,7 +35,7 @@
 
 
 
-<center>** Truth table of the BASIC Logical Operators:**</center>
+** Truth table of the BASIC Logical Operators:**
 
 
 

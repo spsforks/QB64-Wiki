@@ -64,7 +64,7 @@ _SCREENMOVE _MIDDLE 'moves program back to main monitor 1
 ```
 >  *Notes:* Change the [_SCREENMOVE](_SCREENMOVE) column to negative for a left monitor.
 
-<center>**[_FULLSCREEN](_FULLSCREEN) works in the primary monitor and may push all running programs to a monitor on the right.**</center>
+**[_FULLSCREEN](_FULLSCREEN) works in the primary monitor and may push all running programs to a monitor on the right.**
 
 
 ## See Also

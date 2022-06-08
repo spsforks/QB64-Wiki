@@ -19,7 +19,7 @@ DISPLAYTITLE:_UNSIGNED
 * The unsigned variable type suffix used is the **tilde (~)**, right before the number's own type suffix: variableName~&
 
 
-<center>How negative values affect the [_UNSIGNED](_UNSIGNED) value returned by a [_BYTE](_BYTE) (8 bits). </center>
+How negative values affect the [_UNSIGNED](_UNSIGNED) value returned by a [_BYTE](_BYTE) (8 bits). 
 
 ```text
 

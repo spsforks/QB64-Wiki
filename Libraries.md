@@ -1,4 +1,4 @@
-<center>**DLL, C++ and the Windows API Libraries**</center>
+**DLL, C++ and the Windows API Libraries**
 * Working with QB64 Declarations: [C Libraries](C Libraries), [DLL Libraries](DLL Libraries), [Windows Libraries](Windows Libraries)
 * QB64 Library Keywords: [DECLARE LIBRARY](DECLARE LIBRARY), [DECLARE DYNAMIC LIBRARY](DECLARE DYNAMIC LIBRARY), [ALIAS](ALIAS), [BYVAL](BYVAL)
 * [PEEK](PEEK) and [POKE](POKE) Library: [PEEK and POKE Library](PEEK and POKE Library)
@@ -10,7 +10,7 @@
 * Windows or Linux SQL Database Library: [SQL Client](SQL Client)
 
 
-<center>**Creating your own $INCLUDE Text Libraries**</center>
+**Creating your own $INCLUDE Text Libraries**
 
 To create your own libraries of your favorite Basic subs and functions, just copy the QB64 code to a text file and save it as a BI or BM file. Then all you need to do is [$INCLUDE]($INCLUDE) the text file name after all of the [SUB](SUB) and [FUNCTION](FUNCTION) code in the program. Once it is compiled, the text file is no longer needed. Save it for other programs you create! No more Object or QLB files to mess with either!
 
@@ -22,7 +22,7 @@ To create your own libraries of your favorite Basic subs and functions, just cop
 * QB64 also allows [TYPE](TYPE) declarations to be placed inside of [SUB](SUB) or [FUNCTION](FUNCTION) procedures!
 
 
-<center>**Note: QB64 requires all DLL files to either be with the program or in the C:\WINDOWS\SYSTEM32 folder!**</center>
+**Note: QB64 requires all DLL files to either be with the program or in the C:\WINDOWS\SYSTEM32 folder!**
 
 
 ## C++ Variable Types

@@ -15,14 +15,14 @@ A **TIMER** statement enables, turns off or stops timer event trapping. QBasic o
 * TIMER STOP disables timer event trapping. When an event occurs while stopped, it is remembered. If timer events are turned back on later, any remembered events are immediately executed. 
 * TIMER OFF turns timer event trapping completely off and no subsequent events are remembered.
 
-<center>**QB64 only**</center>
+**QB64 only**
 
 * Get a TIMER number from [_FREETIMER](_FREETIMER) ONLY except when the base timer(no number or 0) is used. Use specific variables or an array to hold each event number value for later reference.
 * If the TIMER number is omitted or 0, the TIMER used is the base timer.
 * Specific TIMER events can be enabled, suspended, turned off or freed using [TIMER (statement)](TIMER (statement)) ON, STOP, OFF or FREE.
 * TIMER(n) **FREE** clears a specific timer event when it is no longer needed. **The base TIMER or TIMER(0) cannot be freed!** 
 
-<center>**QB64 Timing Alternatives**</center>
+**QB64 Timing Alternatives**
 
 * The [TIMER](TIMER) function can be used to find timed intervals down to 1 millisecond(.001) accuracy.
 * The [_DELAY](_DELAY) statement can be used to delay program execution for intervals down to milliseconds.

@@ -6,7 +6,7 @@ If no suffix is used and no DEFxxx or _DEFINE command has been used and the vari
 
 All types dealing with number values are signed as a default. The symbol to define unsigned variables is ~ and is used just before the type suffix (~` is [_UNSIGNED](_UNSIGNED) _BIT, ~%% is [_UNSIGNED](_UNSIGNED) _BYTE, etc.).
 
-<center>**[SINGLE](SINGLE), [DOUBLE](DOUBLE) and [_FLOAT](_FLOAT) floating decimal point values cannot be [_UNSIGNED](_UNSIGNED)!**</center>
+**[SINGLE](SINGLE), [DOUBLE](DOUBLE) and [_FLOAT](_FLOAT) floating decimal point values cannot be [_UNSIGNED](_UNSIGNED)!**
 
 **Defining variable types:**
 

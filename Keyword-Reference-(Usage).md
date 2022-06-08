@@ -1,6 +1,6 @@
 ##  [Arrays](Arrays) and Data Storage 
 
-<center>**Arrays**</center>
+**Arrays**
 
 * [_DEFINE](_DEFINE) (statement)  defines a range of untyped variable names according to their first character as a datatype.
 * [_PRESERVE](_PRESERVE) ([REDIM](REDIM) option) preserves the existing element values when an array is resized.
@@ -19,7 +19,7 @@
 
 >  See also: [Arrays](Arrays)
 
-<center>**Fixed Program DATA**</center>
+**Fixed Program DATA**
 
 * [DATA](DATA) (statement) creates a field of built-in program data values separated by commas.
 * [READ](READ) (statement) reads the DATA from the data field sequentially.
@@ -85,7 +85,7 @@
 * [OR (boolean)](OR (boolean)) returns True if one of the arguments is True.
 * [XOR (boolean)](XOR (boolean)) returns True if only one of two arguments are True.
 
-<center>See also: [#Logical Bitwise Operations](#Logical_Bitwise_Operations) and [Relational Operations](Relational_Operations)</center>
+See also: [#Logical Bitwise Operations](#Logical_Bitwise_Operations) and [Relational Operations](Relational_Operations)
 
 ##  Definitions and Variable Types 
 
@@ -117,7 +117,7 @@
 * [STRING](STRING) ($ variable type) one byte text variable with [ASCII](ASCII) code values from 0 to 255.
 * [TYPE](TYPE) (statement) defines variable types that can hold more than one variable type value of a fixed byte length.
 
-<center>See also: [Variable Types](Variable_Types) and  [Libraries#C.2B.2B_Variable_Types](Libraries#C.2B.2B_Variable_Types)</center>
+See also: [Variable Types](Variable_Types) and  [Libraries#C.2B.2B_Variable_Types](Libraries#C.2B.2B_Variable_Types)
 
 ##  External Disk and API calls 
 
@@ -161,7 +161,7 @@ The following table describes the error codes that are reported by the **QB64** 
 
 **TODO**
 
-<center>**N/A means Not Available or Not Applicable to QB64.**</center>
+**N/A means Not Available or Not Applicable to QB64.**
 
 ##  Error Trapping 
 
@@ -174,7 +174,7 @@ The following table describes the error codes that are reported by the **QB64** 
 * [ON ERROR](ON ERROR) (statement) [GOTO](GOTO) sends the program to a line number or label when an error occurs. Use to avoid program errors.
 * [RESUME](RESUME) (statement) error statement sends the program to the [NEXT](NEXT) code line or a designated line number or label .
 
-<center>See the [ERROR Codes](ERROR_Codes) reference.</center>
+See the [ERROR Codes](ERROR_Codes) reference.
 
 ##  Event Trapping 
 
@@ -333,7 +333,7 @@ The following table describes the error codes that are reported by the **QB64** 
 * [VIEW](VIEW) (graphics statement) creates a graphics view port area by defining the coordinate limits to be viewed.
 * [WINDOW](WINDOW) (statement) defines the coordinate dimensions of the current graphics viewport.
 
-<center>**See also: [Bitmaps](Bitmaps), [Icons and Cursors](Icons_and_Cursors), [SAVEIMAGE](SAVEIMAGE), [GIF Images](GIF Images)**</center>
+**See also: [Bitmaps](Bitmaps), [Icons and Cursors](Icons_and_Cursors), [SAVEIMAGE](SAVEIMAGE), [GIF Images](GIF Images)**
 
 ##  Keyboard Input 
 
@@ -355,7 +355,7 @@ The following table describes the error codes that are reported by the **QB64** 
 * [ON KEY(n)](ON KEY(n)) (event statement) defines a line number or label to go to when a specified key is pressed.
 * [SLEEP](SLEEP) (statement) pauses the program for a specified number of seconds or a until a key press.
 
-<center>See also: [Keyboard scancodes](Keyboard_scancodes), [ASCII](ASCII) references or [Windows_Libraries#Hot_Keys_.28maximize.29](Windows_Libraries#Hot_Keys_.28maximize.29).</center>
+See also: [Keyboard scancodes](Keyboard_scancodes), [ASCII](ASCII) references or [Windows_Libraries#Hot_Keys_.28maximize.29](Windows_Libraries#Hot_Keys_.28maximize.29).
 
 ## [Libraries](Libraries) 
 
@@ -368,9 +368,9 @@ The following table describes the error codes that are reported by the **QB64** 
 * [DECLARE DYNAMIC LIBRARY](DECLARE DYNAMIC LIBRARY) declares DYNAMIC, CUSTOMTYPE or STATIC  library(DLL) [SUB](SUB)s or [FUNCTION](FUNCTION)s.
 * [DECLARE LIBRARY](DECLARE LIBRARY) required at the END of the block of Library declarations in QB64.
 
-<center>**QB64 also supports [$INCLUDE]($INCLUDE) text code file Libraries. QB64 does not support QLB Libraries or OBJ files.**</center>
+**QB64 also supports [$INCLUDE]($INCLUDE) text code file Libraries. QB64 does not support QLB Libraries or OBJ files.**
 
-<center>See also: [Libraries#C++_Variable_Types](Libraries#C++_Variable_Types)</center>
+See also: [Libraries#C++_Variable_Types](Libraries#C++_Variable_Types)
 
 ##  Logical Bitwise Operations 
 
@@ -408,7 +408,7 @@ The following table describes the error codes that are reported by the **QB64** 
 * [SQR](SQR) (function) square root of a positive number.
 * [TAN](TAN) (function) returns the ratio of [SIN](SIN)e to [COS](COS)ine or tangent value of an angle measured in radians.
 
-<center>See also: [Mathematical Operations](Mathematical_Operations) and [#Logical Bitwise Operations:](#Logical_Bitwise_Operations:) </center>
+See also: [Mathematical Operations](Mathematical_Operations) and [#Logical Bitwise Operations:](#Logical_Bitwise_Operations:) 
 
 ##  Memory Handling and Clipboard 
 
@@ -429,7 +429,7 @@ The following table describes the error codes that are reported by the **QB64** 
 * [_OFFSET (function)](_OFFSET (function)) returns the memory offset of a variable when used with [DECLARE LIBRARY](DECLARE LIBRARY) or [_MEM](_MEM) only.
 * [_OFFSET](_OFFSET)(%& numerical type) can be used store the value of an offset in memory when using [DECLARE LIBRARY](DECLARE LIBRARY) or [_MEM](_MEM) only.
 
-<center>**Functions and statements using QB64's emulated 16 bit memory**</center>
+**Functions and statements using QB64's emulated 16 bit memory**
 
 * [DEF SEG](DEF SEG) (statement) defines the segment address in memory.
 * [PEEK](PEEK) (function) returns the value that is contained at a certain memory address offset.
@@ -439,20 +439,20 @@ The following table describes the error codes that are reported by the **QB64** 
 * [VARPTR$](VARPTR$) (function) returns a STRING representation of a variable's memory address value
 * [VARSEG](VARSEG) (function) returns an [INTEGER](INTEGER) value that is the [segment](segment) part of a variable or array memory address.
 
-<center>See also: [Screen Memory](Screen_Memory) or [Using _OFFSET](Using_OFFSET)</center>
+See also: [Screen Memory](Screen_Memory) or [Using _OFFSET](Using_OFFSET)
 
 ## Metacommands 
 
 > Metacommands are commands that affect a program globally after they are in used. Error checking can be turned [OFF](OFF) or [ON](ON).
 
-<center>**QB64 [Metacommand](Metacommand)s do NOT allow commenting or [REM](REM)!**</center>
+**QB64 [Metacommand](Metacommand)s do NOT allow commenting or [REM](REM)!**
  
 * [$CHECKING]($CHECKING):OFF/ON (QB64 only) turns event and error checking ON and OFF. ON (default) can only be used after it is OFF.
 * [$CONSOLE]($CONSOLE) creates a console window throughout the program.
 * [$SCREENHIDE]($SCREENHIDE) hides the program window throughout the program until [$SCREENSHOW]($SCREENSHOW) is used.
 * [$SCREENSHOW]($SCREENSHOW) displays the main program window throughout the program only after [$SCREENHIDE]($SCREENHIDE) or [_SCREENHIDE](_SCREENHIDE) has been used.
 
-<center>**QBasic [Metacommand](Metacommand)s do not require commenting or [REM](REM) in QB64!**</center>
+**QBasic [Metacommand](Metacommand)s do not require commenting or [REM](REM) in QB64!**
 
 * '[$DYNAMIC]($DYNAMIC) defines that all arrays are dynamic or changeable in size using [DIM](DIM) or [REDIM](REDIM).
 * '[$INCLUDE]($INCLUDE): 'filename$' includes a text library file with procedures to be used in a program. Comment both sides of file name also.
@@ -536,7 +536,7 @@ The following table describes the error codes that are reported by the **QB64** 
 * [PRINT (file statement)](PRINT_(file_statement)) writes text and numerical data to a port transmit buffer.
 * [PUT](PUT) (file I/O statement) writes data into a [RANDOM](RANDOM) or [BINARY](BINARY) port by byte or record position.
 
-<center>**See [Port Access Libraries](Port_Access_Libraries) for other ways to access COM and LPT ports.**.</center>
+**See [Port Access Libraries](Port_Access_Libraries) for other ways to access COM and LPT ports.**.
 
 ##  Print formatting 
 
@@ -552,7 +552,7 @@ The following table describes the error codes that are reported by the **QB64** 
 * [LPRINT](LPRINT) (statement) prints text to an LPT or USB printer page.
 * [LPRINT USING](LPRINT_USING) (statement) prints template formatted [STRING](STRING) text to an LPT or USB  printer page.
 
-<center>**QB64 will use the default system printer selected. [_PRINTIMAGE](_PRINTIMAGE) images will be stretched to the paper size setting.**</center>
+**QB64 will use the default system printer selected. [_PRINTIMAGE](_PRINTIMAGE) images will be stretched to the paper size setting.**
 
 ##  Program Flow and Loops 
 
@@ -660,7 +660,7 @@ The following table describes the error codes that are reported by the **QB64** 
 
 ##  Sub procedures and Functions ##  
 
-<center>**QBasic and QB64**</center>
+**QBasic and QB64**
 
 * [CALL](CALL) (statement) sends code execution to a [SUB](SUB) procedure in a program. Parameter brackets are required when used.
 * [CALL ABSOLUTE](CALL_ABSOLUTE) (statement) used to access Interrupts on the computer or execute assembly type procedures.
@@ -681,7 +681,7 @@ The following table describes the error codes that are reported by the **QB64** 
 
 ##  TCP/IP Networking and Email 
 
-<center>**All Statements and Functions Compile in QB64 Only!**</center>
+**All Statements and Functions Compile in QB64 Only!**
 
 * [_CONNECTED](_CONNECTED) (function) returns the connection status of a TCP/IP connection handle.
 * [_CONNECTIONADDRESS$](_CONNECTIONADDRESS$) (function)  function returns a connected user's [STRING](STRING) IP address value.
@@ -696,7 +696,7 @@ The following table describes the error codes that are reported by the **QB64** 
 
 * [PUT (TCP/IP statement)](PUT (TCP/IP statement)) sends unformatted(raw) data to an open connection using a user's handle.
 
-<center>See also: [Downloading Files](Downloading_Files)</center>
+See also: [Downloading Files](Downloading_Files)
 
 ##  Text on Screen 
 
@@ -729,7 +729,7 @@ The following table describes the error codes that are reported by the **QB64** 
 * [WIDTH](WIDTH) (statement) changes the text dimensions of certain [SCREEN](SCREEN) modes or printer page widths
 * [WRITE](WRITE) (screen I/O statement) writes a comma-separated list of values to the screen.
 
-<center> See also: [#Fonts and Unicode:](#Fonts_and_Unicode:) or [ASCII](ASCII)</center>
+ See also: [#Fonts and Unicode:](#Fonts_and_Unicode:) or [ASCII](ASCII)
 
 ##  Time, Date and Timing 
 
@@ -759,7 +759,7 @@ The following table describes the error codes that are reported by the **QB64** 
 
 ##  Window and Desktop 
 
-<center>**All Statements and Functions except [SCREEN](SCREEN) Compile in QB64 Only!**</center>
+**All Statements and Functions except [SCREEN](SCREEN) Compile in QB64 Only!**
 
 * [_FULLSCREEN (function)](_FULLSCREEN (function)) returns the present full screen mode setting number of the screen window.
 * [_FULLSCREEN](_FULLSCREEN) (statement) sets the full screen mode of the screen window. Alt + Enter can do it manually.
@@ -786,14 +786,14 @@ The following table describes the error codes that are reported by the **QB64** 
 
 * [SCREEN](SCREEN) sets the screen mode of a program. No statement defaults the program to SCREEN 0 text mode.
 
-<center>## See Also
- [C_Libraries#Console_Window](C_Libraries#Console_Window),  [Windows_Libraries#Hot_Keys_.28maximize.29](Windows_Libraries#Hot_Keys_.28maximize.29) or [Windows_Libraries#Focus](Windows_Libraries#Focus).</center>
+## See Also
+ [C_Libraries#Console_Window](C_Libraries#Console_Window),  [Windows_Libraries#Hot_Keys_.28maximize.29](Windows_Libraries#Hot_Keys_.28maximize.29) or [Windows_Libraries#Focus](Windows_Libraries#Focus).
 
 ##  QB64 Programming Symbols 
 
-<center>**QB64 and QB Symbols**</center>
+**QB64 and QB Symbols**
 
-<center>*[Note: All symbols below can also be used inside of literal quoted strings except for quotation marks.]*</center>
+*[Note: All symbols below can also be used inside of literal quoted strings except for quotation marks.]*
 
 > **Print, Input or File Formatting**
 

@@ -2,7 +2,7 @@ The following procedure demonstrates how Registry information can be altered by 
 
 <sub>Code courtesy of Michael Calkins</sub>
 
-<center>**WARNING! Use care when editing or altering Registry settings! YOU will be responsible for any damages incurred!**</center>
+**WARNING! Use care when editing or altering Registry settings! YOU will be responsible for any damages incurred!**
 
 ```vb
 
@@ -285,9 +285,9 @@ END FUNCTION
 
 > *Note:* This procedure lists most of the Constants and Registry functions available, but only uses a few of them in this demo. All of these functions, except RegCloseKey, have both ANSI (ending in A) and Unicode (ending in W) versions. I am not aware of any reason why both  versions could not be used in the same program. To add the Unicode version, duplicate the function declaration, but change the ending A to W. Be sure that you know how to use the [Unicode](Unicode) version!
 
-<center>**WARNING! Use care when editing or altering Registry settings! YOU will be responsible for any damages incurred!**</center>
+**WARNING! Use care when editing or altering Registry settings! YOU will be responsible for any damages incurred!**
 
-<center>**Your code contribution using the above Registry Libraries could end up here!**</center>
+**Your code contribution using the above Registry Libraries could end up here!**
 
 ## See Also
 

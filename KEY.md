@@ -11,7 +11,7 @@ The [KEY n](KEY n) statement is used to assign a "soft key" string or a flag and
 ## Function Soft Key Strings (1 to 10, 30 & 31)
 
 
-<center>**Assigning "Softkey" [STRING](STRING) values to function key press events**</center>
+**Assigning "Softkey" [STRING](STRING) values to function key press events**
 
 * n% is the number 1 to 10 (F1 to F10), 30 or 31 (F11 or F12) of the function key to assign the soft key string.
 * Instead of using an [ON KEY(n)](ON KEY(n)) [GOSUB](GOSUB) statement, Function keys F1 to F12 can be assigned a "soft key" string value to return.
@@ -39,7 +39,7 @@ The [KEY n](KEY n) statement is used to assign a "soft key" string or a flag and
 ## User Defined Keys (15 to 29)
 
 
-<center>**Assigning user defined keys or combinations with: KEY n, CHR$(keyflag) + CHR$(scancode)**</center>
+**Assigning user defined keys or combinations with: KEY n, CHR$(keyflag) + CHR$(scancode)**
 
 ```text
 
@@ -87,7 +87,7 @@ The [KEY n](KEY n) statement is used to assign a "soft key" string or a flag and
 <sub>NOTE: The above commented table can be copied and pasted directly into the QB64 IDE</sub>
 
 
-<center>**Trapping Ctrl, Alt and Shift key combinations**</center>
+**Trapping Ctrl, Alt and Shift key combinations**
 > Keyboard Flag values can be added to monitor more than one control key. For example, flag combination 12 would flag both the Ctrl and Alt key presses. Since the flag already determines the function key to monitor, you don't necessarily have to use it's scancode. You can look for a key combination such as Ctrl + by using the plus key's scancode which is 13 as shown below: 
 
 
@@ -98,7 +98,7 @@ The [KEY n](KEY n) statement is used to assign a "soft key" string or a flag and
 
 
 
-<center>**Trapping Extended keys (Insert, Home, Page Up, Right Ctrl, R.Alt, and cursor arrow pad)**</center>
+**Trapping Extended keys (Insert, Home, Page Up, Right Ctrl, R.Alt, and cursor arrow pad)**
 * On a 101-key keyboard, you can trap any of the keys on the dedicated cursorpad by assigning the string to any of the keynumber values from 15 to 25 using the 128 keyboard flag. The cursor arrows are not the same as the pre-assigned number pad arrows:
 
 ```text
@@ -115,7 +115,7 @@ The [KEY n](KEY n) statement is used to assign a "soft key" string or a flag and
 
 ```
 
-<center>Use CHR$(0) for the first byte flag for non-function keys. You can substitute a literal [STRING](STRING) value to trap as shown in Example 2.</center>
+Use CHR$(0) for the first byte flag for non-function keys. You can substitute a literal [STRING](STRING) value to trap as shown in Example 2.
 
 
 

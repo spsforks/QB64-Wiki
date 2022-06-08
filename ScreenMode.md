@@ -1,4 +1,4 @@
-<center>**Screen Mode Detection Function**</center>
+**Screen Mode Detection Function**
 
 ```vb
 

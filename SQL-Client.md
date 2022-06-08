@@ -1,6 +1,6 @@
 **MySQL** is a database manager that is widely used on the internet with languages such as PHP. This is a DECLARE LIBRARY to allow access to MySQL databases.
 
-<center>**IMPORTANT**</center>
+**IMPORTANT**
 
 > * 1) Make sure you are running QB64 V0.942 or higher
 > * 2) Download 'mysql.dll' and place it in your qb64 folder (not provided)
@@ -198,7 +198,7 @@ END
 
 This version has much the same functionality with a few bug fixes, better examples, the ability to switch between multiple open databases and a table-viewer SUB for visualising the results of SELECT queries. If anyone wants to code me up some more examples or suggest improvements feel free, I'll be glad to add them. Galleon
 
-<center>**IMPORTANT**</center>
+**IMPORTANT**
 
 > * Download 'mysql.dll' and place it in your qb64 folder (not provided)
 > * Find a SQL database server to connect to OR download your own [http://dev.mysql.com/downloads/] 

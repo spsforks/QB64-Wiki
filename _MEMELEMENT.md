@@ -51,7 +51,7 @@ The [_MEMELEMENT](_MEMELEMENT) function returns a [_MEM](_MEM) block referring t
 > ::* 8 = [STRING](STRING) 
 > ::* 0 = unknown(eg. created with [_MEMNEW](_MEMNEW)) or [TYPE](TYPE)
 
-<center>**Note: [_MEM](_MEM) and [_OFFSET](_OFFSET) values cannot be cast to other variable types.**</center>
+**Note: [_MEM](_MEM) and [_OFFSET](_OFFSET) values cannot be cast to other variable types.**
 
 
 ## Example(s)

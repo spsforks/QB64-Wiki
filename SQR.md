@@ -88,7 +88,7 @@ PRIME! How'd you find me?
 
 ```
 
-<center>*Note:* Prime numbers cannot be evenly divided by any other number except one.</center>
+*Note:* Prime numbers cannot be evenly divided by any other number except one.
 
 ## See Also
  

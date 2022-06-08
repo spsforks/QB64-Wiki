@@ -51,7 +51,7 @@ The [INKEY$](INKEY$) function returns user input as [ASCII](ASCII) [STRING](STRI
 * Read the second byte code using: **code2 <nowiki>=</nowiki> ASC(press$, 2)**
 
 
-<center>**[ASCII#Two_Byte_Codes](ASCII#Two_Byte_Codes)**</center>
+**[ASCII#Two_Byte_Codes](ASCII#Two_Byte_Codes)**
 
 
 ```text

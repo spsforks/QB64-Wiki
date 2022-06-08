@@ -39,7 +39,7 @@ END SUB
 
 > Above [ASCII](ASCII) Characters 7, 9, 10, 11, 12, 13, 28, 29, 30, and 31 won't print in QBasic! **QB64** can print them with [_PRINTSTRING](_PRINTSTRING) or by using [PRINT](PRINT) after [_CONTROLCHR](_CONTROLCHR) OFF is set.
 
-<center>**Bit Packing**</center>
+**Bit Packing**
 
 ```vb
 
@@ -112,7 +112,7 @@ END SUB
 
 Once the data is saved, we need something to convert the data back into text characters. There are several ways to do this simply by using [PSET](PSET) for normal sizes or [CIRCLE](CIRCLE) or [LINE](LINE) to amplify the displayed character sizes. Use a normal [FOR...NEXT](FOR...NEXT) 0 TO 7 loop to read:
 
-<center>**[ASCII](ASCII) 8 X 16 Text character size increased using [CIRCLE](CIRCLE)**</center>
+**[ASCII](ASCII) 8 X 16 Text character size increased using [CIRCLE](CIRCLE)**
 
 ```vb
 
@@ -188,9 +188,9 @@ END SUB
 
 > The program above shows each array [_BYTE](_BYTE) character value and character. [PRINT](PRINT) will not print some characters in QB64 or QB.
 
-<center>Use **[_CONTROLCHR](_CONTROLCHR) OFF** to [PRINT](PRINT) control characters in QB64!</center>
+Use **[_CONTROLCHR](_CONTROLCHR) OFF** to [PRINT](PRINT) control characters in QB64!
 
-<center>**[ASCII](ASCII) 8 X 16 Text Character size increased using [LINE](LINE)**</center>
+**[ASCII](ASCII) 8 X 16 Text Character size increased using [LINE](LINE)**
 
 ```vb
 
@@ -319,7 +319,7 @@ END SUB
 
 > If the character width is wider than 8 pixels, we can no longer store the exponent of two values in one [_BYTE](_BYTE) or represent that byte as an [ASCII](ASCII) character so we can use an [INTEGER](INTEGER) or [LONG](LONG) array to hold the values, which can be saved to file with [PUT](PUT).
 
-<center>**Variable font widths**</center>
+**Variable font widths**
 
 > Some fonts vary in width for every character so we can store *wide&* as a [HEX$](HEX$) value in the *high&* array row value as we use 0 through *high&* - 1 to store the bit totals. Save the  *high&* [_FONTHEIGHT](_FONTHEIGHT) value for the sub-procedures and to dimension an array!
 
@@ -327,7 +327,7 @@ END SUB
 
 ## Reading the Data File
 
-<center>**Reading the file data in a QB64 program only**</center>
+**Reading the file data in a QB64 program only**
 
 ```vb
 
@@ -372,9 +372,9 @@ END SUB
 
 ```
 
-<center>*Note:* Use empty parenthesis after the [Arrays](Arrays) name to [PUT](PUT) # or [GET](GET) # the entire array, even multi-dimensional ones.</center>
+*Note:* Use empty parenthesis after the [Arrays](Arrays) name to [PUT](PUT) # or [GET](GET) # the entire array, even multi-dimensional ones.
 
-<center>**Reading the file data in a QBasic or QB64 program**</center>
+**Reading the file data in a QBasic or QB64 program**
 
 ```vb
 
@@ -431,9 +431,9 @@ END SUB
 
 ```
 
-<center>The QB64 [PUT](PUT) [BINARY](BINARY) file can be read to the array by reading the row values for all of the characters as above.</center>
+The QB64 [PUT](PUT) [BINARY](BINARY) file can be read to the array by reading the row values for all of the characters as above.
 
-<center>**The average font file with 256 characters is less than 20 KB in size!**</center>
+**The average font file with 256 characters is less than 20 KB in size!**
 
 ## See Also
 

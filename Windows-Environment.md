@@ -167,11 +167,11 @@ END
 
 ```
 
-<center>**[Screenshot of Windows Environmental variables when program is run.](http://i301.photobucket.com/albums/nn53/burger2227/RegistryCalkins.gif)**</center>
+**[Screenshot of Windows Environmental variables when program is run.](http://i301.photobucket.com/albums/nn53/burger2227/RegistryCalkins.gif)**
 
 >  When prompted, open the "Environment Variables" window within System Properties(Control Panel - Performance and Maintenance - System - Advanced - Environment Variables) to see the changes or open a new *cmd.exe* console to see it.
 
-<center>**Administrator privileges are required to change System-wide environmental values, but not current user account values.**</center> 
+**Administrator privileges are required to change System-wide environmental values, but not current user account values.** 
 
 ## See Also
 

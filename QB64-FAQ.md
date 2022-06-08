@@ -1,6 +1,6 @@
 As with everything else, this list will be updated to correspond to new progress of QB64 so make sure that you are using the latest version of **QB64**. Please note that it may take a short time to update this list.
 
-<center>**It's recommended to exclude (whitelist) "qb64.exe" (also the *internal* folder) from any real-time anti-virus scanning to prevent IDE Module Errors.**</center>
+**It's recommended to exclude (whitelist) "qb64.exe" (also the *internal* folder) from any real-time anti-virus scanning to prevent IDE Module Errors.**
 
 ## Q: What is QB64?
 
@@ -15,14 +15,14 @@ QB is an abbreviation for **QBasic** or **QuickBASIC** which is an easy to learn
 ## Q: Does it have modern features? Do they HAVE to be used?
 
 A: QB64 has plenty of modern features, but they do not have to be used. You may just want to run some of your old favorites.
-<center>**QB64 was created to run your old QBasic 4.5 (or less) programs on newer Operating Systems without any changes.**</center>
+**QB64 was created to run your old QBasic 4.5 (or less) programs on newer Operating Systems without any changes.**
 You could code using the original QuickBASIC syntax all the way through and it should work as you expect it to or even better. QB64 is often faster and has none of the memory limitations that plagued QBasic in the past.
 
 QB64 is not meant to run PDS (7.1) QBX code. Most GW Basic code will run with minor changes.
 
 The modern statements are designed to go along with the BASIC philosophy and expand QBasic into the future!
 
-<center>**QB64 FEATURES INCLUDE:**</center>
+**QB64 FEATURES INCLUDE:**
 
 ```text
 
@@ -50,7 +50,7 @@ The modern statements are designed to go along with the BASIC philosophy and exp
 
 A: QB64 supports the following Operating Systems:
 
-<center>**Windows NT (XP), Windows Vista, Windows 7, 8 or 10:**</center>
+**Windows NT (XP), Windows Vista, Windows 7, 8 or 10:**
 
 > **1)** Download the appropriate package according to your system from [GitHub](http://github.com/QB64Official/qb64/releases)
 > **2)** Unpack the contents to any location on your computer. Avoid unpacking to Program Files or other system folders that may require administrative privileges. QB64 needs to have full write permissions to its own folder.
@@ -59,30 +59,30 @@ A: QB64 supports the following Operating Systems:
 
 ----
 
-<center>**Most distributions of Linux, both 32 and 64 bit**</center>
+**Most distributions of Linux, both 32 and 64 bit**
 
 > **1)** Download the appropriate package according to your system from [GitHub](http://github.com/QB64Official/qb64/releases)
 > **2)** After extracting the downloaded package, run the installation batch/script called *./setup_lnx.sh* in the main *qb64* folder to setup QB64.
 > **3)**  Most dependencies should be automatically downloaded by the setup script, but these are the ones you should look for if compilation fails: OpenGL developement libraries, ALSA development libraries, GNU C++ Compiler (g++)
 
-<center>Executable programs are portable between like systems by copying the executable file.</center>
-<center>**Note: Some QB64 keywords and procedures are not available for Linux.**</center>               
+Executable programs are portable between like systems by copying the executable file.
+**Note: Some QB64 keywords and procedures are not available for Linux.**               
 
 ----
-<center>**macOS**</center>
+**macOS**
 
 > **1)** You must install Apple's **Xcode command line tools** for C++ compilation from their website. The simplest way to do so is opening a terminal window and typing the following command: **xcode-select --install** (more info here: [http://developer.apple.com/technologies/tools/xcode.html Xcode download])
 >     (you won't be using the Xcode interface, QB64 just needs to have access to the C++ compiler and libraries it installs)
 > **3)** Download the appropriate package according to your system from [GitHub](http://github.com/QB64Official/qb64/releases)
 >     Extract the downloaded package and run *./setup_osx.command*, found within the QB64 folder to install the QB64 compiler.
 
-<center>**After installation you should run **./qb64** or **./qb64_start_osx.command** to run qb64.**</center>
+**After installation you should run **./qb64** or **./qb64_start_osx.command** to run qb64.**
 
 > *Executable programs are portable between macOS systems by copying the executable file.
 > *To help launch executables without a console, a file called *programname_start.command* is created along with the program.
-<center>**Note: Some QB64 keywords and procedures are not available for macOS.**</center>
+**Note: Some QB64 keywords and procedures are not available for macOS.**
 
-<center>[Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions](Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions)</center>
+[Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions](Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions)
 
 ----
 
@@ -122,7 +122,7 @@ A: If the libraries are pure QB 4.5 code then yes, otherwise no. QLB files are n
 
 [DECLARE LIBRARY](DECLARE LIBRARY) allows users to reference C, Windows, OpenGL and other DLL libraries. If you find some functions that you like please share them with us at the forum! The following pages list working functions our members have found and tested:
 
-<center>[C Libraries](C Libraries), [DLL Libraries](DLL Libraries), [Windows Libraries](Windows Libraries)</center>
+[C Libraries](C Libraries), [DLL Libraries](DLL Libraries), [Windows Libraries](Windows Libraries)
 
 ## Q: I can't get my QB 4.5 source code to work in QB64! Why?
 

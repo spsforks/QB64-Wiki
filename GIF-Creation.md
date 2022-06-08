@@ -1,4 +1,4 @@
-<center>**GIF File Creator**</center>
+**GIF File Creator**
 The following routine can be used with QBasic or QB64 to create a Graphic Information File image of a program screen.  
 
 * Accommodates [_NEWIMAGE](_NEWIMAGE) screen pages with up to 256 colors and image files loaded with [_LOADIMAGE](_LOADIMAGE). 
@@ -30,7 +30,7 @@ MakeGIF "GIFtemp.gif", 0, 0, _WIDTH - 1, _HEIGHT - 1, 256  'use 319 and 199 in Q
 
 ```
 
-<center>*GIFcreate.BM text [$INCLUDE]($INCLUDE) file:*</center>
+*GIFcreate.BM text [$INCLUDE]($INCLUDE) file:*
 
 ```text
 

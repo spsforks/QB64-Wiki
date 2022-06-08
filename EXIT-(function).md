@@ -63,7 +63,7 @@ IF _EXIT THEN CLOSE: KILL "t3mpdata.tmp": _DELAY 1: SYSTEM
 LOOP 
 
 ```
-<center>Note: If you have a file named *t3mpdata.tmp* change the file name!</center>
+Note: If you have a file named *t3mpdata.tmp* change the file name!
 
 
 ## See Also

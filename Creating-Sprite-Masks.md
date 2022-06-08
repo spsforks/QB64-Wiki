@@ -55,7 +55,7 @@ PX = x: PY = y
 In **QB64** [_CLEARCOLOR](_CLEARCOLOR) can also be used before using [_PUTIMAGE](_PUTIMAGE) to mask any sprite background color.
 
 
-<center>**See the [GET and PUT Demo](GET and PUT Demo) to see how it works!**</center>
+**See the [GET and PUT Demo](GET and PUT Demo) to see how it works!**
 
 
 ## See Also

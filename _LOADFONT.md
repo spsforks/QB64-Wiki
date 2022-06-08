@@ -28,7 +28,7 @@ The [_LOADFONT](_LOADFONT) function loads a TrueType font (.TTF) or an OpenType 
 * [_PRINTWIDTH](_PRINTWIDTH) can measure the width of a string of text in **graphics modes only**. Use one character to get the font's width.
 
 
-<center> **Font Handles**</center>
+ **Font Handles**
 * Multiple fonts will require multiple font variable handles unless used and freed consecutively.
 * Font handles with values greater than 0 that are **no longer used** should be freed using [_FREEFONT](_FREEFONT). 
 * **Predefined QB64** font handle numbers can be substituted before freeing a font handle:
@@ -40,7 +40,7 @@ The [_LOADFONT](_LOADFONT) function loads a TrueType font (.TTF) or an OpenType 
 * Font handle values of -1 (load failure) **do not** need to be freed. **An [ERROR Codes](ERROR Codes) will occur if you try to free invalid handles.**
 
 
-<center> **Font File Specs**</center>
+ **Font File Specs**
 * Windows users should find **TTF** font files in the C:\WINDOWS\FONTS folder, but don't depend on unusual ones being there. 
 * **Check the font file name. The name in the "viewer" is not necessarily the file's name. Use the name in properties (right click a font listed and choose Properties in the contextual menu)**
 * If a program is on a different drive than Windows, [ENVIRON$](ENVIRON$)("SYSTEMROOT") will return the path to the "WINDOWS" folder. Normally "C:\WINDOWS". Then add the "\FONTS\" folder and the font **.TTF** filename to the path [STRING](STRING).

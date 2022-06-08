@@ -1,4 +1,4 @@
-<center>**Icons** and **Cursors** are image files with ICO or CUR filename extensions.</center>
+**Icons** and **Cursors** are image files with ICO or CUR filename extensions.
 {| align="right"
   | __TOC__
   |}
@@ -69,7 +69,7 @@ DIM SHARED BMP(items%) AS BMPHEADER
 ```
 
 
-<center>**ICON File Header Information**</center>
+**ICON File Header Information**
 
 > :* The Icon header is only six bytes. The first [INTEGER](INTEGER) value is reserved and is always 0.
 > :* The second [INTEGER](INTEGER) indicates the type of file:
@@ -79,7 +79,7 @@ DIM SHARED BMP(items%) AS BMPHEADER
 
 > :* The third [INTEGER](INTEGER) value indicates the number of images contained in the file. This will also tell you the number of Icon Entry information headers follow. A [TYPE](TYPE) array can be used to reference the entry and BMP header information later when there is more than one image. The start of all bitmap header and image data information is after 6 + (count * 16) bytes.
 
-<center>**ICON Entry Information**</center>
+**ICON Entry Information**
 >  The Entry header information for all icon images contained in the icon file follow the icon header. No image data will be found until after all of the Entry information. Each entry  contains the dimensions, size of data and the location of the start of image data.
 
 > :* The image width and height are [_BYTE](_BYTE) numerical values or [ASC](ASC) [ASCII](ASCII) code [STRING](STRING) values.
@@ -89,7 +89,7 @@ DIM SHARED BMP(items%) AS BMPHEADER
 > :* The [LONG](LONG) Data Size value should indicate the size of the image data including bitmap header, palette and pixel data.
 > :* The [LONG](LONG) Data Offset value will indicate the byte position of the image bitmap header. Add one byte in QB and QB64.
 
-<center>**Bitmap Header Information**</center>
+**Bitmap Header Information**
 >  The Bitmap header information is located one byte after the Data Offset position because QBasic sets the first byte of a file as 1 instead of zero. This bitmap image information is identical to a bitmap image header's last 40 bytes, but the height is doubled.
 
 > :* The [LONG](LONG) header size is always 40 bytes. This can be used to verify the start position of the header.
@@ -162,13 +162,13 @@ DIM SHARED BMP(items%) AS BMPHEADER
 
 
 
-<center>**Palette Data**</center>
+**Palette Data**
 
 > The Palette is only used in **4 BPP** and **8 BPP** Icons or Cursors. It is exactly the same format as a bitmap. The number of available colors determines the size of palette data. The data is read as blue, green, red [_BYTE](_BYTE)s with a zero([CHR$](CHR$)(0)) spacer so the palette size is 4 times the number of available colors: 4 BPP = 4 * (2 ^ 4) = 64 bytes and 8 BPP = 4 * (2 ^ 8) = 1024 bytes.
 >  The palette sets the Blue, Green and Red color intensities before each color attribute value is read in the image's pixel data.
 
 
-<center>**XOR Mask Image Data**</center>
+**XOR Mask Image Data**
 
 > The [XOR](XOR) mask is found after the Palette in 4 BPP or 8 BPP or immediately after the icon BMP Header if 1 BPP or 24 BPP colors. The XOR data is also read the same as a bitmap. The BPP determines the size of the data as bits per pixel:
 > ::* 1 BPP is one bit per pixel (on white or off black) or bytes = (width * height) / 8 bits

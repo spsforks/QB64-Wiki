@@ -18,7 +18,7 @@ A [_BYTE](_BYTE) variable can hold signed variable values from -128 to 127 (one 
 * **When a variable has not been assigned or has no type suffix, the value defaults to [[SINGLE]].**
 
 
-<center>**[[_BIT|BITS]]**</center>
+**[[_BIT|BITS]]**
 * The **MSB** is the most significant(largest) bit value and **LSB** is the least significant bit of a binary or register memory address value. The order in which the bits are read determines the binary or decimal byte value. There are two common ways to read a byte:
 
 > * **"Big-endian"**: MSB is the first bit encountered, decreasing to the LSB as the last bit by position, memory address or time.
@@ -37,7 +37,7 @@ A [_BYTE](_BYTE) variable can hold signed variable values from -128 to 127 (one 
 > :The big-endian method compares exponents of 2<sup>7</sup> down to 2<sup>0</sup> while the little-endian method does the opposite. 
 
 
-<center>**[[_BYTE|BYTES]]**</center>
+**[[_BYTE|BYTES]]**
 * [[INTEGER]] values consist of 2 bytes called the **HI** and **LO** bytes. Anytime that the number of binary digits is a multiple of 16 (2bytes, 4 bytes, etc.) and the HI byte's MSB is on(1), the value returned will be negative. Even with [[SINGLE]] or [[DOUBLE]] values! 
 
 ```text

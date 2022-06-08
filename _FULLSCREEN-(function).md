@@ -15,7 +15,7 @@ The [_FULLSCREEN](_FULLSCREEN) function returns the present full screen mode set
 ** 2 = _SQUAREPIXELS
 * It **cannot** be assumed that calling [_FULLSCREEN](_FULLSCREEN) will succeed. It cannot be assumed that the type of full screen will match the requested one. **Always check the [_FULLSCREEN (function)](_FULLSCREEN (function)) return in your programs.**
 * **Warning:** Despite your software, the user's hardware, drivers and monitor may not function in some modes. Thus, it is highly recommended that you manually confirm with the user whether the switch to full screen was successful. This can be done "quietly" in some cases by getting the user to click on a button on screen with their mouse or press an unusual key. If the user does not respond after about 8 seconds, switch them back to windowed mode.
-<center>**Using large fonts with [_FULLSCREEN](_FULLSCREEN) can cause monitor or Windows Desktop problems or kill a program.**</center>
+**Using large fonts with [_FULLSCREEN](_FULLSCREEN) can cause monitor or Windows Desktop problems or kill a program.**
 
 
 ## Example(s)

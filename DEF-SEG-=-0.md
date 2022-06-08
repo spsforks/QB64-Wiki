@@ -224,7 +224,7 @@ OUT 1010, 12 'will turn off all drives
 ## PORTS
 
 
-<center>**PRINTER LPT Ports**</center>
+**PRINTER LPT Ports**
 
 > &H411
 > numLPT% = (PEEK (1041) AND 192) / 64 = the number of LPT printer adaptors installed.
@@ -237,7 +237,7 @@ Denote the first port associated with LPTn by Pn. The value
 of P1 will be 956 if LPT1 is attached to the IBM monochrome display
 and parallel printer adapter.     
 
-<center>**RS-232 Serial port INTERFACE**</center>
+**RS-232 Serial port INTERFACE**
 
 > &H411
 The number of RS-232 cards attached can be found with: (PEEK(1041) AND 14)/2

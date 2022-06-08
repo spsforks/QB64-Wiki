@@ -1,4 +1,4 @@
-<center>**_OFFSET Explanation By Michael Calkins**</center>
+**_OFFSET Explanation By Michael Calkins**
 
 An **_OFFSET** means a pointer. Use it any time that you need to pass or receive a pointer. With the API, types that start with P or LP, and parameters that start with p or lp are generally pointers.
 
@@ -8,7 +8,7 @@ So for example in C: **void *** means a void pointer, that is, a pointer to a va
 
 Also, for example: **CHAR *** means a pointer to a CHAR.
 
-<center>**Example using QueryDosDeviceA to enumerate COM ports**</center>
+**Example using QueryDosDeviceA to enumerate COM ports**
 
 ```vb
 
@@ -84,7 +84,7 @@ END
 
 So, you would look at the function prototype in the MSDN article, and match the data types of all of the parameters and the return value to QB64 data types. _OFFSET is the type to use for any kind of pointer. MSDN has a list of data types:
 
-<center>[MSDN list of Data types](http://msdn.microsoft.com/en-us/library/aa383751(v=vs.85).aspx)</center>
+[MSDN list of Data types](http://msdn.microsoft.com/en-us/library/aa383751(v=vs.85).aspx)
 
 You can look up the types in that article. Note that many types are derived from other types, so you may have to follow the chain back, looking up each type that the other type was derived from, until you get back to a standard type like int or void*. Deriving types in C is accomplished with typedef. (Just as a note: the current version of that article on the web seems to have a problem, where the #ifdef UNICODE blocks aren't displaying properly, at least in my browser. I am going by an older version of that article that I saved.)
 
@@ -100,7 +100,7 @@ DWORD WINAPI QueryDosDevice(
 
 ```
 
-<center>[http://msdn.microsoft.com/en-us/library/aa365461(v=VS.85).aspx](http://msdn.microsoft.com/en-us/library/aa365461(v=VS.85).aspx)</center>
+[http://msdn.microsoft.com/en-us/library/aa365461(v=VS.85).aspx](http://msdn.microsoft.com/en-us/library/aa365461(v=VS.85).aspx)
 
 So, the function returns a DWORD, and accepts 3 parameters: an LPCTSTR, an LPTSTR, and a DWORD.
 
@@ -250,7 +250,7 @@ DWORD WINAPI GetLastError(void);
 
 ```
 
-<center>**QueryDosDeviceA Function Usage**</center>
+**QueryDosDeviceA Function Usage**
 
 Now that I have declared the function, notice how I use it.
 

@@ -1,6 +1,6 @@
 A **variable** is a "container" name that can hold a numerical or string value which can be referenced or changed by the program (as opposed to [CONST](CONST)ant values which never change).
 
-<center>**Variable names**</center>
+**Variable names**
 
 Variables in QB64 can be any name except the names of QB64 or QBasic keywords and may not contain spaces or non-alphabetical/non-numerical characters (except "." and "_"). Numerical characters cannot be  used as the first character of a variable or array name! **QB64 reserves the use of a leading underscore to QB64 procedural or variable type names only!**
 
@@ -10,7 +10,7 @@ Variable names dimensioned in [SUB](SUB) or [FUNCTION](FUNCTION) procedures can 
 
 Dot variable names are normally used with [TYPE](TYPE) variable definitions. The first name before the dot is the name of the variable [DIM](DIM) [AS](AS) the type. The name after the dot is the name of the variable assigned inside of the [TYPE](TYPE).
 
-<center>**Variable types**</center>
+**Variable types**
 
 Variables can be defined as a specific type using a variable type suffix or by using a [DIM](DIM) or [REDIM](REDIM)(for dynamic arrays only) statement [AS](AS) a variable type of [_BIT](_BIT), [_BYTE](_BYTE), [INTEGER](INTEGER), [LONG](LONG), [SINGLE](SINGLE), [DOUBLE](DOUBLE), [_INTEGER64](_INTEGER64), [_FLOAT](_FLOAT) or [STRING](STRING) in QB64. 
 
@@ -20,7 +20,7 @@ Groups of variable names can be type defined by the first letter or list of lett
 
 [$STATIC]($STATIC) arrays cannot be resized, but cannot be removed either. [ERASE](ERASE) or [CLEAR](CLEAR) will clear the array element values only!
 
-<center>**Variable values**</center>
+**Variable values**
 
 All numerical variables default to 0 and all string variables default to "" at the start of a program and when first referenced inside of a [SUB](SUB) or [FUNCTION](FUNCTION) procedure except when the variable is defined as a [STATIC](STATIC) value.
 

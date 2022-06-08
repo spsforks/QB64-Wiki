@@ -102,7 +102,7 @@ Buttons: 9
 
 > *Note:* A Sidewinder Precision Pro requires that pins 2 and 7(blue and purple) be connected together for digital USB recognition.
 
-<center> [Sidewinder Precision Pro game port to USB adapter](http://www.amazon.com/Belkin-F3U200-08INCH-Joystick-Adapter-SideWinder/dp/B000067RIV)</center>
+ [Sidewinder Precision Pro game port to USB adapter](http://www.amazon.com/Belkin-F3U200-08INCH-Joystick-Adapter-SideWinder/dp/B000067RIV)
 
 ## See Also
  

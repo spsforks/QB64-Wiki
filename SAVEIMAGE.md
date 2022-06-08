@@ -1,6 +1,6 @@
-<center>**The SAVEIMAGE SUB program to create [Bitmaps](Bitmaps) of other type Images or Screenshots**</center>
+**The SAVEIMAGE SUB program to create [Bitmaps](Bitmaps) of other type Images or Screenshots**
 
-<center>**Bitmaps** are image files with the .BMP file name extension.</center>
+**Bitmaps** are image files with the .BMP file name extension.
 
 * Bitmaps can be 1, 4, 8 or 24/32 bits per pixel(BPP) color palettes. QB64 is capable of working with high color bitmaps.
 * Screen or Image width and height calculations are automatically made using the image handle value.
@@ -64,7 +64,7 @@ END SUB * *
 ```
 <sub>Code by Galleon</sub>
 
-<center>**This SUB program can also be [$INCLUDE]($INCLUDE) with any program!**</center>
+**This SUB program can also be [$INCLUDE]($INCLUDE) with any program!**
 
 *SUB Explanation:* b$ and d$ assemble the entire string of data to create a bitmap file. Some of the bitmap header info is placed later using a [MID$ (statement)](MID$ (statement)) to add final header numerical data converted to [ASCII](ASCII) characters by [MKI$](MKI$) or [MKL$](MKL$). 
 

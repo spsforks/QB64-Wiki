@@ -36,11 +36,11 @@ The **FILELIST$** function can be used in place of the old QBasic [FILES](FILES)
 ```
 
 
-<center>**[http://i301.photobucket.com/albums/nn53/burger2227/FILE-ss2.jpg Screenshot]**</center>
+**[http://i301.photobucket.com/albums/nn53/burger2227/FILE-ss2.jpg Screenshot]**
 
 **The function is NOT a QB64 authorized function!** This program code is free to use in your programs! No claims are made as to the suitability of the code and the user is responsible for any damages. You are free to alter the code as you see fit.
 
-<center>**NOTE: IF [$STATIC]($STATIC) Metacommand is required, change function Arrays to [STATIC](STATIC) and [ERASE](ERASE) them at start and every loop!**</center>
+**NOTE: IF [$STATIC]($STATIC) Metacommand is required, change function Arrays to [STATIC](STATIC) and [ERASE](ERASE) them at start and every loop!**
 
 
 
@@ -243,7 +243,7 @@ END FUNCTION * *
 ```
 
 
-<center>**Refresh browser if full code is not displayed!**
+**Refresh browser if full code is not displayed!**
 
 
 Updated for VISTA screen format 8/20/2010. 
@@ -252,18 +252,18 @@ Updated for programs using $DYNAMIC Metacommand 9/16/2010.
 
 Added option for current path to TITLE bar 11/16/2010
 
-**[http://i301.photobucket.com/albums/nn53/burger2227/FILE-ss2.jpg Function Screenshot]**</center>
+**[http://i301.photobucket.com/albums/nn53/burger2227/FILE-ss2.jpg Function Screenshot]**
 
 
-<center>**CREATING A FILELIST$ $INCLUDE LIBRARY**</center>
+**CREATING A FILELIST$ $INCLUDE LIBRARY**
 
-<center>The Function can be also be added to any program as a text library by saving it as a text BI file!</center>
+The Function can be also be added to any program as a text library by saving it as a text BI file!
 
-<center>Just [$INCLUDE]($INCLUDE) the BI text file (grey area above) at the end of your program AFTER the SUB procedures. </center>
+Just [$INCLUDE]($INCLUDE) the BI text file (grey area above) at the end of your program AFTER the SUB procedures. 
 
-<center>To create a **BI** file use Notepad or another text editor, copy code in grey area  and Save as **ALL FILES** using *anyname.BI*</center>
+To create a **BI** file use Notepad or another text editor, copy code in grey area  and Save as **ALL FILES** using *anyname.BI*
 
-<center>**NOTE: Once the program is compiled, the BI file is no longer needed with the stand alone EXE program!</center>
+**NOTE: Once the program is compiled, the BI file is no longer needed with the stand alone EXE program!
 
 
 
@@ -322,15 +322,15 @@ FILELIST$([drive:][path][filename][/A[:]attrib](:]attrib)[/L][/O[:]sortorder](:]
 
 
 
-<center>**FILELIST$ Function can also be displayed on your program screen with Putimage!**</center>
-<center>First use Flist& as the source in: _PUTIMAGE , Flist&, newimagepage&</center>
-<center>Then Putimage again at a position on screen larger than 640 X 480 to display</center>
-<center> _DEST main&: _PUTIMAGE (x, y), newimagepage& </center>
-<center>Where DEST main& is the main program screen. Add the code to the function.</center>
-<center>**Refresh the screen using the above format in both _DISPLAY instances.**</center>
+**FILELIST$ Function can also be displayed on your program screen with Putimage!**
+First use Flist& as the source in: _PUTIMAGE , Flist&, newimagepage&
+Then Putimage again at a position on screen larger than 640 X 480 to display
+ _DEST main&: _PUTIMAGE (x, y), newimagepage& 
+Where DEST main& is the main program screen. Add the code to the function.
+**Refresh the screen using the above format in both _DISPLAY instances.**
  
 
-<center>**[FILELIST$](FILELIST$)**</center>
+**[FILELIST$](FILELIST$)**
 
 
 > *NOTE:* The data file name "D0S-DATA.INF" uses a zero instead of an "O" in D0S and is deleted after a search!

@@ -51,7 +51,7 @@ i$ = INPUT$(1)
 
 ```
 
-<center>[$INCLUDE]($INCLUDE) the .bi file on top of your program and the .bm file at the bottom, after your own SUBs.</center>
+[$INCLUDE]($INCLUDE) the .bi file on top of your program and the .bm file at the bottom, after your own SUBs.
 
 **To create the BI and BM files, copy them to Notepad and Save as *ALL FILES* with appropriate filename extensions!**
 
@@ -117,9 +117,9 @@ DATA ,,
 
 ```
 
-<center>The [$INCLUDE]($INCLUDE) of the function should be after your main program! </center>
+The [$INCLUDE]($INCLUDE) of the function should be after your main program! 
 
-<center>Otherwise you would get the error "Statement cannot be placed between SUB/FUNCTIONs"</center>
+Otherwise you would get the error "Statement cannot be placed between SUB/FUNCTIONs"
 
 *SelectResolution.bm Code:*
 

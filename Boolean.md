@@ -13,12 +13,12 @@ Template:RelationalTable
 * When evaluating a True value, an IF value < 0 statement is NOT necessary for return values not 0.
 
 
-<center>** Truth table of the BASIC Logical Operators:**</center>
+** Truth table of the BASIC Logical Operators:**
 
 Template:LogicalTruthTable
 
 
-<center>**Boolean Conditional Operators:**</center>
+**Boolean Conditional Operators:**
 * [AND (boolean)](AND (boolean)) can be used to add extra conditions to a boolean statement evaluation. Both must be True.
 * [OR (boolean)](OR (boolean)) can be used to add alternate conditions to a boolean statement evaluation. One must be True.
 * Parenthesis are allowed inside of boolean statements to clarify an evaluation.

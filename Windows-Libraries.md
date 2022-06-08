@@ -1,12 +1,12 @@
 QB64 can support the **specific Windows Operating System Libraries** on your PC. They should be located in the **System32** folder. Use [DECLARE LIBRARY](DECLARE-LIBRARY) with the appropriate [ALIAS](ALIAS). Loaded DLL files are NOT required to be named in the Declaration!
 
-<center> **Note: C++ Header files should be placed in the QB64 folder and are not required after a program is compiled.**</center>
+ **Note: C++ Header files should be placed in the QB64 folder and are not required after a program is compiled.**
 
-<center>**Note: QB64 requires all DLL files to either be with the program or in the C:\WINDOWS\SYSTEM32 folder!**</center>
+**Note: QB64 requires all DLL files to either be with the program or in the C:\WINDOWS\SYSTEM32 folder!**
 
-<center>Maximum Windows path: MAX_PATH = drive letter + ":\" + 256 + CHR$(0) = 260 characters.</center>
+Maximum Windows path: MAX_PATH = drive letter + ":\" + 256 + CHR$(0) = 260 characters.
 
-<center>**Your code contribution using the Windows Libraries could end up here!**</center>
+**Your code contribution using the Windows Libraries could end up here!**
 
 {|class="wikitable" width="100%"
 !colspan="4"|Table of Contents
@@ -50,9 +50,9 @@ LP or hwnd     Short or Long Pointer     ANY [INTEGER](INTEGER)       [_OFFSET](
 
 ```
 
-<center>**[http://msdn.microsoft.com/en-us/library/aa383751(v=vs.85).aspx Windows Data Types]**</center>
+**[http://msdn.microsoft.com/en-us/library/aa383751(v=vs.85).aspx Windows Data Types]**
 
-<center>**[http://doc.pcsoft.fr/en-US/?6510001 Windows 32 API constant values]**</center>
+**[http://doc.pcsoft.fr/en-US/?6510001 Windows 32 API constant values]**
 
 ## Computer Date/Time
 
@@ -231,7 +231,7 @@ PRINT "The end"
 
 ## Color Dialog Box
 
-<center>The Color Dialog Box can set custom colors and alpha saturation levels.</center>
+The Color Dialog Box can set custom colors and alpha saturation levels.
 
 ```vb
 
@@ -326,7 +326,7 @@ END FUNCTION
 
 > *Note:* The ChooseColor value is converted using [_RGB32](_RGB32) with the Blue and Red values being swapped.
 
-<center>**Converting 32 bit Dialog Box Color values for 4 or 8 BPP Screen modes**</center>
+**Converting 32 bit Dialog Box Color values for 4 or 8 BPP Screen modes**
 
 ```text
 
@@ -517,7 +517,7 @@ PRINT a 'notice, it prints 1 here and not 32.  We didn't add a flag, we changed 
 
 ## File Open and Save Dialog
 
-<center>**Open and Save Dialog Boxes get file names**</center>
+**Open and Save Dialog Boxes get file names**
 
 ```vb
 
@@ -719,9 +719,9 @@ END FUNCTION
 
 > *Note:* The Open and Save Dialog boxes get user selections and do not actually open or create a file! Your program must do that.
 
-<center>**[http://msdn.microsoft.com/en-us/library/aa155724(v=office.10).aspx Microsoft MSDN]**
+**[http://msdn.microsoft.com/en-us/library/aa155724(v=office.10).aspx Microsoft MSDN]**
 
-**[http://msdn.microsoft.com/en-us/library/aa259317(v=vs.60).aspx Common Dialog Flag Constants]**</center>
+**[http://msdn.microsoft.com/en-us/library/aa259317(v=vs.60).aspx Common Dialog Flag Constants]**
 
 > In VB6, variable-length strings in user [TYPE](TYPE)s are actually pointer [_OFFSET](_OFFSET)s to those strings.
 
@@ -814,7 +814,7 @@ END
 ```
 <sub>Code courtesy of Michael Calkins</sub>
 
-<center>Use your own existing file name and path in this procedure.</center>
+Use your own existing file name and path in this procedure.
 
 ## Focus
 
@@ -873,7 +873,7 @@ LOOP
 ```
 <sub>Adapted by Ted Weissgerber from code by Dav</sub>
 
-<center>The *[Windows_Libraries#Window Focus](Windows-Libraries#Window Focus)* function finds the process currently in focus. See: [Windows_Libraries#Hot_Keys_.28maximize.29](Windows-Libraries#Hot_Keys_.28maximize.29)</center>
+The *[Windows_Libraries#Window Focus](Windows-Libraries#Window Focus)* function finds the process currently in focus. See: [Windows_Libraries#Hot_Keys_.28maximize.29](Windows-Libraries#Hot_Keys_.28maximize.29)
 
 >  **Always brings unfocused or minimized program to the top with focus when Shift+A hotkey combination is pressed.**
 
@@ -938,9 +938,9 @@ END
 
 >  **Note:** The *SetHotKey* message tells the designated Windows program ID when to do *DefWondowProcA* to focus the window.
 
-<center>**This can also focus on other program IDs! See also: [Windows_Libraries#Hot_Keys_.28maximize.29](Windows_Libraries#Hot_Keys_.28maximize.29)**</center>
+**This can also focus on other program IDs! See also: [Windows_Libraries#Hot_Keys_.28maximize.29](Windows_Libraries#Hot_Keys_.28maximize.29)**
 
-<center>Note: Minimized programs will always lose focus when minimized unless clicked in taskbar.</center>
+Note: Minimized programs will always lose focus when minimized unless clicked in taskbar.
 
 ## Folder Dialog Box
 
@@ -993,7 +993,7 @@ END IF
 
 ## Font Dialog Box
 
-<center>This dialog box does not return the actual font file name. Refer to the [Windows_Libraries#Registered_Fonts](Windows-Libraries#Registered_Fonts) procedure below this one.</center>
+This dialog box does not return the actual font file name. Refer to the [Windows_Libraries#Registered_Fonts](Windows-Libraries#Registered_Fonts) procedure below this one.
 
 ```vb
 
@@ -1161,7 +1161,7 @@ END FUNCTION
 ```
 <sub>Code by Michael Calkins and Ted Weissgerber</sub>
 
-<center>**Warning! This dialog box may error for no apparent reason! See [http://msdn.microsoft.com/en-us/library/windows/desktop/ms646916(v=vs.85).aspx CommDlgExtendedError] for more info!**</center>
+**Warning! This dialog box may error for no apparent reason! See [http://msdn.microsoft.com/en-us/library/windows/desktop/ms646916(v=vs.85).aspx CommDlgExtendedError] for more info!**
 
 >  *Snippet:* Shows how to compare a Font Dialog Box request with [STRING](STRING) file data created by the [Windows_Libraries#Registered_Fonts](Windows-Libraries#Registered_Fonts) below:
 
@@ -1196,7 +1196,7 @@ NEXT
 
 >  *Note:* The Font Dialog name will not normally have descriptions such as Regular, Bold, Italics or (TrueType) so it ignores them.
 
-<center>**[http://www.functionx.com/win32/Lesson14.htm GDI Tools - Font Guidlines]**</center>
+**[http://www.functionx.com/win32/Lesson14.htm GDI Tools - Font Guidlines]**
 
 ## Registered Fonts
 
@@ -1402,9 +1402,9 @@ END FUNCTION
 
 > *Note:* The names used in a Font Dialog Box and the actual file names are saved to the *F0NTList.INF*(name uses zero) file to be compared with user entries. To check for *Bold* and *Italics* or combined types of font requests see [Windows_Libraries#Font_Dialog_Box](Windows-Libraries#Font_Dialog_Box) above.
 
-<center>**Note: The above procedure only reads the Registry. Edit or alter the Registry at your own peril!**</center>
+**Note: The above procedure only reads the Registry. Edit or alter the Registry at your own peril!**
 
-<center>[Windows Registry Access](Windows Registry Access)</center>
+[Windows Registry Access](Windows Registry Access)
 
 ## Game Pad
 
@@ -2110,7 +2110,7 @@ retval% = PlaySound(FileName$, 0, Synch)
 
 > *Note:* ASYNC allows the program to stop the sound by sending a null file name. Flag constants can be added so loop and ASYNC would total 9.
 
-<center>**[WINMM.DLL Functions](http://msdn.microsoft.com/en-us/library/ms712636)**</center>
+**[WINMM.DLL Functions](http://msdn.microsoft.com/en-us/library/ms712636)**
 
 ## Run One Instance
 
@@ -2393,9 +2393,9 @@ END
 
 > When the window is moved to a position, [_SCREENCLICK](_SCREENCLICK) can be used to focus on the program window.
 
-<center>***[Windows_Libraries#Focus](Windows_Libraries#Focus)* will not work with the *SetWindowPos*!**</center>
+***[Windows_Libraries#Focus](Windows_Libraries#Focus)* will not work with the *SetWindowPos*!**
 
-<center>[http://msdn.microsoft.com/en-us/library/ms633545(v=vs.85) http://msdn.microsoft.com/en-us/library/ms633545(v=vs.85)]</center>
+[http://msdn.microsoft.com/en-us/library/ms633545(v=vs.85) http://msdn.microsoft.com/en-us/library/ms633545(v=vs.85)]
 
 ## Video File Player
 
@@ -2544,7 +2544,7 @@ END
 
 > *Note:* *SetWindowPos&* function sets the pixel location on the desktop and the window dimensions. It can also set the window's Z order priority.
 
-<center>**The window handle value and process ID never change! Even when the title is changed.**</center>
+**The window handle value and process ID never change! Even when the title is changed.**
 
 ## Window Focus
 
@@ -2576,11 +2576,11 @@ END
 
 > *Note:* [CHR$](CHR$)(0) could actually be added to the original title string and it wouldn't hurt anything. Compared values are [_OFFSET](_OFFSET)s.
 
-<center>**See [Windows_Libraries#Focus](Windows-Libraries#Focus) on program.**</center>
+**See [Windows_Libraries#Focus](Windows-Libraries#Focus) on program.**
 
 ## Windows Menu
 
-<center>**Creates a menu bar in the program window with a name that can be clicked on to execute a procedure.**</center>
+**Creates a menu bar in the program window with a name that can be clicked on to execute a procedure.**
 
 ```vb
 
@@ -2802,16 +2802,16 @@ END
 ```
 <sub>Adapted from code by Michael Calkins</sub>
 
-<center>**NOTE: The program emulates a FALSE Low Battery warning!</center>
+**NOTE: The program emulates a FALSE Low Battery warning!
 
 >  *MSDN References:*
-<center>[http://msdn.microsoft.com/en-us/library/windows/desktop/ms633499(v=vs.85).aspx](http://msdn.microsoft.com/en-us/library/windows/desktop/ms633499(v=vs.85).aspx)
+[http://msdn.microsoft.com/en-us/library/windows/desktop/ms633499(v=vs.85).aspx](http://msdn.microsoft.com/en-us/library/windows/desktop/ms633499(v=vs.85).aspx)
 
 [http://msdn.microsoft.com/en-us/library/windows/desktop/ms648072(v=vs.85).aspx](http://msdn.microsoft.com/en-us/library/windows/desktop/ms648072(v=vs.85).aspx)
 
 [http://msdn.microsoft.com/en-us/library/windows/desktop/bb762159(v=vs.85).aspx](http://msdn.microsoft.com/en-us/library/windows/desktop/bb762159(v=vs.85).aspx)
 
-[http://msdn.microsoft.com/en-us/library/windows/desktop/bb773352(v=vs.85).aspx](http://msdn.microsoft.com/en-us/library/windows/desktop/bb773352(v=vs.85).aspx) </center>
+[http://msdn.microsoft.com/en-us/library/windows/desktop/bb773352(v=vs.85).aspx](http://msdn.microsoft.com/en-us/library/windows/desktop/bb773352(v=vs.85).aspx) 
 
 
 ## Windows Ports
@@ -3069,7 +3069,7 @@ END
 
 > *Note:* When the SHGetFolderPathA& function returns a non-zero value, the 0x hexadecimal error number is printed instead.
 
-<center>**[Vista and newer versions of Windows can also use SHGetKnownFolderPath and similar Constant values](http://msdn.microsoft.com/en-us/library/bb776911(v=vs.85))**</center>
+**[Vista and newer versions of Windows can also use SHGetKnownFolderPath and similar Constant values](http://msdn.microsoft.com/en-us/library/bb776911(v=vs.85))**
 
 ```text
 
@@ -3138,7 +3138,7 @@ END
 
 ## Windows Version
 
-<center>**Note that QB64 will not run on Windows 95 to ME computers currently!**</center>
+**Note that QB64 will not run on Windows 95 to ME computers currently!**
 
 ```vb
 
@@ -3173,9 +3173,9 @@ IF INSTR(1, b$, "7600") THEN PRINT "Windows 7"
 
 ## Reference
 
-<center> **Note: C++ Header files should be placed in the QB64 folder and are not required after a program is compiled.**</center>
+ **Note: C++ Header files should be placed in the QB64 folder and are not required after a program is compiled.**
 
-<center>**Your code contribution using the Windows Libraries could end up here!**</center>
+**Your code contribution using the Windows Libraries could end up here!**
 
 ## See Also
 

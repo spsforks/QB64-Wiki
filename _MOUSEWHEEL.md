@@ -62,7 +62,7 @@ LOOP UNTIL INKEY$ > ""
 
 ```
 <sub>Code by Ted Weissgerber</sub>
-<center>Note: You will need a text file that is large enough for this example.</center>
+Note: You will need a text file that is large enough for this example.
 
 
 ## See Also

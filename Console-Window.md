@@ -16,7 +16,7 @@ QB64 has console window support using the following QB64 [Metacommand](Metacomma
 * When the program ends in the console window, a "Press Enter to continue" message will appear using QB64.
 
 
-<center>**Copying console screen text**</center>
+**Copying console screen text**
 Console Window text can be copied by highlighting the text holding down the left mouse button. Once text is highlighted, right click the console window title bar to open the *Edit >* menu and click *Copy*. *Paste* and *Select All* are also available in the menu.
 
 ## Example(s)
@@ -37,7 +37,7 @@ PRINT "Copy this text by highlighting and right clicking!"
 
 >  The copy procedure will also work in **CMD.EXE** console windows Run from the Start Menu or the **Command Prompt** shortcut. 
 
-<center>*Note:* A second right click may Paste the clipboard text to the DOS command line instead of closing console.</center>
+*Note:* A second right click may Paste the clipboard text to the DOS command line instead of closing console.
 
 
 ## See Also
