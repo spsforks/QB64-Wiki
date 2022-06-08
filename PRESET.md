@@ -1,26 +1,25 @@
 The **PRESET** graphic [SCREEN](SCREEN) statement turns a pixel at a coordinate to the background color or a designated color attribute.
 
-
 ## Syntax
 
-> : **PRESET** [STEP]**(***column%*, *row%***)**[, colorAttribute]
+> **PRESET** [STEP]**(***column%*, *row%***)**[, colorAttribute]
 
+## Parameter(s)
 
-*[Parameters](Parameters):*
 * Can use [STEP](STEP) when relative graphics coordinates are required.
 * *column* and *row* coordinates can be literal ot variable [INTEGER](INTEGER) values which can be offscreen. 
 * If the *colorAttribute* is omitted, PRESET will use the current [_DEST](_DEST) page's [_BACKGROUNDCOLOR](_BACKGROUNDCOLOR).
-
 
 ## Usage
 
 * Color attributes are limited to those available in the [SCREEN](SCREEN) mode used. [PSET](PSET) can be used to adopt previously used colors.
 * Any color value other than 0 will be white in monochrome [SCREEN](SCREEN) modes 2 and 11 where the [COLOR](COLOR) statement cannot be used.
 * PRESET can invisibly locate other graphics objects like [CIRCLE](CIRCLE)s and add color to subsequent graphic objects and [DRAW](DRAW) when used.
-* The PRESET action can be used in a graphics [PUT (graphics statement)](PUT (graphics statement)) to produce a color inverted image on any background. See Example 2.
+* The PRESET action can be used in a graphics [PUT (graphics statement)](PUT-(graphics-statement)) to produce a color inverted image on any background. See Example 2.
 * The graphic cursor is set to the center of the program window on program start for [STEP](STEP) relative coordinates.
 * **PRESET can be used in any graphic screen mode, but cannot be used in the default screen mode 0 as it is text only!** 
 
+## Example(s)
 
 *Example 1:* Using PRESET to locate a [DRAW](DRAW) statement that draws a box that is bright red.
 
@@ -31,9 +30,8 @@ PRESET(100, 100)
 DRAW "C12 U20 R20 D20 L20" 
 
 ```
+
 > *Explanation:* The [DRAW](DRAW) string required a color designation as PRESET defaulted to the black background color. 
-
-
 
 *Example 2:* Displays the flags of countries that use simple horizontal or vertical color blocks with a highlighted arrow key menu.
 
@@ -136,17 +134,13 @@ FOR c% = 1 TO 219
 NEXT
 END SUB
 
-```<sub>Code by AlGoreIthm</sub>
->  *Explanation:* Using the [PUT (graphics statement)](PUT (graphics statement)) PRESET action highlights the menu selection in graphic screen modes by returning a negative image.
- 
+```
+<sub>Code by AlGoreIthm</sub>
 
+> *Explanation:* Using the [PUT (graphics statement)](PUT (graphics statement)) PRESET action highlights the menu selection in graphic screen modes by returning a negative image.
+ 
 ## See Also
- 
 
-* [PUT (graphics statement)](PUT (graphics statement))
-* [GET (graphics statement)](GET (graphics statement))
+* [PUT (graphics statement)](PUT-(graphics-statement))
+* [GET (graphics statement)](GET-(graphics-statement))
 * [CIRCLE](CIRCLE), [LINE](LINE), [PSET](PSET)
-
-
-
-

@@ -1,10 +1,8 @@
 The **PRINT USING** statement is used to [PRINT](PRINT) formatted data to the Screen or a file using a [STRING](STRING) template.
 
-
 ## Syntax
 
-> : **PRINT** [*text$*{;|,}] **USING** *template$*; *variable*[; ...][{;|,}]
-
+> **PRINT** [*text$*{;|,}] **USING** *template$*; *variable*[; ...][{;|,}]
 
 ## Parameter(s)
 
@@ -14,19 +12,18 @@ The **PRINT USING** statement is used to [PRINT](PRINT) formatted data to the Sc
 * The list of data *variables* used in the *template* are **separated by semicolons** after the template string value. 
 * In **QB64** ONE [semicolon](semicolon) or [comma](comma) may follow the variable list to stop the print cursor for pending prints. QB only allowed a semicolon.
 
-
 ## Usage
 
 * The *variables* should be listed in the order that they are used in the template from left to right.
 * **If the *template* string is omitted or symbols don't match the *variable(s)* an "Illegal Function Call" [ERROR Codes](ERROR Codes) will occur!**
-* No more than 25 # digit places are allowed in a template number or an [ERROR Codes](ERROR Codes) will occur.
-* Can convert numerical exponential or [scientific notation](scientific notation) values to normal decimal point values using less digits.
+* No more than 25 # digit places are allowed in a template number or an [ERROR Codes](ERROR-Codes) will occur.
+* Can convert numerical exponential or [scientific notation](scientific-notation) values to normal decimal point values using less digits.
 * **NOTE:** If the numerical value exceeds the template's digit range a % symbol will appear in the leftmost digit area.
 * **WARNING: The numbers displayed are rounded so the actual values are never changed and are actually more accurate.**
 
+MISSING: Print Using Table
 
-PrintUsingTable
-
+## Example(s)
 
 *Example 1:* Printing formatted data using a predefined [STRING](STRING) template variable.
 
@@ -68,8 +65,7 @@ Error 35 occurred!!
 
 ```
  
->  *Explanation:* The first template will not print the exclamation points or error when the requested text parameters are omitted.
-
+> *Explanation:* The first template will not print the exclamation points or error when the requested text parameters are omitted.
 
 *Example 3:* Exponential notation is designated after the leading digits are formatted. Digit places determine rounded value displayed.
 
@@ -91,8 +87,7 @@ PRINT USING "+.##^^^^^"; 123
 
 ```
 
->  *Explanation:* Note how 5 carets in the bottom format expands the number of exponent digits to accommodate larger exponent values. 
-
+> *Explanation:* Note how 5 carets in the bottom format expands the number of exponent digits to accommodate larger exponent values. 
 
 *Example 4:* USING does not necessarily have to immediately follow PRINT, but it must follow it in the code line.
 
@@ -104,14 +99,10 @@ tmp$ = "$$#######,.##"
 PRINT "I have this much money!"; USING tmp$; money 
 
 ```
->  *Note:* This can also be used to print the USING formatting characters outside of the template.
 
+> *Note:* This can also be used to print the USING formatting characters outside of the template.
 
 ## See Also
  
-* [PRINT](PRINT), [PRINT USING (file statement)](PRINT USING (file statement))
-* [LPRINT](LPRINT), [LPRINT USING](LPRINT USING)
-
-
-
-
+* [PRINT](PRINT), [PRINT USING (file statement)](PRINT-USING-(file-statement))
+* [LPRINT](LPRINT), [LPRINT USING](LPRINT-USING)

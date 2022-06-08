@@ -1,10 +1,8 @@
 The **POS** function returns the current print cursor text column position.
 
-
 ## Syntax
 
-> : column% = POS(0)
-
+> column% = POS(0)
 
 * The value in parenthesis is normally  0, but any numerical value or variable could be used for compatibility with Basic.
 * When a semicolon ends the previous PRINT statement the cursor column position will be after the last character printed.
@@ -12,9 +10,9 @@ The **POS** function returns the current print cursor text column position.
 * If a [PRINT](PRINT) statement does not use a semicolon or comma at the end, the return value will be 1 on the next row.
 * Column position returned can be saved to return to a previous print position later using [LOCATE](LOCATE).
 
-
 ## Example(s)
- Column positions after prints.
+
+Column positions after prints.
 
 ```vb
 
@@ -29,14 +27,10 @@ PRINT
 PRINT POS(0) ' column position is 1 on next row 
 
 ```
-*Note:* Column tab prints may not always move 9 spaces past the center of the screen. Some may move text to next row.
 
+*Note:* Column tab prints may not always move 9 spaces past the center of the screen. Some may move text to next row.
 
 ## See Also
  
 * [CSRLIN](CSRLIN), [LOCATE](LOCATE), [PRINT](PRINT)
 * [_PRINTSTRING](_PRINTSTRING) (graphic position print)
-
-
-
-

@@ -1,16 +1,15 @@
-The [PALETTE USING](PALETTE USING) statement sets all RGB screen color intensities using values from an [Arrays](Arrays).
-
+The [PALETTE USING](PALETTE-USING) statement sets all RGB screen color intensities using values from an [Arrays](Arrays).
 
 ## Syntax
 
->  [PALETTE USING](PALETTE USING) array%(startIndex%)
+>  [PALETTE USING](PALETTE-USING) array%(startIndex%)
 
 
 ## Description
 
 * The [Arrays](Arrays) holds the RGB color value using the color value as `red% + 256 * green% + 65536 * blue%`.
 ** Color intensities range from 0 to 63.
-* startIndex% indicates the index in the array from which the statement should start reading. The statement will read all color attributes available in that [SCREEN (statement)](SCREEN (statement)) mode. The **number of values required** in the array is listed below:
+* startIndex% indicates the index in the array from which the statement should start reading. The statement will read all color attributes available in that [SCREEN (statement)](SCREEN-(statement)) mode. The **number of values required** in the array is listed below:
 
 ```text
 
@@ -28,16 +27,10 @@ The [PALETTE USING](PALETTE USING) statement sets all RGB screen color intensiti
 
 ```
 
-
 * A color argument of -1 in the array leaves the attribute unchanged. Other negative numbers are invalid.
-
 
 ## See Also
 
 * [PALETTE](PALETTE), [COLOR](COLOR)
 * [_PALETTECOLOR](_PALETTECOLOR)
-* [SCREEN (statement)](SCREEN (statement))
-
-
-
-
+* [SCREEN (statement)](SCREEN-(statement))

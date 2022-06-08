@@ -1,11 +1,8 @@
-DISPLAYTITLE:_PALETTECOLOR (function)
 The [_PALETTECOLOR (function)](_PALETTECOLOR (function)) function is used to return the 32 bit attribute color setting of an image or screen page handle's palette.
-
 
 ## Syntax
 
->  color32Value& = [_PALETTECOLOR (function)](_PALETTECOLOR (function))(attributeNumber%, imgHandle&)
-
+> color32Value& = [_PALETTECOLOR (function)](_PALETTECOLOR (function))(attributeNumber%, imgHandle&)
 
 ## Description
 
@@ -15,11 +12,9 @@ The [_PALETTECOLOR (function)](_PALETTECOLOR (function)) function is used to ret
 * For 32 bit images send the _PALETTECOLOR return value to [_RED32](_RED32), [_GREEN32](_GREEN32) and [_BLUE32](_BLUE32) functions to get the red, green, and blue intensity values.
 * **Although 32 bit palette values are returned, the function cannot be used with 32 bit images or screen modes.**
 
-
 ## Example(s)
 
-## Example(s)
- How _PALETTECOLOR works on 32 bit RGB compared to a 4 BPP(SCREEN 12) QBasic procedure.
+How _PALETTECOLOR works on 32 bit RGB compared to a 4 BPP(SCREEN 12) QBasic procedure.
 
 ```vb
 
@@ -47,13 +42,8 @@ END
 
 > *Explanation:* To save a bitmap or other image you need the RGB color settings or the colors will look all wrong. You can store that information into a larger image array and [GET (graphics statement)](GET (graphics statement)) the image AFTER the color settings. Just GET the image starting at Array(48).
 
-
 ## See Also
 
 * [_PALETTECOLOR](_PALETTECOLOR) (statement)
 * [_NEWIMAGE](_NEWIMAGE), [_LOADIMAGE](_LOADIMAGE)
 * [SAVEIMAGE](SAVEIMAGE) (example code)
-
-
-
-

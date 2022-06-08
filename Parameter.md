@@ -1,14 +1,16 @@
 Optional **parameters** are values passed to [SUB](SUB) and [FUNCTION](FUNCTION) procedures. They are always enclosed in parenthesis inside the procedures.
 
-
 ## Syntax
 
-> :: [SUB](SUB) SubName[**(*parameter*** [[AS](AS) [Variable Types](Variable Types)][**, ...**]**)**]
-> :: [FUNCTION](FUNCTION) FunctionName[**(*parameter*** [[AS](AS) [Variable Types](Variable Types)][**, ...**]**)**]
-> :: [CALL](CALL) SubName[**(*parameter***[**, ...**]**)**]
-> :: SubName [***parameter***][**, ...**]
-> :: FunctionName[**(*parameter***[**, ...**]**)**]
+> [SUB](SUB) SubName[**(*parameter*** [[AS](AS) [Variable Types](Variable Types)][**, ...**]**)**]
 
+> [FUNCTION](FUNCTION) FunctionName[**(*parameter*** [[AS](AS) [Variable Types](Variable Types)][**, ...**]**)**]
+
+> [CALL](CALL) SubName[**(*parameter***[**, ...**]**)**]
+
+> SubName [***parameter***][**, ...**]
+
+> FunctionName[**(*parameter***[**, ...**]**)**]
 
 ## Usage
 
@@ -20,13 +22,8 @@ Optional **parameters** are values passed to [SUB](SUB) and [FUNCTION](FUNCTION)
 * To pass parameter variables [BYVAL](BYVAL) to protect the value in a call, parenthesis can be placed around each variable name also.
 * To pass [arrays](arrays) to a sub-procedure use empty brackets after the name or indicate the index in the call.
 
-
 ## See Also
 
 * [SUB](SUB)
 * [FUNCTION](FUNCTION)
 * [CALL](CALL)
-
-
-
-

@@ -1,22 +1,19 @@
  **Creating Screenshot Bitmaps inside of your Programs**
 
+## Syntax
 
-*Syntax:* EightBit Minimum_Column%, Minimum_Row%, Maximum_Column%, Maximum_Row%, NewFileName$
-
+> EightBit Minimum_Column%, Minimum_Row%, Maximum_Column%, Maximum_Row%, NewFileName$
 
 * The values of x1%, y%1, x2% and y2% can be any ON SCREEN area coordinates in the screen mode used.
-* You MUST subtract one when using the **QB64**  FULL SCREEN [_WIDTH](_WIDTH) and [_HEIGHT](_HEIGHT) values! Otherwise [POINT](POINT) will return an [ERROR Codes](ERROR Codes)! The maximum is one pixel less than the [SCREEN (statement)](SCREEN (statement)) resolution or the screen dimensions.
+* You MUST subtract one when using the **QB64**  FULL SCREEN [_WIDTH](_WIDTH) and [_HEIGHT](_HEIGHT) values! Otherwise [POINT](POINT) will return an [ERROR Codes](ERROR-Codes)! The maximum is one pixel less than the [SCREEN (statement)](SCREEN-(statement)) resolution or the screen dimensions.
 * Both [SUB](SUB)s can be used in **QB64** or QBasic! The FourBit SUB takes about 8 seconds in QB.
 * FourBit SUB creates 4 BPP(16 color) and EightBit SUB creates 8 BPP(256 color) bitmaps.
 
-
 **QB64 Custom Screens**
-* See the [ThirtyTwoBit SUB](ThirtyTwoBit SUB) routine to create QB64 screenshots of [_NEWIMAGE](_NEWIMAGE) screen pages or copy images loaded using  [_LOADIMAGE](_LOADIMAGE). Creates 256 or 24/32 bit color bitmaps using the QB64 image and page handles.
 
-
+* See the [ThirtyTwoBit SUB](ThirtyTwoBit-SUB) routine to create QB64 screenshots of [_NEWIMAGE](_NEWIMAGE) screen pages or copy images loaded using  [_LOADIMAGE](_LOADIMAGE). Creates 256 or 24/32 bit color bitmaps using the QB64 image and page handles.
 
 ```vb
-
 
 '----------------- Freeware by Bob Seguin 2003 -- (TheBOB) --------------------------|
 '|                                                                                   |
@@ -63,7 +60,6 @@ SYSTEM
 
 ```vb
  
-*
 SUB EightBit (x1%, y1%, x2%, y2%, Filename$)   'SCREEN 13(256 color) bitmap maker
 'NOTE: Adjust x2% = 319 and y2% = 199 for legal POINTs when fullscreen in SCREEN 13 
 DIM FileCOLORS%(1 TO 768)
@@ -147,13 +143,10 @@ PUT #f%, 51, SigCOLORS&
 CLOSE #f%
 END SUB    
 
-
 ```
 
 ```vb
 
-
-*
 SUB FourBit (x1%, y1%, x2%, y2%, Filename$)   ' SCREEN 12(16 color) bitmap maker
        'fullscreen takes about 8 seconds in QB
 'NOTE: Adjust x2% = 639 and y2% = 479 for legal POINTs when fullscreen in SCREEN 12 
@@ -245,28 +238,18 @@ CLOSE #f%
 'BEEP         'optional sound not needed in QB64 as speed is fast
 END SUB   
 
-
 ```
-**If full code is not displayed, refresh your browser!**
 
+**If full code is not displayed, refresh your browser!**
 
 ## See Example(s)
 
 
-*[SAVEIMAGE](SAVEIMAGE) (QB64 full screen Image to Bitmap SUB by Galleon)
-
-* [ThirtyTwoBit SUB](ThirtyTwoBit SUB) (QB64 saves partial Image area to bitmap)
-
-*[Bitmaps](Bitmaps)
-
+* [SAVEIMAGE](SAVEIMAGE) (QB64 full screen Image to Bitmap SUB by Galleon)
+* [ThirtyTwoBit SUB](ThirtyTwoBit-SUB) (QB64 saves partial Image area to bitmap)
+* [Bitmaps](Bitmaps)
 
 ## See Also
 
-
 * [_LOADIMAGE](_LOADIMAGE)
 * [POINT](POINT), [PUT](PUT)
-
-
-
-
-

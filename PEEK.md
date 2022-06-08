@@ -1,22 +1,20 @@
 The **PEEK** function returns the value that is contained at a certain memory address offset. **QB64 currently has limited access!**
 
-
 ## Syntax
 
-> : variable = PEEK(*segment_offset*)
-
+> variable = PEEK(*segment_offset*)
 
 * Reads the specified memory *segment_offset* value.
-* Use [DEF SEG](DEF SEG) before PEEK to specify which memory segment to work in. 
+* Use [DEF SEG](DEF-SEG) before PEEK to specify which memory segment to work in. 
 * PEEK only reads the memory byte value. Not certain bits. (See [AND](AND))
-* Important [SCREEN (statement)](SCREEN (statement)) segments using [PEEK](PEEK) and [POKE](POKE) include &HB800 (text segment) and &HA000 (graphics segment).
+* Important [SCREEN (statement)](SCREEN-(statement)) segments using [PEEK](PEEK) and [POKE](POKE) include &HB800 (text segment) and &HA000 (graphics segment).
 * To return to Basic default segment use [DEF SEG](DEF SEG) without any arguments.
 * **Warning: DEF SEG, VARSEG , VARPTR, PEEK or POKE access QB64's emulated 16 bit conventional memory block!** 
 >  **It is highly recommended that QB64's [_MEM](_MEM) memory system be used to avoid running out of memory.**
 
-
 ## Example(s)
- Checking the 8 keyboard bit settings using a PEEK return value.
+
+Checking the 8 keyboard bit settings using a PEEK return value.
 
 ```vb
 
@@ -52,22 +50,18 @@ The **PEEK** function returns the value that is contained at a certain memory ad
  DEF SEG 
 
 ```
->  **NOTE: Keyboard Port function key settings cannot be reset on NT machines!**
 
+> **NOTE: Keyboard Port function key settings cannot be reset on NT machines!**
 
+## See Example(s)
 
-*See Example:* [SelectScreen](SelectScreen) (Screen 0 row highlighting)
-
+* [SelectScreen](SelectScreen) (Screen 0 row highlighting)
 
 ## See Also
  
 * [POKE](POKE) (write to memory), [INP](INP) (read register) 
-* [DEF SEG](DEF SEG), [VARSEG](VARSEG), [VARPTR](VARPTR) 
+* [DEF SEG](DEF-SEG), [VARSEG](VARSEG), [VARPTR](VARPTR) 
 * [_MEMGET (function)](_MEMGET (function)), [_MEMPUT](_MEMPUT)
-* [DEF SEG = 0](DEF SEG = 0), [Scancodes](Scancodes) (demo)
-* [PEEK and POKE Library](PEEK and POKE Library)
-* [Screen Memory](Screen Memory)
-
-
-
-
+* [DEF SEG = 0](DEF-SEG-=-0), [Scancodes](Scancodes) (demo)
+* [PEEK and POKE Library](PEEK-and-POKE-Library)
+* [Screen Memory](Screen-Memory)

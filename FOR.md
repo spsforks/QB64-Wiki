@@ -79,7 +79,8 @@ bye
 
 
 <!-- removed redundant example as Example 2 above shows exactly the same technique
-*See Example:* 
+## See Example(s)
+ 
 * [http://qb64.net/wiki/index.php?title=Controller_Devices#Example Example that shows how ignoring bad FOR loops can work to a program's advantage without errors.] -->
 
 

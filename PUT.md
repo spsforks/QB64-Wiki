@@ -1,12 +1,8 @@
 The **PUT #** file or port statement writes data to a specific byte or record location.
 
-
-
 ## Syntax
 
-> : **PUT #*filenumber&*,** [*position*][, {*holdingvariable*|*holdingarray()*}]
-
-
+> **PUT #*filenumber&*,** [*position*][, {*holdingvariable*|*holdingarray()*}]
 
 * File/port number is the number used in the [OPEN](OPEN) statement. 
 * The [INTEGER](INTEGER) or [LONG](LONG) file byte *position* in a [BINARY](BINARY) file or the record *position* in a [RANDOM](RANDOM) file **must be greater than zero**. 
@@ -19,6 +15,7 @@ The **PUT #** file or port statement writes data to a specific byte or record lo
 * When using a numeric *holding variable*, values do NOT require conversion using [MKI$](MKI$), [MKL$](MKL$), [MKS$](MKS$) or [MKD$](MKD$).
 * **QB64** can load [Arrays](Arrays) data directly(brackets required) to a [BINARY](BINARY) file using **one** PUT to a [BINARY](BINARY) file: **PUT #1, , array()**
 
+## Example(s)
 
 *Example 1:* Using a [TYPE](TYPE) record variable(Contact) to enter a new [RANDOM](RANDOM) record to a file.
 
@@ -43,8 +40,8 @@ PUT #1, NumRecords% + 1, Contact ' add a new record TYPE record value
 CLOSE #1 
 
 ```
->  *Note:* The DOT record variable values were created or changed before the PUT. The record length is 32 bytes.
 
+> *Note:* The DOT record variable values were created or changed before the PUT. The record length is 32 bytes.
 
 *Example 2:* Placing the contents of a numerical array into a [BINARY](BINARY) file. You may want to put the array size at the beginning too.
 
@@ -80,21 +77,18 @@ PRINT "done"
 END SUB 
 
 ```
->  *Note:* Use empty brackets in QB64 when using [GET](GET) to create an array or [PUT](PUT) to create a [BINARY](BINARY) data file.
 
+> *Note:* Use empty brackets in QB64 when using [GET](GET) to create an array or [PUT](PUT) to create a [BINARY](BINARY) data file.
 
-*See Example:* [Program ScreenShots](Program ScreenShots)
+## See Example(s)
 
+* [Program ScreenShots](Program-ScreenShots)
 
 ## See Also
  
 * [GET](GET) 
-* [SEEK](SEEK), [SEEK (statement)](SEEK (statement)) 
-* [PRINT (file statement)](PRINT (file statement)) 
+* [SEEK](SEEK), [SEEK (statement)](SEEK-(statement)) 
+* [PRINT (file statement)](PRINT-(file-statement)) 
 * [FIELD](FIELD) 
-* [PUT (graphics statement)](PUT (graphics statement))
-* [PUT (TCP/IP statement)](PUT (TCP/IP statement))
-
-
-
-
+* [PUT (graphics statement)](PUT-(graphics-statement))
+* [PUT (TCP/IP statement)](PUT-(TCP/IP-statement))

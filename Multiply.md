@@ -1,7 +1,8 @@
 The ***** mathematical operator performs the multiplication of two values.
 
 
-*Syntax:* return_value = number1 * number2
+## Syntax
+ return_value = number1 * number2
 
 
 ## Description

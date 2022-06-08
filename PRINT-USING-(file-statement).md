@@ -1,11 +1,8 @@
 The **PRINT #, USING** statement is used to [PRINT](PRINT) formatted text data to a file.
 
-
-
 ## Syntax
 
-> : **PRINT *filenumber%,*** [*text$*{;|,}] **USING *template$*; *variable***[; ...][{;|,}]
-
+> **PRINT *filenumber%,*** [*text$*{;|,}] **USING *template$*; *variable***[; ...][{;|,}]
 
 ## Parameter(s)
 
@@ -16,10 +13,9 @@ The **PRINT #, USING** statement is used to [PRINT](PRINT) formatted text data t
 * The list of data *variables* used in the *template* are **separated by semicolons** after the template string value. 
 * In **QB64** ONE [semicolon](semicolon) or [comma](comma) may follow the variable list to stop the print cursor for pending prints. QB only allowed a semicolon.
 
-
 ## Usage
 
-* **If the *template* string is omitted or symbols don't match the *variable(s)* an "Illegal Function Call" [ERROR Codes](ERROR Codes) will occur!**
+* **If the *template* string is omitted or symbols don't match the *variable(s)* an "Illegal Function Call" [ERROR Codes](ERROR-Codes) will occur!**
 * The list of data variables used in the template are **separated by semicolons** after the template string value. 
 * The variables should be listed in the order that they are used in the template from left to right.
 * Normal text is allowed in the template also (see example).
@@ -27,14 +23,9 @@ The **PRINT #, USING** statement is used to [PRINT](PRINT) formatted text data t
 * **WARNING: The numbers displayed are rounded so the actual values are never changed and are actually more accurate.**
 
 
-PrintUsingTable
-
+MISSING: Print Using Table
 
 ## See Also
  
-* [PRINT USING](PRINT USING), [PRINT (file statement)](PRINT (file statement))
-* [LPRINT USING](LPRINT USING)
-
-
-
-
+* [PRINT USING](PRINT-USING), [PRINT (file statement)](PRINT-(file-statement))
+* [LPRINT USING](LPRINT-USING)

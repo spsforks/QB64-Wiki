@@ -2,8 +2,6 @@ QB64 is created to be compatible with Quick Basic 4.5 only as it was the most po
 
 ## CURRENCY
 
-
-
 ### MKC$
 
 PDS could use the CURRENCY variable type and had the MKC$ function to convert those values to **8 byte** [ASCII](ASCII) string values. QB64 can convert [_FLOAT](_FLOAT) currency amounts to strings using [_MK$](_MK$) with [_INTEGER64](_INTEGER64) values:
@@ -25,7 +23,8 @@ MKC = _MK$(_INTEGER64, CVal)
 END FUNCTION 
 
 ```
->  *Note:* The [_FLOAT](_FLOAT) currency amount must be multiplied by 10000 before it is converted to the [ASCII](ASCII) string value.
+
+> *Note:* The [_FLOAT](_FLOAT) currency amount must be multiplied by 10000 before it is converted to the [ASCII](ASCII) string value.
 
 ### CVC
 
@@ -52,12 +51,12 @@ CVC = CV / 10000 '                   divide by 10 thousand
 END FUNCTION 
 
 ```
->  *Note:* The [_FLOAT](_FLOAT) currency amount must be divided by 10000 to create up to 4 decimal point places.
+
+> *Note:* The [_FLOAT](_FLOAT) currency amount must be divided by 10000 to create up to 4 decimal point places.
 
 ### PUT
 
 Currency values can be [PUT](PUT) directly into [BINARY](BINARY) or [RANDOM](RANDOM) files using an [_INTEGER64](_INTEGER64) variable value.
-
 
 ```vb
 
@@ -92,10 +91,8 @@ PRINT currency
 END 
 
 ```
->  *Note:* The currency value can be any [SINGLE](SINGLE), [DOUBLE](DOUBLE) or [_FLOAT](_FLOAT) floating decimal point value that will hold the range of values.
 
-
-
+> *Note:* The currency value can be any [SINGLE](SINGLE), [DOUBLE](DOUBLE) or [_FLOAT](_FLOAT) floating decimal point value that will hold the range of values.
 
 ## DIR$
 
@@ -146,19 +143,11 @@ END IF
 DIR$ = DirList$(Index%)
 END FUNCTION 
 
-``` <sub>Code by Ted Weissgerber</sub>
+```
+<sub>Code by Ted Weissgerber</sub>
+
 > *Explanation:* The function will verify that a file exists (even if it is empty) by returning it's name or it returns an empty string if no file exists. It can return a list of file names by using an empty string parameter("") after sending a wildcard spec to get the first file name. The number of file names found is returned by using the SHARED variable, **DIRCount%**. Unlike the PDS DIR$ function, **it MUST use an empty string parameter until QB64 supports optional parameters!** The function does NOT delete empty files.
-
-
-
-
-## References
-
 
 ## See Also
 
-* [VB Procedures](VB Procedures)
-
-
-
-
+* [VB Procedures](VB-Procedures)

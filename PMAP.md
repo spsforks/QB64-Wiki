@@ -1,26 +1,21 @@
 The **PMAP** statement returns the physical or [WINDOW](WINDOW) view port coordinates.
 
-
-
 ## Syntax
 
-> : PMAP (*coordinate*, *function_number%*)
-
+> PMAP (*coordinate*, *function_number%*)
 
 * The *coordinate* is the coordinate point to be mapped. 
 * The *function* can have one of four values:
-
-> : 0 = Maps view port coordinate to physical x screen coordinate
-> : 1 = Maps view port coordinate to physical y screen coordinate
-> : 2 = Maps physical screen coordinate to view port x coordinate
-> : 3 = Maps physical screen coordinate to view port y coordinate
-
+  - 0 = Maps view port coordinate to physical x screen coordinate
+  - 1 = Maps view port coordinate to physical y screen coordinate
+  - 2 = Maps physical screen coordinate to view port x coordinate
+  - 3 = Maps physical screen coordinate to view port y coordinate
 * The four PMAP functions allow the user to find equal point locations between the view coordinates created with the [WINDOW](WINDOW) statement and the physical screen coordinates of the viewport as defined by the [VIEW](VIEW) statement.
 * Mouse co-ordinates returned by [_MOUSEX](_MOUSEX) and [_MOUSEY](_MOUSEY) are the physical screen co-ordinates.
 
-
 ## Example(s)
- Use PMAP to convert coordinate values from view to screen coordinates and from screen coordinates to view coordinates.
+
+Use PMAP to convert coordinate values from view to screen coordinates and from screen coordinates to view coordinates.
 
 ```vb
 
@@ -57,14 +52,10 @@ WINDOW                   ' end graphic view port
 END 
 
 ```
->  *Note:* If physical screen coordinates are (0, 0) in the upper-left corner and (639, 479) in the lower-right corner, then the statements return the screen coordinate's equal to the view coordinates 90, 100.
 
+> *Note:* If physical screen coordinates are (0, 0) in the upper-left corner and (639, 479) in the lower-right corner, then the statements return the screen coordinate's equal to the view coordinates 90, 100.
 
 ## See Also
  
 * [WINDOW](WINDOW), [VIEW](VIEW)
-* [VIEW PRINT](VIEW PRINT)
-
-
-
-
+* [VIEW PRINT](VIEW-PRINT)

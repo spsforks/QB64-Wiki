@@ -1,35 +1,32 @@
 **PLAY** is a statement that plays notes of sound through the sound card in QB64 using a command [STRING](STRING).
 
-
 ## Syntax
 
-> :: **PLAY *commandstring$***
-
+> ***PLAY *commandstring$***
 
 ## Parameter(s)
 
 * The *commandstring* can be any literal or variable [STRING](STRING) consisting of the following uppercase or lowercase commands:
-> ***O**n - Sets the current octave (from 0 to 6). Example: **PLAY "O3"**
-> ***<** - Down one octave (cannot be below zero). Example: **PLAY "<<"** 'goes down two octaves.
-> ***>** - Up one octave (cannot be above 6). Example: **PLAY ">>"** ' goes up two octaves.
-> ***A**, **B**, **C**, **D**, **E**, **F** or **G** are the notes in the current octave. Can use the following suffixes:
-> :***+** or **#** for a sharp note. Example: **PLAY "C#"**
-> :***-** for a flat note. Example: **PLAY "C-"**
-> ***N**n - Plays a note n by number(n can be between 0 to 84 in the 7 octaves, where 0 is a rest). Example: **PLAY "N42"**
-> ***L**n - Sets length of a note (n can be 1 to 64 where 1 is a whole note and 4 is a quarter of a note etc.). Example: **PLAY "L4"**
-> :***MS** - Each note plays 3/4 of length set by L (staccato)
-> :***MN** - Each note plays 7/8 of length set by L (normal)
-> :***ML** - Each note plays full length set by L (legato)
-> :***P**n - Pause in the duration of n quarternotes (n can be 1 to 64) corresponding to L, Example: **PLAY "P32"**
-> :***T**n - Tempo sets number of L4 quarter notes per minute (n can be 32 to 255 where 120 is the default). Example: **PLAY "T180"**
-> ::*** .  **  - period after a note plays 1½ times the note length determined by L * T.
-> ::***.. **  - two periods plays 1-3/4 times the note length determined by L * T.
-> ***,  **  - **commas in QB64** stop play advancement to allow more than one note to be played simultaneously. Example: **PLAY "C,E,G,"**
-> ***V**n - Volume in **QB64 only** can be any volume from 0(none) to 100(full).  The default level is 50 when **n** is not specified. 
-> ***MF** - Play music in the foreground (each note must be completed before another can start).
-> ***MB** - Play music in the background while program code execution continues (QB64 has no note buffer limits).
-> ***X** **+** [VARPTR$](VARPTR$)(string-expression) - executes a command string variable. **MUST be used with variables!**.
-
+  - **O**n - Sets the current octave (from 0 to 6). Example: **PLAY "O3"**
+  - **<** - Down one octave (cannot be below zero). Example: **PLAY "<<"** 'goes down two octaves.
+  - **>** - Up one octave (cannot be above 6). Example: **PLAY ">>"** ' goes up two octaves.
+  - **A**, **B**, **C**, **D**, **E**, **F** or **G** are the notes in the current octave. Can use the following suffixes:
+    * **+** or **#** for a sharp note. Example: **PLAY "C#"**
+    * **-** for a flat note. Example: **PLAY "C-"**
+  - **N**n - Plays a note n by number(n can be between 0 to 84 in the 7 octaves, where 0 is a rest). Example: **PLAY "N42"**
+  - **L**n - Sets length of a note (n can be 1 to 64 where 1 is a whole note and 4 is a quarter of a note etc.). Example: **PLAY "L4"**
+    * **MS** - Each note plays 3/4 of length set by L (staccato)
+    * **MN** - Each note plays 7/8 of length set by L (normal)
+    * **ML** - Each note plays full length set by L (legato)
+    * **P**n - Pause in the duration of n quarternotes (n can be 1 to 64) corresponding to L, Example: **PLAY "P32"**
+    * **T**n - Tempo sets number of L4 quarter notes per minute (n can be 32 to 255 where 120 is the default). Example: **PLAY "T180"**
+  - ** .**  - period after a note plays 1½ times the note length determined by L * T.
+  - **..**  - two periods plays 1-3/4 times the note length determined by L * T.
+  - **,**  - **commas in QB64** stop play advancement to allow more than one note to be played simultaneously. Example: **PLAY "C,E,G,"**
+  - **V**n - Volume in **QB64 only** can be any volume from 0(none) to 100(full).  The default level is 50 when **n** is not specified. 
+  - **MF** - Play music in the foreground (each note must be completed before another can start).
+  - **MB** - Play music in the background while program code execution continues (QB64 has no note buffer limits).
+  - **X** **+** [VARPTR$](VARPTR$)(string-expression) - executes a command string variable. **MUST be used with variables!**.
 
 ## Usage
 
@@ -37,6 +34,7 @@
 * Command string values are not case sensitive and spacing is ignored. Use upper or lower case as desired.
 ***NOTE: In QB64, PLAY may NOT delay program progress! Use [_DELAY](_DELAY) and [END](END) to allow music completion.**
 
+## Example(s)
 
 *Example 1:* Plays a sound with the volume and note varying from 0 to 50. Maximum note can only be 84.
 
@@ -57,7 +55,6 @@ PLAY "v10l1c,l4egl2o5c,o4l4eg"
 
 ```
 <sub>Code by Galleon</sub>
-
 
 *Example 2:* Plays "Frosty the snowman". The lyric printing is not delayed by PLAY in QB64.
 
@@ -99,7 +96,6 @@ END
 
 ```
 <sub>Greg Rismoen 12/09/84</sub>
-
 
 *Example 3:* Clicking on the grid enables various notes to be played simultaneously. 
 
@@ -190,7 +186,6 @@ END SUB
 
 ```
 <sub>Code by JP</sub>
-
 
 *Example 4:* Play strings starting with MB allow program code to run while music plays in background.
 
@@ -302,8 +297,8 @@ gposxp = 1
 glocate gposyp + 1, 1 'gposyp = gposyp + 1
 END SUB 
 
-```<sub>Code by Mennonite</sub>
-
+```
+<sub>Code by Mennonite</sub>
 
 *Example 5:* This example uses [PRINT](PRINT) to good effect as string spacing is ignored by PLAY:
 
@@ -340,15 +335,11 @@ x$ = x$ + "    f1      ,mn>f.d8dc  l1           ml  f,    c,    <a  ,f"</nowiki>
 PRINT x$;
 PLAY x 
 
-```<sub>Code by Luke</sub>
-
+```
+<sub>Code by Luke</sub>
 
 ## See Also
-* 
+
 * [SOUND](SOUND), [DRAW](DRAW)
 * [_SNDRAW](_SNDRAW) (play frequency waves)
 * [_SNDOPEN](_SNDOPEN) (play sound files)
-
-
-
-

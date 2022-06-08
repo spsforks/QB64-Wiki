@@ -1,28 +1,26 @@
-The **PSET** grahics [SCREEN (statement)](SCREEN (statement)) statement sets a pixel to a coordinate with a default or designated color attribute.
-
+The **PSET** grahics [SCREEN (statement)](SCREEN-(statement)) statement sets a pixel to a coordinate with a default or designated color attribute.
 
 ## Syntax
 
-> : **PSET** [STEP]**(***column%*, *row%***)**[, *colorAttribute*]
+> **PSET** [STEP]**(***column%*, *row%***)**[, *colorAttribute*]
 
+## Parameter(s)
 
-*[Parameters](Parameters):*
 * Can use [STEP](STEP) relative graphics coordinates from a previous graphic object.
 * *Column* and *row* can be literal or variable [INTEGER](INTEGER) coordinates values which can be offscreen.
 * If the *colorAttribute* is omitted, PSET will use the current [_DEST](_DEST) page's _DEFAULTCOLOR.
 
-
 ## Usage
 
-* *Color attributes* are limited to the SCREEN mode used. Any color value other than 0 will be white in [SCREEN (statement)](SCREEN (statement))s 2 or 11.
+* *Color attributes* are limited to the SCREEN mode used. Any color value other than 0 will be white in [SCREEN (statement)](SCREEN-(statement))s 2 or 11.
 * PSET can locate other graphics objects and color [DRAW](DRAW) statements.
-* The PSET action can be used in a graphics [PUT (graphics statement)](PUT (graphics statement)) to produce an identical image on any background.
+* The PSET action can be used in a graphics [PUT (graphics statement)](PUT-(graphics-statement)) to produce an identical image on any background.
 * The graphic cursor is set to the center of the program window on program start for [STEP](STEP) relative coordinates.
 * **PSET can be used in any graphic screen mode, but cannot be used in the default screen mode 0 as it is text only! (Or in any _NEWIMAGE(x, y, 0) screens which are text only as well.)** 
 
-
 ## Example(s)
- Using PSET to locate and color a [DRAW](DRAW) statement.
+
+Using PSET to locate and color a [DRAW](DRAW) statement.
 
 ```vb
 
@@ -31,8 +29,8 @@ PSET(100, 100), 12
 DRAW "U20 R20 D20 L20" 
 
 ```
-> *Screen results:* A drawn box that is bright red.
 
+> *Screen results:* A drawn box that is bright red.
 
 *Example 2:* Magnifying a box portion of a Mandelbrot image with PSET
 
@@ -153,18 +151,15 @@ SUB rectangle (x1 AS INTEGER, y1 AS INTEGER, x2 AS INTEGER, y2 AS INTEGER)
   NEXT
 END SUB
 
-``` <sub>Code by Codeguy</sub>
->  *Notes:* Left click, to zoom in on the rectangle. Right click, to zoom out. Up arrow makes the rectangle bigger and down arrow makes the rectangle smaller. 
+```
+<sub>Code by Codeguy</sub>
 
+> *Notes:* Left click, to zoom in on the rectangle. Right click, to zoom out. Up arrow makes the rectangle bigger and down arrow makes the rectangle smaller. 
 
 ## See Also
  
 * [PRESET](PRESET), [CIRCLE](CIRCLE), [LINE](LINE)
 * [COLOR](COLOR), [POINT](POINT)
-* [PUT (graphics statement)](PUT (graphics statement))
-* [GET (graphics statement)](GET (graphics statement))
-* [Text Using Graphics](Text Using Graphics) (Demo)
-
-
-
-
+* [PUT (graphics statement)](PUT-(graphics-statement))
+* [GET (graphics statement)](GET-(graphics-statement))
+* [Text Using Graphics](Text-Using-Graphics) (Demo)

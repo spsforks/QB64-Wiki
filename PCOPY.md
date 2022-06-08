@@ -1,10 +1,8 @@
 The [PCOPY](PCOPY) statement copies one source screen page to a destination page in memory. 
 
-
 ## Syntax
 
->  [PCOPY](PCOPY) sourcePage%, destinationPage%
-
+> [PCOPY](PCOPY) sourcePage%, destinationPage%
 
 ## Description
 
@@ -12,14 +10,12 @@ The [PCOPY](PCOPY) statement copies one source screen page to a destination page
 * destinationPage% is the video memory location to copy the source image to.
 * The working page is set as 0. All drawing occurs there.
 * The visible page is set as any page number that the SCREEN mode allows.
-* The [_DISPLAY (function)](_DISPLAY (function)) return can be used a page number reference in **QB64** (See Example 1).
+* The [_DISPLAY (function)](_DISPLAY-(function)) return can be used a page number reference in **QB64** (See Example 1).
 * The **QB64** [_DISPLAY](_DISPLAY) statement can also be used to stop screen flicker without page flipping or [CLS](CLS) and **is the recommended practice**.
-
 
 ## QBasic/QuickBASIC
 
 * sourcePage% and destinationPage% numbers are limited by the SCREEN mode used. In **QB64**, the same limits don't apply.
-
 
 ## Example(s)
 
@@ -50,8 +46,8 @@ PCOPY 100, _DISPLAY 'function return as destination page
 END SUB 
 
 ```
-> *Note:* Works with [_DISPLAY (function)](_DISPLAY (function)) as the other page. If mouse reads are not crucial, put the _MOUSEINPUT loop inside of the UpdateCursor Sub.
 
+> *Note:* Works with [_DISPLAY (function)](_DISPLAY-(function)) as the other page. If mouse reads are not crucial, put the _MOUSEINPUT loop inside of the UpdateCursor Sub.
 
 *Example 2:* Bouncing balls
 
@@ -81,14 +77,10 @@ END SUB
  LOOP UNTIL INKEY$ = CHR$(27) ' escape exit
 
 ```
-> *Explanation:* PCOPY reduces the flickering produced by clearing the screen. x(a) = x(a) - 1, etc. is just to be safe that the balls stay within the boundaries. dx(a) = -dx(a), etc. is to keep the actual speed while inverting it (so that the ball "bounces"). The rest should be self-explanatory, but if you are unsure about arrays you might want to look at QB64 Tutorials -> [Arrays](Arrays).
 
+> *Explanation:* PCOPY reduces the flickering produced by clearing the screen. x(a) = x(a) - 1, etc. is just to be safe that the balls stay within the boundaries. dx(a) = -dx(a), etc. is to keep the actual speed while inverting it (so that the ball "bounces"). The rest should be self-explanatory, but if you are unsure about arrays you might want to look at QB64 Tutorials -> [Arrays](Arrays).
 
 ## See Also
 
 * [_DISPLAY](_DISPLAY)
-* [SCREEN (statement)](SCREEN (statement))
-
-
-
-
+* [SCREEN (statement)](SCREEN-(statement))

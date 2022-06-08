@@ -1,10 +1,8 @@
 The [PAINT](PAINT) statement is used to fill a delimited area in a graphic screen mode with color.
 
-
 ## Syntax
 
 >  [PAINT](PAINT) [**STEP**] (column%, row%), fillColor[, borderColor%]
-
 
 ## Parameter(s)
 
@@ -13,7 +11,6 @@ The [PAINT](PAINT) statement is used to fill a delimited area in a graphic scree
 * Optional [INTEGER](INTEGER) or [LONG](LONG) 32-bit borderColor% is the color of the border of the shape to be filled when this is different from the fill color. 
 * fillColor can be a string made up of a sequence of [CHR$](CHR$) values, each representing a tiling pattern to fill the shape. See Example 3 below.
 
-
 ## Description
 
 * Graphic column% and row% [INTEGER](INTEGER) pixel coordinates should be inside of a fully closed "shape", whether it's a rectangle, circle or custom-drawn shape using [DRAW](DRAW).
@@ -21,7 +18,6 @@ The [PAINT](PAINT) statement is used to fill a delimited area in a graphic scree
 * If the shape's border isn't continuous, the "paint" will "leak". 
 * If the shape is not totally closed, every color except the border color may be painted over.
 * [DRAW](DRAW) shapes can be filled using the string "P fillColor, borderColor". Use a "B" blind move to offset from the shape's border.
-
 
 ## Example(s)
 
@@ -35,8 +31,8 @@ CIRCLE (x, y), 100, 10
 PAINT STEP(0, 0), 2, 10 
 
 ```
-> *Results:* A circle located at x and y with a bright green border filled in dark green. The last coordinate used was the circle's center point and PAINT used it also with the [STEP](STEP) relative coordinates being zero.
 
+> *Results:* A circle located at x and y with a bright green border filled in dark green. The last coordinate used was the circle's center point and PAINT used it also with the [STEP](STEP) relative coordinates being zero.
 
 *Example 2:* Routine to check a [DRAW](DRAW) string to make sure that the drawn shape is fully closed so that a PAINT does not "leak".
 
@@ -79,8 +75,8 @@ NEXT
 PSET (300, 300): DRAW drw$ 
 
 ```
->  *Explanation:* If the [DRAW](DRAW) string is fully closed, the end values should each be 0. In the example, the proper result should be 4, 4 as there is a BF4 offset for PAINT which cannot be on a border. The result is 4, 5 because the shape is not completely closed.
 
+> *Explanation:* If the [DRAW](DRAW) string is fully closed, the end values should each be 0. In the example, the proper result should be 4, 4 as there is a BF4 offset for PAINT which cannot be on a border. The result is 4, 5 because the shape is not completely closed.
 
 *Example 3:* Tiling using PAINT to create a red brick pattern inside a yellow border:
 
@@ -104,7 +100,6 @@ SCREEN 12
     PAINT (320, 240), Tile$, 14 'paints brick tiles within yellow border
 
 ```
-
 
 *Example 4:* Generating a tiling pattern for PAINT from [DATA](DATA) statements:
 
@@ -150,15 +145,11 @@ FUNCTION loadpattern$
 END FUNCTION
 
 ```
-> : *Code provided by collaborator https://github.com/NEONTEC75*
 
+> *[Code provided by collaborator](https://github.com/NEONTEC75)*
 
 ## See Also
 
 * [PSET](PSET), [PRESET](PRESET)
 * [CIRCLE](CIRCLE), [LINE](LINE), [DRAW](DRAW)
 * [SCREEN](SCREEN), [CHR$](CHR$)
-
-
-
-

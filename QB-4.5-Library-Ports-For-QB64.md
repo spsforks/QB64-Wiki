@@ -1,14 +1,10 @@
 The community has made tons of QB 4.5 libraries and we can't cover them all. However, some of the more frequently used libraries can be ported to QB64. This has partly been done with the DirectQB library and I hope that others join in and make QB64 ports of the popular libraries.
 
-
 .bi files should be placed at the beginning of the code (or is already present in QB 4.5 source).
 
 .bm files should be placed after all code (or just before the subs/functions of the source).
 
-
 The original author should, if possible, be contacted and the work should be approved by the author. If contact with the author proves impossible then I think that it is fair that it is continued, and only abandoned if the author contacts and disapproves. Especially considering the nature of the work and necessity for a port to modern systems.
-
-
 
 ## DirectQB port (dqb2qb64)
 
@@ -22,14 +18,10 @@ The original author should, if possible, be contacted and the work should be app
 
 **Original can be downloaded from:** QB45.com ---> Libraries
 
-
 **Links to files:**
 
-directqb.bi [http://dl.dropbox.com/u/8443610/directqb.bi](http://dl.dropbox.com/u/8443610/directqb.bi)
-
-directqb.bm [http://dl.dropbox.com/u/8443610/directqb.bm](http://dl.dropbox.com/u/8443610/directqb.bm)
-
-
+* [directqb.bi](http://dl.dropbox.com/u/8443610/directqb.bi)
+* [directqb.bm](http://dl.dropbox.com/u/8443610/directqb.bm)
 
 ## Future.Lib port
 
@@ -43,8 +35,6 @@ directqb.bm [http://dl.dropbox.com/u/8443610/directqb.bm](http://dl.dropbox.com/
 
 **Original can be downloaded from:** QB45.com ---> Future Software
 
-
-
 ## CosmoX port
 
 **Original author:** CosmoSoft
@@ -56,6 +46,3 @@ directqb.bm [http://dl.dropbox.com/u/8443610/directqb.bm](http://dl.dropbox.com/
 **Developed by:** None.
 
 **Original can be downloaded from:** QB45.com ---> libraries
-
-
-

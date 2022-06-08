@@ -1,10 +1,8 @@
 This header allows you to peek and poke bytes, words, and dwords in QB64. The functions seem to work okay when used with signed variables also. For example, I am able to assign the return of peekw~% to an [INTEGER](INTEGER) without problem. Regards, Michael Calkins
 
-
 Create *PeekPoke.h* text file in the QB64 folder:
 
 ```text
-
 
 /*
 peek and poke for bytes, words, and dwords in qb64
@@ -81,15 +79,11 @@ PRINT "0x" + HEX$(peekd~&(ptr + 9))
 END 
 
 ```
-**Note: These functions and statements use a variable name reference pointer in memory instead of [DEF SEG](DEF SEG).**
 
+**Note: These functions and statements use a variable name reference pointer in memory instead of [DEF SEG](DEF-SEG).**
 
 ## See Also
 
-* [DECLARE LIBRARY](DECLARE LIBRARY)
+* [DECLARE LIBRARY](DECLARE-LIBRARY)
 * [PEEK](PEEK), [POKE](POKE)
 * [Libraries](Libraries)
-
-
-
-
