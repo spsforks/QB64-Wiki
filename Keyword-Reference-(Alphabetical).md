@@ -1102,8 +1102,8 @@ Use [$NOPREFIX]($NOPREFIX) to enable these to be used without the leading unders
 * [+](+) operator or sign
 * [-](-) operator or sign
 * [*](*) operator
-* [//](//) (floating decimal point) operator
-* [\](\) operator
+* [/](/) (floating decimal point) operator
+* [\\](\\) operator
 * [^](^) operator
 * [MOD](MOD) operator
 
