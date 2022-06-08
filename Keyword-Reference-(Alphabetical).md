@@ -64,7 +64,7 @@
 * [DATE$ (statement)](DATE$ (statement)) sets the date of the Operating System using a mm-dd-yyyy [STRING](STRING) format.
 * DECLARE (BASIC statement) declares a [SUB](SUB) or [FUNCTION](FUNCTION) procedure at the start of a program. Not required in QB64.
 * [DECLARE (non-BASIC statement)](DECLARE (non-BASIC statement)) declares non-basic [SUB](SUB) or [FUNCTION](FUNCTION) procedures. Not implemented in QB64.
-* [DECLARE LIBRARY](DECLARE LIBRARY) declares a C++, SDL or Operating System [SUB](SUB) or [FUNCTION](FUNCTION) to be used.
+* [DECLARE LIBRARY](DECLARE-LIBRARY) declares a C++, SDL or Operating System [SUB](SUB) or [FUNCTION](FUNCTION) to be used.
 * [DECLARE DYNAMIC LIBRARY](DECLARE-DYNAMIC-LIBRARY) declares DYNAMIC, CUSTOMTYPE or STATIC  library(DLL) [SUB](SUB) or [FUNCTION](FUNCTION).
 * [DEF SEG](DEF-SEG) (statement) defines a segment in memory to be accessed by a memory procedure.
 * [DEFDBL](DEFDBL) (statement) defines a set of undefined variable name starting letters as [DOUBLE](DOUBLE) type numerical values.
