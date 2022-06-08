@@ -18,7 +18,8 @@ The [$DYNAMIC]($DYNAMIC) [Metacommand](Metacommand) allows the creation of dynam
 
 ## Example(s)
 
-*Example:* [REDIM](REDIM)ing a $DYNAMIC array using [_PRESERVE](_PRESERVE) to retain previous array values.
+## Example(s)
+ [REDIM](REDIM)ing a $DYNAMIC array using [_PRESERVE](_PRESERVE) to retain previous array values.
 
 ```vb
 

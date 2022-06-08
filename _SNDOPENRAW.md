@@ -15,7 +15,8 @@ The [_SNDOPENRAW](_SNDOPENRAW) function opens a new channel to fill with _SNDRAW
 
 ## Example(s)
 
-*Example:* Combining 2 sounds without worrying about mixing:
+## Example(s)
+ Combining 2 sounds without worrying about mixing:
 
 ```vb
 

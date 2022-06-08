@@ -19,7 +19,8 @@ The **PMAP** statement returns the physical or [WINDOW](WINDOW) view port coordi
 * Mouse co-ordinates returned by [_MOUSEX](_MOUSEX) and [_MOUSEY](_MOUSEY) are the physical screen co-ordinates.
 
 
-*Example:* Use PMAP to convert coordinate values from view to screen coordinates and from screen coordinates to view coordinates.
+## Example(s)
+ Use PMAP to convert coordinate values from view to screen coordinates and from screen coordinates to view coordinates.
 
 ```vb
 

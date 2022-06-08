@@ -1,17 +1,15 @@
 The **STICK** function returns the directional axis coordinate move of game port (&H201) joystick or USB controller devices.
 
-
 ## Syntax
 
 >  coordinate_move% = [STICK](STICK)(direction%)
 
-
-QB64 ## Syntax
+## QB64 Syntax
 
 >  coordinate_move% = [STICK](STICK)(direction%[, axis_number%])
 
+## Description
 
-*Description:*
 * **QB64** allows any number of coordinate pairs for more than two game device controllers. STICK will not read a mouse axis.
 * *axis_number* can be used as the next axis parameter for controllers with multiple axis using the SAME *directional* parameters.
 * The *axis_number* 1 can be omitted for the main stick column and row parameter reads. 
@@ -34,6 +32,7 @@ STICK(3) returns row coordinate of device 2 if used. (QBasic maximum was 2 contr
 * **QB64** allows a dual stick to be read using the same first parameters and 2 as the second parameter. EX: STICK(0, 2)
 * **There will not be an error if you try to read too many device axis or buttons!**
 
+## Example(s)
 
 *Example 1:* Displays the input from 3 joysticks, all with dual sticks and 3 buttons.
 
@@ -54,8 +53,8 @@ DO: _LIMIT 10
 LOOP UNTIL INKEY$ > "" 
 
 ```
-> *Explanation:* Notice the extra **QB64 only** parameters used to cater for the 2nd stick and the buttons of the 3rd joystick.
 
+> *Explanation:* Notice the extra **QB64 only** parameters used to cater for the 2nd stick and the buttons of the 3rd joystick.
 
 *Example 2:* Displays the Sidewinder Precision Pro Stick, Slider, Z Axis, and Hat Point of View.
 
@@ -86,7 +85,6 @@ LOOP UNTIL INKEY$ <> ""
 
 ```text
 
-
 Number of input devices found = 3
 [KEYBOARD][BUTTON]]
 Buttons: 512
@@ -95,7 +93,6 @@ Buttons: 3
 [CONTROLLER][NAME][Microsoft Sidewinder Precision Pro (USB)](NAME][Microsoft Sidewinder Precision Pro (USB))[BUTTON][AXIS]
 Buttons: 9
 
-
   X    Main     Y          Slider         Z-axis           POV
  127           127           254           127           127  127
                       Buttons
@@ -103,17 +100,13 @@ Buttons: 9
 
 ```
 
->  *Note:* A Sidewinder Precision Pro requires that pins 2 and 7(blue and purple) be connected together for digital USB recognition.
-<center> [http://www.amazon.com/Belkin-F3U200-08INCH-Joystick-Adapter-SideWinder/dp/B000067RIV  Sidewinder Precision Pro game port to USB adapter]</center>
+> *Note:* A Sidewinder Precision Pro requires that pins 2 and 7(blue and purple) be connected together for digital USB recognition.
 
+<center> [Sidewinder Precision Pro game port to USB adapter](http://www.amazon.com/Belkin-F3U200-08INCH-Joystick-Adapter-SideWinder/dp/B000067RIV)</center>
 
 ## See Also
  
 * [STRIG](STRIG) (function)
-* [ON STRIG(n)](ON STRIG(n))
+* [ON STRIG(n)](ON-STRIG(n))
 * [_DEVICES](_DEVICES), [_DEVICE$](_DEVICE$), [_LASTBUTTON](_LASTBUTTON)
-* [http://en.wikipedia.org/wiki/Analog_stick Single and Dual Stick Controllers]
-
-
-
-
+* [Single and Dual Stick Controllers](http://en.wikipedia.org/wiki/Analog_stick)

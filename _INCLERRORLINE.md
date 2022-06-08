@@ -21,7 +21,8 @@ The [_INCLERRORFILE$](_INCLERRORFILE$) function returns the line number in an [$
 
 ## Example(s)
 
-*Example:*
+## Example(s)
+
 
 ```vb
 

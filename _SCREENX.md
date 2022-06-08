@@ -16,7 +16,8 @@ The [_SCREENX](_SCREENX) function returns the current column pixel coordinate of
 
 ## Example(s)
 
-*Example:* Clicks and opens program window header menu:
+## Example(s)
+ Clicks and opens program window header menu:
 
 ```vb
 _SCREENMOVE _MIDDLE

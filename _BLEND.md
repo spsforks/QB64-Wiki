@@ -22,7 +22,8 @@ The [_BLEND](_BLEND) statement turns on 32 bit alpha blending for an image or sc
 
 ## Example(s)
 
-*Example:*
+## Example(s)
+
 
 ```vb
 

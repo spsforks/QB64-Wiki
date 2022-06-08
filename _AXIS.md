@@ -15,7 +15,8 @@ The [_AXIS](_AXIS) function returns the relative position of a specified axis nu
 
 ## Example(s)
 
-*Example:* Reading multiple controller device buttons, axis and wheels.
+## Example(s)
+ Reading multiple controller device buttons, axis and wheels.
 
 ```vb
 

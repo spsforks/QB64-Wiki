@@ -23,7 +23,8 @@ The [_ACCEPTFILEDROP](_ACCEPTFILEDROP) statement prepares a program window to re
 
 ## Example(s)
 
-*Example:* Accepting files dragged from a folder and processing the list received sequentially. 
+## Example(s)
+ Accepting files dragged from a folder and processing the list received sequentially. 
 
 ```vb
 

@@ -2,7 +2,6 @@
 
 Screen savers are simply graphics EXE programs renamed with the SCR file extension. The program should NOT use a lot of Window's CPU resources! To check the CPU usage, open **Task Manager** by pressing *Ctrl + Alt + Delete* keys and look for the QB64 program running in the *Processes* tab list. CPU usage should be less than 50% and ideally less than 20%. Use [_LIMIT](_LIMIT) or [SLEEP](SLEEP) when needed.
 
-
 <center>**Renaming an EXE Program to a SCR File and Installing**</center>
 
 The program can be renamed several ways using a program or batch file you make or doing it manually in Windows. In Windows you can open an **Explorer** window select the *Tools* menu and click *Folder Options...*. Select the *View* tab and uncheck the *Hide extensions for known file types* box. Then you can simply rename the program file changing the extension. Then 
@@ -12,8 +11,9 @@ either move the file or *Install* it as explained below:
 
 > **Copy* the SCR program to the **C:\Windows\System32 folder** so that Windows will list it in the **Desktop Properties**. Select the *Screensaver* tab's drop-down Menu List and select the new screensaver from the list.
 
+## Example(s)
 
-*Example:* A screen saver that un-organizes the Desktop.
+A screen saver that un-organizes the Desktop.
 
 ```vb
 
@@ -47,15 +47,8 @@ SYSTEM * *                     'close screen saver immediately
 ```
 <sub>Code by DSMan</sub>
 
-
 ## See Also
-
 
 * [_MOUSEMOVEMENTX](_MOUSEMOVEMENTX), [_MOUSEMOVEMENTY](_MOUSEMOVEMENTY)
 * [SCREEN (statement)](SCREEN (statement)), [_SCREENIMAGE](_SCREENIMAGE)
 * [SAVEIMAGE](SAVEIMAGE) (save image to bitmap program)
-
-
-
-
-

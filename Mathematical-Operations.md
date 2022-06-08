@@ -487,7 +487,8 @@ RelationalTable
 > :The HI byte's **MSB** is often called the **sign** bit! When the highest bit is on, the signed value returned will be negative.  
 
 
-*Example:* Program displays the bits on for any integer value between -32768 and 32767 or &H80000 and &H7FFF.
+## Example(s)
+ Program displays the bits on for any integer value between -32768 and 32767 or &H80000 and &H7FFF.
 
 ```vb
 

@@ -148,7 +148,8 @@ END
 > *Explanation:* In the procedure all black areas(background) are changed to white for a PUT using AND over other colored objects. The other image colors are changed to black for a PUT of the original image using XOR. The array images can be [BSAVE](BSAVE)d for later use. **QB64 can also** [PUT](PUT)** a full screen 12 image from an array directly into a** [BINARY](BINARY) **file.**
 
 
-*See Examples:*
+## See Example(s)
+
 
 * [SAVEIMAGE](SAVEIMAGE) (QB64 Image to Bitmap SUB by Galleon)
 

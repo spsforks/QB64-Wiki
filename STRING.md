@@ -1,10 +1,8 @@
 **STRING** variables or literal values are one byte per character length text or [ASCII](ASCII) characters.
 
-
 ## Syntax
 
 > : DIM variable AS STRING [* byte_length]
-
 
 * *Byte length* is optional in [DIM](DIM) statements, but is required in [TYPE](TYPE) definitions as a literal or [CONST](CONST) [INTEGER](INTEGER) value.
 * Literal strings are defined by quotation marks on each end. The quotes will not [PRINT](PRINT) to the screen.
@@ -16,7 +14,6 @@
 * STRING values are compared according to the [ASCII](ASCII) code values from left to right until one string code value exceeds the other.
 * **NOTE: Many QBasic keyword variable names CAN be used with a [STRING](STRING) suffix($) ONLY! You CANNOT use them without the suffix, use a numerical suffix or use [DIM](DIM), [REDIM](REDIM), [_DEFINE](_DEFINE), [BYVAL](BYVAL) or [TYPE](TYPE) variable [AS](AS) statements!**
 
-
 > ::::**Creating a fixed length STRING variable in QBasic:**
 
 > * Variable$ = " " ' 1 space creates a one [_BYTE](_BYTE) string length in a procedure(not fixed)
@@ -25,14 +22,13 @@
 > * Variable AS STRING * n% ' fixed string length in a [SUB](SUB) parameter or [TYPE](TYPE) definition.
 > * [CONST](CONST) variables can also be used after the constant value is defined.
 
-
-> ::::**QB64 fixed length string type suffixes**
+> **QB64 fixed length string type suffixes**
 
 * A number after the string variable name $ suffix denotes the fixed string length: **X$2** denotes a 2 byte string.
 
+> **String [Concatenation](Concatenation) (addition)**
 
-> :::::**String [Concatenation](Concatenation) (addition)**
-> :::*Must be used when defining a string variable's literal value!*
+> *Must be used when defining a string variable's literal value!*
 
 * Concatenation uses the + addition symbol to add literal or variable parts to a string variable value.
 * Quotation marks cannot be added. Use [CHR$](CHR$)(34) as quotes are used to define the ends of strings.
@@ -40,6 +36,7 @@
 * Concatenation can be used in PRINT statements along with semicolons and commas used by [PRINT](PRINT) ONLY.
 * Semicolons or commas outside of quotes cannot be used to make a string variable's literal string value!
 
+## Example(s)
 
 *Example 1:* Using a string type suffix with a fixed length byte size in QB64 only. The number designates the fixed string length.
 
@@ -54,10 +51,10 @@ PRINT var$5
 ```text
 
 12345
+
 ```
 
 > *Note:* The suffix must keep the same byte length or it is considered a different string variable with a different value!
-
 
 *Example 2:* Creating a string variable value by adding variable and literal string values. This procedure is called string [concatenation](concatenation).
 
@@ -73,13 +70,11 @@ PRINT question$
 
 ```text
 
-
 I am "10" years old. How old are you? 
 
 ```
 
 > *Note:* Since quotation marks are used to denote the ends of literal strings, [CHR$](CHR$)(34) must be used to place quotes inside them.
-
 
 *Example 3:* How QB64 string type suffixes can fix the length by adding a number of bytes after it.
 
@@ -90,12 +85,12 @@ strings$5 = "Hello world"
 PRINT strings$5 
 
 ```
+
 ```text
 
 Hello
+
 ```
-
-
 
 *Example 4:* STRING values can be compared by the [ASC](ASC) code value according to [ASCII](ASCII).
 
@@ -117,8 +112,8 @@ SELECT CASE value$
 END SELECT 
 
 ```
->  *Notes:* [STRING](STRING) values using multiple characters will be compared by the [ASCII](ASCII) code values sequentially from left to right. Once the equivalent code value of one string is larger than the other the evaluation stops. This allows string values to be compared and sorted alphabetically using [Greater Than](Greater Than) or [Less Than](Less Than) and to [SWAP](SWAP) values in [arrays](arrays) irregardless of the string lengths.
 
+> *Notes:* [STRING](STRING) values using multiple characters will be compared by the [ASCII](ASCII) code values sequentially from left to right. Once the equivalent code value of one string is larger than the other the evaluation stops. This allows string values to be compared and sorted alphabetically using [Greater Than](Greater Than) or [Less Than](Less Than) and to [SWAP](SWAP) values in [arrays](arrays) irregardless of the string lengths.
 
 ## See Also
  
@@ -133,8 +128,4 @@ END SELECT
 * [CVI](CVI), [CVL](CVL), [CVS](CVS), [CVD](CVD), [_CV](_CV) ([ASCII](ASCII) string to numerical value)
 * [LEN](LEN), [VAL](VAL) (function converts string to numerical value)
 * [ASCII](ASCII), [DRAW](DRAW)
-* [PRINT](PRINT), [PRINT USING](PRINT USING), [WRITE](WRITE)
-
-
-
-
+* [PRINT](PRINT), [PRINT USING](PRINT-USING), [WRITE](WRITE)

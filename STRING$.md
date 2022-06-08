@@ -1,14 +1,11 @@
 The [STRING$](STRING$) function returns a [STRING](STRING) consisting of a single character repeated a number of times.
 
-
 ## Syntax
 
 >  result$ = STRING$(*count&*, {*character$* | *ASCIIcode%*} )
 
-
 ## Description
 
-<!-- Stylin -->
 * count& is the number of times the character specified by character is repeated.
 * Character is a literal string character, a string variable or an [ASCII](ASCII) code number.
 * If count& is negative, an [ERROR Codes](ERROR Codes) error will occur. The count can be zero.
@@ -17,10 +14,9 @@ The [STRING$](STRING$) function returns a [STRING](STRING) consisting of a singl
 * A [STRING](STRING) statement can be added to a string value with the + [concatenation](concatenation) operator. 
 * The function result can also be used to [GET](GET) and [PUT](PUT) a number of bytes as zero characters: bytes$ = STRING(numbytes, 0)
 
-
 *Differences between QB64 and QB 4.5:*
-* **QB64** can use [LONG](LONG) values for a count up to 2,147,483,647 while **QB 4.5** could only use [INTEGER](INTEGER) values up to 32,767.
 
+* **QB64** can use [LONG](LONG) values for a count up to 2,147,483,647 while **QB 4.5** could only use [INTEGER](INTEGER) values up to 32,767.
 
 ## Example(s)
 
@@ -37,8 +33,6 @@ PRINT STRING$(40, 42)
 
 ```
 
-
-
 > Using a [STRING](STRING) to specify the repeated character.
 
 ```vb
@@ -53,9 +47,8 @@ BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD
 
 ```
 
+## See Example(s)
 
-
-*See examples:*
 * [SAVEIMAGE](SAVEIMAGE)
 * [SaveIcon32](SaveIcon32)
 

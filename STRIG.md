@@ -6,12 +6,13 @@ The **STRIG** function returns button press True or False status of game port (&
 > : IF STRIG(button_function%) THEN ...
 
 
-QB64 ## Syntax
+## QB64 Syntax
 
 > : IF STRIG(*button_function%*[, *device_number%*]) THEN ...
 
 
-*Description:*
+## Description
+
 * Function returns -1 when a button event(even functions) has occurred or a button is pressed(odd functions). 
 * STRIG will not read keyboard or mouse buttons detected by [_DEVICES](_DEVICES).
 * The *device number* must be used with more than 2 devices. Use device 1 function numbers for just one joystick.
@@ -49,7 +50,8 @@ STRIG(2, 4): STRIG(3, 4): STRIG(6, 4): STRIG(7, 4): STRIG(10, 4): STRIG(11, 4) '
 * **There will not be an error if you try to read too many device axis or buttons!**
 
 
-*Example:* Displays the input from 3 joysticks, all with dual sticks and 3 buttons.
+## Example(s)
+ Displays the input from 3 joysticks, all with dual sticks and 3 buttons.
 
 ```vb
 

@@ -20,7 +20,8 @@ The [_OFFSET](_OFFSET) variable type stores the location of a value in memory. T
 
 ## Example(s)
 
-*Example:* The SHBrowseForFolder function receives information about the folder selected by the user in Windows XP and 7.
+## Example(s)
+ The SHBrowseForFolder function receives information about the folder selected by the user in Windows XP and 7.
 
 ```vb
 

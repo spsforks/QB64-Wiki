@@ -20,7 +20,8 @@ The [INT](INT) function rounds a numeric value down to the next whole number.
 
 ## Example(s)
 
-*Example:* Displaying the rounding behavior of [INT](INT).
+## Example(s)
+ Displaying the rounding behavior of [INT](INT).
 
 ```vb
 

@@ -49,7 +49,8 @@ The [_PALETTECOLOR](_PALETTECOLOR) statement sets the color value of a palette e
 
 ## Example(s)
 
-*Example:* Creating custom background colors in SCREEN 0 that follow the text. [CLS](CLS) makes entire background one color.
+## Example(s)
+ Creating custom background colors in SCREEN 0 that follow the text. [CLS](CLS) makes entire background one color.
 
 ```vb
 

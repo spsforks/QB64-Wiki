@@ -11,7 +11,8 @@ The [UCASE$](UCASE$) function outputs an all-uppercase version of a [STRING](STR
 
 ## Example(s)
 
-*Example:* The following code guarantees that all letter key entries are capitalized:
+## Example(s)
+ The following code guarantees that all letter key entries are capitalized:
 
 ```vb
 

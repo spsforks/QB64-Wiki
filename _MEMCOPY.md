@@ -26,7 +26,8 @@ The [_MEMCOPY](_MEMCOPY) statement copies a block of bytes from one memory offse
 
 ## Example(s)
 
-*Example:* Swapping data from one [STRING](STRING) variable to another. Fixed length strings are recommended for speed.
+## Example(s)
+ Swapping data from one [STRING](STRING) variable to another. Fixed length strings are recommended for speed.
 
 ```vb
 

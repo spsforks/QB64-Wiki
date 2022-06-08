@@ -1,18 +1,15 @@
-[SELECT CASE](SELECT CASE) is used to determine the program flow by comparing the value of a variable to specific CASE values.
-
+[SELECT CASE](SELECT-CASE) is used to determine the program flow by comparing the value of a variable to specific CASE values.
 
 ## Syntax
 
 > **SELECT** [EVERY]**CASE** testExpression
-> :**CASE** expressionList1
-> ::[statement-block1]
-> :[**CASE** expressionList2
-> ::[statement-block2]]...
-> :[**CASE ELSE**
-> ::[statementblock-n]]
+>   **CASE** expressionList1
+>     [statement-block1]
+>   [**CASE** expressionList2
+>     [statement-block2]]...
+>   [**CASE ELSE**
+>     [statementblock-n]]
 > **END SELECT** 
-
-
 
 * **SELECT CASE** evaluates testExpression and executes the first matching [CASE](CASE) or [CASE ELSE](CASE ELSE) block and exits.
 * **SELECT EVERYCASE** allows the execution of all matching [CASE](CASE) blocks from top to bottom or the [CASE ELSE](CASE ELSE) block.
@@ -34,7 +31,6 @@
 * Use **[colon](colon)s** to execute multiple statements in one line.
 * An **[underscore](underscore)** can be used anywhere after the code on one line to continue it to the next line in **QB64**.
 
-
 ## Example(s)
 
 *Example 1:* SELECT CASE can use literal or variable [STRING](STRING) or numerical values in CASE comparisons:
@@ -55,8 +51,8 @@ SELECT CASE value
 END SELECT 
 
 ```
->  *Explanation:* The first true CASE is executed and SELECT CASE is exited. "Other value" is printed for values less than 10.
 
+> *Explanation:* The first true CASE is executed and SELECT CASE is exited. "Other value" is printed for values less than 10.
 
 *Example 2:* SELECT CASE will execute the first CASE statement that is true and ignore all CASE evaluations after that:
 
@@ -93,7 +89,6 @@ This will be displayed when a equals 100
 ```
 
 > *Explanation:* The first case where a value is true is shown, the remainder are skipped. Try changing the value of *a*.
-
 
 *Example 3:* Same as Example 2 but, SELECT EVERYCASE will execute every CASE statement that is true.
 
@@ -132,7 +127,6 @@ This will be shown as 100 is between 50 and 150
 ```
 
 > *Explanation:* [CASE ELSE](CASE ELSE) will only execute if no other CASE was true. See Example 5 for more usages.
-
 
 *Example 4:* SELECT CASE evaluates string values by the [ASC](ASC) code value according to [ASCII](ASCII).
 
@@ -186,13 +180,9 @@ DO
 LOOP UNTIL num > 9 
 
 ```
->  **Note:** [CASE ELSE](CASE ELSE) will only execute if no other CASE is true! Changing the comparison value in a CASE may affect later CASE evaluations. **Beware of duplicate variables inside of cases affecting the comparison values and remaining cases.**
 
+> **Note:** [CASE ELSE](CASE-ELSE) will only execute if no other CASE is true! Changing the comparison value in a CASE may affect later CASE evaluations. **Beware of duplicate variables inside of cases affecting the comparison values and remaining cases.**
 
 ## See Also
  
 * [IF...THEN](IF...THEN), [Boolean](Boolean)
-
-
-
-

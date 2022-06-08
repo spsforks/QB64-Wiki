@@ -13,7 +13,8 @@ The [_CEIL](_CEIL) function rounds a numeric value up to the next whole number o
 
 ## Example(s)
 
-*Example:* Displaying the rounding behavior of [INT](INT), [CINT](CINT) and [FIX](FIX) vs [_CEIL](_CEIL).
+## Example(s)
+ Displaying the rounding behavior of [INT](INT), [CINT](CINT) and [FIX](FIX) vs [_CEIL](_CEIL).
 
 ```vb
 

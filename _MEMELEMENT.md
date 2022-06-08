@@ -56,7 +56,8 @@ The [_MEMELEMENT](_MEMELEMENT) function returns a [_MEM](_MEM) block referring t
 
 ## Example(s)
 
-*Example:* Comparing the specifications returned by [_MEM](_MEM) and _MEMELEMENT from an array.
+## Example(s)
+ Comparing the specifications returned by [_MEM](_MEM) and _MEMELEMENT from an array.
 
 ```vb
 

@@ -318,7 +318,8 @@
 > QB64 can use several Windows fonts when 'cyberbit' is not present so it is not necessary to include with program packages. 
 
 
-*Example:* Setting up Unicode functionality in a program using any monospace font containing characters from a Code Page.
+## Example(s)
+ Setting up Unicode functionality in a program using any monospace font containing characters from a Code Page.
 
 ```vb
 

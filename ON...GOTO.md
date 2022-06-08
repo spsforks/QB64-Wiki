@@ -20,7 +20,8 @@
 
 ## Example(s)
 
-*Example:* Changing the program flow when a value is not 0.
+## Example(s)
+ Changing the program flow when a value is not 0.
 
 ```vb
 

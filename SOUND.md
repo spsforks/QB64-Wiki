@@ -1,17 +1,14 @@
 **SOUND** sets frequency and duration of sounds from the internal PC speaker if the computer has one or the sound card in QB64.
 
-
 ## Syntax
 
 > : SOUND *frequency*, *duration*
-
 
 ## Description
 
 * *Frequency* is any literal or variable value from 37 to 32767, but 0 is allowed for delays.
 * *Duration* is any literal or variable number of [TIMER](TIMER) ticks with a duration of 1/18th second. 18 = one second.
 * In **QB64** the sound comes from the soundcard and the volume can be adjusted through the OS.
-
 
 ## Error(s)
 
@@ -58,7 +55,7 @@
 
 ```
 
-
+## Example(s)
 
 *Example 1:* Playing the seven octaves based on the base note DATA * 2 ^ (octave - 1).
 
@@ -95,8 +92,7 @@ Octaves:
 DATA 32.7,34.65,36.71,38.9,41.2,43.65,46.25,49,51.91,55,58.27,61.74 
 
 ```
-<sub>Code adapted by Ted Weissgerber from code in [http://www.amazon.com/Running-MS-DOS-QBASIC-Michael-Halvorson/dp/1556153406 "Running MS-DOS QBasic"] by Microsoft Press</sub>
-
+<sub>Code adapted by Ted Weissgerber from code in ["Running MS-DOS QBasic"](http://www.amazon.com/Running-MS-DOS-QBASIC-Michael-Halvorson/dp/1556153406) by Microsoft Press</sub>
 
 *Example 2:* Playing a song called "Bonnie" with [SOUND](SOUND) frequencies. 
 
@@ -139,15 +135,10 @@ DATA 523,8," lies ",587,8,"O-",523,8,"ver ",440,8,"the ",392,8,"O-",330,32,"cean
 DATA 440,8,"bring ",587,8,"back ",523,8,"my ",494,8,"Bon-",440,8,"nie ",494,8,"to ",523,32,"me..!" 
 
 ```
-<sub>Code adapted by Ted Weissgerber from code [http://www.amazon.com/Running-MS-DOS-QBASIC-Michael-Halvorson/dp/1556153406 "Running MS-DOS QBasic"] by Microsoft Press</sub>
-
+<sub>Code adapted by Ted Weissgerber from code ["Running MS-DOS QBasic"](http://www.amazon.com/Running-MS-DOS-QBASIC-Michael-Halvorson/dp/1556153406) by Microsoft Press</sub>
 
 ## See Also
  
 * [PLAY](PLAY), [BEEP](BEEP)
 * [_SNDOPEN](_SNDOPEN) (play sound files)
 * [_SNDRAW](_SNDRAW)  (play frequency waves)
-
-
-
-

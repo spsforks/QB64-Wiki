@@ -13,7 +13,8 @@ The [_STARTDIR$](_STARTDIR$) function returns the path a user called a QB64 prog
 
 ## Example(s)
 
-*Example:* Showcasing QB64 path functions:
+## Example(s)
+ Showcasing QB64 path functions:
 
 ```vb
 

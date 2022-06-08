@@ -13,7 +13,8 @@ The [_MOUSEMOVEMENTY](_MOUSEMOVEMENTY) function returns the relative vertical po
 * Sets the mouse to a relative movement mode which can be read by [_WHEEL](_WHEEL) instead of [_AXIS](_AXIS) as mouse [_DEVICES](_DEVICES) 2.
 
 
-*Example:* MOD is used to keep vertical movement of circle and cursor inside of the SCREEN 13 window(200). 
+## Example(s)
+ MOD is used to keep vertical movement of circle and cursor inside of the SCREEN 13 window(200). 
 
 ```vb
 

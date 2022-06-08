@@ -17,7 +17,8 @@ The [_BUTTONCHANGE](_BUTTONCHANGE) function returns -1 or 1 when a specified but
 
 ## Example(s)
 
-*Example:* Reading multiple controller device buttons, axis and wheels.
+## Example(s)
+ Reading multiple controller device buttons, axis and wheels.
 
 ```vb
 

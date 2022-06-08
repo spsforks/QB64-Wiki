@@ -17,7 +17,8 @@ The [_CONNECTIONADDRESS$](_CONNECTIONADDRESS$) function returns a connected user
 
 ## Example(s)
 
-*Example:* A Host logging new chat clients in a Chat program. See the [_OPENHOST](_OPENHOST) example for the rest of the code used.
+## Example(s)
+ A Host logging new chat clients in a Chat program. See the [_OPENHOST](_OPENHOST) example for the rest of the code used.
 
 ```vb
 

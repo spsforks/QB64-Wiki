@@ -9,7 +9,8 @@ The [_D2R](_D2R) function converts a **degree** value into a **radian** value.
 
 ## Example(s)
 
-*Example:* Coverting Degrees into Radians.
+## Example(s)
+ Coverting Degrees into Radians.
 
 ```vb
 

@@ -21,7 +21,8 @@ The [CINT](CINT) function rounds decimal point numbers up or down to the nearest
 
 ## Example(s)
 
-*Example:* Shows how CINT rounds values up or down as in "bankers' rounding". 
+## Example(s)
+ Shows how CINT rounds values up or down as in "bankers' rounding". 
 
 ```vb
 

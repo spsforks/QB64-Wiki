@@ -136,7 +136,8 @@ IF Key$ >= CHR$(65) AND Key$ <= CHR$(90) THEN PRINT "A to Z"
 
 <center>**QBasic decimal point value comparison errors**</center>
 * Floating decimal point numerical values may not be compared as exactly the same value. QB64 will compare them the same.
-> *Example:* QBasic would print *unequal* in the IF comparison code below even though it is exactly the same value printed.
+> ## Example(s)
+ QBasic would print *unequal* in the IF comparison code below even though it is exactly the same value printed.
 
 ```vb
 

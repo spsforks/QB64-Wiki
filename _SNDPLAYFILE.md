@@ -20,7 +20,8 @@ The [_SNDPLAYFILE](_SNDPLAYFILE) statement is used to play a sound file without 
 
 ## Example(s)
 
-*Example:* Playing a sound file at half volume.
+## Example(s)
+ Playing a sound file at half volume.
 
 ```vb
 

@@ -17,7 +17,8 @@ The [_LASTBUTTON](_LASTBUTTON) function returns the number of buttons a specifie
 
 ## Example(s)
 
-*Example:* Checking for the system's input devices.
+## Example(s)
+ Checking for the system's input devices.
 
 ```vb
 

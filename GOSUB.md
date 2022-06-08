@@ -13,13 +13,15 @@
 * GOSUB and GOTO can be used **within** [SUB](SUB) or [FUNCTION](FUNCTION) procedures, but cannot refer to a label located outside the procedure.
 
 
-PageQBasic
+## QBasic
+
 * Too many GOSUBs without a [RETURN](RETURN) can eventually cause "Out of Stack Errors" in QBasic as each GOSUB uses memory to store the location to return to. Each [RETURN](RETURN) frees the memory of the GOSUB it returns to.
 
 
 ## Example(s)
 
-*Example:* Simple usage of GOSUB
+## Example(s)
+ Simple usage of GOSUB
 
 ```vb
 
@@ -49,7 +51,8 @@ RETURN
 
 
 
-*Example:* What happens if two GOSUB executes then two RETURN's?
+## Example(s)
+ What happens if two GOSUB executes then two RETURN's?
 
 ```vb
 

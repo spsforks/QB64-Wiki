@@ -17,7 +17,8 @@ The [_SNDSETPOS](_SNDSETPOS) statement changes the current/starting playing posi
 
 ## Example(s)
 
-*Example:* To check the current playing position in an MP3 file, use [_SNDPLAY](_SNDPLAY) with [_SNDGETPOS](_SNDGETPOS) printed in a loop
+## Example(s)
+ To check the current playing position in an MP3 file, use [_SNDPLAY](_SNDPLAY) with [_SNDGETPOS](_SNDGETPOS) printed in a loop
 
 ```vb
 

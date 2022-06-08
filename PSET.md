@@ -21,7 +21,8 @@ The **PSET** grahics [SCREEN (statement)](SCREEN (statement)) statement sets a p
 * **PSET can be used in any graphic screen mode, but cannot be used in the default screen mode 0 as it is text only! (Or in any _NEWIMAGE(x, y, 0) screens which are text only as well.)** 
 
 
-*Example:* Using PSET to locate and color a [DRAW](DRAW) statement.
+## Example(s)
+ Using PSET to locate and color a [DRAW](DRAW) statement.
 
 ```vb
 

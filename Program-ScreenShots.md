@@ -250,7 +250,8 @@ END SUB
 <center>**If full code is not displayed, refresh your browser!**</center>
 
 
-*See Examples:*
+## See Example(s)
+
 
 *[SAVEIMAGE](SAVEIMAGE) (QB64 full screen Image to Bitmap SUB by Galleon)
 

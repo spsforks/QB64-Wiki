@@ -21,7 +21,8 @@ The **_FREEIMAGE** statement releases the designated file image created by the [
 
 ## Example(s)
 
-*Example:* Loading a program splash screen and freeing image when no longer necessary:
+## Example(s)
+ Loading a program splash screen and freeing image when no longer necessary:
 
 ```vb
 

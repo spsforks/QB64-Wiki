@@ -195,7 +195,8 @@
 * **QB64** can display all of the control characters without formatting the text using [_PRINTSTRING](_PRINTSTRING).
 * Characters **13** and **10** can be combined to create the **CrLf** carriage return used in files or printing. crlf$ = CHR$(13) + CHR$(10).
 * Character **16**, the data link escape(DLE) character, can designate that a control character is being sent from a [OPEN COM](OPEN COM).
->  *Example:* (DLE) <XON> <DATA PACKET> (DLE) <XOFF> or (DLE) <STX> <DATA PACKET> (DLE) <ETX>
+>  ## Example(s)
+ (DLE) <XON> <DATA PACKET> (DLE) <XOFF> or (DLE) <STX> <DATA PACKET> (DLE) <ETX>
 * Character **17**, Device Control 1, is used with [OPEN COM](OPEN COM) to mark the start of a transmission as "XON". The character is read.
 * Character **19**, Device Control 3, is used with [OPEN COM](OPEN COM) to mark the end of a transmission as "XOFF". The character is NOT read.
 * Character **26** can be used to designate the end of a file. See [EOF](EOF).

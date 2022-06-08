@@ -1,11 +1,8 @@
 The **SHARED** statement allows variables to be passed automatically to any [SUB](SUB) or [FUNCTION](FUNCTION) procedure.
 
-
-
 ## Syntax
 
-> : DIM SHARED Qt AS STRING * 1
-
+> DIM SHARED Qt AS STRING * 1
 
 * [DIM](DIM)ensioned variables are shared with all procedures in the program module.
 * When used with [DIM](DIM) in the main module, it eliminates the need to pass a parameter variable to a [SUB](SUB) or [FUNCTION](FUNCTION). 
@@ -13,6 +10,7 @@ The **SHARED** statement allows variables to be passed automatically to any [SUB
 * SHARED (**without [DIM](DIM)**) can share a list of variables inside of [SUB](SUB) or [FUNCTION](FUNCTION) procedures with the main module only.
 > **Note: SHARED variables in sub-procedures will not be passed to other sub-procedures, only the main module.**
 
+## Example(s)
 
 *Example 1:* Defining variable types with [AS](AS) or type suffixes.
 
@@ -22,7 +20,6 @@ DIM SHARED Qt AS STRING * 1, price AS DOUBLE, ID AS INTEGER
 DIM SHARED Q$, prices#, IDs%
 
 ```
-
 
 *Example 2:* The DIR$ function returns a filename or a list when more than one exist. The file spec can use a path and/or wildcards.
 
@@ -65,15 +62,12 @@ END IF
 DIR$ = DirList$(Index%)
 END FUNCTION 
 
-```<sub>Code by Ted Weissgerber</sub>
->  *Explanation:* The SHARED variable value *DIRcount%* can tell the main program how many files were found using a wildcard spec.
+```
+<sub>Code by Ted Weissgerber</sub>
 
+> *Explanation:* The SHARED variable value *DIRcount%* can tell the main program how many files were found using a wildcard spec.
 
 ## See Also
  
 * [DIM](DIM), [REDIM](REDIM)
-* [COMMON](COMMON), [COMMON SHARED](COMMON SHARED)
-
-
-
-
+* [COMMON](COMMON), [COMMON SHARED](COMMON-SHARED)

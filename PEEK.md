@@ -15,7 +15,8 @@ The **PEEK** function returns the value that is contained at a certain memory ad
 >  **It is highly recommended that QB64's [_MEM](_MEM) memory system be used to avoid running out of memory.**
 
 
-*Example:* Checking the 8 keyboard bit settings using a PEEK return value.
+## Example(s)
+ Checking the 8 keyboard bit settings using a PEEK return value.
 
 ```vb
 

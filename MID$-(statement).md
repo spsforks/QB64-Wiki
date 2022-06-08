@@ -18,7 +18,8 @@ The [MID$](MID$) statement substitutes one or more new characters for existing c
 
 ## Example(s)
 
-*Example:* Using [INSTR](INSTR) to locate the string positions and a [MID$ (statement)](MID$ (statement)) statement to change the words.
+## Example(s)
+ Using [INSTR](INSTR) to locate the string positions and a [MID$ (statement)](MID$ (statement)) statement to change the words.
 
 
 ```vb

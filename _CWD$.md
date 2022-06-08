@@ -24,7 +24,8 @@ The [_CWD$](_CWD$) function returns the current working directory path as a stri
 
 ## Example(s)
 
-*Example:* Get the current working directory, and move around the file system:
+## Example(s)
+ Get the current working directory, and move around the file system:
 
 ```vb
 

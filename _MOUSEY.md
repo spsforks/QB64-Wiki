@@ -22,7 +22,8 @@ The [_MOUSEY](_MOUSEY) function returns the current vertical (row) mouse cursor 
 
 ## Example(s)
 
-*Example:* Highlighting a row of text in Screen 0.
+## Example(s)
+ Highlighting a row of text in Screen 0.
 
 ```vb
 

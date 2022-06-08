@@ -1,23 +1,22 @@
 **MySQL** is a database manager that is widely used on the internet with languages such as PHP. This is a DECLARE LIBRARY to allow access to MySQL databases.
 
 <center>**IMPORTANT**</center>
-> ::::::* 1) Make sure you are running QB64 V0.942 or higher
-> ::::::* 2) Download 'mysql.dll' and place it in your qb64 folder (not provided)
-> ::::::* 3) Create 'mysql_helper.h' in your QB64 folder (see below)
-> ::::::* 4) Run & enjoy browsing our sample database as a member with read-only privileges.
 
+> * 1) Make sure you are running QB64 V0.942 or higher
+> * 2) Download 'mysql.dll' and place it in your qb64 folder (not provided)
+> * 3) Create 'mysql_helper.h' in your QB64 folder (see below)
+> * 4) Run & enjoy browsing our sample database as a member with read-only privileges.
 
 >  *mysql_helper.h*
 
 ```text
 
-
   void *offset_to_offset(void* offset){
-   return offset;
-   }
-   void *offset_at_offset(void** offset){
-   return *offset;
-   }
+    return offset;
+  }
+  void *offset_at_offset(void** offset){
+    return *offset;
+  }
 
 ```
 
@@ -88,7 +87,6 @@ mysql_close con
 END 
 
 ```
-
 
 >  Here's some code which uses 'mysql_fetch_fields': 
 
@@ -198,16 +196,13 @@ END
 
 ## SQL Demo
 
-
 This version has much the same functionality with a few bug fixes, better examples, the ability to switch between multiple open databases and a table-viewer SUB for visualising the results of SELECT queries. If anyone wants to code me up some more examples or suggest improvements feel free, I'll be glad to add them. Galleon
 
-
 <center>**IMPORTANT**</center>
-> :::::* Download 'mysql.dll' and place it in your qb64 folder (not provided)
-> :::::* Find a SQL database server to connect to OR download your own [http://dev.mysql.com/downloads/] 
-> :::::* Setup you IP, username and password in the code below...
 
-
+> * Download 'mysql.dll' and place it in your qb64 folder (not provided)
+> * Find a SQL database server to connect to OR download your own [http://dev.mysql.com/downloads/] 
+> * Setup you IP, username and password in the code below...
 
 ```vb
 
@@ -538,22 +533,15 @@ END SUB
 
 ## Linux Install:
 
-
 This works in Linux (Ubuntu) too with minimal changes:
->  1) Use the 'Synaptic Package Manager' to install 'mysql-client-5.1'
->  2) Change: DECLARE DYNAMIC LIBRARY "mysql" to DECLARE DYNAMIC LIBRARY "mysqlclient:16.0.0" 
+
+1. Use the 'Synaptic Package Manager' to install 'mysql-client-5.1'
+2. Change: DECLARE DYNAMIC LIBRARY "mysql" to DECLARE DYNAMIC LIBRARY "mysqlclient:16.0.0" 
 
 >  Or just copy this .so lib to your QB64 folder and rename it *libmysql.so*(do not use *.so* extension in [DECLARE LIBRARY](DECLARE LIBRARY) name).
 
-## References
-
-
 ## See Also
 
-* [DECLARE LIBRARY](DECLARE LIBRARY)
+* [DECLARE LIBRARY](DECLARE-LIBRARY)
 * [ALIAS](ALIAS), [BYVAL](BYVAL)
 * [_OFFSET](_OFFSET)
-
-
-
-

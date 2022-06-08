@@ -14,7 +14,8 @@ The [ERR](ERR) function returns the last QBasic error code number.
 
 ## Example(s)
 
-*Example:* Simulating an error to test a program error handler that looks for a "Subscript out of range" error.
+## Example(s)
+ Simulating an error to test a program error handler that looks for a "Subscript out of range" error.
 
 ```vb
 

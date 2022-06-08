@@ -19,7 +19,8 @@ The [FIELD](FIELD) statement creates a [STRING](STRING) type definition for a [R
 
 ## Example(s)
 
-*Example:* Comparing a [TYPE](TYPE) definition with a FIELD [STRING](STRING) definition. Demo using a [TYPE](TYPE) definition to create a file:
+## Example(s)
+ Comparing a [TYPE](TYPE) definition with a FIELD [STRING](STRING) definition. Demo using a [TYPE](TYPE) definition to create a file:
 
 ```vb
 

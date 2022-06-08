@@ -1,10 +1,8 @@
 **SINGLE** variables are 4 byte floating decimal point numerical values up to seven digits in length.
 
-
 ## Syntax
 
-> : [DIM](DIM) *variable* AS SINGLE
-
+> [DIM](DIM) *variable* AS SINGLE
 
 ## Description
 
@@ -16,15 +14,10 @@
 * Values can be converted to 4 byte [ASCII](ASCII) string values using [_MKS$](_MKS$) and back with [_CVS](_CVS).
 * **Warning: QBasic keyword names cannot be used as numerical variable names with or without the type suffix!**
 
-
 ## See Also
 
 * [DIM](DIM), [DEFSNG](DEFSNG)
 * [MKS$](MKS$), [CVS](CVS)
 * [DOUBLE](DOUBLE), [_FLOAT](_FLOAT)
 * [LEN](LEN)
-* [Variable Types](Variable Types)
-
-
-
-
+* [Variable Types](Variable-Types)

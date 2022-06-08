@@ -13,7 +13,8 @@ The [DATE$](DATE$) function returns the current computer date as a string in the
 
 ## Example(s)
 
-*Example:* Displaying the weekday and current date.
+## Example(s)
+ Displaying the weekday and current date.
 
 ```vb
 

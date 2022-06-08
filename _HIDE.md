@@ -16,7 +16,8 @@ The [_HIDE](_HIDE) action is used to hide the console window opened by a [SHELL]
 
 ## Example(s)
 
-*Example:* Subprogram that displays long and short filenames using the DIR /X option (WindowsNT or above) in SCREEN 12:
+## Example(s)
+ Subprogram that displays long and short filenames using the DIR /X option (WindowsNT or above) in SCREEN 12:
 
 ```vb
 

@@ -22,7 +22,8 @@ RelationalTable
 
 ## Example(s)
 
-*Example:* Using AND in an IF statement.
+## Example(s)
+ Using AND in an IF statement.
 
 ```vb
 
@@ -45,7 +46,8 @@ True
 *Explanation:* Both condition evaluations must be true for the code to be executed.
 
 
-*Example:* Using a AND a more complex way.
+## Example(s)
+ Using a AND a more complex way.
 
 ```vb
 

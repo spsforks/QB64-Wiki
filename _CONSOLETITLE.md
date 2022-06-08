@@ -14,7 +14,8 @@ The [_CONSOLETITLE](_CONSOLETITLE) statement creates the title of the console wi
 
 ## Example(s)
 
-*Example:* Hiding the main program window while displaying the console window with a title.
+## Example(s)
+ Hiding the main program window while displaying the console window with a title.
 
 ```vb
 

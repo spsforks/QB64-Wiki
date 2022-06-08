@@ -20,7 +20,8 @@ The [_OFFSET](_OFFSET) function returns the memory offset of/within a given vari
 
 ## Example(s)
 
-*Example:* Using memcpy with the _OFFSET function values as parameters.
+## Example(s)
+ Using memcpy with the _OFFSET function values as parameters.
 
 ```vb
 

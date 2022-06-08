@@ -27,7 +27,8 @@ The [_MEM](_MEM) function returns a _MEM block referring to the largest possible
 
 ## Example(s)
 
-*Example:* Assigning values to reference variables in memory.
+## Example(s)
+ Assigning values to reference variables in memory.
 
 ```vb
 

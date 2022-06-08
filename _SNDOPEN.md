@@ -43,7 +43,8 @@ _SNDPLAY Laff&                    'play sound
 ```
 
 
-*Example:* Playing a file and controlling playback:
+## Example(s)
+ Playing a file and controlling playback:
 
 ```vb
 

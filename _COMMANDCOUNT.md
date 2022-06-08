@@ -16,7 +16,8 @@ The [_COMMANDCOUNT](_COMMANDCOUNT) function returns the number or arguments pass
 
 ## Example(s)
 
-*Example:* The code below gets the number of parameters passed to our program from the command line with _COMMANDCOUNT: 
+## Example(s)
+ The code below gets the number of parameters passed to our program from the command line with _COMMANDCOUNT: 
 
 ```vb
 limit = _COMMANDCOUNT

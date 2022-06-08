@@ -16,7 +16,8 @@ The [_CLIP](_CLIP) option is used in a QB64 graphics [PUT (graphics statement)](
 
 ## Example(s)
 
-*Example:* Placing an image partially or fully offscreen.
+## Example(s)
+ Placing an image partially or fully offscreen.
 
 ```vb
 

@@ -66,7 +66,8 @@ The [_BIT](_BIT) datatype can return only values of 0 (bit off) and -1 (bit on).
 
 ## Example(s)
 
-*Example:* Shifting bits in a value in QB64 versions prior to 1.3 (you can use [_SHL](_SHL) and [_SHR](_SHR) starting with version 1.3).
+## Example(s)
+ Shifting bits in a value in QB64 versions prior to 1.3 (you can use [_SHL](_SHL) and [_SHR](_SHR) starting with version 1.3).
 
 ```vb
 

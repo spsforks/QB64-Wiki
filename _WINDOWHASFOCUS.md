@@ -20,7 +20,8 @@ The [_WINDOWHASFOCUS](_WINDOWHASFOCUS) function returns true (-1) if the current
 
 ## Example(s)
 
-*Example:* Detecting if the current program has focus. Windows and Linux-only.
+## Example(s)
+ Detecting if the current program has focus. Windows and Linux-only.
 
 ```vb
 

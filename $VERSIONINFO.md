@@ -23,7 +23,8 @@ The [$VERSIONINFO]($VERSIONINFO) [Metacommand](Metacommand) adds text metadata t
 
 ## Example(s)
 
-*Example:* Adding metadata to a Windows exe compiled with QB64:
+## Example(s)
+ Adding metadata to a Windows exe compiled with QB64:
 
 ```vb
 

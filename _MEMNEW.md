@@ -24,7 +24,8 @@ The [_MEMNEW](_MEMNEW) function allocates new memory and returns a [_MEM](_MEM) 
 
 ## Example(s)
 
-*Example:* Shows how [SINGLE](SINGLE) numerical values can be passed, but non-fixed [STRING](STRING) lengths cannot get the value.
+## Example(s)
+ Shows how [SINGLE](SINGLE) numerical values can be passed, but non-fixed [STRING](STRING) lengths cannot get the value.
 
 ```vb
 

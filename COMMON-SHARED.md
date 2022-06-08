@@ -26,7 +26,8 @@ The multi-modular technique goes back to when QBasic and QuickBASIC had module s
 * The COMMON block name designates a certain block of variables that certain program modules may use, the name must be within two forward slashes/ (Ex: /thename/ ). **[Keywords currently not supported by QB64](Keywords currently not supported by QB64)**
 
 
-*Example:* COMMON SHARED x%, y%, user$, speed!, score&
+## Example(s)
+ COMMON SHARED x%, y%, user$, speed!, score&
 
 
 ## See Also

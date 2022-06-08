@@ -9,7 +9,8 @@ The [_G2R](_G2R) function converts a **gradient** value into a **radian** value.
 
 ## Example(s)
 
-*Example:* Coverting Gradient into Radians.
+## Example(s)
+ Coverting Gradient into Radians.
 
 ```vb
 

@@ -20,7 +20,8 @@ If the last error occurred in the main module, [_INCLERRORFILE$](_INCLERRORFILE$
 
 ## Example(s)
 
-*Example:*
+## Example(s)
+
 
 ```vb
 

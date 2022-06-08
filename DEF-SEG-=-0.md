@@ -57,7 +57,8 @@ The following **DOS BIOS** information can be used on Windows 9x machines. Not n
 ```
 * **&H470 = 1136)**
 
-*Example:* DETERMINING THE DATE n DAYS FROM NOW. 
+## Example(s)
+ DETERMINING THE DATE n DAYS FROM NOW. 
 
 ```vb
 
@@ -110,7 +111,8 @@ The following **DOS BIOS** information can be used on Windows 9x machines. Not n
 
 * **&H43F (1087)** 
 
-*Example:* Determining the status of a drive motor:
+## Example(s)
+ Determining the status of a drive motor:
 
 ```vb
 
@@ -120,7 +122,8 @@ IF PEEK(1087) AND 15  = 0 THEN PRINT "No drive being written to"
 ```
 
 
-*Example:* Drive$ designated is A, B, C or D, and the letter must be in uppercase.
+## Example(s)
+ Drive$ designated is A, B, C or D, and the letter must be in uppercase.
 
 ```vb
 
@@ -132,7 +135,8 @@ IF PEEK(1087) AND 2 ^ (ASC (Drive$) - 65) THEN PRINT "Drive: " Drive$
 
 * **&H440 (1088)**   
 
-*Example:* To turn on drive D for n seconds, where n is at MOST 14! :
+## Example(s)
+ To turn on drive D for n seconds, where n is at MOST 14! :
 
 ```vb
                      
@@ -165,7 +169,8 @@ bytes = 128 * 2 ^ PEEK(1096)  'number of bytes per sector on a diskette
 
 * **&H78 - &H7B  (120 - 123)** 
 
-*Example:* The diskette parameter table consists of 11 bytes
+## Example(s)
+ The diskette parameter table consists of 11 bytes
 
 ```vb
 

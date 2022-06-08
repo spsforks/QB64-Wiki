@@ -19,7 +19,8 @@ Details:
 
 ## Example(s)
 
-*Example:* Resize the current screen image according to user's request.
+## Example(s)
+ Resize the current screen image according to user's request.
 
 ```vb
 

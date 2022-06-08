@@ -23,7 +23,8 @@ The [_MEMFILL](_MEMFILL) statement converts a value to a specified type, then fi
 
 ## Example(s)
 
-*Example:* Filling array values quickly using FOR loops or a simple memory fill.
+## Example(s)
+ Filling array values quickly using FOR loops or a simple memory fill.
 
 ```vb
 

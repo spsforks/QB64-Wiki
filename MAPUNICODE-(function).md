@@ -17,7 +17,8 @@ The [_MAPUNICODE](_MAPUNICODE) function returns the [Unicode](Unicode) (UTF-32) 
 
 ## Example(s)
 
-*Example:* Store function return values in an array for ASCII codes 0 to 255 to restore them later.
+## Example(s)
+ Store function return values in an array for ASCII codes 0 to 255 to restore them later.
 
 ```vb
 

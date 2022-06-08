@@ -1,12 +1,8 @@
 **SFML** is a sound library that allows users to record and play sounds.
 
-
-<center>[http://dl.dropbox.com/u/8822351/SFML.rar SFML.RAR Download(Includes Library header file)]</center>
-
-
+<center>[SFML.RAR Download(Includes Library header file)](http://dl.dropbox.com/u/8822351/SFML.rar</center>
 
 ```text
-
 
 //SFML_Wrapper02.h for QB64 version.02 - By John Onyon a.k.a Unseen Machine
 <nowiki>
@@ -585,12 +581,6 @@ void SF_Push_Events()
 
 ```
 
-
-
 ## See Also
 
 * [Libraries](Libraries)
-
-
-
-

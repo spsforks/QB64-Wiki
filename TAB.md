@@ -16,7 +16,8 @@ The [TAB](TAB) function is used in [PRINT](PRINT) and [LPRINT](LPRINT) statement
 
 ## Example(s)
 
-*Example:* Comparing TAB to [comma](comma) print spacing which moves the next text print 15 columns.
+## Example(s)
+ Comparing TAB to [comma](comma) print spacing which moves the next text print 15 columns.
 
 ```vb
 

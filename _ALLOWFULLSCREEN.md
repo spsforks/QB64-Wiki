@@ -12,8 +12,10 @@ The [_ALLOWFULLSCREEN](_ALLOWFULLSCREEN) statement allows setting the behavior o
 * Calling the statement with no parameters enables all four possible full screen modes (and is the default state when a program is started): both [_STRETCH](_STRETCH) ([_SMOOTH](_SMOOTH) and [_OFF](_OFF)) and [_SQUAREPIXELS](_SQUAREPIXELS) ([_SMOOTH](_SMOOTH) and [_OFF](_OFF)).
 ** Using [_ALLOWFULLSCREEN](_ALLOWFULLSCREEN) [_ALL](_ALL), [_ALL](_ALL) has the same effect.
 * [_ALLOWFULLSCREEN](_ALLOWFULLSCREEN) only affects the behavior of ALT+ENTER. The [_FULLSCREEN](_FULLSCREEN) statement is not bound by [_ALLOWFULLSCREEN](_ALLOWFULLSCREEN)'s settings so all modes can be accessed programmatically.
-* To limit just the mode but allow both _SMOOTH + _OFF antialiasing modes, pass just the first parameter: *Example:* [_ALLOWFULLSCREEN](_ALLOWFULLSCREEN) _SQUAREPIXELS
-* To allow multiple modes with _SMOOTH or _OFF as default, pass just the second parameter. *Example:* [_ALLOWFULLSCREEN](_ALLOWFULLSCREEN) , _SMOOTH
+* To limit just the mode but allow both _SMOOTH + _OFF antialiasing modes, pass just the first parameter: ## Example(s)
+ [_ALLOWFULLSCREEN](_ALLOWFULLSCREEN) _SQUAREPIXELS
+* To allow multiple modes with _SMOOTH or _OFF as default, pass just the second parameter. ## Example(s)
+ [_ALLOWFULLSCREEN](_ALLOWFULLSCREEN) , _SMOOTH
 * Any possible permutation of the parameters is allowed.
 * With [_ALLOWFULLSCREEN](_ALLOWFULLSCREEN) _OFF you can trap Alt+Enter manually in your program and reassign it. See example 2 below.
 

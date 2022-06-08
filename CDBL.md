@@ -20,7 +20,8 @@
 
 ## Example(s)
 
-*Example:* Prints a double-precision version of the single-precision value stored in the variable named A.
+## Example(s)
+ Prints a double-precision version of the single-precision value stored in the variable named A.
 
 ```vb
 

@@ -14,7 +14,8 @@ The [_SNDLOOP](_SNDLOOP) statement is like [_SNDPLAY](_SNDPLAY) but the sound is
 
 ## Example(s)
 
-*Example:* Loading a sound or music file and playing it in a loop until a key is pressed.
+## Example(s)
+ Loading a sound or music file and playing it in a loop until a key is pressed.
 
 ```vb
 

@@ -12,7 +12,8 @@ The **RSET** statement right-justifies a string according to length of the strin
 * RSET can be used with a [FIELD](FIELD) or [TYPE](TYPE) string definition to set the buffer position before a [PUT](PUT).
 
 
-*Example:*
+## Example(s)
+
 
 ```vb
 

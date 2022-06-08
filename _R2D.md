@@ -9,7 +9,8 @@ The [_R2D](_R2D) function converts a **radian** value into a **degree** value.
 
 ## Example(s)
 
-*Example:* Coverting Radian into Degree.
+## Example(s)
+ Coverting Radian into Degree.
 
 ```vb
 

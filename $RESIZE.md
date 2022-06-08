@@ -21,7 +21,8 @@ The [$RESIZE]($RESIZE) [Metacommand](Metacommand) determines if a program window
 
 ## Example(s)
 
-*Example:* Resizing a program screen when the user changes it without clearing the entire screen image:
+## Example(s)
+ Resizing a program screen when the user changes it without clearing the entire screen image:
 
 ```vb
 

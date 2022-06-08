@@ -15,7 +15,8 @@ The [_SHELLHIDE](_SHELLHIDE) function hides the console window and returns any [
 
 ## Example(s)
 
-*Example:* Shelling to another QB64 program will return the exit code when one is set in the  program that is run.
+## Example(s)
+ Shelling to another QB64 program will return the exit code when one is set in the  program that is run.
 
 ```vb
 

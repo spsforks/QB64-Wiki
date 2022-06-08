@@ -23,7 +23,8 @@ The [END](END) statement terminates a program without an immediate exit or ends 
 
 ## Example(s)
 
-*Example:* In QB64 you won't return to the IDE unless you are using it to run or edit the program module.
+## Example(s)
+ In QB64 you won't return to the IDE unless you are using it to run or edit the program module.
 
 
 ```vb

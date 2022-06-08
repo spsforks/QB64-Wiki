@@ -21,7 +21,8 @@ The [_PI](_PI) function returns **�** as a [_FLOAT](_FLOAT) value with an opti
 
 ## Example(s)
 
-*Example:* Calculating the area of a circle using a [SINGLE](SINGLE) variable in this case.
+## Example(s)
+ Calculating the area of a circle using a [SINGLE](SINGLE) variable in this case.
 
 ```vb
 radius = 5

@@ -33,7 +33,8 @@ The [PRINT (file statement)](PRINT (file statement)) statement prints numeric or
 * **Note: [RANDOM](RANDOM) and [BINARY](BINARY) files are not affected by PRINT # statements to them and will create a syntax error in QB64!**
 
 
-*Example:* Prints data to a text file sequentially and reads it back to the program screen as one line of text.
+## Example(s)
+ Prints data to a text file sequentially and reads it back to the program screen as one line of text.
 
 ```vb
 

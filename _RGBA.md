@@ -23,7 +23,8 @@ The [_RGBA](_RGBA) function returns the closest palette index (legacy SCREEN mod
 
 ## Example(s)
 
-*Example:* Setting a font's background color alpha to clear to overlay a second text color.
+## Example(s)
+ Setting a font's background color alpha to clear to overlay a second text color.
 
 ```vb
 

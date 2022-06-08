@@ -21,7 +21,8 @@
 
 ## Example(s)
 
-*Example:* Finding the FOR variable value AFTER a simple counter loop to 10.
+## Example(s)
+ Finding the FOR variable value AFTER a simple counter loop to 10.
 
 ```vb
 

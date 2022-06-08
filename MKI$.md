@@ -17,7 +17,8 @@ The [MKI$](MKI$) function encodes an [INTEGER](INTEGER) numerical value into a 2
 
 ## Example(s)
 
-*Example:* How MKI$ creates a two byte string integer value to save file space.
+## Example(s)
+ How MKI$ creates a two byte string integer value to save file space.
 
 ```vb
 

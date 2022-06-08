@@ -21,7 +21,8 @@ DISPLAYTITLE:OPTION _EXPLICIT
 
 ## Example(s)
 
-*Example:* Avoiding simple typos with [OPTION _EXPLICIT](OPTION _EXPLICIT) results shown in the QB64 IDE Status area.
+## Example(s)
+ Avoiding simple typos with [OPTION _EXPLICIT](OPTION _EXPLICIT) results shown in the QB64 IDE Status area.
 
 ```vb
 OPTION _EXPLICIT

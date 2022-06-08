@@ -18,7 +18,8 @@ The [_LIMIT](_LIMIT) statement sets the loop repeat rate of a program to so many
 
 ## Example(s)
 
-*Example:* Limits loop execution to 30 frames per second and limits the program's CPU usage.
+## Example(s)
+ Limits loop execution to 30 frames per second and limits the program's CPU usage.
 
 ```vb
 

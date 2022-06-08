@@ -33,7 +33,8 @@ PageLegacySupport
 
 ## Example(s)
 
-*Example:* CHAIN looks for same file type extension as program module (BAS or EXE).
+## Example(s)
+ CHAIN looks for same file type extension as program module (BAS or EXE).
 
 ```vb
 

@@ -16,7 +16,8 @@ The [_SCREENY](_SCREENY) function returns the current row pixel coordinate of th
 
 ## Example(s)
 
-*Example:* Clicks and opens program window header menu:
+## Example(s)
+ Clicks and opens program window header menu:
 
 ```vb
 _SCREENMOVE _MIDDLE

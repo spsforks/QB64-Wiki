@@ -25,7 +25,8 @@ DISPLAYTITLE:_DEFINE
 
 ## Example(s)
 
-*Example:* Defining variables that start with the letters A, B, C or F as unsigned integers, including the *Add2* [FUNCTION](FUNCTION).
+## Example(s)
+ Defining variables that start with the letters A, B, C or F as unsigned integers, including the *Add2* [FUNCTION](FUNCTION).
 
 ```vb
 

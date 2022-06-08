@@ -12,7 +12,8 @@ The [WRITE](WRITE) statement writes a [comma](comma)-separated list of values to
 * [STRING](STRING) [quotation mark](quotation mark)s will also be displayed.
 * [Semicolon](Semicolon)s cannot be used in or following the WRITE statement!
 
-*Example:* Comparing WRITE to the same PRINT statement.
+## Example(s)
+ Comparing WRITE to the same PRINT statement.
 
 ```vb
 

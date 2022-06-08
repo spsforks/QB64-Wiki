@@ -18,7 +18,8 @@ The [LOF](LOF) function is used to find the length of an [OPEN](OPEN) file in by
 
 ## Example(s)
 
-*Example:* Finding the number of records in a RANDOM file using a [TYPE](TYPE) variable.
+## Example(s)
+ Finding the number of records in a RANDOM file using a [TYPE](TYPE) variable.
 
 
 ```vb

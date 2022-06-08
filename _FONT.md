@@ -29,7 +29,8 @@ The [_FONT](_FONT) statement sets the current [_LOADFONT](_LOADFONT) function fo
 
 ## Example(s)
 
-*Example:* Previewing a font in SCREEN 0. A different true type font can be substituted below. 
+## Example(s)
+ Previewing a font in SCREEN 0. A different true type font can be substituted below. 
 
 ```vb
 

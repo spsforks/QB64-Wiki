@@ -17,7 +17,8 @@ The [CLEAR](CLEAR) statement clears all variable and array element values in a p
 
 ## Example(s)
 
-*Example:* Using CLEAR to clear array elements from [STATIC](STATIC) arrays or arrays created using [DIM](DIM).
+## Example(s)
+ Using CLEAR to clear array elements from [STATIC](STATIC) arrays or arrays created using [DIM](DIM).
 
 ```vb
 

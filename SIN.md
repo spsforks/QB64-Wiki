@@ -1,15 +1,12 @@
 The [SIN](SIN) function returns the vertical component or sine of an angle measured in radians. 
 
-
 ## Syntax
 
-> :: value! = **SIN(***radian_angle!***)**
-
+> value! = **SIN(***radian_angle!***)**
 
 ## Parameter(s)
 
 * The *radian_angle* must be measured in radians from 0 to 2 * Pi. 
-
 
 ## Description
 
@@ -17,6 +14,7 @@ The [SIN](SIN) function returns the vertical component or sine of an angle measu
 * [SIN](SIN)E is the vertical component of a unit vector in the direction theta (�).
 * Accuracy can be determined as [SINGLE](SINGLE) by default or [DOUBLE](DOUBLE) by following the parameter value with a # suffix.
 
+## Example(s)
 
 *Example 1:* Converting degree angles to radians for QBasic's trig functions and drawing the line at the angle.
 
@@ -44,7 +42,6 @@ LOOP UNTIL DEGREES% = 0
 
 ```text
 
-
 PI = 4 * ATN(1) = 3.141593
 COS(PI) = -1
 SIN(PI) = -8.742278E-08
@@ -58,7 +55,6 @@ DEGREES% = RADIANS * 180 / PI = 45
 ```
 
 >  *Explanation:* When 8.742278E-08(.00000008742278) is returned by SIN or [COS](COS) the value  is essentially zero.
-
 
 *Example 2:* Displays rotating gears made using SIN and [COS](COS) to place the teeth lines.
 
@@ -100,7 +96,6 @@ END SUB
 ```
 <sub>Adapted from code by: DarthWho</sub>
 
-
 *Example 3:* Displaying the current seconds for an analog clock. See [COS](COS) for the clock face hour markers.
 
 ```vb
@@ -121,18 +116,13 @@ LOOP UNTIL INKEY$ = CHR$(27) ' escape keypress exits
 
 ```
 <sub>Code by: Ted Weissgerber</sub>
-The value of 2 � is used to determine the sec! multiplier that determines the radian value as S! The value is divided by 60 second movements. To calculate the seconds the [TIME$](TIME$) function is used and that value is subtracted 15 seconds because the 0 value of pi is actually the 3 hour of the clock (15 seconds fast). SIN and COS will work with negative values the same as positive ones! Then the column and row coordinates for one end of the line are determined using SIN and [COS](COS) multiplied by the radius of the circular line movements. The minute and hour hands could use similar procedures to read different parts of TIME$.
 
+The value of 2 � is used to determine the sec! multiplier that determines the radian value as S! The value is divided by 60 second movements. To calculate the seconds the [TIME$](TIME$) function is used and that value is subtracted 15 seconds because the 0 value of pi is actually the 3 hour of the clock (15 seconds fast). SIN and COS will work with negative values the same as positive ones! Then the column and row coordinates for one end of the line are determined using SIN and [COS](COS) multiplied by the radius of the circular line movements. The minute and hour hands could use similar procedures to read different parts of TIME$.
 
 ## See Also
 
 * [_PI](_PI) (QB64 function)
-*[COS](COS) (cosine)
-*[ATN](ATN) (arctangent)
-*[TAN](TAN) (tangent)
-*[Mathematical Operations](Mathematical Operations)
-*[Mathematical_Operations#Derived_Mathematical_Functions](Mathematical_Operations#Derived_Mathematical_Functions)
-
-
-
-
+* [COS](COS) (cosine)
+* [ATN](ATN) (arctangent)
+* [TAN](TAN) (tangent)
+* [Mathematical Operations](Mathematical-Operations)

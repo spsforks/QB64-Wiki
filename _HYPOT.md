@@ -20,7 +20,8 @@ The [_HYPOT](_HYPOT) function returns the hypotenuse of a right-angled triangle 
 
 ## Example(s)
 
-*Example:*
+## Example(s)
+
 
 ```vb
 

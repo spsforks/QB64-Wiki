@@ -10,16 +10,17 @@ The **SHELL** function displays the console and returns the [INTEGER](INTEGER) c
 
 ## Usage
 
-
 * A SHELL to a QB64 EXE program with an exit return code parameter after [END](END) or [SYSTEM](SYSTEM) will return that code value.
 * The return_code is usually 0 when the external program ends with no errors.
 * The console window may appear when using the SHELL function. The [_SHELLHIDE](_SHELLHIDE) function will hide the console from view.
 
-*Example:* Shelling to another QB64 program will return the exit code when one is set in the  program that is run.
+## Example(s)
 
-```text
+Shelling to another QB64 program will return the exit code when one is set in the  program that is run.
 
-**'DesktopSize.BAS ** Compile in Windows with QB64 first
+```vb
+
+'DesktopSize.BAS ** Compile in Windows with QB64 first
 
 CONST SM_CXSCREEN = 0
 CONST SM_CYSCREEN = 1

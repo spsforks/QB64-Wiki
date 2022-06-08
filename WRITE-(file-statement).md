@@ -16,7 +16,8 @@ The [WRITE (file statement)](WRITE-(file-statement)) file statement writes a lis
 * CSV files created can be read by Excel using a .CSV file name extension. Strings may or may not include quotation marks.
 * [Semicolon](Semicolon)s cannot be used in or following the WRITE statement!
 
-*Example:* Writes new data to a text file sequentially and reads it back to the program screen.
+## Example(s)
+ Writes new data to a text file sequentially and reads it back to the program screen.
 
 ```vb
 

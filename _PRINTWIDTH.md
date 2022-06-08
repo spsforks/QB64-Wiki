@@ -18,7 +18,8 @@ The [_PRINTWIDTH](_PRINTWIDTH) function returns the width in pixels of the text 
 
 ## Example(s)
 
-*Example:* SUB returns font or screen mode's text block size using _PRINTWIDTH and [_FONTHEIGHT](_FONTHEIGHT) without a handle parameter.
+## Example(s)
+ SUB returns font or screen mode's text block size using _PRINTWIDTH and [_FONTHEIGHT](_FONTHEIGHT) without a handle parameter.
 
 ```vb
 

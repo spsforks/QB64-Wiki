@@ -38,7 +38,8 @@ The [_SCREENPRINT](_SCREENPRINT) statement simulates typing text into a Windows 
 
 ## Example(s)
 
-*Example:* Printing text into a Windows text editor (Notepad) and copying to the clipboard. May not work on all systems.
+## Example(s)
+ Printing text into a Windows text editor (Notepad) and copying to the clipboard. May not work on all systems.
 
 ```vb
 

@@ -14,7 +14,8 @@
 * QBasic Metacommands such as [$DYNAMIC]($DYNAMIC) and [$INCLUDE]($INCLUDE) require the use of REM or the apostrophe.  
 
 
-*Example:* Avoiding an END IF error.
+## Example(s)
+ Avoiding an END IF error.
 
 ```vb
 

@@ -20,7 +20,8 @@ The [_FULLSCREEN](_FULLSCREEN) function returns the present full screen mode set
 
 ## Example(s)
 
-*Example:* Shows how fonts and the _FULLSCREEN mode can resize a program window.
+## Example(s)
+ Shows how fonts and the _FULLSCREEN mode can resize a program window.
 
 ```vb
 

@@ -9,7 +9,8 @@ The [_R2G](_R2G) function converts a **radian** value into a **gradient** value.
 
 ## Example(s)
 
-*Example:* Coverting Radian into Gradient.
+## Example(s)
+ Coverting Radian into Gradient.
 
 ```vb
 

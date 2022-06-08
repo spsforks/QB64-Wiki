@@ -31,7 +31,8 @@ The [INSTR](INSTR) function searches for the first occurence of a search [STRING
 
 ## Example(s)
 
-*Example:* Reading more than one instance of a word in a string using the INSTR return value as the start value plus 1.
+## Example(s)
+ Reading more than one instance of a word in a string using the INSTR return value as the start value plus 1.
 
 ```vb
 

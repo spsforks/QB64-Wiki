@@ -16,7 +16,8 @@ The [_ERRORLINE](_ERRORLINE) function returns the source code line number that c
 
 ## Example(s)
 
-*Example:* Displaying the current program line using a simulated [ERROR](ERROR) code.
+## Example(s)
+ Displaying the current program line using a simulated [ERROR](ERROR) code.
 
 ```vb
 

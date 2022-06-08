@@ -21,7 +21,8 @@ The [_ASIN](_ASIN) function returns the angle measured in radians based on an in
 
 ## Example(s)
 
-*Example:* Converting a radian angle to its SINe and using that value to find the angle in degrees again using _ASIN:
+## Example(s)
+ Converting a radian angle to its SINe and using that value to find the angle in degrees again using _ASIN:
 
 ```vb
 

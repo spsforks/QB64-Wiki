@@ -4,17 +4,15 @@ Some of you might have seen this in my previous graphics program. I'm now releas
 
 It's a two-part library that can be plugged into any program (using [$INCLUDE]($INCLUDE)). It's two-part because it contains definitions at the start of the program, and subroutines. Originally, [$INCLUDE]($INCLUDE) was made for compiled libraries, so there's no default support to include QuickBASIC code inside them, which is just what I've done. Therefore you need two **text** files included at different locations in a graphics program.
 
-
+## Example(s)
 
 *Example BAS Code:* SelectResolution.BAS Demo example should be compiled by QB64 only.
 
 ```vb
 
-
 DEFINT A-Z
 
 '$INCLUDE: 'selectResolution.bi'
-
 
 PRINT "This is screen mode 0. Select another screen mode after pressing a key."
 PRINT "Press any key..."
@@ -51,20 +49,15 @@ i$ = INPUT$(1)
 
 '$INCLUDE: 'selectResolution.bm'
 
-
 ```
 
 <center>[$INCLUDE]($INCLUDE) the .bi file on top of your program and the .bm file at the bottom, after your own SUBs.</center>
-
-
 
 **To create the BI and BM files, copy them to Notepad and Save as *ALL FILES* with appropriate filename extensions!**
 
 *SelectResolution.bi Code:*
 
 ```text
-
-
 
 '#########################################################################################
 '# Resolution selector v1.2 (include at top of program code)
@@ -124,15 +117,13 @@ DATA ,,
 
 ```
 
-
-
 <center>The [$INCLUDE]($INCLUDE) of the function should be after your main program! </center>
+
 <center>Otherwise you would get the error "Statement cannot be placed between SUB/FUNCTIONs"</center>
 
 *SelectResolution.bm Code:*
 
 ```text
-
 
 '####################################################################################################################
 '# Resolution selector v1.3 (routines)
@@ -282,21 +273,10 @@ SUB selectResolution (row%, width%, height%)
     SCREEN backupScreen&
 END SUB
 
-
 ```
-
-
-
 
 ## See Also
 
-
-[$INCLUDE]($INCLUDE) ([Metacommand](Metacommand))
-
-[PEEK](PEEK), [POKE](POKE)
-
-[SCREEN (statement)](SCREEN (statement))
-
-
-
-
+* [$INCLUDE]($INCLUDE) ([Metacommand](Metacommand))
+* [PEEK](PEEK), [POKE](POKE)
+* [SCREEN (statement)](SCREEN-(statement))

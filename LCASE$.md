@@ -14,7 +14,8 @@ The [LCASE$](LCASE$) function outputs an all-lowercase version of a [STRING](STR
 
 ## Example(s)
 
-*Example:* The following code guarantees that all user letter entries will be lower case:
+## Example(s)
+ The following code guarantees that all user letter entries will be lower case:
 
 ```vb
 PRINT "Do you want to continue? (y/n)"

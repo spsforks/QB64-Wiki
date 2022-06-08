@@ -27,7 +27,8 @@
 > Where **FF** is the fully opaque [_ALPHA](_ALPHA) and the 3 hex color values can range from **00** to **FF** (0 to 255) each.
 
 
-*Example:* Converting the color port RGB intensity palette values 0 to 63 to 32 bit hexadecimal [STRING](STRING) values. 
+## Example(s)
+ Converting the color port RGB intensity palette values 0 to 63 to 32 bit hexadecimal [STRING](STRING) values. 
 
 ```vb
 

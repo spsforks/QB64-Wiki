@@ -1,15 +1,12 @@
 The **STR$** function returns the [STRING](STRING) representation of a numerical value.
 
-
 ## Syntax
 
 > : result$ = **STR$(**number**)**
 
-
 ## Parameter(s)
 
 * number is any numerical type value to convert.
-
 
 ## Description
 
@@ -18,11 +15,10 @@ The **STR$** function returns the [STRING](STRING) representation of a numerical
 * If number is negative, the minus sign will precede the number instead of a space which [LTRIM$](LTRIM$) will not remove.
 * Trimming a STR$ string number using [RTRIM$](RTRIM$) is not required as [PRINT](PRINT) creates the undocumented trailing number space.
 
-
 ## Example(s)
 
-
 ```vb
+
 PRINT STR$( 1.0 )
 PRINT STR$( 2.3 )
 PRINT STR$( -4.5 )
@@ -31,15 +27,11 @@ PRINT STR$( -4.5 )
 
 ```text
 
-
  1
  2.3
 -4.5
 
 ```
-
-
-
 
 ```vb
 
@@ -54,15 +46,9 @@ PRINT STR$(a) + "10" + "1" + "who" + STR$(a) + STR$(a) + LTRIM$(STR$(a))
 
 ```
 
-
-
 ## See Also
 
 * [VAL](VAL), [STRING](STRING)
 * [LTRIM$](LTRIM$), [MID$](MID$)
 * [RIGHT$](RIGHT$), [LEFT$](LEFT$)
 * [HEX$](HEX$), [OCT$](OCT$)
-
-
-
-

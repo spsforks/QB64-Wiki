@@ -22,7 +22,8 @@ PageLegacySupport
 <!--
 ## Example(s)
 
-*Example:* In a Qbasic(ONLY) file delete, **SEG** forces the parameter to be passed as a far pointer.
+## Example(s)
+ In a Qbasic(ONLY) file delete, **SEG** forces the parameter to be passed as a far pointer.
 
 ```vb
 

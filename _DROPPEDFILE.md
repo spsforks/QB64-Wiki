@@ -26,7 +26,8 @@ The [_DROPPEDFILE](_DROPPEDFILE) function returns the list of items (files or fo
 
 ## Example(s)
 
-*Example:* Accepting files dragged from a folder and processing the list received by specifying an index. 
+## Example(s)
+ Accepting files dragged from a folder and processing the list received by specifying an index. 
 
 ```vb
 

@@ -21,7 +21,8 @@ The [_WINDOWHANDLE](_WINDOWHANDLE) function returns the window handle assigned t
 
 ## Example(s)
 
-*Example:* Showing the system-default message box in Windows.
+## Example(s)
+ Showing the system-default message box in Windows.
 
 ```vb
 

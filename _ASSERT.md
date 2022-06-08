@@ -21,7 +21,8 @@ The [_ASSERT](_ASSERT) statement can be used to perform tests in code that's in 
 
 ## Example(s)
 
-*Example:* Adding test checks for parameter inputs in a function. 
+## Example(s)
+ Adding test checks for parameter inputs in a function. 
 
 ```vb
 

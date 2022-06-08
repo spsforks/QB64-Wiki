@@ -1,15 +1,12 @@
 The [STRIG(n)](STRIG(n)) statement controls event trapping for a particular joystick or game pad device button.
 
-
 ## Syntax
 
 > :STRIG(button%) {ON|OFF|STOP}
 
-
-QB64 ## Syntax
+## QB64 Syntax
 
 > :STRIG[(*button_function%*[, *device_number%*])] {ON|OFF|STOP}
-
 
 ## Description
 
@@ -20,8 +17,7 @@ QB64 ## Syntax
 * [STRIG(n)](STRIG(n)) specifies that event trapping is turned off for the specified button.
 * If [STRIG(n)](STRIG(n)) is specified, event trapping is suspended for the specified button. Further joystick button events are remembered and trapped, in order, after the next [STRIG(n)](STRIG(n)) statement is used.
 
-
-*Example:*
+## Example(s)
 
 ```vb
 
@@ -44,13 +40,8 @@ RETURN
 
 ```
 
-
 ## See Also
 
-* [ON STRIG(n)](ON STRIG(n)) (event statement)
-* [STRIG](STRIG), [STICK](STICK) (functions)
-* [http://en.wikipedia.org/wiki/Analog_stick Single and Dual Stick Controllers]
-
-
-
-
+* [ON STRIG(n)](ON-STRIG(n)) (event statement)
+* [STRIG](STRIG), [STICK](STICK)-(functions)
+* [Single and Dual Stick Controllers](http://en.wikipedia.org/wiki/Analog_stick)

@@ -16,7 +16,8 @@ The [_DEVICES](_DEVICES) function returns the number of INPUT devices on your co
 
 ## Example(s)
 
-*Example:* Checking for the system's input devices.
+## Example(s)
+ Checking for the system's input devices.
 
 ```vb
 

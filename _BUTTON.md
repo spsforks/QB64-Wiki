@@ -17,7 +17,8 @@ The [_BUTTON](_BUTTON) function returns -1 when specified button number on a con
 
 ## Example(s)
 
-*Example:* Reading multiple controller device buttons, axis and wheels.
+## Example(s)
+ Reading multiple controller device buttons, axis and wheels.
 
 ```vb
 

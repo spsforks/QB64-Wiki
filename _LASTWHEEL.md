@@ -16,7 +16,8 @@ The [_LASTWHEEL](_LASTWHEEL) function returns the number of wheels a specified n
 
 ## Example(s)
 
-*Example:* Checking for the system's input devices and number of wheels available.
+## Example(s)
+ Checking for the system's input devices and number of wheels available.
 
 ```vb
 

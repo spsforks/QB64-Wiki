@@ -22,7 +22,8 @@ The [_MOUSEX](_MOUSEX) function returns the current horizontal (column) mouse cu
 
 ## Example(s)
 
-*Example:* A simple mouse drawing board using [_MOUSEX](_MOUSEX) and [_MOUSEY](_MOUSEY) coordinate values. 
+## Example(s)
+ A simple mouse drawing board using [_MOUSEX](_MOUSEX) and [_MOUSEY](_MOUSEY) coordinate values. 
 
 ```vb
 

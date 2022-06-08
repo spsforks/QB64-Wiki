@@ -14,7 +14,8 @@ The [_SNDPLAY](_SNDPLAY) statement plays a sound designated by a file handle cre
 
 ## Example(s)
 
-*Example:* Checking a handle value before playing
+## Example(s)
+ Checking a handle value before playing
 
 ```vb
 

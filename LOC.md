@@ -14,7 +14,8 @@ The [LOC](LOC) function returns the status of a serial (COM) port received buffe
 
 ## Example(s)
 
-*Example:* Reading and writing from a COM port opened in Basic.
+## Example(s)
+ Reading and writing from a COM port opened in Basic.
 
 ```vb
 

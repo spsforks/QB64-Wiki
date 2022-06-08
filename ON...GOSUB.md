@@ -21,7 +21,8 @@
 
 ## Example(s)
 
-*Example:*
+## Example(s)
+
 
 ```vb
 

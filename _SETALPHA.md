@@ -29,7 +29,8 @@ The [_SETALPHA](_SETALPHA) statement sets the alpha channel transparency level o
 
 ## Example(s)
 
-*Example:* Using a _SETALPHA color range to fade an image in and out while not affecting the transparent white background.
+## Example(s)
+ Using a _SETALPHA color range to fade an image in and out while not affecting the transparent white background.
 
 ```vb
 

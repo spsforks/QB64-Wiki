@@ -1,14 +1,13 @@
 <center>**The SAVEIMAGE SUB program to create [Bitmaps](Bitmaps) of other type Images or Screenshots**</center>
 
-
 <center>**Bitmaps** are image files with the .BMP file name extension.</center>
-
 
 * Bitmaps can be 1, 4, 8 or 24/32 bits per pixel(BPP) color palettes. QB64 is capable of working with high color bitmaps.
 * Screen or Image width and height calculations are automatically made using the image handle value.
 * Use an image handle value of 0(zero) to get a screen shot of the entire active program screen. 
 * **Note: SCREEN 0 text mode cannot be screen saved in QBasic or QB64.**
 
+## Example(s)
 
 *The following example uses a SUB program created to save a 32 bit JPEG image as a bitmap using QB64's graphic functions:*
 
@@ -64,8 +63,8 @@ END SUB * *
 
 ```
 <sub>Code by Galleon</sub>
-<center>**This SUB program can also be [$INCLUDE]($INCLUDE) with any program!**</center>
 
+<center>**This SUB program can also be [$INCLUDE]($INCLUDE) with any program!**</center>
 
 *SUB Explanation:* b$ and d$ assemble the entire string of data to create a bitmap file. Some of the bitmap header info is placed later using a [MID$ (statement)](MID$ (statement)) to add final header numerical data converted to [ASCII](ASCII) characters by [MKI$](MKI$) or [MKL$](MKL$). 
 
@@ -75,19 +74,13 @@ The actual image is read as pixel attributes from the image bottom to the top fo
 
 *** Note:** 32-bit images will be saved as 24-bit BMP files. All palette indexed images/modes will be saved as 256 color BMP files. Text modes cannot be saved. As QB64 has no official _SAVEIMAGE command yet and QBasic programs to save screen-shots don't work in QB64 yet this is a very useful alternative.
 
-
-
 ## See Also
 
 * [_LOADIMAGE](_LOADIMAGE), [_ICON](_ICON), [$EXEICON]($EXEICON)
 * [SCREEN (statement)](SCREEN (statement))
 * [TYPE](TYPE), [MKI$](MKI$), [MKL$](MKL$)
-* [Program ScreenShots](Program ScreenShots) (member SUB program)
-* [ThirtyTwoBit SUB](ThirtyTwoBit SUB) (member SUB captures selected area)
-* [ThirtyTwoBit MEM SUB](ThirtyTwoBit MEM SUB) (Fast SUB uses memory instead of POINT)
+* [Program ScreenShots](Program-ScreenShots) (member SUB program)
+* [ThirtyTwoBit SUB](ThirtyTwoBit-SUB) (member SUB captures selected area)
+* [ThirtyTwoBit MEM SUB](ThirtyTwoBit-MEM-SUB) (Fast SUB uses memory instead of POINT)
 * [SaveIcon32](SaveIcon32) (converts any image to icon)
-* [Bitmaps](Bitmaps), [Icons and Cursors](Icons and Cursors)
-
-
-
-
+* [Bitmaps](Bitmaps), [Icons and Cursors](Icons-and-Cursors)

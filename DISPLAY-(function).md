@@ -15,7 +15,8 @@ The [_DISPLAY](_DISPLAY) function returns the handle of the current image that i
 
 ## Example(s)
 
-*Example:* Creating a mouse cursor using a page number that **you create** in memory without setting up page flipping.
+## Example(s)
+ Creating a mouse cursor using a page number that **you create** in memory without setting up page flipping.
 
 ```vb
 

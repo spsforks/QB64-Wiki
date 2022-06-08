@@ -13,7 +13,8 @@ The **POS** function returns the current print cursor text column position.
 * Column position returned can be saved to return to a previous print position later using [LOCATE](LOCATE).
 
 
-*Example:* Column positions after prints.
+## Example(s)
+ Column positions after prints.
 
 ```vb
 

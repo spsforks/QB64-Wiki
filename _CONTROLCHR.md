@@ -18,7 +18,8 @@ The [_CONTROLCHR](_CONTROLCHR) statement can be used to turn OFF control charact
 
 ## Example(s)
 
-*Example:* Printing the 255 [ASCII](ASCII) characters in [SCREEN](SCREEN) 0 with 32 colors.
+## Example(s)
+ Printing the 255 [ASCII](ASCII) characters in [SCREEN](SCREEN) 0 with 32 colors.
 
 ```vb
 

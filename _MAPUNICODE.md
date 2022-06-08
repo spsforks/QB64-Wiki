@@ -18,7 +18,8 @@ The [_MAPUNICODE](_MAPUNICODE) statement maps a [Unicode](Unicode) value to an [
 
 ## Example(s)
 
-*Example:* Converting the extended [ASCII](ASCII) characters to other characters using DATA from the Unicode [Code Pages](Code Pages).
+## Example(s)
+ Converting the extended [ASCII](ASCII) characters to other characters using DATA from the Unicode [Code Pages](Code Pages).
 
 ```vb
 

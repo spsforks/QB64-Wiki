@@ -20,7 +20,8 @@ The [_CLIPBOARD$ (statement)](_CLIPBOARD$ (statement)) statement copies the [STR
 
 ## Example(s)
 
-*Example:* Set 2 lines of text in the clipboard using a carriage return to end text lines
+## Example(s)
+ Set 2 lines of text in the clipboard using a carriage return to end text lines
 
 ```vb
 

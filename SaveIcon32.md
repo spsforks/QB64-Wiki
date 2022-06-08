@@ -98,22 +98,16 @@ END SUB
 <sub>Code by Ted Weissgerber</sub>
 
 > *Explanation:* The icons created can have a full black [AND](AND) mask for a solid square image when mode% is zero. If mode% is a value other than 0, the AND mask routine looks for black pixels and sets the background pixel on for transparency. Icons with dimensions that are not a multiple of 32 would require padding. In the header, ???? is later replaced with size data. If the image is 24/32 BPP, the size of the [XOR](XOR) image data will triple because each pixel uses 3 bytes for red, green and blue values up to 255.
-> To create **.CUR** cursor files change the second value from 1 to 2 and set the 2 cursor click hotspot offset [INTEGER](INTEGER) values.
 
+> To create **.CUR** cursor files change the second value from 1 to 2 and set the 2 cursor click hotspot offset [INTEGER](INTEGER) values.
 
 > Icons that are 16 X 16 or 48 X 48 require 2 padder bytes to be added at the end of each row increasing data size by 32 and 96.
 
-
 ## See Also
-
 
 *[_ICON](_ICON), [$EXEICON]($EXEICON)
 *[SAVEIMAGE](SAVEIMAGE)
-*[Icons and Cursors](Icons and Cursors)
-*[Resource Table extraction](Resource Table extraction)
+*[Icons and Cursors](Icons-and-Cursors)
+*[Resource Table extraction](Resource-Table-extraction)
 *[Bitmaps](Bitmaps)
-*[GIF Images](GIF Images)
-
-
-
-
+*[GIF Images](GIF-Images)

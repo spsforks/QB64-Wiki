@@ -28,7 +28,8 @@ The [LOCATE](LOCATE) statement locates the screen text row and column positions 
 
 ## Example(s)
 
-*Example:* Moving the cursor around (now you can finally create a Commodore 64 emulator!). **Default SCREEN 0 only:**
+## Example(s)
+ Moving the cursor around (now you can finally create a Commodore 64 emulator!). **Default SCREEN 0 only:**
 
 ```vb
 

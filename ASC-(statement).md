@@ -17,7 +17,8 @@ The [ASC (statement)](ASC (statement)) statement allows a **QB64** program to ch
 
 ## Example(s)
 
-*Example:* Demonstrates how to change existing text characters one letter at a time.
+## Example(s)
+ Demonstrates how to change existing text characters one letter at a time.
 
 ```vb
 

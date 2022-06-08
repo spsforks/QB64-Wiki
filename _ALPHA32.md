@@ -23,7 +23,8 @@ The [_ALPHA32](_ALPHA32) function returns the alpha transparency level of a 32 b
 
 ## Example(s)
 
-*Example:* Finding the alpha transparency level in a 32 bit screen using an [_RGBA](_RGBA)  [_UNSIGNED](_UNSIGNED) [LONG](LONG) color value.
+## Example(s)
+ Finding the alpha transparency level in a 32 bit screen using an [_RGBA](_RGBA)  [_UNSIGNED](_UNSIGNED) [LONG](LONG) color value.
 
 ```vb
 

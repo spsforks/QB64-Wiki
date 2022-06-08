@@ -21,7 +21,8 @@
 
 ## Example(s)
 
-*Example:* Embeds a designated icon file into the compiled EXE which can be viewed in Windows Explorer folders.
+## Example(s)
+ Embeds a designated icon file into the compiled EXE which can be viewed in Windows Explorer folders.
 
 ```vb
 

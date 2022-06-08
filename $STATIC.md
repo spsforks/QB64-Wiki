@@ -14,7 +14,8 @@ The **$STATIC** Metacommand allows the creation of STATIC(un-changeable) arrays.
 * [$STATIC]($STATIC) defined program [arrays](arrays) cannot be [REDIM](REDIM) or use [_PRESERVE](_PRESERVE).
 
 
-*Example:* When a variable is used, the array can be resized despite $STATIC. The array becomes [$DYNAMIC]($DYNAMIC).
+## Example(s)
+ When a variable is used, the array can be resized despite $STATIC. The array becomes [$DYNAMIC]($DYNAMIC).
 
 ```vb
 

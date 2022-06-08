@@ -19,7 +19,8 @@ The [_FINISHDROP](_FINISHDROP) statement resets [_TOTALDROPPEDFILES](_TOTALDROPP
 
 ## Example(s)
 
-*Example:* Accepting files dragged from a folder and processing the list received by specifying an index. 
+## Example(s)
+ Accepting files dragged from a folder and processing the list received by specifying an index. 
 
 ```vb
 

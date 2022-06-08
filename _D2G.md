@@ -9,7 +9,8 @@ The [_D2G](_D2G) function converts a **degree** value into a **gradient** value.
 
 ## Example(s)
 
-*Example:* Coverting Degrees into Gradient.
+## Example(s)
+ Coverting Degrees into Gradient.
 
 ```vb
 

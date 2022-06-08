@@ -16,7 +16,8 @@ The [ABS](ABS) function returns the unsigned numerical value of a variable or li
 
 ## Example(s)
 
-*Example:* Finding the absolute value of positive and negative numerical values.
+## Example(s)
+ Finding the absolute value of positive and negative numerical values.
 
 ```vb
 

@@ -24,7 +24,8 @@ The [_RGB](_RGB) function returns the closest palette attribute index (legacy SC
 
 ## Example(s)
 
-*Example:* Converting the color port RGB intensity palette values 0 to 63 to 32 bit hexadecimal values. 
+## Example(s)
+ Converting the color port RGB intensity palette values 0 to 63 to 32 bit hexadecimal values. 
 
 ```vb
 

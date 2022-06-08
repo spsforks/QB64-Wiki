@@ -16,7 +16,8 @@ The [_DEFAULTCOLOR](_DEFAULTCOLOR) function returns the current default text col
 
 ## Example(s)
 
-*Example:* The default color is the color assigned to the text foreground. The [SCREEN](SCREEN) 12 default is [COLOR](COLOR) 15.
+## Example(s)
+ The default color is the color assigned to the text foreground. The [SCREEN](SCREEN) 12 default is [COLOR](COLOR) 15.
 
 ```vb
 

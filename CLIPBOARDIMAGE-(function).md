@@ -21,7 +21,8 @@ The [_CLIPBOARDIMAGE (function)](_CLIPBOARDIMAGE (function)) function pastes an 
 
 ## Example(s)
 
-*Example:* Monitoring the clipboard for new images copied from other programs:
+## Example(s)
+ Monitoring the clipboard for new images copied from other programs:
 
 ```vb
 SCREEN _NEWIMAGE(800, 600, 32)

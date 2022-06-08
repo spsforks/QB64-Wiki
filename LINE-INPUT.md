@@ -27,7 +27,8 @@ The [LINE INPUT](LINE INPUT) statement requests a [STRING](STRING) keyboard entr
 
 ## Example(s)
 
-*Example:* Preventing screen roll after an input entry on the bottom 2 screen rows. 
+## Example(s)
+ Preventing screen roll after an input entry on the bottom 2 screen rows. 
 
 ```vb
 

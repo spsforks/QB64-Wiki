@@ -31,7 +31,8 @@ The **LINE INPUT #** file statement reads an entire line from a text file into a
 
 ## Example(s)
 
-*Example:* Finding the number of filenames listed in a file to dimension an array to hold them.
+## Example(s)
+ Finding the number of filenames listed in a file to dimension an array to hold them.
 
 ```vb
 

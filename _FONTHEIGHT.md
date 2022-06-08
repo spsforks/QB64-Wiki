@@ -16,7 +16,8 @@ The [_FONTHEIGHT](_FONTHEIGHT) function returns the font height of a font handle
 
 ## Example(s)
 
-*Example:* Finding the [_FONT](_FONT) or text block size of printed [STRING](STRING) characters in graphic [SCREEN](SCREEN) modes.
+## Example(s)
+ Finding the [_FONT](_FONT) or text block size of printed [STRING](STRING) characters in graphic [SCREEN](SCREEN) modes.
 
 ```vb
 

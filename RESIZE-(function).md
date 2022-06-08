@@ -21,7 +21,8 @@ The [_RESIZE](_RESIZE) function returns true (-1) when a user has attempted to r
 
 ## Example(s)
 
-*Example:* Resize the current screen image according to user's request.
+## Example(s)
+ Resize the current screen image according to user's request.
 
 ```vb
 

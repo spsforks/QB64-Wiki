@@ -15,7 +15,8 @@ The [TAN](TAN) function returns the ratio of [SIN](SIN)e to [COS](COS)ine or tan
 
 ## Example(s)
 
-*Example:* Spiraling text using the [SIN](SIN) and [TAN](TAN) functions.
+## Example(s)
+ Spiraling text using the [SIN](SIN) and [TAN](TAN) functions.
 
 ```vb
 

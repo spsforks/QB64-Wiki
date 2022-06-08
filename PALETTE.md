@@ -25,7 +25,8 @@ The [PALETTE](PALETTE) statement can swap color settings, set colors to default 
 
 ## Example(s)
 
-*Example:* Displaying all 64 DAC color hues as backgrounds in SCREEN 9 using a PALETTE swap.
+## Example(s)
+ Displaying all 64 DAC color hues as backgrounds in SCREEN 9 using a PALETTE swap.
 
 
 ```vb

@@ -16,7 +16,8 @@ RelationalOperationsTable
 
 For numeric operands, such as [INTEGER](INTEGER) or [DOUBLE](DOUBLE) values, the relational operations behave as one would expect. For example, the expression (-3.4 [Less_Than](Less_Than) 1.2) evaluates to *true*, and the expression (50 [Equal](Equal) 100) evaluates to *false*.
 
-*Example:* When a user enters a value greater than or equal to 5, the boolean statement returns -1 . Zero is printed otherwise.
+## Example(s)
+ When a user enters a value greater than or equal to 5, the boolean statement returns -1 . Zero is printed otherwise.
 
 ```vb
 
@@ -34,7 +35,8 @@ When two strings are compared, the left string sets the number of characters to 
 If one string is identical to part of the other, [Less_Than](Less_Than) returns *false* if the left-hand side string is shorter than the right-hand side string, while [Greater_Than](Greater_Than) returns *true* if the left-hand side string is longer than the right-hand side string. For example, the expressions ("abc" [Less_Than](Less_Than) "abd") and ("abcdef" [Greater_Than](Greater_Than) "abc") both evaluate to *true*. Even [SPACE$](SPACE$) [ASCII](ASCII) character values are evaluated!
 
 
-*Example:* Shows that the left hand string sets the number of characters to evaluate when using > or < and are not equal when longer.
+## Example(s)
+ Shows that the left hand string sets the number of characters to evaluate when using > or < and are not equal when longer.
 
 ```vb
 

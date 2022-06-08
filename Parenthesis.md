@@ -21,7 +21,8 @@
 * Extra pairs of brackets have no effect on the code! If one is missing the IDE should tell you.
 
 
-*Example:* Using too many brackets does not harm the code execution as long as they are paired up.
+## Example(s)
+ Using too many brackets does not harm the code execution as long as they are paired up.
 
 ```vb
 

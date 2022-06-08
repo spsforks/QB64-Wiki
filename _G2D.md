@@ -9,7 +9,8 @@ The [_G2D](_G2D) function converts a **gradient** value into a **degree** value.
 
 ## Example(s)
 
-*Example:* Coverting Gradients into Degree.
+## Example(s)
+ Coverting Gradients into Degree.
 
 ```vb
 

@@ -1,6 +1,5 @@
 <center>**SCREEN Memory Segments**</center>
 
-
 <center>**Screen 0 Text Segment &HB800**</center>
 
 * The text video memory segment is located at hexadecimal memory address B800 or 47104 decimal.
@@ -11,6 +10,7 @@
 * Color values from 0 to 127 are the normal 16 text colors with background color attributes ranging from 0 to 7.
 * Color values from 128 to 255 are the high intensity blinking color values with background color attributes ranging from 0 to 7.
 
+## Example(s)
 
 *Example 1:* Printing text with blinking colors in [SCREEN](SCREEN) 0 only.
 
@@ -32,7 +32,6 @@ DEF SEG 'restore to default segment
 END 
 
 ```
-
 
 *Example 2:* Displaying and coloring the 256 [ASCII](ASCII) characters using [POKE](POKE) in [SCREEN](SCREEN) 0. 
 
@@ -58,6 +57,7 @@ END
 
 ```
 <sub>Code by Ted Weissgerber</sub>
+
 > *Explanation:* To [POKE](POKE) text characters to the screen in SCREEN 0, DEF SEG sets the memory segment to &HB800. Text values are poked at the even segment offsets starting 640 bytes(4 rows * 80 columns wide * 2 bytes) from the upper left corner 0 offset of the screen memory segment. To space the text it skips an even offset by multiplying by 4 instead of 2. The odd offsets can be written to to set the color. Using the same 4 byte offsets, the text and background are colored using values up to 128. Values over 128 cause the text to flash and the background colors 0 to 7 are repeated. The background color is incremented every 16 values.
 
 ```text
@@ -75,16 +75,13 @@ Byte offset:    0, 1               640     642     644     646     648     650  
 
 ```
 
-
 <center>**Graphic Screen Segment &HA000**</center>
 
 * The graphic video memory segment is located at hexadecimal memory address A000 or 40960 decimal.
 * Legacy graphic screen modes include 1, 2, 7, 8, 9, 10, 11, 12 and 13 with varying pixel widths, heights and color attributes.
 * **QB64** [_NEWIMAGE](_NEWIMAGE) or [_LOADIMAGE](_LOADIMAGE) screen modes can use the legacy modes above, 256 color or 32 bit color modes.
 
-
 ## See Also
-
 
 * [PEEK](PEEK), [POKE](POKE)
 * [DEF SEG = 0](DEF SEG = 0)
@@ -92,7 +89,3 @@ Byte offset:    0, 1               640     642     644     646     648     650  
 * [SCREEN (function)](SCREEN (function))
 * [_NEWIMAGE](_NEWIMAGE) (screen pages)
 * [_LOADIMAGE](_LOADIMAGE) (image files)
-
-
-
-

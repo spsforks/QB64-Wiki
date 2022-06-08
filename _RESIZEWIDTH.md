@@ -20,7 +20,8 @@ The [_RESIZEWIDTH](_RESIZEWIDTH) function returns the user resized screen pixel 
 
 ## Example(s)
 
-*Example:* Resize the current screen image according to user's request.
+## Example(s)
+ Resize the current screen image according to user's request.
 
 ```vb
 

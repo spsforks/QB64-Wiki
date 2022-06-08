@@ -18,7 +18,8 @@ The [_LASTAXIS](_LASTAXIS) function returns the number of axis a specified numbe
 
 ## Example(s)
 
-*Example:* Checking for the system's input devices and number of axis.
+## Example(s)
+ Checking for the system's input devices and number of axis.
 
 ```vb
 

@@ -1,14 +1,8 @@
-{| align="Right"
-  | __TOC__
-  |}
 The [SCREEN](SCREEN) statement sets the video display mode and size of the program window's workspace. 
-
 
 ## Syntax
 
-
-> :: **SCREEN** {*mode%*|*imagehandle&*} [, , active_page, visual_page] 
-
+> **SCREEN** {*mode%*|*imagehandle&*} [, , active_page, visual_page] 
 
 ## Parameter(s)
  
@@ -17,13 +11,11 @@ The [SCREEN](SCREEN) statement sets the video display mode and size of the progr
 * The empty comma disables color when any value is used. **DO NOT USE!** Include the comma ONLY when using page flipping.
 * If the SCREEN mode supports pages, the *active page* is the page to be worked on while *visual page* is the one displayed.
 
-
 ## Usage
  
 * No SCREEN statement in a program defaults to [SCREEN](SCREEN) 0 text ONLY mode.
 * A SCREEN statement that changes screen modes also clears the screen like [CLS](CLS). Nothing on the screen is retained.
 * Some screen mode text sizes are adjustable with [WIDTH](WIDTH) and all **QB54** screens support [PCOPY](PCOPY) and page flipping. 
-
 
 ```text
 
@@ -48,17 +40,15 @@ The [SCREEN](SCREEN) statement sets the video display mode and size of the progr
 
 ```
 
+> **QB64 Custom Screen Modes**
 
-> ::::::::**QB64 Custom Screen Modes**
-> **QB64** ## Syntax
+## QB64 Syntax
   
+> [SCREEN](SCREEN) *imagehandle&* [, , *active_page*, *visual_page*]
 
-> :::::[SCREEN](SCREEN) *imagehandle&* [, , *active_page*, *visual_page*]
+> [SCREEN](SCREEN) [_NEWIMAGE](_NEWIMAGE)(*wide&*, *high&*[, {*mode*|*256*|*32*}]) [, , *active_page*, *visual_page*]
 
-> :::::[SCREEN](SCREEN) [_NEWIMAGE](_NEWIMAGE)(*wide&*, *high&*[, {*mode*|*256*|*32*}]) [, , *active_page*, *visual_page*]
-
-> :::::[SCREEN](SCREEN) [_LOADIMAGE](_LOADIMAGE)(*file$*[, {*mode*|*256*|*32*}]) [, , *active_page*, *visual_page*]
-
+> [SCREEN](SCREEN) [_LOADIMAGE](_LOADIMAGE)(*file$*[, {*mode*|*256*|*32*}]) [, , *active_page*, *visual_page*]
 
 * Custom screen modes can be created using a [_NEWIMAGE](_NEWIMAGE) or [_LOADIMAGE](_LOADIMAGE) function *imagehandle* return value. 
 * **QB64** screen modes 0 to 2 and 7 to 13 can be emulated with the same color depth and text block size and different dimensions.
@@ -68,22 +58,19 @@ The [SCREEN](SCREEN) statement sets the video display mode and size of the progr
 * All SCREEN modes are Windows in QB64. Use [_FULLSCREEN](_FULLSCREEN) to set the window area to full screen.
 * [_SCREENMOVE](_SCREENMOVE) can position a window or the _MIDDLE option can center it on the desktop.
 
-<p style="text-align: center">([#toc](#toc))</p>
-
 ## Legacy Screen Modes
 
-
-* **[SCREEN](SCREEN) 0** (default mode) is a **text only** screen mode. 64 (VGA) colors with hi-intensity(blinking) colors 16 to 31. ([DAC](DAC) attrib 6, 8 to 15). 8 Background colors intensities only(0 - 7). No graphics are possible! Normally runs in a window. ALT-Enter switches from a window to fullscreen. To automatically run in **QBasic** fullscreen, use another Screen mode before using [SCREEN (statement)](SCREEN (statement)) 0.  Can use [PCOPY](PCOPY) with video pages 0 to 7. Text is 25, 43 or 50 rows by 40 or 80 columns. Default is 25 by 80. See [WIDTH](WIDTH).
+* **[SCREEN](SCREEN) 0** (default mode) is a **text only** screen mode. 64 (VGA) colors with hi-intensity(blinking) colors 16 to 31. ([DAC](DAC) attrib 6, 8 to 15). 8 Background colors intensities only(0 - 7). No graphics are possible! Normally runs in a window. ALT-Enter switches from a window to fullscreen. To automatically run in **QBasic** fullscreen, use another Screen mode before using [SCREEN (statement)](SCREEN-(statement)) 0.  Can use [PCOPY](PCOPY) with video pages 0 to 7. Text is 25, 43 or 50 rows by 40 or 80 columns. Default is 25 by 80. See [WIDTH](WIDTH).
 
 >  **Note:** Use [OUT](OUT) or [_PALETTECOLOR](_PALETTECOLOR) to create higher intensity color backgrounds than [COLOR](COLOR) , 7.  
 
-> ::**All other available [SCREEN](SCREEN) modes can use text and graphics and are fullscreen in QBasic ONLY.**
+> **All other available [SCREEN](SCREEN) modes can use text and graphics and are fullscreen in QBasic ONLY.**
 
 * **[SCREEN](SCREEN) 1** has 4 background color attributes. 0 = black, 1 = blue, 2 = green, 3 = grey. White foreground only. Text is 25 by 40. White graphics is 320 by 200. 
 
-* **[SCREEN](SCREEN) 2** is **monochrome** with black background and white foreground. Text is 25 by 80. White graphics 640 by 200.          NO [COLOR](COLOR) keyword allowed.
+* **[SCREEN](SCREEN) 2** is **monochrome** with black background and white foreground. Text is 25 by 80. White graphics 640 by 200. NO [COLOR](COLOR) keyword allowed.
  
-* **[SCREEN](SCREEN) 3 to 6 are no longer supported** on most computers! Using them will cause a video [ERROR Codes](ERROR Codes)! 
+* **[SCREEN](SCREEN) 3 to 6 are no longer supported** on most computers! Using them will cause a video [ERROR Codes](ERROR-Codes)! 
 
 * **[SCREEN](SCREEN) 7** has 16 color attributes ([DAC](DAC) attrib. 8 to 15) with background colors. Text 25 rows by 40 columns. Graphics 320 columns by 200 rows. Video  pages 0 to 7 for flipping or [PCOPY](PCOPY).
 
@@ -99,60 +86,47 @@ The [SCREEN](SCREEN) statement sets the video display mode and size of the progr
 
 * **[SCREEN](SCREEN) 13** has 256 color attributes, black background. 256K possible color hues. Text is 25 by 40. Graphics is 320 by 200. 
 
-
 ## Modern Syntax
-
 
 * **[SCREEN](SCREEN) [_NEWIMAGE](_NEWIMAGE)**(wide&, deep&, mode%) can imitate any size screen mode or use 32 bit or 256 color modes in **QB64**.
 
 * **[SCREEN](SCREEN) [_LOADIMAGE](_LOADIMAGE)**(imagehandle&, colors) can load a program screen of an image file handle in **QB64** using 256 or 32 bit. 
 
-
 <center>**QB64 can use page flipping with any number of pages in any screen mode!**</center>
-
-<p style="text-align: center">([#toc](#toc))</p>
 
 ## Text and Graphics
 
-
-
-> ::::::::**Text Coordinates:** 
+> **Text Coordinates:** 
 
 * Are a minimum of 1 and the values given above are the maximums. [LOCATE](LOCATE) 1, 1 is the top left [SCREEN](SCREEN) text position.
 * Text characters occupy a certain sized pixel box adjusted by [WIDTH](WIDTH) in some screen modes.
 * Text [PRINT](PRINT) cursor positions can be read by [CSRLIN](CSRLIN) and [POS](POS) to [LOCATE](LOCATE) text [PRINT](PRINT)s.
-* The [SCREEN (function)](SCREEN (function)) can be used to read the [ASCII](ASCII) character code or color of text in SCREEN 0 only.
-* [VIEW PRINT](VIEW PRINT) can be used to designate a text view port area.
-* In **QB64** the [_WIDTH (function)](_WIDTH (function)) and [_HEIGHT](_HEIGHT) functions will return the text block dimensions in SCREEN 0 only.
+* The [SCREEN (function)](SCREEN-(function)) can be used to read the [ASCII](ASCII) character code or color of text in SCREEN 0 only.
+* [VIEW PRINT](VIEW-PRINT) can be used to designate a text view port area.
+* In **QB64** the [_WIDTH (function)](_WIDTH-(function)) and [_HEIGHT](_HEIGHT) functions will return the text block dimensions in SCREEN 0 only.
 
-
-> ::::::::**Graphic Coordinates:**
+> **Graphic Coordinates:**
 
 * The minimum on screen graphics pixel coordinates are 0 for columns and rows in the top left corner.
 * Maximum pixel coordinates are one less than the maximum dimensions above because the pixel count starts at 0.
 * Graphic objects such as [PSET](PSET), [PRESET](PRESET), [LINE](LINE), [CIRCLE](CIRCLE) and [DRAW](DRAW) can be placed partially off of the screen.
-* [GET (graphics statement)](GET (graphics statement)) and [PUT (graphics statement)](PUT (graphics statement)) screen image operations MUST be located completely on the screen in QBasic!
+* [GET (graphics statement)](GET-(graphics-statement)) and [PUT (graphics statement)](PUT-(graphics-statement)) screen image operations MUST be located completely on the screen in QBasic!
 * [VIEW](VIEW) can be used to designate a graphic view port area of the screen.
 * [WINDOW](WINDOW) can be used to set the graphics SCREEN coordinates to almost any size needed. Use the SCREEN option for normal row coordinate values. Row coordinates are Cartesian(decrease in value going down the screen) otherwise.
-* In **QB64** the [_WIDTH (function)](_WIDTH (function)) and [_HEIGHT](_HEIGHT) functions will return the graphic pixel dimensions in SCREENs other than 0.
+* In **QB64** the [_WIDTH (function)](_WIDTH-(function)) and [_HEIGHT](_HEIGHT) functions will return the graphic pixel dimensions in SCREENs other than 0.
 
-
-> ::::::**QB64 Screen Statements and Functions:**
+> **QB64 Screen Statements and Functions:**
 
 * For file image screens that adopt the image dimensions and image color settings use: [_LOADIMAGE](_LOADIMAGE)
 * To create custom sized screen modes or pages and 256 or 32 bit colors use: [_NEWIMAGE](_NEWIMAGE)
 * [_PUTIMAGE](_PUTIMAGE) can stretch or reduce the size of images to fit the SCREEN size.
-* [PUT (graphics statement)](PUT (graphics statement)) can use [_CLIP](_CLIP) to set objects partially off screen. [GET (graphics statement)](GET (graphics statement)) can read objects off screen as a color in QB64 ONLY.
+* [PUT (graphics statement)](PUT-(graphics-statement)) can use [_CLIP](_CLIP) to set objects partially off screen. [GET (graphics statement)](GET-(graphics-statement)) can read objects off screen as a color in QB64 ONLY.
 * A [_DISPLAY](_DISPLAY) statement can be used to only display an image after changes instead of using page flipping or [PCOPY](PCOPY).
-* The current desktop screen resolution can be found using the [_SCREENIMAGE](_SCREENIMAGE) handle value with [_WIDTH (function)](_WIDTH (function)) and [_HEIGHT](_HEIGHT).
+* The current desktop screen resolution can be found using the [_SCREENIMAGE](_SCREENIMAGE) handle value with [_WIDTH (function)](_WIDTH-(function)) and [_HEIGHT](_HEIGHT).
 * **NOTE: Default 32 bit backgrounds are clear black or [_RGBA](_RGBA)(0, 0, 0, 0)! Use [CLS](CLS) to make the black opaque!**
 *  **Images are not deallocated when the [SUB](SUB) or [FUNCTION](FUNCTION) they are created in ends. Free them with [_FREEIMAGE](_FREEIMAGE).**
 
-
-<p style="text-align: center">([#toc](#toc))</p>
-
-## Examples
-
+## Example(s)
 
 > *Example 1:* Shows an example of each legacy screen mode available to QBasic and QB64.
 
@@ -180,13 +154,11 @@ SYSTEM
 
 ```text
 
-
 This is SCREEN 0 - only text is allowed!
 
 ```
 
-> Displays each [SCREEN (statement)](SCREEN (statement)) mode one at a time with a [CIRCLE](CIRCLE) (except for [SCREEN (statement)](SCREEN (statement)) 0)
-
+> Displays each [SCREEN (statement)](SCREEN-(statement)) mode one at a time with a [CIRCLE](CIRCLE) (except for [SCREEN (statement)](SCREEN-(statement)) 0)
 
 *Example 2:* Making ANY **QB64 legacy screen mode** larger using a SUB that easily converts PRINT to [_PRINTSTRING](_PRINTSTRING). 
 
@@ -218,28 +190,19 @@ END SUB
 
 ```
 <sub>Code by Ted Weissgerber</sub>
->  *Explanation:* The procedure above creates a larger version of a SCREEN 13 window by stretching it with [_PUTIMAGE](_PUTIMAGE). It cannot stretch PRINTed text so [_PRINTSTRING](_PRINTSTRING) must be used instead. [LOCATE](LOCATE) sets the PRINT cursor position for [CSRLIN](CSRLIN) and [POS](POS)(0) to read. The SUB then converts the coordinates to graphical ones. Then **change** [PRINT](PRINT) to PRINTS using the **Search Menu**.
 
-<center>[http://dl.dropbox.com/u/8440706/HOWIE.zip Download of Example 2 Bitmap images]</center>
+> *Explanation:* The procedure above creates a larger version of a SCREEN 13 window by stretching it with [_PUTIMAGE](_PUTIMAGE). It cannot stretch PRINTed text so [_PRINTSTRING](_PRINTSTRING) must be used instead. [LOCATE](LOCATE) sets the PRINT cursor position for [CSRLIN](CSRLIN) and [POS](POS)(0) to read. The SUB then converts the coordinates to graphical ones. Then **change** [PRINT](PRINT) to PRINTS using the **Search Menu**.
 
+<center>[Download of Example 2 Bitmap images](http://dl.dropbox.com/u/8440706/HOWIE.zip)</center>
 
 <center>You can easily change PRINT to the PRINTS sub-procedure name in your code using the IDE *Search*  Menu *Change* option.</center>
 
-<p style="text-align: center">([#toc](#toc))</p>
-
-## References
-
-
-*See Examples:*
+## See Example(s)
 
 * [SAVEIMAGE](SAVEIMAGE) (QB64 Image to Bitmap SUB by Galleon)
-
-* [Program ScreenShots](Program ScreenShots) (Member program for legacy screen modes)
-
-* [ThirtyTwoBit SUB](ThirtyTwoBit SUB) (QB64 Image area to bitmap)
-
+* [Program ScreenShots](Program-ScreenShots) (Member program for legacy screen modes)
+* [ThirtyTwoBit SUB](ThirtyTwoBit-SUB) (QB64 Image area to bitmap)
 * [SelectScreen](SelectScreen) (Member Screen mode function)
-
 
 ## See Also
 
@@ -248,11 +211,7 @@ END SUB
 * [_LOADFONT](_LOADFONT), [_FONT](_FONT)
 * [_DISPLAY](_DISPLAY), [_COPYIMAGE](_COPYIMAGE), [_SCREENMOVE](_SCREENMOVE)
 * [PALETTE](PALETTE), [OUT](OUT), [PCOPY](PCOPY), 
-* [GET (graphics statement)](GET (graphics statement)), [PUT (graphics statement)](PUT (graphics statement)) (graphics)
-* [VIEW](VIEW), [WINDOW](WINDOW) (graphic viewport), [VIEW PRINT](VIEW PRINT) (text view port)
+* [GET (graphics statement)](GET-(graphics-statement)), [PUT (graphics statement)](PUT-(graphics-statement)) (graphics)
+* [VIEW](VIEW), [WINDOW](WINDOW)-(graphic-viewport), [VIEW PRINT](VIEW-PRINT) (text view port)
 * [SCREEN (function)](SCREEN (function)) (text only), [POINT](POINT) (graphic pixel colors)
-* [Screen Memory](Screen Memory), [Screen Saver Programs](Screen Saver Programs)
-
-
-
-
+* [Screen Memory](Screen-Memory), [Screen Saver Programs](Screen-Saver-Programs)

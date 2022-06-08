@@ -13,7 +13,8 @@ The [$SCREENHIDE]($SCREENHIDE) [Metacommand](Metacommand) can be used to hide th
 
 ## Example(s)
 
-*Example:* Hiding a program when displaying a message box in Windows.
+## Example(s)
+ Hiding a program when displaying a message box in Windows.
 
 ```vb
 

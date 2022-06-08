@@ -25,7 +25,8 @@
 
 ## Example(s)
 
-*Example:* How parameters are passed in two [SUB](SUB) calls, one with CALL using brackets and one without CALL or brackets:
+## Example(s)
+ How parameters are passed in two [SUB](SUB) calls, one with CALL using brackets and one without CALL or brackets:
 
 ```vb
 

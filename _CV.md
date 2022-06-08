@@ -22,7 +22,8 @@ The [_CV](_CV) function is used to convert [_MK$](_MK$), [ASCII](ASCII), [STRING
 
 ## Example(s)
 
-*Example:* Using the _MK$ and _CV functions:
+## Example(s)
+ Using the _MK$ and _CV functions:
 
 ```vb
 

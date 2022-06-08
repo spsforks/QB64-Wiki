@@ -29,7 +29,8 @@ The [_MOUSEMOVE](_MOUSEMOVE) statement moves the mouse pointer to a new position
 
 ## Example(s)
 
-*Example:* How to move the mouse cursor using remembered mouse movements. Press any key to quit.
+## Example(s)
+ How to move the mouse cursor using remembered mouse movements. Press any key to quit.
 
 ```vb
 

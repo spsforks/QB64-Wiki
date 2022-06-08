@@ -1,6 +1,5 @@
 The [STATIC](STATIC) keyword is used in declaration statements to control where variables are stored.
 
-
 ## Syntax
 
 > [STATIC](STATIC) variableName[()] [[AS](AS) dataType][, ...]
@@ -8,7 +7,6 @@ The [STATIC](STATIC) keyword is used in declaration statements to control where 
 ## Syntax
 
 > {[SUB](SUB)|[FUNCTION](FUNCTION)} procedureName [(parameterList)] STATIC
-
 
 ## Description
 
@@ -20,6 +18,7 @@ The [STATIC](STATIC) keyword is used in declaration statements to control where 
 * **Recursive procedures may be required to be STATIC to avoid a Stack Overflow! QB64 programs may just close!**
 * [$STATIC]($STATIC) defined program [arrays](arrays) cannot be [REDIM](REDIM) or use [_PRESERVE](_PRESERVE).
 
+## Example(s)
 
 *Example 1: Finding the binary bit settings from a 32 bit [LONG](LONG) register return using recursion.
 
@@ -31,28 +30,27 @@ PRINT Bin$(num&)
 END
 
 FUNCTION Bin$ (n&) STATIC 'comment out STATIC to see what happens!
-DIM p%, s$
-IF 2 ^ p% > n& THEN
-  p% = 0
-ELSE
-  IF n& AND 2 ^ p% THEN s$ = "1" + s$ ELSE s$ = "0" + s$
-  IF n& > 2 ^ p% THEN
-    p% = p% + 1
-    s$ = Bin$(n&) 'recursive call to itself
-  ELSE: p% = 0
+  DIM p%, s$
+  IF 2 ^ p% > n& THEN
+    p% = 0
+  ELSE
+    IF n& AND 2 ^ p% THEN s$ = "1" + s$ ELSE s$ = "0" + s$
+    IF n& > 2 ^ p% THEN
+      p% = p% + 1
+      s$ = Bin$(n&) 'recursive call to itself
+    ELSE: p% = 0
+    END IF
   END IF
-END IF
-IF s$ = "" THEN Bin$ = "0" ELSE Bin$ = s$
+  IF s$ = "" THEN Bin$ = "0" ELSE Bin$ = s$
 END FUNCTION 
 
 ```
->  *Explanation:* The [FUNCTION](FUNCTION) above returns a [STRING](STRING) value representing the bits ON in an [INTEGER](INTEGER) value. The string can be printed to the screen to see what is happening in a port register. **STATIC** keeps the function from overloading the memory "Stack" and is normally REQUIRED when recursive calls are used in QBasic! **QB64 procedures will close without warning or error!**
 
+> *Explanation:* The [FUNCTION](FUNCTION) above returns a [STRING](STRING) value representing the bits ON in an [INTEGER](INTEGER) value. The string can be printed to the screen to see what is happening in a port register. **STATIC** keeps the function from overloading the memory "Stack" and is normally REQUIRED when recursive calls are used in QBasic! **QB64 procedures will close without warning or error!**
 
 *Example 2:* Using a static array to cache factorials, speeding up repeated calculations:
 
 ```vb
-
 
 PRINT Factorial(0)
 PRINT Factorial(5)
@@ -87,19 +85,15 @@ FUNCTION Factorial# ( n AS DOUBLE )
     Factorial = resultCache(n)
 END FUNCTION
 
-
 ```
 
 ```text
 
- 
  1
  120
  3.041409320171338D+64
 
 ```
-
-
 
 ## See Also
 
@@ -107,8 +101,4 @@ END FUNCTION
 * [SUB](SUB), [FUNCTION](FUNCTION)
 * [TYPE](TYPE), [Arrays](Arrays)
 * [$STATIC]($STATIC), [$DYNAMIC]($DYNAMIC) ([Metacommand](Metacommand)s)
-* [Data types](Data types)
-
-
-
-
+* [Data types](Data-types)

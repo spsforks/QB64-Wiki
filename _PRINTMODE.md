@@ -24,7 +24,8 @@ The [_PRINTMODE](_PRINTMODE) statement sets the text or [_FONT](_FONT) printing 
 
 ## Example(s)
 
-*Example:* Using _PRINTMODE with [PRINT](PRINT) in a graphic screen mode. The background used is CHR$(219) = █
+## Example(s)
+ Using _PRINTMODE with [PRINT](PRINT) in a graphic screen mode. The background used is CHR$(219) = █
 
 ```vb
 

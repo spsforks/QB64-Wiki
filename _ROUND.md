@@ -14,7 +14,8 @@ The [_ROUND](_ROUND) function rounds to the closest even [INTEGER](INTEGER), [LO
 * Rounding is done to the closest even [INTEGER](INTEGER) value. The same as QBasic does with [\](\).
 
 
-*Example:* Displays how QB64 rounds to the closest even integer value.
+## Example(s)
+ Displays how QB64 rounds to the closest even integer value.
 
 ```vb
 

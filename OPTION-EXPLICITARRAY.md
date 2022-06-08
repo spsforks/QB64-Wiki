@@ -19,7 +19,8 @@ DISPLAYTITLE:OPTION _EXPLICITARRAY
 
 ## Example(s)
 
-*Example:* Avoiding simple typos with [OPTION _EXPLICITARRAY](OPTION _EXPLICITARRAY) results shown in the QB64 IDE Status area.
+## Example(s)
+ Avoiding simple typos with [OPTION _EXPLICITARRAY](OPTION _EXPLICITARRAY) results shown in the QB64 IDE Status area.
 
 ```vb
 OPTION _EXPLICITARRAY

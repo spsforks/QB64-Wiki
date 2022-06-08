@@ -19,7 +19,8 @@ QB64 has console window support using the following QB64 [Metacommand](Metacomma
 <center>**Copying console screen text**</center>
 Console Window text can be copied by highlighting the text holding down the left mouse button. Once text is highlighted, right click the console window title bar to open the *Edit >* menu and click *Copy*. *Paste* and *Select All* are also available in the menu.
 
-*Example:* Copying console window text is as simple as a right click on highlighted text areas. Another right click will close console.
+## Example(s)
+ Copying console window text is as simple as a right click on highlighted text areas. Another right click will close console.
 
 ```vb
 

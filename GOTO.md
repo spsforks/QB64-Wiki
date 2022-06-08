@@ -20,7 +20,8 @@ The [GOTO](GOTO) statement sends the procedure to a line label or a line number 
 
 ## Example(s)
 
-*Example:*
+## Example(s)
+
 
 ```vb
 

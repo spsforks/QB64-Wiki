@@ -23,7 +23,8 @@ The [_RGBA32](_RGBA32) function returns the 32-bit *RGBA* color value with the s
 
 ## Example(s)
 
-*Example:* Changing the [ALPHA](ALPHA) value to fade an image in and out using a 32 bit PNG image.
+## Example(s)
+ Changing the [ALPHA](ALPHA) value to fade an image in and out using a 32 bit PNG image.
 
 ```vb
 

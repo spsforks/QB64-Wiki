@@ -1,15 +1,14 @@
 The **SQR** function returns the square root of a numerical value.
 
-
 ## Syntax
 
-> : square_root = **SQR(**value**)**
-
+> square_root = **SQR(**value**)**
 
 * The *square root* returned is normally a [SINGLE](SINGLE) or [DOUBLE](DOUBLE) numerical value.
 * The *value* parameter can be any **positive** numerical type. **Negative parameter values will not work!**
 * Other exponential root functions can use fractional exponents([^](^)) enclosed in **parenthesis only**. EX: root <nowiki> = </nowiki> c ^ (a / b)
 
+## Example(s)
 
 *Example 1:* Finding the hypotenuse of a right triangle:
 
@@ -22,31 +21,25 @@ The **SQR** function returns the square root of a numerical value.
 
 ```text
 
-
  hypotenuse = 5
 
 ```
-
-
 
 *Example 2:* Finding the Cube root of a number. 
 
 ```vb
 
- number = 8
- cuberoot = number ^ (1/3)
- PRINT cuberoot 
+number = 8
+cuberoot = number ^ (1/3)
+PRINT cuberoot 
 
 ```
 
 ```text
 
-
  2
 
 ```
-
-
 
 *Example 3:* Negative roots return fractional values of one.
 
@@ -60,13 +53,11 @@ The **SQR** function returns the square root of a numerical value.
 
 ```text
 
-
  .015625
 
 ```
 
 > *Explanation:* A negative root means that the exponent value is actually inverted to a fraction of 1. So x ^ -2 actually means the result will be: 1 / (x ^ 2).
-
 
 *Example 4:* Fast Prime number checker limits the numbers checked to the square root (half way).
 
@@ -92,7 +83,6 @@ LOOP UNTIL PR = 0
 
 ```text
 
-
 Enter any number to check up to 2 million (Enter quits): 12379
 PRIME! How'd you find me?
 
@@ -100,14 +90,9 @@ PRIME! How'd you find me?
 
 <center>*Note:* Prime numbers cannot be evenly divided by any other number except one.</center>
 
-
 ## See Also
  
-*[MOD](MOD) (integer remainder division)
-*[^](^) (exponential operator)
-*[Mathematical Operations](Mathematical Operations)
-*[Mathematical_Operations#Derived_Mathematical_Functions](Mathematical_Operations#Derived_Mathematical_Functions)
-
-
-
-
+* [MOD](MOD) (integer remainder division)
+* [^](^) (exponential operator)
+* [Mathematical Operations](Mathematical Operations)
+* [Mathematical Operations#Derived_Mathematical_Functions](Mathematical-Operations#Derived_Mathematical_Functions)

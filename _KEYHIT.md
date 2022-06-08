@@ -59,7 +59,8 @@ The [_KEYHIT](_KEYHIT) function returns [ASCII](ASCII) one and two byte, OpenGL 
 
 ## Example(s)
 
-*Example:* This routine will return the codes for any keyboard presses.
+## Example(s)
+ This routine will return the codes for any keyboard presses.
 
 ```vb
 

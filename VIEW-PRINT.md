@@ -20,7 +20,8 @@ The [VIEW PRINT](VIEW-PRINT) statement defines the boundaries of a text viewport
 
 ## Example(s)
 
-*Example:* Demonstrates how text scrolls within the text viewport.
+## Example(s)
+ Demonstrates how text scrolls within the text viewport.
 
 ```vb
 

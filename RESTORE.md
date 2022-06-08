@@ -16,7 +16,8 @@ The **RESTORE** statement is used to reset the DATA pointer to the beginning of 
 >  QBasic allowed programmers to add DATA fields anywhere because the IDE separated the main code from other procedures.
 
 
-*Example:* Restoring a labeled DATA field to avoid going past the end of DATA.
+## Example(s)
+ Restoring a labeled DATA field to avoid going past the end of DATA.
 
 ```vb
 
@@ -48,7 +49,8 @@ The month June has 30 days.
 
 
 
-*Example:* Using RESTORE to know the number of elements in the DATA in order to dimension and store the items in a array.
+## Example(s)
+ Using RESTORE to know the number of elements in the DATA in order to dimension and store the items in a array.
 
 ```vb
 

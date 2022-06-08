@@ -18,7 +18,8 @@ The [CSRLIN](CSRLIN) function returns the current text row position of the [PRIN
 
 ## Example(s)
 
-*Example:* A semicolon stops the print cursor immediately after the print.
+## Example(s)
+ A semicolon stops the print cursor immediately after the print.
 
 ```vb
 

@@ -15,7 +15,8 @@ The [ERROR](ERROR) statement is used to simulate a program error or to troublesh
 
 ## Example(s)
 
-*Example:* Creating custom error codes for a program that can be handled by an [ON ERROR](ON ERROR) handling routine.
+## Example(s)
+ Creating custom error codes for a program that can be handled by an [ON ERROR](ON ERROR) handling routine.
 
 ```vb
 

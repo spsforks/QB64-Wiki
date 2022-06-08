@@ -16,7 +16,8 @@ The [_SCREENEXISTS](_SCREENEXISTS) function returns true (-1) once a screen has 
 
 ## Example(s)
 
-*Example:* The loop waits until the screen exists to add the title.
+## Example(s)
+ The loop waits until the screen exists to add the title.
 
 ```vb
 

@@ -1,12 +1,8 @@
 The **SEEK** statement sets the next byte or record position of a file for a read or write.
 
-
-
 ## Syntax
 
-> : SEEK *filenumber&*, *position*
-
-
+> SEEK *filenumber&*, *position*
 
 * *filenumber* must be the file number that is [OPEN](OPEN) and being read or written to.
 * *position* is a byte in [BINARY](BINARY) or sequencial files created in [OUTPUT](OUTPUT), [APPEND](APPEND) or [INPUT (file mode)](INPUT (file mode))s. The first byte = 1.
@@ -15,9 +11,9 @@ The **SEEK** statement sets the next byte or record position of a file for a rea
 * After a SEEK statement, the next file operation starts at that SEEK byte position.
 * The SEEK statement can work with the [SEEK](SEEK) function to move around in a file.
 
+## Example(s)
 
-*Example:* A SEEK statement using the [SEEK](SEEK) function to move to the next random record in a file.
-
+A SEEK statement using the [SEEK](SEEK) function to move to the next random record in a file.
 
 ```vb
 
@@ -25,13 +21,7 @@ The **SEEK** statement sets the next byte or record position of a file for a rea
 
 ```
 
-
-
 ## See Also
 
 * [SEEK](SEEK) (function)
 * [GET](GET), [PUT](PUT)
-
-
-
-

@@ -12,7 +12,8 @@
 
 ## Example(s)
 
-*Example:* Dilemma...
+## Example(s)
+ Dilemma...
 
 ```vb
 

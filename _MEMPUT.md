@@ -26,7 +26,8 @@ The [_MEMPUT](_MEMPUT) statement writes data to a portion of a designated memory
 
 ## Description
 
-*Example:* _MEMPUT can be used just like [POKE](POKE) without [DEF SEG](DEF SEG).
+## Example(s)
+ _MEMPUT can be used just like [POKE](POKE) without [DEF SEG](DEF SEG).
 
 ```vb
 

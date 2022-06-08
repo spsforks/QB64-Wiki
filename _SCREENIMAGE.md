@@ -20,7 +20,8 @@ The [_SCREENIMAGE](_SCREENIMAGE) function stores the current desktop image or a 
 
 ## Example(s)
 
-*Example:* Determining the present screen resolution of user's PC for a screensaver program.
+## Example(s)
+ Determining the present screen resolution of user's PC for a screensaver program.
 
 ```vb
 

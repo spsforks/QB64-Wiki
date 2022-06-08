@@ -4,11 +4,9 @@
 
 **Scancodes** are the return values of keyboard input that can be read using [INP](INP) to find key presses and **releases**, unlike the [ASCII](ASCII) codes returned using [INKEY$](INKEY$).
 
-
 ## Syntax
 
->  scanCode% = [INP](INP)(&H60)
-
+> scanCode% = [INP](INP)(&H60)
 
 ## Description
 
@@ -42,17 +40,15 @@
 '   QB64 codes only! **Release codes = Press code + 128. Pause/Break may lock code returns.**
 
 ```
- <sub>NOTE: The above commented table can be copied and pasted directly into the QB64 IDE</sub>
+<sub>NOTE: The above commented table can be copied and pasted directly into the QB64 IDE</sub>
 
+## QBasic
 
-PageQBasic
 * In QBasic, extended keys would have the Left Shift release code 224 alternate with the actual release code. Extended keys are the Arrow keypad, Home keypad, Right Alt, and Right Ctrl keys on 101 + extended keyboards with the arrow pad, home pad and number pad.
-
 
 ## Example(s)
 
 *Example 1:* Displays the scan codes for most any keyboard press or release by the user.
-
 
 ```vb
 
@@ -68,9 +64,7 @@ LOOP UNTIL scancode% = 1  ' [Esc] key exit
 
 *Explanation:* Green is a press code and red is the release code. Num Lock mode may display the Left Shift key press(42) and release(170) codes, plus code 224, but the designated codes are returned also. **QB64** does not return those extra codes.
 
-
 *Example 2:* Unlike QBasic, INP(&H60) in **QB64** reads from a queue so you never miss a key press.
-
 
 ```vb
  
@@ -102,11 +96,10 @@ END
 
 ```
 <sub>Code by Galleon</sub>
+
 *Explanation:* INP does not clear the keyboard buffer so it may beep. To eliminate the problem use INKEY$ before or after reading with INP(96). INP will still return the press code. The array can hold more than one code return. QBasic users may note that the arrow pad and Home pad keypresses also alternate codes 42 and 170 due to Number Lock setting. That will not happen in **QB64**.
 
-
 *Example 3:* A simple MULTIKEY demo using the SC Array to hold multiple key presses for diagonal arrow key moves.
-
 
 ```vb
 
@@ -149,21 +142,19 @@ LOOP UNTIL SC(1) = 1 ' main loop until [Esc] key (scan code 1) is pressed
 
 ```
 <sub>Code by Ted Weissgerber</sub>
-*Explanation:* The SC array is used to hold all of the scancode status index values as 1 when pressed and 0 if released(see the ELSE statement). If arrow key(s) are pressed then each is moved to new positions on the screen. The coordinates are also checked to keep the box area's [GET (graphics statement)](GET (graphics statement)) and [PUT (graphics statement)](PUT (graphics statement)) statements on the screen to avoid an error. The previous background is PUT using the previous coordinates PX and PY. Then new position background box area is saved with GET before the box is placed with PUT. The box image is 16 X 16 and could use another image.
+
+*Explanation:* The SC array is used to hold all of the scancode status index values as 1 when pressed and 0 if released(see the ELSE statement). If arrow key(s) are pressed then each is moved to new positions on the screen. The coordinates are also checked to keep the box area's [GET (graphics statement)](GET-(graphics-statement)) and [PUT (graphics statement)](PUT-(graphics-statement)) statements on the screen to avoid an error. The previous background is PUT using the previous coordinates PX and PY. Then new position background box area is saved with GET before the box is placed with PUT. The box image is 16 X 16 and could use another image.
 
 
 ## See Also
 
-*[_KEYHIT](_KEYHIT), [_KEYDOWN](_KEYDOWN)
-*[ASC](ASC), [ASCII](ASCII)
-*[Keyboard scancodes](Keyboard scancodes)
-*[Creating Sprite Masks](Creating Sprite Masks)
-* [Windows_Libraries#Hot_Keys_.28maximize.29](Windows_Libraries#Hot_Keys_.28maximize.29)
-
+* [_KEYHIT](_KEYHIT), [_KEYDOWN](_KEYDOWN)
+* [ASC](ASC), [ASCII](ASCII)
+* [Keyboard scancodes](Keyboard-scancodes)
+* [Creating Sprite Masks](Creating-Sprite Masks)
+* [Windows_Libraries#Hot_Keys_.28maximize.29](Windows-Libraries#Hot_Keys_.28maximize.29)
 
 ### External Links
 
-* [http://www.quadibloc.com/comp/scan.htm Keyboard Scan Codes]
-* [http://www.win.tue.nl/~aeb/linux/kbd/scancodes.html Other Keyboards]
-
-
+* [Keyboard Scan Codes](http://www.quadibloc.com/comp/scan.htm)
+* [Other Keyboards](http://www.win.tue.nl/~aeb/linux/kbd/scancodes.html)

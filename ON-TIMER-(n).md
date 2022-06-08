@@ -43,7 +43,8 @@ The [ON_TIMER(n)](ON_TIMER(n)) statement sets up a timed event to be repeated at
 
 ## Example(s)
 
-*Example:* Using a numbered TIMER to check the mouse button press status in **QB64**.
+## Example(s)
+ Using a numbered TIMER to check the mouse button press status in **QB64**.
 
 ```vb
 

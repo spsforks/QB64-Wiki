@@ -30,7 +30,8 @@ A **TIMER** statement enables, turns off or stops timer event trapping. QBasic o
 
 ## Example(s)
 
-*Example:* How to update the time while [PRINT](PRINT) at the same time in a program.
+## Example(s)
+ How to update the time while [PRINT](PRINT) at the same time in a program.
 
 ```vb
 

@@ -15,7 +15,8 @@ The [_WIDTH (function)](_WIDTH-(function)) function returns the width of an imag
 
 ## Example(s)
 
-*Example:* A SUB program that centers text in any graphic screen mode except text mode [SCREEN (statement)](SCREEN-(statement)) 0.
+## Example(s)
+ A SUB program that centers text in any graphic screen mode except text mode [SCREEN (statement)](SCREEN-(statement)) 0.
 
 ```vb
 

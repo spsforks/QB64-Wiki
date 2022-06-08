@@ -26,7 +26,8 @@ The [_MEMGET](_MEMGET) function returns a value from a specific memory block nam
 
 ## Example(s)
 
-*Example:* [DEF SEG](DEF SEG) and [VARPTR](VARPTR) are no longer necessary to do things in memory just like [POKE](POKE) and [PEEK](PEEK) do.
+## Example(s)
+ [DEF SEG](DEF SEG) and [VARPTR](VARPTR) are no longer necessary to do things in memory just like [POKE](POKE) and [PEEK](PEEK) do.
 
 ```vb
 
