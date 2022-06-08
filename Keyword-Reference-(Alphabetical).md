@@ -30,7 +30,7 @@
 * [CALL ABSOLUTE](CALL-ABSOLUTE) (statement) is used to access computer interrupt registers.
 * [CALLS](CALLS) (non-BASIC call statement)
 * [CASE](CASE) ([SELECT CASE](SELECT-CASE) condition) designates specific conditions in a [SELECT CASE](SELECT-CASE) statement block.
-* [CASE ELSE](CASE ELSE) ([SELECT CASE](SELECT-CASE) condition) designates an alternative condition to be evaluated in a [SELECT CASE](SELECT-CASE) statement block.
+* [CASE ELSE](CASE-ELSE) ([SELECT CASE](SELECT-CASE) condition) designates an alternative condition to be evaluated in a [SELECT CASE](SELECT-CASE) statement block.
 * [CASE IS](CASE-IS) ([SELECT CASE](SELECT-CASE) condition) designates specific conditions in a [SELECT CASE](SELECT-CASE) statement block.
 * [CDBL](CDBL) (function) returns the closest [DOUBLE](DOUBLE) value of a number.
 * [CDECL](CDECL) ([DECLARE (non-BASIC statement)](DECLARE (non-BASIC statement)))
