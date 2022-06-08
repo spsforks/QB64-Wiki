@@ -11,10 +11,7 @@
 * [$COLOR]($COLOR):0 adds [CONST](CONST) for colors 0-15. The actual constant names can be found in the file **source/utilities/color0.bi**.
 * [$COLOR]($COLOR):32 adds [CONST](CONST) for 32-bit colors, similar to HTML color names. The actual constant names can be found in the file **source/utilities/color32.bi**.
 * [$COLOR]($COLOR) is a shorthand to manually using [$INCLUDE]($INCLUDE) pointing to the files listed above.
-
-> Red would conflict with [_RED](_RED), Green would conflict with [_GREEN](_GREEN), and Blue would conflict with [_BLUE](_BLUE), once the underscore was removed from those commands with [$NOPREFIX]($NOPREFIX).
- 
-> To prevent these conflicts, the [COLOR](COLOR) values have had **NP_** prepended to the front of them, to distinguish them from the non-prefixed command names.  All other color names remain the same, with only the three colors in conflict having to use **NP_** (for **N**o **P**refix) in front of them.
+* Not compatible with [$NOPREFIX]($NOPREFIX).
 
 ## Example(s)
 
@@ -32,7 +29,7 @@ Bright white on red.
 
 ```
 
-;Example 2:Adding named color constants for 32-bit modes.
+Example 2: Adding named color constants for 32-bit modes.
 
 ```vb
 
@@ -40,19 +37,6 @@ SCREEN _NEWIMAGE(640, 400, 32)
 $COLOR:32
 COLOR CrayolaGold, DarkCyan
 PRINT "CrayolaGold on DarkCyan."
-
-```
-
-Example 3:Adding named color constants for 32-bit modes (with $NOPREFIX in effect).
-
-```vb
-
-SCREEN _NEWIMAGE(640, 400, 32)
-$COLOR:32
-$NOPREFIX
-COLOR NP_Red, White 'notice the NP_ in front of Red?  
-'This is to distinguish the color from the command with $NOPREFIX.
-PRINT "Red on White."
 
 ```
 
