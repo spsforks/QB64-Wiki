@@ -1,7 +1,8 @@
 The **semicolon** is used in a [PRINT](PRINT) statement to stop the screen print cursor immediately after the printed value. 
 
 
-*Usage:* COLOR 13: PRINT "Value ="; value1; value2; value3
+## Usage
+ COLOR 13: PRINT "Value ="; value1; value2; value3
 
 
 ```text
@@ -22,7 +23,8 @@ The **semicolon** is used in a [PRINT](PRINT) statement to stop the screen print
 * [Semicolon](Semicolon)s cannot be used in or following a [WRITE](WRITE) statement!
 
 
-*See also:*
+## See Also
+
 
 * [Comma](Comma)
 * [PRINT](PRINT), [PRINT USING](PRINT USING)

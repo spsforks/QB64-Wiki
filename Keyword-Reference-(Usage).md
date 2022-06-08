@@ -786,7 +786,8 @@ The following table describes the error codes that are reported by the **QB64** 
 
 * [SCREEN](SCREEN) sets the screen mode of a program. No statement defaults the program to SCREEN 0 text mode.
 
-<center>*See also:* [C_Libraries#Console_Window](C_Libraries#Console_Window),  [Windows_Libraries#Hot_Keys_.28maximize.29](Windows_Libraries#Hot_Keys_.28maximize.29) or [Windows_Libraries#Focus](Windows_Libraries#Focus).</center>
+<center>## See Also
+ [C_Libraries#Console_Window](C_Libraries#Console_Window),  [Windows_Libraries#Hot_Keys_.28maximize.29](Windows_Libraries#Hot_Keys_.28maximize.29) or [Windows_Libraries#Focus](Windows_Libraries#Focus).</center>
 
 ##  QB64 Programming Symbols 
 

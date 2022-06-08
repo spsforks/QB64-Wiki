@@ -12,7 +12,8 @@ The [PRINT](PRINT) statement prints numeric or string expressions to the program
 * The print statement can be followed by a [semicolon](semicolon) to stop the print cursor or a [comma](comma) to tab space the next print.
 
 
-*Usage:*
+## Usage
+
 * [STRING](STRING) values will eliminate leading and trailing quotation marks when printed to the screen. Use [CHR$](CHR$)(34) to add quotes to the [SCREEN](SCREEN).
 * PRINT with no parameters moves the print cursor to the next print row at column 1.
 * expression is a numeric or string expression to be printed.

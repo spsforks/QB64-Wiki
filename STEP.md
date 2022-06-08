@@ -59,7 +59,8 @@ PAINT STEP(0, 0), 13, 12
 > *Explanation:* PAINT uses the CIRCLE's center coordinate position to paint the interior.
 
 
-*See also:* 
+## See Also
+ 
 * [FOR...NEXT](FOR...NEXT)
 * [DRAW](DRAW) (see the M relative move function)
 * [LINE](LINE), [CIRCLE](CIRCLE), [PSET](PSET), [PAINT](PAINT)

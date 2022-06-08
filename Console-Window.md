@@ -39,7 +39,8 @@ PRINT "Copy this text by highlighting and right clicking!"
 <center>*Note:* A second right click may Paste the clipboard text to the DOS command line instead of closing console.</center>
 
 
-*See also:*
+## See Also
+
 * [$SCREENHIDE]($SCREENHIDE), [$SCREENSHOW]($SCREENSHOW)
 * [$CONSOLE]($CONSOLE), [_CONSOLE](_CONSOLE), [_DEST](_DEST)
 * [C_Libraries#Console_Window](C_Libraries#Console_Window)

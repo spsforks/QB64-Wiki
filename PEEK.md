@@ -58,7 +58,8 @@ The **PEEK** function returns the value that is contained at a certain memory ad
 *See Example:* [SelectScreen](SelectScreen) (Screen 0 row highlighting)
 
 
-*See also:* 
+## See Also
+ 
 * [POKE](POKE) (write to memory), [INP](INP) (read register) 
 * [DEF SEG](DEF SEG), [VARSEG](VARSEG), [VARPTR](VARPTR) 
 * [_MEMGET (function)](_MEMGET (function)), [_MEMPUT](_MEMPUT)

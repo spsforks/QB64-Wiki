@@ -8,7 +8,8 @@ The **SHELL** function displays the console and returns the [INTEGER](INTEGER) c
 
 * The literal or variable [STRING](STRING) *command* parameter can be any valid external command or call to another program.
 
-*Usage:*
+## Usage
+
 
 * A SHELL to a QB64 EXE program with an exit return code parameter after [END](END) or [SYSTEM](SYSTEM) will return that code value.
 * The return_code is usually 0 when the external program ends with no errors.

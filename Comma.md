@@ -1,7 +1,8 @@
 The **comma** is used to [TAB](TAB) the cursor after a [PRINT](PRINT) statement's text to tab append another printed value.
 
 
-*Usage:* INPUT "Name, age and sex(M or F): ", nm$, age%, sex$
+## Usage
+ INPUT "Name, age and sex(M or F): ", nm$, age%, sex$
 
 
 * Commas in [PRINT](PRINT) statements [TAB](TAB) space values up to 15 column places with column 57 being the maximum per row. 
@@ -49,7 +50,8 @@ COLOR 12: LOCATE 4, 1: WRITE value1, value2, value3
 
 
 
-*See also:*
+## See Also
+
 * [Semicolon](Semicolon), [Colon](Colon)
 * [TAB](TAB), [SPC](SPC), [SPACE$](SPACE$)
 * [PRINT](PRINT), [PRINT USING](PRINT USING)

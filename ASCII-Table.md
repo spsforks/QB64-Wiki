@@ -380,7 +380,8 @@
 |}
 
 
-*See also:* 
+## See Also
+ 
 
 * [ASCII](ASCII), [Unicode](Unicode)
 

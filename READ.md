@@ -75,7 +75,8 @@ DATA 5.08, 5.55, 4.00, 3.16, 3.37
 
 
 
-*See also:* 
+## See Also
+ 
 * [DATA](DATA), [RESTORE](RESTORE)
 * [PRINT USING](PRINT USING)
 * [OPEN](OPEN) FOR [INPUT (file mode)](INPUT (file mode)) (file statement)

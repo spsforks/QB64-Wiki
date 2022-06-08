@@ -13,7 +13,8 @@ The **SCREEN** function returns the [ASCII](ASCII) code of a text character or t
 
 
 
-*Usage:*
+## Usage
+
 * The *code* value returned is the [ASCII](ASCII) code from 0 to 255. Returns 32([SPACE$](SPACE$)) when no character is found at a coordinate.
 * If the *colorflag* value is omitted or it is 0, the function returns the [ASCII](ASCII) code of the text character at the position designated.
 * When the *flag* value is greater than 0 in **SCREEN 0**, the function returns the foreground and background color attribute of text position.
@@ -102,7 +103,8 @@ END
 > *Explanation:* The SCREEN page one is used to hide the [FILES](FILES) display using COLOR 0. The [SCREEN (function)](SCREEN (function)) function reads the top of the screen page text and creates the current path string. It is then printed on the visual page.
 
 
-*See also:* 
+## See Also
+ 
 * [PRINT](PRINT), [SCREEN](SCREEN)
 * [COLOR](COLOR), [CHR$](CHR$), [POINT](POINT)
 * [CSRLIN](CSRLIN), [POS](POS), [ASCII](ASCII)

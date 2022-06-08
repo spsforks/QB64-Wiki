@@ -155,7 +155,8 @@ END FUNCTION
 ## References
 
 
-*See also:*
+## See Also
+
 * [VB Procedures](VB Procedures)
 
 

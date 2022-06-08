@@ -12,7 +12,8 @@ The **PRESET** graphic [SCREEN](SCREEN) statement turns a pixel at a coordinate 
 * If the *colorAttribute* is omitted, PRESET will use the current [_DEST](_DEST) page's [_BACKGROUNDCOLOR](_BACKGROUNDCOLOR).
 
 
-*Usage:*
+## Usage
+
 * Color attributes are limited to those available in the [SCREEN](SCREEN) mode used. [PSET](PSET) can be used to adopt previously used colors.
 * Any color value other than 0 will be white in monochrome [SCREEN](SCREEN) modes 2 and 11 where the [COLOR](COLOR) statement cannot be used.
 * PRESET can invisibly locate other graphics objects like [CIRCLE](CIRCLE)s and add color to subsequent graphic objects and [DRAW](DRAW) when used.
@@ -139,7 +140,8 @@ END SUB
 >  *Explanation:* Using the [PUT (graphics statement)](PUT (graphics statement)) PRESET action highlights the menu selection in graphic screen modes by returning a negative image.
  
 
-*See also:* 
+## See Also
+ 
 
 * [PUT (graphics statement)](PUT (graphics statement))
 * [GET (graphics statement)](GET (graphics statement))

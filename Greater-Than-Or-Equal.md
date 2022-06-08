@@ -4,7 +4,8 @@ The **>=** condition symbol denotes that a value must be greater than or equal t
 *Example usage:* IF x [Greater_Than](Greater_Than) 320 THEN PRINT "Right or center of screen"
 
 
-*See also:*
+## See Also
+
 
 * [Equal](Equal)
 * [Not_Equal](Not_Equal)

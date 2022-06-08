@@ -1,7 +1,8 @@
 **Scientific notation** or [^](^) notation is used to express very large or small numerical values by [SINGLE](SINGLE) or [DOUBLE](DOUBLE) accuracy.
 
 
-*Usage:* -9.7587E+04 or 4.6545D-9
+## Usage
+ -9.7587E+04 or 4.6545D-9
 
 
 * **E** denotes [SINGLE](SINGLE) precision accuracy and **D** denotes [DOUBLE](DOUBLE) precision accuracy in QBasic. D and E are considered numbers!
@@ -66,7 +67,8 @@ END FUNCTION
 
 
 
-*See also:*
+## See Also
+
 
 * [^](^)
 * [SINGLE](SINGLE), [DOUBLE](DOUBLE)

@@ -68,7 +68,8 @@ END
 <sub>Code by Michael Calkins as Public Domain(2011)</sub>
 -->
 
-*See also:* 
+## See Also
+ 
 * [DEF SEG = 0](DEF SEG = 0)
 * [VARPTR](VARPTR), [VARSEG](VARSEG) 
 * [PEEK](PEEK), [POKE](POKE)

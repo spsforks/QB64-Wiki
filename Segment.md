@@ -24,7 +24,8 @@ The value in a Segment register is multiplied by 16 or shifted one hexadecimal b
 The Offset value is the position of a value after the segment address. Many pairs can be used to refer to the same memory position.
 
 
-*See also:*
+## See Also
+
 * [DEF SEG](DEF SEG), [DEF SEG = 0](DEF SEG = 0)
 * [PEEK](PEEK), [POKE](POKE)
 * [VARSEG](VARSEG), [VARPTR](VARPTR)

@@ -18,7 +18,8 @@ The [SCREEN](SCREEN) statement sets the video display mode and size of the progr
 * If the SCREEN mode supports pages, the *active page* is the page to be worked on while *visual page* is the one displayed.
 
 
-*Usage:* 
+## Usage
+ 
 * No SCREEN statement in a program defaults to [SCREEN](SCREEN) 0 text ONLY mode.
 * A SCREEN statement that changes screen modes also clears the screen like [CLS](CLS). Nothing on the screen is retained.
 * Some screen mode text sizes are adjustable with [WIDTH](WIDTH) and all **QB64** screens support [PCOPY](PCOPY) and page flipping.  

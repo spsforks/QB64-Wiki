@@ -101,7 +101,8 @@ SYSTEM
 
 
 
-*See also:* 
+## See Also
+ 
 * [_BIT](_BIT), [&B](&B), [_BYTE](_BYTE)
 * [_SHL](_SHL), [_SHR](_SHR)
 * [AND](AND), [OR](OR), [XOR](XOR), [EQV](EQV), [IMP](IMP)

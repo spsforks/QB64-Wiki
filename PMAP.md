@@ -59,7 +59,8 @@ END
 >  *Note:* If physical screen coordinates are (0, 0) in the upper-left corner and (639, 479) in the lower-right corner, then the statements return the screen coordinate's equal to the view coordinates 90, 100.
 
 
-*See also:* 
+## See Also
+ 
 * [WINDOW](WINDOW), [VIEW](VIEW)
 * [VIEW PRINT](VIEW PRINT)
 

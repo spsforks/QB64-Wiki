@@ -1,7 +1,8 @@
 **Concatenation** is a process where literal or variable [STRING](STRING) values are combined using the [+](+) operator.
 
 
-*Usage:* value$ = "Literal text" + string_variable$ + "more text."
+## Usage
+ value$ = "Literal text" + string_variable$ + "more text."
 
 
 * The [STRING](STRING) values added can be literal or string variable values or a string [FUNCTION](FUNCTION) value.
@@ -59,7 +60,8 @@ Billy sold 102 boxes for $306.
 
 
 
-*See also:*
+## See Also
+
 
 * [PRINT](PRINT), [PRINT USING](PRINT USING)
 * [CHR$](CHR$), [STR$](STR$), [VARPTR$](VARPTR$)

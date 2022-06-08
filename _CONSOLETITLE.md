@@ -32,7 +32,8 @@ END
 > *Note:* You can also use [SHELL](SHELL) "title consoletitle" to set the title of the console window. However, **the recommended practice is to use [_CONSOLETITLE](_CONSOLETITLE)**.
 
 
-*See also:*
+## See Also
+
 * [$CONSOLE]($CONSOLE), [_CONSOLE](_CONSOLE)
 * [$SCREENHIDE]($SCREENHIDE), [$SCREENSHOW]($SCREENSHOW)
 * [_SCREENHIDE](_SCREENHIDE), [_SCREENSHOW](_SCREENSHOW)

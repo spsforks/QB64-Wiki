@@ -362,7 +362,8 @@ LOOP UNTIL x$ = CHR$(27) 'Escape key exit
 ## Reference
 
 
-*See also:* 
+## See Also
+ 
 * [INKEY$](INKEY$), [ASCII](ASCII), [ASC](ASC) 
 * [_KEYHIT](_KEYHIT), [_KEYDOWN](_KEYDOWN), [_KEYCLEAR](_KEYCLEAR)
 * [ON KEY(n)](ON KEY(n)), [KEY(n)](KEY(n)), [KEY](KEY), 

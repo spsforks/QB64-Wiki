@@ -53,7 +53,8 @@ Enter a name to search for... █
 >  *Explanation:* The red [semicolon](semicolon) after LINE INPUT acts like a semicolon after a [PRINT](PRINT), which keeps the print cursor on the same row.
 
 
-*See also:* 
+## See Also
+ 
 * [INPUT (file mode)](INPUT (file mode)), [INPUT (file statement)](INPUT (file statement)), [LINE INPUT (file statement)](LINE INPUT (file statement))
 * [INPUT](INPUT), [INPUT$](INPUT$) (keyboard input)
 * [COLOR](COLOR), [LOCATE](LOCATE) 

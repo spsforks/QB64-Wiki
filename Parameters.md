@@ -10,7 +10,8 @@ Optional **parameters** are values passed to [SUB](SUB) and [FUNCTION](FUNCTION)
 > :: FunctionName[**(*parameter***[**, ...**]**)**]
 
 
-*Usage:*
+## Usage
+
 * Inside of sub-procedures, multiple parameters variables are separated by [comma](comma)s in a list and always enclosed inside of parenthesis.
 * When [CALL](CALL) is used to call a [SUB](SUB) procedure all parameters must be enclosed inside parenthesis too.
 * When just the procedure name is used to call a [SUB](SUB), the parameters are listed after the name. Multiple parameters require commas.
@@ -20,7 +21,8 @@ Optional **parameters** are values passed to [SUB](SUB) and [FUNCTION](FUNCTION)
 * To pass [arrays](arrays) to a sub-procedure use empty brackets after the name or indicate the index in the call.
 
 
-*See also:*
+## See Also
+
 * [SUB](SUB)
 * [FUNCTION](FUNCTION)
 * [CALL](CALL)

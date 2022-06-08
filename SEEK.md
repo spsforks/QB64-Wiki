@@ -14,7 +14,8 @@ The **SEEK** function returns the current byte or record position in a file.
 * Devices that do not support SEEK (SCRN, CONS, KBRD, COMn and LPTn) return 0. 
 
 
-*See also:* 
+## See Also
+ 
 *[SEEK (statement)](SEEK (statement)) 
 *[LOC](LOC)
 

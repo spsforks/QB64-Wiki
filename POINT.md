@@ -32,7 +32,8 @@ Graphic cursor position syntax:
 * Graphic cursor positions returned will be the last ones used in a graphic shape such as a [CIRCLE](CIRCLE) center point.
 
 
-*Usage:*
+## Usage
+
 * Use **[_SOURCE](_SOURCE)** first to set the image handle that POINT should read or QB64 will assume the current source image.
 > : **_SOURCE 0** 'sets POINT to read the current SCREEN image after reading a previous source image
 * **POINT cannot be used in SCREEN 0!** Use the [SCREEN (function)](SCREEN (function)) function to point text character codes and colors in SCREEN 0.
@@ -159,7 +160,8 @@ END
 
 
 
-*See also:* 
+## See Also
+ 
 * [_NEWIMAGE](_NEWIMAGE), [_LOADIMAGE](_LOADIMAGE) (see 32 bit modes)
 * [_MEMIMAGE](_MEMIMAGE), [_MEMGET](_MEMGET)
 * [PSET](PSET), [PRESET](PRESET)

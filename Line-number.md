@@ -112,7 +112,8 @@ RESUME NEXT
 <sub>Code courtesy of Pete from the Network 54 Qbasic Forum</sub>
 
 
-*See also:*
+## See Also
+
 * [GOTO](GOTO) , [RUN](RUN)
 * [GOSUB](GOSUB) , [RETURN](RETURN)
 * [RESUME](RESUME), [NEXT](NEXT)

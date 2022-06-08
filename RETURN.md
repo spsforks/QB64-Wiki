@@ -12,7 +12,8 @@
 * *line number* or *linelabel* after the RETURN statement returns code execution to that label.
 
 
-*Usage:*
+## Usage
+
 * Normally required at the end of a [GOSUB](GOSUB) procedure unless the procedure returns using a loop.
 * RETURN is not used in error handling procedures. Error procedures use [RESUME](RESUME) *line number* or [RESUME](RESUME).
 * GOSUB procedures use line numbers or line labels designated with a colon after the number or label.
@@ -83,7 +84,8 @@ it went here.
 
 
 
-*See also:* 
+## See Also
+ 
 * [GOSUB](GOSUB), [GOTO](GOTO)
 * [RESUME](RESUME)
 

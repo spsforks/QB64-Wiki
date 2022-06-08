@@ -554,7 +554,8 @@ SYSTEM
 
 ## References
 
-*See also:*
+## See Also
+
 * [_OFFSET](_OFFSET), [_MEM](_MEM)
 * [DIM](DIM), [_DEFINE](_DEFINE)
 * [TYPE](TYPE)

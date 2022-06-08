@@ -108,7 +108,8 @@ ABCDEFGHI         9
 >  *Note:* The 2 byte file padders before each string PUT will show the length of a string for GET as [ASCII](ASCII) characters. Padders will always be 2 bytes and strings up to the last one will be 13 bytes each no matter the length up to 11, so the file size can be determined as (2 + 11) + (2 + 9 + 2) + (2 + 4) or 13 + 13 + 2 + 4 = 32 bytes. 
 
 
-*See also:* 
+## See Also
+ 
 * [GET](GET), [PUT](PUT), [FIELD](FIELD)
 * [BINARY](BINARY) 
 * [SEEK](SEEK), [SEEK (statement)](SEEK (statement))

@@ -73,7 +73,8 @@ END FUNCTION
 >  *Note:* Function returns the negative handle value with up to 256 colors or 32 for 32 bit in QB64 [_NEWIMAGE](_NEWIMAGE) screens.
 
 
-*See also:*
+## See Also
+
 * [SCREEN](SCREEN)
 * [SCREEN (function)](SCREEN (function))
 * [_NEWIMAGE](_NEWIMAGE)

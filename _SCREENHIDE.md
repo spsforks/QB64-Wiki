@@ -12,7 +12,8 @@ The **_SCREENHIDE** statement can be used to hide the main program window in a s
 * _SCREENHIDE or [$SCREENHIDE]($SCREENHIDE) must be used before [_SCREENSHOW](_SCREENSHOW) or [$SCREENSHOW]($SCREENSHOW) can be used!
 
 
-*See also:*
+## See Also
+
 
 * [$SCREENHIDE]($SCREENHIDE), [$SCREENSHOW]($SCREENSHOW), [$CONSOLE]($CONSOLE) (QB64 [Metacommand](Metacommand)s)
 * [_SCREENSHOW](_SCREENSHOW), [_CONSOLE](_CONSOLE)

@@ -31,7 +31,8 @@
 > ***X** **+** [VARPTR$](VARPTR$)(string-expression) - executes a command string variable. **MUST be used with variables!**.
 
 
-*Usage:*
+## Usage
+
 * MB will allow music to play while program code progresses. MF will wait for code to continue playing notes.
 * Command string values are not case sensitive and spacing is ignored. Use upper or lower case as desired.
 ***NOTE: In QB64, PLAY may NOT delay program progress! Use [_DELAY](_DELAY) and [END](END) to allow music completion.**
@@ -342,7 +343,8 @@ PLAY x
 ```<sub>Code by Luke</sub>
 
 
-*See also:** 
+## See Also
+* 
 * [SOUND](SOUND), [DRAW](DRAW)
 * [_SNDRAW](_SNDRAW) (play frequency waves)
 * [_SNDOPEN](_SNDOPEN) (play sound files)

@@ -18,7 +18,8 @@ The **=** condition symbol denotes that a value must equal another value for the
 > : A = B = C will be converted to A = (B = C) so if B = C then A = -1. If not, then A = 0
 
 
-*See also:*
+## See Also
+
 
 * [Not_Equal](Not_Equal)
 * [Greater_Than](Greater_Than)

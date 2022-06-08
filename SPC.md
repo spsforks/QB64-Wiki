@@ -11,7 +11,8 @@ The [SPC](SPC) function is used in [PRINT](PRINT) and [LPRINT](LPRINT) statement
 * *count* designates the number of column spaces to move the cursor in a [PRINT](PRINT) statement.
 
 
-*Usage:*
+## Usage
+
 * When used in a [PRINT](PRINT) statement,
 ** count% is the number of space characters to print, overwriting existing characters.
 ** If count% is greater than the number of columns left in the current row, remaining space characters are printed on the next row.

@@ -11,7 +11,8 @@ The **EXIT FUNCTION** statement can be used to exit the [FUNCTION](FUNCTION) bef
 
 
 
-*See also:* 
+## See Also
+ 
 * [EXIT SUB](EXIT SUB)
 * [EXIT DO](EXIT DO), [EXIT FOR](EXIT FOR)
 

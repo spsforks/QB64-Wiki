@@ -21,7 +21,8 @@
 * Line numbers and labels are not allowed after SUB/FUNCTION blocks. They are allowed inside SUB/FUNCTIONS though.
 
 
-*See also:*
+## See Also
+
 * [GOTO](GOTO), [RUN](RUN) 
 * [GOSUB](GOSUB), [RETURN](RETURN)
 * [DATA](DATA), [RESTORE](RESTORE)

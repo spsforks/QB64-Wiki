@@ -77,7 +77,8 @@ The actual image is read as pixel attributes from the image bottom to the top fo
 
 
 
-*See also:*
+## See Also
+
 * [_LOADIMAGE](_LOADIMAGE), [_ICON](_ICON), [$EXEICON]($EXEICON)
 * [SCREEN (statement)](SCREEN (statement))
 * [TYPE](TYPE), [MKI$](MKI$), [MKL$](MKL$)

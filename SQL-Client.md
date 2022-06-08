@@ -548,7 +548,8 @@ This works in Linux (Ubuntu) too with minimal changes:
 ## References
 
 
-*See also:*
+## See Also
+
 * [DECLARE LIBRARY](DECLARE LIBRARY)
 * [ALIAS](ALIAS), [BYVAL](BYVAL)
 * [_OFFSET](_OFFSET)

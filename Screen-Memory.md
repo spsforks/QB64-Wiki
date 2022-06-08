@@ -83,7 +83,8 @@ Byte offset:    0, 1               640     642     644     646     648     650  
 * **QB64** [_NEWIMAGE](_NEWIMAGE) or [_LOADIMAGE](_LOADIMAGE) screen modes can use the legacy modes above, 256 color or 32 bit color modes.
 
 
-*See also:*
+## See Also
+
 
 * [PEEK](PEEK), [POKE](POKE)
 * [DEF SEG = 0](DEF SEG = 0)

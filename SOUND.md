@@ -142,7 +142,8 @@ DATA 440,8,"bring ",587,8,"back ",523,8,"my ",494,8,"Bon-",440,8,"nie ",494,8,"t
 <sub>Code adapted by Ted Weissgerber from code [http://www.amazon.com/Running-MS-DOS-QBASIC-Michael-Halvorson/dp/1556153406 "Running MS-DOS QBasic"] by Microsoft Press</sub>
 
 
-*See also:* 
+## See Also
+ 
 * [PLAY](PLAY), [BEEP](BEEP)
 * [_SNDOPEN](_SNDOPEN) (play sound files)
 * [_SNDRAW](_SNDRAW)  (play frequency waves)

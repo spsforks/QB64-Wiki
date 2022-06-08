@@ -268,7 +268,8 @@ END SUB
 
 
 
-*See also:*
+## See Also
+
 * [_LOADIMAGE](_LOADIMAGE)
 * [Bitmaps](Bitmaps), [Icons and Cursors](Icons and Cursors)
 

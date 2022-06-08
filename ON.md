@@ -10,7 +10,8 @@ ON creates event procedure calls or enables event trapping.
 * If you have used the [$CHECKING]($CHECKING):[OFF](OFF) metacommand, [$CHECKING]($CHECKING):**ON** will turn on c++ error checking again.
 
 
-*See also:* 
+## See Also
+ 
 
 [ON...GOSUB](ON...GOSUB), [ON...GOTO](ON...GOTO) 
 

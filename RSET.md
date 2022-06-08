@@ -43,7 +43,8 @@ Over ten c
 > *Explanation:* Notice how "Hello!" ends at the tenth position because the length of *thestring* is 10. When we used SPACE$(20) the length of *anystring$* became 20 so "Hello Again!" ended at the 20th position. That is right-justified. The last line "Over ten c" is truncated as it didn't fit into *thestring**s length of only 10 characters.
 
 
-*See also:* 
+## See Also
+ 
 * [RTRIM$](RTRIM$), [FIELD](FIELD)
 * [LSET](LSET), [LTRIM$](LTRIM$)
 * [PUT](PUT), [GET](GET)

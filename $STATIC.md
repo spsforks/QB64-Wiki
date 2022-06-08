@@ -31,7 +31,8 @@ PRINT UBOUND(array)
 >  *Note:* [DIM](DIM) using a literal numerical size will create a Duplicate definition error.
 
 
-*See also:* 
+## See Also
+ 
 * [$DYNAMIC]($DYNAMIC), [STATIC](STATIC)
 * [Arrays](Arrays), [Metacommand](Metacommand)
 

@@ -12,7 +12,8 @@ The **PSET** grahics [SCREEN (statement)](SCREEN (statement)) statement sets a p
 * If the *colorAttribute* is omitted, PSET will use the current [_DEST](_DEST) page's _DEFAULTCOLOR.
 
 
-*Usage:*
+## Usage
+
 * *Color attributes* are limited to the SCREEN mode used. Any color value other than 0 will be white in [SCREEN (statement)](SCREEN (statement))s 2 or 11.
 * PSET can locate other graphics objects and color [DRAW](DRAW) statements.
 * The PSET action can be used in a graphics [PUT (graphics statement)](PUT (graphics statement)) to produce an identical image on any background.
@@ -155,7 +156,8 @@ END SUB
 >  *Notes:* Left click, to zoom in on the rectangle. Right click, to zoom out. Up arrow makes the rectangle bigger and down arrow makes the rectangle smaller. 
 
 
-*See also:* 
+## See Also
+ 
 * [PRESET](PRESET), [CIRCLE](CIRCLE), [LINE](LINE)
 * [COLOR](COLOR), [POINT](POINT)
 * [PUT (graphics statement)](PUT (graphics statement))

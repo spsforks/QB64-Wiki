@@ -86,7 +86,8 @@ LOOP UNTIL k$ = CHR$(27)
 <sub>Code by AlgoreIthm</sub>
 
 
-*See also:* 
+## See Also
+ 
 * [IF...THEN](IF...THEN), [SELECT CASE](SELECT CASE)
 * [Binary](Binary), [ABS](ABS), [SGN](SGN)
 * [AND](AND), [OR](OR), [XOR](XOR)

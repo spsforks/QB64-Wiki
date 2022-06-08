@@ -954,7 +954,8 @@ NEXT
 <p style="text-align: center">([#toc](#toc))</p>
 
 
-*See also:*
+## See Also
+
 * [DECLARE LIBRARY](DECLARE LIBRARY), [BYVAL](BYVAL)
 * [_OFFSET](_OFFSET), [_OFFSET (function)](_OFFSET (function)) (lp, ptr and p names)
 * [DLL Libraries](DLL Libraries), [Windows Libraries](Windows Libraries)

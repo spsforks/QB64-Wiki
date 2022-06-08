@@ -1,7 +1,8 @@
 A **quotation mark** delimits the start and end of a literal [STRING](STRING) value. 
 
 
-*Usage:* string_value$ = "This is a text STRING."
+## Usage
+ string_value$ = "This is a text STRING."
 
 
 * The quotation mark must delimit the ends of a string or text prompt in a [PRINT](PRINT), [WRITE](WRITE), [INPUT](INPUT) or [LINE INPUT](LINE INPUT) statement. 
@@ -15,7 +16,8 @@ A **quotation mark** delimits the start and end of a literal [STRING](STRING) va
 * Literal [DATA](DATA) strings do not require quotation marks unless the value is a keyword, uses commas or has end spaces.
 
 
-*See also:*
+## See Also
+
 
 * [STRING](STRING), [PRINT](PRINT), [WRITE](WRITE)
 * [CHR$](CHR$), [LINE INPUT](LINE INPUT)

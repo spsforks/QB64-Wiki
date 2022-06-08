@@ -14,7 +14,8 @@ The ***** mathematical operator performs the multiplication of two values.
 
 
 
-*See also:*
+## See Also
+
 
 [Mathematical Operations](Mathematical Operations)
 

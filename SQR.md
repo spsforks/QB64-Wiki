@@ -101,7 +101,8 @@ PRIME! How'd you find me?
 <center>*Note:* Prime numbers cannot be evenly divided by any other number except one.</center>
 
 
-*See also:* 
+## See Also
+ 
 *[MOD](MOD) (integer remainder division)
 *[^](^) (exponential operator)
 *[Mathematical Operations](Mathematical Operations)

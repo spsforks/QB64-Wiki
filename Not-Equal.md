@@ -8,7 +8,8 @@ The **<>** condition symbol denotes that a value must not equal another value fo
 * More than one <> symbol in a numerical statement will create a [Boolean](Boolean) evaluation of the ensuing numerical pairs.
 
 
-*See also:*
+## See Also
+
 
 * [Equal](Equal)
 * [Greater_Than](Greater_Than)

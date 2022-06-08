@@ -259,7 +259,8 @@ END SUB
 *[Bitmaps](Bitmaps)
 
 
-*See also:*
+## See Also
+
 
 * [_LOADIMAGE](_LOADIMAGE)
 * [POINT](POINT), [PUT](PUT)

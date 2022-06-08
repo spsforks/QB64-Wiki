@@ -69,7 +69,8 @@ END FUNCTION
 >  *Explanation:* The SHARED variable value *DIRcount%* can tell the main program how many files were found using a wildcard spec.
 
 
-*See also:* 
+## See Also
+ 
 * [DIM](DIM), [REDIM](REDIM)
 * [COMMON](COMMON), [COMMON SHARED](COMMON SHARED)
 

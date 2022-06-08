@@ -132,7 +132,8 @@ END SUB
 > **NOTE:** A temorary file named PRGMDIR.INF is created and deleted in the example above.
 
 
-*See also:* 
+## See Also
+ 
 * [ENVIRON](ENVIRON) (statement)
 * [_DEVICES](_DEVICES), [_DEVICE$](_DEVICE$)
 * [_LASTBUTTON](_LASTBUTTON), [_OS$](_OS$)

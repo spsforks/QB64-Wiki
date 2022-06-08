@@ -106,7 +106,8 @@ END SUB
 *See Example:* [SelectScreen](SelectScreen) (Screen mode selection) 
 
 
-*See also:* 
+## See Also
+ 
 * [DEF SEG](DEF SEG), [DEF SEG = 0](DEF SEG = 0) (reference)
 * [PEEK](PEEK) (read memory), [OUT](OUT) (write to register)
 * [VARSEG](VARSEG), [VARPTR](VARPTR)

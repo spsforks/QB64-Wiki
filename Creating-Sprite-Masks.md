@@ -58,7 +58,8 @@ In **QB64** [_CLEARCOLOR](_CLEARCOLOR) can also be used before using [_PUTIMAGE]
 <center>**See the [GET and PUT Demo](GET and PUT Demo) to see how it works!**</center>
 
 
-*See also:* 
+## See Also
+ 
 
 * [INP](INP), [Scancodes](Scancodes)(Example 3)
 * [GET (graphics statement)](GET (graphics statement)), [PUT (graphics statement)](PUT (graphics statement)) 

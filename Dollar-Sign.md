@@ -2,7 +2,8 @@ The **$** is used to denote QBasic [Metacommand](Metacommand)s or as a [STRING](
 
 
 
-*Usage:* $INCLUDE: 'QB.bi'
+## Usage
+ $INCLUDE: 'QB.bi'
 
 
 * [$STATIC]($STATIC) denotes that all arrays can only be dimensioned once using [DIM](DIM).

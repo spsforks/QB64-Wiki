@@ -1,13 +1,10 @@
 The [SWAP](SWAP) statement is used to exchange two variable or array element values.
 
-
 ## Syntax
 
 > [SWAP](SWAP) variable1, variable2
 
-
 ## Description
-
 
 * variable1 and variable2 are any type variables whose values will be exchanged.
 * If either variable1 or variable2 is an array, then an element in the array must be designated.
@@ -15,6 +12,7 @@ The [SWAP](SWAP) statement is used to exchange two variable or array element val
 * SWAP is often used to sort array elements into greater or lesser numerical or cumulative [ASCII](ASCII) [STRING](STRING) values. 
 * SWAP can be used in page flipping to change between source and destination pages.
 
+## Example(s)
 
 *Example 1:* A simple SWAP of [STRING](STRING) values.
 
@@ -36,8 +34,6 @@ two
 one
 
 ```
-
-
 
 *Example 2:* Creating Cryptograms by scrambling EVERY capital letter in the alphabet.
 
@@ -77,8 +73,8 @@ END
 
 ```
 <sub>Code by Ted Weissgerber</sub>
-> * Explanation:* The Letter$ [STRING](STRING) [Arrays](Arrays) is first created with the letters matching the [ASCII](ASCII) code index value. Every index is **swap**ped when the letter matches it's index code until every letter is different. The Code array holds the text code solution.
 
+> * Explanation:* The Letter$ [STRING](STRING) [Arrays](Arrays) is first created with the letters matching the [ASCII](ASCII) code index value. Every index is **swap**ped when the letter matches it's index code until every letter is different. The Code array holds the text code solution.
 
 *Example 3:* A very quick array sorting SUB procedure using recursion sorts 10 thousand numbers in milliseconds.
 
@@ -138,8 +134,8 @@ END SUB
 
 > **NOTE:** The *swap2* shared value is used to count the swaps for the demo and can be removed from the SUB procedure for speed. 
 
+## See Also
 
-*See also:*
 * [RND](RND), [RANDOMIZE](RANDOMIZE)
 * [CHR$](CHR$), [ASC](ASC) 
 * [ASCII](ASCII), [Arrays](Arrays)

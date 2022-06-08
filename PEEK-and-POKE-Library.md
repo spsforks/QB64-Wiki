@@ -84,7 +84,8 @@ END
 <center>**Note: These functions and statements use a variable name reference pointer in memory instead of [DEF SEG](DEF SEG).**</center>
 
 
-*See also:*
+## See Also
+
 * [DECLARE LIBRARY](DECLARE LIBRARY)
 * [PEEK](PEEK), [POKE](POKE)
 * [Libraries](Libraries)

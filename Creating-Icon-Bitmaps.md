@@ -479,7 +479,8 @@ END FUNCTION
 ## References
 
 
-*See also:*
+## See Also
+
 * [Creating Icons from Bitmaps](Creating Icons from Bitmaps)
 * [Bitmaps](Bitmaps), [Icons and Cursors](Icons and Cursors)
 * [_CLEARCOLOR](_CLEARCOLOR)

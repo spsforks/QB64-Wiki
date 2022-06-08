@@ -106,7 +106,8 @@ SYSTEM
 ```<sub>Code by Ben</sub>
 
 
-*See also:* 
+## See Also
+ 
 * [RND](RND), [INT](INT), [CINT](CINT)
 * [TIMER](TIMER)
 

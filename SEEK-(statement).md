@@ -27,7 +27,8 @@ The **SEEK** statement sets the next byte or record position of a file for a rea
 
 
 
-*See also:*
+## See Also
+
 * [SEEK](SEEK) (function)
 * [GET](GET), [PUT](PUT)
 

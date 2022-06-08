@@ -64,7 +64,8 @@ END
 ```<sub>Code by Ted Weissgerber</sub>
 
 
-*See also:*
+## See Also
+
 * [Binary](Binary)
 * [_SHL](_SHL), [_SHR](_SHR)
 * [_BIT](_BIT), [&B](&B)

@@ -290,7 +290,8 @@ AND mask size: 64 bytes with a 16 bit padder.
 * [SaveIcon32](SaveIcon32) (create icons from any image)
 
 
-*See Also:*
+## See Also
+
 * [$EXEICON]($EXEICON)
 * [_ICON](_ICON)
 * [Creating Sprite Masks](Creating Sprite Masks)

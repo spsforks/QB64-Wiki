@@ -16,7 +16,8 @@ The **PUT** graphics statement is used to place [GET (graphics statement)](GET (
 * *omitcolor* is the pixel color attribute to ignore in QB64 only. This may be used instead of using an [AND](AND) mask.
 
 
-*Usage:*
+## Usage
+
 * **The entire box area of the image MUST be on the screen or an "Illegal function call" [ERROR Codes](ERROR Codes) will occur!**
 * In **QB64** [_CLIP](_CLIP) can be used when part of the image may be off of the screen. This will also prevent off screen errors!
 > :PUT (-10, 10), mypic(0), PSET ' this causes an illegal function call without [_CLIP](_CLIP)
@@ -84,7 +85,8 @@ PUT(100, 100), a$, PSET
 >  *Explanation:* The header holds the [INTEGER](INTEGER) width and depth of the image area as 2 bytes each. Screen 13 width is multiplied by 8.
 
 
-*See also:* 
+## See Also
+ 
 * [_PUTIMAGE](_PUTIMAGE), [_LOADIMAGE](_LOADIMAGE)
 * [_MAPTRIANGLE](_MAPTRIANGLE)
 * [GET (graphics statement)](GET (graphics statement)), [BSAVE](BSAVE), [BLOAD](BLOAD)

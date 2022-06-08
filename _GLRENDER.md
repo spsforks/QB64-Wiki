@@ -13,7 +13,8 @@ Mode can be:
 * _ONLY -  renders OpenGL context only
 
 
-*See also:*
+## See Also
+
 * [Hardware images](Hardware images)
 
 

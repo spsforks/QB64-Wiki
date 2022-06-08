@@ -15,7 +15,8 @@ The **PRINT USING** statement is used to [PRINT](PRINT) formatted data to the Sc
 * In **QB64** ONE [semicolon](semicolon) or [comma](comma) may follow the variable list to stop the print cursor for pending prints. QB only allowed a semicolon.
 
 
-*Usage:*
+## Usage
+
 * The *variables* should be listed in the order that they are used in the template from left to right.
 * **If the *template* string is omitted or symbols don't match the *variable(s)* an "Illegal Function Call" [ERROR Codes](ERROR Codes) will occur!**
 * No more than 25 # digit places are allowed in a template number or an [ERROR Codes](ERROR Codes) will occur.
@@ -106,7 +107,8 @@ PRINT "I have this much money!"; USING tmp$; money
 >  *Note:* This can also be used to print the USING formatting characters outside of the template.
 
 
-*See also:* 
+## See Also
+ 
 * [PRINT](PRINT), [PRINT USING (file statement)](PRINT USING (file statement))
 * [LPRINT](LPRINT), [LPRINT USING](LPRINT USING)
 

@@ -119,7 +119,8 @@ PRINT USING "##.###### seconds for _MEMGET Byte"; t5# - t4#
 >  *Note:* [_MEMGET](_MEMGET) can be used with [$CHECKING]($CHECKING):OFF to cut the parsing speed even more. [STRING](STRING) * 1 or [_BYTE](_BYTE) are similar speeds.
 
 
-*See also:*
+## See Also
+
 * [MID$ (statement)](MID$ (statement)), [ASC](ASC)
 * [LEFT$](LEFT$), [RIGHT$](RIGHT$)
 * [LTRIM$](LTRIM$), [RTRIM$](RTRIM$) 

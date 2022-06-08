@@ -17,7 +17,8 @@ The **PRINT #, USING** statement is used to [PRINT](PRINT) formatted text data t
 * In **QB64** ONE [semicolon](semicolon) or [comma](comma) may follow the variable list to stop the print cursor for pending prints. QB only allowed a semicolon.
 
 
-*Usage:*
+## Usage
+
 * **If the *template* string is omitted or symbols don't match the *variable(s)* an "Illegal Function Call" [ERROR Codes](ERROR Codes) will occur!**
 * The list of data variables used in the template are **separated by semicolons** after the template string value. 
 * The variables should be listed in the order that they are used in the template from left to right.
@@ -29,7 +30,8 @@ The **PRINT #, USING** statement is used to [PRINT](PRINT) formatted text data t
 PrintUsingTable
 
 
-*See also:* 
+## See Also
+ 
 * [PRINT USING](PRINT USING), [PRINT (file statement)](PRINT (file statement))
 * [LPRINT USING](LPRINT USING)
 

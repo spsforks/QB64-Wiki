@@ -104,7 +104,8 @@ END DECLARE
 <center>**Note: QB64 versions prior to 1.000 require all default DLL files to either be with the program or in the C:\WINDOWS\SYSTEM32 folder.**</center>
 
 
-*See also:*
+## See Also
+
 * [DECLARE DYNAMIC LIBRARY](DECLARE DYNAMIC LIBRARY)
 * [SUB](SUB), [FUNCTION](FUNCTION)
 * [BYVAL](BYVAL), [ALIAS](ALIAS)

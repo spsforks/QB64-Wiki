@@ -816,7 +816,8 @@ To enable keyboard interrupts: OUT 33, 128.
 
 
 
-*See also:* 
+## See Also
+ 
 
 * [PEEK](PEEK), [POKE](POKE)
 

@@ -69,7 +69,8 @@ END SUB
 >  *Note:* When a single hexadecimal digit is returned the resulting value will need the leading zero added. Otherwise the hexa- decimal value created will have a byte missing from the value. EX: Color &HFF000000 is valid while &HFF000 is not.
 
 
-*See also:* 
+## See Also
+ 
 * [LEFT$](LEFT$), [MID$](MID$) 
 * [LTRIM$](LTRIM$), [RTRIM$](RTRIM$) 
 * [INSTR](INSTR), [HEX$](HEX$)

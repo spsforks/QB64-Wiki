@@ -107,7 +107,8 @@ Buttons: 9
 <center> [http://www.amazon.com/Belkin-F3U200-08INCH-Joystick-Adapter-SideWinder/dp/B000067RIV  Sidewinder Precision Pro game port to USB adapter]</center>
 
 
-*See also:* 
+## See Also
+ 
 * [STRIG](STRIG) (function)
 * [ON STRIG(n)](ON STRIG(n))
 * [_DEVICES](_DEVICES), [_DEVICE$](_DEVICE$), [_LASTBUTTON](_LASTBUTTON)

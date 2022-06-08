@@ -9,7 +9,8 @@ The **EXIT SUB** statement can be used in a [SUB](SUB) routine to exit before th
 * EXIT SUB is not the same as [END SUB](END SUB) which is required in a SUB procedure.
 
 
-*See also:* 
+## See Also
+ 
 * [SUB](SUB)
 * [FUNCTION](FUNCTION)
 

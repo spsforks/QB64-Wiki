@@ -58,7 +58,8 @@ NEXT
 > : No VAL conversion is necessary if the [LONG](LONG) [&H](&H) hexadecimal values are entered into the program directly by the programmer.
 
 
-*See also:*
+## See Also
+
 * [_PALETTECOLOR](_PALETTECOLOR)
 * [_RGB32](_RGB32), [_RGBA32](_RGBA32)
 * [_RGB](_RGB), [_RGBA](_RGBA) (when used in 32 bit only)

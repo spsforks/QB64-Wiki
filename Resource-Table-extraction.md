@@ -1905,7 +1905,8 @@ END SUB
 
 ## References
 
-*See also:*
+## See Also
+
 * [Icons and Cursors](Icons and Cursors)
 * [Bitmaps](Bitmaps), [_ICON](_ICON), [$EXEICON]($EXEICON)
 * [SaveIcon32](SaveIcon32) (create icons from any image)

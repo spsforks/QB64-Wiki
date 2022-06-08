@@ -211,7 +211,8 @@ END FUNCTION * *
 <center>**NOTE: IF [$STATIC]($STATIC) Metacommand is required, change function Arrays to [STATIC](STATIC) and [ERASE](ERASE) them at start and every loop!**</center>
 
 
-*See also:*
+## See Also
+
 
 [FILELIST$ (function)](FILELIST$ (function))
 

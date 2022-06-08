@@ -1,7 +1,8 @@
 **Parenthesis** are used to enclose [SUB](SUB) and [FUNCTION](FUNCTION) parameters or to set the operation order in [Mathematical Operations](Mathematical Operations).
 
 
-*Usage:* COLOR 14: PRINT [TAB](TAB)(30); "Hello World"
+## Usage
+ COLOR 14: PRINT [TAB](TAB)(30); "Hello World"
 
 
 ```text
@@ -32,7 +33,8 @@ PRINT nmb$
 ```
 
 
-*See also:*
+## See Also
+
 
 * [DIM](DIM), DECLARE
 * [SUB](SUB), [FUNCTION](FUNCTION)

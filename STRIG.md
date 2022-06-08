@@ -71,7 +71,8 @@ LOOP UNTIL INKEY$ > ""
 > *Explanation:* Notice the extra **QB64 only** parameters used to cater for the 2nd stick and the buttons of the 3rd joystick.
 
 
-*See also:* 
+## See Also
+ 
 * [STRIG(n)](STRIG(n)) (statement)
 * [ON STRIG(n)](ON STRIG(n)), [STICK](STICK)
 * [_DEVICES](_DEVICES), [_DEVICE$](_DEVICE$), [_LASTBUTTON](_LASTBUTTON)

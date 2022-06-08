@@ -384,7 +384,8 @@ END SUB
 ## References
 
 
-*See also:*
+## See Also
+
 * [_LOADIMAGE](_LOADIMAGE), [_PUTIMAGE](_PUTIMAGE)
 * [SCREEN (statement)](SCREEN (statement))
 * [TYPE](TYPE), [_ICON](_ICON)

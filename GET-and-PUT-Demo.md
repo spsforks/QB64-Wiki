@@ -145,7 +145,8 @@ END SUB
 >  *Note:* The [DATA](DATA) is read as the number of pixels to color and the color attribute in the compressed the data field.
 
 
-*See also:*
+## See Also
+
 * [Creating Sprite Masks](Creating Sprite Masks)
 * [PUT (graphics statement)](PUT (graphics statement))
 * [GET (graphics statement)](GET (graphics statement))

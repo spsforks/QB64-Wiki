@@ -70,7 +70,8 @@
 
 
 
-*See also:* 
+## See Also
+ 
 
 * [SCREEN (statement)](SCREEN (statement)), [COLOR](COLOR) 
 * [PALETTE](PALETTE)

@@ -31,7 +31,8 @@ PRINT POS(0) ' column position is 1 on next row
 *Note:* Column tab prints may not always move 9 spaces past the center of the screen. Some may move text to next row.
 
 
-*See also:* 
+## See Also
+ 
 * [CSRLIN](CSRLIN), [LOCATE](LOCATE), [PRINT](PRINT)
 * [_PRINTSTRING](_PRINTSTRING) (graphic position print)
 

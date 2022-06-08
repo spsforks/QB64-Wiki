@@ -19,7 +19,8 @@ The **LOOP** statement denotes the end of a [DO...LOOP](DO...LOOP) where the pro
 * DO LOOPs can also be exited using [EXIT DO](EXIT DO) or [GOTO](GOTO).
 
 
-*See also:* 
+## See Also
+ 
 * [FOR...NEXT](FOR...NEXT) {counter loop)
 * [WHILE...WEND](WHILE...WEND) (loop)
 * [UNTIL](UNTIL), [WHILE](WHILE) {conditions)

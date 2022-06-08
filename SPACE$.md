@@ -11,7 +11,8 @@ The [SPACE$](SPACE$) function returns a [STRING](STRING) consisting of a number 
 * count& is the number of space characters to repeat. Cannot use negative values!
 
 
-*Usage:*
+## Usage
+
 * Semicolons can be used to combine spaces with text [STRING](STRING) or numerical values.
 * [Concatenation](Concatenation) using + can be used to combine [STRING](STRING) text values only.
 * Spaces are often used to erase previous text PRINTs from the screen.

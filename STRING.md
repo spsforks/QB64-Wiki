@@ -120,7 +120,8 @@ END SELECT
 >  *Notes:* [STRING](STRING) values using multiple characters will be compared by the [ASCII](ASCII) code values sequentially from left to right. Once the equivalent code value of one string is larger than the other the evaluation stops. This allows string values to be compared and sorted alphabetically using [Greater Than](Greater Than) or [Less Than](Less Than) and to [SWAP](SWAP) values in [arrays](arrays) irregardless of the string lengths.
 
 
-*See also:* 
+## See Also
+ 
 * [DIM](DIM), [DEFSTR](DEFSTR) 
 * [CHR$](CHR$), [ASC](ASC)
 * [LEFT$](LEFT$), [RIGHT$](RIGHT$), [MID$](MID$)

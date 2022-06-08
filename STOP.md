@@ -28,7 +28,8 @@ PRINT "resumed"
 >  *Explanation:* QB64 will STOP the program and close the window as it does not have an interpreter to run the rest of the code.
 
 
-*See also:* 
+## See Also
+ 
 * [END](END), [SYSTEM](SYSTEM)
 * [ON](ON), [OFF](OFF)
 

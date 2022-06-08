@@ -48,7 +48,8 @@ SYSTEM * *                     'close screen saver immediately
 <sub>Code by DSMan</sub>
 
 
-*See also:*
+## See Also
+
 
 * [_MOUSEMOVEMENTX](_MOUSEMOVEMENTX), [_MOUSEMOVEMENTY](_MOUSEMOVEMENTY)
 * [SCREEN (statement)](SCREEN (statement)), [_SCREENIMAGE](_SCREENIMAGE)

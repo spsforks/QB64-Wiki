@@ -1,7 +1,8 @@
 A **colon** can be used to separate two unrelated procedure statements on the same line.
 
 
-*Usage:* COLOR 10: PRINT "Hello "; : COLOR 12: PRINT "World"
+## Usage
+ COLOR 10: PRINT "Hello "; : COLOR 12: PRINT "World"
 
 
 ```text
@@ -19,7 +20,8 @@ Hello World
 * Use an [underscore](underscore) at the end of a line to extend a line of code to the next line.
 
 
-*See also:*
+## See Also
+
 
 * [Comma](Comma), [Semicolon](Semicolon)
 

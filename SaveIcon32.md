@@ -104,7 +104,8 @@ END SUB
 > Icons that are 16 X 16 or 48 X 48 require 2 padder bytes to be added at the end of each row increasing data size by 32 and 96.
 
 
-*See also:*
+## See Also
+
 
 *[_ICON](_ICON), [$EXEICON]($EXEICON)
 *[SAVEIMAGE](SAVEIMAGE)

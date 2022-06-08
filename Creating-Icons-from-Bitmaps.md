@@ -85,7 +85,8 @@ SYSTEM
 <sub>Adapted from code by Michael Calkins, Public domain, November 2011</sub>
 
 
-*See also:*
+## See Also
+
 * [_ICON](_ICON), [$EXEICON]($EXEICON)
 * [SaveIcon32](SaveIcon32) (saves any image to icon)
 * [Icons and Cursors](Icons and Cursors)

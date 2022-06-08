@@ -17,7 +17,8 @@ PRINT result
 >  **Note:** Filename needs to be [CHR$](CHR$)(0) terminated. QB64 [STRING](STRING)s are passed to external libraries as pointers to first character.
 
 
-*See also:*
+## See Also
+
 
 * [DECLARE DYNAMIC LIBRARY](DECLARE DYNAMIC LIBRARY), [BYVAL](BYVAL)
 * [_OFFSET](_OFFSET), [_OFFSET (function)](_OFFSET (function)) (lp, ptr and p names)

@@ -10,7 +10,8 @@ The **RESET** statement closes all files and writes the directory information to
 * RESET closes all open files on all drives and writes the directory track to every diskette with open files.
 
 
-*See also:* 
+## See Also
+ 
 * [OPEN](OPEN)
 * [CLOSE](CLOSE)
 

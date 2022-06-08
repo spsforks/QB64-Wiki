@@ -1,7 +1,8 @@
 A **question mark** can be used as a substitute shortcut to typing PRINT when creating code.
 
 
-*Usage:* ?"Hello world"
+## Usage
+ ?"Hello world"
 
 
 *Result:* PRINT "Hello world"
@@ -12,7 +13,8 @@ A **question mark** can be used as a substitute shortcut to typing PRINT when cr
 * A [semicolon](semicolon) after the [INPUT](INPUT) prompt text will add a question mark after the statement.
 
 
-*See also:*
+## See Also
+
 
 * [PRINT](PRINT)
 * [Semicolon](Semicolon), [Comma](Comma)

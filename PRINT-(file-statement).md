@@ -13,7 +13,8 @@ The [PRINT (file statement)](PRINT (file statement)) statement prints numeric or
 * The print statement can be followed by a [semicolon](semicolon) to stop the print cursor or a [comma](comma) to tab the next print.
 
 
-*Usage:*
+## Usage
+
 * [STRING](STRING) values will be stripped of leading and trailing quotation marks when printed to the file. Use [CHR$](CHR$)(34) to add quotes to a file.
 * separator is used to separate multiple expressions and specifies how the file cursor is to be moved before writing the next expression. It can be one of the following:
 ** semi-colon (;) - specifies that the print cursor stop immediately after the print. A subsequent print will start there.

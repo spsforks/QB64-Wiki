@@ -7,7 +7,8 @@ In QB64 **handles** are created and used by various statements and functions to 
 > :: _FREEIMAGE **handle&**
 
 
-*Usage:*
+## Usage
+
 * [SCREEN](SCREEN) and image handles in use cannot be freed without error! Change screens or fonts before freeing the handle from memory!
 * The actual value of the handle is only important if it fails to return a value in the range specified. **A bad return value may create errors!**
 
@@ -23,7 +24,8 @@ In QB64 **handles** are created and used by various statements and functions to 
 * Files: [FREEFILE](FREEFILE) finds a free file [INTEGER](INTEGER) value which is used in [OPEN](OPEN) statements and file functions and is freed by [CLOSE](CLOSE)
 
 
-*See also:*
+## See Also
+
 * [_SOURCE](_SOURCE), [_DEST](_DEST)
 
 

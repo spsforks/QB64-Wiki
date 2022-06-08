@@ -8,7 +8,8 @@ The **>** condition symbol denotes that a value must be greater than another val
 * More than one > symbol in a numerical statement will create a [Boolean](Boolean) evaluation of the ensuing numerical value.
 
 
-*See also:*
+## See Also
+
 
 * [Equal](Equal)
 * [Not_Equal](Not_Equal)
