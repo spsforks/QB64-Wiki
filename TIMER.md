@@ -1,14 +1,12 @@
 The **TIMER** function returns the number of seconds past the previous midnite down to an accuracy of 1/18th of a second. 
 
+## QB Syntax 
 
-##  QB Syntax 
-
-> :: seconds! = TIMER
+> seconds! = TIMER
 
 ##  QB64 Syntax 
 
-> :: seconds# = TIMER[(*accuracy!*)]
-
+> seconds# = TIMER[(*accuracy!*)]
 
 * TIMER return values range from 0 at midnight to 86399! A comparison value must stay within that range!
 * [INTEGER](INTEGER) or [LONG](LONG) second values range from 0 at midnight to 86399 seconds each day.
@@ -19,6 +17,7 @@ The **TIMER** function returns the number of seconds past the previous midnite d
 * TIMER can also be used for timing program Events. See [ON TIMER(n)](ON TIMER(n)) or the [TIMER (statement)](TIMER (statement))
 * **QB64** can use a [_DELAY](_DELAY) down to .001(one millisecond) or [_LIMIT](_LIMIT) loops per second. Both help limit program CPU usage.
 
+## Example(s)
 
 *Example 1:* Delay SUB with a midnight correction for when TIMER returns to 0. **QB64** can use [_DELAY](_DELAY) for delays down to .001.
 
@@ -40,8 +39,8 @@ LOOP
 END SUB 
 
 ```
-> *Explanation:* When the delay time is added to the present TIMER value, it could be over the maximum number of 86399 seconds. So when TIMER becomes less than start it has reached midnight. The delay value then must be corrected by subtracting 86400.
 
+> *Explanation:* When the delay time is added to the present TIMER value, it could be over the maximum number of 86399 seconds. So when TIMER becomes less than start it has reached midnight. The delay value then must be corrected by subtracting 86400.
 
 *Example 2:* Looping one TIMER tick of 1/18th of a second (ticks per second can be changed)
 
@@ -74,7 +73,6 @@ END
 
 > *Explanation:* The [POKE](POKE) before the delay loop sets the tick count to 0. The [PEEK](PEEK) count increases until the tick count returns 18 ticks and ends the loop. The same thing could be approximated by using a delay loop with: second! <nowiki>=</nowiki> **TIMER** + 1
 
-
 *Example 3:* Using a [DOUBLE](DOUBLE) variable for [TIMER](TIMER)(.001) millisecond accuracy in **QB64** throughout the day.
 
 ```vb
@@ -89,7 +87,6 @@ END
 
 ```text
 
-
  Single = 77073.09
  Double = 77073.094 
 
@@ -97,12 +94,8 @@ END
 
 > *Explanation:* [SINGLE](SINGLE) variables will cut off the millisecond accuracy returned so [DOUBLE](DOUBLE) variables should be used. TIMER values will also exceed [INTEGER](INTEGER) limits. When displaying TIMER values, use [LONG](LONG) for seconds and [DOUBLE](DOUBLE) for milliseconds.
 
+## See Also
 
-*See also:* 
 * [_DELAY](_DELAY), [_LIMIT](_LIMIT), [SLEEP](SLEEP)   
 * [RANDOMIZE](RANDOMIZE), [Scancodes](Scancodes)(example)
-* [ON TIMER(n)](ON TIMER(n)), [TIMER (statement)](TIMER (statement))
-
-
-
-
+* [ON TIMER(n)](ON-TIMER(n)), [TIMER (statement)](TIMER-(statement))

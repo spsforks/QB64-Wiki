@@ -1,10 +1,8 @@
 The [UBOUND](UBOUND) function returns the largest valid index (upper bound) of an array dimension.
 
-
 ## Syntax
 
 > *result%* = [UBOUND](UBOUND)(arrayName[, dimension%])
-
 
 ## Description
 
@@ -16,11 +14,10 @@ The [UBOUND](UBOUND) function returns the largest valid index (upper bound) of a
 
 * [UBOUND](UBOUND), along with [LBOUND](LBOUND), is used to determine the range of valid indexes of an array.
 
-
 ## Example(s)
 
-
 ```vb
+
 DIM myArray(5) AS INTEGER
 DIM myOtherArray(1 to 2, 3 to 4) AS INTEGER
 
@@ -36,13 +33,7 @@ PRINT UBOUND(myOtherArray, 2)
 
 ```
 
-
-
 ## See Also
 
 * [Arrays](Arrays), [LBOUND](LBOUND)
 * [DIM](DIM), [COMMON](COMMON), [STATIC](STATIC), [SHARED](SHARED)
-
-
-
-

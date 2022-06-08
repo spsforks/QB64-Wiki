@@ -1,18 +1,17 @@
 While QB64 offers [_FONT](_FONT) and [Unicode](Unicode) text options, QBasic was limited in what it could offer. This shortfall could be overcome in various ways including using sprite pictures. Thanks to QB64, we can have the best in both worlds without creating them yourself!
 
-> ::::::::1) The characters can be loaded in a file for QBasic.
-> ::::::::2) Text fonts can be sized without re-loading them.
-> ::::::::3) Data files are smaller than [BSAVE](BSAVE) image files.
-> ::::::::4} Proper character spacing is already done for you.
+> 1) The characters can be loaded in a file for QBasic.
+> 2) Text fonts can be sized without re-loading them.
+> 3) Data files are smaller than [BSAVE](BSAVE) image files.
+> 4} Proper character spacing is already done for you.
+
 ## Bit Packing Pixel Data
 
 In QBasic, text blocks were always 8 pixels wide no matter what screen mode was used. This allowed the total data value of a row to be set by reading 8 pixels using [POINT](POINT). The value can be stored in one [_BYTE](_BYTE)(8 bits) of data using [ASCII](ASCII) string characters.
 
-
 <sub>Qbasic concept by Artelius</sub>
 
 ```text
-
 
 SCREEN 12             'text characters are 8 X 16 pixel blocks
 DIM SHARED Char(0 TO 255, 0 TO 15) AS STRING * 1  'store data by character row byte values
@@ -38,23 +37,21 @@ END SUB
 
 ```
 
->  Above [ASCII](ASCII) Characters 7, 9, 10, 11, 12, 13, 28, 29, 30, and 31 won't print in QBasic! **QB64** can print them with [_PRINTSTRING](_PRINTSTRING) or by using [PRINT](PRINT) after [_CONTROLCHR](_CONTROLCHR) OFF is set.
-
+> Above [ASCII](ASCII) Characters 7, 9, 10, 11, 12, 13, 28, 29, 30, and 31 won't print in QBasic! **QB64** can print them with [_PRINTSTRING](_PRINTSTRING) or by using [PRINT](PRINT) after [_CONTROLCHR](_CONTROLCHR) OFF is set.
 
 <center>**Bit Packing**</center>
 
-```text
+```vb
 
-
-      FOR col% = 7 TO 0 STEP -1                     'read pixels from right to left
-         byte = byte * 2 - (POINT(col%, row%) > 0)  'bit-packing with 2 ^ bit
-      NEXT
+  FOR col% = 7 TO 0 STEP -1                     'read pixels from right to left
+      byte = byte * 2 - (POINT(col%, row%) > 0)  'bit-packing with 2 ^ bit
+  NEXT
 
 ```
->  Bit packing is done by doubling the current byte value and adding one for each bit where a pixel is not colored black.
 
-> The [boolean](boolean) statement InlineCode(POINT(col%, row%) > 0)InlineCodeEnd evaluates to -1(true) when a pixel is on or 0(false) when a pixel is off. This effectively adds 1 to the byte value. Each loop that byte value is doubled as [POINT](POINT) goes from right to left. If the left-most pixel is on, it will only add one to the byte value as expected. This makes the total sum of the bit values or the byte value equal to 255 if all of the pixels are on as shown below:
+> Bit packing is done by doubling the current byte value and adding one for each bit where a pixel is not colored black.
 
+> The [boolean](boolean) statement `(POINT(col%, row%) > 0)` evaluates to -1(true) when a pixel is on or 0(false) when a pixel is off. This effectively adds 1 to the byte value. Each loop that byte value is doubled as [POINT](POINT) goes from right to left. If the left-most pixel is on, it will only add one to the byte value as expected. This makes the total sum of the bit values or the byte value equal to 255 if all of the pixels are on as shown below:
 
 ```text
 
@@ -64,8 +61,9 @@ END SUB
 
 ```
 
->  Alpha-numeric text byte values will never be close to 255 because the first and last columns will normally be 0 as they are used to space text characters. Some characters, such as [CHR$](CHR$)(219) can have byte totals of 255 and have a value every row however.
+> Alpha-numeric text byte values will never be close to 255 because the first and last columns will normally be 0 as they are used to space text characters. Some characters, such as [CHR$](CHR$)(219) can have byte totals of 255 and have a value every row however.
 
+## Example(s)
 
 *Example Code:* Displays the 16 one byte row values saved as [ASCII](ASCII) characters in the [STRING](STRING) array using [_PRINTSTRING](_PRINTSTRING).
 
@@ -105,17 +103,14 @@ PALETTE 'restore all palette colors
 END SUB
 
 ```
-> ::: *Note:* [ASCII](ASCII) character values of [CHR$](CHR$)(0), [CHR$](CHR$)(32) and [CHR$](CHR$)(255) will only display an empty space!
 
+> *Note:* [ASCII](ASCII) character values of [CHR$](CHR$)(0), [CHR$](CHR$)(32) and [CHR$](CHR$)(255) will only display an empty space!
 
->  The [ASCII](ASCII) character data in the array can also be saved to a comma separated file with [WRITE](WRITE) for later use. In fact, the data can be read and displayed by QBasic programs later using special [_LOADFONT](_LOADFONT) or [Unicode](Unicode)! Wider characters will require larger values than [_BYTE](_BYTE).
-
-<p style="text-align: center">([#toc](#toc))</p>
+> The [ASCII](ASCII) character data in the array can also be saved to a comma separated file with [WRITE](WRITE) for later use. In fact, the data can be read and displayed by QBasic programs later using special [_LOADFONT](_LOADFONT) or [Unicode](Unicode)! Wider characters will require larger values than [_BYTE](_BYTE).
 
 ## Displaying Text Characters
 
 Once the data is saved, we need something to convert the data back into text characters. There are several ways to do this simply by using [PSET](PSET) for normal sizes or [CIRCLE](CIRCLE) or [LINE](LINE) to amplify the displayed character sizes. Use a normal [FOR...NEXT](FOR...NEXT) 0 TO 7 loop to read:
-
 
 <center>**[ASCII](ASCII) 8 X 16 Text character size increased using [CIRCLE](CIRCLE)**</center>
 
@@ -190,9 +185,10 @@ END SUB
 
 ```
 <sub>Code by Ted Weissgerber</sub>
->  The program above shows each array [_BYTE](_BYTE) character value and character. [PRINT](PRINT) will not print some characters in QB64 or QB.
-<center>Use **[_CONTROLCHR](_CONTROLCHR) OFF** to [PRINT](PRINT) control characters in QB64!</center>
 
+> The program above shows each array [_BYTE](_BYTE) character value and character. [PRINT](PRINT) will not print some characters in QB64 or QB.
+
+<center>Use **[_CONTROLCHR](_CONTROLCHR) OFF** to [PRINT](PRINT) control characters in QB64!</center>
 
 <center>**[ASCII](ASCII) 8 X 16 Text Character size increased using [LINE](LINE)**</center>
 
@@ -222,17 +218,15 @@ END SUB
 
 ```
 <sub>Adapted from code by Terry Ritchie</sub>
->  **NOTE: This procedure requires Char [STRING](STRING) array data created by the TextSave [SUB](SUB) from above to be run first!**
+
+> **NOTE: This procedure requires Char [STRING](STRING) array data created by the TextSave [SUB](SUB) from above to be run first!**
+
 > * *Xpos* and *Ypos* parameters set the top left graphic start position coordinate of the text string. [LOCATE](LOCATE) cannot be used. 
 > * *FG* and *BG* determine the text foreground and background colors respectively. If BG is 0, then no background color is used.
 > * *Xsize* and *Ysize* determines the size multiple increase of the letters. One is normal size, two is double size etc.
 > * *text$* is the text [STRING](STRING) that is to be printed. There will not be an error or screen roll if text goes out of the screen area!
 
-
-<p style="text-align: center">([#toc](#toc))</p>
-
 ## Font and Unicode Conversion
-
 
 To convert different sized [_FONT](_FONT) or [Unicode](Unicode) characters, first determine the text block size to find how much data is required:
 
@@ -320,17 +314,18 @@ END SUB
 
 ```
 <sub>Code by Ted Weissgerber</sub>
->  *Explanation:* [_PRINTWIDTH](_PRINTWIDTH) can read the pixel width of one character and can be used to measure non-monospace fonts.
+
+> *Explanation:* [_PRINTWIDTH](_PRINTWIDTH) can read the pixel width of one character and can be used to measure non-monospace fonts.
+
 > If the character width is wider than 8 pixels, we can no longer store the exponent of two values in one [_BYTE](_BYTE) or represent that byte as an [ASCII](ASCII) character so we can use an [INTEGER](INTEGER) or [LONG](LONG) array to hold the values, which can be saved to file with [PUT](PUT).
 
 <center>**Variable font widths**</center>
->  Some fonts vary in width for every character so we can store *wide&* as a [HEX$](HEX$) value in the *high&* array row value as we use 0 through *high&* - 1 to store the bit totals. Save the  *high&* [_FONTHEIGHT](_FONTHEIGHT) value for the sub-procedures and to dimension an array!
+
+> Some fonts vary in width for every character so we can store *wide&* as a [HEX$](HEX$) value in the *high&* array row value as we use 0 through *high&* - 1 to store the bit totals. Save the  *high&* [_FONTHEIGHT](_FONTHEIGHT) value for the sub-procedures and to dimension an array!
+
 > **This allows the use of DisplayText [SUB](SUB) in a QBasic program to read the data when you save the array data to a file.**
 
-<p style="text-align: center">([#toc](#toc))</p>
-
 ## Reading the Data File
-
 
 <center>**Reading the file data in a QB64 program only**</center>
 
@@ -376,8 +371,8 @@ NEXT character
 END SUB 
 
 ```
-<center>*Note:* Use empty parenthesis after the [Arrays](Arrays) name to [PUT](PUT) # or [GET](GET) # the entire array, even multi-dimensional ones.</center>
 
+<center>*Note:* Use empty parenthesis after the [Arrays](Arrays) name to [PUT](PUT) # or [GET](GET) # the entire array, even multi-dimensional ones.</center>
 
 <center>**Reading the file data in a QBasic or QB64 program**</center>
 
@@ -435,22 +430,15 @@ NEXT character
 END SUB 
 
 ```
+
 <center>The QB64 [PUT](PUT) [BINARY](BINARY) file can be read to the array by reading the row values for all of the characters as above.</center>
 
 <center>**The average font file with 256 characters is less than 20 KB in size!**</center>
 
+## See Also
 
-<p style="text-align: center">([#toc](#toc))</p>
-
-## References
-
-*See also:
 * [_PRINTSTRING](_PRINTSTRING), [_PRINTWIDTH](_PRINTWIDTH)
 * [_LOADFONT](_LOADFONT), [_FONTHEIGHT](_FONTHEIGHT)
 * [_MAPUNICODE](_MAPUNICODE), [_CONTROLCHR](_CONTROLCHR)
 * [Boolean](Boolean), [AND](AND) (logic operator)
-* [ASCII](ASCII), [Unicode](Unicode), [Code Pages](Code Pages)
-
-
-
-
+* [ASCII](ASCII), [Unicode](Unicode), [Code Pages](Code-Pages)

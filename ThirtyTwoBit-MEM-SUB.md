@@ -1,6 +1,5 @@
 <center>**Fast Bitmap Export routine using memory for use with 32-bit color images ONLY**</center>
 
-
 ```vb
 
 PRINT "This program will create a 32 bit bitmap of the desktop!"
@@ -12,13 +11,11 @@ x1% = 0: y1% = 0
 x2% = _WIDTH(picture&) - 1
 y2% = _HEIGHT(picture&) - 1
 
-
 SaveBMP32 x1%, x2%, y1%, y2%, picture&, "ScreenShot.bmp" 
 
 ```
 
 ```text
-
   
 SUB SaveBMP32 (x1%, x2%, y1%, y2%, image&, Filename$)
 
@@ -105,15 +102,13 @@ _MEMFREE n
 CLOSE #f
 END SUB
 
-``` <sub>Code by Steve McNeill</sub>
+```
+<sub>Code by Steve McNeill</sub>
+
 <center>**SUB for 32 BIT COLOR IMAGES ONLY!**</center>
 
+## See Also
 
-*See also:*
 * [SAVEIMAGE](SAVEIMAGE) (QB64 Image to Bitmap SUB by Galleon)
-* [Program ScreenShots](Program ScreenShots) (Member program for legacy screen modes)
-* [ThirtyTwoBit SUB](ThirtyTwoBit SUB) (QB64 Image area to bitmap)
-
-
-
-
+* [Program ScreenShots](Program-ScreenShots) (Member program for legacy screen modes)
+* [ThirtyTwoBit SUB](ThirtyTwoBit-SUB) (QB64 Image area to bitmap)

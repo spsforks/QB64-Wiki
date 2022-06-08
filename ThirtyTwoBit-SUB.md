@@ -1,15 +1,13 @@
 <center>** ThirtyTwoBit Screen Shot SUB for QB64 Screen and Image Handles**</center>
 
+## Syntax
 
-*Syntax:* ThirtyTwoBit left_column%, top_row%, right_column%, bottom_row%, handle&, new_filename$
-
+> ThirtyTwoBit left_column%, top_row%, right_column%, bottom_row%, handle&, new_filename$
 
 * Copies portions or all of a Screen or image using the handle value to a new bitmap. [SAVEIMAGE](SAVEIMAGE) does full screen only!
-* Make sure the maximum coordinates used are one less than the **screen** image's size or an [ERROR Codes](ERROR Codes) will occur!
+* Make sure the maximum coordinates used are one less than the **screen** image's size or an [ERROR Codes](ERROR-Codes) will occur!
 * A handle value of 0 will copy the present portion of the main program screen while the screen's handle may hold a previous image.
 * Can be used with 4, 8 or 24/32 bit colors. 4 BPP = 16 colors, 8 BPP = 256 colors and 24/32 BPP has 16 million colors.
-
-
 
 ```vb
 
@@ -43,7 +41,6 @@ ThirtyTwoBit 0, 0, x2%, y2%, bmp&, "BobSave.bmp"  ' save actual image as BMP
 ```
 
 ```text
-
 
 '****************************** Freeware by Bob Seguin *******************************
 '                     Adapted for QB64 by Ted Weissgerber in 2010
@@ -137,20 +134,10 @@ END SUB
 
 <center>**This SUB procedure can also be [$INCLUDE]($INCLUDE) in a program!**</center>
 
+## See Also
 
-**See also:*
-
-[_LOADIMAGE](_LOADIMAGE)
-
-[SAVEIMAGE](SAVEIMAGE) (Full image bitmaps)
-
-[Program ScreenShots](Program ScreenShots)
-
-[ThirtyTwoBit MEM SUB](ThirtyTwoBit MEM SUB)
-
-[Bitmaps](Bitmaps)
-
-
-
-
-
+* [_LOADIMAGE](_LOADIMAGE)
+* [SAVEIMAGE](SAVEIMAGE) (Full image bitmaps)
+* [Program ScreenShots](Program-ScreenShots)
+* [ThirtyTwoBit MEM SUB](ThirtyTwoBit-MEM-SUB)
+* [Bitmaps](Bitmaps)

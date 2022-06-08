@@ -1,10 +1,8 @@
 The [TAB](TAB) function is used in [PRINT](PRINT) and [LPRINT](LPRINT) statements to move to a specified column position.
 
-
 ## Syntax
 
 > [TAB](TAB)(column%)
-
 
 ## Description
 
@@ -16,6 +14,7 @@ The [TAB](TAB) function is used in [PRINT](PRINT) and [LPRINT](LPRINT) statement
 * **Note:** QBasic did not allow a TAB to be [concatenation](concatenation) to a string value. In [PRINT](PRINT) statements the [+](+) would be changed to a [semicolon](semicolon). 
 >  In QB64, TAB [concatenation](concatenation) is allowed instead of [semicolon](semicolon)s. Example: PRINT "text" + TAB(9) + "here"
 
+## Example(s)
 
 *Example:* Comparing TAB to [comma](comma) print spacing which moves the next text print 15 columns.
 
@@ -44,14 +43,9 @@ PRINT TAB(15); "T", TAB(20); "A"; TAB(15); "B" 'comma moves column position beyo
  
 >  *Explanation:* TAB moves the PRINT down to the next row when the current column position is more than the TAB position.
 
-
 ## See Also
 
 * [PRINT](PRINT), [LPRINT](LPRINT)
 * [SPC](SPC), [SPACE$](SPACE$)
 * [STRING$](STRING$)
 * [CHR$](CHR$), [ASCII](ASCII)
-
-
-
-

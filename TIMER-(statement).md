@@ -1,16 +1,12 @@
 A **TIMER** statement enables, turns off or stops timer event trapping. QBasic only uses the base timer, but **QB64** can run many.
 
-
-QB ## Syntax
+## QB Syntax
  
+> TIMER {ON|STOP|OFF}
 
-> ::TIMER {ON|STOP|OFF}
-
-QB64 ## Syntax
+## QB64 Syntax
  
-
-> ::TIMER(*number%*) {ON|STOP|OFF|FREE}
-
+> TIMER(*number%*) {ON|STOP|OFF|FREE}
 
 ## Parameter(s)
 
@@ -20,47 +16,43 @@ QB64 ## Syntax
 * TIMER OFF turns timer event trapping completely off and no subsequent events are remembered.
 
 <center>**QB64 only**</center>
+
 * Get a TIMER number from [_FREETIMER](_FREETIMER) ONLY except when the base timer(no number or 0) is used. Use specific variables or an array to hold each event number value for later reference.
 * If the TIMER number is omitted or 0, the TIMER used is the base timer.
 * Specific TIMER events can be enabled, suspended, turned off or freed using [TIMER (statement)](TIMER (statement)) ON, STOP, OFF or FREE.
 * TIMER(n) **FREE** clears a specific timer event when it is no longer needed. **The base TIMER or TIMER(0) cannot be freed!** 
 
-
 <center>**QB64 Timing Alternatives**</center>
+
 * The [TIMER](TIMER) function can be used to find timed intervals down to 1 millisecond(.001) accuracy.
 * The [_DELAY](_DELAY) statement can be used to delay program execution for intervals down to milliseconds.
 * [_LIMIT](_LIMIT) can slow down loops to a specified number of frames per second. This can also alleviate a program's CPU usage.
 
+## Example(s)
 
 *Example:* How to update the time while [PRINT](PRINT) at the same time in a program.
 
 ```vb
 
-  TIMER ON ' enable timer event trapping
-  LOCATE 4, 2 ' set the starting PRINT position
-  ON TIMER(10) GOSUB Clock ' set procedure execution repeat time
-  DO WHILE INKEY$ = "": PRINT "A"; : SLEEP 6: LOOP
-  TIMER OFF
-  SYSTEM
+TIMER ON ' enable timer event trapping
+LOCATE 4, 2 ' set the starting PRINT position
+ON TIMER(10) GOSUB Clock ' set procedure execution repeat time
+DO WHILE INKEY$ = "": PRINT "A"; : SLEEP 6: LOOP
+TIMER OFF
+SYSTEM
 
- Clock:
+Clock:
   row = CSRLIN ' Save current print cursor row.
   col = POS(0) ' Save current print cursor column.
   LOCATE 2, 37: PRINT TIME$; ' print current time at top of screen.
   LOCATE row, col ' return to last print cursor position 
- RETURN 
+RETURN 
 
 ```
->  NOTE: SLEEP will be interrupted in QBasic.
 
+> NOTE: SLEEP will be interrupted in QBasic.
 
-*See also:* 
+## See Also
 
-* [ON TIMER(n)](ON TIMER(n)), [TIMER](TIMER)(function)
-
+* [ON TIMER(n)](ON-TIMER(n)), [TIMER](TIMER)(function)
 * [_DELAY](_DELAY), [_LIMIT](_LIMIT)
-
-
-
-
-
