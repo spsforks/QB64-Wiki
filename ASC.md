@@ -1,26 +1,21 @@
 The [ASC](ASC) function returns the [ASCII](ASCII) code number of a certain [STRING](STRING) text character or a keyboard press.
 
-
 ## Syntax
 
->  code% = [ASC](ASC)(text$[, position%])
-
+> code% = [ASC](ASC)(text$[, position%])
 
 * text$ [STRING](STRING) character parameter must have a length of at least 1 byte or an error occurs. 
 * **In QB64** the optional byte position% [INTEGER](INTEGER) parameter greater than 0 can specify the ASCII code of any character in a string to be returned.
 * If the optional position% parameter is omitted, ASC will return the [ASCII](ASCII) code of the first [STRING](STRING) character.
 * [ASCII](ASCII) code [INTEGER](INTEGER) or [_UNSIGNED](_UNSIGNED) [_BYTE](_BYTE) values returned range from 0 to 255. 
 * ASC returns 0 when reading [ASCII](ASCII) 2 byte codes returned by [INKEY$](INKEY$) when the arrow, function, Home/Page keys are used. 
-** Use QB64's position% parameter to read the second byte if necessary. IF ASC(key$) <nowiki>=</nowiki> 0 THEN byte2 <nowiki>=</nowiki> ASC(key$, 2)
+** Use QB64's position% parameter to read the second byte if necessary. `IF ASC(key$) = 0 THEN byte2 = ASC(key$, 2)`
 * In **QB64** ASC string byte position reads are about **5 times faster** than [MID$](MID$) when parsing strings. See [MID$](MID$) *Example 2*.
-
 
 ## Error(s)
 
-* If the function is used to read an **empty string value** an illegal function call [ERROR Codes](ERROR Codes) will occur. [INKEY$](INKEY$) returns an empty string when a key is not pressed.
-* **QB64**'s position% parameters must range from 1 to the [LEN](LEN) of the string being read or an illegal function call [ERROR Codes](ERROR Codes) will occur.
-
-
+* If the function is used to read an **empty string value** an illegal function call [ERROR Codes](ERROR-Codes) will occur. [INKEY$](INKEY$) returns an empty string when a key is not pressed.
+* **QB64**'s position% parameters must range from 1 to the [LEN](LEN) of the string being read or an illegal function call [ERROR Codes](ERROR-Codes) will occur.
 
 ```text
 
@@ -48,11 +43,8 @@ The [ASC](ASC) function returns the [ASCII](ASCII) code number of a certain [STR
 '<sub>NOTE: The above commented table can be copied and pasted directly into the QB64 IDE</sub>
 
 ```
- 
-
 
 **[ASCII#Two_Byte_Codes](ASCII#Two_Byte_Codes)**
-
 
 ```text
 
@@ -97,8 +89,7 @@ The [ASC](ASC) function returns the [ASCII](ASCII) code number of a certain [STR
 
 ```
 
-> In **QB64**, [CVI](CVI) can be used to get the [_KEYDOWN](_KEYDOWN) 2-byte code value. Example: IF _KEYDOWN([CVI](CVI)([CHR$](CHR$)(0) + "P")) THEN
-
+> In **QB64**, [CVI](CVI) can be used to get the [_KEYDOWN](_KEYDOWN) 2-byte code value. Example: `IF _KEYDOWN([CVI](CVI)([CHR$](CHR$)(0) + "P")) THEN`
 
 ## Example(s)
 
@@ -106,9 +97,9 @@ The [ASC](ASC) function returns the [ASCII](ASCII) code number of a certain [STR
 
 ```vb
 
- PRINT ASC("A")
- PRINT ASC("Be a rockstar")
- PRINT ASC("QB64 is not only COMPATIBLE, it can find any part of the string!", 18) 
+PRINT ASC("A")
+PRINT ASC("Be a rockstar")
+PRINT ASC("QB64 is not only COMPATIBLE, it can find any part of the string!", 18) 
 
 ```
 
@@ -116,21 +107,17 @@ The [ASC](ASC) function returns the [ASCII](ASCII) code number of a certain [STR
 
 ```text
 
-
  65
  66
  67
 
 ```
 
-
 *Explanation:* The ASCII code for "A" is 65 and the ASCII code for "B" is 66, ASCII code for "C" is 67 and the "C" is at position 18 in the string.
 
-> :*Note:* The ASCII code for "A" and "a" are different by the value of 32, "A" + 32 is "a", 65("A") + 32 = 97("a").
-
+> *Note:* The ASCII code for "A" and "a" are different by the value of 32, "A" + 32 is "a", 65("A") + 32 = 97("a").
 
 *Example 2:* Reading the ASCII and two byte code combinations with ASC in **QB64**.
-
 
 ```vb
 
@@ -152,8 +139,8 @@ LOOP UNTIL code% = 27 * '
 
 ```
 <sub>Code by Ted Weissgerber</sub>
-*Explanation:* The keypress read loop checks that ASC will not read an empty string. That would create a program error. [SLEEP](SLEEP) reduces CPU memory usage between keypresses. Normal byte codes returned are indicated by the IF statement when ASC returns a value. Otherwise the routine will return the two byte ASCII code. The extended keyboard keys(Home pad, Arrow pad and Number pad), Function keys or Ctrl, Alt or Shift key combinations will return two byte codes. Ctrl + letter combinations will return control character codes 1 to 26.
 
+*Explanation:* The keypress read loop checks that ASC will not read an empty string. That would create a program error. [SLEEP](SLEEP) reduces CPU memory usage between keypresses. Normal byte codes returned are indicated by the IF statement when ASC returns a value. Otherwise the routine will return the two byte ASCII code. The extended keyboard keys(Home pad, Arrow pad and Number pad), Function keys or Ctrl, Alt or Shift key combinations will return two byte codes. Ctrl + letter combinations will return control character codes 1 to 26.
 
 *Example 3:* Reading only numerical values input by a program user.
 
@@ -180,15 +167,11 @@ LOOP UNTIL code% = 27 * '
 
 *Explanation:* [SLEEP](SLEEP) waits for a keypress allowing background programs to use the processor time. It also keeps the press in the keyboard buffer for [INKEY$](INKEY$) to read and guarantees that ASC will not read an empty string value to create an error. Filtered codes 48 to 57 are only number characters. One decimal point is allowed by using the flag. Code 8 is a backspace request which is ignored if the entry has no characters. If it is allowed it removes the last character from the entry and the screen. The loop exits when the user presses the [Enter] key and the entry has a length.
 
+## See Also
 
-See also:* 
-* [ASC (statement)](ASC (statement))
+* [ASC (statement)](ASC-(statement))
 * [_KEYHIT](_KEYHIT), [_KEYDOWN](_KEYDOWN)
 * [MID$](MID$), [CHR$](CHR$), [INKEY$](INKEY$)
 * [VAL](VAL), [STRING$](STRING$)
 * [ASCII](ASCII), [_MAPUNICODE](_MAPUNICODE)
 * [Scancodes](Scancodes)
-
-
-
-

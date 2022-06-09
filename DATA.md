@@ -1,10 +1,8 @@
 The [DATA](DATA) statement creates a line of fixed program information separated by commas. The DATA can be later READ by the program at runtime.
 
-
 ## Syntax
 
->  [DATA](DATA) [value1, value2, ...]
-
+> [DATA](DATA) [value1, value2, ...]
 
 ## Description
 
@@ -21,7 +19,6 @@ The [DATA](DATA) statement creates a line of fixed program information separated
 * Comments after a data line require a colon before the comment.
 * If a [READ](READ) statement attempts to read past the last data value, an [ERROR Codes](ERROR Codes) will occur. Use end of data markers when necessary.
 * **[DATA](DATA) fields can be placed after [SUB](SUB) or [FUNCTION](FUNCTION) procedures, but line labels are not allowed.**
-
 
 ## Example(s)
 
@@ -57,8 +54,6 @@ Hello world! Goodbyework!
 
 ```
 
-
-
 *Example 2:* How to [RESTORE](RESTORE) and [READ](READ) DATA in a [SUB](SUB) procedure in QB64. Line labels can be used for multiple DATA fields.
 
 ```vb
@@ -87,16 +82,11 @@ END SUB
 ```text
 
  10  9  8  7  6  5  4  3  2  1 
+
 ```
-
-
 
 ## See Also
  
 * [READ](READ) 
 * [RESTORE](RESTORE)
 * [SUB](SUB), [FUNCTION](FUNCTION)
-
-
-
-

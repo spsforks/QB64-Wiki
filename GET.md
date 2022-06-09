@@ -1,10 +1,8 @@
-The [GET #](GET #) statement reads data from a file or port device by bytes or record positions.
-
+The [GET](GET) # statement reads data from a file or port device by bytes or record positions.
 
 ## Syntax
 
->  [GET #](GET #)fileNumber&, [position][, {targetVariable|targetArray()}]
-
+> [GET](GET) #fileNumber&, [position][, {targetVariable|targetArray()}]
 
 ## Description
 
@@ -25,8 +23,6 @@ The [GET #](GET #) statement reads data from a file or port device by bytes or r
  LOOP
 
 ```
-
-
 
 ## Example(s)
 
@@ -76,8 +72,9 @@ END
 
 ```
 
->  *Explanation:* The byte size of the record [TYPE](TYPE) determines the [LOF](LOF) byte size of the file and can determine the number of records.
->  To read the last record [GET](GET) the number of records. To add a record, use the number of records + 1 to [PUT](PUT) new record data.
+> *Explanation:* The byte size of the record [TYPE](TYPE) determines the [LOF](LOF) byte size of the file and can determine the number of records.
+
+> To read the last record [GET](GET) the number of records. To add a record, use the number of records + 1 to [PUT](PUT) new record data.
 
 
 *Example 2:* Placing the contents of a numerical array into a [BINARY](BINARY) file. You may want to put the array size at the beginning too.
@@ -114,16 +111,12 @@ PRINT "done"
 END SUB 
 
 ```
->  *Note:* Use empty brackets in QB64 when using [GET](GET) to create an array or [PUT](PUT) to create a [BINARY](BINARY) data file.
 
+> *Note:* Use empty brackets in QB64 when using [GET](GET) to create an array or [PUT](PUT) to create a [BINARY](BINARY) data file.
 
 ## See Also
 
-* [PUT](PUT), [SEEK](SEEK), [SEEK (statement)](SEEK (statement)) 
-* [INPUT (file statement)](INPUT (file statement)), [GET (TCP/IP statement)](GET (TCP/IP statement))
+* [PUT](PUT), [SEEK](SEEK), [SEEK (statement)](SEEK-(statement)) 
+* [INPUT (file statement)](INPUT-(file-statement)), [GET (TCP/IP statement)](GET-(TCP/IP-statement))
 * [FIELD](FIELD), [RANDOM](RANDOM), [BINARY](BINARY)
 * [LEN](LEN), [LOF](LOF), [EOF](EOF)
-
-
-
-

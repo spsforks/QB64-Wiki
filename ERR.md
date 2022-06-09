@@ -1,21 +1,17 @@
 The [ERR](ERR) function returns the last QBasic error code number. 
 
-
 ## Syntax
 
->  errorNum% = [ERR](ERR)
-
+> errorNum% = [ERR](ERR)
 
 ## Description
 
 * If there is no error, the function returns 0
 * Can be used in an error handling routine to report the last error code number.
 
-
 ## Example(s)
 
-## Example(s)
- Simulating an error to test a program error handler that looks for a "Subscript out of range" error.
+Simulating an error to test a program error handler that looks for a "Subscript out of range" error.
 
 ```vb
 
@@ -39,15 +35,10 @@ RESUME NEXT               'RESUME can only be used in error handlers
 
 ```
 
-
 ## See Also
 
-* [ON ERROR](ON ERROR), [RESUME](RESUME)
+* [ON ERROR](ON-ERROR), [RESUME](RESUME)
 * [ERL](ERL)
 * [_ERRORLINE](_ERRORLINE), [_INCLERRORLINE](_INCLERRORLINE), [_INCLERRORFILE$](_INCLERRORFILE$)
 * [ERROR](ERROR)
-* [ERROR Codes](ERROR Codes)
-
-
-
-
+* [ERROR Codes](ERROR-Codes)

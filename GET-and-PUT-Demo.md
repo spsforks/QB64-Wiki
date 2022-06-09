@@ -1,7 +1,5 @@
 The following code demonstration shows how GET and PUT can be used to place a sprite on a background image using a mask.
 
-
-
 ```vb
 
 DIM Image(3000) AS INTEGER
@@ -142,16 +140,12 @@ END SUB
 
 ```
 <sub>Code by Bob Seguin and Ted Weissgerber</sub>
->  *Note:* The [DATA](DATA) is read as the number of pixels to color and the color attribute in the compressed the data field.
 
+> *Note:* The [DATA](DATA) is read as the number of pixels to color and the color attribute in the compressed the data field.
 
 ## See Also
 
-* [Creating Sprite Masks](Creating Sprite Masks)
-* [PUT (graphics statement)](PUT (graphics statement))
-* [GET (graphics statement)](GET (graphics statement))
+* [Creating Sprite Masks](Creating-Sprite-Masks)
+* [PUT (graphics statement)](PUT-(graphics-statement))
+* [GET (graphics statement)](GET-(graphics-statement))
 * [_PUTIMAGE](_PUTIMAGE), [_MAPTRIANGLE](_MAPTRIANGLE)
-
-
-
-

@@ -1,10 +1,8 @@
 The [$CONSOLE]($CONSOLE) [Metacommand](Metacommand) creates a console window that can be used throughout a QB64 program module.
 
-
 ## Syntax
 
->  [$CONSOLE]($CONSOLE)[:ONLY]
-
+> [$CONSOLE]($CONSOLE)[:ONLY]
 
 * [_CONSOLE](_CONSOLE) **ON** or **OFF** may be used to show or hide the console window at run time.
 * The **:ONLY** option can be used when only a console window is desired without a program window.
@@ -14,8 +12,7 @@ The [$CONSOLE]($CONSOLE) [Metacommand](Metacommand) creates a console window tha
 * **QB64 [Metacommand](Metacommand)s are not commented out with ' or REM, unlike QuickBASIC metacommands**
 * Change the title of the [$CONSOLE]($CONSOLE) windows created using [_CONSOLETITLE](_CONSOLETITLE)
 * **Note:** Text can be copied partially or totally from console screens in Windows by highlighting and using the title bar menu. 
-> : To copy console text output, right click the title bar and select *Edit* for *Mark* to highlight and repeat to *Copy* 
-
+> To copy console text output, right click the title bar and select *Edit* for *Mark* to highlight and repeat to *Copy* 
 
 ## Example(s)
 
@@ -34,7 +31,6 @@ _DEST _CONSOLE
 PRINT "Close this console window or click main window and press a key!" 
 
 ```
-
 
 *Example 2:* How to use a Console window to copy screen output using the *Edit* menu by right clicking the console title bar.
 
@@ -70,7 +66,7 @@ Min _INTEGER64 value = 8000000000000000 with 16 digits
 
 ```
 
->  *Console:* Right click and select *Edit* > *Select All* (mouse highlight after) then hit Enter or select *Edit* > *Copy* to the clipboard.
+> *Console:* Right click and select *Edit* > *Select All* (mouse highlight after) then hit Enter or select *Edit* > *Copy* to the clipboard.
 
 ```text
 
@@ -83,15 +79,10 @@ Max hex _INTEGER64 = FFFFFFFFFFFFFFFF with 16 digits =-1
 
 > *Copied text:* The above text was copied after *Select All* was selected and the smaller area was re-highlighted with the mouse.
 
-
 ## See Also
 
-* [_CLIPBOARD$](_CLIPBOARD$) (function), [_CLIPBOARD$ (statement)](_CLIPBOARD$ (statement))
+* [_CLIPBOARD$](_CLIPBOARD$) (function), [_CLIPBOARD$ (statement)](_CLIPBOARD$-(statement))
 * [_CONSOLE](_CONSOLE)
 * [$SCREENHIDE]($SCREENHIDE), [$SCREENSHOW]($SCREENSHOW) (QB64 [Metacommand](Metacommand)s)
 * [_SCREENHIDE](_SCREENHIDE), [_SCREENSHOW](_SCREENSHOW)
-* [C_Libraries#Console_Window](C_Libraries#Console_Window)
-
-
-
-
+* [C_Libraries#Console_Window](C-Libraries#Console_Window)

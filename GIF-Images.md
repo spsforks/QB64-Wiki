@@ -6,7 +6,6 @@ GIF files can be one frame or animated images made up of many frames that are di
 
 ```vb
 
-
 '#######################################################################################
 '# Animated GIF decoder v1.0                                                           #
 '# By Zom-B                                                                            #
@@ -411,25 +410,16 @@ END SUB
 
 
 ```
-**NOTE: If full code is not displayed then refresh browser.**
-
-
 
 **Using with $INCLUDE: 'FILELIST$.BM' File**
->  Copy the code from the [FILELIST$ (function)](FILELIST$ (function)) or [FILELIST$](FILELIST$) page to a text file named *_FILE$.BM* and use when compiling. Just save with .BM extension (*Save As ALL files*) in Notepad or other text editor. The file is not necessary after the program is compiled.
 
+Copy the code from the [FILELIST$ (function)](FILELIST$ (function)) or [FILELIST$](FILELIST$) page to a text file named *_FILE$.BM* and use when compiling. Just save with .BM extension (*Save As ALL files*) in Notepad or other text editor. The file is not necessary after the program is compiled.
 
 ## See Also
 
-
-* [GIF Creation](GIF Creation), [Bitmaps](Bitmaps)
-* [Icons and Cursors](Icons and Cursors)
+* [GIF Creation](GIF-Creation), [Bitmaps](Bitmaps)
+* [Icons and Cursors](Icons-and-Cursors)
 * [_LOADIMAGE](_LOADIMAGE), [_PUTIMAGE](_PUTIMAGE)
-* [FILELIST$ (function)](FILELIST$ (function)) (member file search routine)
+* [FILELIST$ (function)](FILELIST$-(function)) (member file search routine)
 * [SaveIcon32](SaveIcon32) (create icons from any image)
 * [$EXEICON]($EXEICON) (Icon visible in Windows Explorer)
-
-
-
-
-

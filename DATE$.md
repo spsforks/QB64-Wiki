@@ -1,20 +1,16 @@
 The [DATE$](DATE$) function returns the current computer date as a string in the format "mm-dd-yyyy".
 
-
 ## Syntax
 
->  today$ = [DATE$](DATE$)
-
+> today$ = [DATE$](DATE$)
 
 ## Description
 
 * Returns the current computer date in the format "mm-dd-yyyy" (e.g., "12-25-2009").
 
-
 ## Example(s)
 
-## Example(s)
- Displaying the weekday and current date.
+Displaying the weekday and current date.
 
 ```vb
 
@@ -65,20 +61,12 @@ END FUNCTION
 
 ```text
 
-
 06-02-2010
 Today is Wednesday, June 2, 2010
 
 ```
-  
-
 
 ## See Also
 
-* [DATE$ (statement)](DATE$ (statement)), [TIME$](TIME$), [TIME$ (statement)](TIME$ (statement))
+* [DATE$ (statement)](DATE$-(statement)), [TIME$](TIME$), [TIME$ (statement)](TIME$-(statement))
 * [VAL](VAL), [STR$](STR$), [MID$](MID$), [LEFT$](LEFT$), [IF...THEN](IF...THEN)
-
-
-
-
-

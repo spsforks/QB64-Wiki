@@ -1,6 +1,5 @@
 The **FILELIST$** function can be used in place of the old QBasic [FILES](FILES) statement to view a list of files. Displays long and short(8.3) DOS filenames with the last modified information. Function name returns the short filename while **SHARED** string variables **LFN$** and **Path$** return the long name and absolute path from the current root drive. The leading underscore should make it compatible with most older QBasic program code run in **QB64**. The function allows mouse click file selection, letter press searches, file name exist verification without a screen display, and many of the DIR options available in DOS. Including sorting by name, extension, attributes and more! **Your program screens are not changed after a display and the function can be integrated into a program using Putimage!**
 
-
 ```text
 
                              **FILELIST$ Function Features**
@@ -35,14 +34,11 @@ The **FILELIST$** function can be used in place of the old QBasic [FILES](FILES)
 
 ```
 
-
-**[http://i301.photobucket.com/albums/nn53/burger2227/FILE-ss2.jpg Screenshot]**
+**[Screenshot](http://i301.photobucket.com/albums/nn53/burger2227/FILE-ss2.jpg)**
 
 **The function is NOT a QB64 authorized function!** This program code is free to use in your programs! No claims are made as to the suitability of the code and the user is responsible for any damages. You are free to alter the code as you see fit.
 
 **NOTE: IF [$STATIC]($STATIC) Metacommand is required, change function Arrays to [STATIC](STATIC) and [ERASE](ERASE) them at start and every loop!**
-
-
 
 ```vb
 
@@ -87,14 +83,11 @@ FUNCTION QQ$ (t3xt$) 'Quote unQuote text in quotes
 QQ$ = CHR$(34) + t3xt$ + CHR$(34)
 END FUNCTION
 
-
 ' >>>>>>>>> Place INCLUDE file reference here when used as library <<<<<<<<<
-
 
 ```
 
-```text
-
+```vb
 
 '****** NOTE: FILELIST$ Function can also be included as an external library(see below) ******
 
@@ -242,18 +235,13 @@ END FUNCTION * *
 
 ```
 
-
-**Refresh browser if full code is not displayed!**
-
-
 Updated for VISTA screen format 8/20/2010. 
 
 Updated for programs using $DYNAMIC Metacommand 9/16/2010.
 
 Added option for current path to TITLE bar 11/16/2010
 
-**[http://i301.photobucket.com/albums/nn53/burger2227/FILE-ss2.jpg Function Screenshot]**
-
+**[Function Screenshot](http://i301.photobucket.com/albums/nn53/burger2227/FILE-ss2.jpg)**
 
 **CREATING A FILELIST$ $INCLUDE LIBRARY**
 
@@ -265,11 +253,7 @@ To create a **BI** file use Notepad or another text editor, copy code in grey ar
 
 **NOTE: Once the program is compiled, the BI file is no longer needed with the stand alone EXE program!
 
-
-
 ```text
-
-
 
                      **FILELIST$(Spec$) OPTIONS** (/X already used!)
 Syntax: 
@@ -320,30 +304,19 @@ FILELIST$([drive:][path][filename][/A[:]attrib](:]attrib)[/L][/O[:]sortorder](:]
 
 ```
 
-
-
 **FILELIST$ Function can also be displayed on your program screen with Putimage!**
+
 First use Flist& as the source in: _PUTIMAGE , Flist&, newimagepage&
 Then Putimage again at a position on screen larger than 640 X 480 to display
  _DEST main&: _PUTIMAGE (x, y), newimagepage& 
 Where DEST main& is the main program screen. Add the code to the function.
-**Refresh the screen using the above format in both _DISPLAY instances.**
- 
 
 **[FILELIST$](FILELIST$)**
 
-
 > *NOTE:* The data file name "D0S-DATA.INF" uses a zero instead of an "O" in D0S and is deleted after a search!
 
+## See Also
 
-*See also:
-
-[FILES](FILES), [SHELL](SHELL)
-
-[_HIDE](_HIDE), [_COPYIMAGE](_COPYIMAGE), [_PUTIMAGE](_PUTIMAGE)
-
-[$INCLUDE]($INCLUDE) ([Metacommand](Metacommand))
-
-
-
-
+* [FILES](FILES), [SHELL](SHELL)
+* [_HIDE](_HIDE), [_COPYIMAGE](_COPYIMAGE), [_PUTIMAGE](_PUTIMAGE)
+* [$INCLUDE]($INCLUDE) ([Metacommand](Metacommand))

@@ -1,26 +1,22 @@
 The [FIELD](FIELD) statement creates a [STRING](STRING) type definition for a [RANDOM](RANDOM)-access file buffer.
 
-
 ## Syntax
 
->  [FIELD](FIELD) [#]fileNumber&, fieldWidth1% AS variable1$[, fieldWidthN% AS variableN$]
-
+> [FIELD](FIELD) [#]fileNumber&, fieldWidth1% AS variable1$[, fieldWidthN% AS variableN$]
 
 ## Description
 
 * fileNumber% is a file number used in the [OPEN](OPEN) statement or a value from the [FREEFILE](FREEFILE) function. 
-* Combined size of the fieldWidth% parameters **must not exceed the [LEN](LEN) = recordsize in the [RANDOM](RANDOM) [OPEN](OPEN) statement** or a [ERROR Codes](ERROR Codes) will occur.
+* Combined size of the fieldWidth% parameters **must not exceed the [LEN](LEN) = recordsize in the [RANDOM](RANDOM) [OPEN](OPEN) statement** or a [ERROR Codes](ERROR-Codes) will occur.
 * Variables are limited to [STRING](STRING) types. Use [TYPE](TYPE) instead of FIELD if you want to use numerical values. 
 * Once a [FIELD](FIELD) is defined in a statement, [GET](GET) can read and [PUT](PUT) can write data without placeholders or variables.
-* [LSET](LSET), [RSET](RSET), [PRINT (file statement)](PRINT (file statement)), [PRINT USING (file statement)](PRINT USING (file statement)), and [WRITE (file statement)](WRITE (file statement)) can be used to place characters in the file buffer before a [PUT](PUT).
+* [LSET](LSET), [RSET](RSET), [PRINT (file statement)](PRINT-(file-statement)), [PRINT USING (file statement)](PRINT USING (file statement)), and [WRITE (file statement)](WRITE-(file-statement)) can be used to place characters in the file buffer before a [PUT](PUT).
 * All field definitions for a file are removed when the file is [CLOSE](CLOSE) or [RESET](RESET) and all strings are set to null ("").
 * **Do not re-assign a field defined variable value or use it in an [INPUT](INPUT) statement if you want the variable to remain a field**.
 
-
 ## Example(s)
 
-## Example(s)
- Comparing a [TYPE](TYPE) definition with a FIELD [STRING](STRING) definition. Demo using a [TYPE](TYPE) definition to create a file:
+Comparing a [TYPE](TYPE) definition with a FIELD [STRING](STRING) definition. Demo using a [TYPE](TYPE) definition to create a file:
 
 ```vb
 
@@ -90,13 +86,8 @@ END
 
 ```
 
-
 ## See Also
 
 * [OPEN](OPEN), [TYPE](TYPE)
 * [GET](GET), [PUT](PUT)
 * [LSET](LSET), [RSET](RSET)
-
-
-
-

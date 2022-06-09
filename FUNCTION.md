@@ -1,15 +1,13 @@
 A [FUNCTION](FUNCTION) block statement is used to create a function procedure to return a calculated value to a program.
 
-
 ## Syntax
 
->  **FUNCTION procedureName**[type-suffix] [(*parameters*)]
-> : *{code}*
-> : 'variable definitions and procedure statements
-> : ⋮
-> : procedureName = returnValue
->  **END FUNCTION**
-
+> **FUNCTION procedureName**[type-suffix] [(*parameters*)]
+>   *{code}*
+>   'variable definitions and procedure statements
+>   ⋮
+>   procedureName = returnValue
+> **END FUNCTION**
 
 ## Description
 
@@ -27,13 +25,11 @@ A [FUNCTION](FUNCTION) block statement is used to create a function procedure to
 *  **Images are not deallocated when the [SUB](SUB) or [FUNCTION](FUNCTION) they are created in ends. Free them with [_FREEIMAGE](_FREEIMAGE).**
 * The IDE can create the FUNCTION and END FUNCTION lines for you. Use the *New FUNCTION...* option in the Edit Menu. A box will come up for you to enter a name for the FUNCTION. Enter all code between the FUNCTION and [END FUNCTION](END FUNCTION) lines.
 
-
 ## QBasic/QuickBASIC
 
 * Once a FUNCTION was created and used, the QBasic IDE would DECLARE it when the file was saved. **QB64 doesn't need these declarations.**
 * QBasic's IDE could place a [DEFINT](DEFINT), [DEFSNG](DEFSNG), [DEFLNG](DEFLNG), [DEFDBL](DEFDBL) or [DEFSTR](DEFSTR) statement before the FUNCTION line if it is used in the main module. It may even be the wrong variable type needed.
 * QBasic allowed programmers to add DATA fields anywhere because the IDE separated the main code from other procedures.
-
 
 ## Example(s)
 
@@ -56,8 +52,7 @@ END FUNCTION
 
 ```
 
-
-*Example 2:* Returns a [LONG](LONG) array byte size required for a certain sized graphics screen pixel area [GET (graphics statement)](GET (graphics statement)).
+*Example 2:* Returns a [LONG](LONG) array byte size required for a certain sized graphics screen pixel area [GET (graphics statement)](GET-(graphics-statement)).
 
 ```vb
 
@@ -82,15 +77,11 @@ FUNCTION ImageBufferSize& (Wide&, Deep&, ScreenMode%)
 END FUNCTION 
 
 ```
-> *Explanation:* Function calculates the array byte size required when you [GET (graphics statement)](GET (graphics statement)) an area of a graphics [SCREEN](SCREEN). Each mode may require a different sized array. Since graphics uses [INTEGER](INTEGER) arrays, 2 byte elements, the size returned is divided by 2 in the IntegerArray& calculation function reference. Function returns only 4 for [SCREEN](SCREEN) 0 which is a text only mode.
 
+> *Explanation:* Function calculates the array byte size required when you [GET (graphics statement)](GET-(graphics-statement)) an area of a graphics [SCREEN](SCREEN). Each mode may require a different sized array. Since graphics uses [INTEGER](INTEGER) arrays, 2 byte elements, the size returned is divided by 2 in the IntegerArray& calculation function reference. Function returns only 4 for [SCREEN](SCREEN) 0 which is a text only mode.
 
 ## See Also
 
-* [SUB](SUB), [SCREEN (statement)](SCREEN (statement)) 
+* [SUB](SUB), [SCREEN (statement)](SCREEN-(statement)) 
 * [EXIT](EXIT) (statement), [END](END)
 * [_EXIT (function)](_EXIT (function))
-
-
-
-

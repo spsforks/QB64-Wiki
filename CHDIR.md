@@ -1,18 +1,15 @@
 The [CHDIR](CHDIR) statement changes the program's location from one working directory to another by specifying a literal or variable [STRING](STRING) path.
 
-
 ## Syntax
 
 > [CHDIR](CHDIR) path$
-
 
 ## Description
 
 * path$ is the new directory path the program will work in.
 * path$ can be an absolute path (starting from the root folder) or relative path (starting from the current program location).
-* If path$ specifies a non-existing path, a [ERROR Codes](ERROR Codes) error will occur.
+* If path$ specifies a non-existing path, a [ERROR Codes](ERROR-Codes) error will occur.
 * **A QB64 [SHELL](SHELL) statement cannot use "CD " or "CHDIR " + path$ to change directories.**
-
 
 ## Example(s)
 
@@ -25,8 +22,8 @@ CHDIR "DOCUME~1" 'change to "C:\Documents and Settings" from root drive (relativ
 CHDIR "..\"      'change back to previous folder one up 
 
 ```
-> *Details:* **QB64** can use long or short (8.3 notation) file and path names.
 
+> *Details:* **QB64** can use long or short (8.3 notation) file and path names.
 
 *Example 2:* Using the Windows API to find the current program's name and root path. The PATH$ is a shared function value.
 
@@ -59,15 +56,11 @@ END IF
 END FUNCTION 
 
 ```
->  **Note:** The program's [_TITLE](_TITLE) name may be different from the actual program module's file name returned by Windows.
 
+> **Note:** The program's [_TITLE](_TITLE) name may be different from the actual program module's file name returned by Windows.
 
 ## See Also
 
 * [SHELL](SHELL), [FILES](FILES)
 * [MKDIR](MKDIR), [RMDIR](RMDIR)
 * [$CONSOLE]($CONSOLE)
-
-
-
-

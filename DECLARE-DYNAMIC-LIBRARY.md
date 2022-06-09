@@ -1,15 +1,13 @@
 **DECLARE DYNAMIC LIBRARY** allows you to dynamically link your program to functions in dynamically linkable libraries. At present, only *.DLL* files are supported (support for *.so* will be added soon). These libraries are loaded when your program begins.
 
-
 ## Syntax
 
->  DECLARE [DYNAMIC|CUSTOMTYPE|STATIC] LIBRARY [*"DLL_Library_file"*, "other_library..."]
+> DECLARE [DYNAMIC|CUSTOMTYPE|STATIC] LIBRARY [*"DLL_Library_file"*, "other_library..."]
 >  {SUB|FUNCTION} [*procedure_name* ALIAS] *library_procedure* (BYVAL *parameter(s)*,...)
-> :.
-> :. 'other Library sub-procedures for named *DLL*
-> :.
->  END DECLARE
-
+>   .
+>   . 'other Library sub-procedures for named *DLL*
+>   .
+> END DECLARE
 
 ## Description
 
@@ -20,24 +18,21 @@
 * *Procedure_name* is any procedure name you want to designate by using [ALIAS](ALIAS) with the *Library_procedure* name following. 
 * *Parameters* used by the Library procedure must be passed by value ([BYVAL](BYVAL)) except for [STRING](STRING) values.
 * ***.h* header files cannot be used with DECLARE DYNAMIC LIBRARY. Existence of any *.h* file of the same name as the *.DLL* file will cause DECLARE DYNAMIC LIBRARY to fail.**
-* **IMPORTANT:** [DECLARE DYNAMIC LIBRARY](DECLARE DYNAMIC LIBRARY) let's you specify any SUB/FUNCTION calling format you wish, but **if the size of the parameters does not match, the size expected within the library your code will probably cause a GPF (General Protection Fault).** It is important to understand that you are creating a 32-bit program (even under 64-bit Windows) so **pointers (if required) will be 32-bits in size, the equivalent of a [LONG](LONG).**
-* **STATIC** is the same as [DECLARE LIBRARY](DECLARE LIBRARY) except that it prioritizes linking to static libraries (*.a/*.o) over shared object (*.so) libraries, if both exist. As Windows doesn't really use shared libraries (DLLs are a bit different) this does not affect Windows users.
+* **IMPORTANT:** [DECLARE DYNAMIC LIBRARY](DECLARE-DYNAMIC-LIBRARY) let's you specify any SUB/FUNCTION calling format you wish, but **if the size of the parameters does not match, the size expected within the library your code will probably cause a GPF (General Protection Fault).** It is important to understand that you are creating a 32-bit program (even under 64-bit Windows) so **pointers (if required) will be 32-bits in size, the equivalent of a [LONG](LONG).**
+* **STATIC** is the same as [DECLARE LIBRARY](DECLARE-LIBRARY) except that it prioritizes linking to static libraries (*.a/*.o) over shared object (*.so) libraries, if both exist. As Windows doesn't really use shared libraries (DLLs are a bit different) this does not affect Windows users.
 * The [_OFFSET](_OFFSET) in memory can be used in **CUSTOMTYPE**, **STATIC** and **DYNAMIC LIBRARY** declarations.
 * [SUB](SUB) procedures using DECLARE CUSTOMTYPE LIBRARY API procedures **may error**. Try DYNAMIC with the DLL name.
 * Declarations can be made inside of [SUB](SUB) or [FUNCTION](FUNCTION) procedures. Declarations do not need to be at program start.
 * **NOTE: It is up to the user to document and determine the suitability of all Libraries and procedures they choose to use. QB64 cannot guarantee that any procedure will work and cannot quarantee any troubleshooting help.**
-
 
 ## Availability
 
 * **Version 0.923 and up (Windows)**
 * **Version 0.94 and up (Linux and macOS)**
 
-
-
 ## Example(s)
 
-*Example 1:* This example plays Midi files using the *playmidi32.dll* documented here: [http://libertybasicuniversity.com/lbnews/nl110/midi3.htm Liberty Basic University]. Download the following DLL file to your main QB64 folder: [https://www.qb64.org/resources/Playmidi32.dll PlayMidi32.dll]
+*Example 1:* This example plays Midi files using the *playmidi32.dll* documented here: [Liberty Basic University](http://libertybasicuniversity.com/lbnews/nl110/midi3.htm). Download the following DLL file to your main QB64 folder: [PlayMidi32.dll](https://www.qb64.org/resources/Playmidi32.dll)
 
 ```vb
 
@@ -48,8 +43,8 @@ result = PlayMIDI(".\samples\qb64\original\ps2battl.mid" + CHR$(0))
 PRINT result
 
 ```
->  **Note:** Filename needs to be [CHR$](CHR$)(0) terminated. QB64 [STRING](STRING)s are passed to external libraries as pointers to first character.
 
+> **Note:** Filename needs to be [CHR$](CHR$)(0) terminated. QB64 [STRING](STRING)s are passed to external libraries as pointers to first character.
 
 *Example 2:* Using a CUSTOMTYPE LIBRARY to return the [Unicode](Unicode) version of the current running program's name.
 
@@ -95,22 +90,17 @@ END FUNCTION
 
 ```
 <sub>Code by Galleon</sub> 
->  **Note:** SUB procedures using CUSTOMTYPE LIBRARY API procedures inside may error. Try DYNAMIC with "KERNEL32".
 
+> **Note:** SUB procedures using CUSTOMTYPE LIBRARY API procedures inside may error. Try DYNAMIC with "KERNEL32".
 
 **QB64 version 1.000 and up produce standalone executables. External DLL files must be distributed with your program.**
 **Note: QB64 versions prior to 1.000 require all default DLL files to either be with the program or in the C:\WINDOWS\SYSTEM32 folder.**
 
-
 ## See Also
 
-* [DECLARE LIBRARY](DECLARE LIBRARY)
+* [DECLARE LIBRARY](DECLARE-LIBRARY)
 * [SUB](SUB), [FUNCTION](FUNCTION)
 * [BYVAL](BYVAL), [ALIAS](ALIAS)
-* [_OFFSET (function)](_OFFSET (function)), [_OFFSET](_OFFSET) (variable type)
-* [C Libraries](C Libraries), [SDL Libraries](SDL Libraries), [DLL Libraries](DLL Libraries), [Windows Libraries](Windows Libraries)
-* [Port Access Libraries](Port Access Libraries)
-
-
-
-
+* [_OFFSET (function)](_OFFSET-(function)), [_OFFSET](_OFFSET) (variable type)
+* [C Libraries](C-Libraries), [SDL Libraries](SDL-Libraries), [DLL Libraries](DLL-Libraries), [Windows Libraries](Windows-Libraries)
+* [Port Access Libraries](Port-Access-Libraries)

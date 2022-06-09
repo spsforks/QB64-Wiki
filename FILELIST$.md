@@ -1,12 +1,9 @@
-** FILELIST$ Function Automatic Setup Version**
+**FILELIST$ Function Automatic Setup Version**
+
+This version of the FILELIST$ string Function can be set up as a separate Window or be positioned anywhere on program screens larger than 640 X 480. Two position parameters are added to place the top left corner position on a QB64 custom [_NEWIMAGE](_NEWIMAGE) screen. It can be used with ANY screen mode either as a separate window or combined with your program screen! Simply set the parameters to zero if you want to use it as a Window. It will completely restore your program after a file list is displayed. Like [FILELIST$ (function)](FILELIST$-(function)), this setup can also be INCLUDEd as a library and supports all of the original file specifications listed on the [FILELIST$ (function)](FILELIST$-(function)) page.
 
 
-This version of the FILELIST$ string Function can be set up as a separate Window or be positioned anywhere on program screens larger than 640 X 480. Two position parameters are added to place the top left corner position on a QB64 custom [_NEWIMAGE](_NEWIMAGE) screen. It can be used with ANY screen mode either as a separate window or combined with your program screen! Simply set the parameters to zero if you want to use it as a Window. It will completely restore your program after a file list is displayed. Like [FILELIST$ (function)](FILELIST$ (function)), this setup can also be INCLUDEd as a library and supports all of the original file specifications listed on the [FILELIST$ (function)](FILELIST$ (function)) page.
-
-
-**[http://i301.photobucket.com/albums/nn53/burger2227/FILE-ss2.jpg Function Window Screenshot]**
-
-
+**[Function Window Screenshot](http://i301.photobucket.com/albums/nn53/burger2227/FILE-ss2.jpg)**
 
 ```vb
 
@@ -36,8 +33,7 @@ SLEEP
 
 ```
 
-```text
-
+```vb
 
 FUNCTION FILELIST$ (Spec$, xpos%, ypos%)
 SHARED Path$, LFN$ 'values also accessable by program
@@ -202,20 +198,12 @@ END FUNCTION * *
 
 **NOTE: Refresh browser if full code is not displayed!**
 
-
- Updated for VISTA Screen format 8/20/2010
+Updated for VISTA Screen format 8/20/2010
 
 Added optional root path in _TITLE bar of windowed mode only 11/16/2010
 
-
 **NOTE: IF [$STATIC]($STATIC) Metacommand is required, change function Arrays to [STATIC](STATIC) and [ERASE](ERASE) them at start and every loop!**
-
 
 ## See Also
 
-
-[FILELIST$ (function)](FILELIST$ (function))
-
-
-
-
+* [FILELIST$ (function)](FILELIST$-(function))

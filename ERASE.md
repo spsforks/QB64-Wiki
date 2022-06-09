@@ -1,10 +1,8 @@
 The [ERASE](ERASE) statement is used to clear all data from an array. [$STATIC]($STATIC) [Arrays](Arrays) dimensions are not affected.
 
-
 ## Syntax
 
->  ERASE *arrayName* [, *arrayName2*...]
-
+> ERASE *arrayName* [, *arrayName2*...]
 
 ## Description
 
@@ -14,7 +12,6 @@ The [ERASE](ERASE) statement is used to clear all data from an array. [$STATIC](
 * Dimension subprocedure arrays as [STATIC](STATIC) to use [ERASE](ERASE) and not have to REDIM.
 * You do not have to include array brackets in an [ERASE](ERASE) call.
 
-
 ## See Also
 
 * [DIM](DIM), [REDIM](REDIM)
@@ -22,7 +19,3 @@ The [ERASE](ERASE) statement is used to clear all data from an array. [$STATIC](
 * [STATIC](STATIC)
 * [$DYNAMIC]($DYNAMIC)
 * [Arrays](Arrays)
-
-
-
-

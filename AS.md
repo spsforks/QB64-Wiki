@@ -1,19 +1,17 @@
 The [AS](AS) keyword defines a variable data [type](type). 
 
-
 ## Description
 
 * AS defines the variable or array type AS [_BIT](_BIT), [_BYTE](_BYTE), [INTEGER](INTEGER), [LONG](LONG), [_INTEGER64](_INTEGER64), [SINGLE](SINGLE), [DOUBLE](DOUBLE), [_FLOAT](_FLOAT) or [STRING](STRING).
 * Specifies a variable's [type](type) in a declarative statement or parameter list using:
-** [DIM](DIM) or [REDIM](REDIM)
-** [DECLARE LIBRARY](DECLARE LIBRARY)
-** [SUB](SUB)
-** [FUNCTION](FUNCTION)
-** [TYPE](TYPE)
-** [SHARED](SHARED)
-** [COMMON SHARED](COMMON SHARED)
-** [STATIC](STATIC)
-
+  - [DIM](DIM) or [REDIM](REDIM)
+  - [DECLARE LIBRARY](DECLARE-LIBRARY)
+  - [SUB](SUB)
+  - [FUNCTION](FUNCTION)
+  - [TYPE](TYPE)
+  - [SHARED](SHARED)
+  - [COMMON SHARED](COMMON-SHARED)
+  - [STATIC](STATIC)
 
 ### Details
 
@@ -24,14 +22,9 @@ The [AS](AS) keyword defines a variable data [type](type).
 * Specifies a new file name when you rename a file (see [NAME](NAME))
 * **NOTE: Many QBasic keywords can be used as variable names if they are created as [STRING](STRING)s using the suffix **$**. You cannot use them without the suffix, use a numerical suffix or use [DIM](DIM), [REDIM](REDIM), [_DEFINE](_DEFINE), [BYVAL](BYVAL) or [TYPE](TYPE) variable [AS](AS) statements.**
 
-
 ## See Also
 
 * [DIM](DIM), [REDIM](REDIM)
 * [_DEFINE](_DEFINE) 
 * [BYVAL](BYVAL), [TYPE](TYPE)
-* [Variable Types](Variable Types)
-
-
-
-
+* [Variable Types](Variable-Types)

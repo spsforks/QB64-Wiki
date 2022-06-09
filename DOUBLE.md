@@ -1,10 +1,8 @@
 [DOUBLE](DOUBLE) type floating point numerical values use 8 bytes per value.
 
-
 ## Syntax
 
->  [DIM](DIM) variable [AS](AS) [DOUBLE](DOUBLE)
-
+> [DIM](DIM) variable [AS](AS) [DOUBLE](DOUBLE)
 
 ## Description
 
@@ -17,11 +15,9 @@
 * **When a variable has not been defined or has no type suffix, the value defaults to [SINGLE](SINGLE).**
 * **Warning: QBasic keyword names cannot be used as numerical variable names with or without the type suffix.**
 
-
 ## QBasic/QuickBASIC
 
 * Results of mathematical calculations may be approximate or slow in QuickBASIC 4.5.
-
 
 ## See Also
 
@@ -29,8 +25,4 @@
 * [MKD$](MKD$), [CVD](CVD)
 * [SINGLE](SINGLE), [_FLOAT](_FLOAT)
 * [LEN](LEN)
-* [Variable Types](Variable Types)
-
-
-
-
+* [Variable Types](Variable-Types)

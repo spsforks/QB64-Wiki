@@ -2,49 +2,40 @@ The following **DOS BIOS** information can be used on Windows 9x machines. Not n
 
 > **NOTE: Few of these addresses are currenly accessable in QB64! Some may never be due to OS changes.**
 
+> **DEF SEG = 0 LOW MEMORY PORT ADDRESSES**
+> #### #### #### #### #### #### #### 
 
-
-> :::::**DEF SEG = 0 LOW MEMORY PORT ADDRESSES**
-> :::::#### #### #### #### #### #### #### 
-
-
-
-
-> ::::**PORT # | FUNCTION, DESCRIPTION OR COMMENTS FOR USE**
-> ::::#### #### #### #### #### #### #### #### #### #### =
-
-
-
-
+> **PORT # | FUNCTION, DESCRIPTION OR COMMENTS FOR USE**
+> #### #### #### #### #### #### #### #### #### #### =
 
 ## TIMER
 
 * **&H42 (66)**
-> :SETS TIMER CHIP TO PRODUCE A FREQUENCY 20 TO 20,000 HZ:
+
+> SETS TIMER CHIP TO PRODUCE A FREQUENCY 20 TO 20,000 HZ:
 
 ```vb
-
 
    A = INT(1193182 / F)
    H = INT(A / 256)
    L = A - H * 256 
    OUT 66, L: OUT 66, H
 
-
 ```
 
 * **&H43 (67)**
-> :OUT 67, 182 PREPARES TIMER CHIP TO RECEIVE A VALUE.
 
+> OUT 67, 182 PREPARES TIMER CHIP TO RECEIVE A VALUE.
 
 * **&H46C - &H46E (1132 - 1134)**
-> :ticks& = PEEK (1132) + 256 * PEEK (1133) + 65536 + PEEK (1134)
-> :WILL PROVIDE THE NUMBER OF CLOCK TICKS SINCE MIDNIGHT 1 TO 1,533,039 (18.2 PER SEC)
 
-> : USING A ONE TICK TIMER LOOP:
+> ticks& = PEEK (1132) + 256 * PEEK (1133) + 65536 + PEEK (1134)
+
+> WILL PROVIDE THE NUMBER OF CLOCK TICKS SINCE MIDNIGHT 1 TO 1,533,039 (18.2 PER SEC)
+
+> USING A ONE TICK TIMER LOOP:
 
 ```vb
-
 
  DEF SEG = 0    ' set to PEEK and POKE TIMER
  POKE (1132), 0 ' zero Timer ticks
@@ -53,12 +44,11 @@ The following **DOS BIOS** information can be used on Windows 9x machines. Not n
  LOOP UNTIL PEEK(1132) >= 1 ' until one tick (@ 1/18th sec.) has passed 
  DEF SEG
 
-
 ```
+
 * **&H470 = 1136)**
 
-## Example(s)
- DETERMINING THE DATE n DAYS FROM NOW. 
+DETERMINING THE DATE n DAYS FROM NOW. 
 
 ```vb
 
@@ -73,46 +63,35 @@ The following **DOS BIOS** information can be used on Windows 9x machines. Not n
 
 ```
 
-
-
-
-
 ## HARDWARE
 
-
 * **&H61 (97)**
-> :OUT 97,INP(97) OR 3 TO     'TURN THE SPEAKER ON.
-> :OUT 97,INP(97) OR 8 TO     'TURN THE CASSETTE MOTOR OFF.
-> :OUT 97,INP(97) AND 247     'TO TURN THE CASSETTE MOTOR ON.
-> :OUT 97,INP(97) AND 252     'TO TURN THE SPEAKER OFF.
-> :POKE (97),PEEK(97) OR 128  ' DISABLES PC/XT KEYBOARDS.
-> :POKE (97),PEEK(97) AND 127 ' ENABLES PC/XT KEYBOARDS.
 
-
-
+> OUT 97,INP(97) OR 3 TO     'TURN THE SPEAKER ON.
+> OUT 97,INP(97) OR 8 TO     'TURN THE CASSETTE MOTOR OFF.
+> OUT 97,INP(97) AND 247     'TO TURN THE CASSETTE MOTOR ON.
+> OUT 97,INP(97) AND 252     'TO TURN THE SPEAKER OFF.
+> POKE (97),PEEK(97) OR 128  ' DISABLES PC/XT KEYBOARDS.
+> POKE (97),PEEK(97) AND 127 ' ENABLES PC/XT KEYBOARDS.
 
 ## PRINTER
 
 * **&H62 (98)**
-> :PEEK (98)  PROVIDES CURRENT PRINTER WIDTH.
-> :POKE 98, w" SETS CURRENT PRINTER WIDTH TO w.
+
+> PEEK (98)  PROVIDES CURRENT PRINTER WIDTH.
+> POKE 98, w" SETS CURRENT PRINTER WIDTH TO w.
 
 
 * **&H6C - &H6F (108 - 111)**
-> :|  POKE 108, 83: POKE 109, 255: POKE 110,0: POKE 111,240 'DISABLE CTRL-BRK.
-> :|  POKE 108, 240: POKE 109, 32: POKE 110,3: POKE 111,12 ' ENABLES CTRL-BRK.
 
-
-
+> POKE 108, 83: POKE 109, 255: POKE 110,0: POKE 111,240 'DISABLE CTRL-BRK.
+> POKE 108, 240: POKE 109, 32: POKE 110,3: POKE 111,12 ' ENABLES CTRL-BRK.
 
 ## DISK
 
-
-
 * **&H43F (1087)** 
 
-## Example(s)
- Determining the status of a drive motor:
+Determining the status of a drive motor:
 
 ```vb
 
@@ -121,9 +100,7 @@ IF PEEK(1087) AND 15  = 0 THEN PRINT "No drive being written to"
 
 ```
 
-
-## Example(s)
- Drive$ designated is A, B, C or D, and the letter must be in uppercase.
+Drive$ designated is A, B, C or D, and the letter must be in uppercase.
 
 ```vb
 
@@ -135,7 +112,6 @@ IF PEEK(1087) AND 2 ^ (ASC (Drive$) - 65) THEN PRINT "Drive: " Drive$
 
 * **&H440 (1088)**   
 
-## Example(s)
  To turn on drive D for n seconds, where n is at MOST 14! :
 
 ```vb
@@ -161,16 +137,13 @@ head = PEEK(1094)  'determine which diskette head (0 or 1) was last accessed
 
 sector = PEEK(1095)  'determine which diskette sector was last accessed
 
-
 * **&H448  (1096)**   
 
 bytes = 128 * 2 ^ PEEK(1096)  'number of bytes per sector on a diskette
 
-
 * **&H78 - &H7B  (120 - 123)** 
 
-## Example(s)
- The diskette parameter table consists of 11 bytes
+The diskette parameter table consists of 11 bytes
 
 ```vb
 
@@ -194,35 +167,28 @@ MST = PEEK(D + 10) 'number of eighths of a second for motor startup
 DEF SEG 
 
 ```
-> **WARNING: Changing the values of PEEK(D + 3) and PEEK(D + 4) can modify the way that diskettes are read and might require you to format your diskettes manually!**
 
+> **WARNING: Changing the values of PEEK(D + 3) and PEEK(D + 4) can modify the way that diskettes are read and might require you to format your diskettes manually!**
 
 * **&H504 (1284)**
 
 If a single diskette drive is used for both drives A: and B:, current role is:
 
->  PRINT "Current Drive: " + CHR$(65 + PEEK(1284))
-
+> PRINT "Current Drive: " + CHR$(65 + PEEK(1284))
 
 * **&H475 (1141)**
 
 numHD% = PEEK (1141)  'provides number of hard drives installed
 
-
 * **&H413 - &H414 (1043-44)**
 
 PEEK (1043) + 256 * PEEK(1044) 'indicates the RAM installed in kilobytes
-
 
 * **&H3F2 (1010)**
 
 OUT 1010, 12 'will turn off all drives
 
-
-
-
 ## PORTS
-
 
 **PRINTER LPT Ports**
 
@@ -232,7 +198,7 @@ OUT 1010, 12 'will turn off all drives
 > &H406, &H407
 > firstLPT = PEEK(1030 + 2 * n) + PEEK(1031 + 2 * n) * 256
 
-> To swap two printers, interchange their initial port numbers.
+To swap two printers, interchange their initial port numbers.
 Denote the first port associated with LPTn by Pn. The value
 of P1 will be 956 if LPT1 is attached to the IBM monochrome display
 and parallel printer adapter.     
@@ -240,12 +206,14 @@ and parallel printer adapter.
 **RS-232 Serial port INTERFACE**
 
 > &H411
+
 The number of RS-232 cards attached can be found with: (PEEK(1041) AND 14)/2
 
 > To determine the first of the seven ports associated with COMn:
-> :&H3FE, &H3FF
-> :PEEK(1022 + 2 * n) + 256 * PEEK(1023 + 2 * n).
-> :If this number is 0, then COMn is not available.
+
+> &H3FE, &H3FF
+> PEEK(1022 + 2 * n) + 256 * PEEK(1023 + 2 * n).
+> If this number is 0, then COMn is not available.
 
 To swap two RS-232 interfaces, interchange their initial port numbers.
 
@@ -339,78 +307,77 @@ You can use OUT Pn, m to write the character with ASCII value m to the serial
 
 
 &H3FE = 1022   
-> : PROVIDES INFORMATION RELATED TO RS232 COMMUNICATIONS PORTS:
-> :| PEEK(1022 + 2 * n) + PEEK(1023 + 2 * n) * 256 
-> :| WHERE COMn value = 0 IF COMn: IS NOT AVAILABLE.
+
+> PROVIDES INFORMATION RELATED TO RS232 COMMUNICATIONS PORTS:
+
+> PEEK(1022 + 2 * n) + PEEK(1023 + 2 * n) * 256 
+> WHERE COMn value = 0 IF COMn: IS NOT AVAILABLE.
 
 > &H411 = 1041   
-> :| (PEEK (1041) AND 14)/2    'WILL PROVIDE NUMBER OF Serial RS232 PORTS INSTALLED.
-> :| (PEEK (1041) AND 16)/16   'WILL PROVIDE NUMBER OF GAME PORTS INSTALLED.
-> :| (PEEK (1041) AND 192)/64  'WILL PROVIDE NUMBER OF LPT Ports INSTALLED.
+
+> (PEEK (1041) AND 14)/2    'WILL PROVIDE NUMBER OF Serial RS232 PORTS INSTALLED.
+> (PEEK (1041) AND 16)/16   'WILL PROVIDE NUMBER OF GAME PORTS INSTALLED.
+> (PEEK (1041) AND 192)/64  'WILL PROVIDE NUMBER OF LPT Ports INSTALLED.
 
 &H408 = 1032   | Provides Information on PRINTER PORTS (LPT)
-> :FOR i% = 1 TO 3
-> ::lpt% = PEEK(&H408 + (i% - 1) * 2) + PEEK(&H408 + (i% - 1) * 2 + 1) * 256
-> ::LOCATE , 23: PRINT "LPT"; HEX$(i%);
-> ::IF lpt% = 0 THEN
-> :::PRINT " not found"
-> ::ELSE : PRINT " found at &H"; HEX$(lpt%); " ("; LTRIM$(STR$(lpt%)); ")"
-> ::END IF
-> ::IF lpt% = 888 THEN port378% = i% ' usually the LPT1 port printer address
-> :NEXT
 
-
-
-
+> FOR i% = 1 TO 3
+>   lpt% = PEEK(&H408 + (i% - 1) * 2) + PEEK(&H408 + (i% - 1) * 2 + 1) * 256
+>   LOCATE , 23: PRINT "LPT"; HEX$(i%);
+>   IF lpt% = 0 THEN
+>     PRINT " not found"
+>   ELSE : PRINT " found at &H"; HEX$(lpt%); " ("; LTRIM$(STR$(lpt%)); ")"
+>   END IF
+>   IF lpt% = 888 THEN port378% = i% ' usually the LPT1 port printer address
+> NEXT
 
 ## DISPLAY
 
-
-> ::::**DEF SEG = 0 MONITOR INFORMATION**
-> ::::#### #### #### #### #### ## 
-
-
-
+> **DEF SEG = 0 MONITOR INFORMATION**
+> #### #### #### #### #### ## 
 
 > To check the type of display:
-> &H410 = 1040
-> :PEEK(1040) AND 48 = 0 ' is no monitors      ' &H410
-> :PEEK(1040) AND 48 = 16 ' is a 40 x 25 graphics monitor
-> :PEEK(1040) AND 48 = 32 ' is a 80 x 25 graphics monitor
-> :PEEK(1040) AND 48 = 48 ' is a monochrome display
 
+> &H410 = 1040
+
+> PEEK(1040) AND 48 = 0 ' is no monitors      ' &H410
+> PEEK(1040) AND 48 = 16 ' is a 40 x 25 graphics monitor
+> PEEK(1040) AND 48 = 32 ' is a 80 x 25 graphics monitor
+> PEEK(1040) AND 48 = 48 ' is a monochrome display
 
 > To select a display:
     
-> : POKE 1040, PEEK(1040) OR 48 ' Monochrome
-> :SCREEN 0: WIDTH 80: LOCATE ,,1,0,0
-> :POKE 1040,(PEEK(1040) AND 207) OR 16 ' graphics
-> :SCREEN 1,0,0,0:WIDTH 80:LOCATE ,,1,0,0.
+> POKE 1040, PEEK(1040) OR 48 ' Monochrome
 
+> SCREEN 0: WIDTH 80: LOCATE ,,1,0,0
+> POKE 1040,(PEEK(1040) AND 207) OR 16 ' graphics
+> SCREEN 1,0,0,0:WIDTH 80:LOCATE ,,1,0,0.
 
 > &H44A, &H44B = 1098, 1099 ' (DEF SEG = 0)
-> :columns = PEEK(1098) + 256 * PEEK(1099) 'gives the present screen width in columns.
 
+> columns = PEEK(1098) + 256 * PEEK(1099) 'gives the present screen width in columns.
 
-> :(DEF SEG = 64)
-> :DEF SEG = &H40: textcols = PEEK(&H4A): DEF SEG
+> (DEF SEG = 64)
+> DEF SEG = &H40: textcols = PEEK(&H4A): DEF SEG
 
 > &H44E, &H44F = 1102, 1103
-Graphics screen contents stored in a buffer at:
-> : PEEK(1102) + 256 * PEEK(1103).
 
+Graphics screen contents stored in a buffer at:
+
+> PEEK(1102) + 256 * PEEK(1103).
 
 memory that physically resides on a graphics board.
+
 > &H44C, &H44D = 1100, 1101
-> :PEEK(1100) + 256 * PEEK(1101) ' Buffer size 
+> PEEK(1100) + 256 * PEEK(1101) ' Buffer size 
 
 > The cursor locations for the various pages are given as follows:
 > Let CR(n) and CC(n) be the Cursor Row and Cursor Column for page n.
 > &H450, &H451 = 1004, 1005
 
-> :PEEK(1105) + 2 * n) ' has a value of CR(n) - 1,
+> PEEK(1105) + 2 * n) ' has a value of CR(n) - 1,
      
-> :PEEK(1104 + 2 * n) ' has a value of CC(n) - 1.
+> PEEK(1104 + 2 * n) ' has a value of CC(n) - 1.
 
 > &H460 to &H462 = 1120 to 1122
 > The shape of the cursor can be set as follows: LOCATE ,,,I,J.

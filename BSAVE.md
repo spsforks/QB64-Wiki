@@ -1,25 +1,22 @@
 [BSAVE](BSAVE) saves the contents of an image array to a [BINARY](BINARY) file.
 
-
 ## Syntax
 
->  [BSAVE](BSAVE) saveFile$, [VARPTR](VARPTR)(array(index)), fileSize&
+> [BSAVE](BSAVE) saveFile$, [VARPTR](VARPTR)(array(index)), fileSize&
 
+## Legacy Support
 
-PageLegacySupport
 * **QB64** can save larger arrays directly to binary files using [PUT](PUT) # and [GET](GET) # without **BSAVE**. For that reason, **BSAVE** isn't recommended practice anymore and is supported to maintain compatibility with legacy code.
-
 
 ## Parameter(s)
 
 * saveFile$ is the STRING file name of the file designated to be created.
-* array(index) is the image [arrays](arrays) that already holds the [GET (graphics statement)](GET (graphics statement)) image data.
+* array(index) is the image [arrays](arrays) that already holds the [GET (graphics statement)](GET-(graphics-statement)) image data.
 * fileSize& must be a bit over twice the size of the elements used in an [INTEGER](INTEGER) [Arrays](Arrays).
-
 
 ## Description
 
-* To place image data into the array, use [GET (graphics statement)](GET (graphics statement)) to store a box area image of the screen.
+* To place image data into the array, use [GET (graphics statement)](GET-(graphics-statement)) to store a box area image of the screen.
 * [SCREEN](SCREEN) 12 can only GET 1/3 of the screen image at one time using a 26K array. 
 * Image arrays are [DIM](DIM)ensioned as [INTEGER](INTEGER). Use [DEFINT](DEFINT) when working with large graphic arrays.
 * Any arrays can be saved, but image arrays are most common.
@@ -27,23 +24,22 @@ PageLegacySupport
 * [VARPTR](VARPTR) returns the array index offset of the memory segment. Array sizes are limited to 32767 Integer elements due to the use of [VARPTR](VARPTR) in QBasic and **QB64**'s emulated conventional memory.
 * [BSAVE](BSAVE) files can later be opened with [BLOAD](BLOAD).
 
-
 ## Example(s)
 
 *Example 1:* Saving array data to a file quickly.
 
 ```vb
 
- LB% = LBOUND(Array)
- bytes% = LEN(Array(LB%))
- filesize& = ((UBOUND(Array) - LB%) + 1) * bytes% 
- DEF SEG = VARSEG(Array(0))
-  BSAVE filename$, VARPTR(Array(LB%)), filesize&  ' changeable index
- DEF SEG 
+LB% = LBOUND(Array)
+bytes% = LEN(Array(LB%))
+filesize& = ((UBOUND(Array) - LB%) + 1) * bytes% 
+DEF SEG = VARSEG(Array(0))
+BSAVE filename$, VARPTR(Array(LB%)), filesize&  ' changeable index
+DEF SEG 
 
 ```
->  *Explanation:* Procedure determines the filesize from the array size automatically. [LBOUND](LBOUND) is used with [UBOUND](UBOUND) to determine array size and byte size. Works with any type of array except variable-length strings. Used for saving program data fast.
 
+> *Explanation:* Procedure determines the filesize from the array size automatically. [LBOUND](LBOUND) is used with [UBOUND](UBOUND) to determine array size and byte size. Works with any type of array except variable-length strings. Used for saving program data fast.
 
 *Example 2:* [BSAVE](BSAVE)ing a bitmap and calculating the file size
 
@@ -60,8 +56,7 @@ PageLegacySupport
 
 ```
 
->  *Explanation:* The [FOR...NEXT](FOR...NEXT) loop reads backwards through the image array until it finds a value not 0. The [LONG](LONG) ArraySize& value is doubled and 200 is added. BMPhead.PWidth and BMPhead.PDepth are found by reading the bitmap's information header using a [TYPE](TYPE) definition. See [Bitmaps](Bitmaps).
-
+> *Explanation:* The [FOR...NEXT](FOR...NEXT) loop reads backwards through the image array until it finds a value not 0. The [LONG](LONG) ArraySize& value is doubled and 200 is added. BMPhead.PWidth and BMPhead.PDepth are found by reading the bitmap's information header using a [TYPE](TYPE) definition. See [Bitmaps](Bitmaps).
 
 *Example 3:* Using [PUT](PUT) and [GET](GET) to write and read array data from a file without using BSAVE or [BLOAD](BLOAD):
 
@@ -99,21 +94,18 @@ FOR i = 0 TO 20 'read all 3 arrays
 NEXT
 PRINT "Array:"; size%, "File:"; fsize%
 
-```<sub>Code by Ted Weissgerber</sub>
->  *Explanation:* A 10 by 10 pixel box is saved to an array using the [GET (graphics statement)](GET (graphics statement)) and written to a BINARY file using [PUT](PUT) #1. Then [GET](GET) #1 places the file contents into another INTEGER array and places it on the screen with the [PUT (graphics statement)](PUT (graphics statement)).
+```
+<sub>Code by Ted Weissgerber</sub>
+
+> *Explanation:* A 10 by 10 pixel box is saved to an array using the [GET (graphics statement)](GET-(graphics-statement)) and written to a BINARY file using [PUT](PUT) #1. Then [GET](GET) #1 places the file contents into another INTEGER array and places it on the screen with the [PUT (graphics statement)](PUT-(graphics-statement)).
 
 >  The array contents: 88 is the width in the GET array for [SCREEN](SCREEN) 13 which needs divided by 8 in that mode only. The area is actually 11 X 11. The array size needed can be found by looping backwards through the array until a color value is found. **IF array(i) <> 0 THEN EXIT FOR** (66 integers) or by dividing the created BINARY file size in half (134 bytes) when known to be array sized already.
 
-
 ## See Also
 
-* [GET (graphics statement)](GET (graphics statement)), [PUT (graphics statement)](PUT (graphics statement))
+* [GET (graphics statement)](GET-(graphics-statement)), [PUT (graphics statement)](PUT-(graphics-statement))
 * [BLOAD](BLOAD), [OPEN](OPEN), [BINARY](BINARY)
 * [GET](GET), [PUT](PUT) (file statements)
 * [VARSEG](VARSEG), [VARPTR](VARPTR)
-* [DEF SEG](DEF SEG), [TYPE](TYPE)
-* [Text Using Graphics](Text Using Graphics)
-
-
-
-
+* [DEF SEG](DEF-SEG), [TYPE](TYPE)
+* [Text Using Graphics](Text-Using-Graphics)

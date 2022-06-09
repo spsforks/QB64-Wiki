@@ -1,11 +1,10 @@
 ## Icon Viewer and Bitmap Creator
 
-The following program can be used to view Icon or Cursor images and save them as Bitmaps. When you answer Y the bitmap is saved with a black background so that it can be PUT using [XOR](XOR) on to the [AND](AND) image. The AND image will be black and white if the image is irregularly shaped(not a full box image). It is placed first using [PUT (graphics statement)](PUT (graphics statement)) with the AND action or can be placed using [_PUTIMAGE](_PUTIMAGE) with the color white [_ALPHA](_ALPHA) being set to 0. In that case, try just placing the XOR image with the color black 0 [_ALPHA](_ALPHA) with [_SETALPHA](_SETALPHA).
+The following program can be used to view Icon or Cursor images and save them as Bitmaps. When you answer Y the bitmap is saved with a black background so that it can be PUT using [XOR](XOR) on to the [AND](AND) image. The AND image will be black and white if the image is irregularly shaped(not a full box image). It is placed first using [PUT (graphics statement)](PUT-(graphics-statement)) with the AND action or can be placed using [_PUTIMAGE](_PUTIMAGE) with the color white [_ALPHA](_ALPHA) being set to 0. In that case, try just placing the XOR image with the color black 0 [_ALPHA](_ALPHA) with [_SETALPHA](_SETALPHA).
 
 <sub>Code by Ted Weissgerber</sub>
 
-```text
-
+```vb
 
 '********************************* IconType.BI INCLUDE FILE ********************************
 
@@ -42,7 +41,6 @@ END TYPE '40 byte
 
 
 ```
-
 
 ```vb
 
@@ -268,12 +266,9 @@ LOOP UNTIL y = -1
 END SUB 
 REM $INCLUDE: '32BitSUB.BM'
 
-
 ```
 
-```text
-
-
+```vb
 
 '*********************************** 32BitSUB.BM INCLUDE FILE *******************************
 
@@ -359,17 +354,14 @@ END SUB
 ```
 
 <sub>Adapted from code by Bob Seguin</sub>
-**If full code is not displayed, refresh browser!**
-
 
 **NOTE: Black areas of an image may become "see through" unless another color attribute is used and set to black!**
 
 >  This can be done by changing another color attribute's RGB settings to 0 or almost 0 and creating a mask after using it in solid black areas of a 4 or 8 BPP palette image. This can also be done using [_PUTIMAGE](_PUTIMAGE) with 32 bit [_CLEARCOLOR](_CLEARCOLOR) settings.
 
-*See the following page:* [Creating Sprite Masks](Creating Sprite Masks)
+*See the following page:* [Creating Sprite Masks](Creating-Sprite-Masks)
 
 ## Icon to Bitmap Conversion Function
-
 
 The following program uses a conversion function with the [TYPE](TYPE) definitions inside of the function to eliminate an [$INCLUDE]($INCLUDE) library file.
 
@@ -474,19 +466,13 @@ END FUNCTION
 
 ```
 <sub>Code by Ted Weissgerber</sub>
->  *Note:* The index selected or the highest numbered icon image less than the index value is the image displayed.
 
-## References
-
+> *Note:* The index selected or the highest numbered icon image less than the index value is the image displayed.
 
 ## See Also
 
-* [Creating Icons from Bitmaps](Creating Icons from Bitmaps)
-* [Bitmaps](Bitmaps), [Icons and Cursors](Icons and Cursors)
+* [Creating Icons from Bitmaps](Creating-Icons-from-Bitmaps)
+* [Bitmaps](Bitmaps), [Icons and Cursors](Icons-and-Cursors)
 * [_CLEARCOLOR](_CLEARCOLOR)
 * [_ALPHA](_ALPHA), [_ICON](_ICON)
 * [SaveIcon32](SaveIcon32) (create icons from any image)
-
-
-
-

@@ -1,15 +1,12 @@
 [CLOSE](CLOSE) closes an open file or port using the number(s) assigned in an [OPEN](OPEN) statement.
 
-
 ## Syntax
 
->  [CLOSE](CLOSE) [fileNumber[, ...]]
-
+> [CLOSE](CLOSE) [fileNumber[, ...]]
 
 ## Parameter(s)
 
 * fileNumber indicates the file or list of file numbers to close. When not specified, all open files are closed.
-
 
 ## Description
 
@@ -21,14 +18,9 @@
 * [CLEAR](CLEAR) can be used to close all open files.
 * [CLOSE](CLOSE) can also be used to close an open TCP/IP connection using a handle returned by **QB64**.
 
-
 ## See Also
 
-* [OPEN](OPEN), [OPEN COM](OPEN COM)
+* [OPEN](OPEN), [OPEN COM](OPEN-COM)
 * [_OPENCLIENT](_OPENCLIENT), [_OPENHOST](_OPENHOST)
 * [_OPENCONNECTION](_OPENCONNECTION)
 * [_SNDCLOSE](_SNDCLOSE)
-
-
-
-

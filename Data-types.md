@@ -10,7 +10,7 @@ Integer types represent integer (whole number) values, such as 1 and 100. They a
 
 #### Signed Integer types
 
-Signed integers can represent positive and negative integer (whole number) values, such as 3, 10 and -16. These values are stored as a series of bits in [http://en.wikipedia.org/wiki/Two's_complement two's complement form], a common representation that makes them both straightforward and efficient to perform calculations with.
+Signed integers can represent positive and negative integer (whole number) values, such as 3, 10 and -16. These values are stored as a series of bits in [two's complement form](http://en.wikipedia.org/wiki/Two's_complement), a common representation that makes them both straightforward and efficient to perform calculations with.
 
 Signed integers are typically used in simple mathematical equations.
 
@@ -18,8 +18,8 @@ The range of values that these types can represent is based on their size, in bi
 
 The signed integer types are: [_BYTE](_BYTE), [INTEGER](INTEGER), [LONG](LONG), [_INTEGER64](_INTEGER64) and [_OFFSET](_OFFSET)
 
-
 ```vb
+
 DIM n AS INTEGER
 n = -1
 PRINT n
@@ -32,7 +32,6 @@ PRINT n
 
 ```
 
-
 #### Unsigned Integer types
 
 Unsigned integers can represent positive integer values only, such as 3, 10 and 16. These values are also stored as a series of bits, but unlike signed integers, all of the bits contribute to their value. Thus, these types can represent larger positive integer values than their signed counterparts.
@@ -41,9 +40,8 @@ Unsigned integers are typically used to represent a simple quantity, like a *cou
 
 Types: [_UNSIGNED](_UNSIGNED) [_BYTE](_BYTE), [_UNSIGNED](_UNSIGNED) [INTEGER](INTEGER), [_UNSIGNED](_UNSIGNED) [LONG](LONG), [_UNSIGNED](_UNSIGNED) [_INTEGER64](_INTEGER64), [_UNSIGNED](_UNSIGNED) [_OFFSET](_OFFSET)
 
-
-
 ```vb
+
 ' display the largest value representable by an _UNSIGNED INTEGER:
 DIM n AS _UNSIGNED INTEGER
 n = -1
@@ -57,13 +55,9 @@ PRINT n
 
 ```
 
-
-
 #### _OFFSET Integer types
 
-
 Offset Integer types can be any byte size integer value that can be used to designate pointer offset positions in memory. DO NOT TRANSFER offset values to other Integer types!
-
 
 ### Floating-point types
 
@@ -73,9 +67,8 @@ Floating-point types are used in mathematical equations where fractional precisi
 
 The floating-point types are: [SINGLE](SINGLE), [DOUBLE](DOUBLE) and [_FLOAT](_FLOAT).
 
-
-
 ```vb
+
 f! = 76.0
 c! = (5.0 / 9.0) * (f! - 32.0)
 
@@ -85,10 +78,9 @@ PRINT f! ; "degrees Fahrenheit is" ; c! ; "degrees Celcius."
 
 ```text
 
- 76 degrees Fahrenheit is 24.44444 degrees Celcius.
+76 degrees Fahrenheit is 24.44444 degrees Celcius.
 
 ```
-
 
 ## String types
 
@@ -98,56 +90,43 @@ Strings have a property called *length*, which is the number of characters curre
 
 ### Variable-length strings
 
-
 Variable length strings are undefined length string variables. Fixed length strings MUST be defined in a program before they are used. Undefined strings can be up to 32767 characters in QBasic. 
-
-
 
 ```vb
 
- message$ = "Hello"
- message$ = message$ + " world!" 'add to string variables using string concatenation only! 
- PRINT message$
+message$ = "Hello"
+message$ = message$ + " world!" 'add to string variables using string concatenation only! 
+PRINT message$
 
 ```
 
 ```text
-
 
  Hello world!
 
 ```
 
-
 ### Fixed-length strings
-
 
 Fixed length strings must be defined in a [DIM](DIM) statement, [SUB](SUB) or [FUNCTION](FUNCTION) parameter or [TYPE](TYPE) definition. The designated multiple is the maximum number of [STRING](STRING) character bytes that the variable or [Arrays](Arrays) can hold. Excess bytes will not be included. No error is created.
 
-
-
 ```vb
 
- DIM message AS STRING * 5
- message$ = "Hello"
- message$ = message$ + " world!"
- PRINT message$
+DIM message AS STRING * 5
+message$ = "Hello"
+message$ = message$ + " world!"
+PRINT message$
 
 ```
 
 ```text
 
-
- Hello
+Hello
 
 ```
-
 
 ## Data type limits
 
 The following table lists the numerical and string data types, their type suffix symbol, and the range of the values they can represent:
-DataTypeTable
 
-
-
-
+MISSING: Data Type Table

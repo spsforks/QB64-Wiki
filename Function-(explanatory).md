@@ -1,19 +1,12 @@
 A BASIC **function** is a procedure that returns one value in it's name. A function can be used as a statement [argument](argument) or be assigned to a [variable](variable).
 
-
 User-defined functions are possible and behave the same way, with the only exception that user-defined functions cannot currently have optional [argument](argument)s.
 
-
-Altering the variables that are used as arguments within the function will cause the same changes to the variables outside of the function. This also applies to [Sub (explanatory)](Sub (explanatory)). Variables that are not arguments of the function will not be changed if used within the function unless they are [SHARED](SHARED). See the second example of [sub (explanatory)](sub (explanatory)) for a demonstration of this (it functions the same way in subs).
-
+Altering the variables that are used as arguments within the function will cause the same changes to the variables outside of the function. This also applies to [Sub (explanatory)](Sub-(explanatory)). Variables that are not arguments of the function will not be changed if used within the function unless they are [SHARED](SHARED). See the second example of [sub (explanatory)](sub-(explanatory)) for a demonstration of this (it functions the same way in subs).
 
 The arguments of a function need to be enclosed with parantheses (unless there are no arguments).
 
-
-Function and [Sub (explanatory)](Sub (explanatory)) procedures are placed after the main code body.
-
-
-
+Function and [Sub (explanatory)](Sub-(explanatory)) procedures are placed after the main code body.
 
 ## Example(s)
 
@@ -30,7 +23,6 @@ PRINT "CINT(2.54) gives"; c
 PRINT "ATN(1) * 4 gives"; ATN(1) * 4
 
 ```
-
 
 *Example 2:* User-defined function.
 
@@ -50,19 +42,11 @@ dividebyhalf = half
 END FUNCTION
 
 ```
+
 > *Explanation:* The calculated value is assigned to the name of the function. When calculations require several changes, use an intermediary variable. Then assign that value to the function name.
-
-
-
 
 ## See Also
 
 * [SUB](SUB). [FUNCTION](FUNCTION)
-* [Statement](Statement), [Sub (explanatory)](Sub (explanatory))
+* [Statement](Statement), [Sub (explanatory)](Sub-(explanatory))
 * [Argument](Argument)
-
-
-
-
-
-

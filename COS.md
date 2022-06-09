@@ -1,23 +1,20 @@
 The [COS](COS) function returns the horizontal component or the cosine of an angle measured in radians.
 
-
 ## Syntax
  
->  value! = [COS](COS)(radianAngle!)
-
+> value! = [COS](COS)(radianAngle!)
 
 ## Parameter(s)
 
 * The radianAngle! must be measured in radians. 
-
 
 ## Description
 
 * To convert from degrees to radians, multiply degrees * � / 180.
 * [COS](COS)INE is the horizontal component of a unit vector in the direction theta (�).
 * COS(x) can be calculated in either [SINGLE](SINGLE) or [DOUBLE](DOUBLE) precision depending on its argument.  
-> :: COS(4) = -.6536436 ...... COS(4#) = -.6536436208636119
 
+> COS(4) = -.6536436 ...... COS(4#) = -.6536436208636119
 
 ## Example(s)
 
@@ -47,7 +44,6 @@ LOOP UNTIL DEGREES% = 0
 
 ```text
 
-
 PI = 4 * ATN(1) = 3.141593
 COS(PI) = -1
 SIN(PI) = -8.742278E-08
@@ -60,8 +56,7 @@ DEGREES% = RADIANS * 180 / PI = 45
 
 ```
 
->  *Explanation:* When 8.742278E-08(.00000008742278) is returned by [SIN](SIN) or COS the value  is essentially zero.
-
+> *Explanation:* When 8.742278E-08(.00000008742278) is returned by [SIN](SIN) or COS the value  is essentially zero.
 
 *Example 2:* Creating 12 analog clock hour points using [CIRCLE](CIRCLE)s and [PAINT](PAINT)
 
@@ -79,8 +74,8 @@ DEGREES% = RADIANS * 180 / PI = 45
 
 ```
 <sub>Code by Ted Weissgerber</sub>
-*Explanation:* The 12 circles are placed at radian angles that are 1/12 of 6.28318 or .523598 radians apart.
 
+*Explanation:* The 12 circles are placed at radian angles that are 1/12 of 6.28318 or .523598 radians apart.
 
 *Example 3:* Creating a rotating spiral with COS and [SIN](SIN).
 
@@ -110,7 +105,6 @@ LOOP UNTIL INP(&H60) = 1 'escape exit
 
 ```
 <sub>Code by Ben</sub>
- 
 
 ## See Also
 
@@ -118,9 +112,5 @@ LOOP UNTIL INP(&H60) = 1 'escape exit
 * [SIN](SIN) (sine)
 * [ATN](ATN) (arctangent)
 * [TAN](TAN) (tangent)
-*[Mathematical Operations](Mathematical Operations)
-*[Mathematical_Operations#Derived_Mathematical_Functions](Mathematical_Operations#Derived_Mathematical_Functions)
-
-
-
-
+*[Mathematical Operations](Mathematical-Operations)
+*[Mathematical_Operations#Derived_Mathematical_Functions](Mathematical-Operations#Derived_Mathematical_Functions)

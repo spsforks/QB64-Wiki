@@ -1,59 +1,32 @@
 The [FILES](FILES) statement is used to print a list of files in the current directory using a file specification.
 
-
 ## Syntax
 
->  [FILES](FILES) [fileSpec$]
-
+> [FILES](FILES) [fileSpec$]
 
 ## Description
 
 * fileSpec$ is a string expression or variable containing a path when required.
 * fileSpec$ can use the * and ? wildcard specifications:
-** ***** denotes one or more wildcard characters in a filename or path specification as any legal file name  character(s).
-** **?** denotes one wildcard letter in a filename or path specification as any legal filename character. 
+  - `*` denotes one or more wildcard characters in a filename or path specification as any legal file name  character(s).
+  - `?` denotes one wildcard letter in a filename or path specification as any legal filename character. 
 * If fileSpec$ is omitted, it is assumed to be **"*.*"** (all files and folders in the current directory).
 * Illegal filename characters in **QB64** include * > < : " | \ / with any amount of dot extensions being allowed in Windows.
-* FILES lists can make the screen roll up. Try using SHELL "DIR" with the /P option. [http://www.computerhope.com/dirhlp.htm DIR command].
-
+* FILES lists can make the screen roll up. Try using SHELL "DIR" with the /P option. [DIR command](http://www.computerhope.com/dirhlp.htm).
 
 ## QBasic/QuickBASIC
 
-* Illegal filename characters in QBasic included *** ? , > < ; : " | \ / + [ ]** and more than one dot extension in [http://www.computerhope.com/issues/ch000209.htm DOS].
-
+* Illegal filename characters in QBasic included *** ? , > < ; : " | \ / + [ ]** and more than one dot extension in [DOS](http://www.computerhope.com/issues/ch000209.htm).
 
 ## Example(s)
 
 *Example 1:* Finding a list of all BAS files in the current folder. 
 
 ```vb
+
 FILES "*.BAS"
 
 ```
-<!-- broken link: **[http://i301.photobucket.com/albums/nn53/burger2227/FILESss.jpg Screenshot shows only the end of a long list of files]** -->
-
-
-<!-- function obsoleted by _FILEEXISTS; function doesn't use the FILES statement and is not relevant in this context; may be moved to an exclusive page if desired;
-
-Example 2:* A function that verifies that a file exists if it is not empty. Note: This function will delete empty files.
-
-```vb
-
-Cl "Enter a file name: ", file$
-THEN OPEN file$ FOR INPUT AS #1: found% = -1   'function call demo
-CLOSE #1
-IF found% THEN PRINT "File exists!" ELSE PRINT "File not found!"
-END
-
-FUNCTION Exist% (filename$)
-f% = FREEFILE
-OPEN filename$ FOR APPEND AS #f%
-IF LOF(f%) THEN Exist% = -1 ELSE Exist% = 0: CLOSE #f%: KILL filename$ 'delete empty files
-CLOSE #f% 
-END FUNCTION 
-
-```<sub>Code by Ted Weissgerber</sub>}}
--->
 
 ## Alternative file list solutions
 
@@ -104,25 +77,20 @@ END FUNCTION
 
 ```
 <sub>Code by Ted Weissgerber</sub>
+
 > *Explanation:* The function will verify that a file exists (even if it is empty) by returning its name, or it returns an empty string if no file exists. It can return a list of file names by using an empty string parameter("") after sending a wildcard spec to get the first file name. The number of file names found is returned by using the SHARED variable, **DIRCount%**. Unlike the PDS DIR$ function, **it must use an empty string parameter as QB64 doesn't support optional parameters.** The function does not delete empty files.
 
-
 *Alternative 2:*
-* The member-contributed [FILELIST$](FILELIST$) function uses the mouse and does not affect your program screens. It can verify that a file name exists or display a list of long and short file names to choose from. It also avoids program errors when a file name does not exist. <!-- broken link: [http://i301.photobucket.com/albums/nn53/burger2227/FILE-ss2.jpg FILELIST$ function screenshot] -->
 
-<!-- The referenced library is not present in this link anymore *See Library:* File Exist C++ Function that does not create a temp file. [http://qb64.net/wiki/index.php?title=C_Libraries#File_Exist FileExist Function] -->
+The member-contributed [FILELIST$](FILELIST$) function uses the mouse and does not affect your program screens. It can verify that a file name exists or display a list of long and short file names to choose from. It also avoids program errors when a file name does not exist.
 
 ## See Also
 
-* [SHELL](SHELL), [SCREEN (function)](SCREEN (function)) (See Example 3)
+* [SHELL](SHELL), [SCREEN (function)](SCREEN-(function)) (See Example 3)
 * [CHDIR](CHDIR), [MKDIR](MKDIR)
 * [RMDIR](RMDIR), [KILL](KILL)
 * [_CWD$](_CWD$), [_STARTDIR$](_STARTDIR$)
 * [_FILEEXISTS](_FILEEXISTS), [_DIREXISTS](_DIREXISTS)
-* [Windows_Libraries#File_Exist](Windows_Libraries#File_Exist)
-* [Windows_Libraries#File_Open_and_Save_Dialog](Windows_Libraries#File_Open_and_Save_Dialog)
+* [Windows_Libraries#File_Exist](Windows-Libraries#File_Exist)
+* [Windows_Libraries#File_Open_and_Save_Dialog](Windows-Libraries#File_Open_and_Save_Dialog)
 * [$CONSOLE]($CONSOLE)
-
-
-
-

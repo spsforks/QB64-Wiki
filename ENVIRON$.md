@@ -1,38 +1,33 @@
 The [ENVIRON$](ENVIRON$) function returns a [STRING](STRING) environmental value from **Windows**' environmental settings list.
 
-
 ## Syntax
  
->  setting$ = [ENVIRON$](ENVIRON$)({listIndex%|systemID$})
-
+> setting$ = [ENVIRON$](ENVIRON$)({listIndex%|systemID$})
 
 ## Description
 
 * The function can use an [INTEGER](INTEGER) listIndex% value or [STRING](STRING) systemID$ parameter.
 * listIndex% refers to the number order of the environmental list. Returns are not in any particular numerical order.
 * systemID$ is the specific [STRING](STRING) parameter requested. Returns only the specified environmental [STRING](STRING) setting:
-** "BLASTER" = current Sound Blaster settings if installed. 
-** "COMPUTERNAME" or "USERDOMAIN" = OEM PC serial number or the computer name assigned by owner.
-** "HOMEDRIVE" or "SystemDrive" = Windows root drive, normally C: on single partition drives.
-** "HOMEPATH" = current user's Administrator or the single user's "OWNER" folder path.
-** "OS" = Windows Operating System version. Often WindowsNT in modern computers.
-** "PATH" = full path setting that Windows uses to look for file extensions in PATHEXT below.
-** "PATHEXT = Windows extensions used:  COM, EXE, BAT, CMD, VBS, VBE, JS, JSE, WSF, WSH, MSC  
-** "PROCESSOR_ARCHITECTURE" = x86 for 32 or 64 bit.
-** "PROGRAMFILES" = path to *Program files* folder, normally "C:\PROGRAM FILES"
-** "PROMPT" = normally "$P$G" on Windows NT.
-** "SYSTEMROOT" or "windir" = path to the Windows folder including the drive letter like "C:\WINDOWS"
-** "TEMP" or "TMP" = path to TEMP folder. "C:\TEMP" or the user specific temp folder on later versions.
-** "USERNAME" = current Administrator name or "OWNER".
+  - "BLASTER" = current Sound Blaster settings if installed. 
+  - "COMPUTERNAME" or "USERDOMAIN" = OEM PC serial number or the computer name assigned by owner.
+  - "HOMEDRIVE" or "SystemDrive" = Windows root drive, normally C: on single partition drives.
+  - "HOMEPATH" = current user's Administrator or the single user's "OWNER" folder path.
+  - "OS" = Windows Operating System version. Often WindowsNT in modern computers.
+  - "PATH" = full path setting that Windows uses to look for file extensions in PATHEXT below.
+  - "PATHEXT = Windows extensions used:  COM, EXE, BAT, CMD, VBS, VBE, JS, JSE, WSF, WSH, MSC  
+  - "PROCESSOR_ARCHITECTURE" = x86 for 32 or 64 bit.
+  - "PROGRAMFILES" = path to *Program files* folder, normally "C:\PROGRAM FILES"
+  - "PROMPT" = normally "$P$G" on Windows NT.
+  - "SYSTEMROOT" or "windir" = path to the Windows folder including the drive letter like "C:\WINDOWS"
+  - "TEMP" or "TMP" = path to TEMP folder. "C:\TEMP" or the user specific temp folder on later versions.
+  - "USERNAME" = current Administrator name or "OWNER".
 >  *Note:* There are other possible system settings that are not listed or never used on older versions. Run *Example 1* below for a complete list in your system.
-<!-- Sentence removed for being unclear/needs revision: * The OS in Win 9X or ME can be found in the "PROMPT" parameter ID. Returns are limited in Win 9X and ME. -->
 * *Note:* **QB64** may not return the same environment list as QBasic or SET did in DOS.
-
 
 ## Example(s)
 
 *Example 1:* Viewing the list of environmental parameter settings using a counter loop like SET does in DOS.
-
 
 ```vb
 
@@ -46,7 +41,6 @@ LOOP UNTIL setting$ = ""
 ```
 
 ```text
-
 
 ALLUSERSPROFILE=C:\ProgramData
 COMPUTERNAME=TED-LAPTOP
@@ -75,7 +69,6 @@ USERPROFILE=C:\Users\Ted
 ```
 
 > *Note:* Windows environmental settings are listed alphabetically, 20 at a time. **QB64 may not read all of them or may return an empty string.** The settings above were returned with SET in DOS. PROMPT returned nothing where SET returned $P$G. 
-
 
 *Example 2:* Creating a shortcut on a user's desktop for QB64.EXE using the program's icon. Must be run in program's folder to work!
 
@@ -128,18 +121,15 @@ END SUB
 
 ```
 <sub>Adapted from code by Dav</sub>
->  *Explanation:* The SUB program finds the current program's path and user's desktop path. It then creates the shortcut on the desktop with a program icon. The custom icon should be in the program's folder. If an environmental path is not found, the shortcut is placed in the program's folder. The SUB can be added to any program. 
-> **NOTE:** A temorary file named PRGMDIR.INF is created and deleted in the example above.
 
+> *Explanation:* The SUB program finds the current program's path and user's desktop path. It then creates the shortcut on the desktop with a program icon. The custom icon should be in the program's folder. If an environmental path is not found, the shortcut is placed in the program's folder. The SUB can be added to any program. 
+
+> **NOTE:** A temorary file named PRGMDIR.INF is created and deleted in the example above.
 
 ## See Also
  
 * [ENVIRON](ENVIRON) (statement)
 * [_DEVICES](_DEVICES), [_DEVICE$](_DEVICE$)
 * [_LASTBUTTON](_LASTBUTTON), [_OS$](_OS$)
-* [Windows Environment](Windows Environment)
-* [Windows Libraries#Windows User](Windows Libraries#Windows User)
-
-
-
-
+* [Windows Environment](Windows-Environment)
+* [Windows Libraries#Windows User](Windows-Libraries#Windows User)

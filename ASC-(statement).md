@@ -1,10 +1,8 @@
-The [ASC (statement)](ASC (statement)) statement allows a **QB64** program to change a character at any position of a [STRING](STRING) variable.
-
+The [ASC (statement)](ASC-(statement)) statement allows a **QB64** program to change a character at any position of a [STRING](STRING) variable.
 
 ## Syntax
  
->  [ASC (statement)](ASC (statement))(stringExpression$[, position%]) = code%
-
+>  [ASC (statement)](ASC-(statement))(stringExpression$[, position%]) = code%
 
 ## Description
 
@@ -14,11 +12,9 @@ The [ASC (statement)](ASC (statement)) statement allows a **QB64** program to ch
 * The [ASCII](ASCII) replacement code% value can be any [INTEGER](INTEGER) value from 0 to 255.
 * Some [ASCII](ASCII) control characters will not [PRINT](PRINT) a character or may format the [SCREEN](SCREEN). [_PRINTSTRING](_PRINTSTRING) can print them graphically.
 
-
 ## Example(s)
 
-## Example(s)
- Demonstrates how to change existing text characters one letter at a time.
+Demonstrates how to change existing text characters one letter at a time.
 
 ```vb
 
@@ -35,9 +31,7 @@ The [ASC (statement)](ASC (statement)) statement allows a **QB64** program to ch
 
 ```
 
-
 ```text
-
 
  ABC
  A C
@@ -45,15 +39,9 @@ The [ASC (statement)](ASC (statement)) statement allows a **QB64** program to ch
 
 ```
 
-
-
 ## See Also
 
 * [ASC](ASC) (function)
-* [MID$ (statement)](MID$ (statement))
+* [MID$ (statement)](MID$-(statement))
 * [_PRINTSTRING](_PRINTSTRING)
 * [INKEY$](INKEY$), [ASCII](ASCII)
-
-
-
-

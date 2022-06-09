@@ -1,15 +1,12 @@
 The [CINT](CINT) function rounds decimal point numbers up or down to the nearest [INTEGER](INTEGER) value.  
 
-
 ## Syntax
 
->  value% = [CINT](CINT)(expression)
-
+> value% = [CINT](CINT)(expression)
 
 ## Parameter(s)
 
 * expression is any [TYPE](TYPE) of literal or variable numerical value or mathematical calculation.
-
 
 ## Description
 
@@ -18,11 +15,9 @@ The [CINT](CINT) function rounds decimal point numbers up or down to the nearest
 * Use [CLNG](CLNG) for [LONG](LONG) integer values exceeding [INTEGER](INTEGER) limitations.
 * Note: When decimal point values are given to BASIC functions requiring [INTEGER](INTEGER)s the value will be [CINT](CINT)ed.
 
-
 ## Example(s)
 
-## Example(s)
- Shows how CINT rounds values up or down as in "bankers' rounding". 
+Shows how CINT rounds values up or down as in "bankers' rounding". 
 
 ```vb
 
@@ -37,14 +32,8 @@ COLOR c: PRINT a%, b%, c
 
 ```
 
-
-
 ## See Also
 
 * [_ROUND](_ROUND), [_CEIL](_CEIL)
 * [CLNG](CLNG), [CSNG](CSNG), [CDBL](CDBL)
 * [INT](INT), [FIX](FIX)
-
-
-
-

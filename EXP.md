@@ -13,15 +13,10 @@ The [EXP](EXP) math function calculates the exponential function (**e** raised t
 * Value returned is **e** to the exponent parameter (**e = 2.718282** approximately).
 * Values returned are [SINGLE](SINGLE) by default but will return [DOUBLE](DOUBLE) precision if the result is a variable of type [DOUBLE](DOUBLE).
 * Positive exponent values indicate the number of times to multiply **e** by itself.
-* Negative exponent values indicate the number of times to divide by **e**. Example: <span style="font-family: Courier New, monospace, Courier; background: #dddddd">e<sup>-3</sup> = 1 / e<sup>3</sup> = 1 / (e * e * e)</span>
-
+* Negative exponent values indicate the number of times to divide by **e**. Example: e<sup>-3</sup> = 1 / e<sup>3</sup> = 1 / (e * e * e)
 
 ## See Also
 
 *[LOG](LOG) 
-*[Mathematical Operations](Mathematical Operations)
-*[Mathematical Operations#Derived Mathematical Functions](Mathematical Operations#Derived Mathematical Functions)
-
-
-
-
+*[Mathematical Operations](Mathematical-Operations)
+*[Mathematical Operations#Derived Mathematical Functions](Mathematical-Operations#Derived Mathematical Functions)

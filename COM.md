@@ -1,2 +1,1 @@
-Page moved to [COM(n)](COM(n))
-
+See [COM(n)](COM(n)).

@@ -1,10 +1,8 @@
 The [ERL](ERL) function returns the closest previous line number before the last error.
 
-
 ## Syntax
 
->  *lastErrorLine&* = [ERL](ERL)
-
+> *lastErrorLine&* = [ERL](ERL)
 
 ## Description
 
@@ -12,11 +10,9 @@ The [ERL](ERL) function returns the closest previous line number before the last
 * If the program does not use line numbers, then ERL returns 0.
 * Use [_ERRORLINE](_ERRORLINE) to return the actual code line position of an error in a QB64 program.
 
-
 ## Example(s)
 
-## Example(s)
- Using a fake error code to return the line number position in a program.
+Using a fake error code to return the line number position in a program.
 
 ```vb
 
@@ -42,16 +38,10 @@ RESUME NEXT
 
 ```
 
-
-
 ## See Also
 
 * [ERR](ERR)
 * [ERROR](ERROR)
-* [ON ERROR](ON ERROR)
+* [ON ERROR](ON-ERROR)
 * [_ERRORLINE](_ERRORLINE), [_INCLERRORLINE](_INCLERRORLINE), [_INCLERRORFILE$](_INCLERRORFILE$)
-* [ERROR Codes](ERROR Codes)
-
-
-
-
+* [ERROR Codes](ERROR-Codes)

@@ -1,8 +1,6 @@
 Although QB64 has [_BYTE](_BYTE) and [_BIT](_BIT) variable types, there may be times that you just want to know which bits are on of off in the byte value or convert the value to a [Binary](Binary) number.
 
-
 Bits are numbered from 0 to 7 and normally are read from the most significant bit(MSB = 7) to the least significant bit(LSB = 0).
-
 
 >  The following example shows how to convert an [_UNSIGNED](_UNSIGNED) [_BYTE](_BYTE) or [INTEGER](INTEGER) value(0 to 255) to a [Binary](Binary) [STRING](STRING) number in QBasic.
 
@@ -17,10 +15,10 @@ FOR bit = 7 to 0 STEP -1
 NEXT 
 
 ```
->  *Notes:* The above code can be adapted to place a value into a bit [Arrays](Arrays) for up to 8 flag values in a single Byte.
 
+> *Notes:* The above code can be adapted to place a value into a bit [Arrays](Arrays) for up to 8 flag values in a single Byte.
 
->  How upper and lower [_BYTE](_BYTE) bits are read from an [INTEGER](INTEGER) value using whole decimal or [HEX$](HEX$) values. 
+> How upper and lower [_BYTE](_BYTE) bits are read from an [INTEGER](INTEGER) value using whole decimal or [HEX$](HEX$) values. 
 
 ```vb
 
@@ -61,8 +59,8 @@ DO
 LOOP UNTIL first = 0 OR Num > 32767 OR Num < -32768 OR (Num < -1 AND Num > -32768 
 END
 
-```<sub>Code by Ted Weissgerber</sub>
-
+```
+<sub>Code by Ted Weissgerber</sub>
 
 ## See Also
 
@@ -70,7 +68,3 @@ END
 * [_SHL](_SHL), [_SHR](_SHR)
 * [_BIT](_BIT), [&B](&B)
 * [_BYTE](_BYTE)
-
-
-
-

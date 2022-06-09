@@ -1,14 +1,12 @@
 The [GOTO](GOTO) statement sends the procedure to a line label or a line number in the program.
 
-
 ## Syntax
  
->  [GOTO](GOTO) {*lineNumber*|*lineLabel*}
-
+> [GOTO](GOTO) {*lineNumber*|*lineLabel*}
 
 ***IF** Syntax:*
->  IF condition [GOTO](GOTO) {*lineNumber*|*lineLabel*}
 
+> IF condition [GOTO](GOTO) {*lineNumber*|*lineLabel*}
 
 ## Description
 
@@ -17,11 +15,7 @@ The [GOTO](GOTO) statement sends the procedure to a line label or a line number 
 * The frequent use of GOTO statements can become confusing when trying to follow the code and it could also cause endless loops.
 * [GOTO](GOTO) is an easy trap for new programmers. Use loops instead when possible.
 
-
 ## Example(s)
-
-## Example(s)
-
 
 ```vb
 
@@ -38,25 +32,18 @@ GOTO 2
 
 ```text
 
-
 first line
 third line
 second line
 
 ```
 
-
 > *Explanation:* After it prints "first line" it goes to the line label "gohere" where it prints "third line", then it goes to the line that is numbered "2" and prints "second line" and goes to line number 3 and an [END](END) statement which ends the program.
-
 
 ## See Also
 
-* [GOSUB](GOSUB), [ON ERROR](ON ERROR)
+* [GOSUB](GOSUB), [ON ERROR](ON-ERROR)
 * [ON...GOTO](ON...GOTO), [ON...GOSUB](ON...GOSUB)
 * [DO...LOOP](DO...LOOP), [FOR...NEXT](FOR...NEXT)
-* [IF...THEN](IF...THEN), [SELECT CASE](SELECT CASE) 
-* [Line number](Line number)
-
-
-
-
+* [IF...THEN](IF...THEN), [SELECT CASE](SELECT-CASE) 
+* [Line number](Line-number)

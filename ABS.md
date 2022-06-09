@@ -1,10 +1,8 @@
 The [ABS](ABS) function returns the unsigned numerical value of a variable or literal value.
 
-
 ## Syntax
 
 > positive = [ABS](ABS)(numericalValue)
-
 
 ## Description
 
@@ -13,11 +11,9 @@ The [ABS](ABS) function returns the unsigned numerical value of a variable or li
 * Use [SGN](SGN) to determine a value's sign when necessary.
 * **QB64** allows programs to return only positive [_UNSIGNED](_UNSIGNED) variable values using a [DIM](DIM) or [_DEFINE](_DEFINE) statement.
 
-
 ## Example(s)
 
-## Example(s)
- Finding the absolute value of positive and negative numerical values.
+Finding the absolute value of positive and negative numerical values.
 
 ```vb
 
@@ -37,15 +33,9 @@ PRINT a, b, c
 
 ```
 
-
-
 ## See Also
 
 * [SGN](SGN), [DIM](DIM)
 * [_UNSIGNED](_UNSIGNED)
 * [_DEFINE](_DEFINE)
 * [Mathematical Operations](Mathematical-Operations)
-
-
-
-

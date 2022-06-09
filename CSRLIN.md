@@ -1,11 +1,8 @@
 The [CSRLIN](CSRLIN) function returns the current text row position of the [PRINT](PRINT) cursor.
 
-
-
 ## Syntax
 
->  row% = [CSRLIN](CSRLIN)
-
+> row% = [CSRLIN](CSRLIN)
 
 ## Description
 
@@ -15,27 +12,22 @@ The [CSRLIN](CSRLIN) function returns the current text row position of the [PRIN
 *  In screen modes that support page flipping, the [CSRLIN](CSRLIN) function returns the vertical coordinate of the cursor on the active page.
 * x = [POS](POS)(0) returns the column location of the cursor.
 
-
 ## Example(s)
 
-## Example(s)
- A semicolon stops the print cursor immediately after the print.
+A semicolon stops the print cursor immediately after the print.
 
 ```vb
 
-  LOCATE 5, 5: PRINT "HELLO ";
-  Y = CSRLIN 'save the row
-  X = POS(0) 'save the column  
-  LOCATE 10, 10: PRINT "WORLD"
-  LOCATE Y, X 'restore saved position
-  PRINT "GOODBYE" 
+LOCATE 5, 5: PRINT "HELLO ";
+Y = CSRLIN 'save the row
+X = POS(0) 'save the column  
+LOCATE 10, 10: PRINT "WORLD"
+LOCATE Y, X 'restore saved position
+PRINT "GOODBYE" 
 
 ```
 
-
 ```text
-
-
 
 
 
@@ -53,12 +45,7 @@ The [CSRLIN](CSRLIN) function returns the current text row position of the [PRIN
 
 > *Explanation:* "HELLO " is printed and the semicolon stops the cursor immediately after the text. The [CSRLIN](CSRLIN) variable records the current print cursor's text row in Y. The [POS](POS) function records the current print cursor's text column in X. The second [PRINT](PRINT) statement displays the comment "WORLD" on the 10th line of the screen. The last [LOCATE](LOCATE) statement restores the position of the cursor to the original line and column immediately after the first print.
 
-
 ## See Also
 
 * [SCREEN](SCREEN), [LOCATE](LOCATE), [POS](POS)
 * [_PRINTSTRING](_PRINTSTRING) (graphic print)
-
-
-
-

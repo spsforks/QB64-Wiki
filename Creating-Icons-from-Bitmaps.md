@@ -1,7 +1,5 @@
 The following program can create a single icon from square bitmaps up to 128 X 128. Best to use sizes 32 X 32 or 64 X 64.
 
-
-
 ```vb
 
 CONST dat = 14~&
@@ -84,14 +82,9 @@ SYSTEM
 ```
 <sub>Adapted from code by Michael Calkins, Public domain, November 2011</sub>
 
-
 ## See Also
 
 * [_ICON](_ICON), [$EXEICON]($EXEICON)
 * [SaveIcon32](SaveIcon32) (saves any image to icon)
-* [Icons and Cursors](Icons and Cursors)
+* [Icons and Cursors](Icons-and-Cursors)
 * [Bitmaps](Bitmaps)
-
-
-
-

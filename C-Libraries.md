@@ -2,13 +2,6 @@
 
 **Note: C++ Header files should be placed in the QB64 folder and are not required after a program is compiled.**
 
-
-{| align="Right"
-  | __TOC__
-  |}
-
-
-
 ```text
 
                         **C++ Variable Types**
@@ -28,15 +21,9 @@
 
 ```
 
-
-
-
 ## C Functions and Subs
 
-
-
 ```text
-
 
 DECLARE LIBRARY
                            **'ctime.h**
@@ -111,8 +98,6 @@ END DECLARE
 
 ```
 
-
-
 *Example 1:* How to use the SUB **memmove** to transfer [TYPE](TYPE) data when using Libraries.
 
 ```vb
@@ -146,7 +131,6 @@ PRINT d(10).c
 
 > *Explanation:* When a [TYPE](TYPE) variable is moved to another variable or array index, all [TYPE](TYPE) dot values are moved with it.
 
-
 *Example 2:* Creating different **memset** functions for each variable type to be used.
 
 ```vb
@@ -178,14 +162,10 @@ NEXT i
 
 ```
 <sub>Code example by stylin</sub>
->  *Explanation:* When 5 bytes are put into a 4 byte LONG array value, the fifth byte goes into the next array element.
 
-
-
-
+> *Explanation:* When 5 bytes are put into a 4 byte LONG array value, the fifth byte goes into the next array element.
 
 ## Bit Casting
-
 
 Header file: *Cast.h*
 
@@ -218,17 +198,11 @@ PRINT bitcast##(swap_endian(Value&))
 
 ```
 
-
-
-
-
 ## Fast Math
-
 
 **Fastmath.h** header file. Library to speed up program calculations. Use with [DECLARE LIBRARY](DECLARE LIBRARY) "Fastmath"
 
 ```text
-
 
 using namespace std;
 unsigned long xrander=123456789, yrander=362436069, zrander = 521288629;
@@ -883,9 +857,7 @@ long Misc_UnSetRMBit(long x)
 
 <sub>Library created by DarthWho</sub>
 
-
-**[http://dl.dropbox.com/u/12359848/fastmath.h Latest Fast Math Update]**
-
+**[Latest Fast Math Update](http://dl.dropbox.com/u/12359848/fastmath.h)**
 
 *Example 1:* Using **trailzcount** to speed up the process of finding the prime factors of a number.
 
@@ -914,7 +886,6 @@ WEND
 PRINT 
 
 ```
-
 
 *Example 2:* Using **parity** to detect single bit errors simulated using **unsetrmbit**.
 
@@ -950,17 +921,9 @@ NEXT
 
 ```
 
-
-
-
-
 ## See Also
 
-* [DECLARE LIBRARY](DECLARE LIBRARY), [BYVAL](BYVAL)
+* [DECLARE LIBRARY](DECLARE-LIBRARY), [BYVAL](BYVAL)
 * [_OFFSET](_OFFSET), [_OFFSET (function)](_OFFSET (function)) (lp, ptr and p names)
-* [DLL Libraries](DLL Libraries), [Windows Libraries](Windows Libraries)
+* [DLL Libraries](DLL-Libraries), [Windows Libraries](Windows-Libraries)
 * [Libraries#C++_Variable_Types](Libraries#C++_Variable_Types)
-
-
-
-

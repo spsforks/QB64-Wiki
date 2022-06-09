@@ -1,4 +1,4 @@
-:**HTTP/1.1** protocol downloads can be done using a **GET** request using the following format without HTTP:// in the url:
+**HTTP/1.1** protocol downloads can be done using a **GET** request using the following format without HTTP:// in the url:
 
 ```text
 
@@ -26,8 +26,7 @@ cache-control: max-age=0
 ```
 
 >  Each row of text response sent is ended with a carriage return with the end of header having two. After that comes the file data.
->  It is recommended that data be loaded immediately by using a [GET (TCP/IP statement)](GET (TCP/IP statement)) loop so that connections are not dropped during a [_DELAY](_DELAY).
-
+>  It is recommended that data be loaded immediately by using a [GET (TCP/IP statement)](GET-(TCP/IP-statement)) loop so that connections are not dropped during a [_DELAY](_DELAY).
 
 >  **A "raw" Download function that downloads an image directly off of a web page using the image name on that page.**
 
@@ -39,6 +38,7 @@ ELSE: PRINT "Couldn't download QB64 logo."
 END IF
 SLEEP
 SYSTEM
+
 ' ---------- program end -----------
 
 FUNCTION Download (url$, file$, timelimit) ' returns -1 if successful, 0 if not
@@ -86,8 +86,7 @@ END FUNCTION
 ``` 
 <sub>Code by Galleon</sub>
 
-
->  **Downloading a [BINARY](BINARY) image file from a download link using [GET](GET) which requires the "content-length" in header.**
+> **Downloading a [BINARY](BINARY) image file from a download link using [GET](GET) which requires the "content-length" in header.**
 
 ```vb
 
@@ -102,7 +101,6 @@ BaseURL$ = DownFile$
 IF INSTR(BaseURL$, "http://") THEN BaseURL$ = RIGHT$(BaseURL$, LEN(BaseURL$) - 7) 'trim http://
 Path$ = MID$(BaseURL$, INSTR(BaseURL$, "/")) 'path to file
 BaseURL$ = LEFT$(BaseURL$, INSTR(BaseURL$, "/") - 1) 'site URL
-
 
 ' Connect to base URL
 PRINT "Connecting to "; BaseURL$; "...";
@@ -161,10 +159,10 @@ PRINT "Done!"
 
 ```
 <sub>Adapted from code by Jobert14</sub>
->  **Note:** Some download links require that a **tag** be added after the file name. Remove that tag if it will be used as the file name.
 
+> **Note:** Some download links require that a **tag** be added after the file name. Remove that tag if it will be used as the file name.
 
->  **Downloading a sequencial text file from a Drop Box download link using HTTP GET and the  [GET (TCP/IP statement)](GET (TCP/IP statement)) statement.**
+> **Downloading a sequencial text file from a Drop Box download link using HTTP GET and the  [GET (TCP/IP statement)](GET (TCP/IP statement)) statement.**
 
 ```vb
 
@@ -218,6 +216,3 @@ END IF
 
 ```
 <sub>Code suggested by Matt Kilgore</sub>
-
-
-

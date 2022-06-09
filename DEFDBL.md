@@ -1,15 +1,14 @@
 The [DEFDBL](DEFDBL) statement defines all variables with names starting with the specified letter (or letter range) AS [DOUBLE](DOUBLE) variables instead of the [SINGLE](SINGLE) type default.
 
-
 ## Syntax
 
->  [DEFDBL](DEFDBL) letter[-range], letter2[-range2], [...]
+> [DEFDBL](DEFDBL) letter[-range], letter2[-range2], [...]
 
+## Legacy Support
 
-PageLegacySupport
-* **DEF** statements ([DEFDBL](DEFDBL), [DEFSNG](DEFSNG), [DEFLNG](DEFLNG), [DEFINT](DEFINT), [DEFSTR](DEFSTR)) were used when storage space was a concern in older computers, as their usage could save up typing. Instead of `DIM a AS DOUBLE, a2 AS DOUBLE, a3 AS DOUBLE`, simply having `DEFDBL A` in the code before using variables starting with letter **A** would do the same job.
-* For clarity, it is recommended to declare variables with meaningful names.
+**DEF** statements ([DEFDBL](DEFDBL), [DEFSNG](DEFSNG), [DEFLNG](DEFLNG), [DEFINT](DEFINT), [DEFSTR](DEFSTR)) were used when storage space was a concern in older computers, as their usage could save up typing. Instead of `DIM a AS DOUBLE, a2 AS DOUBLE, a3 AS DOUBLE`, simply having `DEFDBL A` in the code before using variables starting with letter **A** would do the same job.
 
+For clarity, it is recommended to declare variables with meaningful names.
 
 ## Description
 
@@ -19,14 +18,11 @@ PageLegacySupport
 * [DEFDBL](DEFDBL) sets the [type](type) of all variable names with the starting letter(s) or letter ranges when encountered in the progression of the program (even in conditional statement blocks not executed and subsequent [SUB](SUB) procedures).
 * **Warning: QBasic keyword names cannot be used as numerical variable names with or without the type suffix.**
 
-
 ## QBasic/QuickBASIC
 
-* QBasic's IDE would add DEF statements before any [SUB](SUB) or [FUNCTION](FUNCTION). QB64 (like QBasic) will change all variable types in subsequent sub-procedures to that default variable type without giving a [ERROR Codes](ERROR Codes) warning or adding DEF statement to subsequent procedures. If you do not want that to occur, either remove that DEF statement or add the proper DEF type statements to subsequent procedures. May also affect [$INCLUDE]($INCLUDE) procedures.
-
+QBasic's IDE would add DEF statements before any [SUB](SUB) or [FUNCTION](FUNCTION). QB64 (like QBasic) will change all variable types in subsequent sub-procedures to that default variable type without giving a [ERROR Codes](ERROR Codes) warning or adding DEF statement to subsequent procedures. If you do not want that to occur, either remove that DEF statement or add the proper DEF type statements to subsequent procedures. May also affect [$INCLUDE]($INCLUDE) procedures.
 
 ## Example(s)
-
 
 ```vb
 
@@ -38,12 +34,7 @@ DEFDBL A, F-H, M
 
 ```
 
-
 ## See Also
  
 * [DEFSNG](DEFSNG), [DEFLNG](DEFLNG), [DEFINT](DEFINT), [DEFSTR](DEFSTR)
 * [_DEFINE](_DEFINE)
-
-
-
-

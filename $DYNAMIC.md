@@ -1,10 +1,8 @@
 The [$DYNAMIC]($DYNAMIC) [Metacommand](Metacommand) allows the creation of dynamic (changeable) arrays.
 
-
 ## Syntax
  
 > {[REM](REM) | ' } [$DYNAMIC]($DYNAMIC)
-
 
 ## Description
 
@@ -15,11 +13,9 @@ The [$DYNAMIC]($DYNAMIC) [Metacommand](Metacommand) allows the creation of dynam
 * [_PRESERVE](_PRESERVE) allows the [UBOUND](UBOUND) and [LBOUND](LBOUND) boundaries of an array to be changed. The number of dimensions cannot change.
 * [$DYNAMIC]($DYNAMIC) arrays must be [REDIM](REDIM)ensioned if [ERASE](ERASE) or [CLEAR](CLEAR) are used as the arrays are removed completely.
 
-
 ## Example(s)
 
-## Example(s)
- [REDIM](REDIM)ing a $DYNAMIC array using [_PRESERVE](_PRESERVE) to retain previous array values.
+[REDIM](REDIM)ing a $DYNAMIC array using [_PRESERVE](_PRESERVE) to retain previous array values.
 
 ```vb
 
@@ -45,8 +41,6 @@ END
 
 ```
 
-
-
 ## See Also
 
 * [$STATIC]($STATIC), [$INCLUDE]($INCLUDE)
@@ -54,7 +48,3 @@ END
 * [STATIC](STATIC)
 * [ERASE](ERASE), [CLEAR](CLEAR)
 * [Arrays](Arrays), [Metacommand](Metacommand)
-
-
-
-

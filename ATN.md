@@ -1,23 +1,19 @@
 The [ATN](ATN) or arctangent function returns the angle in radians of a numerical [TAN](TAN) value.
 
-
 ## Syntax
 
->  radianAngle = [ATN](ATN)(tangent!)
-
+> radianAngle = [ATN](ATN)(tangent!)
 
 ## Parameter(s)
 
 * The return is the tangent!'s angle in **radians**.
-* tangent! [SINGLE](SINGLE) or [DOUBLE](DOUBLE) values are used by the function. EX:**Pi <nowiki>=</nowiki> 4 * ATN(1)**
-
+* tangent! [SINGLE](SINGLE) or [DOUBLE](DOUBLE) values are used by the function. EX:**Pi = 4 * ATN(1)**
 
 ## Description
 
 * To convert from radians to degrees, multiply radians * (180 / �).
 * The *tangent* value would be equal to the tangent value of an angle. Ex: **[TAN](TAN)(ATN(1)) <nowiki>=</nowiki> 1**
 * The function return value is between -� / 2 and � / 2.
-
 
 ## Example(s)
 
@@ -32,7 +28,6 @@ LINE (200, 200)-(200 + x, 200 + y)
 
 ```
 
-
 *Example 2:* [ATN](ATN) can be used to define � in [SINGLE](SINGLE) or [DOUBLE](DOUBLE) precision. The calculation cannot be used as a [CONST](CONST)ant.
 
 ```vb
@@ -42,8 +37,8 @@ Pi# = 4 * ATN(1#) 'DOUBLE precision
 PRINT Pi, Pi# 
 
 ```
-> *Note:* You can use QB64's native [_PI](_PI) function.
 
+> *Note:* You can use QB64's native [_PI](_PI) function.
 
 *Example 3:* Finds the angle from the center point to the mouse pointer. 
 
@@ -87,17 +82,13 @@ ELSE
 END IF
 END FUNCTION 
 
-```<sub>Function by Galleon</sub>
-
+```
+<sub>Function by Galleon</sub>
 
 ## See Also
 
 * [_PI](_PI) (QB64 function)
 * [TAN](TAN) (tangent function)
 * [SIN](SIN), [COS](COS)
-* [Mathematical Operations](Mathematical Operations)
-* [Mathematical_Operations#Derived_Mathematical_Functions](Mathematical_Operations#Derived_Mathematical_Functions)
-
-
-
-
+* [Mathematical Operations](Mathematical-Operations)
+* [Mathematical_Operations#Derived_Mathematical_Functions](Mathematical-Operations#Derived_Mathematical_Functions)

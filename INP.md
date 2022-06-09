@@ -1,10 +1,8 @@
 [INP](INP) returns a value from a computer register or port values at a specified physical address.
 
-
 ## Syntax
 
->  i = [INP](INP)(address)
-
+> i = [INP](INP)(address)
 
 * **QB64 has limited access to registers. VGA memory and registers are emulated.**
 * Address can be a decimal or hexadecimal [INTEGER](INTEGER) value.
@@ -12,35 +10,32 @@
 * It does not require a [DEF SEG](DEF SEG) memory segment address like [PEEK](PEEK) or [POKE](POKE) do.
 * Reads color port intensity settings after `[OUT](OUT) &H3C7, attribute` sets the starting attribute read mode.
 
-
 ## Example(s)
 
 *Example 1:* Reading the current RGB color settings used in a bitmap to an array.
 
 ```vb
 
- SCREEN 12
- DIM Colors%(47)
- OUT &H3C7, 0 ' set color port for INP reads at attribute 0 to start
- FOR i = 0 TO 47
- Colors%(i) = INP(&H3C9) ' moves to next color attribute every 3 loops
- NEXT 
+SCREEN 12
+DIM Colors%(47)
+OUT &H3C7, 0 ' set color port for INP reads at attribute 0 to start
+FOR i = 0 TO 47
+   Colors%(i) = INP(&H3C9) ' moves to next color attribute every 3 loops
+NEXT 
 
 ```
-
 
 *Example 2:* Reading the keyboard Scan Codes as an alternative to [INKEY$](INKEY$)
 
 ```vb
 
- DO: SLEEP
-    scancode% = INP(&H60)
-    a$ = INKEY$ ' clears keyboard buffer
-    PRINT scancode%; 
- LOOP UNTIL scancode% = 1 ' [ESC] keypress exit 
+DO: SLEEP
+   scancode% = INP(&H60)
+   a$ = INKEY$ ' clears keyboard buffer
+   PRINT scancode%; 
+LOOP UNTIL scancode% = 1 ' [ESC] keypress exit 
 
 ```
-
 
 *Example 3:* A simple ping pong game using an array function to read multiple keys for two players.
 
@@ -101,7 +96,6 @@ _DISPLAY 'shows completed screen every call
 LOOP UNTIL ScanKey%(1)
 END
 
-
 FUNCTION ScanKey% (scancode%)
 STATIC Ready%, keyflags%()
 IF NOT Ready% THEN REDIM keyflags%(0 TO 127): Ready% = -1
@@ -113,22 +107,16 @@ ScanKey% = keyflags%(scancode%)
 END FUNCTION 
 
 ```
->  *Note:* [_KEYDOWN](_KEYDOWN) can be used to read multiple keys simultaneously and is the **recommended practice**.
 
+> *Note:* [_KEYDOWN](_KEYDOWN) can be used to read multiple keys simultaneously and is the **recommended practice**.
 
 ## See Also
  
 * [OUT](OUT) (write to register),  [PEEK](PEEK) (read memory)
 * [INKEY$](INKEY$), [_KEYHIT](_KEYHIT), [_KEYDOWN](_KEYDOWN)
 * [Bitmaps](Bitmaps), [Scancodes](Scancodes) (keyboard)
-* [Port Access Libraries](Port Access Libraries) (COM or LPT registers)
+* [Port Access Libraries](Port-Access-Libraries) (COM or LPT registers)
 
+## External Links
 
-### External Links
-
-* [http://en.wikipedia.org/wiki/Input/output_base_address#Common_I.2FO_base_address_device_assignments_in_IBM_PC_compatible_computers PC I/O base address device assignments]
-
-
-
-
-
+* [PC I/O base address device assignments](http://en.wikipedia.org/wiki/Input/output_base_address#Common_I.2FO_base_address_device_assignments_in_IBM_PC_compatible_computers)

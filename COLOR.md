@@ -2,8 +2,7 @@ The [COLOR](COLOR) statement is used to change the foreground and background col
 
 ## Syntax
 
->  [COLOR](COLOR) [foreground&][, background&]
-
+> [COLOR](COLOR) [foreground&][, background&]
 
 ## Description
 
@@ -12,7 +11,6 @@ The [COLOR](COLOR) statement is used to change the foreground and background col
 * To change the background& color only, use a comma and the desired color. Ex: [COLOR](COLOR) , background&
 * Graphic drawing statements like [PSET](PSET), [PRESET](PRESET), [LINE](LINE), etc, also use the colors set by the [COLOR](COLOR) statement if no color is passed when they are called.
 * The [$COLOR]($COLOR) metacommand adds named color constants for both text and 32-bit modes.
-
 
 ## Screen Mode Attributes
 
@@ -31,7 +29,6 @@ The [COLOR](COLOR) statement is used to change the foreground and background col
 * [_DEST](_DEST) can be used to set the destination page or image to color using **QB64**.
 * [_DEFAULTCOLOR](_DEFAULTCOLOR) returns the current color being used on an image or screen page handle.
 
-
 ### 24/32-Bit colors using QB64
 
 * Pixel color intensities for red, green, blue and alpha range from 0 to 255 when used with [_RGB](_RGB), [_RGBA](_RGBA), [_RGB32](_RGB32) and [RGBA32](RGBA32).
@@ -40,8 +37,6 @@ The [COLOR](COLOR) statement is used to change the foreground and background col
 * [_CLEARCOLOR](_CLEARCOLOR) can also be used to set a color as transparent.
 * Colors can be mixed by using [_BLEND](_BLEND) (default) in 32-bit screen modes. [_DONTBLEND](_DONTBLEND) disables blending.
 * **NOTE: Default 32-bit backgrounds are clear black or [_RGBA](_RGBA)(0, 0, 0, 0). Use [CLS](CLS) to make the black opaque.**
-
-
 
 ## RGB Palette Intensities
 
@@ -94,24 +89,22 @@ COLOR 15 <nowiki>=</nowiki> &HFFFCFCFC      FC         FC         FC
 
 > *Explanation:* The RGB intensity values are multiplied by 4 to get the [_RGB](_RGB) intensity values as [HEX$](HEX$) values. The individual 2 digit [HEX$](HEX$) intensity values can be added to "&HFF" to make up the 32-bit hexadecimal string value necessary for [VAL](VAL) to return to [_PALETTECOLOR](_PALETTECOLOR). The statement is only included in the example to show how that can be done with any 32-bit color value.
 
-
 ### Read & write color port intensities with [INP](INP) & [OUT](OUT)
 
 * Legacy code may use [INP](INP) and [OUT](OUT) to read or set color port intensities. **QB64** emulates VGA memory to maintain compatibility.
 * The same can be achieved using [_PALETTECOLOR](_PALETTECOLOR) (**recommended practice**).
 
 > **OUT &H3C7, attribute** 'Set port to read RGB settings with:
+
 > **color_intensity <nowiki>=</nowiki> INP(&H3C9)** 'reads present intensity setting
  
 > **OUT &H3C8, attribute** 'Set port to write RGB settings with:
+
 > **OUT &H3C9, color_intensity** 'writes new intensity setting
 
 * After every 3 reads or writes, changes to next higher color attribute. Loops can be used to set more than one attribute's intensities.
 * Color port setting of red, green and blue intensities can be done in ascending order.
 * Color port attribute intensity values range from 0 to 63 (1/4 of the 32-bit values) in QBasic's legacy 4 and 8 bit screen modes.
-
-
-
 
 ## Example(s)
 
@@ -119,23 +112,19 @@ COLOR 15 <nowiki>=</nowiki> &HFFFCFCFC      FC         FC         FC
 
 ```vb
 
- OUT &H3C7, 15
- red% = INP(&H3C9)
- green% = INP(&H3C9)
- blue% = INP(&H3C9)
- PRINT red%, green%, blue% 
+OUT &H3C7, 15
+red% = INP(&H3C9)
+green% = INP(&H3C9)
+blue% = INP(&H3C9)
+PRINT red%, green%, blue% 
 
 ```
 
-
 ```text
-
 
  63       63       63
 
 ```
-
-
 
 *Example 2:* Changing the color settings of attribute 0 (the background) to blue in [SCREEN](SCREEN)s 12 or 13.
 
@@ -152,10 +141,12 @@ PRINT INP(&H3C9); INP(&H3C9); INP(&H3C9)
 END
 
 ```
+
+```text
+
 OutputStartBG1 0  0  42 
+
 ```
-
-
 
 *Example 3:* Printing in fullscreen SCREEN 0 mode with a color background under the text only.
 
@@ -170,12 +161,9 @@ COLOR 14, 6: LOCATE 4, 4: PRINT "Hello!"
 
 
 
-
     Hello!
 
 ```
-
-
 
 *Example 4:* Using [CLS](CLS) after setting the background color in SCREEN 0 to make the color cover the entire screen.
 
@@ -186,12 +174,13 @@ COLOR , 7: CLS
 COLOR 9: PRINT "Hello" 
 
 ```
+
+```text
+
 OutputStartBG7
 Hello
 
 ```
-
-
 
 *Example 5:* Using a different foreground color for each letter:
 
@@ -211,16 +200,12 @@ COLOR 14: PRINT "D"
 
 ```
 
-
 ```text
-
 
 HELLO
 WORLD
 
 ```
-
-
 
 ## See Also
 
@@ -230,15 +215,11 @@ WORLD
 * [_RED32](_RED32), [_GREEN32](_GREEN32), [_BLUE32](_BLUE32)
 * [_ALPHA](_ALPHA), [_ALPHA32](_ALPHA32), [_CLEARCOLOR](_CLEARCOLOR)
 * [PRINT](PRINT), [LOCATE](LOCATE), [SCREEN](SCREEN)
-* [POINT](POINT), [SCREEN (function)](SCREEN (function))
+* [POINT](POINT), [SCREEN (function)](SCREEN-(function))
 * [OUT](OUT), [INP](INP), [PALETTE](PALETTE)
 * [_BLINK](_BLINK)
 * [_DEFAULTCOLOR](_DEFAULTCOLOR)
 * [_BACKGROUNDCOLOR](_BACKGROUNDCOLOR)
 * [_PALETTECOLOR](_PALETTECOLOR)
-* [Windows_Libraries#Color_Dialog_Box](Windows_Libraries#Color_Dialog_Box)
-* [http://www.w3schools.com/html/html_colornames.asp Hexadecimal Color Values]
-
-
-
-
+* [Windows_Libraries#Color_Dialog_Box](Windows-Libraries#Color_Dialog_Box)
+* [Hexadecimal Color Values](http://www.w3schools.com/html/html_colornames.asp)

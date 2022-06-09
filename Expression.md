@@ -1,16 +1,10 @@
 A **expression** is a calculation used as a argument or assignment and can be a numerical or string expression.
 
-
 Expressions may include logical operators as well as mathematical operators and functions and are used in various forms in a program.
-
-
-
 
 **Examples of different kind of expressions:**
 
-
-*Numerical expressions:*
-
+## Numerical Expressions
 
 (**1000** is the expression)
 
@@ -20,15 +14,11 @@ PRINT 1000
 
 ```
 
-
 ```text
-
 
  1000
 
 ```
-
-
 
 (**1 + 1** is the expression) 
 
@@ -38,21 +28,13 @@ PRINT 1 + 1
 
 ```
 
-
 ```text
-
 
  2
 
 ```
 
-
-
-
-
-
-*String expressions:*
-
+## String Expressions
 
 (**"hello!"** is the expression)
 
@@ -62,15 +44,11 @@ PRINT "hello!"
 
 ```
 
-
 ```text
-
 
 hello!
 
 ```
-
-
 
 (**"Hello" + " " + "there!"** is the expression)
 
@@ -80,24 +58,12 @@ PRINT "Hello" + " " + "there!"
 
 ```
 
-
 ```text
-
 
 Hello there!
 
 ```
 
-
-
-
-
-
-
 ## See Also
 
-*[Argument](Argument)
-
-
-
-
+* [Argument](Argument)

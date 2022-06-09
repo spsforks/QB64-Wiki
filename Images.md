@@ -1,12 +1,10 @@
 Images are areas of graphics stored in memory, the most common image is the program screen itself, where graphics are displayed. This image is designated as image handle 0 or [_DEST](_DEST) 0. QB64 refers to the image memory by using negative [LONG](LONG) handle values. Those values can then be referred to using other functions such as [_WIDTH](_WIDTH) and [_HEIGHT](_HEIGHT) to find the image properties. Statements like [SCREEN](SCREEN) or [_PUTIMAGE](_PUTIMAGE) can use the image handle to display the image when necessary. QBasic functions like [POINT](POINT) can read the colors, even 32 bit [_ALPHA](_ALPHA) colors.
 
-
 Images are called by other names in other programming languages or in different situations, examples of other names can be "surfaces", "pages" or "layers".
 
 ## QB64 Images
 
 You can create a program screen image by using the [_NEWIMAGE](_NEWIMAGE) function. _NEWIMAGE returns a handle for you to use as a reference to that image. The handle is a negative number below -1 where -1 indicates a failure to load an image.
-
 
 For the image handle parameter in a statement you can also use any positive number and this handle will not need to be defined by [_NEWIMAGE](_NEWIMAGE) or anything else. In this case the image referred to is the screen page of that value. This is why image handle 0 refers to the screen, specifically screen page 0.
 

@@ -4,13 +4,7 @@ QB64 supports all kinds of keyboard, mouse, joystick, gamepad, steering wheel an
 
 * After the device count is determined we can find out the type of device, the device name and the type of controls available using the [_DEVICE$](_DEVICE$)(device_number) function. The function returns a [STRING](STRING) containing information about each numbered device.
 
-
-{| align="Right"
-  | __TOC__
-  |}
-
-> ::**"[CONTROLLER]<nowiki>[</nowiki>[DEVICENAME] device description][BUTTON][AXIS][WHEEL]"**
-
+> `"[CONTROLLER][[DEVICENAME] device description][BUTTON][AXIS][WHEEL]"`
 
 * [_DEVICEINPUT](_DEVICEINPUT) can indicate a used device number or true when a specified device number  is active.
 
@@ -18,20 +12,17 @@ QB64 supports all kinds of keyboard, mouse, joystick, gamepad, steering wheel an
 
 > **mouse = _DEVICEINPUT(2)** would return -1(true) when the mouse was moved, clicked or scrolled.
 
-
 ## [KEYBOARD]
-
 
 Normally the number 1 device, it usually only has [[BUTTON](BUTTON)] controls. Program window must be in focus to read key activity.
 
-
-> ::: **[KEYBOARD][BUTTON]**
-
+> **[KEYBOARD][BUTTON]**
 
 >  [_LASTBUTTON](_LASTBUTTON)(1) will normally return 512 buttons.
-> : [_BUTTONCHANGE](_BUTTONCHANGE)(number) returns -1 when pressed, 1 when released and 0 when there is no event since the last read.
-> : [_BUTTON](_BUTTON)(number) returns -1 when a button is pressed and 0 when released.
 
+>  [_BUTTONCHANGE](_BUTTONCHANGE)(number) returns -1 when pressed, 1 when released and 0 when there is no event since the last read.
+
+>  [_BUTTON](_BUTTON)(number) returns -1 when a button is pressed and 0 when released.
 
 ```text
 
@@ -51,83 +42,83 @@ Normally the number 1 device, it usually only has [[BUTTON](BUTTON)] controls. P
 '  412  413  410      182       409  414  405  411             442  444   441    86         420  421 
 '
 
-
 ```
-
-
 
 ## [MOUSE]
 
-
 Normally the number 2 device, a mouse usually has [[AXIS](AXIS)], [[BUTTON](BUTTON)] and [[WHEEL](WHEEL)] controls. Pointer must be in program screen area.
 
+> **[MOUSE][BUTTON][AXIS][WHEEL]**
 
-> ::: **[MOUSE][BUTTON][AXIS][WHEEL]**
+> [_LASTAXIS](_LASTAXIS)(2) normally returns 2 axis representing the horizontal and vertical mouse, trackball, touch pad or touchscreen axis.
 
+> [_AXIS](_AXIS)(number) returns a [SINGLE](SINGLE) value from -1 to 1 with 0 representing the axis center in normal movement mode.
 
->  [_LASTAXIS](_LASTAXIS)(2) normally returns 2 axis representing the horizontal and vertical mouse, trackball, touch pad or touchscreen axis.
-> : [_AXIS](_AXIS)(number) returns a [SINGLE](SINGLE) value from -1 to 1 with 0 representing the axis center in normal movement mode.
-> :: [_AXIS](_AXIS)(1) returns the horizontal axis position in normal movement mode only.
-> :: [_AXIS](_AXIS)(2) returns the vertical axis position in normal movement mode only. 
+> [_AXIS](_AXIS)(1) returns the horizontal axis position in normal movement mode only.
+
+> [_AXIS](_AXIS)(2) returns the vertical axis position in normal movement mode only. 
 
 Program window pointer AXIS values change from 0 at the center to -1 or + 1 values at the window borders.
 
+> [_LASTBUTTON](_LASTBUTTON)(2) will normally return 3 buttons when mouse has a center or scroll wheel button.
 
->  [_LASTBUTTON](_LASTBUTTON)(2) will normally return 3 buttons when mouse has a center or scroll wheel button.
-> : [_BUTTONCHANGE](_BUTTONCHANGE)(number) returns -1 when pressed, 1 when released and 0 when there is no event since the last read.
-> : [_BUTTON](_BUTTON)(number) returns -1 when corresponding button is pressed and 0 when released.
-> :: [_BUTTON](_BUTTON)(1) returns Left button presses like [_MOUSEBUTTON](_MOUSEBUTTON)(1) and [_BUTTONCHANGE](_BUTTONCHANGE)(1) returns events.
-> :: [_BUTTON](_BUTTON)(2) returns Center button presses like [_MOUSEBUTTON](_MOUSEBUTTON)(3) and [_BUTTONCHANGE](_BUTTONCHANGE)(2) returns events.
-> :: [_BUTTON](_BUTTON)(3) returns Right button presses like [_MOUSEBUTTON](_MOUSEBUTTON)(2) and [_BUTTONCHANGE](_BUTTONCHANGE)(3) returns events.
+> [_BUTTONCHANGE](_BUTTONCHANGE)(number) returns -1 when pressed, 1 when released and 0 when there is no event since the last read.
+
+> [_BUTTON](_BUTTON)(number) returns -1 when corresponding button is pressed and 0 when released.
+
+> [_BUTTON](_BUTTON)(1) returns Left button presses like [_MOUSEBUTTON](_MOUSEBUTTON)(1) and [_BUTTONCHANGE](_BUTTONCHANGE)(1) returns events.
+
+> [_BUTTON](_BUTTON)(2) returns Center button presses like [_MOUSEBUTTON](_MOUSEBUTTON)(3) and [_BUTTONCHANGE](_BUTTONCHANGE)(2) returns events.
+
+> [_BUTTON](_BUTTON)(3) returns Right button presses like [_MOUSEBUTTON](_MOUSEBUTTON)(2) and [_BUTTONCHANGE](_BUTTONCHANGE)(3) returns events.
 
 **Note that middle _BUTTON(2) is equivalent to [_MOUSEBUTTON](_MOUSEBUTTON)(3)!**
 
+> [_LASTWHEEL](_LASTWHEEL)(2) will normally return 3 wheels where the first two return relative coordinate movements when set. 
 
->  [_LASTWHEEL](_LASTWHEEL)(2) will normally return 3 wheels where the first two return relative coordinate movements when set. 
-> : [_WHEEL](_WHEEL)(number) returns -1 when wheel is scrolled up or forward and 1 when wheel is scrolled down or backward.
-> :: [_WHEEL](_WHEEL)(1) returns relative horizontal pixel moves after [_MOUSEMOVEMENTX](_MOUSEMOVEMENTX) or Y enables relative mode.
-> :: [_WHEEL](_WHEEL)(2) returns relative vertical pixel moves after [_MOUSEMOVEMENTX](_MOUSEMOVEMENTX) or Y enables relative mode.
-> :: [_WHEEL](_WHEEL)(3) returns -1 when scroll wheel is moved forward or up and 1 when scrolled backward or down.
+> [_WHEEL](_WHEEL)(number) returns -1 when wheel is scrolled up or forward and 1 when wheel is scrolled down or backward.
+
+> [_WHEEL](_WHEEL)(1) returns relative horizontal pixel moves after [_MOUSEMOVEMENTX](_MOUSEMOVEMENTX) or Y enables relative mode.
+
+> [_WHEEL](_WHEEL)(2) returns relative vertical pixel moves after [_MOUSEMOVEMENTX](_MOUSEMOVEMENTX) or Y enables relative mode.
+
+> [_WHEEL](_WHEEL)(3) returns -1 when scroll wheel is moved forward or up and 1 when scrolled backward or down.
 
 Relative WHEEL move values are negative when mouse is moved up or left. Positive when mouse is moved down or right.
 
 WHEEL values can be added for a cumulative movement value when needed. Scroll reads can be off program screen.
 
-
-
 ## [CONTROLLER]
 
 [NAME][manufacturer name](NAME][manufacturer name) may follow in the controller [_DEVICE$](_DEVICE$) string. Devices can be joysticks, game pads or multi-stick.
 
-
-> ::: **[CONTROLLER]<nowiki>[</nowiki>[DeviceName]description][BUTTON][AXIS][WHEEL]**
-
+> `[CONTROLLER][[DeviceName]description][BUTTON][AXIS][WHEEL]`
 
 Normally device numbers 3 or higher, controllers may have any number of [[AXIS](AXIS)], [[BUTTON](BUTTON)] and/or [[WHEEL](WHEEL)] controls.
 
+> [_LASTAXIS](_LASTAXIS)(device_number) normally returns dual axis representing the horizontal and vertical axis or view point("top hat").
 
->  [_LASTAXIS](_LASTAXIS)(device_number) normally returns dual axis representing the horizontal and vertical axis or view point("top hat").
-> : [_AXIS](_AXIS)(number) returns a [SINGLE](SINGLE) value from -1 to 1 with 0 representing the axis center.
-> :: [_AXIS](_AXIS)(1) returns the horizontal axis position.
-> :: [_AXIS](_AXIS)(2) returns the vertical axis position. 
+> [_AXIS](_AXIS)(number) returns a [SINGLE](SINGLE) value from -1 to 1 with 0 representing the axis center.
+
+> [_AXIS](_AXIS)(1) returns the horizontal axis position.
+
+> [_AXIS](_AXIS)(2) returns the vertical axis position. 
 
 **Note: Some slide controls may only have one axis!**
 
+> [_LASTBUTTON](_LASTBUTTON)(device_number) will return the number of buttons or triggers a device has.
 
->  [_LASTBUTTON](_LASTBUTTON)(device_number) will return the number of buttons or triggers a device has.
-> : [_BUTTONCHANGE](_BUTTONCHANGE)(number) returns -1 when pressed, 1 when released and 0 when there is no event since the last read.
-> : [_BUTTON](_BUTTON)(number) returns -1 when button number is pressed and 0 when released.
+> [_BUTTONCHANGE](_BUTTONCHANGE)(number) returns -1 when pressed, 1 when released and 0 when there is no event since the last read.
 
+> [_BUTTON](_BUTTON)(number) returns -1 when button number is pressed and 0 when released.
 
->  [_LASTWHEEL](_LASTWHEEL)(device_number) will return the number of wheel controls a device has. 
-> : [_WHEEL](_WHEEL)(number) returns -1 when wheel is scrolled up or forward and 1 when wheel is scrolled down or backward.
+> [_LASTWHEEL](_LASTWHEEL)(device_number) will return the number of wheel controls a device has. 
 
-
+> [_WHEEL](_WHEEL)(number) returns -1 when wheel is scrolled up or forward and 1 when wheel is scrolled down or backward.
 
 ## Example
 
-
->  Displays all keyboard, mouse and game controller button, axis and wheel control input values when each device is being used.
+> Displays all keyboard, mouse and game controller button, axis and wheel control input values when each device is being used.
 
 ```vb
 
@@ -171,15 +162,13 @@ END
 
 ```
 <sub>Code by Ted Weissgerber</sub>
-> : *Note:* When there is no device control to read, a [FOR...NEXT](FOR...NEXT) n = 1 TO 0 loop will not run thus avoiding a control function read error.
->  Using [_MOUSEMOVEMENTX](_MOUSEMOVEMENTX) or Y will hide the mouse cursor and return relative mouse movements with the 1 and 2 [_WHEEL](_WHEEL) controls.
+
+> *Note:* When there is no device control to read, a [FOR...NEXT](FOR...NEXT) n = 1 TO 0 loop will not run thus avoiding a control function read error.
+
+> Using [_MOUSEMOVEMENTX](_MOUSEMOVEMENTX) or Y will hide the mouse cursor and return relative mouse movements with the 1 and 2 [_WHEEL](_WHEEL) controls.
 [_MOUSESHOW](_MOUSESHOW) will return the mouse coordinate reads to the [_AXIS](_AXIS) control after it is used!
 
-
-
-## Reference
-
-
+## See Also
 
 * [_DEVICEINPUT](_DEVICEINPUT), [_AXIS](_AXIS), [_BUTTON](_BUTTON), [_BUTTONCHANGE](_BUTTONCHANGE), [_WHEEL](_WHEEL)
 * [_DEVICES](_DEVICES), [_DEVICE$](_DEVICE$), [_LASTAXIS](_LASTAXIS), [_LASTBUTTON](_LASTBUTTON), [_LASTWHEEL](_LASTWHEEL)
@@ -187,7 +176,3 @@ END
 * [_MOUSEMOVE](_MOUSEMOVE), [_MOUSEHIDE](_MOUSEHIDE), [_MOUSESHOW](_MOUSESHOW)
 * [_MOUSEMOVEMENTX](_MOUSEMOVEMENTX), [_MOUSEMOVEMENTY](_MOUSEMOVEMENTY) (relative movement)
 * [STRIG](STRIG) (button), [STICK](STICK) (axis)
-
-
-
-

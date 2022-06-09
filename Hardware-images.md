@@ -1,17 +1,17 @@
-**Hardware Images (QB64 version 1.000 and up)**
+**Hardware Images**
 
 * QB64 can create hardware images using [_LOADIMAGE](_LOADIMAGE) files or [_COPYIMAGE](_COPYIMAGE) with mode 33 as the second [parameter](parameter).
 * Hardware images can be displayed using [_PUTIMAGE](_PUTIMAGE) or [_MAPTRIANGLE](_MAPTRIANGLE) with special texture properties.
 * [_COPYIMAGE](_COPYIMAGE) mode 33 can convert images created by [_NEWIMAGE](_NEWIMAGE), [_LOADIMAGE](_LOADIMAGE) or [_SCREENIMAGE](_SCREENIMAGE) to hardware images.
 
-
 **Demonstration of the Advantages of Using Hardware Images**
+
 <sub>Examples by Johny B.</sub>
 
-
->  The first example uses software images while using between 20 - 30% processor power:
+> The first example uses software images while using between 20 - 30% processor power:
 
 ```vb
+
 SCREEN _NEWIMAGE(640, 480, 32)
 
 'create some software screens
@@ -47,10 +47,10 @@ LOOP
 
 ```
 
-
->  The second example converts the foreground and background software screens to hardware using 6-7% processor power:
+> The second example converts the foreground and background software screens to hardware using 6-7% processor power:
 
 ```vb
+
 SCREEN _NEWIMAGE(640, 480, 32)
 
 'create some software screens
@@ -94,14 +94,9 @@ LOOP
 
 ```
 
-
 ## See Also
 
 * [_LOADIMAGE](_LOADIMAGE), [_COPYIMAGE](_COPYIMAGE)
 * [_PUTIMAGE](_PUTIMAGE), [_MAPTRIANGLE](_MAPTRIANGLE)
 * [_DISPLAYORDER](_DISPLAYORDER)
 * [_FREEIMAGE](_FREEIMAGE) 
-
-
-
-

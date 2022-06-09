@@ -1,10 +1,8 @@
 The [FREEFILE](FREEFILE) function returns a [LONG](LONG) value that is an unused file access number.
 
-
 ## Syntax
 
->  fileHandle& = [FREEFILE](FREEFILE)
-
+> fileHandle& = [FREEFILE](FREEFILE)
 
 ## Description
 
@@ -13,13 +11,7 @@ The [FREEFILE](FREEFILE) function returns a [LONG](LONG) value that is an unused
 * File numbers [CLOSE](CLOSE)d are made available to [FREEFILE](FREEFILE) for reuse immediately. 
 * [FREEFILE](FREEFILE) returns are normally sequential starting with 1. Only file numbers in use will not be returned.
 * [OPEN](OPEN) each file number after each [FREEFILE](FREEFILE) return or the values returned may be the same.
-<!-- redundant * [OPEN COM](OPEN COM) statements cannot use any number assigned to files already OPEN. -->
-
 
 ## See Also
 
 * [GET](GET), [PUT](PUT), [CLOSE](CLOSE)
-
-
-
-
