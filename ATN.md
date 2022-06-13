@@ -91,4 +91,4 @@ END FUNCTION
 * [TAN](TAN) (tangent function)
 * [SIN](SIN), [COS](COS)
 * [Mathematical Operations](Mathematical-Operations)
-* [Mathematical_Operations#Derived_Mathematical_Functions](Mathematical-Operations#Derived_Mathematical_Functions)
+* [Mathematical Operations#Derived_Mathematical_Functions](Mathematical-Operations#Derived_Mathematical_Functions)

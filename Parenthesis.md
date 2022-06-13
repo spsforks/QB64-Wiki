@@ -1,4 +1,4 @@
-**Parenthesis** are used to enclose [SUB](SUB) and [FUNCTION](FUNCTION) parameters or to set the operation order in [Mathematical Operations](Mathematical Operations).
+**Parenthesis** are used to enclose [SUB](SUB) and [FUNCTION](FUNCTION) parameters or to set the operation order in [Mathematical Operations](Mathematical-Operations).
 
 ## Usage
 

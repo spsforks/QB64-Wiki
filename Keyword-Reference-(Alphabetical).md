@@ -361,7 +361,6 @@ Keywords beginning with underscores are QB64 specific. **To use them without the
 
 * [_BACKGROUNDCOLOR](_BACKGROUNDCOLOR) (function) returns the current [SCREEN](SCREEN) background color.
 * [_BIT](_BIT) (` numerical type) can return only signed values of 0 (bit off) and -1 (bit on). Unsigned 0 or 1.
-* [_BIN$](_BIN$) (function) returns the binary (base 2) [STRING](STRING) representation of the [INTEGER](INTEGER) part of any value.
 * [_BLEND](_BLEND) (statement) statement turns on 32 bit alpha blending for the current image or screen mode and is default.
 * [_BLEND (function)](_BLEND-(function)) returns -1 if enabled or 0 if disabled by [_DONTBLEND](_DONTBLEND) statement.
 * [_BLINK](_BLINK) (statement) statement turns blinking colors on/off in SCREEN 0
@@ -601,7 +600,7 @@ Keywords beginning with underscores are QB64 specific. **To use them without the
 * [_SHELLHIDE](_SHELLHIDE) (function) returns the code sent by a program exit using [END](END) or [SYSTEM](SYSTEM) followed by an [INTEGER](INTEGER) value.
 * [_SHL](_SHL) (function) used to shift the bits of a numerical value to the left
 * [_SHR](_SHR) (function) used to shift the bits of a numerical value to the right.
-* [Mathematical_Operations](Mathematical_Operations) (function) Returns the hyperbolic sine of x radians.
+* [Mathematical Operations](Mathematical-Operations) (function) Returns the hyperbolic sine of x radians.
 * [_SNDBAL](_SNDBAL) (statement) attempts to set the balance or 3D position of a sound file.
 * [_SNDCLOSE](_SNDCLOSE) (statement) frees and unloads an open sound using the sound handle created by [_SNDOPEN](_SNDOPEN).
 * [_SNDCOPY](_SNDCOPY) (function) copies a sound handle value to a new designated handle.
@@ -632,7 +631,7 @@ Keywords beginning with underscores are QB64 specific. **To use them without the
 
 ### _T
 
-* [Mathematical_Operations](Mathematical_Operations) (function) Returns the hyperbolic tangent of x radians.
+* [Mathematical Operations](Mathematical-Operations) (function) Returns the hyperbolic tangent of x radians.
 * [_TITLE](_TITLE) (statement) sets the program title [STRING](STRING) value.
 * [_TITLE$](_TITLE$) (function) gets the program title [STRING](STRING) value.
 * [_TOGGLEBIT](_TOGGLEBIT) (function) is used to toggle the specified bit of an integer variable from 1 to 0 or 0 to 1.
@@ -651,7 +650,7 @@ Keywords beginning with underscores are QB64 specific. **To use them without the
 ### _W
 
 * [_WHEEL](_WHEEL) (function) returns -1 when a control device wheel is scrolled up and 1 when scrolled down. Zero indicates no activity.
-* [_WIDTH (function)](_WIDTH (function)) returns the width of a [SCREEN](SCREEN) or image handle.
+* [_WIDTH (function)](_WIDTH-(function)) returns the width of a [SCREEN](SCREEN) or image handle.
 * [_WINDOWHANDLE](_WINDOWHANDLE) (function) returns the window handle assigned to the current program by the OS. Windows-only.
 * [_WINDOWHASFOCUS](_WINDOWHASFOCUS) (function) returns true (-1) if the current program's window has focus. Windows-only.
 

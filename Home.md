@@ -39,7 +39,7 @@ QB64 is a modern extended BASIC programming language that retains QBasic / Quick
 * [Images](Images)
 * [Keyboard scancodes](Keyboard-scancodes)
 * [Libraries](Libraries) ([C Libraries](C-Libraries), [Windows Libraries](Windows-Libraries), [DLL Libraries](DLL-Libraries))
-* [Mathematical Operations](Mathematical_Operations)
+* [Mathematical Operations](Mathematical-Operations)
 * [PDS (7.1) Procedures](PDS-(7.1)-Procedures)
 * [Port Access Libraries](Port-Access-Libraries)
 * [QB 4.5 Library Ports For QB64](QB-4.5-Library-Ports-For-QB64)

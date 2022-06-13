@@ -16,8 +16,8 @@ The [_ATANH](_ATANH) returns the arc hyperbolic tangent of x!, expressed in radi
 * [_ACOSH](_ACOSH) (arc hyperbolic  cosine), [_ASINH](_ASINH) (arc hyperbolic  sine)
 * [_ATAN2](_ATAN2) (Compute arc tangent with two parameters)
 * [_HYPOT](_HYPOT) (hypotenuse)
-*[Mathematical Operations](Mathematical Operations)
-*[Mathematical_Operations#Derived_Mathematical_Functions](Mathematical_Operations#Derived_Mathematical_Functions)
+*[Mathematical Operations](Mathematical-Operations)
+*[Mathematical Operations#Derived_Mathematical_Functions](Mathematical-Operations#Derived_Mathematical_Functions)
 
 
 

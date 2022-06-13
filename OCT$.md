@@ -22,14 +22,14 @@ Example 1: Comparing decimal, hexadecimal, octal and binary string values from 0
 
 ```vb
 
-tabletop$ = " Decimal | Hexadecimal | Octal | Binary "
-tablesep$ = "---------+-------------+-------+--------"
-tableout$ = "  \ \    |      \\     |   \\  |  \  \  " 'the PRINT USING template
+tabletop$ = " Decimal | Hexadecimal | Octal "
+tablesep$ = "---------+-------------+-------"
+tableout$ = "  \ \    |      \\     |   \\  " 'the PRINT USING template
 
 LOCATE 2, 10: PRINT tabletop$
 LOCATE 3, 10: PRINT tablesep$
 FOR n% = 0 TO 15
-    LOCATE 4 + n%, 10: PRINT USING tableout$; STR$(n%); HEX$(n%); OCT$(n%); _BIN$(n%)
+    LOCATE 4 + n%, 10: PRINT USING tableout$; STR$(n%); HEX$(n%); OCT$(n%)
 NEXT n%
 
 ```
@@ -38,24 +38,24 @@ Note: Although the decimal numbers 0-15 have a maximum width of 2 digits only, a
 
 ```text
 
-          Decimal | Hexadecimal | Octal | Binary
-         ---------+-------------+-------+--------
-            0     |      0      |   0   |  0
-            1     |      1      |   1   |  1
-            2     |      2      |   2   |  10
-            3     |      3      |   3   |  11
-            4     |      4      |   4   |  100
-            5     |      5      |   5   |  101
-            6     |      6      |   6   |  110
-            7     |      7      |   7   |  111
-            8     |      8      |   10  |  1000
-            9     |      9      |   11  |  1001
-            10    |      A      |   12  |  1010
-            11    |      B      |   13  |  1011
-            12    |      C      |   14  |  1100
-            13    |      D      |   15  |  1101
-            14    |      E      |   16  |  1110
-            15    |      F      |   17  |  1111
+          Decimal | Hexadecimal | Octal 
+         ---------+-------------+-------
+            0     |      0      |   0   
+            1     |      1      |   1   
+            2     |      2      |   2   
+            3     |      3      |   3   
+            4     |      4      |   4   
+            5     |      5      |   5   
+            6     |      6      |   6   
+            7     |      7      |   7   
+            8     |      8      |   10  
+            9     |      9      |   11  
+            10    |      A      |   12  
+            11    |      B      |   13  
+            12    |      C      |   14  
+            13    |      D      |   15  
+            14    |      E      |   16  
+            15    |      F      |   17  
 
 ```
 
@@ -78,6 +78,6 @@ Converting Oct value to Decimal: 255
 
 ## See Also
 
-* [_BIN$](_BIN$), [HEX$](HEX$), [STR$](STR$), [VAL](VAL)
+* [HEX$](HEX$), [STR$](STR$), [VAL](VAL)
 * [&B](&B) (binary), [&H](&H) (hexadecimal), [&O](&O) (octal)
 * [Base Comparisons](Base-Comparisons)

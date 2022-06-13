@@ -408,7 +408,7 @@ See also: [Libraries#C++_Variable_Types](Libraries#C++_Variable_Types)
 * [SQR](SQR) (function) square root of a positive number.
 * [TAN](TAN) (function) returns the ratio of [SIN](SIN)e to [COS](COS)ine or tangent value of an angle measured in radians.
 
-See also: [Mathematical Operations](Mathematical_Operations) and [#Logical Bitwise Operations:](#Logical_Bitwise_Operations:) 
+See also: [Mathematical Operations](Mathematical-Operations) and [#Logical Bitwise Operations:](#Logical_Bitwise_Operations:) 
 
 ##  Memory Handling and Clipboard 
 
@@ -495,7 +495,6 @@ See also: [Screen Memory](Screen_Memory) or [Using _OFFSET](Using_OFFSET)
 
 * [ABS](ABS) (function) returns the the positive value of a variable or literal numerical value.
 * [ASC](ASC) (function) returns the [ASCII](ASCII) code number of a certain [STRING](STRING) text character or a keyboard press.
-* [_BIN$](_BIN$) (function) converts the [INTEGER](INTEGER) part of any value to binary [STRING](STRING) number value.
 * [CDBL](CDBL) (function) converts a numerical value to the closest [DOUBLE](DOUBLE)-precision value.
 * [CHR$](CHR$) (function) returns the character associated with a certain [ASCII](ASCII) character code as a [STRING](STRING).
 * [CINT](CINT) (function) returns the closest [INTEGER](INTEGER) value of a number.
@@ -834,7 +833,7 @@ See also: [Downloading Files](Downloading_Files)
 * [&O](&O)            base 8    Digits 0 to 7
 * [&H](&H) base 16: Digits 0 to F
 
-> **[Mathematical Operations](Mathematical Operations)**
+> **[Mathematical Operations](Mathematical-Operations)**
 
 *[+](+) operator or sign
 *[-](-) operator or sign

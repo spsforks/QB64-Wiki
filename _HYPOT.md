@@ -46,7 +46,7 @@ PRINT USING "## , ## and ## form a right-angled triangle."; leg_x; leg_y; result
 
 * [ATN](ATN) (arctangent)
 * [_PI](_PI) (function)
-* [Mathematical Operations](Mathematical Operations)
+* [Mathematical Operations](Mathematical-Operations)
 * [http://www.cplusplus.com/reference/cmath/hypot/ C++ reference for hypot() - source of the text and sample above]
 
 

@@ -35,7 +35,7 @@ The [_ATAN2](_ATAN2) function returns the radian angle between the positive x-ax
 
 * [ATN](ATN) (arctangent)
 * [_PI](_PI) (QB64 function)
-* [Mathematical Operations](Mathematical Operations)
+* [Mathematical Operations](Mathematical-Operations)
 * [https://en.wikipedia.org/wiki/Atan2 Atan2 reference]
 
 

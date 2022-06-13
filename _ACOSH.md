@@ -15,8 +15,8 @@ The [_ACOSH](_ACOSH) returns the nonnegative arc hyperbolic cosine of x!, expres
 * [_ASINH](_ASINH) (arc hyperbolic  sine), [_ATANH](_ATANH) (arc hyperbolic  tangent)
 * [_ATAN2](_ATAN2) (Compute arc tangent with two parameters)
 * [_HYPOT](_HYPOT) (hypotenuse)
-*[Mathematical Operations](Mathematical Operations)
-*[Mathematical_Operations#Derived_Mathematical_Functions](Mathematical_Operations#Derived_Mathematical_Functions)
+*[Mathematical Operations](Mathematical-Operations)
+*[Mathematical Operations#Derived_Mathematical_Functions](Mathematical-Operations#Derived_Mathematical_Functions)
 
 
 
