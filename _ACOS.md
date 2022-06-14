@@ -13,11 +13,8 @@ The [[_ACOS]] function returns the angle measured in radians based on an input [
 
 
 ## Availability
-
 * **Version 1.000 and up.**
 
-
-## Example(s)
 
 ## Example(s)
  Converting a radian angle to its COSine and using that value to find the angle in degrees again using _ACOS:
