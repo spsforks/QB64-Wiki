@@ -403,7 +403,7 @@ Keywords beginning with underscores are QB64 specific. **To use them without the
 
 ### _D 
 
-* [_D2G](_D2G) (function) converts degrees to gradient angle values.
+* [_D2G](_D2G) (function) converts degrees to gradian angle values.
 * [_D2R](_D2R) (function) converts degrees to radian angle values.
 * [$DEBUG]($DEBUG) (metacommand) enables debugging features, allowing you to step through your code line by line
 * [DECLARE LIBRARY](DECLARE-LIBRARY) declares a C++, SDL or Operating System [SUB](SUB) or [FUNCTION](FUNCTION) to be used.
@@ -458,8 +458,8 @@ Keywords beginning with underscores are QB64 specific. **To use them without the
 
 ### _G
 
-* [_G2D](_G2D) (function) converts gradient to degree angle values.
-* [_G2R](_G2R) (function) converts gradient to radian angle values.
+* [_G2D](_G2D) (function) converts gradian to degree angle values.
+* [_G2R](_G2R) (function) converts gradian to radian angle values.
 * [_GLRENDER](_GLRENDER) (statement) sets whether context is displayed, on top of or behind the software rendering.
 * [_GREEN](_GREEN) (function) function returns the palette or the green component intensity of a 32-bit image color.
 * [_GREEN32](_GREEN32) (function) returns the green component intensity of a 32-bit color value.
@@ -562,7 +562,7 @@ Keywords beginning with underscores are QB64 specific. **To use them without the
 ### _R
 
 * [_R2D](_R2D) (function) converts radians to degree angle values.
-* [_R2G](_R2G) (function) converts radians to gradient angle values.
+* [_R2G](_R2G) (function) converts radians to gradian angle values.
 * [_RED](_RED) (function) function returns the palette or the red component intensity of a 32-bit image color.
 * [_RED32](_RED32) (function) returns the red component intensity of a 32-bit color value.
 * [_READBIT](_READBIT) (function) returns the state of the specified bit of an integer variable.
