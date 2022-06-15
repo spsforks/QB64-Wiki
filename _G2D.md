@@ -22,7 +22,7 @@ PRINT "That angle in Degrees is "; R
 ```text
 
 
-Give me an angle in Gradients 60
+Give me an angle in Gradians 60
 That angle in Degrees is     54
 
 ```
