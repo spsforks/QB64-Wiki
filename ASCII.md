@@ -1,79 +1,80 @@
 ## ASCII and Extended Codes
 
-http://en.wikipedia.org/wiki/Code_page_437[MS-DOS code page 437]:
+[MS-DOS code page 437](http://en.wikipedia.org/wiki/Code_page_437)
 
-[cols="1,1,1,1,1,1,1,1"]
-|===
-2+|http://ascii.cl/control-characters.htm[ASCII Control 0 to 31]
-6+|ASCII Keyboard Character Codes 32 to 127
-| Code |Character [key] | Code | Character | Code | Character | Code | Character 
-|  0 |        (NUL)  | 32 |  [[SPACE$](SPACE$)]| 64 |  @ |  96 |  `
-|  1 |  ?   (SOH) | 33 |  ! | 65 |  A |  97 |  a
-|  2 |  ?   (STX) | 34 |  " | 66 |  B |  98 |  b
-|  3 |  ?   (ETX) | 35 |  # | 67 |  C |  99 |  c
-|  4 |  ?   (EOT) | 36 |  $ | 68 |  D | 100 |  d
-|  5 |  ?   (ENQ) | 37 |  % | 69 |  E | 101 |  e
-|  6 |  ?   (ACK) | 38 |  & | 70 |  F | 102 |  f
-|  7 |  •   (BEL)   [BEEP](BEEP)| 39 |  ' | 71 |  G | 103 |  g
-|  8 |  ?    [BackSpace] **| 40 |  ( | 72 |  H | 104 |  h
-|  9 |  ?   (HT)    [TAB] **| 41 |  ) | 73 |  I | 105 |   i
-| 10 |  ?   (LineFeed)  **| 42 |  * | 74 |  J | 106 |  j
-| 11 |  ?   (VT) **| 43 |  + | 75 |  K | 107 |  k
-| 12 |  ?   (FormFeed) **| 44 |  , | 76 |  L | 108 |  l
-| 13 |  ?   (CR) [Enter] **| 45 |  - | 77 |  M | 109 |  m
-| 14 |  ?   (SO) | 46 |  . | 78 |  N | 110 |  n
-| 15 |  ¤   (SI) | 47 |  / | 79 |  O | 111 |  o
-| 16 |  ?   (DLE) | 48 |  0 | 80 |  P | 112 |  p
-| 17 |  ?   (DC1) | 49 |  1 | 81 |  Q | 113 |  q
-| 18 |  ?   (DC2) | 50 |  2 | 82 |  R | 114 |  r
-| 19 |  ?   (DC3) | 51 |  3 | 83 |  S | 115 |  s
-| 20 |  ¶   (DC4) | 52 |  4 | 84 |  T | 116 |  t
-| 21 |  §   (NAK) | 53 |  5 | 85 |  U | 117 |  u
-| 22 |  ?   (SYN) | 54 |  6 | 86 |  V | 118 |  v
-| 23 |  ?   (ETB) | 55 |  7 | 87 |  W | 119 |  w
-| 24 |  ?   (CAN) | 56 |  8 | 88 |  X | 120 |  x
-| 25 |  ?   (EM)  | 57 |  9 | 89 |  Y | 121 |  y
-| 26 |  ?   (SUB)    [EOF](EOF) | 58 |  : | 90 |  Z | 122 |  z
-| 27 |  ?   (ESC)   [Esc]| 59 |  ; | 91 |  [ | 123 |  {
-| 28 |  ?   (FS) **| 60 |  < | 92 |  \ | 124 |  \|
-| 29 |  ?   (GS) **| 61 |  = | 93 |  ] | 125 |  }
-| 30 |  ?   (RS) **| 62 |  > | 94 |  ^ | 126 |  ~
-| 31 |  ?   (US) **| 63 |  ? | 95 |  _ | 127 |  ¦ (DEL) *
-8+| IBM, International, graphical, mathematical and other characters
+[ASCII Control 0 to 31](http://ascii.cl/control-characters.htm)
+
+| Code | Character [key] | Code | Character | Code | Character | Code | Character |
+| ---- | --------------- | ---- | --------- | ---- | --------- | ---- | --------- | 
+|  0 |        (NUL)  | 32 |  [[SPACE$](SPACE$)]| 64 |  @ |  96 |  ` |
+|  1 |  ?   (SOH) | 33 |  ! | 65 |  A |  97 |  a |
+|  2 |  ?   (STX) | 34 |  " | 66 |  B |  98 |  b |
+|  3 |  ?   (ETX) | 35 |  # | 67 |  C |  99 |  c |
+|  4 |  ?   (EOT) | 36 |  $ | 68 |  D | 100 |  d |
+|  5 |  ?   (ENQ) | 37 |  % | 69 |  E | 101 |  e |
+|  6 |  ?   (ACK) | 38 |  & | 70 |  F | 102 |  f |
+|  7 |  •   (BEL)   [BEEP](BEEP)| 39 |  ' | 71 |  G | 103 |  g |
+|  8 |  ?    [BackSpace] **| 40 |  ( | 72 |  H | 104 |  h |
+|  9 |  ?   (HT)    [TAB] **| 41 |  ) | 73 |  I | 105 |   i |
+| 10 |  ?   (LineFeed)  **| 42 |  * | 74 |  J | 106 |  j |
+| 11 |  ?   (VT) **| 43 |  + | 75 |  K | 107 |  k |
+| 12 |  ?   (FormFeed) **| 44 |  , | 76 |  L | 108 |  l |
+| 13 |  ?   (CR) [Enter] **| 45 |  - | 77 |  M | 109 |  m |
+| 14 |  ?   (SO) | 46 |  . | 78 |  N | 110 |  n |
+| 15 |  ¤   (SI) | 47 |  / | 79 |  O | 111 |  o |
+| 16 |  ?   (DLE) | 48 |  0 | 80 |  P | 112 |  p |
+| 17 |  ?   (DC1) | 49 |  1 | 81 |  Q | 113 |  q |
+| 18 |  ?   (DC2) | 50 |  2 | 82 |  R | 114 |  r |
+| 19 |  ?   (DC3) | 51 |  3 | 83 |  S | 115 |  s |
+| 20 |  ¶   (DC4) | 52 |  4 | 84 |  T | 116 |  t |
+| 21 |  §   (NAK) | 53 |  5 | 85 |  U | 117 |  u |
+| 22 |  ?   (SYN) | 54 |  6 | 86 |  V | 118 |  v |
+| 23 |  ?   (ETB) | 55 |  7 | 87 |  W | 119 |  w |
+| 24 |  ?   (CAN) | 56 |  8 | 88 |  X | 120 |  x |
+| 25 |  ?   (EM)  | 57 |  9 | 89 |  Y | 121 |  y |
+| 26 |  ?   (SUB)    [EOF](EOF) | 58 |  : | 90 |  Z | 122 |  z |
+| 27 |  ?   (ESC)   [Esc]| 59 |  ; | 91 |  [ | 123 |  { |
+| 28 |  ?   (FS) **| 60 |  < | 92 |  \ | 124 |  \| |
+| 29 |  ?   (GS) **| 61 |  = | 93 |  ] | 125 |  } |
+| 30 |  ?   (RS) **| 62 |  > | 94 |  ^ | 126 |  ~ |
+| 31 |  ?   (US) **| 63 |  ? | 95 |  _ | 127 |  ¦ (DEL) * |
+
+IBM, International, graphical, mathematical and other characters
+
 | Code | Character | Code | Character | Code | Character | Code | Character
-| 128 |  Ç | 160 |  á | 192 |  + | 224 |  a
-| 129 |  ü | 161 |  í | 193 |  - | 225 |  ß
-| 130 |  é | 162 |  ó | 194 |  - | 226 |  G
-| 131 |  â | 163 |  ú | 195 |  + | 227 |  p
-| 132 |  ä | 164 |  ñ | 196 |  - | 228 |  S
-| 133 |  à | 165 |  Ñ | 197 |  + | 229 |  s
-| 134 |  å | 166 |  ª | 198 |  ¦ | 230 |  µ
-| 135 |  ç | 167 |  º | 199 |  ¦ | 231 |  t
-| 136 |  ê | 168 |  ¿ | 200 |  + | 232 |  F
-| 137 |  ë | 169 |  ¬ | 201 |  + | 233 |  T
-| 138 |  è | 170 |  ¬ | 202 |  - | 234 |  O
-| 139 |  ï | 171 |  ½ | 203 |  - | 235 |  d
-| 140 |  î | 172 |  ¼ | 204 |  ¦ | 236 |  8
-| 141 |  ì | 173 |  ¡ | 205 |  - | 237 |  f
-| 142 |  Ä | 174 |  « | 206 |  + | 238 |  e
-| 143 |  Å | 175 |  » | 207 |  - | 239 |  n
-| 144 |  É | 176 |  ¦ | 208 |  - | 240 |  =
-| 145 |  æ | 177 |  ¦ | 209 |  - | 241 |  ±
-| 146 |  Æ | 178 |  ¦ | 210 |  - | 242 |  =
-| 147 |  ô | 179 |  ¦ | 211 |  + | 243 |  =
-| 148 |  ö | 180 |  ¦ | 212 |  + | 244 |  (
-| 149 |  ò | 181 |  ¦ | 213 |  + | 245 |  )
-| 150 |  û | 182 |  ¦ | 214 |  + | 246 |  ÷
-| 151 |  ù | 183 |  + | 215 |  + | 247 |  ˜
-| 152 |  ÿ | 184 |  + | 216 |  + | 248 |  °
-| 153 |  Ö | 185 |  ¦ | 217 |  + | 249 |  ·
-| 154 |  Ü | 186 |  ¦ | 218 |  + | 250 |  ·
-| 155 |  ¢ | 187 |  + | 219 |  ¦ | 251 |  v
-| 156 |  £ | 188 |  + | 220 |  _ | 252 |  n
-| 157 |  ¥ | 189 |  + | 221 |  ¦ | 253 |  ²
-| 158 |  P | 190 |  + | 222 |  ¦ | 254 |  ¦
-| 159 |  ƒ | 191 |  + | 223 | ¯  | 255 |  *NBSP* ***
-|===
+| ---- | --------------- | ---- | --------- | ---- | --------- | ---- | --------- | 
+| 128 |  Ç | 160 |  á | 192 |  + | 224 |  a | 
+| 129 |  ü | 161 |  í | 193 |  - | 225 |  ß | 
+| 130 |  é | 162 |  ó | 194 |  - | 226 |  G | 
+| 131 |  â | 163 |  ú | 195 |  + | 227 |  p | 
+| 132 |  ä | 164 |  ñ | 196 |  - | 228 |  S | 
+| 133 |  à | 165 |  Ñ | 197 |  + | 229 |  s | 
+| 134 |  å | 166 |  ª | 198 |  ¦ | 230 |  µ | 
+| 135 |  ç | 167 |  º | 199 |  ¦ | 231 |  t | 
+| 136 |  ê | 168 |  ¿ | 200 |  + | 232 |  F | 
+| 137 |  ë | 169 |  ¬ | 201 |  + | 233 |  T | 
+| 138 |  è | 170 |  ¬ | 202 |  - | 234 |  O | 
+| 139 |  ï | 171 |  ½ | 203 |  - | 235 |  d | 
+| 140 |  î | 172 |  ¼ | 204 |  ¦ | 236 |  8 | 
+| 141 |  ì | 173 |  ¡ | 205 |  - | 237 |  f | 
+| 142 |  Ä | 174 |  « | 206 |  + | 238 |  e | 
+| 143 |  Å | 175 |  » | 207 |  - | 239 |  n | 
+| 144 |  É | 176 |  ¦ | 208 |  - | 240 |  = | 
+| 145 |  æ | 177 |  ¦ | 209 |  - | 241 |  ± | 
+| 146 |  Æ | 178 |  ¦ | 210 |  - | 242 |  = | 
+| 147 |  ô | 179 |  ¦ | 211 |  + | 243 |  = | 
+| 148 |  ö | 180 |  ¦ | 212 |  + | 244 |  ( | 
+| 149 |  ò | 181 |  ¦ | 213 |  + | 245 |  ) | 
+| 150 |  û | 182 |  ¦ | 214 |  + | 246 |  ÷ | 
+| 151 |  ù | 183 |  + | 215 |  + | 247 |  ˜ | 
+| 152 |  ÿ | 184 |  + | 216 |  + | 248 |  ° | 
+| 153 |  Ö | 185 |  ¦ | 217 |  + | 249 |  · | 
+| 154 |  Ü | 186 |  ¦ | 218 |  + | 250 |  · | 
+| 155 |  ¢ | 187 |  + | 219 |  ¦ | 251 |  v | 
+| 156 |  £ | 188 |  + | 220 |  _ | 252 |  n | 
+| 157 |  ¥ | 189 |  + | 221 |  ¦ | 253 |  ² | 
+| 158 |  P | 190 |  + | 222 |  ¦ | 254 |  ¦ | 
+| 159 |  ƒ | 191 |  + | 223 | ¯  | 255 |  *NBSP* ***  | 
 
 > ** * DEL was used to erase paper tape data by punching out all of the 7 holes.**
 > **** Control characters 8 to 13 and 28 to 31 can move text formatting when [PRINT](PRINT) and do not display**
@@ -112,7 +113,6 @@ http://www.lammertbies.nl/comm/info/ascii-characters.html[More information about
 * Control characters **1 to 26** can be used to simulate *Ctrl + letter* key shortcuts in Windows programs using [_SCREENPRINT](_SCREENPRINT).
 * [_CONTROLCHR](_CONTROLCHR) OFF can also be used in QB64 to allow control characters to be printed without formatting the text.
 
-
 **ASCII in Text and Printing**
 
 * Characters **0**(NULL) and **255**(NBSP) can also be used to print spaces(**32**). Useful for making file names harder to delete too.
@@ -140,8 +140,6 @@ http://www.lammertbies.nl/comm/info/ascii-characters.html[More information about
 
 **Control character [PRINT](PRINT) actions can be controlled using [_CONTROLCHR](_CONTROLCHR) OFF or ON in QB64.**
 
-
-
 ```vb
 
 SCREEN 12
@@ -158,7 +156,6 @@ END
 
 ```
 
-
 **ASCII Character Usage**
 
 * Characters are one byte and take up one space(byte) in a [STRING](STRING) value or variable.
@@ -170,7 +167,6 @@ END
 * Character **253**(small 2) can be found as the first character byte of a [BSAVE](BSAVE)d image file opened in [BINARY](BINARY) mode.
 * Character **255** can be used as the NBSP(non-breaking space) character on web pages to fill in extra spaces.
 * Can be used to crudely encrypt a file so others cannot read it by shifting the code values. See [CHR$](CHR$) example 2.
-
 
 ## [ASC](ASC) Codes
 
@@ -203,8 +199,6 @@ END
 
 ```
 
-
-
 Use **ASC(RIGHT$(key$, 1))** or **ASC(key$, 2)** in QB64 to read a two byte code when **ASC(key$) <nowiki>=</nowiki> 0**
 
 *** See the Two Byte Ctrl, Alt and Shift + Function key combinations below**
@@ -221,9 +215,7 @@ DO: K$ = INKEY$
 LOOP UNTIL K$ = CHR$(27) 'escape key press exits 
 
 ```
->  *Note:* In QB64 [ASC](ASC)(K$, 2) can read the second byte of the 2 byte code when [ASC](ASC)(K$) reads the first byte as 0.
-
-
+> *Note:* In QB64 [ASC](ASC)(K$, 2) can read the second byte of the 2 byte code when [ASC](ASC)(K$) reads the first byte as 0.
 
 ## Two Byte Codes
 
