@@ -1,4 +1,4 @@
-The [_G2R](_G2R) function converts a **gradient** value into a **radian** value. 
+The [_G2R](_G2R) function converts a **gradian** value into a **radian** value. 
 
 
 ## Syntax
@@ -9,28 +9,21 @@ The [_G2R](_G2R) function converts a **gradient** value into a **radian** value.
 ## Example(s)
 
 ## Example(s)
- Coverting Gradient into Radians.
+ Coverting Gradians into Radians.
 
 ```vb
-
-INPUT "Give me an angle in Gradient ", D
+INPUT "Give me an angle in Gradians ", D
 R = _G2R(D)
 PRINT "That angle in Radians is "; R
-
 ```
 
 ```text
-
-
-Give me an angle in Gradient 60
+Give me an angle in Gradians 60
 That angle in Radians is  .9424778
-
 ```
 
 
-
 ## See Also
- 
 * [_D2G](_D2G), [_D2R](_D2R)
 * [_G2D](_G2D), [_G2R](_G2R)
 * [_R2D](_R2D), [_R2G](_R2G)
