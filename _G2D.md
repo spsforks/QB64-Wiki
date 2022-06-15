@@ -1,4 +1,4 @@
-The [_G2D](_G2D) function converts a **gradient** value into a **degree** value. 
+The [_G2D](_G2D) function converts a **gradian** value into a **degree** value. 
 
 
 ## Syntax
@@ -9,11 +9,11 @@ The [_G2D](_G2D) function converts a **gradient** value into a **degree** value.
 ## Example(s)
 
 ## Example(s)
- Coverting Gradients into Degree.
+ Coverting Gradians into Degree.
 
 ```vb
 
-INPUT "Give me an angle in Gradients ", D
+INPUT "Give me an angle in Gradians ", D
 R = _G2D(D)
 PRINT "That angle in Degrees is "; R
 
