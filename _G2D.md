@@ -7,8 +7,6 @@ The [_G2D](_G2D) function converts a **gradian** value into a **degree** value.
 
 
 ## Example(s)
-
-## Example(s)
  Coverting Gradians into Degree.
 
 ```vb
