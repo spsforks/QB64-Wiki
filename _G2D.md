@@ -12,21 +12,15 @@ The [_G2D](_G2D) function converts a **gradian** value into a **degree** value.
  Coverting Gradians into Degree.
 
 ```vb
-
 INPUT "Give me an angle in Gradians ", D
 R = _G2D(D)
 PRINT "That angle in Degrees is "; R
-
 ```
 
 ```text
-
-
 Give me an angle in Gradians 60
 That angle in Degrees is     54
-
 ```
-
 
 
 ## See Also
