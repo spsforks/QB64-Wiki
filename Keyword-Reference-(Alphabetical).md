@@ -538,8 +538,8 @@ Keywords beginning with underscores are QB64 specific. **To use them without the
 * [_OPENCLIENT](_OPENCLIENT) (TCP/IP function) connects to a Host on the Internet as a Client and returns the Client status handle.
 * [_OPENCONNECTION](_OPENCONNECTION) (TCP/IP function) open's a connection from a client that the host has detected and returns a status handle.
 * [_OPENHOST](_OPENHOST) (TCP/IP function) opens a Host and returns a Host status handle.
-* [OPTION _EXPLICIT](OPTION-_EXPLICIT) (Pre-compiler directive) instructs the compiler to require variable declaration with [DIM](DIM) or an equivalent statement.
-* [OPTION _EXPLICITARRAY](OPTION-_EXPLICITARRAY) (Pre-compiler directive) instructs the compiler to require array declaration with [DIM](DIM) or an equivalent statement. 
+* [OPTION _EXPLICIT](OPTION--EXPLICIT) (Pre-compiler directive) instructs the compiler to require variable declaration with [DIM](DIM) or an equivalent statement.
+* [OPTION _EXPLICITARRAY](OPTION--EXPLICITARRAY) (Pre-compiler directive) instructs the compiler to require array declaration with [DIM](DIM) or an equivalent statement. 
 * [_OS$](_OS$) (function) returns the QB64 compiler version in which the program was compiled as [WINDOWS], [LINUX] or [MACOSX] and [32BIT] or [64BIT].
 
 ### _P
