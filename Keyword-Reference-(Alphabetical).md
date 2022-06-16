@@ -28,12 +28,10 @@
 
 * [CALL](CALL) (statement) optional statement that sends the program to a [SUB](SUB) procedure.  Requires parameters be enclosed in brackets(parenthesis).
 * [CALL ABSOLUTE](CALL-ABSOLUTE) (statement) is used to access computer interrupt registers.
-* [CALLS](CALLS) (non-BASIC call statement)
 * [CASE](CASE) ([SELECT CASE](SELECT-CASE) condition) designates specific conditions in a [SELECT CASE](SELECT-CASE) statement block.
 * [CASE ELSE](CASE-ELSE) ([SELECT CASE](SELECT-CASE) condition) designates an alternative condition to be evaluated in a [SELECT CASE](SELECT-CASE) statement block.
 * [CASE IS](CASE-IS) ([SELECT CASE](SELECT-CASE) condition) designates specific conditions in a [SELECT CASE](SELECT-CASE) statement block.
 * [CDBL](CDBL) (function) returns the closest [DOUBLE](DOUBLE) value of a number.
-* [CDECL](CDECL) ([DECLARE (non-BASIC statement)](DECLARE (non-BASIC statement)))
 * [CHAIN](CHAIN) (statement) sends a program to another specified program module or compiled program.
 * [CHDIR](CHDIR) (statement) changes the current program path for file access.
 * [CHR$](CHR$) (function) returns a text [STRING](STRING) character by the specified [ASCII](ASCII) code number.
