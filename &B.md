@@ -1,4 +1,4 @@
-The '''&B''' prefix denotes that an integer value is expressed in a binary base 2 format using **QB64** only.
+The **&B&** prefix denotes that an integer value is expressed in a binary base 2 format using **QB64** only.
 
 ## Syntax
 
