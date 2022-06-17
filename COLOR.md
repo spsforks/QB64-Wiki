@@ -61,7 +61,7 @@ FOR attribute = 1 TO 15
   _PALETTECOLOR attribute, VAL(hex32$) 'VAL converts hex string to a LONG 32 bit value
   IF attribute THEN COLOR attribute 'exclude black color print
   PRINT "COLOR" + STR$(attribute) + " = " + hex32$, red$, grn$, blu$ 'returns closest attribute
-NEXT 
+NEXT
 
 ```
 
