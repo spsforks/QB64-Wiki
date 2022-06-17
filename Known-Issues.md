@@ -4,4 +4,4 @@ As a general reference, please see [Keywords currently not supported by QB64](Ke
 
 ## PAINT (Pattern)
 
-The [Tile Demo Sample](https://qb64.com/samples/tile-demo/) is very different in QBasic versus QB64; specifically, the pattern simply isn't painted. See [#2](#2).
+The [Tile Demo Sample](https://qb64.com/samples/tile-demo/) is very different in QBasic versus QB64; specifically, the pattern simply isn't painted. See [#2](../issues/2).
