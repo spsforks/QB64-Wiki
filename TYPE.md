@@ -62,11 +62,84 @@
 
 ### String Text Type
 
-| Type Name | Symbol | Minimum Length | Maximum Length |
-| --------- | ------ | -------------- | -------------- |
+| Type Name | Symbol | Minimum Length | Maximum Length | Size (Bytes) |
+| --------- | ------ | -------------- | -------------- | ------------ |
 | STRING | $ | 0 | 2,147,483,647 | Use LEN |
 | STRING * *n* | $n | 1 | 2,147,483,647 | n |
 
 *Note: For the fixed-length string type [STRING * n](STRING), where n is an integer length value from 1 (one) to 2,147,483,647.*
 
 ## Examples
+
+*Example 1:* Creating a mouse [INTERRUPT](INTERRUPT) TYPE definition. Each [INTEGER](INTEGER) value is 2 bytes.
+
+```vb
+
+TYPE RegType
+  AX AS INTEGER    ' mouse function to use
+  BX AS INTEGER    ' mouse button
+  CX AS INTEGER    ' mouse graphic column position
+  DX AS INTEGER    ' mouse graphic row position
+  BP AS INTEGER    ' not used by mouse, but required *
+  SI AS INTEGER    ' not used by mouse, but required *
+  DI AS INTEGER    ' not used by mouse, but required *
+  Flags AS INTEGER ' not used by mouse but required *
+  DS AS INTEGER    ' used by INTERRUPTX only
+  ES AS INTEGER    ' used by INTERRUPTX only
+END TYPE
+
+DIM SHARED InRegs AS RegType, OutRegs AS RegType ' create dot variables
+
+InRegs.AX = 3 ' sets the mouse function to read the mouse buttons and position.
+
+CALL INTERRUPT(&H33, InRegs, OutRegs)
+
+column% = OutRegs.CX ' returns the current mouse column position
+
+```
+
+*Explanation*: InRegs and OutRegs become the DOT variable prefix name for the TYPE definition's variables.
+
+Each TYPE variable is designated as the DOT variable's suffix.
+
+**Note: Omitting variables in the RegType definition can change other program variable values.**
+
+*Example 2*: Simplifying the TYPE from Example 1 using the alternative TYPE syntax.
+
+```vb
+
+TYPE RegType
+  AS INTEGER AX, BX, CX, DX, BP, SI, DI, Flags, FS, ES
+END TYPE
+
+```
+
+*Explanation*: By using **AS type element-list** you reduce typing in your TYPE definition, while achieving the same results.
+
+*Example 3*: Creating an addressbook database for a [RANDOM](RANDOM) file.
+
+```vb
+
+TYPE ContactInfo
+  First AS STRING * 10
+  Last AS STRING * 15
+  Address1 AS STRING * 30
+  Address2 AS STRING * 30
+  City AS STRING * 15
+  State AS STRING * 2
+  Zip AS LONG   ' (4 bytes)
+  Phone AS STRING * 12
+END TYPE
+
+DIM Contact AS ContactInfo 'create contact record variable for RANDOM file 
+RecordLEN% = LEN(Contact) ' 118 bytes
+' define values
+Contact.First = "Ted" ' the fixed string length value will contain 7 extra spaces
+Contact.Zip = 15236 ' LONG value that can be used to search certain zip code numbers.
+
+PUT #1, 5, Contact  'place contact info into fifth record position
+
+```
+
+*Explanation*: Use the assigned type variable to find the RANDOM record length which is 118 bytes.
+
