@@ -2,9 +2,9 @@ Optional **parameters** are values passed to [SUB](SUB) and [FUNCTION](FUNCTION)
 
 ## Syntax
 
-> [SUB](SUB) SubName[**(*parameter*** [[AS](AS) [Variable Types](Variable Types)][**, ...**]**)**]
+> [SUB](SUB) SubName[**(*parameter*** [[AS](AS) [Variable Types](Variable-Types)][**, ...**]**)**]
 
-> [FUNCTION](FUNCTION) FunctionName[**(*parameter*** [[AS](AS) [Variable Types](Variable Types)][**, ...**]**)**]
+> [FUNCTION](FUNCTION) FunctionName[**(*parameter*** [[AS](AS) [Variable Types](Variable-Types)][**, ...**]**)**]
 
 > [CALL](CALL) SubName[**(*parameter***[**, ...**]**)**]
 
