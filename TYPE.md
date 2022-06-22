@@ -143,3 +143,87 @@ PUT #1, 5, Contact  'place contact info into fifth record position
 
 *Explanation*: Use the assigned type variable to find the RANDOM record length which is 118 bytes.
 
+*Example 4*: Defining a TYPE variable as another variable type from a previous TYPE definition in QB64.
+
+```vb
+
+TYPE bar
+  b AS STRING * 10
+END TYPE
+
+TYPE foo
+  a AS SINGLE
+  c AS bar          'define variable as a bar type
+END TYPE
+
+DIM foobar AS foo   'create a variable to use the foo type
+foobar.a = 15.5
+foobar.c.b = "this is me"
+
+PRINT foobar.a, foobar.c.b 
+END 
+
+```
+
+*Example 5*: A bitmap header information TYPE [$INCLUDE]($INCLUDE) File.
+
+```vb
+
+' ********
+'Bitmap.BI can be included at start of program
+
+TYPE BMPHeaderType        ' Description                  Bytes      QB64 
+  ID AS STRING * 2        ' File ID is "BM"                2 
+  Size AS LONG            ' Size of the data file          4 
+  Res1 AS INTEGER         ' Reserved 1 should be 0         2 
+  Res2 AS INTEGER         ' Reserved 2 should be 0         2 
+  Offset AS LONG          ' Start position of pixel data   4 
+  Hsize AS LONG           ' Information header size        4 
+  PWidth AS LONG          ' Image width                    4       _WIDTH (QB64) 
+  PDepth AS LONG          ' Image height                   4       _HEIGHT
+  Planes AS INTEGER       ' Number of planes               2 
+  BPP AS INTEGER          ' Bits per pixel(palette)        2       _PIXELSIZE
+  Compress AS LONG        ' Compression                    4
+  ImageBytes AS LONG      ' Width * Height = ImageSIZE     4
+  Xres AS LONG            ' Width in PELS per metre        4
+  Yres AS LONG            ' Depth in PELS per metre        4
+  NumColors AS LONG       ' Number of Colors               4
+  SigColors AS LONG       ' Significant Colors             4
+END TYPE                  '          Total Header bytes = 54  
+
+```
+
+```vb
+
+'$INCLUDE: 'Bitmap.BI'  'use only when including a BI file 
+
+DIM SHARED BMPHead AS BMPHeaderType 
+
+GET #1, , BMPHead  'get the entire bitmap header information
+
+```
+
+*Explanation*: Use one [GET](GET) to read all of the header information from the start of the bitmap file opened AS [BINARY](BINARY). It reads all 54 bytes as [STRING](STRING), [INTEGER](INTEGER) and [LONG](LONG) type DOT variable values.
+
+NOTE: BPP returns 4(16 colors), 8(256 colors) or 24(16 million colors) bits per pixel in QBasic. 24 bit can only be in greyscale.
+
+Then use the DOT variable name values like this [GET (graphics statement)](GET-(graphics-statement)) after you load the bitmap image to the screen:
+
+```vb
+
+GET (0, 0)-(BMPHead.PWidth - 1, BMPHead.PDepth - 1), Image(48) 'indexed for 4 BPP colors
+
+```
+
+The bitmap image is now stored in an [array](Arrays) to [BSAVE](BSAVE) to a file. The RGB color information follows the file header as [ASCII](ASCII) character values read using [ASC](ASC). The color values could be indexed at the start of the Array with the image being offset to: index = NumberOfColors * 3. As determined by the [SCREEN](SCREEN-(statement)) mode used. In SCREEN 13(256 colors) the index would be 768.
+
+## See Also
+
+* [DIM](DIM), [REDIM](REDIM)
+* [INTEGER](INTEGER), [SINGLE](SINGLE), [DOUBLE](DOUBLE)
+* [LONG](LONG), [_INTEGER64](_INTEGER64), [_FLOAT](_FLOAT)
+* [STRING](STRING), [_BYTE](_BYTE), [_BIT](_BIT), [_OFFSET](_OFFSET)
+* [GET #](GET), [PUT #](PUT), [BINARY](BINARY-2)
+* [GET (graphics statement)](GET-(graphics-statement)), [PUT (graphics statement)](PUT-(graphics-statement))
+* [LEN](LEN), [LOF](LOF), [EOF](EOF)
+* [Bitmaps](Bitmaps), [Icon to Bitmap Conversion Function](Creating-Icon-Bitmaps)
