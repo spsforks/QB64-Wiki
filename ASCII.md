@@ -2,42 +2,42 @@
 
 [MS-DOS code page 437](http://en.wikipedia.org/wiki/Code_page_437)
 
-[ASCII Control 0 to 31](http://ascii.cl/control-characters.htm)
+[ASCII Control 0 to 31](http://ascii.cl/control-characters.htm)  \| ASCII Keyboard Character Codes 32 to 127
 
 | Code | Character [key] | Code | Character | Code | Character | Code | Character |
 | ---- | --------------- | ---- | --------- | ---- | --------- | ---- | --------- | 
-|  0 |        (NUL)  | 32 |  [[SPACE$](SPACE$)]| 64 |  @ |  96 |  ` |
-|  1 |  ?   (SOH) | 33 |  ! | 65 |  A |  97 |  a |
-|  2 |  ?   (STX) | 34 |  " | 66 |  B |  98 |  b |
-|  3 |  ?   (ETX) | 35 |  # | 67 |  C |  99 |  c |
-|  4 |  ?   (EOT) | 36 |  $ | 68 |  D | 100 |  d |
-|  5 |  ?   (ENQ) | 37 |  % | 69 |  E | 101 |  e |
-|  6 |  ?   (ACK) | 38 |  & | 70 |  F | 102 |  f |
-|  7 |  •   (BEL)   [BEEP](BEEP)| 39 |  ' | 71 |  G | 103 |  g |
-|  8 |  ?    [BackSpace] **| 40 |  ( | 72 |  H | 104 |  h |
-|  9 |  ?   (HT)    [TAB] **| 41 |  ) | 73 |  I | 105 |   i |
-| 10 |  ?   (LineFeed)  **| 42 |  * | 74 |  J | 106 |  j |
-| 11 |  ?   (VT) **| 43 |  + | 75 |  K | 107 |  k |
-| 12 |  ?   (FormFeed) **| 44 |  , | 76 |  L | 108 |  l |
-| 13 |  ?   (CR) [Enter] **| 45 |  - | 77 |  M | 109 |  m |
-| 14 |  ?   (SO) | 46 |  . | 78 |  N | 110 |  n |
+|  0 |        (NUL)  | 32 |  \[[SPACE$](SPACE$)]| 64 |  @ |  96 |  ` |
+|  1 |  ☺   (SOH) | 33 |  ! | 65 |  A |  97 |  a |
+|  2 |  ☻   (STX) | 34 |  " | 66 |  B |  98 |  b |
+|  3 |  ♥   (ETX) | 35 |  # | 67 |  C |  99 |  c |
+|  4 |  ♦   (EOT) | 36 |  $ | 68 |  D | 100 |  d |
+|  5 |  ♣   (ENQ) | 37 |  % | 69 |  E | 101 |  e |
+|  6 |  ♠   (ACK) | 38 |  & | 70 |  F | 102 |  f |
+|  7 |  •   (BEL)   \[BEEP](BEEP)| 39 |  ' | 71 |  G | 103 |  g |
+|  8 |  ◘    \[BackSpace] `**`| 40 |  ( | 72 |  H | 104 |  h |
+|  9 |  ○   (HT)    \[TAB] `**`| 41 |  ) | 73 |  I | 105 |   i |
+| 10 |  ◙   (LineFeed)  `**`| 42 |  * | 74 |  J | 106 |  j |
+| 11 |  ♂   (VT) `**`| 43 |  + | 75 |  K | 107 |  k |
+| 12 |  ♀   (FormFeed) `**`| 44 |  , | 76 |  L | 108 |  l |
+| 13 |  ♪   (CR) \[Enter] `**`| 45 |  - | 77 |  M | 109 |  m |
+| 14 |  ♫   (SO) | 46 |  . | 78 |  N | 110 |  n |
 | 15 |  ¤   (SI) | 47 |  / | 79 |  O | 111 |  o |
-| 16 |  ?   (DLE) | 48 |  0 | 80 |  P | 112 |  p |
-| 17 |  ?   (DC1) | 49 |  1 | 81 |  Q | 113 |  q |
-| 18 |  ?   (DC2) | 50 |  2 | 82 |  R | 114 |  r |
-| 19 |  ?   (DC3) | 51 |  3 | 83 |  S | 115 |  s |
+| 16 |  ►   (DLE) | 48 |  0 | 80 |  P | 112 |  p |
+| 17 |  ◄   (DC1) | 49 |  1 | 81 |  Q | 113 |  q |
+| 18 |  ↕   (DC2) | 50 |  2 | 82 |  R | 114 |  r |
+| 19 |  ‼   (DC3) | 51 |  3 | 83 |  S | 115 |  s |
 | 20 |  ¶   (DC4) | 52 |  4 | 84 |  T | 116 |  t |
 | 21 |  §   (NAK) | 53 |  5 | 85 |  U | 117 |  u |
-| 22 |  ?   (SYN) | 54 |  6 | 86 |  V | 118 |  v |
-| 23 |  ?   (ETB) | 55 |  7 | 87 |  W | 119 |  w |
-| 24 |  ?   (CAN) | 56 |  8 | 88 |  X | 120 |  x |
-| 25 |  ?   (EM)  | 57 |  9 | 89 |  Y | 121 |  y |
-| 26 |  ?   (SUB)    [EOF](EOF) | 58 |  : | 90 |  Z | 122 |  z |
-| 27 |  ?   (ESC)   [Esc]| 59 |  ; | 91 |  [ | 123 |  { |
-| 28 |  ?   (FS) **| 60 |  < | 92 |  \ | 124 |  \| |
-| 29 |  ?   (GS) **| 61 |  = | 93 |  ] | 125 |  } |
-| 30 |  ?   (RS) **| 62 |  > | 94 |  ^ | 126 |  ~ |
-| 31 |  ?   (US) **| 63 |  ? | 95 |  _ | 127 |  ¦ (DEL) * |
+| 22 |  ▬   (SYN) | 54 |  6 | 86 |  V | 118 |  v |
+| 23 |  ↨   (ETB) | 55 |  7 | 87 |  W | 119 |  w |
+| 24 |  ↑   (CAN) | 56 |  8 | 88 |  X | 120 |  x |
+| 25 |  ↓   (EM)  | 57 |  9 | 89 |  Y | 121 |  y |
+| 26 |  →   (SUB)    [EOF](EOF) | 58 |  : | 90 |  Z | 122 |  z |
+| 27 |  ←   (ESC)   \[Esc]| 59 |  ; | 91 |  [ | 123 |  { |
+| 28 |  ∟   (FS) `**`| 60 |  < | 92 |  \ | 124 |  \| |
+| 29 |  ↔   (GS) `**`| 61 |  = | 93 |  ] | 125 |  } |
+| 30 |  ▲   (RS) `**`| 62 |  > | 94 |  ^ | 126 |  ~ |
+| 31 |  ▼   (US) `**`| 63 |  ? | 95 |  _ | 127 |  ¦ (DEL) `*` |
 
 IBM, International, graphical, mathematical and other characters
 
@@ -74,19 +74,17 @@ IBM, International, graphical, mathematical and other characters
 | 156 |  £ | 188 |  + | 220 |  _ | 252 |  n | 
 | 157 |  ¥ | 189 |  + | 221 |  ¦ | 253 |  ² | 
 | 158 |  P | 190 |  + | 222 |  ¦ | 254 |  ¦ | 
-| 159 |  ƒ | 191 |  + | 223 | ¯  | 255 |  *NBSP* ***  | 
+| 159 |  ƒ | 191 |  + | 223 | ¯  | 255 |  *NBSP* `***`  | 
 
-> ** * DEL was used to erase paper tape data by punching out all of the 7 holes.**
-> **** Control characters 8 to 13 and 28 to 31 can move text formatting when [PRINT](PRINT) and do not display**
-> ***** NBSP is a Non-breaking Space used to indent text. Some browsers may handle this character differently**
+* `*` DEL was used to erase paper tape data by punching out all of the 7 holes.**
+* `**` Control characters 8 to 13 and 28 to 31 can move text formatting when [PRINT](PRINT) and do not display
+* `***` NBSP is a Non-breaking Space used to indent text. Some browsers may handle this character differently**
 
-http://www.lammertbies.nl/comm/info/ascii-characters.html[More information about ASCII  Control Characters] 
-
+[More information about ASCII  Control Characters](http://www.lammertbies.nl/comm/info/ascii-characters.html) 
 
 [Unicode](Unicode)
 
 ## Control Characters
-
 
 * [INKEY$](INKEY$) will return Control + letter key press combinations as the equivalent control characters or bold **function keys** listed below:
 
@@ -119,20 +117,20 @@ http://www.lammertbies.nl/comm/info/ascii-characters.html[More information about
 * Character **7** will create a [BEEP](BEEP) sound when printed in **QB64** or an error sound in QBasic using a **SCREEN 0** window.
 * Character **8** is returned when the **Backspace** key is pressed.
 * Characters **9 thru 13** and **28 thru 31** can affect screen or file text placements and do not display the character when [PRINT](PRINT):
-> * Character **9** will **Tab** space the cursor 8 column spaces when printed.
-> * Character **10** moves the cursor or *"line feeds"* the printer head down one row.
-> * Character **11** vertical tabs the cursor back to top left position of page or screen. Acts like [CLS](CLS).
-> * Character **12** acts like [CLS](CLS) when printed. *"Form feeds"* the page out of printers.
-> * Character **13** is the cursor or typing **"carriage return"** to the start of the line on left side. Returned when **Enter** key pressed.
-> * Character **28** designates a File Separator. Moves the print cursor one space right. Combination Ctrl + \
-> * Character **29** designates a Group Separator. Moves the print cursor one space left. Combination Ctrl + ]
-> * Character **30** designates a Record Separator. Moves the print cursor one row up. Combination Ctrl + ^
-> * Character **31** designates a Unit Separator. Moves the print cursor one row down. Combination Ctrl + _
+  * Character **9** will **Tab** space the cursor 8 column spaces when printed.
+  * Character **10** moves the cursor or *"line feeds"* the printer head down one row.
+  * Character **11** vertical tabs the cursor back to top left position of page or screen. Acts like [CLS](CLS).
+  * Character **12** acts like [CLS](CLS) when printed. *"Form feeds"* the page out of printers.
+  * Character **13** is the cursor or typing **"carriage return"** to the start of the line on left side. Returned when **Enter** key pressed.
+  * Character **28** designates a File Separator. Moves the print cursor one space right. Combination Ctrl + \
+  * Character **29** designates a Group Separator. Moves the print cursor one space left. Combination Ctrl + ]
+  * Character **30** designates a Record Separator. Moves the print cursor one row up. Combination Ctrl + ^
+  * Character **31** designates a Unit Separator. Moves the print cursor one row down. Combination Ctrl + _
 * **QB64** can display all of the control characters without formatting the text using [_PRINTSTRING](_PRINTSTRING).
 * Characters **13** and **10** can be combined to create the **CrLf** carriage return used in files or printing. crlf$ = CHR$(13) + CHR$(10).
 * Character **16**, the data link escape(DLE) character, can designate that a control character is being sent from a [OPEN COM](OPEN COM).
->  ## Example(s)
- (DLE) <XON> <DATA PACKET> (DLE) <XOFF> or (DLE) <STX> <DATA PACKET> (DLE) <ETX>
+  Example(s)
+  (DLE) \<XON> \<DATA PACKET> (DLE) \<XOFF> or (DLE) \<STX> \<DATA PACKET> (DLE) \<ETX>
 * Character **17**, Device Control 1, is used with [OPEN COM](OPEN COM) to mark the start of a transmission as "XON". The character is read.
 * Character **19**, Device Control 3, is used with [OPEN COM](OPEN COM) to mark the end of a transmission as "XOFF". The character is NOT read.
 * Character **26** can be used to designate the end of a file. See [EOF](EOF).
@@ -228,7 +226,6 @@ LOOP UNTIL K$ = CHR$(27) 'escape key press exits
 
 > IF INKEY$ = CHR$(0) + CHR$(80) THEN row = row + 1 **or** IF INKEY$ = CHR$(0) + "P" THEN row = row + 1
 
-
 ```text
 
                  **Two Byte Character Codes       Key                 CHR$(0) + "?" **
@@ -302,9 +299,7 @@ END
 
 ```
 
-
 *Example 2:* Routine displays all keypress codes including Ctrl, Alt and Shift combinations. Ctrl + letter = control codes 1 to 26.
-
 
 ```vb
 
@@ -402,17 +397,14 @@ END
 
 ```
 <sub>Code by Ted Weissgerber</sub>
+
 *Explanation:* The routine checks for a keypress and [SLEEP](SLEEP) guarantees that [ASC](ASC) will never read an empty string from INKEY$. When the keypress is determined to be two bytes ([ASC](ASC)(A$) = 0) the second SELECT CASE routine is used. You can even display non-keyboard extended characters. Just press Alt + numberpad code, release and press enter.
 
-> ::Note: Ctrl + letter keys will list the contol keys as normal codes. EX: Ctrl + G will BEEP (CHR$(7)).
-
+> Note: Ctrl + letter keys will list the contol keys as normal codes. EX: Ctrl + G will BEEP (CHR$(7)).
 
 ## References
 
-
-
 *Printable ASCII Table:* [_PRINTIMAGE](_PRINTIMAGE) (see Example 2 on page)
-
 
 ## See Also
 
@@ -429,7 +421,3 @@ END
 * [_CONTROLCHR](_CONTROLCHR) (turns control PRINT actions OFF/ON)
 * [Scancodes](Scancodes)(keyboard), [Unicode](Unicode)(character table)
 * [Text Using Graphics](Text Using Graphics)
-
-
-
-
