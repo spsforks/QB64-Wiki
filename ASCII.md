@@ -88,25 +88,23 @@ IBM, International, graphical, mathematical and other characters
 
 * [INKEY$](INKEY$) will return Control + letter key press combinations as the equivalent control characters or bold **function keys** listed below:
 
-```text
+Code | C | Description | Code | C | Description
+--- | --- | --- | --- | --- | ---
+CTRL + A = CHR$(1)  | ☺ | StartHeader (SOH)  | CTRL + B = CHR$(2)  | ☻ | StartText         (STX)
+CTRL + C = CHR$(3)  | ♥ | EndText     (ETX)  | CTRL + D = CHR$(4)  | ♦ | EndOfTransmit     (EOT)
+CTRL + E = CHR$(5)  | ♣ | Enquiry     (ENQ)  | CTRL + F = CHR$(6)  | ♠ | Acknowledge       (ACK)
+CTRL + G = CHR$(7)  | `•` | Bell        (BEL)  | CTRL + H = CHR$(8)  | ◘ | [Backspace]       (BSP)
+CTRL + I = CHR$(9)  | `○` | Horiz.Tab   [Tab]  | CTRL + J = CHR$(10) | `◙` | LineFeed(printer) (LF)
+CTRL + K = CHR$(11) | `♂` | Vert. Tab   (VT)   | CTRL + L = CHR$(12) | `♀` | FormFeed(printer) (FF)
+CTRL + M = CHR$(13) | `♪` | [Enter]     (CR)   | CTRL + N = CHR$(14) | ♫ | ShiftOut          (SO)
+CTRL + O = CHR$(15) | ☼ | ShiftIn     (SI)   | CTRL + P = CHR$(16) | ► | DataLinkEscape    (DLE)
+CTRL + Q = CHR$(17) | ◄ | DevControl1 (DC1)  | CTRL + R = CHR$(18) | ↕ | DeviceControl2    (DC2)
+CTRL + S = CHR$(19) | ‼ | DevControl3 (DC3)  | CTRL + T = CHR$(20) | ¶ | DeviceControl4    (DC4)
+CTRL + U = CHR$(21) | § | NegativeACK (NAK)  | CTRL + V = CHR$(22) | ▬ | Synchronous Idle  (SYN)
+CTRL + W = CHR$(23) | ↨ | EndTXBlock  (ETB)  | CTRL + X = CHR$(24) | ↑ | Cancel            (CAN)
+CTRL + Y = CHR$(25) | ↓ | EndMedium   (EM)   | CTRL + Z = CHR$(26) | → | End Of File(SUB)  (EOF)
 
- CTRL + A = CHR$(1)   ?  StartHeader (SOH)    CTRL + B = CHR$(2)   ?  StartText         (STX)
- CTRL + C = CHR$(3)   ?  EndText     (ETX)    CTRL + D = CHR$(4)   ?  EndOfTransmit     (EOT)
- CTRL + E = CHR$(5)   ?  Enquiry     (ENQ)    CTRL + F = CHR$(6)   ?  Acknowledge       (ACK)
- CTRL + G = CHR$(7)   •  [BEEP](BEEP)        (BEL)    CTRL + H = CHR$(8)   ?  **[Backspace]**       (BSP)
- CTRL + I = CHR$(9)   ?  Horiz.Tab   **[Tab]**    CTRL + J = CHR$(10)  ?  LineFeed(printer) (LF)
- CTRL + K = CHR$(11)  ?  Vert. Tab   (VT)     CTRL + L = CHR$(12)  ?  FormFeed(printer) (FF)
- CTRL + M = CHR$(13)  ?  **[Enter]**     (CR)     CTRL + N = CHR$(14)  ?  ShiftOut          (SO)
- CTRL + O = CHR$(15)  ¤  ShiftIn     (SI)     CTRL + P = CHR$(16)  ?  DataLinkEscape    (DLE)
- CTRL + Q = CHR$(17)  ?  DevControl1 (DC1)    CTRL + R = CHR$(18)  ?  DeviceControl2    (DC2)
- CTRL + S = CHR$(19)  ?  DevControl3 (DC3)    CTRL + T = CHR$(20)  ¶  DeviceControl4    (DC4)
- CTRL + U = CHR$(21)  §  NegativeACK (NAK)    CTRL + V = CHR$(22)  ?  Synchronous Idle  (SYN)
- CTRL + W = CHR$(23)  ?  EndTXBlock  (ETB)    CTRL + X = CHR$(24)  ?  Cancel            (CAN)
- CTRL + Y = CHR$(25)  ?  EndMedium   (EM)     CTRL + Z = CHR$(26)  ?  End Of File(SUB)  (EOF)
-
-   **Red symbols will format text and not [PRINT](PRINT) the symbol. [_PRINTSTRING](_PRINTSTRING) can print in QB64**
-
-```
+**Highlighted items will format text and not [PRINT](PRINT) the symbol. [_PRINTSTRING](_PRINTSTRING) can print in QB64**
 
 * Control characters **1 to 26** can be used to simulate *Ctrl + letter* key shortcuts in Windows programs using [_SCREENPRINT](_SCREENPRINT).
 * [_CONTROLCHR](_CONTROLCHR) OFF can also be used in QB64 to allow control characters to be printed without formatting the text.
