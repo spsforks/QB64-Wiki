@@ -32,17 +32,17 @@ The following C++ variable types should be used when converting sub-procedure pa
 
 | C Name    |    Description                | Size    | Signed     Range      | Unsigned |
 | --------- | ----------------------------- | ------- | --------------------- | -------- |
-| [_BYTE](_BYTE) | Character or small integer. | 1 byte | -128 to 127 |    0 to 255|
-| [INTEGER](INTEGER)  | Short Integer(Word)    | 2 byte | -32768 to 32767    |  0 to 65535 |
-| [LONG](LONG)    |  Integer(Dword)             | 4 byte |  -2147483648 to 2147483647 |  0 to 4294967295 | 
+| [_BYTE](_BYTE) | Character or small integer. |  1 byte  | -128 to 127 |    0 to 255|
+| [INTEGER](INTEGER)  | Short Integer(Word)    |  2 byte  | -32768 to 32767    |  0 to 65535 |
+| [LONG](LONG)    |  Integer(Dword)             |  4 byte  |  -2147483648 to 2147483647 |  0 to 4294967295 | 
 | [LONG](LONG)    | Int32, Long integer or Long | 4 byte |  -2147483648 to 2147483647 | 0 to 4294967295 |
 | [_INTEGER64](_INTEGER64) |  Long long (Qword)  | 8 byte |  -9223372036854775808 to 9223372036854775807 | 0 to 18,446,744,073,709,551,615 |
-| [Boolean](Boolean)   |     Boolean value true or false. | 1 byte |  true or false | - |
-| [SINGLE](SINGLE)   |    Floating point number    |     4 byte |  +/- 3.4E +/- 38 (~7 digits) | -  |
-| [DOUBLE](DOUBLE) |   Double precision floating. |   8 byte |  1.7976E+308 (~15 digits) | -  |
-| [_FLOAT](_FLOAT) | Long double precision float |  10 byte | 1.1897E+4932 (~22 digits) | - |
-| [Unicode](Unicode)  |   Wide character([Unicode](Unicode)) |	  2 or 4  | 1 wide character | - |
-| [_OFFSET](_OFFSET)   |    void pointer(void *)     |      ANY   |  Pointer or offset | - |
+| [Boolean](Boolean)   |  Boolean value true or false. | 1 byte  |  true or false | - |
+| [SINGLE](SINGLE)   |    Floating point number    |    4 byte  |  +/- 3.4E+/-38 (~7 digits) | -  |
+| [DOUBLE](DOUBLE) |   Double precision floating. |   8 byte  |  1.7976E+308 (~15 digits) | -  |
+| [_FLOAT](_FLOAT) | Long double precision float |  10 byte  | 1.1897E+4932 (~22 digits) | - |
+| [Unicode](Unicode)  |   Wide character([Unicode](Unicode)) |	  2 or 4   | 1 wide character | - |
+| [_OFFSET](_OFFSET)   |    void pointer(void *)     |      ANY    |  Pointer or offset | - |
 
 
 
