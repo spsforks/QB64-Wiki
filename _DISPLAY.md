@@ -75,7 +75,9 @@ _PUTIMAGE (0, 0)-(640, MenuHeight), MS_HW
 _DISPLAY
 END SUB 
 
-```<sub>Code adapted by Galleon</sub>
+```
+Code adapted by Galleon
+
 >  *Notes:* When _DISPLAY is commented out, the hardware Menu Test screen portion will blink and key codes may be seen underneath.
 
 
