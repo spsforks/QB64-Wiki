@@ -2,7 +2,7 @@ The [PRINT](PRINT) statement prints numeric or string expressions to the program
 
 ## Syntax
 
-> **PRINT** [expression] [{;|,] [*expression*...]
+> **PRINT** [expression] [;|,] [*expression*...]
 
 ## Parameter(s)
 
