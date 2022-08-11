@@ -10,7 +10,7 @@ The **new keywords** add some **new features** such as playing **music or sound*
 
 QB is an abbreviation for **QBasic** or **QuickBASIC** which is an easy to learn language that grew very popular in the 90's. It uses simple syntax but holds great potential as there are methods to achieve nearly anything. **QBasic is more alive than ever with QB64!**
 
-<p style="text-align: center">[Keywords currently not supported by QB64](Keywords currently not supported by QB64)</p>
+[Keywords currently not supported by QB64](Keywords-currently-not-supported-by-QB64)
 
 ## Q: Does it have modern features? Do they HAVE to be used?
 
