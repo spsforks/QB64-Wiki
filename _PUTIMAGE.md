@@ -138,7 +138,7 @@ PRINT "_PUTIMAGE (dx1, dy1)-((2 * dx2) + dx1, (2 * dy2) + dy1), s_handle, d_hand
 END 
 
 ```
-<sub>Adapted from code by Darth Who</sub>
+Adapted from code by Darth Who
 
 
 *Example 4:* Using _PUTIMAGE to scroll a larger image created on a separate [_NEWIMAGE](_NEWIMAGE) screen page with QB64.
@@ -175,7 +175,8 @@ DO
     _DISPLAY
 LOOP 
 
-```<sub>Code example by SMcNeill</sub>
+```
+Code example by SMcNeill
 
 
 *Example 5:* _PUTIMAGE can be used with no parameters at all if the [_SOURCE](_SOURCE) and [_DEST](_DEST) are already set.
