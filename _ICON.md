@@ -126,7 +126,8 @@ CLOSE rf, wf
 Icon2BMP = count '             return the number of icons available in the icon file
 END FUNCTION 
 
-```<sub>Code by Ted Weissgerber</sub>
+```
+Code by Ted Weissgerber
 >  *Note:* Once the file has been loaded into memory, the image handle can still be used even after the file has been deleted.
 
 
