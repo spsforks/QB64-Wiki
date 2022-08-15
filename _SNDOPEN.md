@@ -104,7 +104,8 @@ DO
     PRINT xleft, xright, volume, _SNDGETPOS(s&); "   "
 LOOP
 
-```<sub>Code by Johny B</sub>
+```
+Code by Johny B
 
 
 
