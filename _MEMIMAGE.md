@@ -56,7 +56,8 @@ $CHECKING:ON
 _MEMFREE Buffer
 END SUB 
 
-```<sub>Code by Galleon</sub>
+```
+Code by Galleon
 >  *Explanation:* The second value passed to DarkenImage is a value from 0.0 to 1.0 where 0.0 is full darkness and 1 is none.
 
 
