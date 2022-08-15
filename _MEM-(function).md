@@ -64,7 +64,8 @@ _MEMPUT m(2), m(2).OFFSET, Saved(2)
 _MEMPUT m(3), m(3).OFFSET, Saved(3)
 END SUB 
 
-```<sub>Code by SMcNeill</sub>
+```
+Code by SMcNeill
 
 
 ## See Also
