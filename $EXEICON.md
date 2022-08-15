@@ -29,7 +29,8 @@
 $EXEICON:'myexe.ico'
 _ICON
 
-```<sub>Code and command by Fellippe Heitor</sub> 
+```
+Code and command by Fellippe Heitor
 
 
 ## See Also
