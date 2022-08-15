@@ -113,7 +113,8 @@ LOCATE , 15: PRINT "NEAT, HUH?"
 SLEEP
 SYSTEM 
 
-```<sub>Code by Steve McNeill</sub>
+```
+Code by Steve McNeill
 
 
 *Example 3:* Comparing the output of the new _RGB32 syntaxes (starting with version 1.3) and their equivalents in previous versions. 
