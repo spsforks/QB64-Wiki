@@ -143,7 +143,7 @@ _DELAY 2
 END SUB 
 
 ```
-<sub>Code by Ted Weissgerber</sub>
+Code by Ted Weissgerber
 >  *Explanation:* The program will run minimized until Ctrl + Shift is entered and will pop up to ask for a letter choice that contains the text you want in the clipboard. More letter choices can be added. Text can be pasted into a web page or entry box and the program will minimize until it is needed later. The program uses very little resources!
 
 
