@@ -111,7 +111,8 @@ FUNCTION CheckResize (CurrentScreen AS _UNSIGNED LONG)
 
 END FUNCTION
 
-```<sub>Code by waltersmind</sub>
+```
+Code by waltersmind
 
 
 ## See Also
