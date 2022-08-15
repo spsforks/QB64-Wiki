@@ -30,7 +30,8 @@ NEXT
 _SNDCLOSE a
 _SNDCLOSE b 
 
-```<sub>Code by Galleon</sub>
+```
+Code by Galleon
 
 
 ## See Also
