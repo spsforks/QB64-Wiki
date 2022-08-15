@@ -72,7 +72,7 @@ _MAPTRIANGLE (0, 0)-(W& - 1, 0)-(W& - 1, H& - 1), Image& TO(px(0), py(0))-(px(3)
 END SUB 
 
 ```
-<sub>Code by Galleon</sub>
+Code by Galleon
 
 ```text
 
@@ -372,7 +372,8 @@ SUB DrawTriangle (x1%, y1%, x2%, y2%, x3%, y3%, col%)
   '
 END SUB 
 
-```<sub>Demo by Andrew L. Ayers</sub>
+```
+Demo by Andrew L. Ayers
 
 
 *Example 3:* A 3D Spinning Cube demo using a hardware image and **QB64GL** hardware acceleration with [_MAPTRIANGLE](_MAPTRIANGLE):
@@ -670,7 +671,8 @@ END IF
 '
 END SUB
 
-```<sub>Adapted from a demo by Andrew L. Ayers</sub>
+```
+Adapted from a demo by Andrew L. Ayers
 
 
 *Example 4:* Using a desktop image with _MAPTRIANGLE _ANTICLOCKWISE rendering.
