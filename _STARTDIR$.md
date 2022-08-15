@@ -24,7 +24,8 @@ PRINT _CWD$
 PRINT _STARTDIR$
 SYSTEM 
 
-```<sub>Code by Galleon</sub>
+```
+Code by Galleon
 
 
 ## See Also
