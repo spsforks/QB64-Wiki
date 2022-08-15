@@ -100,6 +100,7 @@ LOOP UNTIL LEN(INKEY$)
 
 ```
 Code by Zom-B
+
 *Explanation:* To make the alpha image, turn alpha blending off. Otherwise PSET blends the pixel to instead of making the sprite transparent.
 
 
