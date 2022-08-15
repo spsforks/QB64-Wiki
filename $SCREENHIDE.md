@@ -31,7 +31,8 @@ s0 = "Text" + CHR$(0)
 s1 = "Caption" + CHR$(0)
 ExitProcess MessageBoxA(0, _OFFSET(s0), _OFFSET(s1), 0)
 
-```<sub>Code by Michael Calkins</sub>
+```
+Code by Michael Calkins
 
 
 ## See Also
