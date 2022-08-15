@@ -187,7 +187,7 @@ PRINT "--------------------------------"
 END 
 
 ```
-<sub>Code by Dav</sub>
+Code by Dav
 
 ## Borderless Window
 
@@ -227,7 +227,8 @@ a& = SetWindowPos&(hwnd&, 0, 0, 0, 0, 0, 39)
 
 PRINT "The end" 
 
-```<sub>Code by Dav</sub>
+```
+Code by Dav
 
 ## Color Dialog Box
 
@@ -322,7 +323,7 @@ END IF
 END FUNCTION 
 
 ```
-<sub>Adapted from code by Jobert14</sub>
+Adapted from code by Jobert14
 
 > *Note:* The ChooseColor value is converted using [_RGB32](_RGB32) with the Blue and Red values being swapped.
 
@@ -419,7 +420,7 @@ IF Result THEN PRINT "CURRENT PROGRAM: "; LEFT$(FileName$, Result)
 END 
 
 ```
-<sub>Windows APIs courtesy of Dav</sub>
+Windows APIs courtesy of Dav
 
 >  Returns the DOS 8.3 path and file name. The DLL used is in the QB64 folder.
 
@@ -437,7 +438,7 @@ IF Result THEN PRINT "SHORT PATH NAME: " + ShortPathName$ ELSE PRINT "NOT Found!
 END 
 
 ```
-<sub>Courtesy of Dav</sub>
+Courtesy of Dav
 
 ## Disk Drives
 
@@ -479,7 +480,7 @@ FOR n = 65 TO 90
 NEXT 
 
 ```
-<sub>Adapted from code by Dav</sub>
+Adapted from code by Dav
 
 >  *Note:* The length of the string returned by *GetLogicalDriveStringsA* can be divided by 4 to tell the number of physical and ram drives.
 
@@ -715,7 +716,7 @@ END IF
 END FUNCTION 
 
 ```
-<sub>Code courtesy of Jobert14</sub>
+Code courtesy of Jobert14
 
 > *Note:* The Open and Save Dialog boxes get user selections and do not actually open or create a file! Your program must do that.
 
@@ -812,7 +813,7 @@ END IF
 END 
 
 ```
-<sub>Code courtesy of Michael Calkins</sub>
+Code courtesy of Michael Calkins
 
 Use your own existing file name and path in this procedure.
 
@@ -871,7 +872,7 @@ DO
 LOOP 
 
 ```
-<sub>Adapted by Ted Weissgerber from code by Dav</sub>
+Adapted by Ted Weissgerber from code by Dav
 
 The *[Windows_Libraries#Window Focus](Windows-Libraries#Window Focus)* function finds the process currently in focus. See: [Windows_Libraries#Hot_Keys_.28maximize.29](Windows-Libraries#Hot_Keys_.28maximize.29)
 
@@ -934,7 +935,7 @@ LOOP UNTIL INKEY$ = CHR$(27)
 END 
 
 ```
-<sub>Adapted from code by Dav</sub>
+Adapted from code by Dav
 
 >  **Note:** The *SetHotKey* message tells the designated Windows program ID when to do *DefWondowProcA* to focus the window.
 
@@ -989,7 +990,7 @@ ELSE
 END IF 
 
 ```
-<sub>Code by Galleon</sub>
+Code by Galleon
 
 ## Font Dialog Box
 
@@ -1159,7 +1160,7 @@ END IF
 END FUNCTION 
 
 ```
-<sub>Code by Michael Calkins and Ted Weissgerber</sub>
+Code by Michael Calkins and Ted Weissgerber
 
 **Warning! This dialog box may error for no apparent reason! See [http://msdn.microsoft.com/en-us/library/windows/desktop/ms646916(v=vs.85).aspx CommDlgExtendedError] for more info!**
 
@@ -1398,7 +1399,7 @@ END SELECT
 END FUNCTION 
 
 ```
-<sub>Code courtesy of Michael Calkins</sub>
+Code courtesy of Michael Calkins
 
 > *Note:* The names used in a Font Dialog Box and the actual file names are saved to the *F0NTList.INF*(name uses zero) file to be compared with user entries. To check for *Bold* and *Italics* or combined types of font requests see [Windows_Libraries#Font_Dialog_Box](Windows-Libraries#Font_Dialog_Box) above.
 
@@ -1452,7 +1453,7 @@ DO
 LOOP UNTIL INKEY$ <> "" 
 
 ```
-<sub>Code courtesy of Unseenmachine</sub>
+Code courtesy of Unseenmachine
 
 ```text
 
@@ -1712,7 +1713,7 @@ DO
 LOOP 
 
 ```
-<sub>Code courtesy of Dav</sub>
+Code courtesy of Dav
 
 > **Note:** Virtual Hot keys can be used when a QB64 program is **not in focus** too! See **[Windows_Libraries#Focus](Windows_Libraries#Focus)** to bring a QB64 program into focus.
 
@@ -1739,7 +1740,7 @@ LOOP
 
 ```
 
-<sub>NOTE: The above commented table can be copied and pasted directly into the QB64 IDE</sub>
+>NOTE: The above commented table can be copied and pasted directly into the QB64 IDE
 
 >  **Invisible key and mouse logger that does not require program focus. Press ESCape key to view the logged activity. **
 
@@ -1827,7 +1828,7 @@ FOR b = 0 TO a
 NEXT 
 
 ```
-<sub>Code by Cyperium</sub>
+Code by Cyperium
 
 > *Note:* The program will run invisibly without a program icon appearing in the task bar until the ESC key is pressed and the log will be displayed.
 
@@ -1911,7 +1912,7 @@ LOOP
 END 
 
 ```
-<sub>Code by Michael Calkins</sub>
+Code by Michael Calkins
 
 > *Note:* In QB64 the number pad lock does not affect the [INP](INP)(&H60) release code returns of the [extended keys](extended keys) like it did in QBasic.
 
@@ -2077,7 +2078,7 @@ END SELECT
 END 
 
 ```
-<sub>Code by Dav</sub>
+Code by Dav
 
 > *Note:* The Library file can only run valid Windows executable programs. Not DOS console EXE programs!
 
@@ -2106,7 +2107,7 @@ IF K$ = "Y" THEN Synch = SND_ASYNC ELSE Synch = SND_SYNC
 retval% = PlaySound(FileName$, 0, Synch) 
 
 ```
-<sub>Code by Ted Weissgerber</sub>
+Code by Ted Weissgerber
 
 > *Note:* ASYNC allows the program to stop the sound by sending a null file name. Flag constants can be added so loop and ASYNC would total 9.
 
@@ -2146,7 +2147,7 @@ LOOP
 SYSTEM
 
 ```
-<sub>Code courtesy of Michael Calkins</sub>
+Code courtesy of Michael Calkins
 
 > *Explanation:* The same identification string is used in both instances of the running program. Compile example, run the EXE and try to compile and run another instance. 'Sorry. There can be only one.' will be printed to the screen and then it will close.
 
@@ -2233,7 +2234,7 @@ PRINT "That's all. have a nice day."
 END 
 
 ```
-<sub>Code courtesy of Dav</sub>
+Code courtesy of Dav
 
 ```text
 
@@ -2258,7 +2259,7 @@ END
 
 ```
 
-<sub>NOTE: The above commented table can be copied and pasted directly into the QB64 IDE</sub>
+> NOTE: The above commented table can be copied and pasted directly into the QB64 IDE
 
 ## System Metrics
 
@@ -2385,7 +2386,7 @@ IF hWnd <> x%& THEN _SCREENCLICK 240, 240 'add 40 to x and y to focus on positio
 END 
 
 ```
-<sub>Adapted from code by Michael Calkins</sub>
+Adapted from code by Michael Calkins
 
 > *Explanation:* When other windows are clicked on, this program window will stay on top. Click it to return focus.
 
@@ -2459,7 +2460,7 @@ ELSE
 END IF
 
 ```
-<sub>Code courtesy of Dav</sub>
+Code courtesy of Dav
 
 ## Web Page Download
 
@@ -2485,7 +2486,7 @@ SLEEP 7
 PRINT a% 
 
 ```
-<sub>Code courtesy of Dav</sub>
+Code courtesy of Dav
 
 ## Windows API
 
@@ -2540,7 +2541,7 @@ PRINT "Process ID:"; PID&
 END 
 
 ```
-<sub>Adapted from header code by Cyperium and Unseenmachine</sub>
+Adapted from header code by Cyperium and Unseenmachine
 
 > *Note:* *SetWindowPos&* function sets the pixel location on the desktop and the window dimensions. It can also set the window's Z order priority.
 
@@ -2572,7 +2573,7 @@ LOOP
 END 
 
 ```
-<sub>Adapted from code by Michael Calkins</sub>
+Adapted from code by Michael Calkins
 
 > *Note:* [CHR$](CHR$)(0) could actually be added to the original title string and it wouldn't hurt anything. Compared values are [_OFFSET](_OFFSET)s.
 
@@ -2670,7 +2671,7 @@ DO: _LIMIT 70
 LOOP WHILE INKEY$ = "" 
 
 ```
-<sub>Code by Galleon</sub>
+Code by Galleon
 
 > Links/References: 
 >   [http://msdn.microsoft.com/en-us/library/windows/desktop/ms647980(v=vs.85).aspx](http://msdn.microsoft.com/en-us/library/windows/desktop/ms647980(v=vs.85).aspx)
@@ -2800,7 +2801,7 @@ END IF
 END 
 
 ```
-<sub>Adapted from code by Michael Calkins</sub>
+Adapted from code by Michael Calkins
 
 **NOTE: The program emulates a FALSE Low Battery warning!
 
@@ -2891,7 +2892,7 @@ buffer = ""
 END 
 
 ```
-<sub>Code courtesy of Michael Calkins</sub>
+Code courtesy of Michael Calkins
 
 ## Windows Sounds
 
@@ -2929,7 +2930,7 @@ PRINT "Asterisk"
 MessageBeep MB_ICONASTERISK
 
 ```
-<sub>Code by Ted Weissgerber</sub>
+Code by Ted Weissgerber
 
 > *Note:* The sounds can be set in *Control Panel: Sounds and Audio Devices/Sounds* settings tab if not already assigned.
 
@@ -3023,7 +3024,7 @@ Crap = SetLayeredWindowAttributes(hWnd, 0, Level, LWA_ALPHA)
 END SUB 
 
 ```
-<sub>Code by Jobert</sub>
+Code by Jobert
 
 ## Windows User
 
@@ -3065,7 +3066,7 @@ PRINT CHR$(&H22); path; CHR$(&H22)
 END 
 
 ```
-<sub>Code courtesy of Michael Calkins</sub>
+Code courtesy of Michael Calkins
 
 > *Note:* When the SHGetFolderPathA& function returns a non-zero value, the 0x hexadecimal error number is printed instead.
 
@@ -3167,7 +3168,7 @@ IF INSTR(1, b$, "6002") THEN PRINT "Windows Vista/Server"
 IF INSTR(1, b$, "7600") THEN PRINT "Windows 7" 
 
 ```
-<sub>Code courtesy of Dav</sub>
+Code courtesy of Dav
 
 **NOTE**: Microsoft depreciated GetVersion() for Windows 8 and higher - [https://docs.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversion](https://docs.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversion)
 
