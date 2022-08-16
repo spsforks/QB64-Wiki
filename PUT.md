@@ -91,4 +91,4 @@ END SUB
 * [PRINT (file statement)](PRINT-(file-statement)) 
 * [FIELD](FIELD) 
 * [PUT (graphics statement)](PUT-(graphics-statement))
-* [PUT (TCP/IP statement)](PUT-(TCP//IP-statement))
+* [PUT (TCP/IP statement)](PUT-(TCP-IP-statement))
