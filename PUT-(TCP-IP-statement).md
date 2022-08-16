@@ -34,5 +34,5 @@ The **PUT #** TCP/IP statement sends unformatted(raw) data to an open connection
 
 ## See Also
 
-* [GET (TCP/IP statement)](GET-(TCP/IP-statement)), [PUT #](PUT)
+* [GET (TCP/IP statement)](GET-(TCP-IP-statement)), [PUT #](PUT)
 * [_OPENCLIENT](_OPENCLIENT), [_OPENHOST](_OPENHOST), [_OPENCONNECTION](_OPENCONNECTION)
