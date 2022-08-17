@@ -45,7 +45,7 @@ __Communicating using unformatted/raw streamed data__
 
 ## See Also
 
-* [PUT (TCP/IP statement)](PUT-(TCP/IP-statement))
+* [PUT (TCP/IP statement)](PUT-(TCP-IP-statement))
 * [_OPENCLIENT](_OPENCLIENT), [_OPENHOST](_OPENHOST)
 * [_OPENCONNECTION](_OPENCONNECTION), [GET #](GET)
 * [cURL](https://curl.haxx.se/) (HTTP and FTP file transfer)
