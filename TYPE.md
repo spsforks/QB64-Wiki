@@ -14,7 +14,7 @@
 >>     AS type element-list2
 >>     .
 >>     AS type element-listN
-> **END [TYPE](TYPE)**
+> **[END](END) [TYPE](TYPE)**
 
 ## Description
 
@@ -23,7 +23,7 @@
 * [TYPE](TYPE) definitions cam also be placed in [SUB](SUB) or [FUNCTION](FUNCTION) procedures.
 * [TYPE](TYPE) definitions cannot contain Array variables. Arrays can be [DIMensioned](DIM) as a TYPE definition.
 * [TYPE](TYPE) definitions cannot be inside of another [TYPE](TYPE) definition, but variables can be defined AS another type.(See Example 4)
-* [TYPE](TYPE) definitions must be ended with [END TYPE](END-TYPE).
+* [TYPE](TYPE) definitions must be ended with [END](END) [TYPE](TYPE).
 * A [TYPE](TYPE) variable must be assigned to the type after it is defined. Array variables are allowed.
 * Type variables must be defined in every SUB or FUNCTION unless the type variable is [DIMensioned](DIM) as [SHARED](SHARED).
 * Type variables use DOT variable names to read or write specific values. They do not use type suffixes as they can hold ANY variable type values! The name before the dot is the one you defined after the type definition and the name after is the variable name used inside of the [TYPE](TYPE). The name of the dimensioned type variable alone can be used to [PUT](PUT) # or [GET](GET) # all of the data at once!
