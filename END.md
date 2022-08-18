@@ -19,8 +19,8 @@ The [END](END) statement terminates a program without an immediate exit or ends 
 ## Description
 
 * In **QB64**, [END](END) can be followed by a code that can be read by another module using the [SHELL (function)](SHELL-(function)) or [_SHELLHIDE](_SHELLHIDE) function (known as [**errorlevel**](https://blogs.msdn.microsoft.com/oldnewthing/20080926-00/?p=20743))
-* When END is used to end a program, there is a pause and the message "Press any key to continue..." is displayed at the bottom of the program's window. 
-* If the program does not use END or [SYSTEM](SYSTEM), the program will still end with a pause and display "Press any key to continue...".
+* When [END](END) is used to end a program, there is a pause and the message "Press any key to continue..." is displayed at the bottom of the program's window. 
+* If the program does not use [END](END) or [SYSTEM](SYSTEM), the program will still end with a pause and display "Press any key to continue...".
 * In **QB64**, [SYSTEM](SYSTEM) will end the program immediately and close the window.
 * The **QB64** [_EXIT (function)](_EXIT-(function)) can block a user's Ctrl + Break key presses and clicks on the window's close button (X button) until the program is ready to close.
 
@@ -46,7 +46,7 @@ Press any key to continue...
 
 ```
 
-> *Explanation:*"Hello no one!" isn't returned because the program ended with the END statement no matter what is after that.
+> *Explanation:*"Hello no one!" isn't returned because the program ended with the [END](END) statement no matter what is after that.
 
 > The message "Press any key to continue..." is displayed after the program ends, both in QBasic and in **QB64**.
 
