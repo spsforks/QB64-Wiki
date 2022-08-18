@@ -3,21 +3,17 @@
 ## Syntax
 
 > **TYPE** typename
->     element-name1 AS type
->     element-name2 AS type
->     .
->     .
->     .
->     element-nameN AS type
+>>     element-name1 AS type
+>>     element-name2 AS type
+>>     .
+>>     element-nameN AS type
 > **END TYPE**
 
 > **TYPE** typename
->     AS type element-list1
->     AS type element-list2
->     .
->     .
->     .
->     AS type element-listN
+>>     AS type element-list1
+>>     AS type element-list2
+>>     .
+>>     AS type element-listN
 > **END TYPE**
 
 ## Description
