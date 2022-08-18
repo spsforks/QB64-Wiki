@@ -21,7 +21,7 @@ The **DECLARE LIBRARY** declaration allows the use of external library [SUB](SUB
 
 * **[DECLARE DYNAMIC LIBRARY](DECLARE-DYNAMIC-LIBRARY)** links a program to functions in dynamically linkable libraries. At present, only .DLL files are supported
 * **CUSTOMTYPE** is already implied when using **[DECLARE DYNAMIC LIBRARY](DECLARE-DYNAMIC-LIBRARY)**. This type of library just allows the same flexibility to apply when referencing STATIC libraries that are used to refer to dynamic libraries. Supports shared object (*.so) libraries.
-* **STATIC** is the same as **[DECLARE LIBRARY](https://github.com/QB64Official/qb64/wiki/DECLARE-LIBRARY)** except that it prioritizes linking to static libraries (*.a/*.o) over shared object (*.so) libraries, if both exist. As Windows doesn't use shared libraries (DLLs are different) this does not affect Windows users.
+* **STATIC** is the same as **`DECLARE LIBRARY`** except that it prioritizes linking to static libraries (*.a/*.o) over shared object (*.so) libraries, if both exist. As Windows doesn't use shared libraries (DLLs are different) this does not affect Windows users.
 
 ## Description
 
