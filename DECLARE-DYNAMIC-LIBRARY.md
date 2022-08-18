@@ -1,4 +1,4 @@
-**DECLARE DYNAMIC LIBRARY** allows you to dynamically link your program to functions in dynamically linkable libraries. At present, only *.DLL* files are supported (support for *.so* will be added soon). These libraries are loaded when your program begins.
+**[DECLARE DYNAMIC LIBRARY](DECLARE-DYNAMIC-LIBRARY)** allows you to dynamically link your program to functions in dynamically linkable libraries. At present, only *.DLL* files are supported (support for *.so* will be added soon). These libraries are loaded when your program begins.
 
 ## Syntax
 
@@ -20,7 +20,7 @@
 * *Library filename*s can be listed to combine more than one DLL or Header file name or path into one DECLARE LIBRARY block.
 * *Procedure_name* is any procedure name you want to designate by using [ALIAS](ALIAS) with the *Library_procedure* name following. 
 * *Parameters* used by the Library procedure must be passed by value ([BYVAL](BYVAL)) except for [STRING](STRING) values.
-* ***.h* header files cannot be used with DECLARE DYNAMIC LIBRARY. Existence of any *.h* file of the same name as the *.DLL* file will cause DECLARE DYNAMIC LIBRARY to fail.**
+* ***.h* header files cannot be used with [DECLARE DYNAMIC LIBRARY](DECLARE-DYNAMIC-LIBRARY). Existence of any *.h* file of the same name as the *.DLL* file will cause [DECLARE DYNAMIC LIBRARY](DECLARE-DYNAMIC-LIBRARY) to fail.**
 * **IMPORTANT:** [DECLARE DYNAMIC LIBRARY](DECLARE-DYNAMIC-LIBRARY) let's you specify any [SUB](SUB)/[FUNCTION](FUNCTION) calling format you wish, but **if the size of the parameters does not match, the size expected within the library your code will probably cause a GPF (General Protection Fault).** It is important to understand that you are creating a 32-bit program (even under 64-bit Windows) so **pointers (if required) will be 32-bits in size, the equivalent of a [LONG](LONG).**
 * **STATIC** is the same as [DECLARE LIBRARY](DECLARE-LIBRARY) except that it prioritizes linking to static libraries (*.a/*.o) over shared object (*.so) libraries, if both exist. As Windows doesn't really use shared libraries (DLLs are a bit different) this does not affect Windows users.
 * The [_OFFSET](_OFFSET) in memory can be used in **CUSTOMTYPE**, **STATIC** and **DYNAMIC LIBRARY** declarations.
