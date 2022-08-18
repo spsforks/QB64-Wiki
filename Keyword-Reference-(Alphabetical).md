@@ -91,6 +91,7 @@
 * [ERL](ERL) (error function) returns the closest line number before an error occurred if line numbers are used.
 * [ERR](ERR) (function) returns the [ERROR Codes](ERROR-Codes) when a program error occurs.
 * [ERROR](ERROR) (statement) sets a specific [ERROR Codes](ERROR-Codes) to be simulated.
+* [EVERYCASE](SELECT-CASE) Used on [SELECT CASE](SELECT-CASE) statement.
 * [EXIT](EXIT) (statement) immediately exits a program [FOR...NEXT](FOR...NEXT), [DO...LOOP](DO...LOOP), [SUB](SUB) or [FUNCTION](FUNCTION) procedure.
 * [EXP](EXP) (function) returns the value of e to the exponential power specified.
 
