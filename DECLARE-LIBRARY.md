@@ -3,10 +3,13 @@ The **DECLARE LIBRARY** declaration allows the use of external library [SUB](SUB
 ## Syntax
 
 > **DECLARE** [DYNAMIC|CUSTOMTYPE|STATIC] **LIBRARY** [{*"Library_filename"*|*"Headerfile"*}]
->  {[SUB](SUB)|[FUNCTION](FUNCTION)} [*procedure_name* [ALIAS](ALIAS)] *library_procedure* ([[BYVAL](BYVAL)] *parameter [AS](AS)*, ...)
->   .
->   . 'other SUBs or Functions as required
->   .
+>
+> >{[SUB](SUB)|[FUNCTION](FUNCTION)} [*procedure_name* [ALIAS](ALIAS)] *library_procedure* ([[BYVAL](BYVAL)] *parameter [AS](AS)*, ...)
+>>
+>> .
+>> . 'other SUBs or Functions as required
+>> .
+>
 > **END DECLARE**
 
 ## Parameter(s)
