@@ -20,15 +20,15 @@ The **DECLARE LIBRARY** declaration allows the use of external library [SUB](SUB
 ### Library Types
 
 * **[DECLARE DYNAMIC LIBRARY](DECLARE-DYNAMIC-LIBRARY)** links a program to functions in dynamically linkable libraries. At present, only .DLL files are supported
-* **CUSTOMTYPE** is already implied when using [DECLARE DYNAMIC LIBRARY](DECLARE DYNAMIC LIBRARY). This type of library just allows the same flexibility to apply when referencing STATIC libraries that are used to refer to dynamic libraries. Supports shared object (*.so) libraries.
-* **STATIC** is the same as [DECLARE LIBRARY](DECLARE LIBRARY) except that it prioritizes linking to static libraries (*.a/*.o) over shared object (*.so) libraries, if both exist. As Windows doesn't use shared libraries (DLLs are different) this does not affect Windows users.
+* **CUSTOMTYPE** is already implied when using **[DECLARE DYNAMIC LIBRARY](DECLARE-DYNAMIC-LIBRARY)**. This type of library just allows the same flexibility to apply when referencing STATIC libraries that are used to refer to dynamic libraries. Supports shared object (*.so) libraries.
+* **STATIC** is the same as **[DECLARE LIBRARY](DECLARE LIBRARY)** except that it prioritizes linking to static libraries (*.a/*.o) over shared object (*.so) libraries, if both exist. As Windows doesn't use shared libraries (DLLs are different) this does not affect Windows users.
 
 ## Description
 
 * The declaration can be used with C++ sub-procedures, Windows API and QB64 SDL (versions prior to 1.000)/OpenGL (version 1.000 and up) Libraries.
 * *Library filename*s can be listed to combine more than one DLL or Header file name or path into one DECLARE LIBRARY block.
 * C procedures can use a header file name. File code must be included with program code. Do not include the *.h* extension.
-* *Parameters* used by the Library procedure must be passed by value ([BYVAL](BYVAL)) except for [STRING](STRING) characters.
+* *Parameters* used by the Library procedure must be passed by value (**[BYVAL](BYVAL)**) except for **[STRING](STRING)** characters.
 * When using a procedure from an **unsupported** Dynamic Link Library (DLL file) use [DECLARE DYNAMIC LIBRARY](DECLARE-DYNAMIC-LIBRARY).
 
 * The [_OFFSET](_OFFSET) in memory can be used in **CUSTOMTYPE**, **STATIC** and **DYNAMIC LIBRARY** declarations.
