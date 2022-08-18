@@ -1,35 +1,35 @@
-**TYPE** definitions are used to create variables that can hold more than one element.
+**[TYPE](TYPE)** definitions are used to create variables that can hold more than one element.
 
 ## Syntax
 
-> **TYPE** typename
+> **[TYPE](TYPE)** typename
 >>     element-name1 AS type
 >>     element-name2 AS type
 >>     .
 >>     element-nameN AS type
-> **END TYPE**
+> **[END](END) [TYPE](TYPE)**
 
-> **TYPE** typename
+> **[TYPE](TYPE)** typename
 >>     AS type element-list1
 >>     AS type element-list2
 >>     .
 >>     AS type element-listN
-> **END TYPE**
+> **END [TYPE](TYPE)**
 
 ## Description
 
 * Typename is an undefined type name holder as it can hold any variable types.
-* TYPE definitions are usually placed in the main module before the start of the program code execution.
-* TYPE definitions cam also be placed in [SUB](SUB) or [FUNCTION](FUNCTION) procedures.
-* TYPE definitions cannot contain Array variables. Arrays can be [DIMensioned](DIM) as a TYPE definition.
-* TYPE definitions cannot be inside of another TYPE definition, but variables can be defined AS another type.(See Example 4)
-* TYPE definitions must be ended with [END TYPE](END-TYPE).
-* A TYPE variable must be assigned to the type after it is defined. Array variables are allowed.
+* [TYPE](TYPE) definitions are usually placed in the main module before the start of the program code execution.
+* [TYPE](TYPE) definitions cam also be placed in [SUB](SUB) or [FUNCTION](FUNCTION) procedures.
+* [TYPE](TYPE) definitions cannot contain Array variables. Arrays can be [DIMensioned](DIM) as a TYPE definition.
+* [TYPE](TYPE) definitions cannot be inside of another [TYPE](TYPE) definition, but variables can be defined AS another type.(See Example 4)
+* [TYPE](TYPE) definitions must be ended with [END TYPE](END-TYPE).
+* A [TYPE](TYPE) variable must be assigned to the type after it is defined. Array variables are allowed.
 * Type variables must be defined in every SUB or FUNCTION unless the type variable is [DIMensioned](DIM) as [SHARED](SHARED).
-* Type variables use DOT variable names to read or write specific values. They do not use type suffixes as they can hold ANY variable type values! The name before the dot is the one you defined after the type definition and the name after is the variable name used inside of the TYPE. The name of the dimensioned type variable alone can be used to [PUT](PUT) # or [GET](GET) # all of the data at once!
+* Type variables use DOT variable names to read or write specific values. They do not use type suffixes as they can hold ANY variable type values! The name before the dot is the one you defined after the type definition and the name after is the variable name used inside of the [TYPE](TYPE). The name of the dimensioned type variable alone can be used to [PUT](PUT) # or [GET](GET) # all of the data at once!
 * Once the TYPE variable is created you can find the record or byte size by using [LEN](LEN)(typevariable).
 * TYPE definitions can also be placed in [$INCLUDE]($INCLUDE) .BI text files such as [QB.BI](QB) is used by [INTERRUPT](INTERRUPT.html) and [INTERRUPTX](INTERRUPTX).
-* You can mix the **element-name AS type** syntax with the **AS type element-list** syntax in the same TYPE block.
+* You can mix the **element-name AS type** syntax with the **AS type element-list** syntax in the same [TYPE](TYPE) block.
 * **[_BIT](BIT) is not supported in User Defined TYPEs.**
 
 ### Numerical Types
@@ -67,7 +67,7 @@
 
 ## Examples
 
-*Example 1:* Creating a mouse [INTERRUPT](INTERRUPT) TYPE definition. Each [INTEGER](INTEGER) value is 2 bytes.
+*Example 1:* Creating a mouse [INTERRUPT](INTERRUPT) [TYPE](TYPE) definition. Each [INTEGER](INTEGER) value is 2 bytes.
 
 ```vb
 
@@ -94,13 +94,13 @@ column% = OutRegs.CX ' returns the current mouse column position
 
 ```
 
-*Explanation*: InRegs and OutRegs become the DOT variable prefix name for the TYPE definition's variables.
+*Explanation*: InRegs and OutRegs become the DOT variable prefix name for the [TYPE](TYPE) definition's variables.
 
-Each TYPE variable is designated as the DOT variable's suffix.
+Each [TYPE](TYPE) variable is designated as the DOT variable's suffix.
 
 **Note: Omitting variables in the RegType definition can change other program variable values.**
 
-*Example 2*: Simplifying the TYPE from Example 1 using the alternative TYPE syntax.
+*Example 2*: Simplifying the [TYPE](TYPE) from Example 1 using the alternative [TYPE](TYPE) syntax.
 
 ```vb
 
@@ -110,7 +110,7 @@ END TYPE
 
 ```
 
-*Explanation*: By using **AS type element-list** you reduce typing in your TYPE definition, while achieving the same results.
+*Explanation*: By using **AS type element-list** you reduce typing in your [TYPE](TYPE) definition, while achieving the same results.
 
 *Example 3*: Creating an addressbook database for a [RANDOM](RANDOM) file.
 
@@ -139,7 +139,7 @@ PUT #1, 5, Contact  'place contact info into fifth record position
 
 *Explanation*: Use the assigned type variable to find the RANDOM record length which is 118 bytes.
 
-*Example 4*: Defining a TYPE variable as another variable type from a previous TYPE definition in QB64.
+*Example 4*: Defining a [TYPE](TYPE) variable as another variable type from a previous [TYPE](TYPE) definition in QB64.
 
 ```vb
 
@@ -161,7 +161,7 @@ END
 
 ```
 
-*Example 5*: A bitmap header information TYPE [$INCLUDE]($INCLUDE) File.
+*Example 5*: A bitmap header information [TYPE](TYPE) [$INCLUDE]($INCLUDE) File.
 
 ```vb
 
