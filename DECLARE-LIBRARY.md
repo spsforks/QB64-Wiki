@@ -15,7 +15,7 @@ The **DECLARE LIBRARY** declaration allows the use of external library [SUB](SUB
 ## Parameter(s)
 
 * The Library_filename is needed if a Library is not already loaded by QB64. Do not include the *.DLL*, *LIB* or *.H* file extension.
-** It's always a good idea to try declaring Windows API libraries without a Library_filename first, as most Windows headers are already included in QB64 source.
+* It's always a good idea to try declaring Windows API libraries without a Library_filename first, as most Windows headers are already included in QB64 source.
 * Begin the Library_filename with **./** or **.\** to make it relative to the path where your source file is saved, so you can keep all your project files together.
 * Procedure_name is any program procedure name you want to designate by using [ALIAS](ALIAS) with the Library_procedure name. 
 * Library procedure is the actual procedure name used inside of the library or header file.
