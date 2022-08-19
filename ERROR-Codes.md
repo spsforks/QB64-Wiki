@@ -6,7 +6,7 @@ It's a good idea to exclude qb64.exe from any real-time anti-virus scanning to p
 
 ##  Recoverable errors 
 
-These errors can be triggered in QB64, and may be caught by an [ON ERROR](ON ERROR) handler. The default error handler gives the user option to continue program execution.
+These errors can be triggered in QB64, and may be caught by an [ON ERROR](ON-ERROR) handler. The default error handler gives the user option to continue program execution.
 {| class="wikitable"
 |-
 ! Code !! Description !! Possible Cause
