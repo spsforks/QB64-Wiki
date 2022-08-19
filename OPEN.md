@@ -33,7 +33,7 @@ The [OPEN](OPEN) statement is used to open a file or [OPEN COM](OPEN-COM) serial
 ## Error(s)
 
 * Illegal **QB64** Windows filename characters are ** " * / \ | ? : < > **. Multiple dots (periods) are allowed.
-* Possible OPEN [ERROR Codes](ERROR Codes) include "Bad file name or number", "Bad File Mode", "File Not Found" or "Path Not Found".
+* Possible OPEN [ERROR Codes](ERROR-Codes) include "Bad file name or number", "Bad File Mode", "File Not Found" or "Path Not Found". 
 ** An OPEN file not found error may occur if [CHR$](CHR$)(0) to (31) are used in a Windows file name.
 * **QB64** does not have DOS file name limitations.
 
