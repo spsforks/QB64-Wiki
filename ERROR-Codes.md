@@ -11,7 +11,6 @@ These errors can be triggered in QB64, and may be caught by an [ON ERROR](ON-ERR
 | Code | Description | Possible Cause |
 | - | - | - |
 | 0 | No Error | No error has occurred |
-
 | 2 | Syntax error | [READ](READ) attempted to read a number but could not parse the next [DATA](DATA) item. |
 | 3 | RETURN without GOSUB | The [RETURN](RETURN) statement was encountered without first executing a corresponding [GOSUB](GOSUB). |
 | 4 | Out of DATA | The [READ](READ) statement has read past the end of a [DATA](DATA) block. Use [RESTORE](RESTORE) to change the current data item if necessary. |
@@ -45,6 +44,7 @@ Error handling of file operations varies between operating systems and is highly
 These errors can be triggered in QB64 but will not be caught by an [ON ERROR](ON ERROR) handler. They are always fatal, causing the program to exit.
 
 | Code | Description | Notes |
+| - | - | - |
 | 11 | Division by zero | Only relevant for integer division, and may not be caught on all operating systems. |
 | 256 | Out of stack space | Too many nested [GOSUB](GOSUB) calls. |
 | 257 | Out of memory | Generic out of memory condition. |
