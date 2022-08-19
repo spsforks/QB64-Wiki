@@ -7,60 +7,35 @@ It's a good idea to exclude qb64.exe from any real-time anti-virus scanning to p
 ##  Recoverable errors 
 
 These errors can be triggered in QB64, and may be caught by an [ON ERROR](ON-ERROR) handler. The default error handler gives the user option to continue program execution.
-{| class="wikitable"
-|-
-! Code !! Description !! Possible Cause
-|-
-| 2 || Syntax error || [READ](READ) attempted to read a number but could not parse the next [DATA](DATA) item.
-|-
-| 3 || RETURN without GOSUB || The [RETURN](RETURN) statement was encounted without first executing a corresponding [GOSUB](GOSUB).
-|-
-| 4 || Out of DATA || The [READ](READ) statement has read past the end of a [DATA](DATA) block. Use [RESTORE](RESTORE) to change the current data item if necessary.
-|-
-| 5 || Illegal function call || A function was called with invalid parameters, in the wrong graphics mode or otherwise in an illegal fashion. [Illegal Function](Illegal Function) gives some suggestions.
-|-
-| 6 || Overflow || A numeric operation has resulted in a value beyond a variable's allowed range. See [Variable Types](Variable Types).
-|-
-| 7 || Out of memory || Generic out of memory condition.
-|-
-| 9 || Subscript out of range || An [Arrays](Arrays) [UBOUND](UBOUND) or [LBOUND](LBOUND) [DIM](DIM) boundary has been exceeded.
-|-
-| 10 || Duplicate definition || An array created with [DIM](DIM) was redefined with [DIM](DIM) or [REDIM](REDIM).
-|-
-| 13 || Type mismatch || A [PRINT USING](PRINT USING) format string did not match the type of the supplied variables.
-|-
-| 20 || RESUME without error || The [RESUME](RESUME) statement was encountered outside of an [ON ERROR](ON ERROR) error handler.
-|-
-| 50 || FIELD overflow || The [FIELD](FIELD) statement tried to allocate more bytes than were specified for the record length of a random access file.
-|-
-| 51 || Internal error || Generic error
-|-
-| 52 || Bad file name or number || A file handle was used that does not correspond to a valid opened file.
-|-
-| 53 || File not found || File error, see below
-|-
-| 54 || Bad file mode || A file operation was not compatible with the mode used in the [OPEN](OPEN) statement.
-|-
-| 55 || File already open || An [OPEN](OPEN) statement attempted to use a file handle that is already in use. Consider using [FREEFILE](FREEFILE).
-|-
-| 59 || Bad record length || The record length used for a [RANDOM](RANDOM) file was insufficient to perform the operation.
-|-
-| 62 || Input past end of file || A file was read past its end. Ensure [EOF](EOF) is being correctly checked.
-|-
-| 63 || Bad record number || The record (for [RANDOM](RANDOM)) or offset (for [BINARY](BINARY)) is outside the allowed range.
-|-
-| 64 || Bad file name || File error, see below
-|-
-| 68 || Device unavailable || A serial port (COM device) failed to behave as expected
-|-
-| 70 || Permission denied || File error, see below
-|-
-| 75 || Path/File access error || File error, see below
-|-
-| 76 || Path not found || File error, see below
-|-
-| 258 || Invalid handle || An handle used for an image, sound, font etc. was invalid. Be sure to check the return values of functions like _LOADFONT and _LOADIMAGE.
-|}
+
+| Code | Description | Possible Cause |
+| - | - | - |
+| 0 | No Error | No error has occurred |
+| 2 | Syntax error | [READ](READ) attempted to read a number but could not parse the next [DATA](DATA) item. |
+| 3 | RETURN without GOSUB | The [RETURN](RETURN) statement was encountered without first executing a corresponding [GOSUB](GOSUB). |
+| 4 | Out of DATA | The [READ](READ) statement has read past the end of a [DATA](DATA) block. Use [RESTORE](RESTORE) to change the current data item if necessary. |
+| 5 | Illegal function call | A function was called with invalid parameters, in the wrong graphics mode or otherwise in an illegal fashion. [Illegal Function](Illegal Function) gives some suggestions. |
+| 6 | Overflow | A numeric operation has resulted in a value beyond a variable's allowed range. See [Variable Types](Variable Types). |
+| 7 | Out of memory | Generic out of memory condition. |
+| 9 | Subscript out of range | An [Arrays](Arrays) [UBOUND](UBOUND) or [LBOUND](LBOUND) [DIM](DIM) boundary has been exceeded. |
+| 10 | Duplicate definition | An array created with [DIM](DIM) was redefined with [DIM](DIM) or [REDIM](REDIM). |
+| 13 | Type mismatch | A [PRINT USING](PRINT USING) format string did not match the type of the supplied variables. |
+| 20 | RESUME without error | The [RESUME](RESUME) statement was encountered outside of an [ON ERROR](ON ERROR) error handler. |
+| 50 | FIELD overflow | The [FIELD](FIELD) statement tried to allocate more bytes than were specified for the record length of a random access file. |
+| 51 | Internal error | Generic error | This error should be reported to the QB64 organization through Issues on GitHub. |
+| 52 | Bad file name or number | A file handle was used that does not correspond to a valid opened file. |
+| 53 | File not found | Attempt to open a file that does not (yet) exist. See File Error below. |
+| 54 | Bad file mode | A file operation was not compatible with the mode used in the [OPEN](OPEN) statement. |
+| 55 | File already open | An [OPEN](OPEN) statement attempted to use a file handle that is already in use. Consider using [FREEFILE](FREEFILE). |
+| 59 | Bad record length | The record length used for a [RANDOM](RANDOM) file was insufficient (too small) to perform the operation. |
+| 62 | Input past end of file | A file was read past its end. Ensure [EOF](EOF) is being correctly checked. |
+| 63 | Bad record number | The record (for [RANDOM](RANDOM)) or offset (for [BINARY](BINARY)) is outside the allowed range. |
+| 64 | Bad file name | You either can't create of this name, or containing certain haracters. This varies from operating system to operating system. See File Error below. |
+| 68 | Device unavailable | A serial port (COM device) failed to behave as expected. |
+| 70 | Permission denied | You do not have sufficient permission to read a particular file or to create a file under another username or a directory you do bot have write access. See File Error below. |
+| 75 | Path/File access error | Path to file is invalid. See File Error below. |
+| 76 | Path not found | Path name specified does not exist, See File Error below |
+| 258 | Invalid handle | A handle used for an image, sound, font etc. was invalid. Be sure to check the return values of functions like [_LOADFONT](_LOADFONT) and [_LOADIMAGE](_LOADIMAGE).
 
 Error handling of file operations varies between operating systems and is highly dependent on the exact circumstances. The errors marked "file error" above should all be equally treated as a generic failure to read or write from disk.
 
