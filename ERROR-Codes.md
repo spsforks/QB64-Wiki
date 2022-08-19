@@ -42,58 +42,32 @@ Error handling of file operations varies between operating systems and is highly
 ##  Critical errors 
 
 These errors can be triggered in QB64 but will not be caught by an [ON ERROR](ON ERROR) handler. They are always fatal, causing the program to exit.
-{| class="wikitable"
-|-
-! Code !! Description !! Notes
-|-
-| 11 || Division by zero || Only relevant for integer division, and may not be caught on all operating systems.
-|-
-| 256 || Out of stack space || Too many nested [GOSUB](GOSUB) calls.
-|-
-| 257 || Out of memory || Generic out of memory condition.
-|-
-| 259 || Cannot find dynamic library file || A .dll, .so or .dylib file referred to by [DECLARE LIBRARY](DECLARE LIBRARY) was not found.
-|-
-| 260, 261 || Sub/Function does not exist in dynamic library || A function declared with [DECLARE LIBRARY](DECLARE LIBRARY) does not exist.
-|-
-| 270 || _GL command called outside of SUB _GL's scope
-|-
-| 271 || END/SYSTEM called within SUB _GL's scope
-|-
-| 300 || Memory region out of range || Triggrered by _MEM commands
-|-
-| 301 || Invalid size || Triggrered by _MEM commands
-|-
-| 302 || Source memory region out of range || Triggrered by _MEM commands
-|-
-| 303 || Destination memory region out of range || Triggrered by _MEM commands
-|-
-| 304 || Source and destination memory regions out of range || Triggrered by _MEM commands
-|-
-| 305 || Source memory has been freed || Triggrered by _MEM commands
-|-
-| 306 || Destination memory has been freed || Triggrered by _MEM commands
-|-
-| 307 || Memory already freed || Triggrered by _MEM commands
-|-
-| 308 || Memory has been freed || Triggrered by _MEM commands
-|-
-| 309 || Memory not initialized || Triggrered by _MEM commands
-|-
-| 310 || Source memory not initialized || Triggrered by _MEM commands
-|-
-| 311 || Destination memory not initialized || Triggrered by _MEM commands
-|-
-| 312 || Source and destination memory not initialized || Triggrered by _MEM commands
-|-
-| 313 || Source and destination memory have been freed || Triggrered by _MEM commands
-|-
-| 314 || _ASSERT failed || See [_ASSERT](_ASSERT).
-|-
-| 315 || _ASSERT failed (check console for description) || See [_ASSERT](_ASSERT).
-|-
-| 502 to 518 || Out of memory || Generic out of memory condition.
-|}
+
+| Code | Description | Notes |
+| 11 | Division by zero | Only relevant for integer division, and may not be caught on all operating systems. |
+| 256 | Out of stack space | Too many nested [GOSUB](GOSUB) calls. |
+| 257 | Out of memory | Generic out of memory condition. |
+| 259 | Cannot find dynamic library file | A .dll, .so or .dylib file referred to by [DECLARE LIBRARY](DECLARE LIBRARY) was not found. |
+| 260, 261 | Sub/Function does not exist in dynamic library | A function declared with [DECLARE LIBRARY](DECLARE LIBRARY) does not exist. |
+| 270 | _GL command called outside of SUB _GL's scope |
+| 271 | END/SYSTEM called within SUB _GL's scope |
+| 300 | Memory region out of range | Triggrered by _MEM commands. |
+| 301 | Invalid size | Triggrered by _MEM commands. |
+| 302 | Source memory region out of range | Triggrered by _MEM commands. |
+| 303 | Destination memory region out of range | Triggrered by _MEM commands. |
+| 304 | Source and destination memory regions out of range | Triggrered by _MEM commands |
+| 305 | Source memory has been freed || Triggrered by _MEM commands |
+| 306 | Destination memory has been freed | Triggrered by _MEM commands |
+| 307 | Memory already freed | Attempt to release memory previously released. Triggrered by _MEM commands. |
+| 308 | Memory has been freed | Triggrered by _MEM commands. |
+| 309 | Memory not initialized | Triggrered by _MEM commands. |
+| 310 | Source memory not initialized | Triggrered by _MEM commands. |
+| 311 | Destination memory not initialized | Triggrered by _MEM commands. |
+| 312 | Source and destination memory not initialized | Triggrered by _MEM commands |
+| 313 | Source and destination memory have been freed || Triggrered by _MEM commands. |
+| 314 | _ASSERT failed | See [_ASSERT](_ASSERT). |
+| 315 | _ASSERT failed (check console for description) | See [_ASSERT](_ASSERT). |
+| 502 to 518 | Out of memory | Generic out of memory condition. |
 
 ##  Legacy errors 
 
