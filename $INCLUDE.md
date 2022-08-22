@@ -25,7 +25,7 @@
 ## Special notes
 
 If an error occurs in an include file: 
-* in addition to [_ERRORLINE](_ERRORLINE), the function [_INCLERRORLINE[(_INCLERRORLINE) also returns the number of which text line in the include file caused the error. It is 0 if an include file is not being executed. 
+* in addition to [_ERRORLINE](_ERRORLINE), the function [_INCLERRORLINE](_INCLERRORLINE) also returns the number of which text line in the include file caused the error. It is 0 if an include file is not being executed. 
 * the function [_INCLERRORFILE$](_INCLERRORFILE$) contains the name of the include file where the error occurred. It is "" if an include file is not being executed. 
 
 ## Example(s)
