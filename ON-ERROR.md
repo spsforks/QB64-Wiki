@@ -72,9 +72,12 @@ END SUB
 
 
 * [ON...GOTO](ON...GOTO)
-* [_ERRORLINE](_ERRORLINE)
-* [_INCLERRORLINE](_INCLERRORLINE), [_INCLERRORFILE$](_INCLERRORFILE$)
-* [ERR](ERR), [ERL](ERL)
-* [ERROR](ERROR)
-* [ERROR Codes](ERROR-Codes)
-* [RESUME](RESUME)
+
+* [ERL](ERL) (last line number used before an error occurred, when line numbers are used) 
+* [ERR](ERR) (error code number) 
+* [ERROR](ERROR) (simulates error)
+* [_ERRORLINE](_ERRORLINE) (actual text code line)
+* [_ERRORMESSAGE$](_ERRORMESSAGE$) (last error message or a specific message)
+* [_INCLERRORFILE$](_INCLERRORFILE$) (name of [$INCLUDE](INCLUDE) file where error occurred, when $INCLUDE files are used
+* [_INCLERRORLINE](_INCLERRORLINE) (returns the line number in an [$INCLUDE](INCLUDE) file that caused the most recent error, when an $INCLUDE file is being used)
+* [Error Codes](ERROR-Codes) (list of all QB64 errors)
