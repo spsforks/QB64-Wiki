@@ -1,4 +1,4 @@
-The [_INCLERRORFILE$](_INCLERRORFILE$) function returns the line number in an [$INCLUDE]($INCLUDE) file that caused the most recent error.
+The _INCLERRORLINE$ function returns the line number in an [$INCLUDE]($INCLUDE) file that caused the most recent error.
 
 
 
@@ -58,11 +58,16 @@ ERROR  250  ON LINE:  9
 
 ## See Also
 
-* [_INCLERRORFILE$](_INCLERRORFILE$)
-* [ON ERROR](ON ERROR), [ERR](ERR)
-* [ERROR](ERROR)
-* [ERROR Codes](ERROR Codes)
-* [$INCLUDE]($INCLUDE)
+* [ERL](ERL) (last line number used before an error occurred, when line numbers are used) 
+* [ERR](ERR) (error code number) 
+* [ERROR](ERROR) (simulates error)
+* [_ERRORLINE](_ERRORLINE) (actual text code line)
+* [_ERRORMESSAGE$](_ERRORMESSAGE$) (last error message or a specific message)
+* [_INCLERRORFILE$](_INCLERRORFILE$) (name of [$INCLUDE](INCLUDE) file where error occurred, when $INCLUDE files are used
+* [_INCLERRORLINE](_INCLERRORLINE) (returns the line number in an [$INCLUDE](INCLUDE) file that caused the most recent error, when an $INCLUDE file is being used)
+* [$INCLUDE]($INCLUDE) (invoke a source code file to be inserted at that point)
+* [ON ERROR](ON-ERROR) (calls error handing routine using [GOTO](GOTO) only)
+* [Error Codes](ERROR-Codes) (list of all QB64 errors)
 
 
 
