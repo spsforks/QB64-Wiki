@@ -64,7 +64,6 @@ ERROR  250  ON LINE:  9
 * [_ERRORLINE](_ERRORLINE) (actual text code line)
 * [_ERRORMESSAGE$](_ERRORMESSAGE$) (last error message or a specific message)
 * [_INCLERRORFILE$](_INCLERRORFILE$) (name of [$INCLUDE](INCLUDE) file where error occurred, when $INCLUDE files are used
-* [_INCLERRORLINE](_INCLERRORLINE) (returns the line number in an [$INCLUDE](INCLUDE) file that caused the most recent error, when an $INCLUDE file is being used)
 * [$INCLUDE]($INCLUDE) (invoke a source code file to be inserted at that point)
 * [ON ERROR](ON-ERROR) (calls error handing routine using [GOTO](GOTO) only)
 * [Error Codes](ERROR-Codes) (list of all QB64 errors)
