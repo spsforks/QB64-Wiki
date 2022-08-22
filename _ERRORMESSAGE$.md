@@ -43,6 +43,7 @@ The [_ERRORMESSAGE$](_ERRORMESSAGE$) function returns a human-readable descripti
 * [ERR](ERR), [ERL](ERL)
 * [ERROR](ERROR)
 * [ERROR Codes](ERROR-Codes)
+* [RESUME](RESUME)
 
 
 
