@@ -119,6 +119,11 @@ Any code not listed above may be used as a custom error code with [ERROR](ERROR)
 
 ## See also
 
-* [ERROR](ERROR) (simulates error), [ERR](ERR) (error code number), [ERL](ERL) (closest line number when line numbers are used)
-* [ON ERROR](ON-ERROR) (calls error handing routine using [GOTO](GOTO) only), [_ERRORLINE](_ERRORLINE) (actual text code line)
-* [_INCLERRORLINE](_INCLERRORLINE), [_INCLERRORFILE$](_INCLERRORFILE$), [_ERRORMESSAGE$](_ERRORMESSAGE$)
+* [ERL](ERL) (closest line number when line numbers are used)
+* [ERR](ERR) (error code number) 
+* [ERROR](ERROR) (simulates error)
+* [_ERRORLINE](_ERRORLINE) (actual text code line)
+* [_ERRORMESSAGE$](_ERRORMESSAGE$) (last error message or a specific message)
+* [_INCLERRORFILE$](_INCLERRORFILE$)
+* [_INCLERRORLINE](_INCLERRORLINE) (returns the line number in an [$INCLUDE](INCLUDE) file that caused the most recent error, when an $INCLUDE file is being used)
+* [ON ERROR](ON-ERROR) (calls error handing routine using [GOTO](GOTO) only)
