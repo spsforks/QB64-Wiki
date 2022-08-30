@@ -21,9 +21,7 @@ The [_BLEND](_BLEND) statement turns on 32 bit alpha blending for an image or sc
 
 ## Example(s)
 
-## Example(s)
-
-
+ Example:
 ```vb
 
 SCREEN _NEWIMAGE(640, 480, 32)
@@ -54,6 +52,14 @@ PRINT _RED(m&), _GREEN(m&), _BLUE(m&), _ALPHA(m&)
 
 ```
 
+```text
+_RGBA(255,128,0,128) onto _RGBA(0,0,255,64)
+
+results in
+
+_RGBA(95,48,64,128)
+
+```
 
 ## See Also
 
