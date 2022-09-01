@@ -15,7 +15,7 @@ The _WIDTH function returns the width of an image handle or of the current write
 
 ## Example(s)
 
-*Example:* A SUB program that centers text in any graphic screen mode except text mode SCREEN 0.
+A SUB program that centers text in any graphic screen mode except text mode [SCREEN (statement)](SCREEN-(statement)) 0.
 
 ```vb
 
@@ -32,9 +32,9 @@ END SUB
 
 ```
 
-*Explanation:* _NEWIMAGE enlarges a screen to 800 pixels wide which is what `_WIDTH` function will return. The center is 800 \ 2 or 400. Since the text width is 8 pixels, that is divided by 8 to get 50 as the center text column. Then half of the text length is subtracted to find the starting text print LOCATE column.
+> *Explanation:* [_NEWIMAGE](_NEWIMAGE) enlarges a screen to 800 pixels wide which is what [_WIDTH (function)](_WIDTH-(function)) function will return. The center is 800 \ 2 or 400. Since the text width is 8 pixels, that is divided by 8 to get 50 as the center text column. Then half of the text length is subtracted to find the starting text print [LOCATE](LOCATE) column.
 
-*Note:* The screen handle parameter is required because using no handle could assume other page handles created by functions like _NEWIMAGE or _PUTIMAGE. Use the correct handle in the SUB call! When using SCREEN 0, the MaxCol variable is not needed because _WIDTH returns the number of text columns, not pixels. Use the center value and add 1. `Tcol = (center& + 1) - LEN(txt$) \ 2`
+> *Note:* The screen handle parameter is required because using no handle could assume other page handles created by functions like [_NEWIMAGE](_NEWIMAGE) or [_PUTIMAGE](_PUTIMAGE). Use the correct handle in the SUB call! When using SCREEN 0, the MaxCol variable is not needed because _WIDTH returns the number of text columns, not pixels. Use the center value and add 1. **Tcol = (center& + 1) - LEN(txt$) \ 2**
 
 ## See Also
 

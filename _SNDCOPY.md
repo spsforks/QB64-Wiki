@@ -9,7 +9,6 @@ The [_SNDCOPY](_SNDCOPY) function copies a sound to a new handle so that two or 
 * Returns a new handle to the a copy in memory of the sound data referred to by the source handle.
 * No changes to the source handle (such as a volume change) are inherited.
 * The sound data referred to by the handle and its copies are not freed until all of them are closed.
-* In versions **prior to build 20170811/60**, the sound identified by handle& must have been opened using the [_SNDOPEN](_SNDOPEN) to use this function.
 
 ## See Also
 

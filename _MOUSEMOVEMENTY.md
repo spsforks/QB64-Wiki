@@ -5,9 +5,8 @@ The [_MOUSEMOVEMENTY](_MOUSEMOVEMENTY) function returns the relative vertical po
 > verticalMove = [_MOUSEMOVEMENTY](_MOUSEMOVEMENTY)
 
 * Returns the relative vertical cursor pixel position compared to the previous cursor position. Negative values are up moves.
-* **Note:** A [_MOUSESHOW](_MOUSESHOW) statement will disable [_MOUSEMOVEMENTX](_MOUSEMOVEMENTX) or [_MOUSEMOVEMENTY](_MOUSEMOVEMENTY) relative mouse movement reads.
 * Can also be used to check for any mouse movements to enable a program or close [Screen Saver Programs](Screen-Saver-Programs).
-* Sets the mouse to a relative movement mode which can be read by [_WHEEL](_WHEEL) instead of [_AXIS](_AXIS) as mouse [_DEVICES](_DEVICES) 2.
+* On Windows only, [_MOUSEMOVEMENTY](_MOUSEMOVEMENTY) will continue to track the mouse when it is outside the program window.
 
 ## Example(s)
 

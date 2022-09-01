@@ -60,7 +60,6 @@ SDL_WarpMouse x, y     'call SDL library procedure
 END SUB 
 
 ```
-<sub>Code by Galleon</sub>
 
 > *Explanation:* The SDL Library is included and loaded with QB64 versions prior to 1.000, so these procedures are directly available for use. 
 

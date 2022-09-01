@@ -4,6 +4,10 @@ The [_R2G](_R2G) function converts a **radian** value into a **gradian** value.
 
 > result! = [_R2G](_R2G)(num)
 
+## Availability
+
+* Version 1.000 and up.
+
 ## Example(s)
  
 Converting Radian into Gradian.

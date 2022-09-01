@@ -6,7 +6,7 @@ The [_MEMNEW](_MEMNEW) function allocates new memory and returns a [_MEM](_MEM) 
 
 ## Parameter(s)
 
-* The byteSize parameter is the desired byte size of the memory block based on the variable [type](type) it will hold.
+* The byteSize parameter is the desired byte size of the memory block based on the variable [Variable Types](Variable-Types) it will hold.
 
 ## Description
 

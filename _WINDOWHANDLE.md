@@ -1,26 +1,21 @@
 The [_WINDOWHANDLE](_WINDOWHANDLE) function returns the window handle assigned to the current program by the OS. Windows-only.
 
-
 ## Syntax
 
->  hwnd&& = [_WINDOWHANDLE](_WINDOWHANDLE)
-
+> hwnd%& = [_WINDOWHANDLE](_WINDOWHANDLE)
 
 ## Description
 
-* The result is an [_INTEGER64](_INTEGER64) number assigned by Windows to your running program.
-* Use it to make [Windows Libraries](Windows Libraries) that require a window handle to be passed.
+* The result is an [_OFFSET](_OFFSET) number assigned by Windows to your running program.
+* Use it to make [Windows Libraries](Windows-Libraries) that require a window handle to be passed.
 * [Keywords currently not supported](Keywords_currently_not_supported_by_QB64).
-
 
 ## Availability
 
-* **Build 20170924/68**.
-
-
-## Example(s)
+* Build 20170924/68 and up.
 
 ## Example(s)
+
  Showing the system-default message box in Windows.
 
 ```vb
@@ -55,7 +50,7 @@ CONST IDCONTINUE& = 1           'Continue button pressed
 '----------------------------------------------------------------------------------------
 
 DECLARE DYNAMIC LIBRARY "user32"
-FUNCTION MessageBoxA& (BYVAL hwnd AS LONG, Message AS STRING, Title AS STRING, BYVAL MBType AS _UNSIGNED LONG)
+FUNCTION MessageBoxA& (BYVAL hwnd AS _OFFSET, Message AS STRING, Title AS STRING, BYVAL MBType AS _UNSIGNED LONG)
 END DECLARE
 
 DO
@@ -93,13 +88,10 @@ MsgBox& = MessageBoxA&(_WINDOWHANDLE, Message$, Title$, BoxType& + Icon& + Mode&
 END FUNCTION 
 
 ```
+
 > *Explanation:* Notice how the call to the external dynamic library function MessageBoxA& passes _WINDOWHANDLE to the API and how the message box shown is created as a child of your program's window, not allowing the main window to be manipulated while the message box is open.
 
 ## See Also
 
 * [_WINDOWHASFOCUS](_WINDOWHASFOCUS)
-* [Windows Libraries](Windows Libraries)
-
-
-
-
+* [Windows Libraries](Windows-Libraries)

@@ -1,12 +1,12 @@
 [BSAVE](BSAVE) saves the contents of an image array to a [BINARY](BINARY) file.
 
+## Legacy Support
+
+* QB64 can save larger arrays directly to binary files using [PUT](PUT) # and [GET](GET) # without [BSAVE](BSAVE). For that reason, use of [BSAVE](BSAVE) is no longer recommended practice but is supported to maintain compatibility with legacy code.
+
 ## Syntax
 
 > [BSAVE](BSAVE) saveFile$, [VARPTR](VARPTR)(array(index)), fileSize&
-
-## Legacy Support
-
-* **QB64** can save larger arrays directly to binary files using [PUT](PUT) # and [GET](GET) # without **BSAVE**. For that reason, **BSAVE** isn't recommended practice anymore and is supported to maintain compatibility with legacy code.
 
 ## Parameter(s)
 
@@ -95,7 +95,6 @@ NEXT
 PRINT "Array:"; size%, "File:"; fsize%
 
 ```
-<sub>Code by Ted Weissgerber</sub>
 
 > *Explanation:* A 10 by 10 pixel box is saved to an array using the [GET (graphics statement)](GET-(graphics-statement)) and written to a BINARY file using [PUT](PUT) #1. Then [GET](GET) #1 places the file contents into another INTEGER array and places it on the screen with the [PUT (graphics statement)](PUT-(graphics-statement)).
 

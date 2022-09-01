@@ -90,8 +90,6 @@ END FUNCTION
 
 ```
 
-Code by Galleon
-
 > **Note:** SUB procedures using CUSTOMTYPE LIBRARY API procedures inside may error. Try DYNAMIC with "KERNEL32".
 
 **QB64 version 1.000 and up produce standalone executables. External DLL files must be distributed with your program.**

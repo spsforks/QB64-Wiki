@@ -139,8 +139,6 @@ LOOP UNTIL num > 9
 
 ```
 
-Code by Ted Weissgerber
-
 > *Explanation:* The DRAW strings can be used more than once with different [PSET](PSET) positions to create more digits.
 
 Using 32 bit or [_RGB](_RGB) color [STR$](STR$) values when using the DRAW C text statement

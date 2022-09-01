@@ -37,7 +37,7 @@ The [_RGB32](_RGB32) function returns the 32-bit *RGBA* color value with specifi
 
 ## Availability
 
-* Alternative syntaxes available with **version 1.3 and up**.
+* Alternative syntax available with version 1.3 and up.
 
 ## Example(s)
 
@@ -92,9 +92,7 @@ CLS , _RGB32(0, 0, 128) 'deep blue background
 LINE (100, 100)-(540, 380), _RGB(255, 0, 0), BF ' a red box
 LINE (200, 200)-(440, 280), _RGB(0, 255, 0), BF ' a green box
 
-
 SLEEP 'Just so we can see our pretty background before we print anything on it.
-
 
 COLOR _RGB32(255, 255, 255), 0 'White on NO BACKGROUND
 

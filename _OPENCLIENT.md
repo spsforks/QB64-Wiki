@@ -1,6 +1,9 @@
-The [_OPENCLIENT](_OPENCLIENT) function connects to a Host on the Internet as a Client and returns the Client status handle.## Syntax
+The [_OPENCLIENT](_OPENCLIENT) function connects to a Host on the Internet as a Client and returns the Client status handle.
+
+## Syntax
 
 > clientHandle& = [_OPENCLIENT](_OPENCLIENT)(**"TCP/IP:8080:12:30:1:10"**)
+
 ## Description
 
 * An [ERROR Codes](ERROR-Codes) error will be triggered if the function is called with a string argument of the wrong syntax.
@@ -23,6 +26,7 @@ END IF
 ```
 
 > **NOTE:** Try a valid TCP/IP port setting to test this routine!
+
 Using a "raw" Download function to download the QB64 bee image and displays it.
 
 ```vb

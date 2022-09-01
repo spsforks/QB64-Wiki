@@ -73,8 +73,6 @@ Creating 12 analog clock hour points using [CIRCLE](CIRCLE)s and [PAINT](PAINT)
 
 ```
 
-Code by Ted Weissgerber
-
 *Explanation:* The 12 circles are placed at radian angles that are 1/12 of 6.28318 or .523598 radians apart.
 
 Creating a rotating spiral with COS and [SIN](SIN).
@@ -104,8 +102,6 @@ DO
 LOOP UNTIL INP(&H60) = 1 'escape exit 
 
 ```
-
-Code by Ben
 
 ## See Also
 

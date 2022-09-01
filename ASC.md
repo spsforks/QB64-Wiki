@@ -41,8 +41,6 @@ The [ASC](ASC) function returns the [ASCII](ASCII) code number of a certain [STR
 '
 ' **    *Italics* = LCase/NumLock On  ____________  + = 2 Byte: CHR$(0) + CHR$(code)**
 '
-NOTE: The above commented table can be copied and pasted directly into the QB64 IDE
-
 
 ```
 
@@ -140,8 +138,6 @@ LOOP UNTIL code% = 27 * '
 
 
 ```
-
-Code by Ted Weissgerber
 
 *Explanation:* The keypress read loop checks that ASC will not read an empty string. That would create a program error. [SLEEP](SLEEP) reduces CPU memory usage between keypresses. Normal byte codes returned are indicated by the IF statement when ASC returns a value. Otherwise the routine will return the two byte ASCII code. The extended keyboard keys(Home pad, Arrow pad and Number pad), Function keys or Ctrl, Alt or Shift key combinations will return two byte codes. Ctrl + letter combinations will return control character codes 1 to 26.
 

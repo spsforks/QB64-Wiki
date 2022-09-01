@@ -24,8 +24,8 @@
 
 ## Parameter(s)
 
-* Relative coordinates to a previous graphical object can be designated using [STEP](STEP) as opposed to literal surface coordinates (version **1.000** and up).
-* Coordinates *dx* and *dy* map the box area of the [_DEST](_DEST) area to use. When omitted the entire destination area is used. If only one coordinate is used, the source is placed with its original dimensions. Coordinates can be set to flip or resize the image.
+* Relative coordinates to a previous graphical object can be designated using [STEP](STEP) as opposed to literal surface coordinates.
+* Coordinates *dx* and *dy* map the box area of the [_DEST](_DEST) area to use. When omitted the entire desination area is used. If only one coordinate is used, the source is placed with its original dimensions. Coordinates can be set to flip or resize the image.
   * dx1 = the column coordinate at which the insertion of the source will begin (leftmost); when larger than *dx2*, reverses image.
   * dy1 = the row coordinate at which the insertion of the source will begin (topmost); when larger than *dy2*, inverts image.
   * dx2 = the column coordinate at which the insertion of the source will end (rightmost); further apart, widens image.
@@ -37,7 +37,7 @@
   * sy1 = the row coordinate of the upper-most pixel to include of the source. When omitted, the entire image is used
   * sx2 = the column coordinate of the right-most pixel to include of the source. Can be omitted to get rest of image.
   * sy2 = the row coordinate of the bottom-most pixel to include of the source. Can be omitted to get rest of image.
-* *_SMOOTH* applies linear filtering (**version 1.000 and up**).
+* *_SMOOTH* applies linear filtering.
 
 **Note: The [PUT (graphics statement)](PUT-(graphics-statement)) options PSET, PRESET, AND, OR and XOR are not available with _PUTIMAGE. QB64 can use [_ALPHA](_ALPHA) of colors to achieve the same results.**
 
@@ -82,7 +82,7 @@
 
 SCREEN _NEWIMAGE(640, 480, 32)
 CLS , _RGB(0, 255, 0)
-i = _LOADIMAGE(**"QB64.PNG"**) 'any 32 bit image (ie. with alpha channel)
+i = _LOADIMAGE(**"QB64.PNG"**)
 _PUTIMAGE (0, 0), i ' places image at upper left corner of window w/o stretching it 
 
 ```
@@ -96,7 +96,7 @@ Flipping and enlarging an image with _PUTIMAGE by swapping or increasing the des
 DEFLNG A-Z
 dest_handle = _NEWIMAGE(640, 480, 32)
 SCREEN dest_handle  '32 bit Screen 12 dimensions
-source_handle = _LOADIMAGE(**"QB64.PNG"**, 32) 'any 32 bit image (ie. with alpha channel)
+source_handle = _LOADIMAGE(**"QB64.PNG"**, 32)
 dx1 = 0: dy1 = 0
 dx2 = _WIDTH(source_handle) - 1: dy2 = _HEIGHT(source_handle) - 1 'image dimensions - 1
 LOCATE 29, 33: PRINT "Press any Key!";
@@ -158,7 +158,7 @@ DO
         CASE "6": x = x + 10: IF x > 1280 THEN x = 1280
         CASE "8": y = y - 10: IF y < 0 THEN y = 0
         CASE "2": y = y + 10: IF y > 720 THEN y = 720
-        CASE CHR$(32): SYSTEM
+        CASE CHR$(27): SYSTEM
     END SELECT
     _DISPLAY
 LOOP 

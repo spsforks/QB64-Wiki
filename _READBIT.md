@@ -18,7 +18,7 @@ The [_READBIT](_READBIT) function is used to check the state of a specified bit 
 
 ## Availability
 
-* **Version 1.4 and up**.
+* Version 1.4 and up.
 
 ## Example(s)
 
@@ -47,6 +47,7 @@ FOR I%% = 31 TO 0 STEP -1 '32 bits for a LONG value
  Binary$ = Binary$ + LTRIM$(STR$(ABS(_READBIT(B&, I%%))))
 NEXT I%%
 PRINT "B& in binary is: "; Binary$
+
 ```
 
 ```text

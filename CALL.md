@@ -13,12 +13,6 @@
 * Neither syntax can be used to call [GOSUB](GOSUB) linelabel sub procedures.
 * To pass parameters by value, instead of by reference, enclose passed variables in parenthesis.
 
-## QBasic/QuickBASIC
-
-* PDS or Quickbasic 7 up could use [BYVAL](BYVAL) to pass variables by values instead of reference.
-* QuickBASIC 4.5 could use [BYVAL](BYVAL) only for procedures created in Assembly or another language.
-* QBasic required [CALL ABSOLUTE](CALL-ABSOLUTE) only. It did not have to be DECLAREd.
-
 ## Example(s)
 
 How parameters are passed in two [SUB](SUB) calls, one with CALL using brackets and one without CALL or brackets:

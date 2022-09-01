@@ -1,10 +1,8 @@
 The [_TRIM$](_TRIM$) function removes both leading and trailing space characters from a [STRING](STRING) value.
 
-
 ## Syntax
 
 > return$ = [_TRIM$](_TRIM$)(text$)
-
 
 ## Description
 
@@ -12,7 +10,6 @@ The [_TRIM$](_TRIM$) function removes both leading and trailing space characters
 * text$ is the [STRING](STRING) value to trim.
 * If text$ contains no leading or trailing space characters, it is returned unchanged.
 * Convert fixed length [STRING](STRING) values by using a different return$ variable.
-
 
 ## Example(s)
 
@@ -39,12 +36,6 @@ PRINT "[" + _TRIM$(text$) + "]"
 
 ```
 
-
-
 ## See Also
 
 * [RTRIM$](RTRIM$), [LTRIM$](LTRIM$)
-
-
-
-

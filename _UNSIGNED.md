@@ -1,12 +1,10 @@
 [_UNSIGNED](_UNSIGNED) defines a numerical value as being only positive.
 
-
 ## Syntax
  
->  [DIM](DIM) variable [AS](AS) [[_UNSIGNED](_UNSIGNED)] datatype
+> [DIM](DIM) variable [AS](AS) [_UNSIGNED] datatype
 
->  [_DEFINE](_DEFINE) letterRange [AS](AS) [[_UNSIGNED](_UNSIGNED)] datatype
-
+> [_DEFINE](_DEFINE) letterRange [AS](AS) [_UNSIGNED] datatype
 
 ## Description
 
@@ -16,7 +14,6 @@
 * Can also be used in [DIM](DIM) statements or subprocedure parameter definitions following [AS](AS).
 * [_UNSIGNED](_UNSIGNED) allows larger positive numerical variable value limits than signed ones.
 * The unsigned variable type suffix used is the **tilde (~)**, right before the number's own type suffix: variableName~&
-
 
 How negative values affect the [_UNSIGNED](_UNSIGNED) value returned by a [_BYTE](_BYTE) (8 bits). 
 
@@ -31,8 +28,6 @@ How negative values affect the [_UNSIGNED](_UNSIGNED) value returned by a [_BYTE
 
 ```
 
-
-
 ## Example(s)
 
  In **QB64**, when a signed [INTEGER](INTEGER) value exceeds 32767, the value may become a negative value:
@@ -43,6 +38,7 @@ i% = 38000
 PRINT i% 
 
 ```
+
 ```text
 
 -27536
@@ -50,7 +46,6 @@ PRINT i%
 ```
 
 > *Explanation:* Use an [_UNSIGNED](_UNSIGNED) [INTEGER](INTEGER) or a ~% variable type suffix for only positive integer values up to 65535.
-
 
 In **QB64**, [_UNSIGNED](_UNSIGNED) [INTEGER](INTEGER) values greater than 65535 cycle over again from zero:
 
@@ -60,6 +55,7 @@ i~% = 70000
 PRINT i~% 
 
 ```
+
 ```text
 
  4464
@@ -67,7 +63,6 @@ PRINT i~%
 ```
 
 > *Explanation:* In QB64 an unsigned integer value of 65536 would be 0 with values increasing by the value minus 65536. 
-
 
 Demonstrating how _UNSIGNED variables expand the [INTEGER](INTEGER) range.
 
@@ -89,24 +84,16 @@ END
 
 ```text
 
-
-
    Press Esc to exit loop
-
-
-
 
                            65462
 
                           Count: 13 Max: 65535
 
 
-
 ```
 
 *Explanation:* The maximum value can only be 65535 (32767 + 32768) so the FOR loop repeats itself. Remove the [_UNSIGNED](_UNSIGNED) parts and run it again.
-
-
 
 ## See Also
 
@@ -116,7 +103,3 @@ END
 * [INTEGER](INTEGER), [LONG](LONG), [_INTEGER64](_INTEGER64)
 * [ABS](ABS), [SGN](SGN)
 * [Variable Types](Variable-Types)
-
-
-
-

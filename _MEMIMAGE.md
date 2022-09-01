@@ -12,7 +12,7 @@ The [_MEMIMAGE](_MEMIMAGE) function returns a [_MEM](_MEM) value referring to an
 ## Description
 
 * Use the function to place images into memory access blocks for faster data access.
-* All values created by this function must be freed using [_MEMFREE](_MEMFREE) with a valid [_MEM](_MEM) [type](type) variable.
+* All values created by this function must be freed using [_MEMFREE](_MEMFREE) with a valid [_MEM](_MEM) [Variable Types](Variable-Types) variable.
 * Image handle values and the memory used must still be freed using [_FREEIMAGE](_FREEIMAGE) when no longer required.
 
 ## Example(s)

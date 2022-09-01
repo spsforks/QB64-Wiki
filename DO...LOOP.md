@@ -147,8 +147,6 @@ END SUB
 
 ```
 
-Code by Ted Weissgerber
-
 > *Explanation:* The SUB procedure reads a file that was [BSAVE](BSAVE)d previously. If the RGB colors are stored before the image, the values can only be between 0 and 63. Higher values indicate that the image width and height are located there and that there are no stored color values to be read. SUB later displays the dimensions of the file image that [GET (graphics statement)](GET-(graphics-statement)) placed in the file array. The loop is set to only run once by creating **a TRUE [UNTIL](UNTIL) statement** such as 1 = 1. When a screen mode cannot be determined, the user must select one.
 
 > Dimensions and location of width and height information indicates the screen mode as [SCREEN (statement)](SCREEN-(statement)) 13 if it has 768 RGB values and dimensions of 320 X 200 max. If the file only holds 64 settings and/or is larger than 320 X 200, it uses SCREEN 12 or 9. The procedure [EXIT](EXIT)s the DO LOOP early when the image size is found with or without custom color settings.

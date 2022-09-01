@@ -9,7 +9,7 @@ The [_OFFSET](_OFFSET) variable type stores the location of a value in memory. T
 * _OFFSET types can be created as signed or [_UNSIGNED](_UNSIGNED) at the programmer's discretion.
 * The type suffix for _OFFSET is **%&** which designates the integer value's flexible size.
 * Offset values are only useful when used in conjunction with [_MEM](_MEM) or [DECLARE LIBRARY](DECLARE-LIBRARY) procedures.
-* OFFSET values are used as a part of the [_MEM](_MEM) variable [type](type) in QB64. Variable.OFFSET returns or sets the current position in memory.
+* OFFSET values are used as a part of the [_MEM](_MEM) variable [Variable Types](Variable-Types) in QB64. Variable.OFFSET returns or sets the current position in memory.
 * API [DECLARE LIBRARY](DECLARE-LIBRARY) parameter or [TYPE](TYPE) names may include **lp, ptr** or **p** which designates them as a pointer type.
 * **Warning: _OFFSET values cannot be cast to other variable type values reliably.**
 * **Warning: Variable length [STRING](STRING) values can move about in memory at any time.** If you get the _OFFSET of a variable length sting on one code line and use it on the next it may not be there anymore.** To be safe, move variable length strings into fixed length strings first.**
@@ -27,7 +27,7 @@ END DECLARE
 _TITLE "Super Window"
 hwnd& = FindWindow(0, "Super Window" + CHR$(0))
 
-TYPE BROWSEINFO  'typedef struct _browseinfo '[http://msdn.microsoft.com/en-us/library/bb773205(v=vs.85).aspx Microsoft MSDN]
+TYPE BROWSEINFO  'typedef struct _browseinfo '[Microsoft MSDN](http://msdn.microsoft.com/en-us/library/bb773205%28v=vs.85%29.aspx)
   hwndOwner AS LONG '              '  HWND 
   pidlRoot AS _OFFSET '            '  PCIDLIST_ABSOLUTE
   pszDisplayName AS _OFFSET '      '  LPTSTR 
@@ -39,8 +39,8 @@ TYPE BROWSEINFO  'typedef struct _browseinfo '[http://msdn.microsoft.com/en-us/l
 END TYPE  'BROWSEINFO, *PBROWSEINFO, *LPBROWSEINFO;
 
 DECLARE DYNAMIC LIBRARY "shell32"
-  FUNCTION SHBrowseForFolder%& (x AS BROWSEINFO) '[http://msdn.microsoft.com/en-us/library/bb762115(v=vs.85).aspx Microsoft MSDN]
-  SUB SHGetPathFromIDList (BYVAL lpItem AS _OFFSET, BYVAL szDir AS _OFFSET) '[http://msdn.microsoft.com/en-us/library/bb762194(VS.85).aspx Microsoft MSDN]
+  FUNCTION SHBrowseForFolder%& (x AS BROWSEINFO) '[Microsoft MSDN](http://msdn.microsoft.com/en-us/library/bb762115%28v=vs.85%29.aspx)
+  SUB SHGetPathFromIDList (BYVAL lpItem AS _OFFSET, BYVAL szDir AS _OFFSET) '[Microsoft MSDN](http://msdn.microsoft.com/en-us/library/bb762194%28VS.85%29.aspx)
 END DECLARE
 
 DIM b AS BROWSEINFO

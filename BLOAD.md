@@ -1,12 +1,12 @@
 [BLOAD](BLOAD) loads a binary graphics file created by [BSAVE](BSAVE) to an array. 
 
+## Legacy Support
+
+* **QB64 can load larger arrays directly from binary files using [PUT](PUT) # and [GET](GET) # without BLOAD. For that reason, BLOAD isn't recommended practice anymore and is supported to maintain compatibility with legacy code.**
+
 ## Syntax
 
 > [BLOAD](BLOAD) fileName$, [VARPTR](VARPTR)(imageArray%(Parameter))
-
-## Legacy Support
-
-* **QB64** can load larger arrays directly from binary files using [PUT](PUT) # and [GET](GET) # without **BLOAD**. For that reason, **BLOAD** isn't recommended practice anymore and is supported to maintain compatibility with legacy code.
 
 ## Parameter(s)
 

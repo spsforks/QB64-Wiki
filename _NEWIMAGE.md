@@ -7,7 +7,7 @@ The [_NEWIMAGE](_NEWIMAGE) function prepares a window image surface and returns 
 ## Parameter(s)
 
 * Minimum [LONG](LONG) screen dimensions are width& >= 1, height& >= 1 measured in pixels as [INTEGER](INTEGER) or [LONG](LONG) values.
-** For mode 0 (text), width& and height& are measured in character blocks, not pixels.
+  * For mode 0 (text), width& and height& are measured in character blocks, not pixels.
 * Mode is either a QBasic type [SCREEN](SCREEN) mode (0 to 2 or 7 to 13), 256 colors or 32 bit (16 million colors) compatible.
 
 ## Description
@@ -23,7 +23,7 @@ The [_NEWIMAGE](_NEWIMAGE) function prepares a window image surface and returns 
 > Use [CLS](CLS) or [_DONTBLEND](_DONTBLEND) to make a new surface background [_ALPHA](_ALPHA) 255 or opague.
 
 * **Images are not deallocated when the [SUB](SUB) or [FUNCTION](FUNCTION) they are created in ends. Free them with [_FREEIMAGE](_FREEIMAGE).**
-* **It is important to free unused or uneeded images with [_FREEIMAGE](_FREEIMAGE) to prevent CPU [ERROR_Codes#Other_Errors](ERROR_Codes#Other_Errors).**
+* **It is important to free unused or uneeded images with [_FREEIMAGE](_FREEIMAGE) to prevent CPU [ERROR_Codes](ERROR-Codes).**
 * **Do not try to free image handles currently being used as the active [SCREEN](SCREEN). Change screen modes first.**
 
 ## Example(s)

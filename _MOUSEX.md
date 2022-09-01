@@ -11,9 +11,9 @@ The [_MOUSEX](_MOUSEX) function returns the current horizontal (column) mouse cu
 * To calculate text columns in graphic modes, divide the return by 8 or the [_FONTWIDTH](_FONTWIDTH) of [_FONT](_FONT) characters.
 * [_MOUSEINPUT](_MOUSEINPUT) must be used to detect any changes in the mouse position and is **required** for any coordinate returns.
 
-## QBasic/QuickBASIC
+## QBasic
 
-* In [SCREEN](SCREEN) 0, QBasic's [CALL ABSOLUTE](CALL-ABSOLUTE) returned graphic coordinates. QB64 mouse functions return the text coordinates. 
+* In [SCREEN](SCREEN) 0, QBasic's [ABSOLUTE](ABSOLUTE) returned graphic coordinates. QB64 mouse functions return the text coordinates.
 
 ## Example(s)
 

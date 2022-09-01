@@ -1,17 +1,14 @@
 The [_TOGGLEBIT](_TOGGLEBIT) function is used to toggle a specified bit of a numerical value.
 
-
 ## Syntax
 
 > result = [_TOGGLEBIT](_TOGGLEBIT)(numericalVariable, numericalValue)
-
 
 ## Parameter(s)
 
 * numericalVariable is the variable to toggle the bit of and can be of the following types: [_BYTE](_BYTE), [INTEGER](INTEGER), [LONG](LONG), or [_INTEGER64](_INTEGER64).
 * Integer values can be signed or [_UNSIGNED](_UNSIGNED).
 * numericalValue the number of the bit to be set.
-
 
 ## Description
 
@@ -21,14 +18,14 @@ The [_TOGGLEBIT](_TOGGLEBIT) function is used to toggle a specified bit of a num
 
 ## Availability
 
-* **Version 1.4 and up**.
-
+* Version 1.4 and up.
 
 ## Example(s)
 
 *Example 1:*
 
 ```vb
+
 A~%% = 0 '_UNSIGNED _BYTE
 PRINT A~%%
 A~%% = _TOGGLEBIT(A~%%,4) 'toggle the fourth bit of A~%%
@@ -40,21 +37,14 @@ PRINT A~%%
 
 ```text
 
-
  0
  16
  0
 
 ```
 
-
-
-
 ## See Also
 
 * [_SHL](_SHL), [_SHR](_SHR), [INTEGER](INTEGER), [LONG](LONG)
 * [_SETBIT](_SETBIT), [_BYTE](_BYTE), [_INTEGER64](_INTEGER64)
 * [_RESETBIT](_RESETBIT), [_READBIT](_READBIT)
-
-
-

@@ -4,6 +4,11 @@ The [_SCROLLLOCK (function)](_SCROLLLOCK-(function)) function returns the curren
 
 > keyStatus%% = [_SCROLLLOCK (function)](_SCROLLLOCK-(function))
 
+## Availability
+
+* Version 1.4 and up.
+* [Keywords currently not supported by QB64](Keywords-currently-not-supported-by-QB64).
+
 ## See Also
 
 * [_CAPSLOCK (function)](_CAPSLOCK-(function)), [_NUMLOCK (function)](_NUMLOCK-(function))

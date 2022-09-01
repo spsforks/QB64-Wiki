@@ -12,6 +12,10 @@
 
 * Use to force playing small buffers of [_SNDRAW](_SNDRAW) data.
 
+## Availability
+
+* Version 1.000 and up.
+
 ## See Also
 
 * [_SNDOPENRAW](_SNDOPENRAW)

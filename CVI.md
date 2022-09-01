@@ -59,8 +59,6 @@ SYSTEM
 
 ```
 
-Code by Ted Weissgerber
-
 > *Explanation:* All [ASCII](ASCII) characters can be displayed using [_PRINTSTRING](_PRINTSTRING) . The routine gets the [ASCII](ASCII) code, which is the actual value needed by [CVI](CVI). The first byte code is always between 0 and 255. The second byte can return 0 thru 127 and CVI multiplies that value by 256. This proves that you cannot just feed a string number value to [CVI](CVI) and get the result desired. ("90" gets decoded to 12345).
 
 ## See Also

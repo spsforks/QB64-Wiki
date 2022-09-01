@@ -93,7 +93,7 @@ COLOR 15 = &HFFFCFCFC      FC         FC         FC
 > *Explanation:* The RGB intensity values are multiplied by 4 to get the [_RGB](_RGB) intensity values as [HEX$](HEX$) values. The individual 2 digit [HEX$](HEX$) intensity values can be added to "&HFF" to make up the 32-bit hexadecimal string value necessary for [VAL](VAL) to return to [_PALETTECOLOR](_PALETTECOLOR). The statement is only included in the example to show how that can be done with any 32-bit color value.
 > **Note:** Black has a blue hex value of 50 due to the [OUT](OUT) background color setting which makes it dark blue.
 
-### Read & write color port intensities with [INP](INP) & [OUT](OUT)
+### Reading and setting color port intensities using [INP](INP) and [OUT](OUT)
 
 * Legacy code may use [INP](INP) and [OUT](OUT) to read or set color port intensities. **QB64** emulates VGA memory to maintain compatibility.
 * The same can be achieved using [_PALETTECOLOR](_PALETTECOLOR) (**recommended practice**).
@@ -157,7 +157,7 @@ Printing in fullscreen SCREEN 0 mode with a color background under the text only
 ```vb
 
 SCREEN 0: _FULLSCREEN ' used for fullscreen instead of window
-COLOR 14, 6: LOCATE 4, 4: PRINT "Hello!" 
+COLOR 30, 6: LOCATE 12, 4: PRINT "Hello!"
 
 ```
 
@@ -175,7 +175,6 @@ COLOR 9: PRINT "Hello"
 
 ```text
 
-OutputStartBG7
 Hello
 
 ```
@@ -207,6 +206,72 @@ WORLD
 
 ```
 
+Doing the same as Example 5 but in only a few lines:
+
+```vb
+
+SCREEN 0
+text$ = "HelloWorld"
+FOR textpos = 1 TO LEN(text$)
+  COLOR textpos
+  IF textpos <> 5 THEN PRINT MID$(text$, textpos, 1);
+  IF textpos = 5 THEN PRINT MID$(text$, textpos, 1)    'start print on next row
+NEXT
+
+
+```
+
+```text
+
+Hello
+World
+
+```
+
+> *Explanation:*Semicolon(;) means that the next PRINT happens on the same line, we don't want that when it comes to position 5 so when it is at position 5 the next PRINT will move to the next line (when it isn't at position 5 we want it to continue printing the letter side-by-side on the same line though).
+
+Since SCREEN 0 only uses background colors 0 to 7 by default, use [_PALETTECOLOR](_PALETTECOLOR) to change color intensities of color 0.
+
+```vb
+
+_PALETTECOLOR 0, _RGB32(255, 255, 255) 'change color 0 intensity
+_PALETTECOLOR 8, _RGB32(0, 0, 0) 'change color 8 intensity
+
+COLOR 8: PRINT "Black on bright white!"
+
+```
+
+```text
+
+Black on bright white!
+
+```
+
+----
+
+> *Explanation:* Since QB64 does not have [DAC](DAC) [SCREEN](SCREEN) 0 limitations, changing color intensities for custom background colors is possible.
+
+Changing light gray text in [SCREEN](SCREEN) 0 to a 32 bit custom color using a [LONG](LONG) HTML hexadecimal value:
+
+```vb
+
+COLOR 7
+PRINT "Color 7 is gray"
+K$ = INPUT$(1)
+_PALETTECOLOR 7, &HFFDAA520 ' FF alpha makes the color translucent
+PRINT "Color 7 is now Goldenrod in SCREEN 0!
+
+```
+
+```text
+
+Color 7 is gray
+Color 7 is now Goldenrod in SCREEN 0!
+
+```
+
+> *Explanation:* [_RGB32](_RGB32) could be used to make custom 32 bit colors or HTML values could be used after &HFF for solid colors.
+
 ## See Also
 
 * [$COLOR]($COLOR) (metacommand)
@@ -221,5 +286,5 @@ WORLD
 * [_DEFAULTCOLOR](_DEFAULTCOLOR)
 * [_BACKGROUNDCOLOR](_BACKGROUNDCOLOR)
 * [_PALETTECOLOR](_PALETTECOLOR)
-* [Windows_Libraries#Color_Dialog_Box](Windows-Libraries#Color_Dialog_Box)
+* [Windows Libraries](Windows-Libraries)
 * [Hexadecimal Color Values](http://www.w3schools.com/html/html_colornames.asp)

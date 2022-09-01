@@ -15,9 +15,9 @@ The [_MEMGET](_MEMGET) function returns a value from a specific memory block nam
 
 * memoryBlock.[OFFSET](OFFSET) returns the starting byte position of the block. Add bytes to move into the block.
 * The variable type held in the memory block can determine the next bytePosition to read. 
-* [LEN](LEN) can be used to determine the byte size of numerical or user defined variable [type](type)s regardless of the value held.
+* [LEN](LEN) can be used to determine the byte size of numerical or user defined variable [Variable Types](Variable-Types)s regardless of the value held.
 * [STRING](STRING) values should be of a defined length. Variable length strings can actually move around in memory and not be found.
-* **_MEMGET variable values that are assigned a variable [type](type) other than a memory type do not need to be freed.**
+* **_MEMGET variable values that are assigned a variable [Variable Types](Variable-Types) other than a memory type do not need to be freed.**
 
 ## Example(s)
 

@@ -94,8 +94,6 @@ CLOSE #1
 
 ```
 
-Code by Ted Weissgerber
-
 > *Explanation:* Examples 3 and 4 encrypt and decrypt a file up to 32 thousand bytes. [INPUT$](INPUT$) can only get strings less than 32767 characters. The upper and lower case letter characters are the only ones altered, but the encryption and decryption rely on the fact that most text files do not use the code characters above 193. You could alter any character from ASCII 32 to 125 without problems using the 130 adder. No [ASCII](ASCII) code above 255 is allowed. Don't alter the codes below code 32 as they are control characters. Specifically, characters 13 and 10 (CrLf) may be used for line returns in text files.
 
 ## See Also

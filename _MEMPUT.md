@@ -16,7 +16,7 @@ The [_MEMPUT](_MEMPUT) statement writes data to a portion of a designated memory
 * The _MEMPUT statement is similar to the [PUT](PUT) file statement, but bytePosition is required.
 * The memoryBlock.[OFFSET](OFFSET) returns the starting byte position of the block. Add bytes to move into the block.
 * The variable type held in the memory block can determine the next *byte position* to write a value. 
-* [LEN](LEN) can be used to determine the byte size of numerical or user defined variable [type](type)s regardless of the value held.
+* [LEN](LEN) can be used to determine the byte size of numerical or user defined variable [Variable Types](Variable-Types)s regardless of the value held.
 * [STRING](STRING) values should be of a defined length. Variable length strings can actually move around in memory and not be found.
 
 ## Example(s)

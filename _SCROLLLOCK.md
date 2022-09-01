@@ -1,9 +1,13 @@
-DISPLAYTITLE: _SCROLLLOCK
 The [_SCROLLLOCK](_SCROLLLOCK) statement sets the state of the Scroll Lock key.
 
 ## Syntax
 
 > [_SCROLLLOCK](_SCROLLLOCK) {ON|OFF|_TOGGLE}
+
+## Availability
+
+* Version 1.4 and up.
+* [Keywords currently not supported by QB64](Keywords-currently-not-supported-by-QB64).
 
 ## See Also
 

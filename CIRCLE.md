@@ -2,7 +2,7 @@ The [CIRCLE](CIRCLE) statement is used in graphic [SCREEN (statement)](SCREEN-(s
 
 ## Syntax
 
-> [CIRCLE](CIRCLE) [[STEP](STEP)]**(**column**,** row**),** radius%**,** [drawColor%][, startRadian!, stopRadian!] [, aspect!]
+> [CIRCLE](CIRCLE) [STEP]**(**column**,** row**),** radius%**,** [drawColor%][, startRadian!, stopRadian!] [, aspect!]
 
 ## Parameter(s)
 
@@ -139,8 +139,6 @@ LOOP UNTIL INKEY$ <> "" 'stop program if user presses a key
 
 
 ```
-
-code by Terry Ritchie
 
 ## See Also
 

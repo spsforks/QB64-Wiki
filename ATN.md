@@ -84,8 +84,6 @@ END FUNCTION
 
 ```
 
-Function by Galleon
-
 ## See Also
 
 * [_PI](_PI) (QB64 function)

@@ -43,7 +43,6 @@ PRINT "READY"; s&
 _SNDPLAY s&
 _SNDLOOP s&
 
-
 xleft = -1
 xright = 1
 DO

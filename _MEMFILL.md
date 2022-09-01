@@ -10,7 +10,7 @@ The [_MEMFILL](_MEMFILL) statement converts a value to a specified type, then fi
 * memoryBlock.OFFSET is the starting offset of the above referenced memory block.
 * The fillBytes is the number of bytes to fill the memory block.
 * The value is the value to place in the memory block at the designated OFFSET position. 
-* A literal or variable value can be optionally set [AS](AS) a variable [type](type) appropriate for the memory block.
+* A literal or variable value can be optionally set [AS](AS) a variable [Variable Types](Variable-Types) appropriate for the memory block.
 
 ## Description
 

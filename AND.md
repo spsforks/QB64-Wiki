@@ -14,7 +14,7 @@ The logical [AND](AND) numerical operator compares two values in respect of thei
 
 The results of the bitwise logical operations, where *A* and *B* are operands, and *T* and *F* indicate that a bit is set or not set:
 
-| A | B |   | [NOT](NOT)�B | A�[AND](AND)�B | A�[OR](OR)�B | A�[XOR](XOR)�B | A�[EQV](EQV)�B | A�[IMP](IMP)�B |
+| A | B |   | [NOT](NOT) B | A [AND](AND) B | A [OR](OR) B | A [XOR](XOR) B | A [EQV](EQV) B | A [IMP](IMP) B |
 | - | - | - | - | - | - | - | - | - |
 | T | T |   | F | T | T | F | T | T |
 | T | F |   | T | F | T | T | F | F |

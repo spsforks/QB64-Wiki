@@ -20,7 +20,7 @@ The [_SHR](_SHR) function is used to shift the bits of a numerical value to the 
 
 ## Availability
 
-* **Version 1.3 and up**.
+* Version 1.3 and up.
 
 ## Example(s)
 

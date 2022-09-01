@@ -1,12 +1,12 @@
-The [_PRINTMODE](_PRINTMODE-(function)) function returns the current [_PRINTMODE](_PRINTMODE) status as a numerical value from 1 to 3 in graphic screen modes.
+The [_PRINTMODE (function)](_PRINTMODE-(function)) function returns the current [_PRINTMODE](_PRINTMODE) status as a numerical value from 1 to 3 in graphic screen modes.
 
 ## Syntax
 
 > currentPrintMode = [_PRINTMODE](_PRINTMODE-(function))[(imageHandle&)]
 
-## Parameters
+## Parameter(s)
 
-* If no imageHandle& is given, the current [destination](_DEST) [SCREEN](SCREEN) page or image is assumed.
+* If no imageHandle& is given, the current [_DEST](_DEST) [SCREEN](SCREEN) page or image is assumed.
 
 ## Description
 

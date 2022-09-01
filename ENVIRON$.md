@@ -119,8 +119,6 @@ END SUB
 
 ```
 
-Adapted from code by Dav
-
 > *Explanation:* The SUB program finds the current program's path and user's desktop path. It then creates the shortcut on the desktop with a program icon. The custom icon should be in the program's folder. If an environmental path is not found, the shortcut is placed in the program's folder. The SUB can be added to any program. 
 > **NOTE:** A temorary file named PRGMDIR.INF is created and deleted in the example above.
 

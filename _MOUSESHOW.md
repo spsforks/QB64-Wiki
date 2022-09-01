@@ -25,7 +25,7 @@ The [_MOUSESHOW](_MOUSESHOW) statement displays the mouse cursor and can change 
 
 ## Example(s)
 
-**QB64 1.000 and up** allow special cursors to be displayed by using special string parameters:
+Special cursors can be displayed by using special string parameters:
 
 ```vb
 
@@ -37,10 +37,12 @@ _MOUSESHOW "vertical": _DELAY 0.5
 _MOUSESHOW "horizontal": _DELAY 0.5
 _MOUSESHOW "topleft_bottomright": _DELAY 0.5
 _MOUSESHOW "topright_bottomleft": _DELAY 0.5 
+_MOUSESHOW "wait": _DELAY 0.5
+_MOUSESHOW "help": _DELAY 0.5
 
 ```
 
-> **Note:** There is no hourglass, stopwatch or spinning colorful wheel in the list. The fact is that these typically only appear in a program when something has gone terribly wrong and the program has crashed or frozen.
+> **Note:** The hourglass and question mark cursors are available in v1.5 and above.
 
 ## See Also
 

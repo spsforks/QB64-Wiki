@@ -1,17 +1,14 @@
 The [_WHEEL](_WHEEL) function returns the relative position of a specified wheel number on a controller device.
 
-
 ## Syntax
 
 >  move = [_WHEEL](_WHEEL)(wheelNumber%)
-
 
 * Returns -1 when scrolling up and 1 when scrolling down with 0 indicating no movement since last read.
 * Add consecutive wheel values to determine a cumulative value over time for scrolling or moving objects.
 * wheelNumber% must be a number which does not exceed the number of wheels found by the [_LASTWHEEL](_LASTWHEEL) function.
 * When a mouse indicates it has 3 wheels, the first two are for relative movement reads. The third wheel is for scrolling.
 * **The number of [_DEVICES](_DEVICES) must be read before using [_DEVICE$](_DEVICE$), [_DEVICEINPUT](_DEVICEINPUT) or [_LASTWHEEL](_LASTWHEEL).**
-
 
 ## Example(s)
 
@@ -43,8 +40,8 @@ LOOP UNTIL INKEY$ = CHR$(27) 'escape key exit
 END 
 
 ```
->  *Note:* When there is no device control to read, a [FOR...NEXT](FOR...NEXT) n = 1 TO 0 loop will not run thus avoiding a control function read error.
 
+>  *Note:* When there is no device control to read, a [FOR...NEXT](FOR...NEXT) n = 1 TO 0 loop will not run thus avoiding a control function read error.
 
 Why does a mouse have 3 wheels? Relative x and y movements can be read using the first 2 _WHEEL reads.
 
@@ -62,8 +59,8 @@ DO: _LIMIT 30  'main loop
 LOOP UNTIL INKEY$ = CHR$(27) 
 
 ```
->  *Explanation:* Referencing the [_MOUSEMOVEMENTX](_MOUSEMOVEMENTX) function hides the mouse and sets the mouse to a relative movement mode which can be read by [_WHEEL](_WHEEL). [_DEVICEINPUT](_DEVICEINPUT)(2) returns -1 (true) only when the mouse is moved, scrolled or clicked.
 
+>  *Explanation:* Referencing the [_MOUSEMOVEMENTX](_MOUSEMOVEMENTX) function hides the mouse and sets the mouse to a relative movement mode which can be read by [_WHEEL](_WHEEL). [_DEVICEINPUT](_DEVICEINPUT)(2) returns -1 (true) only when the mouse is moved, scrolled or clicked.
 
 ## See Also
 
@@ -73,7 +70,3 @@ LOOP UNTIL INKEY$ = CHR$(27)
 * [_DEVICES](_DEVICES), [_DEVICE$](_DEVICE$), [_DEVICEINPUT](_DEVICEINPUT)
 * [_MOUSEMOVEMENTX](_MOUSEMOVEMENTX), [_MOUSEMOVEMENTY](_MOUSEMOVEMENTY)
 * [Controller Devices](Controller-Devices)
-
-
-
-

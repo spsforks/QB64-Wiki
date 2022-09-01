@@ -4,6 +4,10 @@ The [_R2D](_R2D) function converts a **radian** value into a **degree** value.
 
 > result! = [_R2D](_R2D)(num)
 
+## Availability
+
+* Version 1.000 and up.
+
 ## Example(s)
 
 Converting Radian into Degree.

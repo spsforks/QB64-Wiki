@@ -1,25 +1,20 @@
 The [_WINDOWHASFOCUS](_WINDOWHASFOCUS) function returns true (-1) if the current program's window has focus. Windows-only.
 
-
 ## Syntax
 
 >  hasFocus%% = [_WINDOWHASFOCUS](_WINDOWHASFOCUS)
-
 
 ## Description
 
 * The function returns true (-1) if the current program is the topmost window on the user's desktop and has focus. If the current program is running behind another window, the function returns false (0).
 * [Keywords currently not supported](Keywords_currently_not_supported_by_QB64).
 
-
 ## Availability
 
-* **Build 20170924/68**.
-
-
-## Example(s)
+* Build 20170924/68 and up.
 
 ## Example(s)
+
  Detecting if the current program has focus. Windows and Linux-only.
 
 ```vb
@@ -39,13 +34,9 @@ DO
 LOOP
 
 ```
->  *Explanation:* The program will display *"*** Hi There! ***"* while the window is the topmost and is being manipulated by the user. If another window, the taskbar or the desktop are clicked, the program window loses focus and the message *"(ain't nobody looking...)"* is displayed.
 
+>  *Explanation:* The program will display *"*** Hi There! ***"* while the window is the topmost and is being manipulated by the user. If another window, the taskbar or the desktop are clicked, the program window loses focus and the message *"(ain't nobody looking...)"* is displayed.
 
 ## See Also
 
 * [_SCREENEXISTS](_SCREENEXISTS)
-
-
-
-

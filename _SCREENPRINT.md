@@ -61,7 +61,6 @@ LOOP
 PRINT
 PRINT "NOTEPAD detected as OPEN and MAXIMIZED"
 
-
 _SCREENPRINT "HELLO WORLD"
 SLEEP 2
 _SCREENPRINT CHR$(8) + CHR$(8) + CHR$(8) + CHR$(8) + CHR$(8) 'backspace 5 characters

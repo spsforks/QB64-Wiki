@@ -18,7 +18,7 @@ The [_RESETBIT](_RESETBIT) function is used to set a specified bit of a numerica
 
 ## Availability
 
-* **Version 1.4 and up**.
+* Version 1.4 and up.
 
 ## Example(s)
 

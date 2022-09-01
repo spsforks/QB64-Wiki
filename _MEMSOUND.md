@@ -2,9 +2,9 @@ The [_MEMSOUND](_MEMSOUND) function returns a [_MEM](_MEM) value referring to a 
 
 ## Syntax
 
-> imageBlock = [_MEMSOUND](_MEMSOUND)[(soundHandle&, channel)]
+> imageBlock = [_MEMSOUND](_MEMSOUND)[(soundHandle&, channel%)]
 
-## Parameters
+## Parameter(s)
 
 * The imageBlock [_MEM](_MEM) type variable holds the read-only elements .OFFSET, .SIZE, .ELEMENTSIZE, and .SOUND.
   * .ELEMENTSIZE will contain the number of bytes-per-sample the audio contains. Usually returns 2 (16-bit audio).
@@ -28,7 +28,7 @@ Checking that a sound file is stereo.
 ```vb
 
 song& = _SNDOPEN("song.wav") 'replace song.wav with a sound file you have
-IF song&amp; = 0 THEN PRINT "Load failed.": END
+IF song& = 0 THEN PRINT "Load failed.": END
 
 DIM leftchannel AS _MEM, rightchannel AS _MEM
 leftchannel = _MEMSOUND(song&, 1)
@@ -41,7 +41,7 @@ ELSEIF rightchannel.SIZE = 0 AND leftchannel.SIZE = 0 THEN
     PRINT "An error occurred."
 END IF
 
-_SNDCLOSE song& 'closing the sound releases the mem blocks '' ''
+_SNDCLOSE song& 'closing the sound releases the mem blocks
 
 ```
 
@@ -77,7 +77,7 @@ DO
     _LIMIT 500
 LOOP
 
-_SNDCLOSE song& 'closing the sound releases the mem blocks '' ''
+_SNDCLOSE song& 'closing the sound releases the mem blocks
 
 ```
 

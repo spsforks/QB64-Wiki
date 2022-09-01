@@ -11,7 +11,7 @@ The [_RESIZEHEIGHT](_RESIZEHEIGHT) function returns the user resized screen pixe
 
 ## Availability
 
-* **Version 1.000 and up**.
+* Version 1.000 and up.
 
 ## Example(s)
 
@@ -24,7 +24,7 @@ $RESIZE:ON
 s& = _NEWIMAGE(300, 300, 32)
 SCREEN s&
 
-bee& = _LOADIMAGE("qb64_trans.png") 'any image
+bee& = _LOADIMAGE("qb64_trans.png") 'replace with your own image
 
 DO
     IF _RESIZE THEN

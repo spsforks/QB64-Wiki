@@ -18,8 +18,8 @@ The [_MOUSEMOVE](_MOUSEMOVE) statement moves the mouse pointer to a new position
 
 ## Availability
 
-* **Versions prior to 1.000** (Version 1.000 had this function disabled for compatibility reasons.)
-* **Version 1.1 and up**
+* Versions prior to 1.000 (Version 1.000 had this function disabled for compatibility reasons).
+* Version 1.1 and up.
 
 ## Example(s)
 
