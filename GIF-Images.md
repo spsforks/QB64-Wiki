@@ -2,8 +2,6 @@
 
 GIF files can be one frame or animated images made up of many frames that are displayed at a set frame rate. The following program allows you to view either kind of image or use them in a program. [_LOADIMAGE](_LOADIMAGE) can only return one frame of an animated image. 
 
-**NOTE: Include the [FILELIST$ (function)](FILELIST$-(function)) or create your own File INPUT routine!**
-
 ```vb
 
 '#######################################################################################
@@ -410,10 +408,6 @@ END SUB
 
 
 ```
-
-**Using with $INCLUDE: 'FILELIST$.BM' File**
-
-Copy the code from the [FILELIST$ (function)](FILELIST$-(function)) or [FILELIST$](FILELIST$) page to a text file named *_FILE$.BM* and use when compiling. Just save with .BM extension (*Save As ALL files*) in Notepad or other text editor. The file is not necessary after the program is compiled.
 
 NOTE: This has been reported to only work using 256-color images, and you need to keep the code loading into a 32-bit image destination as the source?
 
