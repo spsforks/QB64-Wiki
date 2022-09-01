@@ -10,7 +10,7 @@ The [ON STRIG(n)](ON-STRIG(n)) statement is an event procedure that directs prog
 * There are two buttonFunction for each button. The even numbered function is always the event of any press since last read.
 * The statement sends the procedure to a line number, line label or [SUB](SUB) procedure when a button event occurs.
 
-## QBasic/QuickBASIC
+## QBasic
 
 * In QBasic, value of *n* could only be a number from 0 to 3 only as it could only monitor 2 joystick buttons and 2 joysticks.
 

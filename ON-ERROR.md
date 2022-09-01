@@ -4,14 +4,13 @@
 
 >  [ON ERROR](ON-ERROR) [GOTO](GOTO) {*lineNumber*|*lineLabel*}
 
-
 ## Description
 
 * An *untreated error* in a program will cause execution to stop and an error message is displayed to the user, who can choose to continue (ignore the error - which could have unexpected results) or end the program.
 * Use [ON ERROR](ON-ERROR) when your program performs operations that are likely to generate errors, like file access operations.
 * [ON ERROR](ON-ERROR) statements can be in the main module code or in [SUB](SUB) or [FUNCTION](FUNCTION) procedures. 
 * [ON ERROR](ON-ERROR) statements take precedence in the order they are encountered. It will also handle any subroutine errors.
-* **ON ERROR GOTO 0** can be used to disable custom [ON ERROR](ON ERROR) trapping and give default error messages. 
+* **ON ERROR GOTO 0** can be used to disable custom [ON ERROR](ON-ERROR) trapping and give default error messages.
 * A subsequent ON ERROR statement will override the previous one.
 * [GOTO](GOTO) is required in the statement. Cannot use [GOSUB](GOSUB).
 * Comment out [ON ERROR](ON-ERROR) to find specific error locations. QB64 can return the file line position with [_ERRORLINE](_ERRORLINE)
@@ -70,14 +69,8 @@ END SUB
 
 ## See Also
 
-
+* [ERR](ERR), [ERL](ERL), [RESUME](RESUME)
 * [ON...GOTO](ON...GOTO)
-
-* [ERL](ERL) (last line number used before an error occurred, when line numbers are used) 
-* [ERR](ERR) (error code number) 
-* [ERROR](ERROR) (simulates error)
-* [_ERRORLINE](_ERRORLINE) (actual text code line)
-* [_ERRORMESSAGE$](_ERRORMESSAGE$) (last error message or a specific message)
-* [_INCLERRORFILE$](_INCLERRORFILE$) (name of [$INCLUDE](INCLUDE) file where error occurred, when $INCLUDE files are used
-* [_INCLERRORLINE](_INCLERRORLINE) (returns the line number in an [$INCLUDE](INCLUDE) file that caused the most recent error, when an $INCLUDE file is being used)
-* [Error Codes](ERROR-Codes) (list of all QB64 errors)
+* [_ERRORLINE](_ERRORLINE), [_INCLERRORLINE](_INCLERRORLINE), [_INCLERRORFILE$](_INCLERRORFILE$), [_ERRORMESSAGE$](_ERRORMESSAGE$)
+* [ERROR](ERROR) (simulates an error)
+* [ERROR Codes](ERROR-Codes)

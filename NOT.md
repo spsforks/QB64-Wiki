@@ -11,13 +11,35 @@
 * Often called a negative logic operator, it returns the opposite of a value as true or false.
 * Values are changed by their bit values so that each bit is changed to the opposite of on or off. See example 3 below.
 
-MISSING: Relational Table
+**Relational Operators:**
+
+| Symbol | Condition | Example Usage |
+| -- | -- | -- |
+| = | Equal | IF a = b THEN |
+| <> | NOT equal | IF a <> b THEN |
+| < | Less than | IF a < b THEN |
+| > | Greater than | IF a > b THEN |
+| <= | Less than or equal | IF a <= b THEN |
+| >= | Greater than or equal | IF a >= b THEN |
+
+The results of the bitwise logical operations, where *A* and *B* are operands, and *T* and *F* indicate that a bit is set or not set:
+
+| A | B |   | [NOT](NOT) B | A [AND](AND) B | A [OR](OR) B | A [XOR](XOR) B | A [EQV](EQV) B | A [IMP](IMP) B |
+| - | - | - | - | - | - | - | - | - |
+| T | T |   | F | T | T | F | T | T |
+| T | F |   | T | F | T | T | F | F |
+| F | T |   | F | F | T | T | F | T |
+| F | F |   | T | F | F | F | T | T |
+
+**[Relational Operations](Relational-Operations) return negative one (-1, all bits set) and zero (0, no bits set) for *true* and *false*, respectively.**
+This allows relational tests to be inverted and combined using the bitwise logical operations.
 
 ## Example(s)
 
 Alternating between two conditions in a program loop.
 
 ```vb
+
 DO
 switch = NOT switch       'NOT changes value from -1 to 0 and vice-versa
 LOCATE 10, 38
@@ -31,6 +53,7 @@ LOOP UNTIL k$ = CHR$(27) ' escape key quit
 Reading a file until it reaches the End Of File.
 
 ```vb
+
 DO WHILE NOT EOF(1) 
   INPUT #1, data1, data2, data3
 LOOP 

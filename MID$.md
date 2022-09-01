@@ -100,8 +100,6 @@ PRINT USING "##.###### seconds for _MEMGET Byte"; t5# - t4#
 
 ```
  
-Code by Steve McNeill
-
 ```text
 
 6.593750 seconds for MID$

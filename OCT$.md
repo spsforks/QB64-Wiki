@@ -1,8 +1,8 @@
-This function returns the octal (base 8) representation of any numeric value.
+The [OCT$](OCT$) function returns the base-8 octal representation of an [INTEGER](INTEGER), [LONG](LONG) or [_INTEGER64](_INTEGER64) value as a [STRING](STRING).
 
 ## Syntax
 
-> octvalue$ = [OCT$](OCT$)(number)
+> result$ = [OCT$](OCT$)(number)
 
 ## Parameters
 
@@ -11,30 +11,29 @@ This function returns the octal (base 8) representation of any numeric value.
 
 ## Description
 
-* The function returns the base 8 (octal) representation of the given number as [STRING](STRING).
-* Different from [STR$](STR$), this function does not return a leading sign placeholder space, so no [LTRIM$](LTRIM$) to strip that space from positive numbers is necessary.
-* [VAL](VAL) can convert the returned oct string value back to a decimal value by prefixing the string with "[&O](&O)".
-** Eg. `decimal = VAL("&O" + octvalue$)`.
+* The [OCT$](OCT$) function returns the octal (base-8) representation of number.
+* number can be any integer value.
+* No leading space is returned.
+* [VAL](VAL) can convert octal string values to decimal when the "&O" prefix is added.
 
 ## Example(s)
 
-Example 1: Comparing decimal, hexadecimal, octal and binary string values from 0 to 15.
+Outputs all of the decimal, hexadecimal and octal digits:
 
 ```vb
 
-tabletop$ = " Decimal | Hexadecimal | Octal "
-tablesep$ = "---------+-------------+-------"
-tableout$ = "  \ \    |      \\     |   \\  " 'the PRINT USING template
+LOCATE 2, 20: PRINT " Decimal | Hexadecimal | Octal "
+LOCATE 3, 20: PRINT "---------+-------------+-------"
+        template$ = "    ##   |     \\      |   ##  "
 
-LOCATE 2, 10: PRINT tabletop$
-LOCATE 3, 10: PRINT tablesep$
 FOR n% = 0 TO 15
-    LOCATE 4 + n%, 10: PRINT USING tableout$; STR$(n%); HEX$(n%); OCT$(n%)
+  LOCATE 4 + n%, 20: PRINT USING template$; n%; HEX$(n%); VAL(OCT$(n%))
 NEXT n%
+
 
 ```
 
-Note: Although the decimal numbers 0-15 have a maximum width of 2 digits only, an extra space in the *tableout$* template is needed when using the (fixed width string) slash output format, as [STR$](STR$) values contain a leading sign placeholder space.
+> *Note:* The actual octal value is converted by [VAL](VAL) directly back to a numerical value by **not using** the "&H" prefix.
 
 ```text
 
@@ -78,6 +77,6 @@ Converting Oct value to Decimal: 255
 
 ## See Also
 
-* [HEX$](HEX$), [STR$](STR$), [VAL](VAL)
-* [&B](&B) (binary), [&H](&H) (hexadecimal), [&O](&O) (octal)
+* [HEX$](HEX$), [VAL](VAL)
+* [&H](&H) (hexadecimal), [&O](&O) (octal), [&B](&B) (binary)
 * [Base Comparisons](Base-Comparisons)

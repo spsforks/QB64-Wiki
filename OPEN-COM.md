@@ -2,7 +2,7 @@ The [OPEN COM](OPEN-COM) statement is used to access a computer's serial port CO
 
 ## Syntax
 
-> **OPEN** "COMn: *Speed*, *Parity*, *Bits*, *Stopbit*, [*Options*]" [FOR {[RANDOM](RANDOM)|[BINARY](BINARY)|[OUTPUT](OUTPUT)|[INPUT (file mode)](INPUT (file mode))}] AS #*P* [LEN = byteSize]
+> **OPEN** "COMn: *Speed*, *Parity*, *Bits*, *Stopbit*, [*Options*]" [FOR {[RANDOM](RANDOM)|[BINARY](BINARY)|[OUTPUT](OUTPUT)|[INPUT (file mode)](INPUT-(file-mode))}] AS #*P* [LEN = byteSize]
 
 ## Parameter(s)
 
@@ -11,16 +11,16 @@ The [OPEN COM](OPEN-COM) statement is used to access a computer's serial port CO
 * *Bits* = number of bits/byte: Valid numbers: 5, 6, 7 or **8**
 * *Stopbit* = number of stop bits: Valid numbers: **1**, 1.5 or 2
 * Optional COM port *Options* (separated by commas):
-  - ASC : [ASCII](ASCII) byte mode. End of line = [CHR$](CHR$)(13). End of file = CHR$(26)
-  - BIN : [Binary](Binary) byte mode. Default mode if ASC is not used(option not required).
-  - *Below ms is the timeout in milliseconds 1 to 65535. Zero ignores a timeout. Default without ms = 1000 :*
-  - CD[ms] : Time until timeout of DCD (Carrier Detect) line in. CD0 ignores timeouts.
-  - CS[ms] : Time until timeout of CTS (Clear to Send) line in. CS0 ignores timeouts.
-  - DS[ms] : Time until timeout of DSR (Data Set Ready) line in. DS0 ignores timeouts.
-  - OP[ms] : Time until data lines become active. If timeout then OPEN fails, OP0 ignores timeouts.
-  - RB[b] : Size of receive buffer in bytes when used. Default when not used = 512 bytes
-  - TB[b] : Size of transmit buffer in bytes when used. Default when not used = 512 bytes
-  - RS  : Supress detection of Request to Send (RTS) line.
+  * ASC : [ASCII](ASCII) byte mode. End of line = [CHR$](CHR$)(13). End of file = CHR$(26)
+  * BIN : [Binary](Binary) byte mode. Default mode if ASC is not used(option not required).
+> *Below ms is the timeout in milliseconds 1 to 65535. Zero ignores a timeout. Default without ms = 1000 :*
+  * CD[ms] : Time until timeout of DCD (Carrier Detect) line in. CD0 ignores timeouts.
+  * CS[ms] : Time until timeout of CTS (Clear to Send) line in. CS0 ignores timeouts.
+  * DS[ms] : Time until timeout of DSR (Data Set Ready) line in. DS0 ignores timeouts.
+  * OP[ms] : Time until data lines become active. If timeout then OPEN fails, OP0 ignores timeouts.
+  * RB[b] : Size of receive buffer in bytes when used. Default when not used = 512 bytes
+  * TB[b] : Size of transmit buffer in bytes when used. Default when not used = 512 bytes
+  * RS  : Supress detection of Request to Send (RTS) line.
 
 ## Description
 
@@ -35,7 +35,7 @@ The [OPEN COM](OPEN-COM) statement is used to access a computer's serial port CO
 * The [LEN](LEN) statement is also optional. The default record size is 512 bytes when not used.
 * Use the [LOC](LOC)(portnumber) function to determine that there is data in the receive buffer when the value is greater than 0.
 * OPEN AS number can use a [FREEFILE](FREEFILE) value. Numbers used by files already open **cannot** be used by OPEN COM.
-* [Keywords currently not supported by QB64#Keywords _Not_Supported_in_Linux_or_MAC_OSX_versions](Keywords-currently-not-supported-by-QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions)
+* [Keywords currently not supported](Keywords-currently-not-supported-by-QB64)
 
 ## Example(s)
 
@@ -123,7 +123,6 @@ LOOP
 END 
 
 ```
-<sub>Code courtesy of forum member Hydrofoiler</sub>
 
 ## See Also
 
@@ -132,4 +131,4 @@ END
 * [LOC](LOC), [INKEY$](INKEY$), [OPEN](OPEN)
 * [GET](GET), [PUT](PUT)
 * [Port Access Libraries](Port-Access-Libraries) (Includes full LPT and COM port descriptions with downloadable DLL library)
-* [Windows_Libraries#Windows_Ports](Windows-Libraries#Windows_Ports)
+* [Windows Libraries](Windows-Libraries)

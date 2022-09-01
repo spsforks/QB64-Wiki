@@ -13,7 +13,7 @@ The [ON KEY(n)](ON-KEY(n)) statement defines a line number or label to go to (or
 
      **1 to 10**.............Reserved **F1 to F10** function keys only.
      **11, 12, 13 and 14**...Reserved **Up, Left, Right and Down** numeric keypad arrows only
-     **15 to 29**............**user-defined keys** using value: [CHR$](CHR$)(keyflag) + [CHR$](CHR$)([Keyboard scancodes](Keyboard scancodes))
+     **15 to 29**............**user-defined keys** using value: [CHR$](CHR$)(keyflag) + [CHR$](CHR$)([Keyboard scancodes](Keyboard-scancodes))
      **30 and 31**...........Reserved **F11 and F12** function keys only.
 
 ```

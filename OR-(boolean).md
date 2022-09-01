@@ -10,7 +10,16 @@ The **OR** conditional operator evaluates an expression to true (-1) if any of t
 * Parenthesis may be used to clarify the order of comparisons in an evaluation.
 * Not to be confused with the [AND](AND) and [OR](OR) numerical operations.
 
-MISSING: Relational Table
+**Relational Operators:**
+
+| Symbol | Condition | Example Usage |
+| -- | -- | -- |
+| = | Equal | IF a = b THEN |
+| <> | NOT equal | IF a <> b THEN |
+| < | Less than | IF a < b THEN |
+| > | Greater than | IF a > b THEN |
+| <= | Less than or equal | IF a <= b THEN |
+| >= | Greater than or equal | IF a >= b THEN |
 
 ## Example(s)
 

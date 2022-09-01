@@ -2,7 +2,7 @@ The [OPEN](OPEN) statement is used to open a file or [OPEN COM](OPEN-COM) serial
 
 ## Syntax
 
-> [OPEN](OPEN) fileName$ [**FOR** mode] [{[ACCESS](ACCESS)|{[LOCK](LOCK)|SHARED}} [{READ|WRITE}] [AS](AS) [#]fileNumber& [LEN = recordLength]
+> [OPEN](OPEN) fileName$ [**FOR** mode] [{ACCESS|{LOCK|SHARED}} [{READ|WRITE}] [AS](AS) [#]fileNumber& [LEN = recordLength]
 
 ### Legacy *GW-BASIC* syntax
 
@@ -22,11 +22,11 @@ The [OPEN](OPEN) statement is used to open a file or [OPEN COM](OPEN-COM) serial
 * **QB64 will allocate 4 bytes of memory for every possible file number up to the highest number used in a program.**
 * mode defaults to RANDOM if the mode or FOR access statement is omitted. (see open modes described below)
 * **Only the fileName$, fileNumber& and LEN = recordLength values can use variable values in the QBasic syntax.**
-* If [LEN](LEN) = is ommitted, sequential file record sizes default to 512 and [RANDOM](RANDOM) to 128 bytes in Qbasic.
+* If [LEN](LEN) = is ommitted, sequential file record sizes default to 512 and [RANDOM](RANDOM) to 128 bytes in QBasic.
 * fileName$ can be up to 255 characters with no limit on file name extension length in **QB64**. 
 * Once a file or port is opened, it can be used in any program procedure using the assigned file number. 
 * The **"SCRN:"** device is supported in **version 1.000 and up** (see Example 3).
-* **Devices such as "KYBD:", "CONS:", "COMn" and "LPTn:" are [Keywords currently not supported by QB64](Keywords currently not supported by QB64)**. 
+* **Devices such as "KYBD:", "CONS:", and "LPTn:" are [Keywords currently not supported by QB64](Keywords-currently-not-supported-by-QB64)**.
 >  **Note:** OPEN "LPTn" is not supported by QB64, but may be supported directly by your operating system. 
 * [OPEN COM](OPEN-COM) can also be used for serial port access in **QB64**.
 
@@ -34,7 +34,7 @@ The [OPEN](OPEN) statement is used to open a file or [OPEN COM](OPEN-COM) serial
 
 * Illegal **QB64** Windows filename characters are ** " * / \ | ? : < > **. Multiple dots (periods) are allowed.
 * Possible OPEN [ERROR Codes](ERROR-Codes) include "Bad file name or number", "Bad File Mode", "File Not Found" or "Path Not Found". 
-** An OPEN file not found error may occur if [CHR$](CHR$)(0) to (31) are used in a Windows file name.
+  * An OPEN file not found error may occur if [CHR$](CHR$)(0) to (31) are used in a Windows file name.
 * **QB64** does not have DOS file name limitations.
 
 ## Details
@@ -48,18 +48,17 @@ The [OPEN](OPEN) statement is used to open a file or [OPEN COM](OPEN-COM) serial
 
 ### File Access Modes
 
-FOR mode can be:
-
-* **OUTPUT**: Sequential mode creates a new file or erases an existing file for new program output. Use [WRITE (file statement)](WRITE-(file-statement)) to write numerical or text data or [PRINT (file statement)](PRINT-(file-statement)) for text. **OUTPUT clears files of all data** and clears the receive buffer on other devices such as [ON COM(n)](ON-COM(n)).
-* **APPEND**: Sequential mode creates a new file if it doesn't exist or appends program output to the end of an existing file. Use [WRITE (file statement)](WRITE-(file-statement)) for numerical or text data or [PRINT (file statement)](PRINT-(file-statement)) for text as in the OUTPUT mode. **APPEND does not remove previous data.** 
-* **INPUT** : Sequential mode **only reads input** from an existing file. **[ERROR Codes](ERROR-Codes) if file does not exist.** Use [INPUT (file statement)](INPUT-(file-statement)) for comma separated numerical or text data and [LINE INPUT (file statement)](LINE-INPUT-(file-statement)) or [INPUT$](INPUT$) to only read text data. **Use [_FILEEXISTS](_FILEEXISTS) or [_DIREXISTS](_DIREXISTS) to avoid errors.**
-* **BINARY**: Creates a new file when it doesn't exist or reads and writes to an existing binary file. Use [GET](GET) to read or [PUT](PUT) to write byte positions simultaneously. [LEN](LEN) = statements are ignored in this mode.
-* **RANDOM**: Creates a new file when it doesn't exist or reads or writes to an existing random file record. Use [GET](GET) or [PUT](PUT) to read or write to file records. A [LEN](LEN) = statement can define the byte size of a record (no LEN statement defaults to 128 bytes)
-* Modes **INPUT**, **BINARY** and **RANDOM** allow a file to be concurrently opened in a different mode and number.
+* FOR mode can be:
+  * **OUTPUT**: Sequential mode creates a new file or erases an existing file for new program output. Use [WRITE (file statement)](WRITE-(file-statement)) to write numerical or text data or [PRINT (file statement)](PRINT-(file-statement)) for text. **OUTPUT clears files of all data** and clears the receive buffer on other devices such as COM ports.
+  * **APPEND**: Sequential mode creates a new file if it doesn't exist or appends program output to the end of an existing file. Use [WRITE (file statement)](WRITE-(file-statement)) for numerical or text data or [PRINT (file statement)](PRINT-(file-statement)) for text as in the OUTPUT mode. **APPEND does not remove previous data.** 
+  * **INPUT** : Sequential mode **only reads input** from an existing file. **[ERROR Codes](ERROR-Codes) if file does not exist.** Use [INPUT (file statement)](INPUT-(file-statement)) for comma separated numerical or text data and [LINE INPUT (file statement)](LINE-INPUT-(file-statement)) or [INPUT$](INPUT$) to only read text data. **Use [_FILEEXISTS](_FILEEXISTS) or [_DIREXISTS](_DIREXISTS) to avoid errors.**
+  * **BINARY**: Creates a new file when it doesn't exist or reads and writes to an existing binary file. Use [GET](GET) to read or [PUT](PUT) to write byte positions simultaneously. [LEN](LEN) = statements are ignored in this mode.
+  * **RANDOM**: Creates a new file when it doesn't exist or reads or writes to an existing random file record. Use [GET](GET) or [PUT](PUT) to read or write to file records. A [LEN](LEN) = statement can define the byte size of a record (no LEN statement defaults to 128 bytes)
+  * Modes **INPUT**, **BINARY** and **RANDOM** allow a file to be concurrently opened in a different mode and number.
 
 #### GW-BASIC modes
 
-*Mode letter* is a variable or literal [STRING](STRING) letter value as one of the following:
+* *Mode letter* is a variable or literal [STRING](STRING) letter value as one of the following:
 
 * "A" = **APPEND**.
 * "B" = **BINARY**.
@@ -121,7 +120,6 @@ FOR i = 1 TO 2
 NEXT 
 
 ```
-<sub>code by Steve McNeill</sub>
 
 > *Note:* Linux or Mac file names can use a path destination such as ".\SCRN:" to use SCRN: as an actual file name. 
 
@@ -165,7 +163,7 @@ It was overwritten with this and deleted.
 ## See Also
  
 * [PRINT (file statement)](PRINT-(file-statement)), [INPUT (file statement)](INPUT-(file-statement))
-* [GET](GET), [PUT](PUT), [WRITE-(file-statement)](WRITE-(file-statement)) 
+* [GET](GET), [PUT](PUT), [WRITE (file statement)](WRITE-(file-statement))
 * [INPUT$](INPUT$), [LINE INPUT (file statement)](LINE-INPUT-(file-statement))
 * [CLOSE](CLOSE), [LOF](LOF), [EOF](EOF), [LOC](LOC)
 * [SEEK (statement)](SEEK-(statement)), [SEEK](SEEK)

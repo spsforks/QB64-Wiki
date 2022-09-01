@@ -10,7 +10,7 @@
 * The procedure must be used after the number value is determined or in a loop to monitor current user events.
 * **Note:** [SELECT CASE](SELECT-CASE) provides a much more convenient way of doing this task.
 
-## QBasic/QuickBASIC
+## QBasic
 
 * In QuickBASIC 4.5 the list could contain a maximum of 60 line numbers or labels, while **QB64** has no limit.
 

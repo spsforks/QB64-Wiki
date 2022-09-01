@@ -20,8 +20,6 @@ The [MOD](MOD) operator gives the remainder after division of one number by anot
 
 ## Example(s)
 
-
-
 ```vb
 
   I% = 100 \ 9 

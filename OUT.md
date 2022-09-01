@@ -15,10 +15,9 @@
 * OUT can be used to change color port and a limited number of other port settings in QB64.
 * Some settings may be set in a specific order to gain access to settings and [INP](INP) reads.
 * [SCREEN](SCREEN) modes determine the number of available color palette attributes from 2 to 256 in SCREEN 13.
-* Windows NT may block access to Parallel printer and Serial ports. See [Port Access Libraries](Port Access Libraries) or other DLLs.
+* Windows NT may block access to Parallel printer and Serial ports. See [Port Access Libraries](Port-Access-Libraries) or other DLLs.
 * [_PALETTECOLOR](_PALETTECOLOR) can also be used to set RGB intensity values using [_RGB32](_RGB32) values.
 * OUT can toggle the blinking attribute of SCREEN 0 color 16-31 for legacy code. [_BLINK](_BLINK) is the preferred method. (starting with build 20170816/61).
-
 
 ## Color Port Palette access using OUT
 
@@ -30,12 +29,12 @@
 
 > `OUT &H3C9, colorIntensity` : Writes RGB color intensity settings in order
 
-* Every 3 reads or writes, changes to next color attribute without a set
-* Color setting is Red, Green and Blue attribute intensities in order. 
-* Color attribute intensity values range from 0 to 63.
-* Some [DAC](DAC) color attribute intensities cannot be changed using OUT.
+  * Every 3 reads or writes, changes to next color attribute without a set
+  * Color setting is Red, Green and Blue attribute intensities in order. 
+  * Color attribute intensity values range from 0 to 63.
+  * Some [DAC](DAC) color attribute intensities cannot be changed using OUT.
 
-## QBasic/QuickBASIC
+## QBasic
 
 * In DOS, OUT accesses memory and hardware directly, unlike [POKE](POKE), and could cause PC damage.
 

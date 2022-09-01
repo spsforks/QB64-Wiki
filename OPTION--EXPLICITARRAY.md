@@ -11,8 +11,7 @@
 
 ## Error(s)
 
-* If used, [OPTION _EXPLICITARRAY](OPTION--EXPLICITARRAY) must be the very first statement in your program. No other statements can precede it (except for [$NOPREFIX]($NOPREFIX) or comment lines started with an [Apostrophe](Apostrophe) or [REM](REM)).
-* Do not use [OPTION _EXPLICITARRAY](OPTION--EXPLICITARRAY) in [$INCLUDE]($INCLUDE)d modules.
+* It's not advisable to use [OPTION _EXPLICITARRAY](OPTION--EXPLICITARRAY) in [$INCLUDE]($INCLUDE)d modules.
 
 ## Example(s)
 

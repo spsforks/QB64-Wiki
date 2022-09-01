@@ -25,4 +25,4 @@ NAME "BIGBAD.TXT" AS "BADWOLF.TXT"
 
 * [SHELL](SHELL), [MKDIR](MKDIR), [FILES](FILES) 
 * [CHDIR](CHDIR), [KILL](KILL), [RMDIR](RMDIR)
-* [Windows_Libraries#File_Dialog_Boxes](Windows-Libraries#File_Dialog_Boxes)
+* [Windows Libraries](Windows-Libraries)

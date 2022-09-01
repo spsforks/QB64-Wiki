@@ -26,7 +26,7 @@ The [ON_TIMER(n)](ON-TIMER(n)) statement sets up a timed event to be repeated at
 * **[SUB](SUB) parameter values are passed by value and should be [SHARED](SHARED) or literal values.**
 * Specific **TIMER** events can be turned on, suspended, turned off or freed using [TIMER (statement)](TIMER-(statement)) ON, STOP, OFF or FREE.
 * Use **TIMER(n) FREE** to release a timer event after it has been turned off or is no longer used.
-** The *base TIMER* cannot be freed.
+  * The *base TIMER* cannot be freed.
 * **QB64** allows TIMER statements to also be inside of SUB and FUNCTION procedures.
 * **ON TIMER** events will interrupt a [SLEEP](SLEEP) call and [RETURN](RETURN) to running program procedures.
 * [$CHECKING]($CHECKING):OFF can disable all QB64 event checking. **Setting $CHECKING:OFF is only designed for 100% stable, error-less sections of code, where every CPU cycle saved counts.**
