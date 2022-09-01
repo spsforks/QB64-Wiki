@@ -1,10 +1,8 @@
 The [_RGBA32](_RGBA32) function returns the 32-bit *RGBA* color value with the specified red, green, blue and alpha component intensities.
 
-
 ## Syntax
 
->  color32value~& = [_RGBA32](_RGBA32)(red&, green&, blue&, alpha&)
-
+> color32value~& = [_RGBA32](_RGBA32)(red&, green&, blue&, alpha&)
 
 ## Description
 
@@ -19,11 +17,9 @@ The [_RGBA32](_RGBA32) function returns the 32-bit *RGBA* color value with the s
 * When [LONG](LONG) values are [PUT](PUT) to file, the ARGB values become BGRA. Use [LEFT$](LEFT$)([MKL$](MKL$)(color32value~&), 3) to place 3 colors.
 * **NOTE: Default 32-bit backgrounds are clear black or [_RGBA](_RGBA)(0, 0, 0, 0). Use [CLS](CLS) to make the black opaque.**
 
-
 ## Example(s)
 
-## Example(s)
- Changing the [ALPHA](ALPHA) value to fade an image in and out using a 32 bit PNG image.
+Changing the [ALPHA](ALPHA) value to fade an image in and out using a 32 bit PNG image.
 
 ```vb
 
@@ -51,17 +47,11 @@ NEXT
 END 
 
 ```
-<sub>Code by Unseen Machine</sub>
-
 
 ## See Also
 
 * [_RGB32](_RGB32), [_RGBA](_RGBA), [_RGB](_RGB)
 * [_RED32](_RED32), [_GREEN32](_GREEN32), [_BLUE32](_BLUE32)
-* [HEX$ 32 Bit Values](HEX$ 32 Bit Values), [POINT](POINT)
+* [HEX$ 32 Bit Values](HEX$-32-Bit-Values), [POINT](POINT)
 * [SAVEIMAGE](SAVEIMAGE)
-* [http://www.w3schools.com/html/html_colornames.asp Hexadecimal Color Values]
-
-
-
-
+* [Hexadecimal Color Values](http://www.w3schools.com/html/html_colornames.asp)

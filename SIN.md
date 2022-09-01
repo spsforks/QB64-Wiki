@@ -16,7 +16,7 @@ The SIN function returns the vertical component or sine of an angle measured in 
 
 ## Example(s)
 
-*Example 1:* Converting degree angles to radians for QBasic's trig functions and drawing the line at the angle.
+Converting degree angles to radians for QBasic's trig functions and drawing the line at the angle.
 
 ```vb
 

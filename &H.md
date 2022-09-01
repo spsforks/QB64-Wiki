@@ -21,7 +21,7 @@ The **&H** prefix denotes that an integer value is expressed in a Hexadecimal ba
 
 ## Example(s)
 
-*Example 1:* The maximum octal values of decimal value -1 in each numerical type are:
+The maximum octal values of decimal value -1 in each numerical type are:
 
 ```vb
 c&& = -1: d& = -1: e% = -1: f%% = -1
@@ -51,7 +51,7 @@ Min _INTEGER64 value = 8000000000000000 with 16 digits
 
 ```
 
-*Example 2:* Converting a decimal number to a binary string value using [HEX$](HEX$).
+Converting a decimal number to a binary string value using [HEX$](HEX$).
 
 ```vb
 

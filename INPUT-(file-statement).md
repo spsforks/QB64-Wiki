@@ -23,7 +23,7 @@ The [INPUT #](INPUT-#) file or port statement reads sequential data using one va
 
 ## Example(s)
 
-*Example 1:* Writes new data to a text file sequentially and reads it back to the program screen.
+Writes new data to a text file sequentially and reads it back to the program screen.
 
 ```vb
 

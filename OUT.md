@@ -41,7 +41,7 @@
 
 ## Example(s)
 
-*Example 1:* Reading the default RGB color settings of color attribute 15.
+Reading the default RGB color settings of color attribute 15.
 
 ```vb
 
@@ -59,7 +59,7 @@ PRINT red%, green%, blue%
 
 ```
 
-*Example 2:* Changing the color intensity settings of the [SCREEN](SCREEN) background [COLOR](COLOR) 0 to bright white.
+Changing the color intensity settings of the [SCREEN](SCREEN) background [COLOR](COLOR) 0 to bright white.
 
 ```vb
 
@@ -72,7 +72,7 @@ OUT &H3C9, 63 'blue
 
 > *Explanation:* In [SCREEN](SCREEN) 0 this is one way to make high intensity background colors. `[COLOR](COLOR) ,15` is actually grey (7).
 
-*Example 3:* Toggling blinking colors in SCREEN beginning with build 20170816/61
+Toggling blinking colors in SCREEN beginning with build 20170816/61
 
 ```vb
 
@@ -83,7 +83,7 @@ OUT &H3C0, 2 ^ 3 'reenables blinking and disables high intensity backgrounds  (c
 
 > Note: In QB64, the recommended practice is to use the [_BLINK](_BLINK) {ON|OFF} statement.
 
-*Example 4:* Restoring colors to a bitmap from the Red, Green and Blue [BSAVE](BSAVE)d indexed array of color values.
+Restoring colors to a bitmap from the Red, Green and Blue [BSAVE](BSAVE)d indexed array of color values.
 
 ```vb
 

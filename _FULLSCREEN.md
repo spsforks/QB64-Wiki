@@ -1,32 +1,28 @@
 The [_FULLSCREEN](_FULLSCREEN) statement attempts to make the program window fullscreen. 
 
-
 ## Syntax
 
 > [_FULLSCREEN](_FULLSCREEN) [*_STRETCH | _SQUAREPIXELS| _OFF*][, *_SMOOTH*]
 
-
 ## Parameter(s)
 
-* _STRETCH default first choice attempts to mimic QBasic's full screens if possible. [_FULLSCREEN (function)](_FULLSCREEN (function)) returns 1.
-* _SQUAREPIXELS alternate choice enlarges the pixels into squares on some monitors. [_FULLSCREEN (function)](_FULLSCREEN (function)) returns 2
-* _OFF turns _FULLSCREEN off after full screen has been enabled. [_FULLSCREEN (function)](_FULLSCREEN (function)) returns 0.
-* Second optional parameter *_SMOOTH* applies antialiasing to the stretched screen.
-
+* _STRETCH default first choice attempts to mimic QBasic's full screens if possible. [_FULLSCREEN (function)](_FULLSCREEN-(function)) returns 1.
+* _SQUAREPIXELS alternate choice enlarges the pixels into squares on some monitors. [_FULLSCREEN (function)](_FULLSCREEN-(function)) returns 2
+* _OFF turns _FULLSCREEN off after full screen has been enabled. [_FULLSCREEN (function)](_FULLSCREEN-(function)) returns 0.
+* Second optional parameter *_SMOOTH* applies anti-aliasing to the stretched screen.
 
 ## Description
 
 * **Set the [SCREEN](SCREEN) mode and text [WIDTH](WIDTH) when necessary first.** Otherwise there may be desktop view issues.
 * _FULLSCREEN with no parameters chooses _STRETCH or _SQUAREPIXELS (prioritizes _STRETCH to mimic QBasic if possible)
-* **Check the fullscreen mode with the [_FULLSCREEN (function)](_FULLSCREEN (function)) function in your programs when a method is required.
+* **Check the fullscreen mode with the [_FULLSCREEN (function)](_FULLSCREEN-(function)) function in your programs when a method is required.
 * It is advisable to get [INPUT](INPUT) from the user to confirm that fullscreen was completed or there were possible monitor incompatibilities.
-* If fullscreen is **not confirmed** with a [_FULLSCREEN (function)](_FULLSCREEN (function)) return **greater than 0**, then disable with **_FULLSCREEN _OFF**.
+* If fullscreen is **not confirmed** with a [_FULLSCREEN (function)](_FULLSCREEN-(function)) return **greater than 0**, then disable with **_FULLSCREEN _OFF**.
 * **NOTE:** _FULLSCREEN can also be affected by custom [_FONT](_FONT) size settings and make program screens too large.
-
 
 ## Example(s)
 
-*Example 1:* Setting the screen mode first prevents enlargement of the desktop before the program window is set: 
+Setting the screen mode first prevents enlargement of the desktop before the program window is set: 
 
 ```vb
 
@@ -38,8 +34,7 @@ LINE (100, 100)-(500, 400), 13, BF
 
 ```
 
-
-*Example 2:* How fonts and _FULLSCREEN affect the program's window size.
+How fonts and _FULLSCREEN affect the program's window size.
 
 ```vb
 
@@ -101,12 +96,10 @@ IF f& > 0 THEN
     _FREEFONT f&
 END IF
 RETURN    
- 
 
 ```
 
-
-*Example 3:* Testing all fullscreen methods.
+Testing all fullscreen methods.
 
 ```vb
 
@@ -133,17 +126,13 @@ DO
     _LIMIT 30
 LOOP UNTIL _EXIT
 SYSTEM
-```
 
+```
 
 ## See Also
 
-* [_FULLSCREEN (function)](_FULLSCREEN (function))
+* [_FULLSCREEN (function)](_FULLSCREEN-(function))
 * [_ALLOWFULLSCREEN](_ALLOWFULLSCREEN)
 * [_FONT](_FONT), [SCREEN](SCREEN) 
 * [_SCREENIMAGE](_SCREENIMAGE)
 * [_SCREENMOVE](_SCREENMOVE), [_SCREENX](_SCREENX), [_SCREENY](_SCREENY)
-
-
-
-

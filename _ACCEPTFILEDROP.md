@@ -10,7 +10,7 @@ The [_ACCEPTFILEDROP](_ACCEPTFILEDROP) statement prepares a program window to re
 * To know when files have been dropped into your program's window, check that [_TOTALDROPPEDFILES](_TOTALDROPPEDFILES) is greater than 0.
 * Use [_DROPPEDFILE](_DROPPEDFILE) to read the list, either sequentially or by index.
 * If using [_DROPPEDFILE](_DROPPEDFILE) with an index, you must call [_FINISHDROP](_FINISHDROP) after you finish working with the list.
-* **[Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions](Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions)**.
+* **[Keywords currently not supported](Keywords_currently_not_supported_by_QB64)**.
 
 ## Availability
 
@@ -56,7 +56,3 @@ LOOP
 
 * [_TOTALDROPPEDFILES](_TOTALDROPPEDFILES), [_DROPPEDFILE](_DROPPEDFILE), [_FINISHDROP](_FINISHDROP)
 * [_FILEEXISTS](_FILEEXISTS), [_DIREXISTS](_DIREXISTS)
-
-
-
-

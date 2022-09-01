@@ -12,7 +12,7 @@ The **TIME$** Function returns a [STRING](STRING) representation of the current 
 
 ## Example(s)
 
-*Example 1:* A simple clock using [DRAW](DRAW) with Turn Angle.
+A simple clock using [DRAW](DRAW) with Turn Angle.
 
 ```vb
 

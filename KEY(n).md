@@ -26,7 +26,7 @@
 
 ## Example(s)
 
-*Example 1:* How to trap the LEFT direction keys on both the dedicated cursor keypad and the numeric keypad.
+How to trap the LEFT direction keys on both the dedicated cursor keypad and the numeric keypad.
 
 ```vb
 

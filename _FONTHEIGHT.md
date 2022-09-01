@@ -1,22 +1,17 @@
 The [_FONTHEIGHT](_FONTHEIGHT) function returns the font height of a font handle created by [_LOADFONT](_LOADFONT).
 
-
-
 ## Syntax
 
 > pixelHeight% = [_FONTHEIGHT](_FONTHEIGHT)[(fontHandle&)] 
-
 
 ## Description
 
 * Returns the height of the last font used if a handle is not designated.
 * If no font is set it returns the current screen mode's text block height.
 
-
 ## Example(s)
 
-## Example(s)
- Finding the [_FONT](_FONT) or text block size of printed [STRING](STRING) characters in graphic [SCREEN](SCREEN) modes.
+Finding the [_FONT](_FONT) or text block size of printed [STRING](STRING) characters in graphic [SCREEN](SCREEN) modes.
 
 ```vb
 
@@ -52,14 +47,9 @@ END SUB
 
 ```
 
-
 ## See Also
 
 * [_FONTWIDTH](_FONTWIDTH), [_FONT](_FONT)
 * [_PRINTWIDTH](_PRINTWIDTH), [_PRINTSTRING](_PRINTSTRING)
 * [SCREEN](SCREEN), [_LOADFONT](_LOADFONT)
-* [Text Using Graphics](Text Using Graphics) (Demo)
-
-
-
-
+* [Text Using Graphics](Text-Using-Graphics) (Demo)

@@ -1,25 +1,21 @@
-The [_RESIZEHEIGHT](_RESIZEHEIGHT) function returns the user resized screen pixel height if [$RESIZE]($RESIZE):ON allows it and [_RESIZE (function)](_RESIZE (function)) returns -1 
-
+The [_RESIZEHEIGHT](_RESIZEHEIGHT) function returns the user resized screen pixel height if [$RESIZE]($RESIZE):ON allows it and [_RESIZE (function)](_RESIZE-(function)) returns -1 
 
 ## Syntax
 
->  newHeight& = [_RESIZEHEIGHT](_RESIZEHEIGHT)
+> newHeight& = [_RESIZEHEIGHT](_RESIZEHEIGHT)
 
+## Description
 
-Details:
-* [_RESIZE (function)](_RESIZE (function)) function must return true (-1) before the requested screen dimensions can be returned by the function.
+* [_RESIZE (function)](_RESIZE-(function)) function must return true (-1) before the requested screen dimensions can be returned by the function.
 * The program should decide if the request is allowable for proper program interaction.
-
 
 ## Availability
 
 * **Version 1.000 and up**.
 
-
 ## Example(s)
 
-## Example(s)
- Resize the current screen image according to user's request.
+Resize the current screen image according to user's request.
 
 ```vb
 
@@ -50,13 +46,8 @@ LOOP
 
 ```
 
-
 ## See Also
 
 * [$RESIZE]($RESIZE)
-* [_RESIZE (function)](_RESIZE (function))
+* [_RESIZE (function)](_RESIZE-(function))
 * [_RESIZEWIDTH](_RESIZEWIDTH)
-
-
-
-

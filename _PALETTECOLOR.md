@@ -1,20 +1,17 @@
 The [_PALETTECOLOR](_PALETTECOLOR) statement sets the color value of a palette entry of an image using 256 color modes or less (4 or 8 BPP).
 
-
 ## Syntax
 
 > [_PALETTECOLOR](_PALETTECOLOR) attribute%, newColor&[, destHandle&]
 
-
 ## Description
 
 * The attribute% is the palette index number of the color to set, ranging from 0 to 15 (4 bit) or 0 to 255 (8 bit) color modes.
-* The [LONG](LONG) newColor& is the new color value to set using [_RGB32](_RGB32) or [_RGBA32](_RGBA32) values or using [HEX$ 32 Bit Values](HEX$ 32 Bit Values).
+* The [LONG](LONG) newColor& is the new color value to set using [_RGB32](_RGB32) or [_RGBA32](_RGBA32) values or using [HEX$ 32 Bit Values](HEX$-32-Bit-Values).
 * If destHandle& is omitted, [_DEST](_DEST) is assumed to be the current write page or screen surface.
-* If attribute% is outside of image or [SCREEN](SCREEN) mode attribute range (0 to 15 or 0 to 255), an [ERROR Codes](ERROR Codes) error will occur.
-* If destHandle& does not use a palette, an [ERROR Codes](ERROR Codes) error occurs. **Will not work in 24/32 bit color palette modes.**
-* If destHandle& is an invalid handle value, an [ERROR Codes](ERROR Codes) error occurs.
-
+* If attribute% is outside of image or [SCREEN](SCREEN) mode attribute range (0 to 15 or 0 to 255), an [ERROR Codes](ERROR-Codes) error will occur.
+* If destHandle& does not use a palette, an [ERROR Codes](ERROR-Codes) error occurs. **Will not work in 24/32 bit color palette modes.**
+* If destHandle& is an invalid handle value, an [ERROR Codes](ERROR-Codes) error occurs.
 
 **Basic's 16 Default Color Attributes (non-[DAC](DAC))**
 
@@ -40,16 +37,14 @@ The [_PALETTECOLOR](_PALETTECOLOR) statement sets the color value of a palette e
 
 ```
 
-[http://www.w3schools.com/html/html_colornames.asp HTML Color Table Values and Names] or [http://www.tayloredmktg.com/rgb/#OR Other RGB colors]
-> :: *Note:* **QB64** 32 bit color intensity values from 0 to 255 can be found by multiplying above values by 4.
+[HTML Color Table Values and Names](http://www.w3schools.com/html/html_colornames.asp) or [Other RGB colors](http://www.tayloredmktg.com/rgb/#OR)
+  * *Note:* **QB64** 32 bit color intensity values from 0 to 255 can be found by multiplying above values by 4.
 
-*Summary:* The red, green, and blue intensity values can be changed using [OUT](OUT) or [PALETTE](PALETTE) statements. Some **QBasic** RGB color attribute values can be changed in [DAC](DAC) [SCREEN (statement)](SCREEN (statement)) modes and the [DAC](DAC) RGB intensity settings may be different. 
-
-
-## Example(s)
+*Summary:* The red, green, and blue intensity values can be changed using [OUT](OUT) or [PALETTE](PALETTE) statements. Some **QBasic** RGB color attribute values can be changed in [DAC](DAC) [SCREEN (statement)](SCREEN-(statement)) modes and the [DAC](DAC) RGB intensity settings may be different. 
 
 ## Example(s)
- Creating custom background colors in SCREEN 0 that follow the text. [CLS](CLS) makes entire background one color.
+
+Creating custom background colors in SCREEN 0 that follow the text. [CLS](CLS) makes entire background one color.
 
 ```vb
 
@@ -72,17 +67,12 @@ COLOR 2, 6: PRINT "ligher red on darker red"
 
 ```
 
->  *Note:* [_PALETTECOLOR](_PALETTECOLOR) expects [LONG](LONG) [_RGB32](_RGB32) or [_RGBA32](_RGBA32) 32 bit color values, not [_RGB](_RGB) or [_RGBA](_RGBA) palette attribute values.
-
+> *Note:* [_PALETTECOLOR](_PALETTECOLOR) expects [LONG](LONG) [_RGB32](_RGB32) or [_RGBA32](_RGBA32) 32 bit color values, not [_RGB](_RGB) or [_RGBA](_RGBA) palette attribute values.
 
 ## See Also
 
 * [COLOR](COLOR), [_RGB32](_RGB32), [_RGBA32](_RGBA32)
-* [_PALETTECOLOR (function)](_PALETTECOLOR (function))
+* [_PALETTECOLOR (function)](_PALETTECOLOR-(function))
 * [PALETTE](PALETTE), [OUT](OUT), [INP](INP)
 * [Images](Images)
-* [HEX$ 32 Bit Values](HEX$ 32 Bit Values)
-
-
-
-
+* [HEX$ 32 Bit Values](HEX$-32-Bit-Values)

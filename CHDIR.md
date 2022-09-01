@@ -13,7 +13,7 @@ The [CHDIR](CHDIR) statement changes the program's location from one working dir
 
 ## Example(s)
 
-*Example 1:* The following code is Windows-specific:
+The following code is Windows-specific:
 
 ```vb
 

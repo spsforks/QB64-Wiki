@@ -16,7 +16,7 @@ The [$CONSOLE]($CONSOLE) [Metacommand](Metacommand) creates a console window tha
 
 ## Example(s)
 
-*Example 1:* Hiding and displaying a console window. Use [_DELAY](_DELAY) to place console in front of main program window.
+Hiding and displaying a console window. Use [_DELAY](_DELAY) to place console in front of main program window.
 
 ```vb
 
@@ -32,7 +32,7 @@ PRINT "Close this console window or click main window and press a key!"
 
 ```
 
-*Example 2:* How to use a Console window to copy screen output using the *Edit* menu by right clicking the console title bar.
+How to use a Console window to copy screen output using the *Edit* menu by right clicking the console title bar.
 
 ```vb
 

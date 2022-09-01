@@ -31,13 +31,13 @@
 * [_ALPHA32](_ALPHA32) (function) function returns the alpha channel level of a 32 bit color value only.
 * [_BACKGROUNDCOLOR](_BACKGROUNDCOLOR) (function) returns the current background color.
 * [_BLEND](_BLEND) (statement) turns on alpha blending for the current image or a specific one.
-* [_BLEND (function)](_BLEND (function)) returns if blending is enabled or disabled for the current window or a specified image handle.
+* [_BLEND (function)](_BLEND-(function)) returns if blending is enabled or disabled for the current window or a specified image handle.
 * [_BLINK](_BLINK) (statement) statement turns blinking colors on/off in SCREEN 0
-* [_BLINK (function)](_BLINK (function)) returns -1 if enabled or 0 if disabled by [_BLINK](_BLINK) statement.
+* [_BLINK (function)](_BLINK-(function)) returns -1 if enabled or 0 if disabled by [_BLINK](_BLINK) statement.
 * [_BLUE](_BLUE) (function) returns the palette intensity OR the blue component intensity of a 32-bit image color.
 * [_BLUE32](_BLUE32) (function) returns the blue component intensity of a 32-bit image color.
 * [_CLEARCOLOR](_CLEARCOLOR) (statement) sets a specific color to be treated as transparent in an image
-* [_CLEARCOLOR (function)](_CLEARCOLOR (function)) returns the current transparent color of an image.
+* [_CLEARCOLOR (function)](_CLEARCOLOR-(function)) returns the current transparent color of an image.
 * [_COPYPALETTE](_COPYPALETTE) (statement) copies the color palette intensities from one image to another image or screen page.
 * [_DEFAULTCOLOR](_DEFAULTCOLOR) (function) returns the current default text color for an image handle or page.
 * [_DONTBLEND](_DONTBLEND) (statement) turns off alpha blending for an image handle.
@@ -45,7 +45,7 @@
 * [_GREEN32](_GREEN32) (function) returns the green component intensity of a 32-bit image color.
 * [_NEWIMAGE](_NEWIMAGE) (function) prepares a custom sized program [SCREEN](SCREEN) or page surface that can use 256 or 32 bit colors.
 * [_PALETTECOLOR](_PALETTECOLOR) (statement) sets the color value of a palette entry of an image using 256 color modes or less (4 or 8 BPP).
-* [_PALETTECOLOR (function)](_PALETTECOLOR (function)) returns the 32 bit attribute color setting of an image or screen page handle's palette.
+* [_PALETTECOLOR (function)](_PALETTECOLOR-(function)) returns the 32 bit attribute color setting of an image or screen page handle's palette.
 * [_PIXELSIZE](_PIXELSIZE) (function) returns the color depth (Bits Per Pixel) of an image.
 * [_RED](_RED) (function) returns the palette index OR the red component intensity of a 32-bit screen.
 * [_RED32](_RED32) (function) returns the red component intensity of a 32-bit image color.
@@ -75,7 +75,7 @@
 * [_SCREENHIDE](_SCREENHIDE) hides the main program window in a section of code until [_SCREENSHOW](_SCREENSHOW) is used.
 * [$SCREENSHOW]($SCREENSHOW) (QB64 [Metacommand](Metacommand)) displays the main program window throughout the program after [$SCREENHIDE]($SCREENHIDE) has been used.
 * [_SCREENSHOW](_SCREENSHOW) displays the main program window in a section of code after [_SCREENHIDE](_SCREENHIDE) has been used.
-* [SHELL (function)](SHELL (function)) executes a DOS command or calls another program. Returns codes sent by [END](END) or [SYSTEM](SYSTEM).
+* [SHELL (function)](SHELL-(function)) executes a DOS command or calls another program. Returns codes sent by [END](END) or [SYSTEM](SYSTEM).
 * [_SHELLHIDE](_SHELLHIDE) (function) hides a DOS command or call to another program. Returns codes sent by [END](END) or [SYSTEM](SYSTEM).
 
 ##  Conditional Operations 
@@ -95,7 +95,7 @@ See also: [#Logical Bitwise Operations](#Logical_Bitwise_Operations) and [Relati
 * [_FLOAT](_FLOAT) {## numerical [TYPE](TYPE)) values offer the maximum floating-point decimal precision available using QB64.
 * [_INTEGER64](_INTEGER64) (&& numerical [TYPE](TYPE)) values -9223372036854775808 to 9223372036854775807. [_UNSIGNED](_UNSIGNED) to 18446744073709551615.
 * [_MEM](_MEM) (variable type) contains read only dot elements for the OFFSET, SIZE, TYPE and ELEMENTSIZE of a block of memory.
-* [_OFFSET](_OFFSET)(%& variable type) can store any memory offset integer value when using [DECLARE LIBRARY](DECLARE LIBRARY) or [_MEM](_MEM)ory only.
+* [_OFFSET](_OFFSET)(%& variable type) can store any memory offset integer value when using [DECLARE LIBRARY](DECLARE-LIBRARY) or [_MEM](_MEM)ory only.
 * [_UNSIGNED](_UNSIGNED) {~ numerical [TYPE](TYPE)) defines an integer numerical value as being positive only in QB64.
 * [COMMON](COMMON) (statement) shares common variable values with other Linked or [CHAIN](CHAIN)ed programs.
 * [COMMON SHARED](COMMON SHARED) (statement) shares common variable values with all sub-procedures and other Linked or CHAINed programs.
@@ -126,9 +126,9 @@ See also: [Variable Types](Variable_Types) and  [Libraries#C.2B.2B_Variable_Type
 * [_DEVICES](_DEVICES) (function) returns the number of input devices found on a computer system.
 * [_DIREXISTS](_DIREXISTS) (function) returns -1 if the directory folder name [STRING](STRING) parameter exists. Zero if it does not.
 * [_DROPPEDFILE](_DROPPEDFILE) (function)  returns the list of items (files or folders) dropped in a program's window after [_ACCEPTFILEDROP](_ACCEPTFILEDROP) is enabled.
-* [_CLIPBOARD$ (statement)](_CLIPBOARD$ (statement)) sends [STRING](STRING) data to the Clipboard.
+* [_CLIPBOARD$ (statement)](_CLIPBOARD$-(statement)) sends [STRING](STRING) data to the Clipboard.
 * [_CLIPBOARD$](_CLIPBOARD$) (function) returns the current contents of the Clipboard as a [STRING](STRING).
-* [_CLIPBOARDIMAGE (function)](_CLIPBOARDIMAGE (function)) pastes an image from the clipboard into a new QB64 image in memory.
+* [_CLIPBOARDIMAGE (function)](_CLIPBOARDIMAGE-(function)) pastes an image from the clipboard into a new QB64 image in memory.
 * [_CLIPBOARDIMAGE](_CLIPBOARDIMAGE) (statement) copies a valid QB64 image to the clipboard.
 * [_CWD$](_CWD$) (function) returns the current working directory path as a [STRING](STRING).
 * [_DONTWAIT](_DONTWAIT) (SHELL action) allows the program to continue without waiting for the other program to close.
@@ -153,7 +153,7 @@ See also: [Variable Types](Variable_Types) and  [Libraries#C.2B.2B_Variable_Type
 * [NAME](NAME) (statement) renames a file.
 * [RMDIR](RMDIR) (statement) removes an empty directory folder from the specified path.
 * [SHELL](SHELL) (statement) performs a command line operation in DOS.
-* [SHELL (function)](SHELL (function)) executes a DOS command or calls another program. Returns codes sent by [END](END) or [SYSTEM](SYSTEM).
+* [SHELL (function)](SHELL-(function)) executes a DOS command or calls another program. Returns codes sent by [END](END) or [SYSTEM](SYSTEM).
 
 ## Error Codes 
 
@@ -182,15 +182,15 @@ See the [ERROR Codes](ERROR_Codes) reference.
 * [_DELAY](_DELAY) (statement) suspends program execution for a [SINGLE](SINGLE) value of seconds down to milliseconds.
 * [_DISPLAY](_DISPLAY) (statement) turns off automatic display while only displaying the screen changes when called.
 *[_EXIT (function)](_EXIT (function)) prevents a user exit and indicates if a user has clicked the close X window button or CTRL + BREAK.
-*[_FREETIMER](_FREETIMER) (function) returns a free TIMER number for multiple [ON TIMER(n)](ON TIMER(n)) events.
+*[_FREETIMER](_FREETIMER) (function) returns a free TIMER number for multiple [ON TIMER(n)](ON-TIMER(n)) events.
 * [_MOUSEINPUT](_MOUSEINPUT) (function) reports any changes to the mouse status and MUST be used to read those changes.
 * [_SHELLHIDE](_SHELLHIDE) (function) returns the code sent by a program exit using [END](END) or [SYSTEM](SYSTEM) followed by an [INTEGER](INTEGER) value.
 
 * [OFF](OFF) turns event checking off and does not remember subsequent events.
 * [ON](ON) turns event checking on.
 * [ON ERROR](ON ERROR) [GOTO](GOTO) (event statement) executes when a program error occurs
-* [ON KEY(n)](ON KEY(n)) (event statement) executes when a keypress or keypress combination occurs.
-* [ON TIMER(n)](ON TIMER(n)) (event statement) executes when a timed event occurs. QB64 can use multiple numbered timers.
+* [ON KEY(n)](ON-KEY(n)) (event statement) executes when a keypress or keypress combination occurs.
+* [ON TIMER(n)](ON-TIMER(n)) (event statement) executes when a timed event occurs. QB64 can use multiple numbered timers.
 * [ON...GOSUB](ON...GOSUB) (event statement) branches to a line number or label according to a numerical ordered list of labels.
 * [ON...GOTO](ON...GOTO) (event statement) branches to a line number or label according to a numerical ordered list of labels.
 * [STOP](STOP) suspends event checking and remembers subsequent events that are executed when events are turned back on.
@@ -227,7 +227,7 @@ See the [ERROR Codes](ERROR_Codes) reference.
 * [NAME](NAME) (statement) renames a file [AS](AS) a new file name.
 * [OPEN](OPEN) (file I/O statement) opens a specified file FOR an access mode with a set reference number.
 * [OUTPUT](OUTPUT) (file mode) opens or creates a new file that holds no data.
-* [PRINT (file statement)](PRINT (file statement)) writes text and numerical data into a file.
+* [PRINT (file statement)](PRINT-(file-statement)) writes text and numerical data into a file.
 * [PRINT USING (file statement)](PRINT USING (file statement))  writes template formatted text into a file.
 * [PUT](PUT) (file I/O statement) writes data into a [RANDOM](RANDOM) or [BINARY](BINARY) file by byte or record position.
 * [RANDOM](RANDOM) (file mode) opens or creates a file that can be accessed using both [GET](GET) and [PUT](PUT).
@@ -241,14 +241,14 @@ See the [ERROR Codes](ERROR_Codes) reference.
 
 ## Fonts 
 
-* [_FONT (function)](_FONT (function)) creates a new alphablended font handle from a designated image handle
+* [_FONT (function)](_FONT-(function)) creates a new alphablended font handle from a designated image handle
 * [_FONT](_FONT) (statement) sets the current [_LOADFONT](_LOADFONT) function font handle to be used by [PRINT](PRINT) or [_PRINTSTRING](_PRINTSTRING).
 * [_FONTHEIGHT](_FONTHEIGHT) (function) returns the font height of a font handle created by [_LOADFONT](_LOADFONT).
 * [_FONTWIDTH](_FONTWIDTH) (function) returns the font width of a MONOSPACE font handle created by [_LOADFONT](_LOADFONT).
 * [_FREEFONT](_FREEFONT) (statement) frees a font handle value from memory
 * [_LOADFONT](_LOADFONT) (function) loads a TrueType font (.TTF) file of a specific size and style and returns a font handle value.
 * [_MAPUNICODE](_MAPUNICODE) (statement) maps a [Unicode](Unicode) value to an [ASCII](ASCII) character code value.
-* [_PRINTMODE (function)](_PRINTMODE (function)) returns the present _PRINTMODE status as a numerical value.
+* [_PRINTMODE (function)](_PRINTMODE-(function)) returns the present _PRINTMODE status as a numerical value.
 * [_PRINTMODE](_PRINTMODE) (statement) sets the text or [_FONT](_FONT) printing mode on a background image when using [PRINT](PRINT) or [_PRINTSTRING](_PRINTSTRING).
 > *_KEEPBACKGROUND (1): Text background transparent. Only the text is displayed over anything behind it.
 > *_ONLYBACKGROUND (2): Text background is only displayed. Text is transparent to anything behind it.
@@ -273,7 +273,7 @@ See the [ERROR Codes](ERROR_Codes) reference.
 * [_MOUSEMOVEMENTX](_MOUSEMOVEMENTX) (function) returns the relative horizontal position of the mouse cursor compared to the previous position.
 * [_MOUSEMOVEMENTY](_MOUSEMOVEMENTY) (function) returns the relative vertical position of the mouse cursor compared to the previous position.
 * [_WHEEL](_WHEEL) (function) returns -1 when a device wheel is scrolled up and 1 when scrolled down. Zero indicates no activity.
-* [ON STRIG(n)](ON STRIG(n)) (event statement) directs program flow upon a button press event of a game controller device.
+* [ON STRIG(n)](ON-STRIG(n)) (event statement) directs program flow upon a button press event of a game controller device.
 * [STICK](STICK) (function) returns the directional axis coordinate values from 1 to 254 of game port (&H201) or USB controller devices.
 * [STRIG](STRIG) (function) returns the True or False button press status of game port (&H201) or USB controller devices.
 * [STRIG(n)](STRIG(n)) (statement) enables, suspends or disables event trapping of STRIG button return values.
@@ -290,14 +290,14 @@ See the [ERROR Codes](ERROR_Codes) reference.
 ## Graphics and Imaging: 
 
 * [_AUTODISPLAY](_AUTODISPLAY) (statement) enables the automatic display of the screen image changes previously disabled by [_DISPLAY](_DISPLAY).
-* [_CLIP](_CLIP) ([PUT (graphics statement)](PUT (graphics statement)) action) allows placement of an image partially off of the screen.
+* [_CLIP](_CLIP) ([PUT (graphics statement)](PUT-(graphics-statement)) action) allows placement of an image partially off of the screen.
 * [_COPYIMAGE](_COPYIMAGE) (function) function duplicates an image handle from a designated handle.
 * [_COPYPALETTE](_COPYPALETTE) (statement) copies the color palette intensities from one image to another image or screen page.
 * [_DEST](_DEST) (statement) sets the current write image or page. All graphics will go to this image.
-* [_DEST (function)](_DEST (function)) returns the current write destination image or page.
+* [_DEST (function)](_DEST-(function)) returns the current write destination image or page.
 * [_DISPLAY](_DISPLAY) (statement) turns off automatic display while only displaying the screen changes when called.
-* [_DISPLAY (function)](_DISPLAY (function)) returns the handle of the current image that is displayed on the screen.
-* [_FULLSCREEN (function)](_FULLSCREEN (function)) returns the present full screen mode setting of the screen window.
+* [_DISPLAY (function)](_DISPLAY-(function)) returns the handle of the current image that is displayed on the screen.
+* [_FULLSCREEN (function)](_FULLSCREEN-(function)) returns the present full screen mode setting of the screen window.
 * [_FULLSCREEN](_FULLSCREEN) (statement) sets the full screen mode of the screen window. Alt + Enter can do it manually.
 * [_FREEIMAGE](_FREEIMAGE) (statement) releases an image handle value from memory when no longer needed.
 * [_HEIGHT](_HEIGHT) (function) returns the height of an image handle or current write page.
@@ -310,14 +310,14 @@ See the [ERROR Codes](ERROR_Codes) reference.
 * [_PUTIMAGE](_PUTIMAGE) (statement) maps a rectangular area of a source image to an area of a destination image in one operation
 * [_SCREENIMAGE](_SCREENIMAGE) (function) creates an image of the current desktop and returns an image handle.
 * [_SOURCE](_SOURCE) (statement) establishes the image SOURCE using a designated image handle
-* [_SOURCE (function)](_SOURCE (function)) returns the present image _SOURCE handle value.
-* [_WIDTH (function)](_WIDTH (function)) returns the width of an image handle or current write page.
+* [_SOURCE (function)](_SOURCE-(function)) returns the present image _SOURCE handle value.
+* [_WIDTH (function)](_WIDTH-(function)) returns the width of an image handle or current write page.
 
 * [CIRCLE](CIRCLE) (statement) is used in graphics SCREEN modes to create circles, arcs or ellipses.
 * [CLS](CLS) (statement) clears a screen page or the program [SCREEN](SCREEN). QB64 can clear with a color.
 * [COLOR](COLOR) (statement) sets the current text color attribute or [_RGB](_RGB) value to be used or background colors in some screen modes.
 * [DRAW](DRAW) (statement) uses a special type of [STRING](STRING) expression to draw lines on the screen.
-* [GET (graphics statement)](GET (graphics statement)) used to store a box area image of the screen into an [INTEGER](INTEGER) array.
+* [GET (graphics statement)](GET-(graphics-statement)) used to store a box area image of the screen into an [INTEGER](INTEGER) array.
 * [LINE](LINE) (statement) used in graphic [SCREEN](SCREEN) modes to create lines or boxes.
 * [PAINT](PAINT) (statement) used to color enclosed graphic objects with a designated fill color and border color.
 * [PALETTE](PALETTE) (statement) can swap color settings, set colors to default or set the Red, Green, Blue color palette.
@@ -327,18 +327,18 @@ See the [ERROR Codes](ERROR_Codes) reference.
 * [POINT](POINT) (function) returns the pixel [COLOR](COLOR) attribute or [_RGB](_RGB) value at a specified graphics coordinate.
 * [PRESET](PRESET) (statement) sets a pixel coordinate to the background color or a designated color.
 * [PSET](PSET) (statement) sets a pixel coordinate to the default color or designated color attribute.
-* [PUT (graphics statement)](PUT (graphics statement)) statement is used to place [GET (graphics statement)](GET (graphics statement)) saved or [BSAVE](BSAVE)d images stored in an array.
+* [PUT (graphics statement)](PUT-(graphics-statement)) statement is used to place [GET (graphics statement)](GET-(graphics-statement)) saved or [BSAVE](BSAVE)d images stored in an array.
 * [SCREEN](SCREEN) sets the screen mode of a program. No statement defaults the program to SCREEN 0 text only mode.
 * [STEP](STEP) (relational statement) is used to step through FOR loop values or use relative graphical coordinates.
 * [VIEW](VIEW) (graphics statement) creates a graphics view port area by defining the coordinate limits to be viewed.
 * [WINDOW](WINDOW) (statement) defines the coordinate dimensions of the current graphics viewport.
 
-**See also: [Bitmaps](Bitmaps), [Icons and Cursors](Icons_and_Cursors), [SAVEIMAGE](SAVEIMAGE), [GIF Images](GIF Images)**
+**See also: [Bitmaps](Bitmaps), [Icons and Cursors](Icons_and_Cursors), [SAVEIMAGE](SAVEIMAGE), [GIF Images](GIF-Images)**
 
 ##  Keyboard Input 
 
 * [_CONTROLCHR](_CONTROLCHR) (statement) [OFF](OFF) allows the control characters to be used as text characters. [ON](ON)(default) can use them as commands.
-* [_CONTROLCHR (function)](_CONTROLCHR (function))   returns the current state of _CONTROLCHR as 1 when OFF and 0 when ON.
+* [_CONTROLCHR (function)](_CONTROLCHR-(function))   returns the current state of _CONTROLCHR as 1 when OFF and 0 when ON.
 * [_EXIT (function)](_EXIT (function)) prevents a program user exit and indicates if a user has clicked the close X window button or CTRL + BREAK.
 * [_KEYDOWN](_KEYDOWN) (function) returns whether modifying keys like CTRL, ALT, SHIFT, and any other keys are pressed.
 * [_KEYHIT](_KEYHIT) (function) returns ASCII one and two byte, SDL Virtual Key and Unicode keyboard key press codes.
@@ -348,25 +348,25 @@ See the [ERROR Codes](ERROR_Codes) reference.
 * [INPUT](INPUT) (statement) requests a [STRING](STRING) or numerical keyboard entry from a program user.
 * [INPUT$](INPUT$) (function) used to get a set number of keypress characters or bytes from a file.
 * [INP](INP) (function) returns a scan code value from keyboard register &H60(96) to determine key presses.
-* [KEY n](KEY n) (event statement) is used to assign a "softkey" string to a key and/or display them.
+* [KEY n](KEY-n) (event statement) is used to assign a "softkey" string to a key and/or display them.
 * [KEY(n)](KEY(n)) (event statement) assigns, enables, disables or suspends event trapping of a keypress.
 * [KEY LIST](KEY LIST) (statement) lists the 12 Function key soft key string assignments going down left side of screen.
-* [LINE INPUT](LINE INPUT) (statement) requests a [STRING](STRING) keyboard entry from a program user.
-* [ON KEY(n)](ON KEY(n)) (event statement) defines a line number or label to go to when a specified key is pressed.
+* [LINE INPUT](LINE-INPUT) (statement) requests a [STRING](STRING) keyboard entry from a program user.
+* [ON KEY(n)](ON-KEY(n)) (event statement) defines a line number or label to go to when a specified key is pressed.
 * [SLEEP](SLEEP) (statement) pauses the program for a specified number of seconds or a until a key press.
 
-See also: [Keyboard scancodes](Keyboard_scancodes), [ASCII](ASCII) references or [Windows_Libraries#Hot_Keys_.28maximize.29](Windows_Libraries#Hot_Keys_.28maximize.29).
+See also: [Keyboard scancodes](Keyboard_scancodes), [ASCII](ASCII) references or [Windows Libraries](Windows-Libraries).
 
 ## [Libraries](Libraries) 
 
-* [_OFFSET (function)](_OFFSET (function)) returns the memory offset of a variable when used with [DECLARE DYNAMIC LIBRARY](DECLARE DYNAMIC LIBRARY) only.
-* [_OFFSET](_OFFSET)(variable type) can be used store the value of an offset in memory when using [DECLARE DYNAMIC LIBRARY](DECLARE DYNAMIC LIBRARY) only.
+* [_OFFSET (function)](_OFFSET-(function)) returns the memory offset of a variable when used with [DECLARE DYNAMIC LIBRARY](DECLARE-DYNAMIC-LIBRARY) only.
+* [_OFFSET](_OFFSET)(variable type) can be used store the value of an offset in memory when using [DECLARE DYNAMIC LIBRARY](DECLARE-DYNAMIC-LIBRARY) only.
 
 * [ALIAS](ALIAS) (statement) tells the program that you will use a different name than the name used in the Library file.
 * [BYVAL](BYVAL) (statement) used to pass a parameter's value with sub-procedures from a Library.
-* [DECLARE LIBRARY](DECLARE LIBRARY) allows the use of OS specific, SDL or C++ external library [SUB](SUB) and [FUNCTION](FUNCTION) procedures
-* [DECLARE DYNAMIC LIBRARY](DECLARE DYNAMIC LIBRARY) declares DYNAMIC, CUSTOMTYPE or STATIC  library(DLL) [SUB](SUB)s or [FUNCTION](FUNCTION)s.
-* [DECLARE LIBRARY](DECLARE LIBRARY) required at the END of the block of Library declarations in QB64.
+* [DECLARE LIBRARY](DECLARE-LIBRARY) allows the use of OS specific, SDL or C++ external library [SUB](SUB) and [FUNCTION](FUNCTION) procedures
+* [DECLARE DYNAMIC LIBRARY](DECLARE-DYNAMIC-LIBRARY) declares DYNAMIC, CUSTOMTYPE or STATIC  library(DLL) [SUB](SUB)s or [FUNCTION](FUNCTION)s.
+* [DECLARE LIBRARY](DECLARE-LIBRARY) required at the END of the block of Library declarations in QB64.
 
 **QB64 also supports [$INCLUDE]($INCLUDE) text code file Libraries. QB64 does not support QLB Libraries or OBJ files.**
 
@@ -413,8 +413,8 @@ See also: [Mathematical Operations](Mathematical-Operations) and [#Logical Bitwi
 ##  Memory Handling and Clipboard 
 
 * [_CLIPBOARD$](_CLIPBOARD$) (function) returns the current [STRING](STRING) contents of the system Clipboard.
-* [_CLIPBOARD$ (statement)](_CLIPBOARD$ (statement)) sets and overwrites the [STRING](STRING) contents of the current system Clipboard.
-* [_MEM (function)](_MEM (function)) returns _MEM block referring to the largest continuous memory region beginning at a designated variable's offset.
+* [_CLIPBOARD$ (statement)](_CLIPBOARD$-(statement)) sets and overwrites the [STRING](STRING) contents of the current system Clipboard.
+* [_MEM (function)](_MEM-(function)) returns _MEM block referring to the largest continuous memory region beginning at a designated variable's offset.
 * [_MEM](_MEM) (variable type) contains read only dot elements for the OFFSET, SIZE, TYPE and ELEMENTSIZE of a block of memory.
 * [_MEMCOPY](_MEMCOPY) (statement) copies a value from a designated OFFSET and SIZE [TO](TO) a block of memory at a designated OFFSET.
 * [_MEMELEMENT](_MEMELEMENT) (function) returns a [_MEM](_MEM) block referring to a variable's memory (but not past it).
@@ -422,16 +422,16 @@ See also: [Mathematical Operations](Mathematical-Operations) and [#Logical Bitwi
 * [_MEMFILL](_MEMFILL) (statement) fills a designated memory block OFFSET with a certain SIZE and TYPE of value.
 * [_MEMFREE](_MEMFREE) (statement) frees a designated memory block in a program. Only free memory once!
 * [_MEMGET](_MEMGET) (statement) reads a designated value from a designated memory OFFSET
-* [_MEMGET (function)](_MEMGET (function)) returns a value from a designated memory block and OFFSET using a designated variable [TYPE](TYPE).
+* [_MEMGET (function)](_MEMGET-(function)) returns a value from a designated memory block and OFFSET using a designated variable [TYPE](TYPE).
 * [_MEMIMAGE](_MEMIMAGE) (function) returns a [_MEM](_MEM) block referring to a designated image handle's memory
 * [_MEMNEW](_MEMNEW) (function) allocates new memory with a designated SIZE and returns a [_MEM](_MEM) block referring to it.
 * [_MEMPUT](_MEMPUT) (statement) places a designated value into a designated memory [_OFFSET](_OFFSET)
-* [_OFFSET (function)](_OFFSET (function)) returns the memory offset of a variable when used with [DECLARE LIBRARY](DECLARE LIBRARY) or [_MEM](_MEM) only.
-* [_OFFSET](_OFFSET)(%& numerical type) can be used store the value of an offset in memory when using [DECLARE LIBRARY](DECLARE LIBRARY) or [_MEM](_MEM) only.
+* [_OFFSET (function)](_OFFSET-(function)) returns the memory offset of a variable when used with [DECLARE LIBRARY](DECLARE-LIBRARY) or [_MEM](_MEM) only.
+* [_OFFSET](_OFFSET)(%& numerical type) can be used store the value of an offset in memory when using [DECLARE LIBRARY](DECLARE-LIBRARY) or [_MEM](_MEM) only.
 
 **Functions and statements using QB64's emulated 16 bit memory**
 
-* [DEF SEG](DEF SEG) (statement) defines the segment address in memory.
+* [DEF SEG](DEF-SEG) (statement) defines the segment address in memory.
 * [PEEK](PEEK) (function) returns the value that is contained at a certain memory address offset.
 * [POKE](POKE) (statement) sets the value of a specified memory address offset.
 * [SADD](SADD) (function) returns the address of a STRING variable as an offset from the current data segment.
@@ -483,7 +483,7 @@ See also: [Screen Memory](Screen_Memory) or [Using _OFFSET](Using_OFFSET)
 * [_SCREENCLICK](_SCREENCLICK)  simulates clicking the mouse at a position on the screen to get focus.
 * [_WHEEL](_WHEEL) (function) returns -1 when a device wheel is scrolled up and 1 when scrolled down. Zero indicates no activity.
 
-* [CALL ABSOLUTE](CALL ABSOLUTE) (statement) used to access Interrupt vector &H33 to work with the mouse. Functions 0 to 3 implemented.
+* [CALL ABSOLUTE](CALL-ABSOLUTE) (statement) used to access Interrupt vector &H33 to work with the mouse. Functions 0 to 3 implemented.
 * [INTERRUPT](INTERRUPT) (statement) used to access Interrupt vector &H33 to work with the mouse. Functions 0 to 3 implemented. 
 
 ##  Numerical Manipulation and Conversion 
@@ -557,10 +557,10 @@ See also: [Screen Memory](Screen_Memory) or [Using _OFFSET](Using_OFFSET)
 
 * [_CONTINUE](_CONTINUE) (statement) skips the remaining lines in a control block (DO/LOOP, FOR/NEXT or WHILE/WEND)
 * [_DEST](_DEST) (statement) sets the current write image or page. All graphics will go to this image.
-* [_DEST (function)](_DEST (function)) returns the current write destination image or page.
+* [_DEST (function)](_DEST-(function)) returns the current write destination image or page.
 * [_EXIT (function)](_EXIT (function)) prevents a user exit and indicates if a user has clicked the close X window button or CTRL + BREAK.
 * [_SOURCE](_SOURCE) (statement) establishes the image SOURCE using a designated image handle
-* [_SOURCE (function)](_SOURCE (function)) returns the present image _SOURCE handle value.
+* [_SOURCE (function)](_SOURCE-(function)) returns the present image _SOURCE handle value.
 * [_SHELLHIDE](_SHELLHIDE) (function) returns the code sent by a program exit using [END](END) or [SYSTEM](SYSTEM) followed by an [INTEGER](INTEGER) value.
 
 * [CALL](CALL) (statement) sends code execution to a subroutine procedure in a program.
@@ -624,9 +624,9 @@ See also: [Screen Memory](Screen_Memory) or [Using _OFFSET](Using_OFFSET)
 ##  String Text Manipulation and Conversion 
 
 * [_CLIPBOARD$](_CLIPBOARD$) (function) returns the current [STRING](STRING) contents of the system Clipboard.
-* [_CLIPBOARD$ (statement)](_CLIPBOARD$ (statement)) sets the [STRING](STRING) contents of the current system Clipboard.
+* [_CLIPBOARD$ (statement)](_CLIPBOARD$-(statement)) sets the [STRING](STRING) contents of the current system Clipboard.
 * [_CONTROLCHR](_CONTROLCHR) (statement) [OFF](OFF) allows the control characters to be used as text characters. [ON](ON)(default) can use them as commands.
-* [_CONTROLCHR (function)](_CONTROLCHR (function))   returns the current state of _CONTROLCHR as 1 when OFF and 0 when ON.
+* [_CONTROLCHR (function)](_CONTROLCHR-(function))   returns the current state of _CONTROLCHR as 1 when OFF and 0 when ON.
 * [_CV](_CV) (function)  used to convert [_MK$](_MK$) [ASCII](ASCII) [STRING](STRING) values to numerical values.
 * [_MK$](_MK$) (function)  converts any numerical type into an [ASCII](ASCII) [STRING](STRING)  value that must be converted back using [_CV](_CV).
 
@@ -691,16 +691,16 @@ See also: [Screen Memory](Screen_Memory) or [Using _OFFSET](Using_OFFSET)
 
 * [CLOSE](CLOSE) (statement) closes an opened internet connection using the handle assigned in an OPEN statement.
 
-* [GET (TCP/IP statement)](GET (TCP/IP statement)) reads unformatted(raw) data from an opened connection using the connection handle.
+* [GET (TCP/IP statement)](GET-(TCP-IP-statement)) reads unformatted(raw) data from an opened connection using the connection handle.
 
-* [PUT (TCP/IP statement)](PUT (TCP/IP statement)) sends unformatted(raw) data to an open connection using a user's handle.
+* [PUT (TCP/IP statement)](PUT-(TCP-IP-statement)) sends unformatted(raw) data to an open connection using a user's handle.
 
 See also: [Downloading Files](Downloading_Files)
 
 ##  Text on Screen 
 
 * [_CONTROLCHR](_CONTROLCHR) [OFF](OFF) allows [ASCII](ASCII) characters 0 to 31 to be used as text characters. [ON](ON)(default) resets to default usage.
-* [_FONT (function)](_FONT (function)) creates a new alphablended font handle from a designated image handle
+* [_FONT (function)](_FONT-(function)) creates a new alphablended font handle from a designated image handle
 * [_FONT](_FONT) (statement) sets the current [_LOADFONT](_LOADFONT) function font handle to be used by [PRINT](PRINT) or [_PRINTSTRING](_PRINTSTRING).
 * [_MAPUNICODE](_MAPUNICODE) (statement) maps a [Unicode](Unicode) value to an [ASCII](ASCII) character code value.
 * [_PRINTSTRING](_PRINTSTRING) (statement) prints text or custom font strings using graphic column and row coordinate positions.
@@ -711,14 +711,14 @@ See also: [Downloading Files](Downloading_Files)
 * [COLOR](COLOR) (statement) used to change the color of the text and background in some legacy screen modes.
 * [CSRLIN](CSRLIN) (function) returns the current print cursor row position on the screen.
 * [INPUT](INPUT) (statement) requests a [STRING](STRING) or numerical keyboard entry from a program user.
-* [KEY LIST](KEY LIST) (statement) vertically lists all the [ON KEY(n)](ON KEY(n)) softkey strings associated with each function key F1 to F12.
-* [LINE INPUT](LINE INPUT) (statement) requests a [STRING](STRING) keyboard entry from a program user.
+* [KEY LIST](KEY LIST) (statement) vertically lists all the [ON KEY(n)](ON-KEY(n)) softkey strings associated with each function key F1 to F12.
+* [LINE INPUT](LINE-INPUT) (statement) requests a [STRING](STRING) keyboard entry from a program user.
 * [LOCATE](LOCATE) (statement) locates the screen text row and column positions for a [PRINT](PRINT) or [INPUT](INPUT) procedure.
 * [POS](POS) (function) returns the current print cursor column position.
 * [PRINT](PRINT) (statement) prints numeric or [STRING](STRING) expressions to the program screen.
 * [PRINT USING](PRINT USING) (statement) prints template formatted numeric or string values to the program screen.
 * [SCREEN](SCREEN) (statement) sets the screen mode of a program. No statement defaults the program to SCREEN 0 text mode.
-* [SCREEN (function)](SCREEN (function)) returns the [ASCII](ASCII) code of a text character or the color attribute at a set text location on the screen.
+* [SCREEN (function)](SCREEN-(function)) returns the [ASCII](ASCII) code of a text character or the color attribute at a set text location on the screen.
 * [SPACE$](SPACE$) (function) returns a [STRING](STRING) consisting of a number of space characters.
 * [SPC](SPC) (function) used in [PRINT](PRINT) and [LPRINT](LPRINT) statements to print or output a number of space characters.
 * [STR$](STR$) (function) returns the [STRING](STRING) representation of a numerical value.
@@ -735,7 +735,7 @@ See also: [Downloading Files](Downloading_Files)
 * [_AUTODISPLAY](_AUTODISPLAY) (statement) enables the automatic display of the screen image changes previously disabled by [_DISPLAY](_DISPLAY).
 * [_DELAY](_DELAY) (statement) suspends program execution for a [SINGLE](SINGLE) value of seconds down to milliseconds.
 * [_DISPLAY](_DISPLAY) (statement) turns off automatic display while only displaying the screen changes when called.
-*[_FREETIMER](_FREETIMER) (function) returns a free TIMER number for multiple [ON TIMER(n)](ON TIMER(n)) events.
+*[_FREETIMER](_FREETIMER) (function) returns a free TIMER number for multiple [ON TIMER(n)](ON-TIMER(n)) events.
 * [_KEYDOWN](_KEYDOWN) (function) returns whether modifying keys like CTRL, ALT, SHIFT, and any other keys are pressed.
 * [_KEYHIT](_KEYHIT) (function) returns ASCII one and two byte, SDL Virtual Key and Unicode keyboard key press codes.
 * [_LIMIT](_LIMIT) (statement) sets the loop repeat rate of a program to so many per second, relinquishing spare cpu cycles.
@@ -745,8 +745,8 @@ See also: [Downloading Files](Downloading_Files)
 * [INKEY$](INKEY$) (function)  can be used in a loop to wait for a keypress or a [Ctrl] + letter key combination.
 * [INPUT](INPUT) (statement) can be used to wait for an [Enter] key press or a text or numerical menu entry.
 * [INPUT$](INPUT$) (function) can be used to wait for a key press or a fixed length text entry.
-* [ON KEY(n)](ON KEY(n)) (event statement) executes when a keypress or keypress combination occurs.
-* [ON TIMER(n)](ON TIMER(n)) (event statement) executes when a timed event occurs. QB64 can use multiple numbered timer events.
+* [ON KEY(n)](ON-KEY(n)) (event statement) executes when a keypress or keypress combination occurs.
+* [ON TIMER(n)](ON-TIMER(n)) (event statement) executes when a timed event occurs. QB64 can use multiple numbered timer events.
 
 * [SLEEP](SLEEP) (statement) pauses the program for a specified number of seconds or a until a key press is made.
 * [TIME$](TIME$) (function) returns the present computer time in a hh:mm:ss 24 hour [STRING](STRING) format
@@ -760,13 +760,13 @@ See also: [Downloading Files](Downloading_Files)
 
 **All Statements and Functions except [SCREEN](SCREEN) Compile in QB64 Only!**
 
-* [_FULLSCREEN (function)](_FULLSCREEN (function)) returns the present full screen mode setting number of the screen window.
+* [_FULLSCREEN (function)](_FULLSCREEN-(function)) returns the present full screen mode setting number of the screen window.
 * [_FULLSCREEN](_FULLSCREEN) (statement) sets the full screen mode of the screen window. Alt + Enter can do it manually.
 * [_HEIGHT](_HEIGHT) (function) returns the height of a [_SCREENIMAGE](_SCREENIMAGE) handle to get the desktop resolution.
 * [_ICON](_ICON) (statement) creates a program icon from an image file handle created by [_LOADIMAGE](_LOADIMAGE). Cannot use .ICO files!
 * [_NEWIMAGE](_NEWIMAGE) (statement) function prepares a window image surface and returns the handle value.
 * [$RESIZE]($RESIZE) ([Metacommand](Metacommand)) used with ON allows a user to resize the program window where OFF does not.
-* [_RESIZE (function)](_RESIZE (function)) returns -1 when a program user attempts to resize the program screen.
+* [_RESIZE (function)](_RESIZE-(function)) returns -1 when a program user attempts to resize the program screen.
 * [_RESIZEHEIGHT](_RESIZEHEIGHT) (function) returns the requested new user screen height when [$RESIZE]($RESIZE):ON allows it.
 * [_RESIZEWIDTH](_RESIZEWIDTH) (function) returns the requested new user screen width when [$RESIZE]($RESIZE):ON allows it.
 * [_SCREENCLICK](_SCREENCLICK)  simulates clicking the mouse at a position on the screen to get focus.
@@ -781,12 +781,12 @@ See also: [Downloading Files](Downloading_Files)
 * [_SCREENX](_SCREENX) (function) returns the current program window's upper left corner column position on the desktop.
 * [_SCREENY](_SCREENY) (function) returns the current program window's upper left corner row position on the desktop.
 * [_TITLE](_TITLE) (statement) sets the program name [STRING](STRING) in the title bar of the program window.
-* [_WIDTH (function)](_WIDTH (function)) returns the width of a [_SCREENIMAGE](_SCREENIMAGE) handle to get the desktop resolution.
+* [_WIDTH (function)](_WIDTH-(function)) returns the width of a [_SCREENIMAGE](_SCREENIMAGE) handle to get the desktop resolution.
 
 * [SCREEN](SCREEN) sets the screen mode of a program. No statement defaults the program to SCREEN 0 text mode.
 
 ## See Also
- [C_Libraries#Console_Window](C_Libraries#Console_Window),  [Windows_Libraries#Hot_Keys_.28maximize.29](Windows_Libraries#Hot_Keys_.28maximize.29) or [Windows_Libraries#Focus](Windows_Libraries#Focus).
+ [C_Libraries#Console_Window](C_Libraries#Console_Window),  [Windows Libraries](Windows-Libraries) or [Windows_Libraries#Focus](Windows_Libraries#Focus).
 
 ##  QB64 Programming Symbols 
 
@@ -843,7 +843,7 @@ See also: [Downloading Files](Downloading_Files)
 *[^](^) operator
 *[MOD](MOD) operator
 
-> **[Relational Operations](Relational Operations)**
+> **[Relational Operations](Relational-Operations)**
 
 * [Equal](Equal) (Equal to condition)
 * [Greater_Than](Greater_Than) (Greater than condition)

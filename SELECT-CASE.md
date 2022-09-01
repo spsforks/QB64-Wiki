@@ -35,7 +35,7 @@
 
 ## Example(s)
 
-*Example 1:* SELECT CASE can use literal or variable [STRING](STRING) or numerical values in CASE comparisons:
+SELECT CASE can use literal or variable [STRING](STRING) or numerical values in CASE comparisons:
 
 ```vb
 

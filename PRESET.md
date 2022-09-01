@@ -21,7 +21,7 @@ The **PRESET** graphic [SCREEN](SCREEN) statement turns a pixel at a coordinate 
 
 ## Example(s)
 
-*Example 1:* Using PRESET to locate a [DRAW](DRAW) statement that draws a box that is bright red.
+Using PRESET to locate a [DRAW](DRAW) statement that draws a box that is bright red.
 
 ```vb
 
@@ -33,7 +33,7 @@ DRAW "C12 U20 R20 D20 L20"
 
 > *Explanation:* The [DRAW](DRAW) string required a color designation as PRESET defaulted to the black background color. 
 
-*Example 2:* Displays the flags of countries that use simple horizontal or vertical color blocks with a highlighted arrow key menu.
+Displays the flags of countries that use simple horizontal or vertical color blocks with a highlighted arrow key menu.
 
 ```vb
 
@@ -137,7 +137,7 @@ END SUB
 ```
 <sub>Code by AlGoreIthm</sub>
 
-> *Explanation:* Using the [PUT (graphics statement)](PUT (graphics statement)) PRESET action highlights the menu selection in graphic screen modes by returning a negative image.
+> *Explanation:* Using the [PUT (graphics statement)](PUT-(graphics-statement)) PRESET action highlights the menu selection in graphic screen modes by returning a negative image.
  
 ## See Also
 

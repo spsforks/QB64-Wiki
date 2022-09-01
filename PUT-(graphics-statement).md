@@ -15,7 +15,7 @@ The **PUT** graphics statement is used to place [GET (graphics statement)](GET-(
 
 ## Usage
 
-* **The entire box area of the image MUST be on the screen or an "Illegal function call" [ERROR Codes](ERROR Codes) will occur!**
+* **The entire box area of the image MUST be on the screen or an "Illegal function call" [ERROR Codes](ERROR-Codes) will occur!**
 * In **QB64** [_CLIP](_CLIP) can be used when part of the image may be off of the screen. This will also prevent off screen errors!
   - PUT (-10, 10), mypic(0), PSET ' this causes an illegal function call without [_CLIP](_CLIP)
   - PUT (-10, 10), mypic(0), _CLIP PSET ' allows a graphic to be placed partially off-screen
@@ -39,7 +39,7 @@ The **PUT** graphics statement is used to place [GET (graphics statement)](GET-(
 
 ## Example(s)
 
-*Example 1:* How [GET](GET) and PUT can be used with images loaded with [_LOADIMAGE](_LOADIMAGE). The background color is omitted or "masked".
+How [GET](GET) and PUT can be used with images loaded with [_LOADIMAGE](_LOADIMAGE). The background color is omitted or "masked".
 
 ```vb
 
@@ -62,7 +62,7 @@ END
 
 > *Explanation:* **QB64** allows one PUT color to be "masked" to allow odd shaped sprite image backgrounds to be transparent.
 
-*Example 2:* Using a [STRING](STRING) instead of an [arrays](arrays) to store [GET](GET) image data that can be PUT later. For images up to 256 colors only.
+Using a [STRING](STRING) instead of an [arrays](arrays) to store [GET](GET) image data that can be PUT later. For images up to 256 colors only.
 
 ```vb
 

@@ -19,7 +19,7 @@
 
 ## Example(s)
 
-*Example 1:* Using an error handler that ignores any error.
+Using an error handler that ignores any error.
 
 ```vb
 
@@ -46,7 +46,7 @@ Error handled...ending program
 
 > *Explanation:* The ON ERROR statement is normally placed at the beginning of the main module code.  Errhandle is the line label sub referred to in the statement. The handler prints the error code and attempts to use the next line of code using [RESUME](RESUME) NEXT which is only used in error handling procedures. [_ERRORLINE](_ERRORLINE) returns the program file's actual text line count found in the IDE.
 
-*Example 2:* Using an error handler in a [SUB](SUB) procedure.
+Using an error handler in a [SUB](SUB) procedure.
 
 ```vb
 

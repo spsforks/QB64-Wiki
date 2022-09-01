@@ -32,7 +32,7 @@ The [FOR](FOR) statement creates a counter loop using specified start and stop n
 
 ## Example(s)
 
-*Example 1:* Adding all of the even numbers from 10 to 0.
+Adding all of the even numbers from 10 to 0.
 
 ```vb
 

@@ -20,7 +20,7 @@ The **SCREEN** function returns the [ASCII](ASCII) code of a text character or t
 
 ## Example(s)
 
-*Example 1:* Finding the text foreground and background colors in SCREEN 0 only:
+Finding the text foreground and background colors in SCREEN 0 only:
 
 ```vb
 

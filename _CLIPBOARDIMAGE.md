@@ -1,30 +1,26 @@
 The [_CLIPBOARDIMAGE](_CLIPBOARDIMAGE) statement copies a valid QB64 image to the clipboard.
 
-
 ## Syntax
 
->  [_CLIPBOARDIMAGE](_CLIPBOARDIMAGE) = existingImageHandle&
-
+> [_CLIPBOARDIMAGE](_CLIPBOARDIMAGE) = existingImageHandle&
 
 ## Description
 
 * existingImageHandle& is a valid handle to a graphic QB64 image in memory, created with [_NEWIMAGE](_NEWIMAGE), [_LOADIMAGE](_LOADIMAGE) or [_COPYIMAGE](_COPYIMAGE).
 * You can pass [_SOURCE](_SOURCE), [_DEST](_DEST) or [_DISPLAY](_DISPLAY) to copy the current source, destination or active display pages, as long as they are valid graphic images.
-* SCREEN 0 handles (created either with [_NEWIMAGE](_NEWIMAGE) or passed using _DEST while in a text screen) are not valid and will create an [ERROR Codes](ERROR Codes) or [ERROR Codes](ERROR Codes) error.
-* [Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions](Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions).
-
+* SCREEN 0 handles (created either with [_NEWIMAGE](_NEWIMAGE) or passed using _DEST while in a text screen) are not valid and will create an [ERROR Codes](ERROR-Codes) or [ERROR Codes](ERROR-Codes) error.
+* [Keywords currently not supported](Keywords_currently_not_supported_by_QB64).
 
 ## Availability
 
 * **Build 20170906/64** onward.
 
-
 ## Example(s)
 
-## Example(s)
- Create a sample image and copy it to the clipboard:
+Create a sample image and copy it to the clipboard:
 
 ```vb
+
 SCREEN _NEWIMAGE(800, 600, 32)
 
 'Create image in memory:
@@ -52,14 +48,8 @@ _CLIPBOARDIMAGE = canvas&
 PRINT "Image copied to clipboard."
 
 ```
-<sub>Code by Fellippe Heitor</sub>
-
 
 ## See Also
 
-* [_CLIPBOARDIMAGE (function)](_CLIPBOARDIMAGE (function)) (function - used to paste an image from the clipboard)
-* [_CLIPBOARD$](_CLIPBOARD$), [_CLIPBOARD$ (statement)](_CLIPBOARD$ (statement)) (used to copy/paste text)
-
-
-
-
+* [_CLIPBOARDIMAGE (function)](_CLIPBOARDIMAGE-(function)) (function - used to paste an image from the clipboard)
+* [_CLIPBOARD$](_CLIPBOARD$), [_CLIPBOARD$ (statement)](_CLIPBOARD$-(statement)) (used to copy/paste text)

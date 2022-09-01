@@ -26,7 +26,7 @@
 
 ## Example(s)
 
-*Example 1:* One line IF statement
+One line IF statement
 
 ```vb
 

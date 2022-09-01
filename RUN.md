@@ -26,7 +26,7 @@ The multi-modular technique goes back to when QBasic and QuickBASIC had module s
 
 ## Example(s)
 
-*Example 1:* Shows how RUN can reference multiple line numbers in the main module code. No line number executes first code line.
+Shows how RUN can reference multiple line numbers in the main module code. No line number executes first code line.
 
 ```vb
 

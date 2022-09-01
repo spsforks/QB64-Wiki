@@ -11,7 +11,7 @@
 * [PRINT](PRINT) does not require any concatenation, but it can be used instead of using [semicolon](semicolon)s where strings are combined ONLY.
 * String values CANNOT be subtracted from a value! Use [LEFT$](LEFT$), [RIGHT$](RIGHT$) or [MID$](MID$) to get portions of a string value.
 
-*Example 1:* Adding quotation marks to a string value using concatenation. Variables cannot be defined using semicolons! 
+Adding quotation marks to a string value using concatenation. Variables cannot be defined using semicolons! 
 
 ```vb
 
@@ -27,7 +27,7 @@ Bill Gates never said "Hello World!" when he answered the telephone!
 
 ```
 
-*Example 2:* Inserting numerical values in a PRINT string with semicolons, PRINT USING and PRINT with concatenation.
+Inserting numerical values in a PRINT string with semicolons, PRINT USING and PRINT with concatenation.
 
 ```vb
 

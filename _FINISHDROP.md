@@ -1,25 +1,21 @@
 The [_FINISHDROP](_FINISHDROP) statement resets [_TOTALDROPPEDFILES](_TOTALDROPPEDFILES) and clears the [_DROPPEDFILE](_DROPPEDFILE) list of items (files/folders).
 
-
 ## Syntax
 
->  [_FINISHDROP](_FINISHDROP)
+> [_FINISHDROP](_FINISHDROP)
 
 ## Description
 
 * When using [_DROPPEDFILE](_DROPPEDFILE) with an index (which goes from 1 to [_TOTALDROPPEDFILES](_TOTALDROPPEDFILES)), you must call [_FINISHDROP](_FINISHDROP) after you finish working with the list in order to prepare for the next drag/drop operation.
-* **[Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions](Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions)**.
-
+* **[Keywords currently not supported](Keywords_currently_not_supported_by_QB64)**.
 
 ## Availability
 
 * **Version 1.3 and up**.
 
-
 ## Example(s)
 
-## Example(s)
- Accepting files dragged from a folder and processing the list received by specifying an index. 
+Accepting files dragged from a folder and processing the list received by specifying an index. 
 
 ```vb
 
@@ -54,12 +50,7 @@ LOOP
 
 ```
 
-
 ## See Also
 
 * [_ACCEPTFILEDROP](_ACCEPTFILEDROP), [_TOTALDROPPEDFILES](_TOTALDROPPEDFILES), [_DROPPEDFILE](_DROPPEDFILE)
 * [_FILEEXISTS](_FILEEXISTS), [_DIREXISTS](_DIREXISTS)
-
-
-
-

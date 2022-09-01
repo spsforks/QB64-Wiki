@@ -19,7 +19,7 @@
 
 ## Example(s)
 
-*Example 1:* Returns after a Gosub.
+Returns after a Gosub.
 
 ```vb
 

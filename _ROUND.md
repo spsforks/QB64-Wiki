@@ -1,10 +1,8 @@
 The [_ROUND](_ROUND) function rounds to the closest even [INTEGER](INTEGER), [LONG](LONG) or [_INTEGER64](_INTEGER64) numerical value.
 
-
 ## Syntax
 
->  value = [_ROUND](_ROUND)(number)
-
+> value = [_ROUND](_ROUND)(number)
 
 ## Description
 
@@ -12,9 +10,9 @@ The [_ROUND](_ROUND) function rounds to the closest even [INTEGER](INTEGER), [LO
 * Can be used when numerical values exceed the limits of [CINT](CINT) or [CLNG](CLNG).
 * Rounding is done to the closest even [INTEGER](INTEGER) value. The same as QBasic does with [\](\).
 
-
 ## Example(s)
- Displays how QB64 rounds to the closest even integer value.
+
+Displays how QB64 rounds to the closest even integer value.
 
 ```vb
 
@@ -38,13 +36,7 @@ PRINT _ROUND(5.5)
 
 ```
 
-
-
 ## See Also
 
 * [INT](INT), [CINT](CINT)
 * [FIX](FIX), [CLNG](CLNG)
-
-
-
-

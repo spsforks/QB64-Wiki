@@ -884,10 +884,10 @@ DATA 8801,177,8805,8804,8992,8993,247,8776,176,8729,183,8730,8319,178,9632,160
 
 ## See Also
 
-* [_MAPUNICODE](_MAPUNICODE), [_MAPUNICODE (function)](_MAPUNICODE (function))
+* [_MAPUNICODE](_MAPUNICODE), [_MAPUNICODE (function)](_MAPUNICODE-(function))
 * [Unicode](Unicode), [ASCII](ASCII), [CHR$](CHR$), [ASC](ASC)
 * [_KEYHIT](_KEYHIT), [_KEYDOWN](_KEYDOWN)
-* [Text Using Graphics](Text Using Graphics)
+* [Text Using Graphics](Text-Using-Graphics)
 
 
 

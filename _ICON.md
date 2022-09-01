@@ -1,10 +1,8 @@
 The [_ICON](_ICON) statement uses an image handle from [_LOADIMAGE](_LOADIMAGE) for the program header and icon image in the OS.
 
-
 ## Syntax
 
->  [_ICON](_ICON) [mainImageHandle&[, smallImageHandle&]]
-
+> [_ICON](_ICON) [mainImageHandle&[, smallImageHandle&]]
 
 ## Parameter(s)
 
@@ -12,28 +10,25 @@ The [_ICON](_ICON) statement uses an image handle from [_LOADIMAGE](_LOADIMAGE) 
 * smallImageHandle& is the [LONG](LONG) handle value of a different title bar image pre-loaded with [_LOADIMAGE](_LOADIMAGE) when used.
 * No image handle designates use of the default QB64 icon or the embedded icon set by [$EXEICON]($EXEICON).
 
-
 ## Description
 
 * If no image handle is passed, the default QB64 icon will be used (all versions). If the [$EXEICON]($EXEICON) metacommand is used, [_ICON](_ICON) without an image handle uses the embedded icon from the binary (Windows only).
 * Beginning with **version 1.000**, the following is considered: 
-> ::mainImageHandle& creates the image as the icon in the OS and the image in the program header (title bar).
-> ::smallImageHandle& can be used for a different image in the program header bar.
-*The header image will automatically be resized to fit the icon size of 16 X 16 if smaller or larger.
-*Once the program's icon is set, the image handle can be discarded with [_FREEIMAGE](_FREEIMAGE).
-
+  * mainImageHandle& creates the image as the icon in the OS and the image in the program header (title bar).
+  * smallImageHandle& can be used for a different image in the program header bar.
+* The header image will automatically be resized to fit the icon size of 16 X 16 if smaller or larger.
+* Once the program's icon is set, the image handle can be discarded with [_FREEIMAGE](_FREEIMAGE).
 
 ## Error(s)
 
 * **NOTE: Icon files are not supported with [_LOADIMAGE](_LOADIMAGE) and an error will occur. See Example 2.** 
 * Images used can be smaller or larger than 32 X 32 pixels, but image resolution may be affected.
-* It is important to free unused or uneeded images with [_FREEIMAGE](_FREEIMAGE) to prevent memory overflow errors.
-*In **SCREEN 0** (default text mode) you need to specify 32-bit mode in [_LOADIMAGE](_LOADIMAGE) to load images.**
-
+* It is important to free unused or unneeded images with [_FREEIMAGE](_FREEIMAGE) to prevent memory overflow errors.
+* In **SCREEN 0** (default text mode) you need to specify 32-bit mode in [_LOADIMAGE](_LOADIMAGE) to load images.
 
 ## Example(s)
 
-*Example 1:* Loading an image to a 32 bit palette in SCREEN 0 (the default screen mode).
+Loading an image to a 32 bit palette in SCREEN 0 (the default screen mode).
 
 ```vb
 
@@ -45,10 +40,10 @@ IF i& < -1 THEN
 END IF
 
 ```
+
 > *Note:* _ICON images can be freed if the [SCREEN](SCREEN) mode stays the same. Freed image handles can on longer be referenced. 
 
-
-*Example 2:* Function that converts an icon into a temporary bitmap for use in QB64. Function returns the available image count.
+Function that converts an icon into a temporary bitmap for use in QB64. Function returns the available image count.
 
 ```vb
 
@@ -127,19 +122,14 @@ Icon2BMP = count '             return the number of icons available in the icon 
 END FUNCTION 
 
 ```
-Code by Ted Weissgerber
->  *Note:* Once the file has been loaded into memory, the image handle can still be used even after the file has been deleted.
 
+> *Note:* Once the file has been loaded into memory, the image handle can still be used even after the file has been deleted.
 
 ## See Also
 
 * [_TITLE](_TITLE)
 * [_LOADIMAGE](_LOADIMAGE)
 * [$EXEICON]($EXEICON)
-* [Creating Icon Bitmaps](Creating Icon Bitmaps) (member-contributed program)
-* [Bitmaps](Bitmaps), [Icons and Cursors](Icons and Cursors)
-* [Resource_Table_extraction#Extract_Icon](Resource_Table_extraction#Extract_Icon)
-
-
-
-
+* [Creating Icon Bitmaps](Creating-Icon-Bitmaps) (member-contributed program)
+* [Bitmaps](Bitmaps), [Icons and Cursors](Icons-and-Cursors)
+* [Resource Table extraction](Resource-Table-extraction)

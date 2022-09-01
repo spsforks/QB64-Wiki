@@ -14,7 +14,7 @@ The logical [AND](AND) numerical operator compares two values in respect of thei
 
 The results of the bitwise logical operations, where *A* and *B* are operands, and *T* and *F* indicate that a bit is set or not set:
 
-| A | B |   | [NOT](NOT) B | A [AND](AND) B | A [OR](OR) B | A [XOR](XOR) B | A [EQV](EQV) B | A [IMP](IMP) B |
+| A | B |   | [NOT](NOT)ï¿½B | Aï¿½[AND](AND)ï¿½B | Aï¿½[OR](OR)ï¿½B | Aï¿½[XOR](XOR)ï¿½B | Aï¿½[EQV](EQV)ï¿½B | Aï¿½[IMP](IMP)ï¿½B |
 | - | - | - | - | - | - | - | - | - |
 | T | T |   | F | T | T | F | T | T |
 | T | F |   | T | F | T | T | F | F |
@@ -60,7 +60,7 @@ This allows relational tests to be inverted and combined using the bitwise logic
 
 > To find the second (HI) byte's decimal value of two byte [INTEGER](INTEGER)s use: secondbyte = twobyteint \ 256
 
-*Example 3:* Finding the binary bits on in an [INTEGER](INTEGER) value. 
+Finding the binary bits on in an [INTEGER](INTEGER) value. 
 
 ```vb
 

@@ -1,20 +1,16 @@
 The [_SNDLOOP](_SNDLOOP) statement is like [_SNDPLAY](_SNDPLAY) but the sound is looped. Uses a handle from the [_SNDOPEN](_SNDOPEN) function.
 
-
 ## Syntax
 
->  [_SNDLOOP](_SNDLOOP) handle&
-
+> [_SNDLOOP](_SNDLOOP) handle&
 
 ## Description
 
-*Plays the sound identified by handle& in a loop.
-
-
-## Example(s)
+* Plays the sound identified by handle& in a loop.
 
 ## Example(s)
- Loading a sound or music file and playing it in a loop until a key is pressed.
+
+Loading a sound or music file and playing it in a loop until a key is pressed.
 
 ```vb
 
@@ -29,11 +25,6 @@ _SNDCLOSE bg
 
 ```
 
-
 ## See Also
 
 * [_SNDOPEN](_SNDOPEN), [_SNDSTOP](_SNDSTOP)
-
-
-
-

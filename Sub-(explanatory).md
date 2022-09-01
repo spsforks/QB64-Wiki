@@ -20,7 +20,7 @@ A **SUB** procedure is a procedure within a program that can calculate and retur
 * SUB procedures can return multiple values through the parameters unlike functions.
 * SUB procedures return to the next code statement after the call in the main or other procedures.
 * [EXIT](EXIT) SUB can be used to exit early or to exit before [GOSUB](GOSUB) procedures using [RETURN](RETURN).
-* [TYPE](TYPE) and [DECLARE LIBRARY](DECLARE LIBRARY) declarations can be made inside of SUB procedures in QB64 only.
+* [TYPE](TYPE) and [DECLARE LIBRARY](DECLARE-LIBRARY) declarations can be made inside of SUB procedures in QB64 only.
 * SUB procedures can save program memory as all memory used in a SUB is released on procedure exit except for [STATIC](STATIC) values.
 * [_DEFINE](_DEFINE) can be used to define all new or old QB64 variable [TYPE](TYPE) definitions instead of DEF***.
 * [$INCLUDE]($INCLUDE) text library files with needed SUB and [FUNCTION](FUNCTION) procedures can be included in programs after all sub-procedures.
@@ -29,7 +29,7 @@ A **SUB** procedure is a procedure within a program that can calculate and retur
 
 ## Example(s)
 
-*Example 1:* Text [PRINT](PRINT) screen centering using [PEEK](PEEK) to find the [SCREEN](SCREEN) mode width. Call and SUB procedure code:
+Text [PRINT](PRINT) screen centering using [PEEK](PEEK) to find the [SCREEN](SCREEN) mode width. Call and SUB procedure code:
 
 ```vb
 
@@ -50,7 +50,7 @@ END SUB
 
 > *Explanation:* The procedure centers text printed to the screen. The parameters are the text color, row and the text itself as a string or string variable. The maximum width of the screen mode in characters is found and divided in half to find the center point. The text string's length is also divided in half and subtracted from the screen's center position. The procedure will also work when the [WIDTH](WIDTH) statement has been used. When adding variables to Text$ use the + concatenation operator. Not semicolons!
 
-*Example 2:* SUB and [FUNCTION](FUNCTION) procedures always return to the place they were called in the main or other sub-procedures:
+SUB and [FUNCTION](FUNCTION) procedures always return to the place they were called in the main or other sub-procedures:
 
 ```vb
 

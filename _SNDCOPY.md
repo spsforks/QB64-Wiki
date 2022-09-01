@@ -1,10 +1,8 @@
 The [_SNDCOPY](_SNDCOPY) function copies a sound to a new handle so that two or more of the same sound can be played at once. The passed handle parameter is from the [_SNDOPEN](_SNDOPEN) function.
 
-
 ## Syntax
 
->  copyHandle& = [_SNDCOPY](_SNDCOPY)(handle&)
-
+> copyHandle& = [_SNDCOPY](_SNDCOPY)(handle&)
 
 ## Description
 
@@ -13,12 +11,7 @@ The [_SNDCOPY](_SNDCOPY) function copies a sound to a new handle so that two or 
 * The sound data referred to by the handle and its copies are not freed until all of them are closed.
 * In versions **prior to build 20170811/60**, the sound identified by handle& must have been opened using the [_SNDOPEN](_SNDOPEN) to use this function.
 
-
 ## See Also
 
 * [_SNDPLAYCOPY](_SNDPLAYCOPY)
 * [_SNDOPEN](_SNDOPEN)
-
-
-
-

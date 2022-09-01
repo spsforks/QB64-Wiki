@@ -19,7 +19,7 @@ The [PCOPY](PCOPY) statement copies one source screen page to a destination page
 
 ## Example(s)
 
-*Example 1:* Creating a mouse cursor using a page number that **you create** in memory without setting up page flipping.
+Creating a mouse cursor using a page number that **you create** in memory without setting up page flipping.
 
 ```vb
 
@@ -49,7 +49,7 @@ END SUB
 
 > *Note:* Works with [_DISPLAY (function)](_DISPLAY-(function)) as the other page. If mouse reads are not crucial, put the _MOUSEINPUT loop inside of the UpdateCursor Sub.
 
-*Example 2:* Bouncing balls
+Bouncing balls
 
 ```vb
 

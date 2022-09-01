@@ -162,7 +162,7 @@ PRINT "Done!"
 
 > **Note:** Some download links require that a **tag** be added after the file name. Remove that tag if it will be used as the file name.
 
-> **Downloading a sequencial text file from a Drop Box download link using HTTP GET and the  [GET (TCP/IP statement)](GET (TCP/IP statement)) statement.**
+> **Downloading a sequencial text file from a Drop Box download link using HTTP GET and the  [GET (TCP/IP statement)](GET-(TCP-IP-statement)) statement.**
 
 ```vb
 

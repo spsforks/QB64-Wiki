@@ -1,10 +1,8 @@
 The [_SNDOPEN](_SNDOPEN) function loads a sound file into memory and returns a [LONG](LONG) handle value above 0.
 
-
 ## Syntax
 
->  soundHandle& = [_SNDOPEN](_SNDOPEN)(fileName$)
-
+> soundHandle& = [_SNDOPEN](_SNDOPEN)(fileName$)
 
 ## Description
 
@@ -13,12 +11,11 @@ The [_SNDOPEN](_SNDOPEN) function loads a sound file into memory and returns a [
 * **Always check the handle value returned is greater than zero before attempting to play the sound.**
 * The handle can be used by most of the _SND sound playing functions and statements in QB64 except [_SNDPLAYFILE](_SNDPLAYFILE) which plays a sound file directly from the disk and does not use a handle value.
 * Handles can be closed with [_SNDCLOSE](_SNDCLOSE) when the sound is no longer necessary. 
-* If a WAV sound file won't play, try it using the Windows [Windows_Libraries#Play_WAV_Sounds](Windows_Libraries#Play_WAV_Sounds) to check it or convert the sound file to OGG.
-
+* If a WAV sound file won't play, try it using the Windows [Windows Libraries](Windows-Libraries) to check it or convert the sound file to OGG.
 
 ## Example(s)
 
-*Snippet 1:* Loading a sound file to use in the program later. Only load it once and use the handle any time you want.
+Loading a sound file to use in the program later. Only load it once and use the handle any time you want.
 
 ```vb
 
@@ -27,8 +24,7 @@ IF h& = 0 THEN BEEP ELSE _SNDPLAY h&      'check for valid handle before using!
 
 ```
 
-
-*Snippet 2:* Playing a sound from 2 different speakers based on program results.
+Playing a sound from 2 different speakers based on program results.
 
 ```vb
 
@@ -41,9 +37,7 @@ _SNDPLAY Laff&                    'play sound
 
 ```
 
-
-## Example(s)
- Playing a file and controlling playback:
+Playing a file and controlling playback:
 
 ```vb
 
@@ -105,9 +99,6 @@ DO
 LOOP
 
 ```
-Code by Johny B
-
-
 
 ## See Also
 
@@ -119,7 +110,3 @@ Code by Johny B
 * [_SNDBAL](_SNDBAL), [_SNDLEN](_SNDLEN), [_SNDVOL](_SNDVOL)
 * [_SNDPLAYFILE](_SNDPLAYFILE) (plays a named sound file directly and closes)
 * [_SNDRAW](_SNDRAW), [_SNDRATE](_SNDRATE), [_SNDRAWLEN](_SNDRAWLEN) (raw sounds without files)
-
-
-
-

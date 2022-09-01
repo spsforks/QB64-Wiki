@@ -1,8 +1,8 @@
-The [_PALETTECOLOR (function)](_PALETTECOLOR (function)) function is used to return the 32 bit attribute color setting of an image or screen page handle's palette.
+The [_PALETTECOLOR (function)](_PALETTECOLOR-(function)) function is used to return the 32 bit attribute color setting of an image or screen page handle's palette.
 
 ## Syntax
 
-> color32Value& = [_PALETTECOLOR (function)](_PALETTECOLOR (function))(attributeNumber%, imgHandle&)
+> color32Value& = [_PALETTECOLOR (function)](_PALETTECOLOR-(function))(attributeNumber%, imgHandle&)
 
 ## Description
 
@@ -40,7 +40,7 @@ END
 
 ```
 
-> *Explanation:* To save a bitmap or other image you need the RGB color settings or the colors will look all wrong. You can store that information into a larger image array and [GET (graphics statement)](GET (graphics statement)) the image AFTER the color settings. Just GET the image starting at Array(48).
+> *Explanation:* To save a bitmap or other image you need the RGB color settings or the colors will look all wrong. You can store that information into a larger image array and [GET (graphics statement)](GET-(graphics-statement)) the image AFTER the color settings. Just GET the image starting at Array(48).
 
 ## See Also
 

@@ -12,7 +12,7 @@
 
 ## Example(s)
 
-*Example 1:* Using LSET with a [FIELD](FIELD) definition. Note: May create an empty (unchanged) file that can be deleted.
+Using LSET with a [FIELD](FIELD) definition. Note: May create an empty (unchanged) file that can be deleted.
 
 ```vb
 

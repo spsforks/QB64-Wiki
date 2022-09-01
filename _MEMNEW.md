@@ -1,15 +1,12 @@
 The [_MEMNEW](_MEMNEW) function allocates new memory and returns a [_MEM](_MEM) memory block referring to it.
 
-
 ## Syntax
 
->  memoryBlock = [_MEMNEW](_MEMNEW)(byteSize)
-
+> memoryBlock = [_MEMNEW](_MEMNEW)(byteSize)
 
 ## Parameter(s)
 
 * The byteSize parameter is the desired byte size of the memory block based on the variable [type](type) it will hold.
-
 
 ## Description
 
@@ -20,11 +17,9 @@ The [_MEMNEW](_MEMNEW) function allocates new memory and returns a [_MEM](_MEM) 
 * **If the read only memory block .SIZE is 0, the memory block was not created.**
 * **All values created by memory functions must be freed using [_MEMFREE](_MEMFREE) with a valid [_MEM](_MEM) variable.**
 
-
 ## Example(s)
 
-## Example(s)
- Shows how [SINGLE](SINGLE) numerical values can be passed, but non-fixed [STRING](STRING) lengths cannot get the value.
+Shows how [SINGLE](SINGLE) numerical values can be passed, but non-fixed [STRING](STRING) lengths cannot get the value.
 
 ```vb
 
@@ -52,17 +47,11 @@ b =  12345.6
 d$ =  0
 e$ = Doggy 5
 f = Doggy 5 
+
 ```
-
-
-
 
 ## See Also
 
 * [_MEM](_MEM), [_MEMPUT](_MEMPUT)
-* [_MEMGET](_MEMGET), [_MEMGET (function)](_MEMGET (function))
+* [_MEMGET](_MEMGET), [_MEMGET (function)](_MEMGET-(function))
 * [_MEMFILL](_MEMFILL), [_MEMFREE](_MEMFREE)
-
-
-
-

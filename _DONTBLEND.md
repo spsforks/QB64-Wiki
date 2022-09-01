@@ -1,28 +1,24 @@
 The [_DONTBLEND](_DONTBLEND) statement turns off 32 bit alpha blending for the current image or screen mode where [_BLEND](_BLEND) is default.
 
-
 ## Syntax
 
->  [_DONTBLEND](_DONTBLEND) [imageHandle&]
-
+> [_DONTBLEND](_DONTBLEND) [imageHandle&]
 
 ## Parameter(s)
 
 * If imageHandle& is omitted, it is assumed to be the current [_DEST](_DEST)ination write page.
 
-
 ## Description
 
-* If imageHandle& is not valid, an [ERROR Codes](ERROR Codes) error will occur.
+* If imageHandle& is not valid, an [ERROR Codes](ERROR-Codes) error will occur.
 * [_DONTBLEND](_DONTBLEND) is faster than the default [_BLEND](_BLEND). **You may want to disable it**, unless you really need to use it in 32 bit.
 * **32 bit screen surface backgrounds (black) have zero [_ALPHA](_ALPHA) so that they are transparent when placed over other surfaces.**
 * Use [CLS](CLS) to make a new surface background [_ALPHA](_ALPHA) 255 or opaque.
 * Both [_SOURCE](_SOURCE) and [_DEST](_DEST) must have [_BLEND](_BLEND) enabled, or else colors will NOT blend.
 
-
 ## Example(s)
 
-*Example 1:* Use _DONTBLEND when you want the 32 bit screen surface to be opaque so that it covers up other backgrounds. [CLS](CLS) works too.
+Use _DONTBLEND when you want the 32 bit screen surface to be opaque so that it covers up other backgrounds. [CLS](CLS) works too.
 
 ```vb
 
@@ -52,11 +48,9 @@ END SUB
 
 ```
 
-
-*Example 2:* Turning off blending to create transparency.
+Turning off blending to create transparency.
 
 ```vb
-
 
 SCREEN _NEWIMAGE(640, 480, 32)
 alphaSprite& = _NEWIMAGE(64, 64, 32)
@@ -99,17 +93,11 @@ DO:  _LIMIT 60
 LOOP UNTIL LEN(INKEY$) 
 
 ```
-Code by Zom-B
 
 *Explanation:* To make the alpha image, turn alpha blending off. Otherwise PSET blends the pixel to instead of making the sprite transparent.
-
 
 ## See Also
 
 * [_BLEND](_BLEND)
-* [_BLEND (function)](_BLEND (function))
+* [_BLEND (function)](_BLEND-(function))
 * [Images](Images)
-
-
-
-

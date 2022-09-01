@@ -13,7 +13,7 @@ The [LOG](LOG) math function returns the natural logarithm of a specified numeri
 
 ## Example(s)
 
-*Example 1:* [FUNCTION](FUNCTION) to find the base ten logarithm of a numerical value.
+[FUNCTION](FUNCTION) to find the base ten logarithm of a numerical value.
 
 ```vb
 

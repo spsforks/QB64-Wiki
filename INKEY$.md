@@ -47,7 +47,7 @@ The [INKEY$](INKEY$) function returns user input as [ASCII](ASCII) [STRING](STRI
 * INKEY$ 2 byte combinations always begin with [CHR$](CHR$)(0). [ASC](ASC) will always read the first byte code as zero.
 * Read the second byte code using: **code2 = ASC(press$, 2)**
 
-**[ASCII#Two_Byte_Codes](ASCII#Two_Byte_Codes)**
+**[ASCII](ASCII)**
 
 ```text
 
@@ -96,7 +96,7 @@ The [INKEY$](INKEY$) function returns user input as [ASCII](ASCII) [STRING](STRI
 
 ## Example(s)
 
-*Example 1:* Clearing the keyboard buffer after [SLEEP](SLEEP) delays for later [INPUT](INPUT).
+Clearing the keyboard buffer after [SLEEP](SLEEP) delays for later [INPUT](INPUT).
 
 ```vb
 

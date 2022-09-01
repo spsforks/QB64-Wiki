@@ -24,7 +24,7 @@ A REDIM statement can re-dimension one [$DYNAMIC]($DYNAMIC)(flexible) [Arrays](A
 
 ## Example(s)
 
-*Example 1:* The [$DYNAMIC]($DYNAMIC) metacommand allows an array to be re-sized using [DIM](DIM) and REDIM.
+The [$DYNAMIC]($DYNAMIC) metacommand allows an array to be re-sized using [DIM](DIM) and REDIM.
 
 ```vb
 

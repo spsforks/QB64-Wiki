@@ -9,7 +9,7 @@ The [_WINDOWHASFOCUS](_WINDOWHASFOCUS) function returns true (-1) if the current
 ## Description
 
 * The function returns true (-1) if the current program is the topmost window on the user's desktop and has focus. If the current program is running behind another window, the function returns false (0).
-* [Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions](Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions).
+* [Keywords currently not supported](Keywords_currently_not_supported_by_QB64).
 
 
 ## Availability

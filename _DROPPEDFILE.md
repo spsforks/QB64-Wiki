@@ -1,13 +1,14 @@
 The [_DROPPEDFILE](_DROPPEDFILE) function returns the list of items (files or folders) dropped in a program's window after [_ACCEPTFILEDROP](_ACCEPTFILEDROP) is enabled.
 
-
 ## Syntax
 
 *Syntax 1*
->  nextItem$ = [_DROPPEDFILE](_DROPPEDFILE)
+
+> nextItem$ = [_DROPPEDFILE](_DROPPEDFILE)
 
 *Syntax 2*
->  nextItem$ = [_DROPPEDFILE](_DROPPEDFILE)(index&)
+
+> nextItem$ = [_DROPPEDFILE](_DROPPEDFILE)(index&)
 
 ## Description
 
@@ -15,18 +16,15 @@ The [_DROPPEDFILE](_DROPPEDFILE) function returns the list of items (files or fo
 * When using [_DROPPEDFILE](_DROPPEDFILE) to read the list sequentially (without specifying an *index&*), an empty string ("") indicates the list is over and then [_TOTALDROPPEDFILES](_TOTALDROPPEDFILES) gets reset to 0.
 * When using [_DROPPEDFILE](_DROPPEDFILE) with an index (which goes from 1 to [_TOTALDROPPEDFILES](_TOTALDROPPEDFILES)), you must call [_FINISHDROP](_FINISHDROP) after you finish working with the list.
 * Because it returns a string, [_DROPPEDFILE](_DROPPEDFILE) also accepts being followed by a string suffix ([_DROPPEDFILE](_DROPPEDFILE)**$**)
-* **[Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions](Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions)**.
-
+* **[Keywords currently not supported](Keywords_currently_not_supported_by_QB64)**.
 
 ## Availability
 
 * **Version 1.3 and up**.
 
-
 ## Example(s)
 
-## Example(s)
- Accepting files dragged from a folder and processing the list received by specifying an index. 
+Accepting files dragged from a folder and processing the list received by specifying an index. 
 
 ```vb
 
@@ -61,12 +59,7 @@ LOOP
 
 ```
 
-
 ## See Also
 
 * [_ACCEPTFILEDROP](_ACCEPTFILEDROP), [_TOTALDROPPEDFILES](_TOTALDROPPEDFILES), [_FINISHDROP](_FINISHDROP)
 * [_FILEEXISTS](_FILEEXISTS), [_DIREXISTS](_DIREXISTS)
-
-
-
-

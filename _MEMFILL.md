@@ -1,10 +1,8 @@
 The [_MEMFILL](_MEMFILL) statement converts a value to a specified type, then fills memory with that type including any non-whole remainder.
 
-
 ## Syntax
 
->  [_MEMFILL](_MEMFILL) memoryBlock, memoryBlock.OFFSET, fillBytes, value [AS variableType]
-
+> [_MEMFILL](_MEMFILL) memoryBlock, memoryBlock.OFFSET, fillBytes, value [AS variableType]
 
 ## Parameter(s)
 
@@ -14,16 +12,13 @@ The [_MEMFILL](_MEMFILL) statement converts a value to a specified type, then fi
 * The value is the value to place in the memory block at the designated OFFSET position. 
 * A literal or variable value can be optionally set [AS](AS) a variable [type](type) appropriate for the memory block.
 
-
 ## Description
 
 * To clear previous data from a [_MEMNEW](_MEMNEW) memory block, use _MEMFILL with a value of 0.
 
-
 ## Example(s)
 
-## Example(s)
- Filling array values quickly using FOR loops or a simple memory fill.
+Filling array values quickly using FOR loops or a simple memory fill.
 
 ```vb
 
@@ -45,13 +40,8 @@ _MEMFREE mema
 
 ```
 
-
 ## See Also
 
-* [_MEM](_MEM), [_MEM (function)](_MEM (function))
+* [_MEM](_MEM), [_MEM (function)](_MEM-(function))
 * [_MEMIMAGE](_MEMIMAGE), [_MEMNEW](_MEMNEW)
 * [_MEMGET](_MEMGET), [_MEMPUT](_MEMPUT)
-
-
-
-

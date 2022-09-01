@@ -12,7 +12,7 @@ The [CHR$](CHR$) function returns the character associated with a certain [ASCII
 
 ## Example(s)
 
-*Example 1:* Outputs the characters of several character codes:
+Outputs the characters of several character codes:
 
 ```vb
 

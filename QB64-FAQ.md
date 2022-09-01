@@ -82,7 +82,7 @@ Executable programs are portable between like systems by copying the executable 
 > *To help launch executables without a console, a file called *programname_start.command* is created along with the program.
 **Note: Some QB64 keywords and procedures are not available for macOS.**
 
-[Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions](Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions)
+[Keywords currently not supported](Keywords_currently_not_supported_by_QB64)
 
 ----
 
@@ -96,7 +96,7 @@ QB64 currently supports Windows versions from XP to the latest version. Most Lin
 
 ## Q: Are there any known incompatibilities?
 
-A: There are some things that QB64 cannot do, like direct hardware access, which makes older more advanced programs that make use of [CALL ABSOLUTE](CALL ABSOLUTE), [INTERRUPT](INTERRUPT), [PEEK](PEEK), [POKE](POKE) and [OUT](OUT) not work properly. Although some older functionality is emulated, if your program doesn't use such statements you probably won't notice any difference between QB 4.5 and QB64 (and if you do, report it as a bug in the forums). You can expect the most common addresses for interrupts, etc. to be functioning. 
+A: There are some things that QB64 cannot do, like direct hardware access, which makes older more advanced programs that make use of [CALL ABSOLUTE](CALL-ABSOLUTE), [INTERRUPT](INTERRUPT), [PEEK](PEEK), [POKE](POKE) and [OUT](OUT) not work properly. Although some older functionality is emulated, if your program doesn't use such statements you probably won't notice any difference between QB 4.5 and QB64 (and if you do, report it as a bug in the forums). You can expect the most common addresses for interrupts, etc. to be functioning. 
 
 See: [Keywords currently not supported by QB64](Keywords_currently_not_supported_by_QB64)
 
@@ -120,7 +120,7 @@ A: The help provided in the QB64 IDE Help System fetches the pages from this wik
 
 A: If the libraries are pure QB 4.5 code then yes, otherwise no. QLB files are not supported but you can easily copy your favorite SUBs or FUNCTIONs to a text BI file and [$INCLUDE]($INCLUDE) them at the end of any program. Include them after all SUB and FUNCTION code in the BAS file.
 
-[DECLARE LIBRARY](DECLARE LIBRARY) allows users to reference C, Windows, OpenGL and other DLL libraries. If you find some functions that you like please share them with us at the forum! The following pages list working functions our members have found and tested:
+[DECLARE LIBRARY](DECLARE-LIBRARY) allows users to reference C, Windows, OpenGL and other DLL libraries. If you find some functions that you like please share them with us at the forum! The following pages list working functions our members have found and tested:
 
 [C Libraries](C Libraries), [DLL Libraries](DLL Libraries), [Windows Libraries](Windows Libraries)
 

@@ -1,29 +1,25 @@
-The [_CLIPBOARDIMAGE (function)](_CLIPBOARDIMAGE (function)) function pastes an image from the clipboard into a new 32-bit image in memory.
-
+The [_CLIPBOARDIMAGE (function)](_CLIPBOARDIMAGE-(function)) function pastes an image from the clipboard into a new 32-bit image in memory.
 
 ## Syntax
 
->  newImageHandle& = [_CLIPBOARDIMAGE (function)](_CLIPBOARDIMAGE (function))
-
+> newImageHandle& = [_CLIPBOARDIMAGE (function)](_CLIPBOARDIMAGE-(function))
 
 ## Description
 
 * When the paste operation is successful, newImageHandle& will be < -1. Handle values of -1 or 0 indicate that there wasn't an image in the clipboard or that the format wasn't accepted.
 * Use [_FREEIMAGE](_FREEIMAGE) to free the memory used by newImageHandle& when it's no longer needed by your program.
-* [Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions](Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions).
-
+* [Keywords currently not supported](Keywords_currently_not_supported_by_QB64).
 
 ## Availability
 
 * **Build 20170906/64** onward.
 
-
 ## Example(s)
 
-## Example(s)
- Monitoring the clipboard for new images copied from other programs:
+Monitoring the clipboard for new images copied from other programs:
 
 ```vb
+
 SCREEN _NEWIMAGE(800, 600, 32)
 DO
     CLS
@@ -47,14 +43,8 @@ DO
 LOOP
 
 ```
-<sub>Code by Fellippe Heitor</sub>
-
 
 ## See Also
 
 * [_CLIPBOARDIMAGE](_CLIPBOARDIMAGE) (statement - used to copy an image to the clipboard)
-* [_CLIPBOARD$](_CLIPBOARD$), [_CLIPBOARD$ (statement)](_CLIPBOARD$ (statement)) (used to copy/paste text)
-
-
-
-
+* [_CLIPBOARD$](_CLIPBOARD$), [_CLIPBOARD$ (statement)](_CLIPBOARD$-(statement)) (used to copy/paste text)

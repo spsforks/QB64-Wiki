@@ -41,7 +41,7 @@
 
 ## Example(s)
 
-*Example 1:* Using WHILE to clear the keyboard buffer.
+Using WHILE to clear the keyboard buffer.
 
 ```vb
 

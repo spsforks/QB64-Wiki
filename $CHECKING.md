@@ -21,10 +21,10 @@ The [$CHECKING]($CHECKING) metacommand turns C++ event checking ON or OFF.
 
 ## See Also
 
-* [ON TIMER(n)](ON TIMER(n))
+* [ON TIMER(n)](ON-TIMER(n))
 * [ON ERROR](ON ERROR)
 * [Metacommand](Metacommand)
-* [ERROR Codes](ERROR Codes)
+* [ERROR Codes](ERROR-Codes)
 
 
 

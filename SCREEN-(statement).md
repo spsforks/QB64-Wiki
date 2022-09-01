@@ -128,7 +128,7 @@ The [SCREEN](SCREEN) statement sets the video display mode and size of the progr
 
 ## Example(s)
 
-> *Example 1:* Shows an example of each legacy screen mode available to QBasic and QB64.
+> Shows an example of each legacy screen mode available to QBasic and QB64.
 
 ```vb
 
@@ -160,7 +160,7 @@ This is SCREEN 0 - only text is allowed!
 
 > Displays each [SCREEN (statement)](SCREEN-(statement)) mode one at a time with a [CIRCLE](CIRCLE) (except for [SCREEN (statement)](SCREEN-(statement)) 0)
 
-*Example 2:* Making ANY **QB64 legacy screen mode** larger using a SUB that easily converts PRINT to [_PRINTSTRING](_PRINTSTRING). 
+Making ANY **QB64 legacy screen mode** larger using a SUB that easily converts PRINT to [_PRINTSTRING](_PRINTSTRING). 
 
 ```vb
 
@@ -213,5 +213,5 @@ You can easily change PRINT to the PRINTS sub-procedure name in your code using 
 * [PALETTE](PALETTE), [OUT](OUT), [PCOPY](PCOPY), 
 * [GET (graphics statement)](GET-(graphics-statement)), [PUT (graphics statement)](PUT-(graphics-statement)) (graphics)
 * [VIEW](VIEW), [WINDOW](WINDOW)-(graphic-viewport), [VIEW PRINT](VIEW-PRINT) (text view port)
-* [SCREEN (function)](SCREEN (function)) (text only), [POINT](POINT) (graphic pixel colors)
+* [SCREEN (function)](SCREEN-(function)) (text only), [POINT](POINT) (graphic pixel colors)
 * [Screen Memory](Screen-Memory), [Screen Saver Programs](Screen-Saver-Programs)

@@ -1,21 +1,17 @@
 The [_DISPLAY](_DISPLAY) function returns the handle of the current image that is displayed on the screen.
 
-
 ## Syntax
 
 > currentImage& = [_DISPLAY](_DISPLAY)
-
 
 ## Description
 
 * Returns the current image handle value that is being displayed. Returns 0 if in the default [SCREEN](SCREEN) image.
 * Not to be confused with the [_DISPLAY](_DISPLAY) statement that displays the screen when not using [_AUTODISPLAY](_AUTODISPLAY).
 
-
 ## Example(s)
 
-## Example(s)
- Creating a mouse cursor using a page number that **you create** in memory without setting up page flipping.
+Creating a mouse cursor using a page number that **you create** in memory without setting up page flipping.
 
 ```vb
 
@@ -42,8 +38,8 @@ PCOPY 100, _DISPLAY 'with the function return as destination page
 END SUB 
 
 ```
-*Note:* Works with the **_DISPLAY function** return as the other page. If mouse reads are not crucial, put the [_MOUSEINPUT](_MOUSEINPUT) loop inside of the UpdateCursor SUB.
 
+*Note:* Works with the **_DISPLAY function** return as the other page. If mouse reads are not crucial, put the [_MOUSEINPUT](_MOUSEINPUT) loop inside of the UpdateCursor SUB.
 
 ## See Also
 
@@ -52,7 +48,3 @@ END SUB
 * [_DISPLAY](_DISPLAY) (statement)
 * [_AUTODISPLAY](_AUTODISPLAY) (default mode)
 * [_DISPLAYORDER](_DISPLAYORDER) (statement)
-
-
-
-

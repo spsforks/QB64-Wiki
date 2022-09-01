@@ -1,21 +1,18 @@
 The [_ERRORMESSAGE$](_ERRORMESSAGE$) function returns a human-readable description of the most recent runtime error, or the description of an arbitrary error code passed to it.
 
-
 ## Syntax
 
 * e$ = [_ERRORMESSAGE$](_ERRORMESSAGE$)
 * e$ = [_ERRORMESSAGE$](_ERRORMESSAGE$)(errorCode%)
 
-
 ## Description
 
 * Used in program error troubleshooting.
-* The message returned is identical to the message shown in the dialog box that appears if your program has no error handler. See [ERROR Codes](ERROR Codes) for the full list of error codes and their messages.
+* The message returned is identical to the message shown in the dialog box that appears if your program has no error handler. See [ERROR Codes](ERROR-Codes) for the full list of error codes and their messages.
 
 ## Example(s)
 
-*Example 1:* Using an error handler that ignores any error.
-
+Using an error handler that ignores any error.
 
 ```vb
 
@@ -34,7 +31,6 @@ The [_ERRORMESSAGE$](_ERRORMESSAGE$) function returns a human-readable descripti
 
 ```
 
-
 ## See Also
 
 * [ERL](ERL) (last line number used before an error occurred, when line numbers are used) 
@@ -45,8 +41,3 @@ The [_ERRORMESSAGE$](_ERRORMESSAGE$) function returns a human-readable descripti
 * [_INCLERRORLINE](_INCLERRORLINE) (returns the line number in an [$INCLUDE](INCLUDE) file that caused the most recent error, when an $INCLUDE file is being used)
 * [ON ERROR](ON-ERROR) (calls error handing routine using [GOTO](GOTO) only)
 * [Error Codes](ERROR-Codes) (list of all QB64 errors)
-
-
-
-
-

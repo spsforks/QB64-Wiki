@@ -23,7 +23,7 @@ The [CONST](CONST) statement globally defines one or more named numeric or strin
 
 ## Example(s)
 
-*Example 1:* Display the circumference and area of circles:
+Display the circumference and area of circles:
 
 ```vb
 

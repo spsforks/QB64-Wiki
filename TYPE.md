@@ -71,7 +71,7 @@
 
 ## Examples
 
-*Example 1:* Creating a mouse [INTERRUPT](INTERRUPT) TYPE definition. Each [INTEGER](INTEGER) value is 2 bytes.
+Creating a mouse [INTERRUPT](INTERRUPT) TYPE definition. Each [INTEGER](INTEGER) value is 2 bytes.
 
 ```vb
 

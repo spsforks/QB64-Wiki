@@ -1,16 +1,13 @@
 The [_SCREENMOVE](_SCREENMOVE) statement positions the program window on the desktop using designated coordinates.
 
-
 ## Syntax
 
->  [_SCREENMOVE](_SCREENMOVE) {column&, row&|_MIDDLE}
-
+> [_SCREENMOVE](_SCREENMOVE) {column&, row&|_MIDDLE}
 
 ## Parameter(s)
 
 * Positions the program window on the desktop using the column& and row& pixel coordinates for the upper left corner.
 * **_MIDDLE** can be used instead to automatically center the program window on the desktop, in any screen resolution.
-
 
 ## Description
 
@@ -18,12 +15,11 @@ The [_SCREENMOVE](_SCREENMOVE) statement positions the program window on the des
 * Use [_DESKTOPWIDTH](_DESKTOPWIDTH) and [_DESKTOPHEIGHT](_DESKTOPHEIGHT) to find the current desktop resolution to place the program's window.
 * On dual monitors a negative column& position or a value greater than the main screen width can be used to position a window in another monitor.
 * **A small delay may be necessary when a program first starts up to properly orient the screen on the desktop properly.** See [_SCREENEXISTS](_SCREENEXISTS).
-* **[Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions](Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions)**
-
+* **[Keywords currently not supported](Keywords_currently_not_supported_by_QB64)**
 
 ## Example(s)
 
-*Example 1:* Calculating the border and header offsets by comparing a coordinate move with _MIDDLE by using trial and error.
+Calculating the border and header offsets by comparing a coordinate move with _MIDDLE by using trial and error.
 
 ```vb
 
@@ -38,10 +34,10 @@ _SCREENMOVE _MIDDLE  'check centering
 END 
 
 ```
->  When positioning the window, offset the position by -3 columns and - 29 rows to calculate the top left corner coordinate.
 
+> When positioning the window, offset the position by -3 columns and - 29 rows to calculate the top left corner coordinate.
 
-*Example 2:* Moving a program window to a second monitor positioned to the right of the main desktop.
+Moving a program window to a second monitor positioned to the right of the main desktop.
 
 ```vb
 
@@ -61,10 +57,10 @@ _DELAY 4
 _SCREENMOVE _MIDDLE 'moves program back to main monitor 1 
 
 ```
->  *Notes:* Change the [_SCREENMOVE](_SCREENMOVE) column to negative for a left monitor.
+
+> *Notes:* Change the [_SCREENMOVE](_SCREENMOVE) column to negative for a left monitor.
 
 **[_FULLSCREEN](_FULLSCREEN) works in the primary monitor and may push all running programs to a monitor on the right.**
-
 
 ## See Also
 
@@ -72,9 +68,4 @@ _SCREENMOVE _MIDDLE 'moves program back to main monitor 1
 * [_SCREENIMAGE](_SCREENIMAGE), [_DESKTOPWIDTH](_DESKTOPWIDTH), [_DESKTOPHEIGHT](_DESKTOPHEIGHT)
 * [_SCREENPRINT](_SCREENPRINT)
 * [_SCREENEXISTS](_SCREENEXISTS)
-* [_NEWIMAGE](_NEWIMAGE), [SCREEN (statement)](SCREEN (statement))
-
-
-
-
-
+* [_NEWIMAGE](_NEWIMAGE), [SCREEN (statement)](SCREEN-(statement))

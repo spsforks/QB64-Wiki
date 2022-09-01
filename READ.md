@@ -10,7 +10,7 @@ The **READ** statement reads values from a [DATA](DATA) field and assigns them t
 * [DATA](DATA) can be READ using [STRING](STRING) or numerical [TYPE](TYPE) variables singularly or in a comma separated list:
    - [STRING](STRING) READ variables can read quoted or unquoted text or numerical DATA values!
    - Numerical type READ variables can only read **unquoted** numerical DATA values! 
-   - **If they do not agree, a [ERROR Codes](ERROR Codes) may result when run reading string data as numerical values!**
+   - **If they do not agree, a [ERROR Codes](ERROR-Codes) may result when run reading string data as numerical values!**
 * If the number of variables specified is fewer than the number of elements in the DATA statement(s), subsequent READ statements begin reading data at the next unread element. If there are no subsequent READ statements, the extra data is ignored.
 * If variable reads exceed the number of elements in the DATA field(s), an [ERROR Codes](ERROR-Codes) will occur!
 * Use the [RESTORE](RESTORE) statement to reread DATA statements from the start, with or without a line label as required.
@@ -20,7 +20,7 @@ The **READ** statement reads values from a [DATA](DATA) field and assigns them t
 
 ## Example(s)
 
-*Example 1:* Placing data into an array.
+Placing data into an array.
 
 ```vb
 

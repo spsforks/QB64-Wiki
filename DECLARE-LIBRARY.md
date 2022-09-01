@@ -37,7 +37,7 @@ The **DECLARE LIBRARY** declaration allows the use of external library [SUB](SUB
 
 ## Example(s)
 
-*Example 1:* Using an **SDL** library procedure as a program SUB procedure to move the mouse pointer to a coordinate (works in versions prior to 1.000):
+Using an **SDL** library procedure as a program SUB procedure to move the mouse pointer to a coordinate (works in versions prior to 1.000):
 
 ```vb
 

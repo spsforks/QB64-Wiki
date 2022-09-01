@@ -1,10 +1,8 @@
 The [_SHR](_SHR) function is used to shift the bits of a numerical value to the right.
 
-
 ## Syntax
 
 > result = [_SHR](_SHR)(numericalVariable, numericalValue)
-
 
 ## Parameter(s)
 
@@ -12,7 +10,6 @@ The [_SHR](_SHR) function is used to shift the bits of a numerical value to the 
 * Integer values can be signed or [_UNSIGNED](_UNSIGNED).
 * numericalValue the number of places to shift the bits.
 * While 0 is a valid value it will have no affect on the variable being shifted.
-
 
 ## Description
 
@@ -25,12 +22,10 @@ The [_SHR](_SHR) function is used to shift the bits of a numerical value to the 
 
 * **Version 1.3 and up**.
 
-
 ## Example(s)
 
-*Example 1:*
-
 ```vb
+
 A~%% = 128 'set left most bit of an_UNSIGNED _BYTE
 PRINT A~%%
 PRINT _SHR(A~%%,7)
@@ -40,16 +35,11 @@ PRINT _SHR(A~%%,8) 'shift the bit off the right 'edge'
 
 ```text
 
-
  128
  1
  0
 
 ```
-
-
-
-*Example 2:*
 
 ```vb
 
@@ -61,7 +51,6 @@ NEXT I%%
 ```
 
 ```text
-
 
  128
   64
@@ -75,12 +64,7 @@ NEXT I%%
 
 ```
 
-
 ## See Also
 
 * [_SHL](_SHL), [INTEGER](INTEGER), [LONG](LONG)
 * [_BYTE](_BYTE), [_INTEGER64](_INTEGER64)
-
-
-
-

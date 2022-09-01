@@ -52,7 +52,7 @@ FOR mode can be:
 
 * **OUTPUT**: Sequential mode creates a new file or erases an existing file for new program output. Use [WRITE (file statement)](WRITE-(file-statement)) to write numerical or text data or [PRINT (file statement)](PRINT-(file-statement)) for text. **OUTPUT clears files of all data** and clears the receive buffer on other devices such as [ON COM(n)](ON-COM(n)).
 * **APPEND**: Sequential mode creates a new file if it doesn't exist or appends program output to the end of an existing file. Use [WRITE (file statement)](WRITE-(file-statement)) for numerical or text data or [PRINT (file statement)](PRINT-(file-statement)) for text as in the OUTPUT mode. **APPEND does not remove previous data.** 
-* **INPUT** : Sequential mode **only reads input** from an existing file. **[ERROR Codes](ERROR Codes) if file does not exist.** Use [INPUT (file statement)](INPUT-(file-statement)) for comma separated numerical or text data and [LINE INPUT (file statement)](LINE-INPUT-(file-statement)) or [INPUT$](INPUT$) to only read text data. **Use [_FILEEXISTS](_FILEEXISTS) or [_DIREXISTS](_DIREXISTS) to avoid errors.**
+* **INPUT** : Sequential mode **only reads input** from an existing file. **[ERROR Codes](ERROR-Codes) if file does not exist.** Use [INPUT (file statement)](INPUT-(file-statement)) for comma separated numerical or text data and [LINE INPUT (file statement)](LINE-INPUT-(file-statement)) or [INPUT$](INPUT$) to only read text data. **Use [_FILEEXISTS](_FILEEXISTS) or [_DIREXISTS](_DIREXISTS) to avoid errors.**
 * **BINARY**: Creates a new file when it doesn't exist or reads and writes to an existing binary file. Use [GET](GET) to read or [PUT](PUT) to write byte positions simultaneously. [LEN](LEN) = statements are ignored in this mode.
 * **RANDOM**: Creates a new file when it doesn't exist or reads or writes to an existing random file record. Use [GET](GET) or [PUT](PUT) to read or write to file records. A [LEN](LEN) = statement can define the byte size of a record (no LEN statement defaults to 128 bytes)
 * Modes **INPUT**, **BINARY** and **RANDOM** allow a file to be concurrently opened in a different mode and number.
@@ -69,7 +69,7 @@ FOR mode can be:
 
 ## Example(s)
 
-*Example 1:* Function that displays errors and the number of errors in QBasic filenames. Returns 0 when filename is OK.
+Function that displays errors and the number of errors in QBasic filenames. Returns 0 when filename is OK.
 
 ```vb
 
@@ -107,7 +107,7 @@ END FUNCTION
 
 > *Note:* The screen output displays filename characters in green except for red comma QBasic error.
 
-*Example 2:* When **OPEN "SCRN:" FOR OUTPUT AS #f** is used, **PRINT #f** will print the text to the screen instead of to a file:
+When **OPEN "SCRN:" FOR OUTPUT AS #f** is used, **PRINT #f** will print the text to the screen instead of to a file:
 
 ```vb
 
@@ -125,7 +125,7 @@ NEXT
 
 > *Note:* Linux or Mac file names can use a path destination such as ".\SCRN:" to use SCRN: as an actual file name. 
 
-*Example 3:* Showcasing different file modes.
+Showcasing different file modes.
 
 ```vb
 

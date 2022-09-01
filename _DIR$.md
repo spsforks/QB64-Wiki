@@ -1,21 +1,18 @@
 The [_DIR$](_DIR$) function returns common paths in **Windows** only such as My Documents, My Pictures, My Music, Desktop.
 
-
 ## Syntax
 
->  d$ = [_DIR$](_DIR$)("folderspecification")
-
+> d$ = [_DIR$](_DIR$)("folderspecification")
 
 ## Parameter(s)
 
 * *folderspecification* may be "desktop", "download", "documents", "music", "video", "pictures", "appdata", "program data", "local data".
 * Some variation is accepted for the folder specification:
-> : MY DOCUMENTS, TEXT, DOCUMENT, DOCUMENTS, DOWNLOAD, DOWNLOADS
-> : MY MUSIC, MUSIC, AUDIO, SOUND, SOUNDS
-> : MY PICTURES, PICTURE, PICTURES, IMAGE, IMAGES, PHOTO, PHOTOS, DCIM, CAMERA, CAMERA ROLL
-> : MY VIDEOS, VIDEO, VIDEOS, MOVIE, MOVIES,
-> : DATA, APPDATA, APPLICATION DATA, PROGRAM DATA, LOCAL DATA, LOCALAPPDATA, LOCAL APPLICATION DATA, LOCAL PROGRAM DATA
-
+    * MY DOCUMENTS, TEXT, DOCUMENT, DOCUMENTS, DOWNLOAD, DOWNLOADS
+    * MY MUSIC, MUSIC, AUDIO, SOUND, SOUNDS
+    * MY PICTURES, PICTURE, PICTURES, IMAGE, IMAGES, PHOTO, PHOTOS, DCIM, CAMERA, CAMERA ROLL
+    * MY VIDEOS, VIDEO, VIDEOS, MOVIE, MOVIES,
+    * DATA, APPDATA, APPLICATION DATA, PROGRAM DATA, LOCAL DATA, LOCALAPPDATA, LOCAL APPLICATION DATA, LOCAL PROGRAM DATA
 
 ## Description
 
@@ -23,12 +20,12 @@ The [_DIR$](_DIR$) function returns common paths in **Windows** only such as My 
 * A nonexistent folder specification usually defaults to the Desktop folder path.
 * In Linux and macOS the function always returns **"./"**
 
-
 ## Example(s)
 
-Example: Displaying default paths in Windows only.
+Displaying default paths in Windows only.
 
 ```vb
+
 PRINT "DESKTOP=" + _DIR$("desktop")
 PRINT "DOWNLOADS=" + _DIR$("download")
 PRINT "DOCUMENTS=" + _DIR$("my documents")
@@ -53,13 +50,7 @@ LOCAL APPLICATION DATA=C:\Documents and Settings\Administrator\Local Settings\Ap
 
 ```
 
-
-
 ## See Also
 
 * [_CWD$](_CWD$)
 * [_STARTDIR$](_STARTDIR$)
- 
-
-
-

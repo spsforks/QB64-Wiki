@@ -22,7 +22,7 @@ The SPACE$ function returns a STRING consisting of a number of space characters.
 
 ## Example(s)
 
-*Example 1:* How to space text in a [PRINT](PRINT) statement using SPACE$ with string [concatenation](concatenation).
+How to space text in a [PRINT](PRINT) statement using SPACE$ with string [concatenation](concatenation).
 
 ```vb
 

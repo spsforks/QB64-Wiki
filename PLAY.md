@@ -36,7 +36,7 @@
 
 ## Example(s)
 
-*Example 1:* Plays a sound with the volume and note varying from 0 to 50. Maximum note can only be 84.
+Plays a sound with the volume and note varying from 0 to 50. Maximum note can only be 84.
 
 ```vb
 
@@ -56,7 +56,7 @@ PLAY "v10l1c,l4egl2o5c,o4l4eg"
 ```
 <sub>Code by Galleon</sub>
 
-*Example 2:* Plays "Frosty the snowman". The lyric printing is not delayed by PLAY in QB64.
+Plays "Frosty the snowman". The lyric printing is not delayed by PLAY in QB64.
 
 ```vb
 
@@ -97,7 +97,7 @@ END
 ```
 <sub>Greg Rismoen 12/09/84</sub>
 
-*Example 3:* Clicking on the grid enables various notes to be played simultaneously. 
+Clicking on the grid enables various notes to be played simultaneously. 
 
 ```vb
 
@@ -187,7 +187,7 @@ END SUB
 ```
 <sub>Code by JP</sub>
 
-*Example 4:* Play strings starting with MB allow program code to run while music plays in background.
+Play strings starting with MB allow program code to run while music plays in background.
 
 ```vb
 
@@ -300,7 +300,7 @@ END SUB
 ```
 <sub>Code by Mennonite</sub>
 
-*Example 5:* This example uses [PRINT](PRINT) to good effect as string spacing is ignored by PLAY:
+This example uses [PRINT](PRINT) to good effect as string spacing is ignored by PLAY:
 
 ```vb
 

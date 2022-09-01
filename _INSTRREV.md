@@ -1,17 +1,14 @@
 The [_INSTRREV](_INSTRREV) function searches for a substring inside another string, but unlike [INSTR](INSTR) it searches from right to left.
 
-
 ## Syntax
 
->  position% = [_INSTRREV](_INSTRREV)([start%,] baseString$, subString$)
-
+> position% = [_INSTRREV](_INSTRREV)([start%,] baseString$, subString$)
 
 ## Parameter(s)
 
 * The optional literal or variable [INTEGER](INTEGER) start% indicates where in the baseString$ the search must start, counted from the left. 
 * The baseString$ is a literal or variable [STRING](STRING) value to be searched for an exact match including [UCASE$](UCASE$). 
 * The subString$ is a literal or variable [STRING](STRING) value being searched.
-
 
 ## Description
 
@@ -22,10 +19,9 @@ The [_INSTRREV](_INSTRREV) function searches for a substring inside another stri
 * The subString$ should be smaller or equal in [LEN](LEN) to the baseString$, or 0 is returned.
 * A start% value of 0 or less starts search from the end of the baseString$ (same as not passing a start% parameter).
 
-
 ## Example(s)
 
-*Example 1:* Separating a file name from a full path.
+Separating a file name from a full path.
 
 ```vb
 
@@ -37,14 +33,11 @@ PRINT file$
 
 ```text
 
-
 libqb_1_2_000000000000.o
 
 ```
 
-
-
-*Example 2:* Searching for multiple instances of a substring inside a base string, going from the end to the start.
+Searching for multiple instances of a substring inside a base string, going from the end to the start.
 
 ```vb
 
@@ -74,7 +67,6 @@ PRINT "Total spaces found: "; totalSpaces
 
 ```text
 
-
  This is a string full of spaces, including at start and end... 
 ^    ^  ^ ^      ^    ^  ^       ^         ^  ^     ^   ^      ^
 
@@ -83,12 +75,7 @@ Total spaces found: 13
 
 ```
 
-
 ## See Also
 
 * [MID$](MID$), [INSTR](INSTR)
 * [SPACE$](SPACE$)
-
-
-
-

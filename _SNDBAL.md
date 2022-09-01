@@ -1,10 +1,8 @@
 The [_SNDBAL](_SNDBAL) statement attempts to set the balance or 3D position of a sound.
 
-
 ## Syntax
 
->  [_SNDBAL](_SNDBAL) handle&[, x!][, y!][, z!][, channel&]]
-
+> [_SNDBAL](_SNDBAL) handle&[, x!][, y!][, z!][, channel&]]
 
 ## Parameter(s)
 
@@ -14,21 +12,17 @@ The [_SNDBAL](_SNDBAL) statement attempts to set the balance or 3D position of a
 * z! distance values go from behind (negative) to in front (positive).
 * channel& value 1 denotes left (mono) and 2 denotes right (stereo) channel (beginning with **build 20170811/60**)
 
-
 ## Description
 
-*Attempts to position a sound in 3D space, or as close to it as the underlying software libraries allow. In some cases, this will be true 3D positioning, in others, a mere volume adjustment based on distance alone.
-*Omitted x!, y! or z! [SINGLE](SINGLE) values are set to 0 or not changed in **build 20170811/60 onward**.
-*By setting the x! value to -1 or 1 it plays the sound at full volume from the appropriate speaker.
-*Sounds at a distance of 1 or -1 are played at full volume. Sounds further than a distance of 1000 cannot be heard.
-*The volume decreases linearly (at a constant gradient) over distance. Half volume = 500.
+* Attempts to position a sound in 3D space, or as close to it as the underlying software libraries allow. In some cases, this will be true 3D positioning, in others, a mere volume adjustment based on distance alone.
+* Omitted x!, y! or z! [SINGLE](SINGLE) values are set to 0 or not changed in **build 20170811/60 onward**.
+* By setting the x! value to -1 or 1 it plays the sound at full volume from the appropriate speaker.
+* Sounds at a distance of 1 or -1 are played at full volume. Sounds further than a distance of 1000 cannot be heard.
+* The volume decreases linearly (at a constant gradient) over distance. Half volume = 500.
 * An "**Illegal Function Call**" error can occur if another sound is using the primary or same channel position.
 * Opened sound files must have the [_SNDOPEN](_SNDOPEN) capability to use this statement in versions **before build 20170811/60.**
 
-
 ## Example(s)
-
-*Example 1:*
 
 ```vb
 
@@ -38,9 +32,9 @@ _SNDPLAY h&
 
 ```
 
-
 ## Example(s)
- Loading a sound after **build 20170811/60** - no need to specify "sound capabilities" in [_SNDOPEN](_SNDOPEN). 
+
+Loading a sound after **build 20170811/60** - no need to specify "sound capabilities" in [_SNDOPEN](_SNDOPEN). 
 
 ```vb
 
@@ -102,13 +96,7 @@ DO
 LOOP
 
 ```
-Code by Johny B
-
 
 ## See Also
 
-*[_SNDOPEN](_SNDOPEN), [_SNDVOL](_SNDVOL), [_SNDLIMIT](_SNDLIMIT)
-
-
-
-
+* [_SNDOPEN](_SNDOPEN), [_SNDVOL](_SNDVOL), [_SNDLIMIT](_SNDLIMIT)

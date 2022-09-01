@@ -1,21 +1,16 @@
 The [_INCLERRORFILE$](_INCLERRORFILE$) function returns the name of the original source code [$INCLUDE]($INCLUDE) module that caused the most recent error.
 
-
-
 ## Syntax
 
->  errfile$ = [_INCLERRORFILE$](_INCLERRORFILE$)
-
+> errfile$ = [_INCLERRORFILE$](_INCLERRORFILE$)
 
 ## Description
 
 If the last error occurred in the main module, [_INCLERRORFILE$](_INCLERRORFILE$) returns an empty string.
 
-
 ## Availability
 
 * **Version 1.1 and up**.
-
 
 ## Example(s)
 
@@ -50,8 +45,6 @@ ERROR  250  ON LINE:  9
 
 ```
 
-
-
 ## See Also
 
 * [ERL](ERL) (last line number used before an error occurred, when line numbers are used) 
@@ -62,9 +55,3 @@ ERROR  250  ON LINE:  9
 * [_INCLERRORLINE](_INCLERRORLINE) (returns the line number in an [$INCLUDE](INCLUDE) file that caused the most recent error, when an $INCLUDE file is being used)
 * [ON ERROR](ON-ERROR) (calls error handing routine using [GOTO](GOTO) only)
 * [Error Codes](ERROR-Codes) (list of all QB64 errors)
-
-
-
-
-
-

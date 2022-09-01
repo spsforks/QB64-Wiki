@@ -1,9 +1,5 @@
 The [_CLEARCOLOR](_CLEARCOLOR) statement sets a specific color to be treated as transparent when an image is later put (via [_PUTIMAGE](_PUTIMAGE)) onto another image. 
 
-{|align="right"
-|__TOC__
-|}
-
 ## Syntax
 
 > [_CLEARCOLOR](_CLEARCOLOR) {color&|_NONE}[, Dest_Handle&]
@@ -11,23 +7,21 @@ The [_CLEARCOLOR](_CLEARCOLOR) statement sets a specific color to be treated as 
 ## Parameter(s)
 
 * In color modes using a palette, color& is the palette index of the new transparent color value or _NONE designates no clear colors.
-* If color& is not a valid palette index, an [ERROR Codes](ERROR Codes) error will occur.
+* If color& is not a valid palette index, an [ERROR Codes](ERROR-Codes) error will occur.
 * In 32-bit color modes, color& is the [_LONG](_LONG) color value of the new transparent color.
 * If Dest_Handle& is omitted, the destination is assumed to be the current write page. Zero can designate the current program screen.
 
-
 ## Description
 
-* If Dest_Handle& is an invalid handle, then an [ERROR Codes](ERROR Codes) error is returned. Check for bad handle values of -1 first.
+* If Dest_Handle& is an invalid handle, then an [ERROR Codes](ERROR-Codes) error is returned. Check for bad handle values of -1 first.
 * In 32-bit color modes, it simply sets the Alpha to 0 for all pixels matching the specified color.
 * In the second syntax, transparency is disabled for color modes using a palette.
 * **Note:** [_SETALPHA](_SETALPHA) can affect any _CLEARCOLOR alpha setting within the color range set.
 * **NOTE: 32 bit [_NEWIMAGE](_NEWIMAGE) screen page backgrounds are transparent black or [_ALPHA](_ALPHA) 0. Use [_DONTBLEND](_DONTBLEND) or [CLS](CLS) for opaque.**
 
-
 ## Example(s)
 
-*Example 1:* Using _CLEARCOLOR to "mask" the background color of an image.
+Using _CLEARCOLOR to "mask" the background color of an image.
 
 ```vb
 
@@ -43,10 +37,10 @@ END
 
 ```
 
-
-*Example 2:* Using a _CLEARCOLOR transparency with images created on a [_NEWIMAGE](_NEWIMAGE) page. Does not require an image file.
+Using a _CLEARCOLOR transparency with images created on a [_NEWIMAGE](_NEWIMAGE) page. Does not require an image file.
 
 ```vb
+
 SCREEN _NEWIMAGE(512, 384, 32) ' screen uses handle value
 CIRCLE(50, 50), 50, _RGB(128, 0, 0) ' create a red ball image
 PAINT(50, 50), _RGB(255, 0, 0), _RGB(128, 0, 0)
@@ -61,8 +55,7 @@ LOOP UNTIL INKEY$ <> ""
 
 ```
 
-
-*Example 3:* Fading an image with a _CLEARCOLOR background using a new page image to prevent [_SETALPHA](_SETALPHA) changes.
+Fading an image with a _CLEARCOLOR background using a new page image to prevent [_SETALPHA](_SETALPHA) changes.
 
 ```vb
 
@@ -95,17 +88,12 @@ LOOP UNTIL a& = 0
 END
 
 ```
+
 > *Note:* If the _CLEARCOLOR image background was not put onto a separate page, [_SETALPHA](_SETALPHA) would display it also.
-
-
 
 ## See Also
 
-* [_CLEARCOLOR (function)](_CLEARCOLOR (function))
+* [_CLEARCOLOR (function)](_CLEARCOLOR-(function))
 * [_SETALPHA](_SETALPHA) (sets transparency level)
 * [_ALPHA](_ALPHA), [_ALPHA32](_ALPHA32) (read functions)
-* [Images](Images), [Creating Sprite Masks](Creating Sprite Masks)
-
-
-
-
+* [Images](Images), [Creating Sprite Masks](Creating-Sprite-Masks)

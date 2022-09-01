@@ -1,17 +1,14 @@
 The **_DEVICEINPUT** function returns the device number when a controller device button, wheel or axis event occurs.
 
-
 ## Syntax
 
->  device% = [_DEVICEINPUT](_DEVICEINPUT)
->  device_active% = [_DEVICEINPUT](_DEVICEINPUT)(device_number%)
-
+> device% = [_DEVICEINPUT](_DEVICEINPUT)
+> device_active% = [_DEVICEINPUT](_DEVICEINPUT)(device_number%)
 
 ## Parameter(s)
 
 * Use the _DEVICEINPUT  device% [INTEGER](INTEGER) returned to find the number of the controller device being used.
 * A literal specific device_number% parameter can be used to return -1 if active or 0 if inactive. EX: **WHILE _DEVICEINPUT(2)** 
-
 
 ## Description
 
@@ -23,10 +20,9 @@ The **_DEVICEINPUT** function returns the device number when a controller device
 * User input events can be monitored reading valid numbered [_AXIS](_AXIS), [_BUTTON](_BUTTON), [_BUTTONCHANGE](_BUTTONCHANGE) or [_WHEEL](_WHEEL) functions.
 * *Note:* [ON...GOSUB](ON...GOSUB) keyboard, mouse, gamecontrol can be used to control the devices 1,2 and 3, etc. 
 
-
 ## Example(s)
 
-*Example 1:* Checking device controller interfaces and finding out what devices are being used.
+Checking device controller interfaces and finding out what devices are being used.
 
 ```vb
 
@@ -58,10 +54,9 @@ Device = 2 Device = 2
 
 ```
 
->  *Note:* Mouse events must be within the program screen area. Keyboard presses are registered only when program is in focus.
+> *Note:* Mouse events must be within the program screen area. Keyboard presses are registered only when program is in focus.
 
-
-*Example 2:* Why does a mouse have 3 wheels? Relative x and y movements can be read using the first 2 [_WHEEL](_WHEEL) reads.
+Why does a mouse have 3 wheels? Relative x and y movements can be read using the first 2 [_WHEEL](_WHEEL) reads.
 
 ```vb
 
@@ -77,10 +72,10 @@ DO: _LIMIT 30  'main loop
 LOOP UNTIL INKEY$ = CHR$(27) 
 
 ```
->  *Explanation:* Referencing the [_MOUSEMOVEMENTX](_MOUSEMOVEMENTX) function hides the mouse and sets the mouse to a relative movement mode which can be read by [_WHEEL](_WHEEL). [_DEVICEINPUT](_DEVICEINPUT)(2) returns -1 (true) only when the mouse is moved, scrolled or clicked.
 
+> *Explanation:* Referencing the [_MOUSEMOVEMENTX](_MOUSEMOVEMENTX) function hides the mouse and sets the mouse to a relative movement mode which can be read by [_WHEEL](_WHEEL). [_DEVICEINPUT](_DEVICEINPUT)(2) returns -1 (true) only when the mouse is moved, scrolled or clicked.
 
-*Example 3:* Using [ON...GOSUB](ON...GOSUB) with the [_DEVICEINPUT](_DEVICEINPUT) number to add keyboard, mouse and game controller event procedures.
+Using [ON...GOSUB](ON...GOSUB) with the [_DEVICEINPUT](_DEVICEINPUT) number to add keyboard, mouse and game controller event procedures.
 
 ```vb
 
@@ -109,9 +104,8 @@ PRINT device; "Game control ";
 RETURN 
 
 ```
-<sub>Code by Ted Weissgerber</sub>
->  *Note:* [ON...GOSUB](ON...GOSUB) and [ON...GOTO](ON...GOTO) events require numerical values to match the order of line labels listed in the event used inside loops.
 
+> *Note:* [ON...GOSUB](ON...GOSUB) and [ON...GOTO](ON...GOTO) events require numerical values to match the order of line labels listed in the event used inside loops.
 
 ## See Also
 
@@ -120,8 +114,4 @@ RETURN
 * [_BUTTON](_BUTTON), [_AXIS](_AXIS), [_WHEEL](_WHEEL)
 * [STRIG](STRIG), [STICK](STICK)
 * [ON...GOSUB](ON...GOSUB) (numerical events)
-* [Controller Devices](Controller Devices)
-
-
-
-
+* [Controller Devices](Controller-Devices)

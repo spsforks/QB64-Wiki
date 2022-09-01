@@ -15,7 +15,7 @@
 
 ## Example(s)
 
-*Example 1:* Using RANDOMIZE **TIMER** to set a different starting sequence of [RND](RND) numbers every run.
+Using RANDOMIZE **TIMER** to set a different starting sequence of [RND](RND) numbers every run.
 
 ```vb
 

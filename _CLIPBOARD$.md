@@ -1,22 +1,20 @@
 The [_CLIPBOARD$](_CLIPBOARD$) function returns the current Operating System's clipboard contents as a [STRING](STRING).
 
-
 ## Syntax
 
 > result$ = [_CLIPBOARD$](_CLIPBOARD$)
 
-
 ## Description
 
-* Text returned can contain the entire contents of a copied file or web page or text from a previous [_CLIPBOARD$ (statement)](_CLIPBOARD$ (statement)) statement.
+* Text returned can contain the entire contents of a copied file or web page or text from a previous [_CLIPBOARD$ (statement)](_CLIPBOARD$-(statement)) statement.
 * The string returned can also contain formatting like CRLF ([CHR$](CHR$)(13) + [CHR$](CHR$)(10)) end of line characters.
 * The clipboard can be used to copy, paste and communicate between running programs.
 
-
 ## Example(s)
 
-*Example 1:* Passing a string value between two running programs no matter where they are located.
->  *Program1:*
+Passing a string value between two running programs no matter where they are located.
+
+> *Program1:*
 
 ```vb
 
@@ -32,6 +30,7 @@ LOOP
 SYSTEM 
 
 ```
+
 > *Program2:*
 
 ```vb
@@ -49,10 +48,10 @@ LOOP UNTIL INKEY$ = CHR$(27)
 END  
 
 ```
+
 > *Explanation:* Compile and run both programs at once to see the interaction. You could also run them on different paths.
 
-
-*Example 2: A minimized program that pops up when Ctrl + Shift is entered anytime in **Windows** and adds clipboard text to be Pasted:
+A minimized program that pops up when Ctrl + Shift is entered anytime in **Windows** and adds clipboard text to be Pasted:
 
 ```vb
 
@@ -143,15 +142,10 @@ _DELAY 2
 END SUB 
 
 ```
-Code by Ted Weissgerber
->  *Explanation:* The program will run minimized until Ctrl + Shift is entered and will pop up to ask for a letter choice that contains the text you want in the clipboard. More letter choices can be added. Text can be pasted into a web page or entry box and the program will minimize until it is needed later. The program uses very little resources!
 
+> *Explanation:* The program will run minimized until Ctrl + Shift is entered and will pop up to ask for a letter choice that contains the text you want in the clipboard. More letter choices can be added. Text can be pasted into a web page or entry box and the program will minimize until it is needed later. The program uses very little resources!
 
 ## See Also
 
-* [_CLIPBOARD$ (statement)](_CLIPBOARD$ (statement))
-* [_CLIPBOARDIMAGE (function)](_CLIPBOARDIMAGE (function)), [_CLIPBOARDIMAGE](_CLIPBOARDIMAGE) (statement)
-
-
-
-
+* [_CLIPBOARD$ (statement)](_CLIPBOARD$-(statement))
+* [_CLIPBOARDIMAGE (function)](_CLIPBOARDIMAGE-(function)), [_CLIPBOARDIMAGE](_CLIPBOARDIMAGE) (statement)

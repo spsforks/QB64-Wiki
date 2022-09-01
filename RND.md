@@ -27,7 +27,7 @@ The **RND** function returns a random number with a value between 0 (inclusive) 
 
 ## Example(s)
 
-*Example 1:* Generating a random integer value between 1 and 6 (inclusive) using INT.
+Generating a random integer value between 1 and 6 (inclusive) using INT.
 
 ```vb
 
@@ -35,7 +35,7 @@ dice% = INT(RND * 6) + 1 'add one as INT value never reaches 6
 
 ```
 
-*Example 2:* Using uniform random numbers to create random numbers with a gaussian distribution ([http://en.wikipedia.org/wiki/Marsaglia_polar_method| Marsaglia's polar method]).
+Using uniform random numbers to create random numbers with a gaussian distribution ([http://en.wikipedia.org/wiki/Marsaglia_polar_method| Marsaglia's polar method]).
 
 ```vb
 
@@ -52,7 +52,7 @@ v! = v! * s!
 
 > *Explanation:* Values *u!* and *v!* are now two independent random numbers with gaussian distribution, centered at 0.
 
-*Example 3:* Random flashes from an explosion
+Random flashes from an explosion
 
 ```vb
 

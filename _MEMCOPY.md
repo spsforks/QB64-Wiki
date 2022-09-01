@@ -1,10 +1,8 @@
 The [_MEMCOPY](_MEMCOPY) statement copies a block of bytes from one memory offset to another offset in memory.
 
-
 ## Syntax
 
->  [_MEMCOPY](_MEMCOPY)  sourceBlock, sourceBlock.OFFSET, sourceBlock.SIZE [TO](TO) destBlock, destBlock.OFFSET
-
+> [_MEMCOPY](_MEMCOPY) sourceBlock, sourceBlock.OFFSET, sourceBlock.SIZE [TO](TO) destBlock, destBlock.OFFSET
 
 ## Parameter(s)
 
@@ -14,7 +12,6 @@ The [_MEMCOPY](_MEMCOPY) statement copies a block of bytes from one memory offse
 * destBlock is the destination [_MEM](_MEM) memory block name to transfer data to.
 * destBlock.OFFSET is the dot [_OFFSET](_OFFSET) within the dest [_MEM](_MEM) memory block to write to.
 
-
 ## Description
 
 * The dot OFFSET is the memory block's start location in memory. Add bytes to place data further into the block.
@@ -22,11 +19,9 @@ The [_MEMCOPY](_MEMCOPY) statement copies a block of bytes from one memory offse
 * The memory block regions may overlap.
 * **Always free memory blocks after values have been transferred to variables and are no longer required.**
 
-
 ## Example(s)
 
-## Example(s)
- Swapping data from one [STRING](STRING) variable to another. Fixed length strings are recommended for speed.
+Swapping data from one [STRING](STRING) variable to another. Fixed length strings are recommended for speed.
 
 ```vb
 
@@ -51,11 +46,9 @@ _MEMFREE m: _MEMFREE n 'always clear the memory when done
 
 ```
 
-
 *Snippet:* Instead of copying each array element, one at a time in nested [FOR...NEXT](FOR...NEXT) loops, _MEMCOPY does it in one statement instantly.
 
 ```text
-
 
 'copy array a to array b one index at a time:
 FOR i1 = 0 TO 100
@@ -72,16 +65,10 @@ _MEMFREE ma: _MEMFREE mb 'clear the memory when done
 
 ```
 
-
-
 ## See Also
 
-* [_MEM](_MEM), [_MEM (function)](_MEM (function))
-* [_MEMNEW](_MEMNEW), [_MEMGET (function)](_MEMGET (function))
+* [_MEM](_MEM), [_MEM (function)](_MEM-(function))
+* [_MEMNEW](_MEMNEW), [_MEMGET (function)](_MEMGET-(function))
 * [_MEMIMAGE](_MEMIMAGE), [_MEMELEMENT](_MEMELEMENT)
 * [_MEMGET](_MEMGET), [_MEMPUT](_MEMPUT)
 * [_MEMFILL](_MEMFILL), [_MEMFREE](_MEMFREE)
-
-
-
-

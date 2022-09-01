@@ -12,7 +12,7 @@
 
 ## Example(s)
 
-*Example 1:* Printing text with blinking colors in [SCREEN](SCREEN) 0 only.
+Printing text with blinking colors in [SCREEN](SCREEN) 0 only.
 
 ```vb
 
@@ -33,7 +33,7 @@ END
 
 ```
 
-*Example 2:* Displaying and coloring the 256 [ASCII](ASCII) characters using [POKE](POKE) in [SCREEN](SCREEN) 0. 
+Displaying and coloring the 256 [ASCII](ASCII) characters using [POKE](POKE) in [SCREEN](SCREEN) 0. 
 
 ```vb
 
@@ -86,6 +86,6 @@ Byte offset:    0, 1               640     642     644     646     648     650  
 * [PEEK](PEEK), [POKE](POKE)
 * [DEF SEG = 0](DEF SEG = 0)
 * [SCREEN](SCREEN)
-* [SCREEN (function)](SCREEN (function))
+* [SCREEN (function)](SCREEN-(function))
 * [_NEWIMAGE](_NEWIMAGE) (screen pages)
 * [_LOADIMAGE](_LOADIMAGE) (image files)

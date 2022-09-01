@@ -1,10 +1,8 @@
 The [_DISPLAY](_DISPLAY) statement turns off the automatic display while only displaying the screen changes when called. 
 
-
 ## Syntax
  
->  [_DISPLAY](_DISPLAY)
-
+> [_DISPLAY](_DISPLAY)
 
 ## Description
 
@@ -12,13 +10,12 @@ The [_DISPLAY](_DISPLAY) statement turns off the automatic display while only di
 * Call _DISPLAY each time the screen graphics are to be displayed. Place call after the image has been changed.
 * Re-enable automatic display refreshing by calling [_AUTODISPLAY](_AUTODISPLAY). If it isn't re-enabled, things may not be displayed later.
 * _DISPLAY tells **QB64** to render all of the hardware [_PUTIMAGE](_PUTIMAGE) commands loaded into the buffer previously.
-* The [_AUTODISPLAY (function)](_AUTODISPLAY (function)) can be used to detect the current display behavior.
+* The [_AUTODISPLAY (function)](_AUTODISPLAY-(function)) can be used to detect the current display behavior.
 * **QB64** can set the graphic rendering order of _SOFTWARE, _HARDWARE, and _GLRENDER with [_DISPLAYORDER](_DISPLAYORDER).
-
 
 ## Example(s)
 
-*Example 1:* Displaying a circle bouncing around the screen.
+Displaying a circle bouncing around the screen.
 
 ```vb
 
@@ -38,10 +35,9 @@ LOOP UNTIL INKEY$ = CHR$(27)
 
 ```
 
-> *Explanation:* The loop is set with [_LIMIT](_LIMIT) to 100 frames per second to limit CPU usage and the speed of the ball. Each loop a circle is drawn while the previous one is erased when the coordinates change. _DISPLAY only shows the new circle position once each loop. The **_DISPLAY** routine eliminates the need for setting [SCREEN (statement)](SCREEN (statement)) swap pages, [CLS](CLS) and [PCOPY](PCOPY). _DISPLAY keeps the image off of the screen until the changes have all completed. Drawing 40 circles every loop helps slow down the ball.
+> *Explanation:* The loop is set with [_LIMIT](_LIMIT) to 100 frames per second to limit CPU usage and the speed of the ball. Each loop a circle is drawn while the previous one is erased when the coordinates change. _DISPLAY only shows the new circle position once each loop. The **_DISPLAY** routine eliminates the need for setting [SCREEN (statement)](SCREEN-(statement)) swap pages, [CLS](CLS) and [PCOPY](PCOPY). _DISPLAY keeps the image off of the screen until the changes have all completed. Drawing 40 circles every loop helps slow down the ball.
 
-
-*Example 2:* [_DISPLAY](_DISPLAY) must be used to render hardware images placed with [_PUTIMAGE](_PUTIMAGE) (**version 1.000 and up**).
+[_DISPLAY](_DISPLAY) must be used to render hardware images placed with [_PUTIMAGE](_PUTIMAGE) (**version 1.000 and up**).
 
 ```vb
 
@@ -76,19 +72,13 @@ _DISPLAY
 END SUB 
 
 ```
-Code adapted by Galleon
 
->  *Notes:* When [_DISPLAY](_DISPLAY) is commented out, the hardware Menu Test screen portion will blink and key codes may be seen underneath.
-
+> *Notes:* When [_DISPLAY](_DISPLAY) is commented out, the hardware Menu Test screen portion will blink and key codes may be seen underneath.
 
 ## See Also
 
-* [_DISPLAY (function)](_DISPLAY (function))
+* [_DISPLAY (function)](_DISPLAY-(function))
 * [_DISPLAYORDER](_DISPLAYORDER)
-* [_AUTODISPLAY](_AUTODISPLAY), [_AUTODISPLAY (function)](_AUTODISPLAY (function))
+* [_AUTODISPLAY](_AUTODISPLAY), [_AUTODISPLAY (function)](_AUTODISPLAY-(function))
 * [_PUTIMAGE](_PUTIMAGE)
 * [PCOPY](PCOPY)
-
-
-
-

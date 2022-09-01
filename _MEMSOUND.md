@@ -7,8 +7,8 @@ The [_MEMSOUND](_MEMSOUND) function returns a [_MEM](_MEM) value referring to a 
 ## Parameters
 
 * The imageBlock [_MEM](_MEM) type variable holds the read-only elements .OFFSET, .SIZE, .ELEMENTSIZE, and .SOUND.
-    * .ELEMENTSIZE will contain the number of bytes-per-sample the audio contains. Usually returns 2 (16-bit audio).
-    * .SOUND will contain the same handle value as returned by the [_SNDOPEN](_SNDOPEN) function.
+  * .ELEMENTSIZE will contain the number of bytes-per-sample the audio contains. Usually returns 2 (16-bit audio).
+  * .SOUND will contain the same handle value as returned by the [_SNDOPEN](_SNDOPEN) function.
 * The second parameter channel% must be 1 (left channel/mono) or 2 (right channel, for stereo files).
 
 ## Description
@@ -23,7 +23,7 @@ The [_MEMSOUND](_MEMSOUND) function returns a [_MEM](_MEM) value referring to a 
 
 ## Example(s)
 
-*Example 1:* Checking that a sound file is stereo.
+Checking that a sound file is stereo.
 
 ```vb
 
@@ -45,7 +45,7 @@ _SNDCLOSE song& 'closing the sound releases the mem blocks '' ''
 
 ```
 
-*Example 2:* Plotting a sound's waves.
+Plotting a sound's waves.
 
 ```vb
 
@@ -80,6 +80,7 @@ LOOP
 _SNDCLOSE song& 'closing the sound releases the mem blocks '' ''
 
 ```
+
 ## See Also
 
 * [_MEM](_MEM), [_MEMIMAGE](_MEMIMAGE)

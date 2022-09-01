@@ -1,21 +1,17 @@
 The [_SNDOPENRAW](_SNDOPENRAW) function opens a new channel to fill with _SNDRAW content to manage multiple dynamically generated sounds.
 
-
 ## Syntax
 
->  pipeHandle& = [_SNDOPENRAW](_SNDOPENRAW)
-
+> pipeHandle& = [_SNDOPENRAW](_SNDOPENRAW)
 
 ## Description
 
 * You can manage multiple dynamically generated sounds at once without having to worry about mixing.
 * Use [_SNDCLOSE](_SNDCLOSE) to remove the pipe sound handles from memory.
 
-
 ## Example(s)
 
-## Example(s)
- Combining 2 sounds without worrying about mixing:
+Combining 2 sounds without worrying about mixing:
 
 ```vb
 
@@ -31,15 +27,9 @@ _SNDCLOSE a
 _SNDCLOSE b 
 
 ```
-Code by Galleon
-
 
 ## See Also
 
 * [_SNDRAWDONE](_SNDRAWDONE)
 * [_SNDRAW](_SNDRAW)
 * [_SNDCLOSE](_SNDCLOSE)
-
-
-
-

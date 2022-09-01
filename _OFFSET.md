@@ -1,26 +1,22 @@
 The [_OFFSET](_OFFSET) variable type stores the location of a value in memory. The byte size varies as required by the system.
 
-
 ## Syntax
 
->  [DIM](DIM) variable [AS](AS) **_OFFSET**
-
+> [DIM](DIM) variable [AS](AS) **_OFFSET**
 
 ## Description
 
 * _OFFSET types can be created as signed or [_UNSIGNED](_UNSIGNED) at the programmer's discretion.
 * The type suffix for _OFFSET is **%&** which designates the integer value's flexible size.
-* Offset values are only useful when used in conjunction with [_MEM](_MEM) or [DECLARE LIBRARY](DECLARE LIBRARY) procedures.
+* Offset values are only useful when used in conjunction with [_MEM](_MEM) or [DECLARE LIBRARY](DECLARE-LIBRARY) procedures.
 * OFFSET values are used as a part of the [_MEM](_MEM) variable [type](type) in QB64. Variable.OFFSET returns or sets the current position in memory.
-* API [DECLARE LIBRARY](DECLARE LIBRARY) parameter or [TYPE](TYPE) names may include **lp, ptr** or **p** which designates them as a pointer type.
+* API [DECLARE LIBRARY](DECLARE-LIBRARY) parameter or [TYPE](TYPE) names may include **lp, ptr** or **p** which designates them as a pointer type.
 * **Warning: _OFFSET values cannot be cast to other variable type values reliably.**
 * **Warning: Variable length [STRING](STRING) values can move about in memory at any time.** If you get the _OFFSET of a variable length sting on one code line and use it on the next it may not be there anymore.** To be safe, move variable length strings into fixed length strings first.**
 
-
 ## Example(s)
 
-## Example(s)
- The SHBrowseForFolder function receives information about the folder selected by the user in Windows XP and 7.
+The SHBrowseForFolder function receives information about the folder selected by the user in Windows XP and 7.
 
 ```vb
 
@@ -65,18 +61,12 @@ ELSE
 END IF 
 
 ```
-<sub>Code by Galleon</sub>
-
 
 ## See Also
 
 * [_WINDOWHANDLE](_WINDOWHANDLE)
-* [Using _OFFSET](Using _OFFSET)
-* [_OFFSET (function)](_OFFSET (function)), [_MEM](_MEM)
-* [DECLARE LIBRARY](DECLARE LIBRARY)
-* [DECLARE DYNAMIC LIBRARY](DECLARE DYNAMIC LIBRARY)
-* [Variable Types](Variable Types)
-
-
-
-
+* [Using _OFFSET](Using--OFFSET)
+* [_OFFSET (function)](_OFFSET-(function)), [_MEM](_MEM)
+* [DECLARE LIBRARY](DECLARE-LIBRARY)
+* [DECLARE DYNAMIC LIBRARY](DECLARE-DYNAMIC-LIBRARY)
+* [Variable Types](Variable-Types)

@@ -1,10 +1,8 @@
 The [_MAPUNICODE](_MAPUNICODE) function returns the [Unicode](Unicode) (UTF-32) code point value of a mapped [ASCII](ASCII) character code.
 
-
 ## Syntax
 
->  utfValue& = [_MAPUNICODE](_MAPUNICODE)(asciiCode%)
-
+> utfValue& = [_MAPUNICODE](_MAPUNICODE)(asciiCode%)
 
 ## Description
 
@@ -13,11 +11,9 @@ The [_MAPUNICODE](_MAPUNICODE) function returns the [Unicode](Unicode) (UTF-32) 
 * Returns can be used to verify or catalog the present Unicode mapping.
 * The function returns Unicode values for the control characters, CHR$(127) and extended characters without mapping them first.
 
-
 ## Example(s)
 
-## Example(s)
- Store function return values in an array for ASCII codes 0 to 255 to restore them later.
+Store function return values in an array for ASCII codes 0 to 255 to restore them later.
 
 ```vb
 
@@ -34,14 +30,9 @@ END
 
 ```
 
-
 ## See Also
 
 * [_MAPUNICODE](_MAPUNICODE) (statement)
-* [Unicode](Unicode), [Code Pages](Code Pages) (by region)
+* [Unicode](Unicode), [Code Pages](Code-Pages) (by region)
 * [ASCII](ASCII), [CHR$](CHR$), [ASC](ASC)
-* [Text Using Graphics](Text Using Graphics)
-
-
-
-
+* [Text Using Graphics](Text-Using-Graphics)

@@ -12,12 +12,12 @@ The [ATN](ATN) or arctangent function returns the angle in radians of a numerica
 ## Description
 
 * To convert from radians to degrees, multiply radians * (180 / �).
-* The *tangent* value would be equal to the tangent value of an angle. Ex: **[TAN](TAN)(ATN(1)) <nowiki>=</nowiki> 1**
+* The *tangent* value would be equal to the tangent value of an angle. Ex: **[TAN](TAN)(ATN(1)) = 1**
 * The function return value is between -� / 2 and � / 2.
 
 ## Example(s)
 
-*Example 1:* When the [TAN](TAN)gent value equals 1, the line is drawn at a 45 degree angle (.7853982 radians) where [SIN](SIN) / [COS](COS) = 1.
+When the [TAN](TAN)gent value equals 1, the line is drawn at a 45 degree angle (.7853982 radians) where [SIN](SIN) / [COS](COS) = 1.
 
 ```vb
 

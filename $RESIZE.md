@@ -117,7 +117,7 @@ Code by waltersmind
 
 ## See Also
 
-* [_RESIZE](_RESIZE), [_RESIZE (function)](_RESIZE (function))
+* [_RESIZE](_RESIZE), [_RESIZE (function)](_RESIZE-(function))
 * [_RESIZEWIDTH](_RESIZEWIDTH), [_RESIZEHEIGHT](_RESIZEHEIGHT) (functions return the requested dimensions)
 
 

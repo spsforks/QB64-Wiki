@@ -17,7 +17,7 @@ The [LEFT$](LEFT$) string function returns a number of characters from the left 
 
 ## Example(s)
 
-*Example 1:* Getting the left portion of a string value. 
+Getting the left portion of a string value. 
 
 ```vb
 

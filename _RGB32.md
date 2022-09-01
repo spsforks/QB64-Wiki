@@ -1,20 +1,22 @@
 The [_RGB32](_RGB32) function returns the 32-bit *RGBA* color value with specified red, green and blue component intensities and optional alpha.
 
-
 ## Syntax
 
 *Original syntax*:
+
 > color32value~& = [_RGB32](_RGB32)(red&, green&, blue&)
 
 *Alternative Syntax 2*:
+
 > color32value~& = [_RGB32](_RGB32)(red&, green&, blue&, alpha&)
 
 *Alternative Syntax 3*:
+
 > color32value~& = [_RGB32](_RGB32)(intensity&, alpha&)
 
 *Alternative Syntax 4*:
-> color32value~& = [_RGB32](_RGB32)(intensity&)
 
+> color32value~& = [_RGB32](_RGB32)(intensity&)
 
 ## Parameter(s)
 
@@ -33,15 +35,13 @@ The [_RGB32](_RGB32) function returns the 32-bit *RGBA* color value with specifi
 * When [LONG](LONG) values are [PUT](PUT) to file, the ARGB values become BGRA. Use [LEFT$](LEFT$)([MKL$](MKL$)(color32value~&), 3) to place 3 colors.
 * **NOTE: Default 32-bit backgrounds are clear black or [_RGB32](_RGB32)(0, 0). Use [CLS](CLS) to make the black opaque.**
 
-
 ## Availability
 
 * Alternative syntaxes available with **version 1.3 and up**.
 
-
 ## Example(s)
 
-*Example 1:* Converting the color port RGB intensity palette values 0 to 63 to 32 bit hexadecimal values. 
+Converting the color port RGB intensity palette values 0 to 63 to 32 bit hexadecimal values. 
 
 ```vb
 
@@ -61,28 +61,27 @@ NEXT
 
 ```text
 
-COLOR 1 <nowiki>=</nowiki> &HFF0000A8
-COLOR 2 <nowiki>=</nowiki> &HFF00A800
-COLOR 3 <nowiki>=</nowiki> &HFF00A8A8
-COLOR 4 <nowiki>=</nowiki> &HFFA80000
-COLOR 5 <nowiki>=</nowiki> &HFFA800A8
-COLOR 6 <nowiki>=</nowiki> &HFFA85400
-COLOR 7 <nowiki>=</nowiki> &HFFA8A8A8
-COLOR 8 <nowiki>=</nowiki> &HFF545454
-COLOR 9 <nowiki>=</nowiki> &HFF5454FC
-COLOR 10 <nowiki>=</nowiki> &HFF54FC54
-COLOR 11 <nowiki>=</nowiki> &HFF54FCFC
-COLOR 12 <nowiki>=</nowiki> &HFFFC5454
-COLOR 13 <nowiki>=</nowiki> &HFFFC54FC
-COLOR 14 <nowiki>=</nowiki> &HFFFCFC54
-COLOR 15 <nowiki>=</nowiki> &HFFFCFCFC
+COLOR 1 = &HFF0000A8
+COLOR 2 = &HFF00A800
+COLOR 3 = &HFF00A8A8
+COLOR 4 = &HFFA80000
+COLOR 5 = &HFFA800A8
+COLOR 6 = &HFFA85400
+COLOR 7 = &HFFA8A8A8
+COLOR 8 = &HFF545454
+COLOR 9 = &HFF5454FC
+COLOR 10 = &HFF54FC54
+COLOR 11 = &HFF54FCFC
+COLOR 12 = &HFFFC5454
+COLOR 13 = &HFFFC54FC
+COLOR 14 = &HFFFCFC54
+COLOR 15 = &HFFFCFCFC
 
 ```
 
 > *Note:* This procedure also shows how the returns from [_RGB](_RGB) and [_RGB32](_RGB32) differ in a non-32 bit screen mode.
 
-
-*Example 2:* Working with 32 bit colors.
+Working with 32 bit colors.
 
 ```vb
 
@@ -114,10 +113,8 @@ SLEEP
 SYSTEM 
 
 ```
-Code by Steve McNeill
 
-
-*Example 3:* Comparing the output of the new _RGB32 syntaxes (starting with version 1.3) and their equivalents in previous versions. 
+Comparing the output of the new _RGB32 syntaxes (starting with version 1.3) and their equivalents in previous versions. 
 
 ```vb
 
@@ -148,16 +145,11 @@ PRINT "Magenta too, 110 alpha - but with less typing"
 
 ```
 
-
 ## See Also
 
 * [_RGBA32](_RGBA32), [_RGB](_RGB), [_RGBA](_RGBA)
 * [_RED32](_RED32), [_GREEN32](_GREEN32), [_BLUE32](_BLUE32)
 * [_PALETTECOLOR](_PALETTECOLOR)
-* [HEX$ 32 Bit Values](HEX$ 32 Bit Values)
+* [HEX$ 32 Bit Values](HEX$-32-Bit-Values)
 * [SAVEIMAGE](SAVEIMAGE)
-* [http://www.w3schools.com/html/html_colornames.asp Hexadecimal Color Values]
-
-
-
-
+* [Hexadecimal Color Values](http://www.w3schools.com/html/html_colornames.asp)

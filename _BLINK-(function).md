@@ -1,15 +1,13 @@
 The [_BLINK](_BLINK) function returns the current blink setting for SCREEN 0 colors. If enabled, returns -1 (default), otherwise returns 0.
 
-
 ## Syntax
 
->  blinkState%% = [_BLINK](_BLINK)
-
+> blinkState%% = [_BLINK](_BLINK)
 
 ## Example(s)
 
-
 ```vb
+
 COLOR 16, 7
 
 'Try uncommenting the line below:
@@ -23,11 +21,7 @@ END IF
 
 ```
 
-
 ## See Also
 
 * [_BLINK](_BLINK) (statement)
 * [OUT](OUT)
-
-
-

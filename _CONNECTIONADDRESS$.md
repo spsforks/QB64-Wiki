@@ -1,10 +1,8 @@
 The [_CONNECTIONADDRESS$](_CONNECTIONADDRESS$) function returns a connected user's [STRING](STRING) IP address value.
 
-
 ## Syntax
 
 > result$ = [_CONNECTIONADDRESS$](_CONNECTIONADDRESS$)(connectionHandle&)
-
 
 ## Description
 
@@ -13,17 +11,14 @@ The [_CONNECTIONADDRESS$](_CONNECTIONADDRESS$) function returns a connected user
 * For **[_OPENCLIENT](_OPENCLIENT)s**: It may return "TCP/IP:8080:213.23.32.5" where 8080 is the port it used to connect to the listening host and 213.23.32.5 is the IP address of the host name it resolved.
 * For **[_OPENCONNECTION](_OPENCONNECTION)s** (from clients): It may return "TCP/IP:8080:34.232.321.25" where 8080 was the host listening port it connected to and 34.232.321.25 is the IP address of the client that connected. This is very useful because the host can log the IP address of clients for future reference (or banning, for example).
 
-
 ## Example(s)
 
-## Example(s)
- A Host logging new chat clients in a Chat program. See the [_OPENHOST](_OPENHOST) example for the rest of the code used.
+A Host logging new chat clients in a Chat program. See the [_OPENHOST](_OPENHOST) example for the rest of the code used.
 
 ```vb
 
 f = FREEFILE
 OPEN "ChatLog.dat" FOR APPEND AS #f ' code at start of host section before DO loop.
-
 
 newclient = _OPENCONNECTION(host) ' receive any new client connection handles
 IF newclient THEN
@@ -36,8 +31,8 @@ IF newclient THEN
 END IF 
 
 ```
->  *Explanation:* The function returns the new client's IP address to the IP$ variable. Prints the IP and the original login position to a log file. The information can later be used by the host for referance  if necessary. The host could set up a ban list too. 
 
+> *Explanation:* The function returns the new client's IP address to the IP$ variable. Prints the IP and the original login position to a log file. The information can later be used by the host for reference  if necessary. The host could set up a ban list too. 
 
 ## See Also
 
@@ -46,7 +41,3 @@ END IF
 * [_OPENCLIENT](_OPENCLIENT)
 * [_CONNECTED](_CONNECTED)
 * [WGET](WGET) (HTTP and FTP file transfer)
-
-
-
-

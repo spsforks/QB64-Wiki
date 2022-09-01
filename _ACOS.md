@@ -1,23 +1,22 @@
 The [[_ACOS]] function returns the angle measured in radians based on an input [[COS]]ine value ranging from -1 to 1.
 
-
 ## Syntax
 
->  radian_angle! = [[_ACOS]] (cosine_value!)
+> radian_angle! = [[_ACOS]] (cosine_value!)
 
 ## Description
 
 * The *cosine_value!* must be measured >= -1 and <= 1, or an error will be generated.  (PRINT _ACOS(1.2) would give the result of -1.#IND, which is basically QB64's way of telling us that the number doesn't exist, much like 1/0 would.) 
 * ARCCOSINE is the inverse function of [[COS]]ine, which lets us turn a [[COS]]ine value back into an angle.
-* Note: Due to rounding with floating point math, the _ACOS may not always give a perfect match for the COS angle which generated this.  You can reduce the number of rounding errors by increasing the precision of your calculations by using [[DOUBLE]] or [[_FLOAT]] precision variables instead of [SINGLE](SINGLE).
-
+* Note: Due to rounding with floating point math, the _ACOS may not always give a perfect match for the COS angle which generated this.  You can reduce the number of rounding errors by increasing the precision of your calculations by using [DOUBLE](DOUBLE) or [[_FLOAT]] precision variables instead of [SINGLE](SINGLE).
 
 ## Availability
+
 * **Version 1.000 and up.**
 
-
 ## Example(s)
- Converting a radian angle to its COSine and using that value to find the angle in degrees again using _ACOS:
+
+Converting a radian angle to its COSine and using that value to find the angle in degrees again using _ACOS:
 
 ```vb
 
@@ -32,10 +31,8 @@ PRINT "The ACOS of "; C; " is: "; A
 PRINT "Notice, A is the Angle in Radians.  If we convert it to degrees, the value is "; _R2D(A) 
 
 ```
-<sub>Example by SMcNeill</sub>
 
 ```text
-
 
 Give me an Angle (in Degrees) => ? 60
 
@@ -44,8 +41,6 @@ The ACOS of  .5000000000000001  is:  1.047197551196598
 Notice, A is the Angle in Radians.  If we convert it to degrees, we discover the value is  60
 
 ```
-
-
 
 ## See Also
 
@@ -58,7 +53,3 @@ Notice, A is the Angle in Radians.  If we convert it to degrees, we discover the
 * [[_ATAN2]] (Compute arc tangent with two parameters)
 * [[_HYPOT]] (hypotenuse)
 *[Mathematical Operations](Mathematical-Operations)
-*[Mathematical Operations#Derived_Mathematical_Functions](Mathematical-Operations#Derived_Mathematical_Functions)
-
-
-

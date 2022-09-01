@@ -75,7 +75,7 @@ This allows relational tests to be inverted and combined using the bitwise logic
 
 ## Example(s)
 
-*Example 1:* In a one line IF statement, only [REM](REM) can be used to comment out the action without an [END IF](END-IF) error:
+In a one line IF statement, only [REM](REM) can be used to comment out the action without an [END IF](END-IF) error:
 
 ```vb
 

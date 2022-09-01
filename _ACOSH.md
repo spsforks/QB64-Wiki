@@ -1,9 +1,8 @@
 The [_ACOSH](_ACOSH) returns the nonnegative arc hyperbolic cosine of x!, expressed in radians.
 
-
 ## Syntax
 
->  return_value! = [_ACOSH](_ACOSH)(x!)
+> return_value! = [_ACOSH](_ACOSH)(x!)
 
 ## See Also
 
@@ -16,8 +15,3 @@ The [_ACOSH](_ACOSH) returns the nonnegative arc hyperbolic cosine of x!, expres
 * [_ATAN2](_ATAN2) (Compute arc tangent with two parameters)
 * [_HYPOT](_HYPOT) (hypotenuse)
 *[Mathematical Operations](Mathematical-Operations)
-*[Mathematical Operations#Derived_Mathematical_Functions](Mathematical-Operations#Derived_Mathematical_Functions)
-
-
-
-

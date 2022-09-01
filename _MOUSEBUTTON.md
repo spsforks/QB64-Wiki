@@ -1,18 +1,15 @@
 The [_MOUSEBUTTON](_MOUSEBUTTON) function returns the button status of a specified mouse button when read after [_MOUSEINPUT](_MOUSEINPUT).
 
-
 ## Syntax
 
->  buttonStatus%% = [_MOUSEBUTTON](_MOUSEBUTTON)(buttoNumber)
-
+> buttonStatus%% = [_MOUSEBUTTON](_MOUSEBUTTON)(buttoNumber)
 
 ## Parameter(s)
 
 * [INTEGER](INTEGER) buttoNumber designates the mouse button to read (See [_DEVICES](_DEVICES) for more than 3).
-** 1 = Left mouse button
-** 2 = Right mouse button
-** 3 = Center or scroll button 
-
+  * 1 = Left mouse button
+  * 2 = Right mouse button
+  * 3 = Center or scroll button 
 
 ## Description
 
@@ -23,10 +20,9 @@ The [_MOUSEBUTTON](_MOUSEBUTTON) function returns the button status of a specifi
 * Use [_DEVICE$](_DEVICE$) to find the "[MOUSE]" [_DEVICES](_DEVICES) number to find the number of buttons available using [_LASTBUTTON](_LASTBUTTON).
 * **Note:** The center mouse button can also be read as [_BUTTON](_BUTTON)(2) on [_DEVICEINPUT](_DEVICEINPUT)(2) when a mouse is present.
 
-
 ## Example(s)
 
-*Example 1:* Finding the number of mouse buttons available in QB64. This could also be used for other controller devices.
+Finding the number of mouse buttons available in QB64. This could also be used for other controller devices.
 
 ```vb
 
@@ -38,8 +34,7 @@ PRINT buttons; "mouse buttons available"
 
 ```
 
-
-*Example 2:* How to monitor when a button is down or wait until a mouse button is not held down.
+How to monitor when a button is down or wait until a mouse button is not held down.
 
 ```vb
 
@@ -56,8 +51,7 @@ PRINT "DONE!"
 
 ```
 
-
-*Example 3:* Checking for a click or a double-click by the user.
+Checking for a click or a double-click by the user.
 
 ```vb
 
@@ -84,10 +78,10 @@ DO  'main program loop
 LOOP UNTIL INKEY$ = CHR$(27) 
 
 ```
->  *Explanation:* To find the current button status read [_MOUSEINPUT](_MOUSEINPUT) repeatedly. The [TIMER](TIMER) loop looks for a second click.
 
+> *Explanation:* To find the current button status read [_MOUSEINPUT](_MOUSEINPUT) repeatedly. The [TIMER](TIMER) loop looks for a second click.
 
-*Example 4:* Verifying that a user clicked and released a mouse button on a program button.
+Verifying that a user clicked and released a mouse button on a program button.
 
 ```vb
 
@@ -115,8 +109,9 @@ y = _MOUSEY
 END SUB 
 
 ```
->  *Explanation:* The mouse SUB has no internal [_MOUSEINPUT](_MOUSEINPUT) loop so that no button presses, releases or moves are missed.
->  If the above read procedure goes to another one, it may be advisable to skip over unread input in a [_MOUSEINPUT](_MOUSEINPUT) only loop.
+
+> *Explanation:* The mouse SUB has no internal [_MOUSEINPUT](_MOUSEINPUT) loop so that no button presses, releases or moves are missed.
+> If the above read procedure goes to another one, it may be advisable to skip over unread input in a [_MOUSEINPUT](_MOUSEINPUT) only loop.
 
 ```text
 
@@ -126,10 +121,9 @@ END SUB
 
 ```
 
->  The above procedure can be used to catch up after [INPUT](INPUT), [LINE INPUT](LINE INPUT) or [INPUT$](INPUT$) delays when mouse input may accumulate.
+> The above procedure can be used to catch up after [INPUT](INPUT), [LINE INPUT](LINE-INPUT) or [INPUT$](INPUT$) delays when mouse input may accumulate.
 
-
-*Example 5:* Combining mouse button or keyboard selections in a menu or test:
+Combining mouse button or keyboard selections in a menu or test:
 
 ```vb
 
@@ -180,9 +174,9 @@ DO 'main program loop in demo only
   END IF
 LOOP 'DEMO only loop use red X box to quit 
 
-``` <sub>Code by Ted Weissgerber</sub>
->  *Explanation:* User can cancel letter selection by moving pointer off letter before releasing the left mouse button.
+``` 
 
+> *Explanation:* User can cancel letter selection by moving pointer off letter before releasing the left mouse button.
 
 ## See Also
 
@@ -191,8 +185,4 @@ LOOP 'DEMO only loop use red X box to quit
 * [_MOUSESHOW](_MOUSESHOW), [_MOUSEHIDE](_MOUSEHIDE)
 * [_DEVICES](_DEVICES), [_DEVICE$](_DEVICE$), [_LASTBUTTON](_LASTBUTTON)
 * [_BUTTON](_BUTTON), [_BUTTONCHANGE](_BUTTONCHANGE) ([DEVICES](DEVICES))
-* [Controller Devices](Controller Devices)
-
-
-
-
+* [Controller Devices](Controller-Devices)

@@ -17,7 +17,7 @@ The [RESTORE](RESTORE) statement is used to reset the DATA pointer to the beginn
 
 ## Example(s)
 
-*Example 1:* Restoring a labeled DATA field to avoid going past the end of DATA.
+Restoring a labeled DATA field to avoid going past the end of DATA.
 
 ```vb
 

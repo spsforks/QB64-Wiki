@@ -27,7 +27,7 @@ The [ENVIRON$](ENVIRON$) function returns a [STRING](STRING) environmental value
 
 ## Example(s)
 
-*Example 1:* Viewing the list of environmental parameter settings using a counter loop like SET does in DOS.
+Viewing the list of environmental parameter settings using a counter loop like SET does in DOS.
 
 ```vb
 

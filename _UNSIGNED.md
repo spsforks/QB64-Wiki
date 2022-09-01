@@ -35,7 +35,7 @@ How negative values affect the [_UNSIGNED](_UNSIGNED) value returned by a [_BYTE
 
 ## Example(s)
 
-*Example 1:*  In **QB64**, when a signed [INTEGER](INTEGER) value exceeds 32767, the value may become a negative value:
+ In **QB64**, when a signed [INTEGER](INTEGER) value exceeds 32767, the value may become a negative value:
 
 ```vb
 
@@ -52,7 +52,7 @@ PRINT i%
 > *Explanation:* Use an [_UNSIGNED](_UNSIGNED) [INTEGER](INTEGER) or a ~% variable type suffix for only positive integer values up to 65535.
 
 
-*Example 2:* In **QB64**, [_UNSIGNED](_UNSIGNED) [INTEGER](INTEGER) values greater than 65535 cycle over again from zero:
+In **QB64**, [_UNSIGNED](_UNSIGNED) [INTEGER](INTEGER) values greater than 65535 cycle over again from zero:
 
 ```vb
 
@@ -69,7 +69,7 @@ PRINT i~%
 > *Explanation:* In QB64 an unsigned integer value of 65536 would be 0 with values increasing by the value minus 65536. 
 
 
-*Example 3:* Demonstrating how _UNSIGNED variables expand the [INTEGER](INTEGER) range.
+Demonstrating how _UNSIGNED variables expand the [INTEGER](INTEGER) range.
 
 ```vb
 
@@ -115,7 +115,7 @@ END
 * [DEFSTR](DEFSTR), [DEFLNG](DEFLNG), [DEFINT](DEFINT), [DEFSNG](DEFSNG), [DEFDBL](DEFDBL)
 * [INTEGER](INTEGER), [LONG](LONG), [_INTEGER64](_INTEGER64)
 * [ABS](ABS), [SGN](SGN)
-* [Variable Types](Variable Types)
+* [Variable Types](Variable-Types)
 
 
 

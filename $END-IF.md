@@ -26,7 +26,7 @@
 
 ## Example(s)
 
-*Example 1:* 
+
 
 ```vb
 
@@ -49,7 +49,7 @@ As long as Screenmode is 0, the program will exclude the code where CONST Red is
 The [$LET]($LET) and $IF statements let the programmer control the code that actually gets compiled, while excluding the other blocks completely.
 
 
-*Example 2:* 
+
 
 ```vb
 

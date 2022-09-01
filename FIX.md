@@ -16,7 +16,7 @@ The [FIX](FIX) function rounds a numerical value to the next whole number closes
 
 ## Example(s)
 
-*Example 1:* Showing the behavior of [FIX](FIX) with positive and negative decimal point values.
+Showing the behavior of [FIX](FIX) with positive and negative decimal point values.
 
 ```vb
 

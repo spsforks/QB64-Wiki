@@ -1,30 +1,27 @@
 A [_BYTE](_BYTE) variable can hold signed variable values from -128 to 127 (one byte or 8 [_BIT](_BIT)s). [_UNSIGNED](_UNSIGNED) from 0 to 255.
 
-
 ## Syntax
 
->  [DIM](DIM) byte [AS](AS) [[_UNSIGNED]([_UNSIGNED)] [[_BYTE]]
-
+> [DIM](DIM) byte [AS](AS) [[_UNSIGNED]([_UNSIGNED)] [[_BYTE]]
 
 ## Description
 
 * Signed _BYTE values can range from -128 to 127.
-* [[_UNSIGNED]] _BYTEs can hold values from 0 to 255. [[_UNSIGNED]] expands the range of positive values.
-* Can be defined in a **QB64** [[_DEFINE]] statement using a starting letter range of variable names.
-* Also can be used in a subroutine parameter [[AS]] _BYTE variable definitions.
+* [_UNSIGNED](_UNSIGNED) _BYTEs can hold values from 0 to 255. [_UNSIGNED](_UNSIGNED) expands the range of positive values.
+* Can be defined in a **QB64** [_DEFINE](_DEFINE) statement using a starting letter range of variable names.
+* Also can be used in a subroutine parameter [AS](AS) _BYTE variable definitions.
 * Define a byte using the suffix %% after the variable name: variable%% = -54
 * Define an unsigned byte by adding the suffix ~%% after the variable name: variable~%% = 54
-* **When a variable has not been assigned or has no type suffix, the value defaults to [[SINGLE]].**
+* **When a variable has not been assigned or has no type suffix, the value defaults to [SINGLE](SINGLE).**
 
+**[_BIT](BITS)**
 
-**[[_BIT|BITS]]**
 * The **MSB** is the most significant(largest) bit value and **LSB** is the least significant bit of a binary or register memory address value. The order in which the bits are read determines the binary or decimal byte value. There are two common ways to read a byte:
 
 > * **"Big-endian"**: MSB is the first bit encountered, decreasing to the LSB as the last bit by position, memory address or time.
 > * **"Little-endian"**: LSB is the first bit encountered, increasing to the MSB as the last bit by position, memory address or time.
 
 ```text
-
 
          **Offset or Position:    0    1   2   3   4   5   6   7      Example: 11110000**
                               ----------------------------------             --------
@@ -33,11 +30,11 @@ A [_BYTE](_BYTE) variable can hold signed variable values from -128 to 127 (one 
 
 ```
 
-> :The big-endian method compares exponents of 2<sup>7</sup> down to 2<sup>0</sup> while the little-endian method does the opposite. 
+> The big-endian method compares exponents of 2<sup>7</sup> down to 2<sup>0</sup> while the little-endian method does the opposite. 
 
+**[_BYTE](BYTES)**
 
-**[[_BYTE|BYTES]]**
-* [[INTEGER]] values consist of 2 bytes called the **HI** and **LO** bytes. Anytime that the number of binary digits is a multiple of 16 (2bytes, 4 bytes, etc.) and the HI byte's MSB is on(1), the value returned will be negative. Even with [[SINGLE]] or [[DOUBLE]] values! 
+* [INTEGER](INTEGER) values consist of 2 bytes called the **HI** and **LO** bytes. Anytime that the number of binary digits is a multiple of 16 (2bytes, 4 bytes, etc.) and the HI byte's MSB is on(1), the value returned will be negative. Even with [SINGLE](SINGLE) or [DOUBLE](DOUBLE) values! 
 
 ```text
 
@@ -51,14 +48,11 @@ A [_BYTE](_BYTE) variable can hold signed variable values from -128 to 127 (one 
 
 ```
 
-> :The HI byte's **MSB** is often called the **sign** bit! When all 16 of the integer binary bits are on, the decimal return is -1.  
-
-
+> The HI byte's **MSB** is often called the **sign** bit! When all 16 of the integer binary bits are on, the decimal return is -1.  
 
 ## Example(s)
 
 > How negative assignments affect the _UNSIGNED value returned by a byte (8 bits).
-
 
 ```vb
 
@@ -94,7 +88,6 @@ PRINT "The most significant bit is furthest to the left."
 
 ```text
 
-
 &B00000001 = unsigned & signed are both 1
 &B01111111 = unsigned & signed are both 127
 &B11111111 = unsigned is 255 but signed is -1
@@ -106,19 +99,13 @@ The most significant bit is furthest to the left.
 
 ```
 
-
-
 ## See Also
 
-* [[_BIT]], [[&B]]
-* [[_DEFINE]], [[DIM]]
-* [[_UNSIGNED]]
-* [[_SHL]], [[_SHR]]
-* [[Mathematical Operations]]
-* [[Screen Memory]]
-* [[Variable Types]]
-* [[Converting Bytes to Bits]]
-
-
-
-
+* [_BIT](_BIT), [&B](&B)
+* [_DEFINE](_DEFINE), [DIM](DIM)
+* [_UNSIGNED](_UNSIGNED)
+* [_SHL](_SHL), [_SHR](_SHR)
+* [Mathematical Operations](Mathematical-Operations)
+* [Screen Memory](Screen-Memory)
+* [Variable Types](Variable-Types)
+* [Converting Bytes to Bits](Converting-Bytes-to-Bits)

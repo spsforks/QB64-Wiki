@@ -90,7 +90,7 @@ The **&B&** prefix denotes that an integer value is expressed in a binary base 2
 
 ## Example(s)
 
-*Example 1:* A Decimal to Binary [STRING](STIRNG) function that does not return leading zeroes.
+A Decimal to Binary [STRING](STIRNG) function that does not return leading zeroes.
 
 ```vb
 
@@ -122,7 +122,7 @@ END FUNCTION
 
 *Note:* The MSB% flag allows zeroes to be added. Uncomment the MSB% = 1 statement for returns with leading zeroes.
 
-*Example 2:* QB64 converts the binary values from the example above to [[INTEGER]] decimal values automatically.
+QB64 converts the binary values from the example above to [INTEGER](INTEGER) decimal values automatically.
 
 ```VB
 

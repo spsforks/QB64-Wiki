@@ -95,7 +95,7 @@ NOTE: The above commented table can be copied and pasted directly into the QB64 
 
 ## Example(s)
 
-*Example 1:* How ASC can be used to find any ASCII code in a string of characters using QB64.
+How ASC can be used to find any ASCII code in a string of characters using QB64.
 
 ```vb
 
@@ -119,7 +119,7 @@ PRINT ASC("QB64 is not only COMPATIBLE, it can find any part of the string!", 18
 
 > *Note:* The ASCII code for "A" and "a" are different by the value of 32, "A" + 32 is "a", 65("A") + 32 = 97("a").
 
-*Example 2:* Reading the ASCII and two byte code combinations with ASC in **QB64**.
+Reading the ASCII and two byte code combinations with ASC in **QB64**.
 
 ```vb
 
@@ -145,7 +145,7 @@ Code by Ted Weissgerber
 
 *Explanation:* The keypress read loop checks that ASC will not read an empty string. That would create a program error. [SLEEP](SLEEP) reduces CPU memory usage between keypresses. Normal byte codes returned are indicated by the IF statement when ASC returns a value. Otherwise the routine will return the two byte ASCII code. The extended keyboard keys(Home pad, Arrow pad and Number pad), Function keys or Ctrl, Alt or Shift key combinations will return two byte codes. Ctrl + letter combinations will return control character codes 1 to 26.
 
-*Example 3:* Reading only numerical values input by a program user.
+Reading only numerical values input by a program user.
 
 ```vb
 

@@ -1,10 +1,8 @@
 The [_ASSERT](_ASSERT) statement can be used to perform tests in code that's in development, for debugging purposes.
 
-
 ## Syntax
 
 > [_ASSERT](_ASSERT)  condition[,  errorMessage$]
-
 
 ## Description
 
@@ -12,16 +10,13 @@ The [_ASSERT](_ASSERT) statement can be used to perform tests in code that's in 
 * Optional errorMessage$ is the message to be displayed in the console window if [$ASSERTS]($ASSERTS) is used.
 * If the condition is not met (that is, if it evaluates to 0), an error occurs ("_ASSERT failed on line #") and program execution stops.
 
-
 ## Availability
 
 * **Version 1.4 and up**.
 
-
 ## Example(s)
 
-## Example(s)
- Adding test checks for parameter inputs in a function. 
+Adding test checks for parameter inputs in a function. 
 
 ```vb
 
@@ -44,13 +39,8 @@ END FUNCTION
 
 ```
 
-
 ## See Also
 
 * [$ASSERTS]($ASSERTS)
 * [$CHECKING]($CHECKING)
-* [Relational Operations](Relational Operations)
-
-
-
-
+* [Relational Operations](Relational-Operations)

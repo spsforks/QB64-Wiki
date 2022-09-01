@@ -1,18 +1,15 @@
 The [_MEMPUT](_MEMPUT) statement writes data to a portion of a designated memory block at an [OFFSET](OFFSET) position.
 
-
 ## Syntax
 
->  [_MEMPUT](_MEMPUT) memoryBlock, bytePosition, sourceVariable [AS type]
-
+> [_MEMPUT](_MEMPUT) memoryBlock, bytePosition, sourceVariable [AS type]
 
 ## Parameter(s)
 
-* memoryBlock is a [_MEM](_MEM) variable type memory block name created by [_MEMNEW](_MEMNEW) or the [_MEM (function)](_MEM (function)) function.
+* memoryBlock is a [_MEM](_MEM) variable type memory block name created by [_MEMNEW](_MEMNEW) or the [_MEM (function)](_MEM-(function)) function.
 * bytePosition is the memoryBlock.[OFFSET](OFFSET) start position plus any bytes needed to read specific values. 
 * The sourceVariable type designates the size and bytePosition it should be written to. It can be a variable, [arrays](arrays) or user defined type.
 * bytePosition can be converted [AS](AS) a specific variable *[TYPE](TYPE)* before being written to the memoryBlock as bytes.
-
 
 ## Description
 
@@ -22,11 +19,9 @@ The [_MEMPUT](_MEMPUT) statement writes data to a portion of a designated memory
 * [LEN](LEN) can be used to determine the byte size of numerical or user defined variable [type](type)s regardless of the value held.
 * [STRING](STRING) values should be of a defined length. Variable length strings can actually move around in memory and not be found.
 
-
-## Description
-
 ## Example(s)
- _MEMPUT can be used just like [POKE](POKE) without [DEF SEG](DEF SEG).
+
+_MEMPUT can be used just like [POKE](POKE) without [DEF SEG](DEF-SEG).
 
 ```vb
 
@@ -39,14 +34,9 @@ PRINT d& 'print 768 because the 2nd byte of d& has been set to 3 or 3 * 256
 
 ```
 
-
 ## See Also
 
-* [_MEMGET](_MEMGET), [_MEMGET (function)](_MEMGET (function))
-* [_MEM](_MEM), [_MEM (function)](_MEM (function))
+* [_MEMGET](_MEMGET), [_MEMGET (function)](_MEMGET-(function))
+* [_MEM](_MEM), [_MEM (function)](_MEM-(function))
 * [_MEMIMAGE](_MEMIMAGE), [_MEMNEW](_MEMNEW)
 * [_MEMFREE](_MEMFREE), [_MEMCOPY](_MEMCOPY)
-
-
-
-

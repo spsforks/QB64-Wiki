@@ -1,10 +1,8 @@
 The [_MOUSEWHEEL](_MOUSEWHEEL) function returns a positive or negative [INTEGER](INTEGER) value indicating mouse scroll events since the last read of [_MOUSEINPUT](_MOUSEINPUT).
 
-
 ## Syntax
 
->  scrollAmount% = [_MOUSEWHEEL](_MOUSEWHEEL)
-
+> scrollAmount% = [_MOUSEWHEEL](_MOUSEWHEEL)
 
 ## Description
 
@@ -12,10 +10,9 @@ The [_MOUSEWHEEL](_MOUSEWHEEL) function returns a positive or negative [INTEGER]
 * After an event has been read, the value resets to 0 automatically so cumulative position values must be added.
 * If no movement on the wheel has occurred since the last [_MOUSEINPUT](_MOUSEINPUT) read, [_MOUSEWHEEL](_MOUSEWHEEL) returns 0.
 
-
 ## Example(s)
 
-*Example 1:* Reading the cumulative mouse wheel "clicks".
+Reading the cumulative mouse wheel "clicks".
 
 ```vb
 
@@ -28,8 +25,7 @@ The [_MOUSEWHEEL](_MOUSEWHEEL) function returns a positive or negative [INTEGER]
 
 ```
 
-
-*Example 2:* A simple text scrolling routine using the mouse wheel value to read a text array.
+A simple text scrolling routine using the mouse wheel value to read a text array.
 
 ```vb
 
@@ -60,17 +56,12 @@ DO
 LOOP UNTIL INKEY$ > "" 
 
 ```
-<sub>Code by Ted Weissgerber</sub>
-Note: You will need a text file that is large enough for this example.
 
+Note: You will need a text file that is large enough for this example.
 
 ## See Also
 
 * [_MOUSEX](_MOUSEX), [_MOUSEY](_MOUSEY), [_MOUSEBUTTON](_MOUSEBUTTON)
 * [_MOUSEINPUT](_MOUSEINPUT), [_MOUSEMOVE](_MOUSEMOVE) 
 * [_MOUSESHOW](_MOUSESHOW), [_MOUSEHIDE](_MOUSEHIDE)
-* [Controller Devices](Controller Devices)
-
-
-
-
+* [Controller Devices](Controller-Devices)

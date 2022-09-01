@@ -14,13 +14,13 @@ The [MOD](MOD) operator gives the remainder after division of one number by anot
 
 * Floating decimal point *numerator* and *divisor* values are [CINT](CINT) rounded (e.g. `19 MOD 6.7` returns 5 just like `19 MOD 7` would).
 * MOD returns 0 if a number is evenly divisible by integer division ( [\](\) ) or the number divided is 0.  
-* **divisor (second value) must not be between 0 and .5**. This will create a [ERROR Codes](ERROR Codes) due to [CINT](CINT) rounding the value to 0.
+* **divisor (second value) must not be between 0 and .5**. This will create a [ERROR Codes](ERROR-Codes) due to [CINT](CINT) rounding the value to 0.
 * The result has the same sign as the numerator (e.g. `-1 MOD 7` returns -1, not 6).
 * Division and multiplication operations are performed before addition and subtraction in QBasic's order of operations.
 
 ## Example(s)
 
-*Example 1:* 
+
 
 ```vb
 
@@ -38,7 +38,7 @@ The [MOD](MOD) operator gives the remainder after division of one number by anot
 
 *Explanation:* Integer division 100 \ 9 returns 11. 11 [*](*) 9 = 99. So the remainder must be 1 as 100 - 99 = 1. Normal decimal point division would return 11.11111.
 
-*Example 2:* Comparing normal, integer and remainder division.
+Comparing normal, integer and remainder division.
 
 ```vb
 
@@ -62,7 +62,7 @@ NEXT
 
 ```
 
-*Example 3:* Integer division and MOD can be used to convert values to different base numbering systems from base 2 to 36 as [STRING](STRING):
+Integer division and MOD can be used to convert values to different base numbering systems from base 2 to 36 as [STRING](STRING):
 
 ```vb
 

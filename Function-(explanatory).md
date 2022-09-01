@@ -10,7 +10,7 @@ Function and [Sub (explanatory)](Sub-(explanatory)) procedures are placed after 
 
 ## Example(s)
 
-*Example 1:* Some BASIC functions.
+Some BASIC functions.
 
 ```vb
 
@@ -24,7 +24,7 @@ PRINT "ATN(1) * 4 gives"; ATN(1) * 4
 
 ```
 
-*Example 2:* User-defined function.
+User-defined function.
 
 ```vb
 

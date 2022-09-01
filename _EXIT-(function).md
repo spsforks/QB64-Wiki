@@ -1,28 +1,25 @@
 The [_EXIT](_EXIT) function prevents the user from closing a program and indicates if a user has clicked the close button in the window title (**X** button) or used CTRL + BREAK.
 
-
 ## Syntax
 
 > exitSignal% = [_EXIT](_EXIT)
-
 
 ## Description
 
 * Once the [_EXIT](_EXIT) function is used, the user can no longer manually exit the program until it is ended with [END](END) or [SYSTEM](SYSTEM).
 * [_EXIT](_EXIT) returns any exit requests made after the initial call as:
-> : 0 = no exit request has been made since _EXIT monitoring began in the program.
-> : 1 = exit attempted by clicking the window X (close) button since last function call. (Bit 0 set)
-> : 2 = exit attempted with CTRL + BREAK since last call. (Bit 1 set)
-> : 3 = both CTRL + BREAK and the X box have been used since last call. (Bit 0 and 1 set)
+  * 0 = no exit request has been made since _EXIT monitoring began in the program.
+  * 1 = exit attempted by clicking the window X (close) button since last function call. (Bit 0 set)
+  * 2 = exit attempted with CTRL + BREAK since last call. (Bit 1 set)
+  * 3 = both CTRL + BREAK and the X box have been used since last call. (Bit 0 and 1 set)
 * If a return value is not 0 the program can handle an exit request at a more convenient time if necessary.
 * After being read, the _EXIT value is reset to 0 so store the value when a program delays an exit request.
 * **Note: Once _EXIT has been used once, you must monitor your program by checking it for user _EXIT requests.**
 * Don't just use _EXIT once to prevent a user from exiting a program early, as that constitutes bad practice.
 
-
 ## Example(s)
 
-*Example 1:* Using an ON TIMER check to read the _EXIT request return values.
+Using an ON TIMER check to read the _EXIT request return values.
 
 ```vb
 
@@ -50,8 +47,7 @@ RETURN
 
 ```
 
-
-*Example 2:* Removing temporary files before closing a program upon a user's exit request.
+Removing temporary files before closing a program upon a user's exit request.
 
 ```vb
 
@@ -62,15 +58,11 @@ IF _EXIT THEN CLOSE: KILL "t3mpdata.tmp": _DELAY 1: SYSTEM
 LOOP 
 
 ```
-Note: If you have a file named *t3mpdata.tmp* change the file name!
 
+Note: If you have a file named *t3mpdata.tmp* change the file name!
 
 ## See Also
 
 * [SYSTEM](SYSTEM)
 * [END](END)
 * [EXIT](EXIT)
-
-
-
-

@@ -16,7 +16,7 @@
 
 * Calling [_ICON](_ICON) without an imageHandle& uses the embeded icon, if available.
 ** Starting with **build 20170906/64**, the window will automatically use the icon embedded by [$EXEICON]($EXEICON), without having to call _ICON.
-* **[Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions](Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions)**.
+* **[Keywords currently not supported](Keywords_currently_not_supported_by_QB64)**.
 
 
 ## Example(s)

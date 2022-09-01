@@ -2,7 +2,7 @@ The [_WIDTH (function)](_WIDTH-(function)) function returns the width of an imag
 
 ## Syntax
 
->  columns& = [_WIDTH (function)](_WIDTH (function))[(imageHandle&)]
+>  columns& = [_WIDTH (function)](_WIDTH-(function))[(imageHandle&)]
 
 ## Description
 
@@ -10,7 +10,7 @@ The [_WIDTH (function)](_WIDTH-(function)) function returns the width of an imag
 * To get the width of the current program [SCREEN](SCREEN) window use zero for the handle value or nothing: columns& = [_WIDTH (function)](_WIDTH-(function))(0) *or* columns& = [_WIDTH (function)](_WIDTH-(function))
 * If the image specified by imageHandle& is in text only([SCREEN](SCREEN) 0) mode, the number of characters per row is returned.
 * If the image specified by imageHandle& is in graphics mode, the number of pixels per row is returned. 
-* If imageHandle& is an invalid handle, then an [ERROR Codes](ERROR Codes) is returned.
+* If imageHandle& is an invalid handle, then an [ERROR Codes](ERROR-Codes) is returned.
 * The last visible pixel coordinate of a program [SCREEN](SCREEN) is **[_WIDTH (function)](_WIDTH-(function)) - 1**.
 
 ## Example(s)

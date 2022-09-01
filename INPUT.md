@@ -33,7 +33,7 @@ The [INPUT](INPUT) statement requests a [STRING](STRING) or numerical keyboard e
 
 ## Example(s)
 
-*Example 1:* Using a variable in an input text message using PRINT. INPUT prompts cannot use variables.
+Using a variable in an input text message using PRINT. INPUT prompts cannot use variables.
 
 ```vb
 

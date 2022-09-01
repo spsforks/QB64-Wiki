@@ -56,7 +56,7 @@
 
 ## Example(s)
 
-*Example 1:* Playing the seven octaves based on the base note DATA * 2 ^ (octave - 1).
+Playing the seven octaves based on the base note DATA * 2 ^ (octave - 1).
 
 ```vb
 

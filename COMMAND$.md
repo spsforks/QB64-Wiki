@@ -13,7 +13,7 @@ The **COMMAND$** function returns the command line argument(s) passed when a pro
 
 ## Example(s)
 
-*Example 1:* Compile both programs. ProgramA [RUN](RUN)s ProgramB with a parameter passed following the filename: 
+Compile both programs. ProgramA [RUN](RUN)s ProgramB with a parameter passed following the filename: 
 
 ```vb
 

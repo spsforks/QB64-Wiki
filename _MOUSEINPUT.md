@@ -1,10 +1,8 @@
 The [_MOUSEINPUT](_MOUSEINPUT) function is used to monitor any new mouse positions, button presses or movements of the scroll wheel. Must be called before other mouse information becomes available.
 
-
 ## Syntax
 
 > infoExists%% = [_MOUSEINPUT](_MOUSEINPUT)
-
 
 ## Description
 
@@ -13,10 +11,9 @@ The [_MOUSEINPUT](_MOUSEINPUT) function is used to monitor any new mouse positio
 * Use in a loop to monitor the mouse buttons, scroll wheel and coordinate positions.
 * To clear all previous mouse data, use [_MOUSEINPUT](_MOUSEINPUT) in a loop until it returns 0.
 
-
 ## Example(s)
 
-*Example 1:* Mouse coordinate, click and scroll events are returned sequentially inside of a _MOUSEINPUT loop.
+Mouse coordinate, click and scroll events are returned sequentially inside of a _MOUSEINPUT loop.
 
 ```vb
 
@@ -27,10 +24,10 @@ DO
 LOOP UNTIL INKEY$ <> "" 
 
 ```
->  *Explanation:* The latest mouse function status can be read after the loop. [_LIMIT](_LIMIT) and [_DELAY](_DELAY) loops will slow returns down.
 
+> *Explanation:* The latest mouse function status can be read after the loop. [_LIMIT](_LIMIT) and [_DELAY](_DELAY) loops will slow returns down.
 
-*Example 2:* How to use a _MOUSEINPUT loop to locate [PSET](PSET) positions on a screen using a right mouse button click.
+How to use a _MOUSEINPUT loop to locate [PSET](PSET) positions on a screen using a right mouse button click.
 
 ```vb
 
@@ -57,8 +54,7 @@ LOOP UNTIL INKEY$ = CHR$(27)
 
 ```
 
-
-*Example 3:* Clearing any mouse data read before or during an [INPUT](INPUT) entry. Press "I" to enter input:
+Clearing any mouse data read before or during an [INPUT](INPUT) entry. Press "I" to enter input:
 
 ```vb
 
@@ -86,15 +82,11 @@ PRINT count        'returns the number of loops before mouse data is cleared
 RETURN 
 
 ```
-> *Explanation:* Click the mouse a few times while entering [INPUT](INPUT) text. When Enter is pressed, the number of loops are displayed.
 
+> *Explanation:* Click the mouse a few times while entering [INPUT](INPUT) text. When Enter is pressed, the number of loops are displayed.
 
 ## See Also
 
 * [_MOUSEX](_MOUSEX), [_MOUSEY](_MOUSEY), [_MOUSEBUTTON](_MOUSEBUTTON), [_MOUSEWHEEL](_MOUSEWHEEL)
 * [_MOUSESHOW](_MOUSESHOW), [_MOUSEHIDE](_MOUSEHIDE), [_MOUSEMOVE](_MOUSEMOVE)
-* [Controller Devices](Controller Devices)
-
-
-
-
+* [Controller Devices](Controller-Devices)

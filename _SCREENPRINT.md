@@ -1,18 +1,16 @@
 The [_SCREENPRINT](_SCREENPRINT) statement simulates typing text into a Windows focused program.
 
-
 ## Syntax
 
->  [_SCREENPRINT](_SCREENPRINT) text$
-
+> [_SCREENPRINT](_SCREENPRINT) text$
 
 ## Description
 
-* [Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions](Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions)
+* [Keywords currently not supported](Keywords_currently_not_supported_by_QB64)
 * text$ is the text to be typed into a focused program's text entry area, one character at a time.
 * Set the focus to a desktop program by using the [_SCREENIMAGE](_SCREENIMAGE) handle as the [_SOURCE](_SOURCE). Use the image to map the desired area. 
 * [_SCREENCLICK](_SCREENCLICK) can also be used to set the focus to a program's text entry area on the desktop.
-***Note: If the focus is not set correctly, the text may be printed to the QB64 IDE, if open, or not printed at all.**
+* **Note: If the focus is not set correctly, the text may be printed to the QB64 IDE, if open, or not printed at all.**
 * Ctrl + letter key shortcuts can be simulated using the appropriate [ASCII](ASCII) Control character codes 1 to 26 shown below:
 
 ```text
@@ -33,12 +31,9 @@ The [_SCREENPRINT](_SCREENPRINT) statement simulates typing text into a Windows 
 
 ```
 
-
-
 ## Example(s)
 
-## Example(s)
- Printing text into a Windows text editor (Notepad) and copying to the clipboard. May not work on all systems.
+Printing text into a Windows text editor (Notepad) and copying to the clipboard. May not work on all systems.
 
 ```vb
 
@@ -84,16 +79,11 @@ _SCREENPRINT CHR$(22) 'CTRL + V paste from clipboard
 END 
 
 ```
-<sub>Code by Galleon</sub>
-> *Explanation:* If the Windows shortcuts are set up properly, printing ASCII Control characters acts like the user selected the control + letter combinations to *Select all* (CHR$(1)), *Copy* (CHR$(3)) and *Paste* (CHR$(22)) the text with the Windows Clipboard. If the editor program's CTRL key combinations are different, use the matching letter [ASCII](ASCII) code from A = 1 to Z = 26 in the text editor.
 
+> *Explanation:* If the Windows shortcuts are set up properly, printing ASCII Control characters acts like the user selected the control + letter combinations to *Select all* (CHR$(1)), *Copy* (CHR$(3)) and *Paste* (CHR$(22)) the text with the Windows Clipboard. If the editor program's CTRL key combinations are different, use the matching letter [ASCII](ASCII) code from A = 1 to Z = 26 in the text editor.
 
 ## See Also
 
 * [_SCREENIMAGE](_SCREENIMAGE), [_SCREENCLICK](_SCREENCLICK)
 * [_SCREENMOVE](_SCREENMOVE), [_SCREENX](_SCREENX), [_SCREENY](_SCREENY)
 * [ASCII](ASCII)
-
-
-
-

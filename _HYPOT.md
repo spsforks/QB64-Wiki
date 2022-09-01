@@ -1,26 +1,19 @@
 The [_HYPOT](_HYPOT) function returns the hypotenuse of a right-angled triangle whose legs are x and y.
 
-
 ## Syntax
 
->  result! = [_HYPOT](_HYPOT)(x, y)
-
+> result! = [_HYPOT](_HYPOT)(x, y)
 
 ## Parameter(s)
 
 * x and y are the floating point values corresponding to the legs of a right-angled (90 degree) triangle for which the hypotenuse is computed.
-
 
 ## Description
 
 * The function returns what would be the square root of the sum of the squares of x and y (as per the Pythagorean theorem).
 * The hypotenuse is the longest side between the two 90 degree angle sides
 
-
 ## Example(s)
-
-## Example(s)
-
 
 ```vb
 
@@ -32,23 +25,15 @@ PRINT USING "## , ## and ## form a right-angled triangle."; leg_x; leg_y; result
 
 ```
 
-
 ```text
 
-
- 3 , 4 and 5 form a right-angled triangle.
+3 , 4 and 5 form a right-angled triangle.
 
 ```
-
-
 
 ## See Also
 
 * [ATN](ATN) (arctangent)
 * [_PI](_PI) (function)
 * [Mathematical Operations](Mathematical-Operations)
-* [http://www.cplusplus.com/reference/cmath/hypot/ C++ reference for hypot() - source of the text and sample above]
-
-
-
-
+* [C++ reference for hypot() - source of the text and sample above](http://www.cplusplus.com/reference/cmath/hypot/)

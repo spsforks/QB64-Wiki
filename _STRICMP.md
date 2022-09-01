@@ -2,7 +2,7 @@ The [_STRICMP](_STRICMP) function compares the relationship between two strings,
 
 ## Syntax
 
->  comparison% = [_STRICMP](_STRICMP)(string1$, string2$)
+> comparison% = [_STRICMP](_STRICMP)(string1$, string2$)
 
 ## Description
 

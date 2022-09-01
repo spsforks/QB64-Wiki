@@ -1,8 +1,8 @@
 The keywords listed here are not supported in QB64. QB64 is meant to be compatible with **QB 4.5 or lower** versions. **PDS (7.1) is not supported**. Older code that uses these keywords won't generate errors, as these are ignored by the compiler.
 
-* [ALIAS](ALIAS) (supported in [DECLARE LIBRARY](DECLARE LIBRARY) only)
+* [ALIAS](ALIAS) (supported in [DECLARE LIBRARY](DECLARE-LIBRARY) only)
 * [ANY](ANY)
-* [BYVAL](BYVAL) (supported in [DECLARE LIBRARY](DECLARE LIBRARY) only)
+* [BYVAL](BYVAL) (supported in [DECLARE LIBRARY](DECLARE-LIBRARY) only)
 * CALLS
 * CDECL
 * DATE$ (statement) (reading the current [DATE$](DATE$) is supported)
@@ -34,7 +34,7 @@ Some OS Specific window/desktop calls:
 * [_SCREENPRINT](_SCREENPRINT)
 * [_SCREENCLICK](_SCREENCLICK)
 * [_SCREENMOVE](_SCREENMOVE) (available in macOS, not available in Linux)
-* [_CLIPBOARDIMAGE](_CLIPBOARDIMAGE), [_CLIPBOARDIMAGE (function)](_CLIPBOARDIMAGE (function))
+* [_CLIPBOARDIMAGE](_CLIPBOARDIMAGE), [_CLIPBOARDIMAGE (function)](_CLIPBOARDIMAGE-(function))
 * [_WINDOWHASFOCUS](_WINDOWHASFOCUS) (available in Linux, not available in macOS)
 * [_WINDOWHANDLE](_WINDOWHANDLE)
 * [_CAPSLOCK](_CAPSLOCK), [_NUMLOCK](_NUMLOCK), [_SCROLLLOCK](_SCROLLLOCK) (statements and functions)

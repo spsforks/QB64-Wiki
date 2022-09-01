@@ -16,7 +16,7 @@
 ## Description
 
 * There must be an [INTEGER](INTEGER) array of adequate size (up to 26K) to hold the graphic data.
-* A [DEF SEG](DEF SEG) pointing to the array is required. [DEF SEG](DEF SEG) = [VARSEG](VARSEG)(imageArray%(index))
+* A [DEF SEG](DEF-SEG) pointing to the array is required. [DEF SEG](DEF-SEG) = [VARSEG](VARSEG)(imageArray%(index))
 * index is the starting image element of the Array. Can also include RGB color settings at the start index.
 * Fullscreen images in [SCREEN](SCREEN) 12 require 3 file BLOADs. A 26K array can hold 1/3 of screen.
 * Custom RGB color settings can be embedded(indexed) at the start of the image array. 
@@ -25,7 +25,7 @@
 
 ## Example(s)
 
-*Example 1:* Loading data to an array from a BSAVED file.
+Loading data to an array from a BSAVED file.
 
 ```vb
 
@@ -37,7 +37,7 @@ DEF SEG
 
 > *Explanation:* Referance any type of array that matches the data saved. Can work with Integer, Single, Double, Long, fixed length Strings or [TYPE](TYPE) arrays. [LBOUND](LBOUND) determines the starting offset of the array or another index could be used.
 
-*Example 2:* Using a QB default colored image.  
+Using a QB default colored image.  
 
 ```vb
 

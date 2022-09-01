@@ -68,7 +68,7 @@ The [SCREEN](SCREEN) statement sets the video display mode and size of the progr
 
 * **[SCREEN](SCREEN) 2** is **monochrome** with black background and white foreground. Text is 25 by 80. White graphics 640 by 200. NO [COLOR](COLOR) keyword allowed.
  
-* **[SCREEN](SCREEN) 3 to 6 are no longer supported** on most computers! Using them will cause a video [ERROR Codes](ERROR Codes)! 
+* **[SCREEN](SCREEN) 3 to 6 are no longer supported** on most computers! Using them will cause a video [ERROR Codes](ERROR-Codes)! 
 
 * **[SCREEN](SCREEN) 7** has 16 color attributes ([DAC](DAC) attrib. 8 to 15) with background colors. Text 25 rows by 40 columns. Graphics 320 columns by 200 rows. Video  pages 0 to 7 for flipping or [PCOPY](PCOPY).
 
@@ -98,7 +98,7 @@ The [SCREEN](SCREEN) statement sets the video display mode and size of the progr
 * Text characters occupy a certain sized pixel box adjusted by [WIDTH](WIDTH) in some screen modes.
 * Text [PRINT](PRINT) cursor positions can be read by [CSRLIN](CSRLIN) and [POS](POS) to [LOCATE](LOCATE) text [PRINT](PRINT)s.
 * [VIEW PRINT](VIEW PRINT) can be used to designate a text view port area.
-* In **QB64** the [_WIDTH (function)](_WIDTH (function)) and [_HEIGHT](_HEIGHT) functions will return the text dimensions in SCREEN 0 only.
+* In **QB64** the [_WIDTH (function)](_WIDTH-(function)) and [_HEIGHT](_HEIGHT) functions will return the text dimensions in SCREEN 0 only.
 
 > **Graphic Coordinates:**
 
@@ -122,7 +122,7 @@ The [SCREEN](SCREEN) statement sets the video display mode and size of the progr
 
 ## Example(s)
 
-> *Example 1:* Shows an example of each legacy screen mode available to QBasic and QB64.
+> Shows an example of each legacy screen mode available to QBasic and QB64.
 
 ```vb
 

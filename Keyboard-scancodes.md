@@ -4,7 +4,7 @@
 
 ## INKEY$ Codes
 
-* [INKEY$](INKEY$) returns a [STRING](STRING) [ASCII](ASCII) character or a function key two byte string. [ASC](ASC) converts to code. Use: **key$ <nowiki>=</nowiki> INKEY$**
+* [INKEY$](INKEY$) returns a [STRING](STRING) [ASCII](ASCII) character or a function key two byte string. [ASC](ASC) converts to code. Use: **key$ = INKEY$**
 * Key presses are read consecutively from the keyboard buffer which will retain a [SLEEP](SLEEP) key press.
 
 
@@ -36,13 +36,13 @@
 ```
 
 
-GO TO: [Keyboard_scancodes#INP_Scan_Codes](Keyboard_scancodes#INP_Scan_Codes), 
+GO TO: [Keyboard scancodes](Keyboard-scancodes), 
 [Keyboard_scancodes#ON_KEY_Events](Keyboard_scancodes#ON_KEY_Events),  [Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes](Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes), [Keyboard_scancodes#DEVICES_Button](Keyboard_scancodes#DEVICES_Button), [Keyboard_scancodes#Windows_Virtual_Codes](Keyboard_scancodes#Windows_Virtual_Codes)
 
 ## INP and _CINP Scan Codes
 
 * [_CINP](_CINP) can be used in [$CONSOLE]($CONSOLE) Windows to read individual key presses.
-* [INP](INP)([&H](&H)60) returns multiple [INTEGER](INTEGER) press and release codes as keys are used. Use: **code% <nowiki>=</nowiki> INP(96)**
+* [INP](INP)([&H](&H)60) returns multiple [INTEGER](INTEGER) press and release codes as keys are used. Use: **code% = INP(96)**
 * To clear the keyboard buffer, use the [INKEY$](INKEY$) function before or after the [INP](INP) read to avoid buffer overflows and beeps.          
 * Keys are assigned only one code irregardless of case or Lock mode with release codes being the press  code + 128.
 
@@ -78,9 +78,9 @@ GO TO:[Keyboard_scancodes#INKEY.24_Codes](Keyboard_scancodes#INKEY.24_Codes), [K
 ## ON KEY Events
 
 
-* Assign user defined Soft Key or key combination numbers 15 to 29 with: **[KEY n](KEY n)umber, CHR$(text) + CHR$(scancode)|green**
-* Combo Key flags: <nowiki>0 = none, LShift = 1, RShift = 2, LCtrl = 4, LAlt = 8, NumLock = 32, CapsLock = 64</nowiki>, Extended keys <nowiki>=</nowiki> 128
-* Red KEY numbers 1 to 14, 30 or 31 assign predefined one key events using: **[ON KEY(n)](ON KEY(n))(number) [GOSUB](GOSUB) subname**
+* Assign user defined Soft Key or key combination numbers 15 to 29 with: **[KEY n](KEY-n)umber, CHR$(text) + CHR$(scancode)|green**
+* Combo Key flags: <nowiki>0 = none, LShift = 1, RShift = 2, LCtrl = 4, LAlt = 8, NumLock = 32, CapsLock = 64</nowiki>, Extended keys = 128
+* Red KEY numbers 1 to 14, 30 or 31 assign predefined one key events using: **[ON KEY(n)](ON-KEY(n))(number) [GOSUB](GOSUB) subname**
 
 
 ```text
@@ -109,12 +109,12 @@ GO TO:[Keyboard_scancodes#INKEY.24_Codes](Keyboard_scancodes#INKEY.24_Codes), [K
 ```
 
 
-GO TO:[Keyboard_scancodes#INKEY.24_Codes](Keyboard_scancodes#INKEY.24_Codes), [Keyboard_scancodes#INP_Scan_Codes](Keyboard_scancodes#INP_Scan_Codes), [Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes](Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes), [Keyboard_scancodes#DEVICES_Button](Keyboard_scancodes#DEVICES_Button), [Keyboard_scancodes#Windows_Virtual_Codes](Keyboard_scancodes#Windows_Virtual_Codes)
+GO TO:[Keyboard_scancodes#INKEY.24_Codes](Keyboard_scancodes#INKEY.24_Codes), [Keyboard scancodes](Keyboard-scancodes), [Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes](Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes), [Keyboard_scancodes#DEVICES_Button](Keyboard_scancodes#DEVICES_Button), [Keyboard_scancodes#Windows_Virtual_Codes](Keyboard_scancodes#Windows_Virtual_Codes)
 
 ## KEYHIT and KEYDOWN Codes
 
-* [_KEYHIT](_KEYHIT) returns multiple [LONG](LONG) press and negative release codes as keys are used. Use: **code& <nowiki>=</nowiki> _KEYHIT**
-* [_KEYDOWN](_KEYDOWN) returns -1 when a specified key code value is pressed or 0. Use: **status% <nowiki>=</nowiki> _KEYDOWN(code&)**
+* [_KEYHIT](_KEYHIT) returns multiple [LONG](LONG) press and negative release codes as keys are used. Use: **code& = _KEYHIT**
+* [_KEYDOWN](_KEYDOWN) returns -1 when a specified key code value is pressed or 0. Use: **status% = _KEYDOWN(code&)**
 * [_KEYCLEAR](_KEYCLEAR) clears the keyboard buffer memory instantly without a [LOOP](LOOP).
 
 
@@ -144,10 +144,10 @@ GO TO:[Keyboard_scancodes#INKEY.24_Codes](Keyboard_scancodes#INKEY.24_Codes), [K
 ```
 
 
-GO TO: [Keyboard_scancodes#INKEY.24_Codes](Keyboard_scancodes#INKEY.24_Codes), [Keyboard_scancodes#INP_Scan_Codes](Keyboard_scancodes#INP_Scan_Codes), [Keyboard_scancodes#ON_KEY_Events](Keyboard_scancodes#ON_KEY_Events), [Keyboard_scancodes#DEVICES_Button](Keyboard_scancodes#DEVICES_Button), [Keyboard_scancodes#Windows_Virtual_Codes](Keyboard_scancodes#Windows_Virtual_Codes)
+GO TO: [Keyboard_scancodes#INKEY.24_Codes](Keyboard_scancodes#INKEY.24_Codes), [Keyboard scancodes](Keyboard-scancodes), [Keyboard_scancodes#ON_KEY_Events](Keyboard_scancodes#ON_KEY_Events), [Keyboard_scancodes#DEVICES_Button](Keyboard_scancodes#DEVICES_Button), [Keyboard_scancodes#Windows_Virtual_Codes](Keyboard_scancodes#Windows_Virtual_Codes)
 
 >  Most keys use [ASCII](ASCII) key code values. Function key code values can be calculated using the [INKEY$](INKEY$), two byte values with [CVI](CVI).
-Example: **status <nowiki>=</nowiki> _KEYDOWN(CVI(CHR$(0) + "P"))**
+Example: **status = _KEYDOWN(CVI(CHR$(0) + "P"))**
 
 [INKEY$#Two_Byte_Combinations](INKEY$#Two_Byte_Combinations)
 
@@ -183,14 +183,14 @@ Example: **status <nowiki>=</nowiki> _KEYDOWN(CVI(CHR$(0) + "P"))**
 
 
 
-GO TO: [Keyboard_scancodes#INKEY.24_Codes](Keyboard_scancodes#INKEY.24_Codes), [Keyboard_scancodes#INP_Scan_Codes](Keyboard_scancodes#INP_Scan_Codes), [Keyboard_scancodes#ON_KEY_Events](Keyboard_scancodes#ON_KEY_Events), [Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes](Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes), 
+GO TO: [Keyboard_scancodes#INKEY.24_Codes](Keyboard_scancodes#INKEY.24_Codes), [Keyboard scancodes](Keyboard-scancodes), [Keyboard_scancodes#ON_KEY_Events](Keyboard_scancodes#ON_KEY_Events), [Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes](Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes), 
 [Keyboard_scancodes#Windows_Virtual_Codes](Keyboard_scancodes#Windows_Virtual_Codes)
 
 ## Windows Virtual Codes
 
 
 * Virtual key code status can be read **independently of program focus in Windows**. Not available in Linux or Mac systems.
-* Use: **status <nowiki>=</nowiki> GetKeyState%(code%)** or **GetAsyncKeyState%(code&)** or with **keybd_event** in [Windows_Libraries#Hot_Keys_.28maximize.29](Windows_Libraries#Hot_Keys_.28maximize.29) "User32".
+* Use: **status = GetKeyState%(code%)** or **GetAsyncKeyState%(code&)** or with **keybd_event** in [Windows Libraries](Windows-Libraries) "User32".
 
 
 
@@ -219,11 +219,11 @@ GO TO: [Keyboard_scancodes#INKEY.24_Codes](Keyboard_scancodes#INKEY.24_Codes), [
 
 
 
-GO TO: [Keyboard_scancodes#INKEY.24_Codes](Keyboard_scancodes#INKEY.24_Codes), [Keyboard_scancodes#INP_Scan_Codes](Keyboard_scancodes#INP_Scan_Codes), [Keyboard_scancodes#ON_KEY_Events](Keyboard_scancodes#ON_KEY_Events), [Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes](Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes), [Keyboard_scancodes#DEVICES_Button](Keyboard_scancodes#DEVICES_Button), 
+GO TO: [Keyboard_scancodes#INKEY.24_Codes](Keyboard_scancodes#INKEY.24_Codes), [Keyboard scancodes](Keyboard-scancodes), [Keyboard_scancodes#ON_KEY_Events](Keyboard_scancodes#ON_KEY_Events), [Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes](Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes), [Keyboard_scancodes#DEVICES_Button](Keyboard_scancodes#DEVICES_Button), 
 
 ## Example Code
 
-*Example 1:* An [INP](INP) Function that retrieves multiple scancodes (allows 2 players and diagonal moves). Function includes it's own array.
+An [INP](INP) Function that retrieves multiple scancodes (allows 2 players and diagonal moves). Function includes it's own array.
 
 
 ```vb
@@ -333,7 +333,7 @@ END SUB
 **The Scankey Function array can be cleared by sending 0 as the *scancode%* or press the *Print Scrn/SysReq* key.**
 
 
-*Example 2:* How to get Control, Alt and shift key entries from a user using [PEEK](PEEK) in QB64 or QBasic:
+How to get Control, Alt and shift key entries from a user using [PEEK](PEEK) in QB64 or QBasic:
 
 ```vb
 
@@ -366,9 +366,9 @@ LOOP UNTIL x$ = CHR$(27) 'Escape key exit
  
 * [INKEY$](INKEY$), [ASCII](ASCII), [ASC](ASC) 
 * [_KEYHIT](_KEYHIT), [_KEYDOWN](_KEYDOWN), [_KEYCLEAR](_KEYCLEAR)
-* [ON KEY(n)](ON KEY(n)), [KEY(n)](KEY(n)), [KEY](KEY), 
+* [ON KEY(n)](ON-KEY(n)), [KEY(n)](KEY(n)), [KEY](KEY), 
 * [INP](INP), [Scancodes](Scancodes) (examples)
-* [Windows_Libraries#Hot_Keys_.28maximize.29](Windows_Libraries#Hot_Keys_.28maximize.29)
+* [Windows Libraries](Windows-Libraries)
 * [http://www.howtogeek.com/236462/which-key-on-a-mac-keyboard-corresponds-to-the-symbol/ Mac keyboard Symbols]
  
 

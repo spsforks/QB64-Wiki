@@ -8,7 +8,7 @@ The **PEEK** function returns the value that is contained at a certain memory ad
 * Use [DEF SEG](DEF-SEG) before PEEK to specify which memory segment to work in. 
 * PEEK only reads the memory byte value. Not certain bits. (See [AND](AND))
 * Important [SCREEN (statement)](SCREEN-(statement)) segments using [PEEK](PEEK) and [POKE](POKE) include &HB800 (text segment) and &HA000 (graphics segment).
-* To return to Basic default segment use [DEF SEG](DEF SEG) without any arguments.
+* To return to Basic default segment use [DEF SEG](DEF-SEG) without any arguments.
 * **Warning: DEF SEG, VARSEG , VARPTR, PEEK or POKE access QB64's emulated 16 bit conventional memory block!** 
 >  **It is highly recommended that QB64's [_MEM](_MEM) memory system be used to avoid running out of memory.**
 
@@ -61,7 +61,7 @@ Checking the 8 keyboard bit settings using a PEEK return value.
  
 * [POKE](POKE) (write to memory), [INP](INP) (read register) 
 * [DEF SEG](DEF-SEG), [VARSEG](VARSEG), [VARPTR](VARPTR) 
-* [_MEMGET (function)](_MEMGET (function)), [_MEMPUT](_MEMPUT)
+* [_MEMGET (function)](_MEMGET-(function)), [_MEMPUT](_MEMPUT)
 * [DEF SEG = 0](DEF-SEG-=-0), [Scancodes](Scancodes) (demo)
 * [PEEK and POKE Library](PEEK-and-POKE-Library)
 * [Screen Memory](Screen-Memory)

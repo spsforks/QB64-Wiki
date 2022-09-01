@@ -1,23 +1,19 @@
 The **_KEYDOWN** function returns whether modifying keys like CTRL, ALT, SHIFT, and any other keys are pressed.
 
-
 ## Syntax
 
-> : return% = **_KEYDOWN(***code&***)**
-
+> return% = **_KEYDOWN(***code&***)**
 
 * The *return* value is -1 if a specified key is pressed or 0 if it was not pressed. It can be used to monitor key combinations.
 * The  POSITIVE [LONG](LONG) *code* value can be from any function key that needs to be monitored in a key press combination. 
 * Unicode references:
-> * 1) What is the glyph represented by that UNICODE value: [http://www.fileformat.info/info/unicode/char/search.htm Unicode Format Info]
-> * 2) Which fonts support the characters I want to use: [http://en.wikipedia.org/wiki/Unicode_typefaces#Comparison_of_fonts Unicode Fonts]
-> * 3) What was the format again?: [http://www.birds-eye.net/definition/u/unicode.shtml Unicode Formats]
-> * A UTF32 value is usually(but by no means always!) the same as a UTF16 value just with the top 2 bytes set to 0.
+  * 1) What is the glyph represented by that UNICODE value: [Unicode Format Info](http://www.fileformat.info/info/unicode/char/search.htm)
+  * 2) Which fonts support the characters I want to use: [Unicode Fonts](http://en.wikipedia.org/wiki/Unicode_typefaces#Comparison_of_fonts)
+  * 3) What was the format again?: [Unicode Formats](http://www.birds-eye.net/definition/u/unicode.shtml)
+  * A UTF32 value is usually(but by no means always!) the same as a UTF16 value just with the top 2 bytes set to 0.
 * An important difference between [INKEY$](INKEY$) and [_KEYHIT](_KEYHIT) is how they work when **CTRL, ALT** or **SHIFT** are used. [INKEY$](INKEY$) returns a different code if you hold down CTRL, ALT or SHIFT before pressing F1 (for example). [_KEYHIT](_KEYHIT) will return the same code regardless of which modifiers were used but you can check _KEYDOWN to see which modifying keys are being used.
 * **Keyboards with Alt Gr key:** [_KEYHIT](_KEYHIT) may return both Alt(100307) and Ctrl(100306) codes when key is pressed or released.
 * **Linux with foreign keyboards:** [SHELL](SHELL) [_HIDE](_HIDE) "setxkbmap us" will setup a keyboard to read US [Scancodes](Scancodes).
-
-
 
 ```text
 
@@ -52,9 +48,7 @@ The **_KEYDOWN** function returns whether modifying keys like CTRL, ALT, SHIFT, 
 
 ```
 
-<sub>NOTE: The above commented table can be copied and pasted directly into the QB64 IDE</sub>
-
-
+NOTE: The above commented table can be copied and pasted directly into the QB64 IDE.
 
 ```text
 
@@ -121,8 +115,7 @@ The **_KEYDOWN** function returns whether modifying keys like CTRL, ALT, SHIFT, 
 
 ```
 
-
-*Example 1:* Comparing the _KEYDOWN returns using [CONST](CONST) values with 2 byte [INKEY$](INKEY$) returns.
+Comparing the _KEYDOWN returns using [CONST](CONST) values with 2 byte [INKEY$](INKEY$) returns.
 
 ```vb
 
@@ -143,10 +136,8 @@ DO
 LOOP UNTIL k$ = CHR$(27)     'escape key exit
 
 ```
-<sub>Code by Galleon</sub>
 
-
-*Example 2:* How to calculate the _KEYDOWN codes of the 2 byte INKEY$ arrow key codes using [CVI](CVI).
+How to calculate the _KEYDOWN codes of the 2 byte INKEY$ arrow key codes using [CVI](CVI).
 
 ```vb
 
@@ -172,19 +163,14 @@ DO
 LOOP 
 
 ```
-<sub>Code by Galleon</sub>
+
 > *Explanation:* When [CVI](CVI) is used with a 2 byte code, the code of the first character(0) is added to the second character code which is multiplied by 256. In the example, code zero is added to the [ASCII](ASCII) code of "P" which is 80. CVI multiplies 80 * 256 = 20480.
 
+## See Also
 
-*See also:
-
-* [_KEYHIT](_KEYHIT), [Unicode](Unicode), [Code Pages](Code Pages) (by region)
-* [_MAPUNICODE](_MAPUNICODE), [_MAPUNICODE (function)](_MAPUNICODE (function))
+* [_KEYHIT](_KEYHIT), [Unicode](Unicode), [Code Pages](Code-Pages) (by region)
+* [_MAPUNICODE](_MAPUNICODE), [_MAPUNICODE (function)](_MAPUNICODE-(function))
 * [INKEY$](INKEY$), [ASCII](ASCII), [CVI](CVI)
 * [INP](INP)(&H60), [Scancodes](Scancodes)
-* [ON KEY(n)](ON KEY(n)), [KEY(n)](KEY(n)), [KEY n](KEY n)
-* [Windows_Libraries#Hot_Keys_.28maximize.29](Windows_Libraries#Hot_Keys_.28maximize.29)
-
-
-
-
+* [ON KEY(n)](ON-KEY(n)), [KEY(n)](KEY(n)), [KEY n](KEY-n)
+* [Windows Libraries](Windows-Libraries)

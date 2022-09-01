@@ -22,7 +22,7 @@ The [DATA](DATA) statement creates a line of fixed program information separated
 
 ## Example(s)
 
-*Example 1:* Creating two DATA fields that can be [READ](READ) repeatedly using [RESTORE](RESTORE) with the appropriate line label.
+Creating two DATA fields that can be [READ](READ) repeatedly using [RESTORE](RESTORE) with the appropriate line label.
 
 ```vb
 

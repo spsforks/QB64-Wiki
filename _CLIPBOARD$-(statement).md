@@ -1,10 +1,8 @@
-The [_CLIPBOARD$ (statement)](_CLIPBOARD$ (statement)) statement copies the [STRING](STRING) value into the system clipboard.
-
+The [_CLIPBOARD$ (statement)](_CLIPBOARD$-(statement)) statement copies the [STRING](STRING) value into the system clipboard.
 
 ## Syntax
 
-> [_CLIPBOARD$ (statement)](_CLIPBOARD$ (statement)) = string_expression$
-
+> [_CLIPBOARD$ (statement)](_CLIPBOARD$-(statement)) = string_expression$
 
 ## Description
 
@@ -16,11 +14,9 @@ The [_CLIPBOARD$ (statement)](_CLIPBOARD$ (statement)) statement copies the [STR
 * Numerical values can be converted to strings using [STR$](STR$), [_MK$](_MK$), [MKI$](MKI$), [MKL$](MKL$), [MKS$](MKS$), [MKD$](MKD$), [HEX$](HEX$) or [OCT$](OCT$).
 * The clipboard can be used to copy, paste and communicate between running programs.
 
-
 ## Example(s)
 
-## Example(s)
- Set 2 lines of text in the clipboard using a carriage return to end text lines
+Set 2 lines of text in the clipboard using a carriage return to end text lines
 
 ```vb
 
@@ -29,7 +25,6 @@ CrLf = CHR$(13) + CHR$(10)        'carriage return & line feed
 
 _CLIPBOARD$ = "This is line 1" + CrLf + "This is line 2" 
 PRINT _CLIPBOARD$                 'display what is in the clipboard
-
 
 ```
 
@@ -41,16 +36,10 @@ This is line 2
 
 ```
 
-> *Note:* The text in the clipboard could also be sent to a file using [PRINT (file statement)](PRINT (file statement)) [_CLIPBOARD$](_CLIPBOARD$).
-
+> *Note:* The text in the clipboard could also be sent to a file using [PRINT (file statement)](PRINT-(file-statement)) [_CLIPBOARD$](_CLIPBOARD$).
 
 ## See Also
 
 * [_CLIPBOARD$](_CLIPBOARD$) (function)
-* [_CLIPBOARDIMAGE (function)](_CLIPBOARDIMAGE (function)), [_CLIPBOARDIMAGE](_CLIPBOARDIMAGE) (statement)
+* [_CLIPBOARDIMAGE (function)](_CLIPBOARDIMAGE-(function)), [_CLIPBOARDIMAGE](_CLIPBOARDIMAGE) (statement)
 * [CHR$](CHR$), [ASCII](ASCII) (code table)
-
-
-
-
-

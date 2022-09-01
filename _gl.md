@@ -1,11 +1,10 @@
 In order to use OpenGL drawing commands, you must do so from inside a [SUB](SUB) procedure called **_GL**, which enables the commands to be rendered.
 
-
 ## Syntax
 
 > [SUB](SUB) _GL
-> : *REM Your OpenGL code here
->  [END](END) [SUB](SUB)
+>   *REM Your OpenGL code here
+> [END](END) [SUB](SUB)
 
 ## Description
 
@@ -15,10 +14,7 @@ In order to use OpenGL drawing commands, you must do so from inside a [SUB](SUB)
 * Using [INPUT](INPUT) inside SUB **_GL** will crash your program.
 * If your program needs to perform any operations before SUB _GL must be run, it is recommended to use a shared variable as a flag to allow SUB _GL's contents to be run. See example below.
 
-
 ## Example
-
-
 
 ```vb
 
@@ -44,12 +40,7 @@ END SUB
 
 ```
 
-
 ## See Also
 
-* [http://www.qb64.org/wiki/Keyword_Reference_-_Alphabetical#glA List of OpenGL commands](http://www.qb64.org/wiki/Keyword_Reference_-_Alphabetical#glA List of OpenGL commands) *All commands in the list are valid. For those without a wiki page, usage follows OpenGL standards.*
+* [Keyword Reference - Alphabetical](Keyword-Reference---Alphabetical) *All commands in the list are valid. For those without a wiki page, usage follows OpenGL standards.*
 * [SUB](SUB)
-
-
-
-

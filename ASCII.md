@@ -159,7 +159,7 @@ END
 * [PRINT](PRINT)s text characters and symbols or formats the screen, printer or file.
 * [BINARY](BINARY) files often store values below 256 in the one byte character. To read the value get the code with [ASC](ASC).
 * Numerical values placed into a [BINARY](BINARY) or [RANDOM](RANDOM) file using a [GET](GET) or [PUT](PUT) variable, they will be stored in [_MK$](_MK$) format.
-* Characters **176** to **223** can be used to create screen borders or boundaries in an ASCII game. See: [SCREEN (function)](SCREEN (function))
+* Characters **176** to **223** can be used to create screen borders or boundaries in an ASCII game. See: [SCREEN (function)](SCREEN-(function))
 * Character **253**(small 2) can be found as the first character byte of a [BSAVE](BSAVE)d image file opened in [BINARY](BINARY) mode.
 * Character **255** can be used as the NBSP(non-breaking space) character on web pages to fill in extra spaces.
 * Can be used to crudely encrypt a file so others cannot read it by shifting the code values. See [CHR$](CHR$) example 2.
@@ -195,7 +195,7 @@ END
 
 ```
 
-Use **ASC(RIGHT$(key$, 1))** or **ASC(key$, 2)** in QB64 to read a two byte code when **ASC(key$) <nowiki>=</nowiki> 0**
+Use **ASC(RIGHT$(key$, 1))** or **ASC(key$, 2)** in QB64 to read a two byte code when **ASC(key$) = 0**
 
 *** See the Two Byte Ctrl, Alt and Shift + Function key combinations below**
 
@@ -267,14 +267,14 @@ LOOP UNTIL K$ = CHR$(27) 'escape key press exits
 
 ```
 
-> In **QB64**, [CVI](CVI) can be used to get the [_KEYDOWN](_KEYDOWN) 2-byte code value. Example: **status <nowiki>=</nowiki> _KEYDOWN(CVI(CHR$(0) + "P"))**
+> In **QB64**, [CVI](CVI) can be used to get the [_KEYDOWN](_KEYDOWN) 2-byte code value. Example: **status = _KEYDOWN(CVI(CHR$(0) + "P"))**
 
 **See [Scancodes](Scancodes) for other keyboard function keys.**
 
 
 ## Code Examples
 
-*Example 1:* Using arrow keys to move a text character. A change from a previous position tells program when to PRINT:
+Using arrow keys to move a text character. A change from a previous position tells program when to PRINT:
 
 ```vb
 movey = 1: movex = 1 'text coordinates can never be 0
@@ -297,7 +297,7 @@ END
 
 ```
 
-*Example 2:* Routine displays all keypress codes including Ctrl, Alt and Shift combinations. Ctrl + letter = control codes 1 to 26.
+Routine displays all keypress codes including Ctrl, Alt and Shift combinations. Ctrl + letter = control codes 1 to 26.
 
 ```vb
 
@@ -407,8 +407,8 @@ END
 ## See Also
 
 * [_KEYHIT](_KEYHIT), [_KEYDOWN](_KEYDOWN)
-* [_MAPUNICODE](_MAPUNICODE), [_MAPUNICODE (function)](_MAPUNICODE (function))
-* [Code Pages](Code Pages) (Various Unicode Languages)
+* [_MAPUNICODE](_MAPUNICODE), [_MAPUNICODE (function)](_MAPUNICODE-(function))
+* [Code Pages](Code-Pages) (Various Unicode Languages)
 * [ASC (statement)](ASC (statement)) (QB64 only)
 * [ASC](ASC), [INSTR](INSTR)
 * [CHR$](CHR$), [INKEY$](INKEY$)
@@ -418,4 +418,4 @@ END
 * [_PRINTSTRING](_PRINTSTRING), [_SCREENPRINT](_SCREENPRINT)
 * [_CONTROLCHR](_CONTROLCHR) (turns control PRINT actions OFF/ON)
 * [Scancodes](Scancodes)(keyboard), [Unicode](Unicode)(character table)
-* [Text Using Graphics](Text Using Graphics)
+* [Text Using Graphics](Text-Using-Graphics)

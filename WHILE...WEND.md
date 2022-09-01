@@ -30,7 +30,7 @@ The WHILE...WEND statement is used to repeat a block of statements while the con
 
 ## Example(s)
 
-*Example 1:* Reading an entire file. Example assumes the program has a [OPEN](OPEN) as #1
+Reading an entire file. Example assumes the program has a [OPEN](OPEN) as #1
 
 ```vb
   

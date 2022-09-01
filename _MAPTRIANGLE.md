@@ -1,18 +1,14 @@
 The [_MAPTRIANGLE](_MAPTRIANGLE) statement maps a triangular portion of an image onto a destination image or screen page.
 
-
 ## Syntax
 
 ### 2D drawing
 
 > [_MAPTRIANGLE](_MAPTRIANGLE) [{_SEAMLESS}] **(**sx1**,** sy1**)-(**sx2**,** sy2**)-(**sx3**,** sy3**),** source& **TO (**dx1**,** dy1**)-(**dx2**,** dy2**)-(**dx3**,** dy3**)**[, destination&][{_SMOOTH|_SMOOTHSHRUNK|_SMOOTHSTRETCHED}]]
 
-
 ### 3D drawing (hardware images only)
 
-
 > [_MAPTRIANGLE](_MAPTRIANGLE) [{_CLOCKWISE|_ANTICLOCKWISE}] [{_SEAMLESS}] **(**sx1**,** sy1**)-(**sx2**,** sy2**)-(**sx3**,** sy3**),** source& **TO (**dx1**,** dy1**,** dz1**)-(**dx2**,** dy2**,** dz2**)-(**dx3**,** dy3**,** dz3**)**[, destination&][{_SMOOTH|_SMOOTHSHRUNK|_SMOOTHSTRETCHED}]]
-
 
 ## Parameter(s)
 
@@ -22,7 +18,6 @@ The [_MAPTRIANGLE](_MAPTRIANGLE) statement maps a triangular portion of an image
 * source& and optional destination& are [LONG](LONG) image or screen page handles. 
 * Supports an optional final argument **_SMOOTH** which applies linear filtering. See *Example 3*. 
 * Use **_SMOOTHSTRETCHED** or **_SMOOTHSHRUNK** for when a pixelated/smooth effect is desirable but not both.
-
 
 ## Description
 
@@ -35,10 +30,9 @@ The [_MAPTRIANGLE](_MAPTRIANGLE) statement maps a triangular portion of an image
 * If the destination& image handle is the current [SCREEN](SCREEN) page, [_DEST](_DEST) or hardware layer, then it can be omitted.
 * **Hardware images** (created using mode 33 via [_LOADIMAGE](_LOADIMAGE) or [_COPYIMAGE](_COPYIMAGE)) can be used as the source or destination.
 
-
 ## Example(s)
 
-*Example 1:* Rotating the an image using a rotation and zoom SUB with _MAPTRIANGLE.
+Rotating the an image using a rotation and zoom SUB with _MAPTRIANGLE.
 
 ```vb
 
@@ -72,10 +66,8 @@ _MAPTRIANGLE (0, 0)-(W& - 1, 0)-(W& - 1, H& - 1), Image& TO(px(0), py(0))-(px(3)
 END SUB 
 
 ```
-Code by Galleon
 
 ```text
-
 
         **Triangle sections of image in code above     __ **  
                                                     **|\2|**
@@ -83,9 +75,7 @@ Code by Galleon
 
 ```
 
-
-
-*Example 2:* A 3D Spinning Cube demo using a software image and [_MAPTRIANGLE](_MAPTRIANGLE):
+A 3D Spinning Cube demo using a software image and [_MAPTRIANGLE](_MAPTRIANGLE):
 
 ```vb
 
@@ -373,10 +363,8 @@ SUB DrawTriangle (x1%, y1%, x2%, y2%, x3%, y3%, col%)
 END SUB 
 
 ```
-Demo by Andrew L. Ayers
 
-
-*Example 3:* A 3D Spinning Cube demo using a hardware image and **QB64GL** hardware acceleration with [_MAPTRIANGLE](_MAPTRIANGLE):
+A 3D Spinning Cube demo using a hardware image and **QB64GL** hardware acceleration with [_MAPTRIANGLE](_MAPTRIANGLE):
 
 ```vb
 
@@ -672,10 +660,8 @@ END IF
 END SUB
 
 ```
-Adapted from a demo by Andrew L. Ayers
 
-
-*Example 4:* Using a desktop image with _MAPTRIANGLE _ANTICLOCKWISE rendering.
+Using a desktop image with _MAPTRIANGLE _ANTICLOCKWISE rendering.
 
 ```vb
 
@@ -716,18 +702,14 @@ DO
 LOOP 
 
 ```
->  **Tip:** If you are using Linux you might want to replace "[_SCREENIMAGE](_SCREENIMAGE)" with a [_LOADIMAGE](_LOADIMAGE) command if you don't see anything.
 
+> **Tip:** If you are using Linux you might want to replace "[_SCREENIMAGE](_SCREENIMAGE)" with a [_LOADIMAGE](_LOADIMAGE) command if you don't see anything.
 
 ## See Also
 
 * [_PUTIMAGE](_PUTIMAGE)
 * [_LOADIMAGE](_LOADIMAGE)
 * [_COPYIMAGE](_COPYIMAGE)
-* [GET (graphics statement)](GET (graphics statement)), [PUT (graphics statement)](PUT (graphics statement))
+* [GET (graphics statement)](GET-(graphics-statement)), [PUT (graphics statement)](PUT-(graphics-statement))
 * [STEP](STEP), [SIN](SIN), [COS](COS)
-* [Hardware images](Hardware images)
-
-
-
-
+* [Hardware images](Hardware-images)

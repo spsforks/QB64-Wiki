@@ -15,7 +15,7 @@ The **VIEW** statement creates a graphics view port area by defining the coordin
 
 ## Example(s)
 
-*Example 1:* Using SCREEN option with absolute screen coordinates.
+Using SCREEN option with absolute screen coordinates.
 
 ```vb
 

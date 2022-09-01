@@ -1,23 +1,20 @@
 The [_DEST](_DEST) statement sets the current write image or page. All graphic and print changes will be done to this image.
 
-
 ## Syntax
 
 > [_DEST](_DEST) imageHandle&
-
 
 ## Description
 
 * imageHandle& is the handle of the image that will act as the current write page.
 * **_DEST 0** refers to the present program [SCREEN](SCREEN). You can use 0 to refer to the present program [SCREEN](SCREEN).
 * [_DEST](_DEST) [_CONSOLE](_CONSOLE) can set the destination to send information to a console window using [PRINT](PRINT) or [INPUT](INPUT).
-* If imageHandle& is an invalid handle, an [ERROR Codes](ERROR Codes) error occurs. Always check for valid handle values first (imageHandle& < -1).
-**Note:* Use [_SOURCE](_SOURCE) when you need to read a page or image with [POINT](POINT), [GET (graphics statement)](GET (graphics statement)) or the [SCREEN (function)](SCREEN (function)) function.
-
+* If imageHandle& is an invalid handle, an [ERROR Codes](ERROR-Codes) error occurs. Always check for valid handle values first (imageHandle& < -1).
+* *Note:* Use [_SOURCE](_SOURCE) when you need to read a page or image with [POINT](POINT), [GET (graphics statement)](GET-(graphics-statement)) or the [SCREEN (function)](SCREEN-(function)) function.
 
 ## Example(s)
 
-*Example 1:* Placing a center point and a circle using [_CLEARCOLOR](_CLEARCOLOR) to eliminate the background color black.
+Placing a center point and a circle using [_CLEARCOLOR](_CLEARCOLOR) to eliminate the background color black.
 
 ```vb
 
@@ -34,8 +31,7 @@ _PUTIMAGE , a&, 0                 'put what is on image a& to the screen (handle
 
 ```
 
-
-*Example 2:* Demonstrates how [PRINT](PRINT) text can be stretched using [_PUTIMAGE](_PUTIMAGE) with [_DEST](_DEST) pages.
+Demonstrates how [PRINT](PRINT) text can be stretched using [_PUTIMAGE](_PUTIMAGE) with [_DEST](_DEST) pages.
 
 ```vb
 
@@ -108,16 +104,10 @@ ya = ya + ym
 RETURN 
 
 ```
-<sub>Adapted from code by CodeViper</sub> 
-
 
 ## See Also
 
-* [_DEST (function)](_DEST (function))
+* [_DEST (function)](_DEST-(function))
 * [_SOURCE](_SOURCE)
 * [_PUTIMAGE](_PUTIMAGE)
 * [_CONSOLE](_CONSOLE)
-
-
-
-

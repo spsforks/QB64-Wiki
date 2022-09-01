@@ -15,7 +15,7 @@ The [_BACKGROUNDCOLOR](_BACKGROUNDCOLOR) function returns the current background
 
 ## Example(s)
 
-*Example 1:* Storing a background color for later use.
+Storing a background color for later use.
 
 ```vb
 
@@ -32,7 +32,7 @@ OutputStartBG33
 
 
 
-*Example 2:* Understanding the function output
+Understanding the function output
 
 ```vb
 
@@ -54,8 +54,8 @@ OutputStartBG33
 
 * [_DEFAULTCOLOR](_DEFAULTCOLOR)
 * [COLOR](COLOR), [SCREEN](SCREEN)
-* [SCREEN (function)](SCREEN (function))
-* [Windows_Libraries#Color_Dialog_Box](Windows_Libraries#Color_Dialog_Box)
+* [SCREEN (function)](SCREEN-(function))
+* [Windows Libraries](Windows-Libraries)
 
 
 

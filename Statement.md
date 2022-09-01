@@ -4,7 +4,7 @@ The arguments in a statement are usually not enclosed with paranteses. When a gr
 
 ## Example(s)
 
-*Example 1:* Demonstrates how x- and y-coordinates are enclosed with paranteses (in graphics).
+Demonstrates how x- and y-coordinates are enclosed with paranteses (in graphics).
 
 ```vb
 
@@ -15,7 +15,7 @@ PSET (x, y), 15
 
 ```
 
-*Example 2:* Demonstrates how row- and column-coordinates are not enclosed with paranteses (in text).
+Demonstrates how row- and column-coordinates are not enclosed with paranteses (in text).
 
 ```vb
 

@@ -1,10 +1,8 @@
 [_INTEGER64](_INTEGER64) is an 8 byte number type definition that can hold whole numerical values. 
 
-
 ## Syntax
 
->  [DIM](DIM) variable [AS](AS) [_INTEGER64](_INTEGER64)
-
+> [DIM](DIM) variable [AS](AS) [_INTEGER64](_INTEGER64)
 
 ## Description
 
@@ -16,16 +14,11 @@
 * Equivalent to INT8 or unsigned as UINT8 in C programming.
 * **When a variable has not been assigned or has no type suffix, the value defaults to [SINGLE](SINGLE).**
 
-
 ## See Also
 
 * [INTEGER](INTEGER), [LONG](LONG)
 * [_DEFINE](_DEFINE), [DIM](DIM)
 * [_UNSIGNED](_UNSIGNED)
 * [_CV](_CV), [_MK$](_MK$)
-* [PDS (7.1) Procedures#CURRENCY](PDS (7.1) Procedures#CURRENCY)
-* [Variable Types](Variable Types)
-
-
-
-
+* [PDS (7.1) Procedures](PDS-(7.1)-Procedures)
+* [Variable Types](Variable-Types)

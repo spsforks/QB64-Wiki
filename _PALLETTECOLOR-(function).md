@@ -17,6 +17,7 @@ The [_PALETTECOLOR](_PALETTECOLOR-(function)) function is used to return the 32-
 *Example:* How _PALETTECOLOR works on 32 bit RGB compared to a 4 BPP(SCREEN 12) QBasic procedure.
 
 ```vb
+
 SCREEN 12                         'can use any QBasic legacy screen mode
 DIM RGB(0 TO 47) AS INTEGER       'color intensity array
 FOR c& = 0 TO 15

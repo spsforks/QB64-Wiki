@@ -368,8 +368,8 @@ DATA 173,177,8215,190,182,167,247,184,176,168,183,185,179,178,9632,160
 * [ASCII](ASCII), [ASCII Table](ASCII Table)
 * [_KEYHIT](_KEYHIT), [_KEYDOWN](_KEYDOWN)
 * [_MAPUNICODE](_MAPUNICODE) (Unicode TO ASCII code statement)
-* [Code Pages](Code Pages) (Various Languages)
-* [Text Using Graphics](Text Using Graphics)
+* [Code Pages](Code-Pages) (Various Languages)
+* [Text Using Graphics](Text-Using-Graphics)
 
 
 

@@ -39,7 +39,7 @@
 
 ## Example(s)
 
-*Example 1:* Using a string type suffix with a fixed length byte size in QB64 only. The number designates the fixed string length.
+Using a string type suffix with a fixed length byte size in QB64 only. The number designates the fixed string length.
 
 ```vb
 

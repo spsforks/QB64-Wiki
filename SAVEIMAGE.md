@@ -77,7 +77,7 @@ The actual image is read as pixel attributes from the image bottom to the top fo
 ## See Also
 
 * [_LOADIMAGE](_LOADIMAGE), [_ICON](_ICON), [$EXEICON]($EXEICON)
-* [SCREEN (statement)](SCREEN (statement))
+* [SCREEN (statement)](SCREEN-(statement))
 * [TYPE](TYPE), [MKI$](MKI$), [MKL$](MKL$)
 * [Program ScreenShots](Program-ScreenShots) (member SUB program)
 * [ThirtyTwoBit SUB](ThirtyTwoBit-SUB) (member SUB captures selected area)

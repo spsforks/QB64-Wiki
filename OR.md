@@ -12,7 +12,7 @@ The [OR](OR) numerical operator returns a comparative bit value of 1 if either v
 
 ## Example(s)
 
-*Example 1:* OR always turns bits on! Never off.
+OR always turns bits on! Never off.
 
 ```vb
 
@@ -29,7 +29,7 @@ The [OR](OR) numerical operator returns a comparative bit value of 1 if either v
 
 ```
 
-*Example 2:* Turning a data register bit on.
+Turning a data register bit on.
 
 ```vb
   

@@ -1,10 +1,8 @@
 The [_MOUSEY](_MOUSEY) function returns the current vertical (row) mouse cursor position when read after [_MOUSEINPUT](_MOUSEINPUT).
 
-
 ## Syntax
 
->  pixelRow% = [_MOUSEY](_MOUSEY)
-
+> pixelRow% = [_MOUSEY](_MOUSEY)
 
 ## Description
 
@@ -13,16 +11,13 @@ The [_MOUSEY](_MOUSEY) function returns the current vertical (row) mouse cursor 
 * To calculate text rows in graphic modes divide the return by 16 or the [_FONTHEIGHT](_FONTHEIGHT) of [_FONT](_FONT) characters.
 * [_MOUSEINPUT](_MOUSEINPUT) must be used to detect any changes in the mouse position and is **required** for any coordinate returns.
 
-
 ## QBasic/QuickBASIC
 
-* In [SCREEN](SCREEN) 0, QBasic's [CALL ABSOLUTE](CALL ABSOLUTE) returned graphic coordinates. QB64 mouse functions return the text coordinates. 
-
-
-## Example(s)
+* In [SCREEN](SCREEN) 0, QBasic's [CALL ABSOLUTE](CALL-ABSOLUTE) returned graphic coordinates. QB64 mouse functions return the text coordinates. 
 
 ## Example(s)
- Highlighting a row of text in Screen 0.
+
+Highlighting a row of text in Screen 0.
 
 ```vb
 
@@ -58,15 +53,10 @@ END SUB
 
 ```
 
-
 ## See Also
 
 * [_MOUSEX](_MOUSEX), [_MOUSEBUTTON](_MOUSEBUTTON), [_MOUSEWHEEL](_MOUSEWHEEL)
 * [_MOUSEINPUT](_MOUSEINPUT), [_MOUSEMOVE](_MOUSEMOVE)
 * [_MOUSESHOW](_MOUSESHOW), [_MOUSEHIDE](_MOUSEHIDE)
 * [_MOUSEMOVEMENTX](_MOUSEMOVEMENTX), [_MOUSEMOVEMENTY](_MOUSEMOVEMENTY) (relative pointer moves) 
-* [Controller Devices](Controller Devices)
-
-
-
-
+* [Controller Devices](Controller-Devices)

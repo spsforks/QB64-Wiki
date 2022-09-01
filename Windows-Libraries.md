@@ -939,7 +939,7 @@ Adapted from code by Dav
 
 >  **Note:** The *SetHotKey* message tells the designated Windows program ID when to do *DefWondowProcA* to focus the window.
 
-**This can also focus on other program IDs! See also: [Windows_Libraries#Hot_Keys_.28maximize.29](Windows_Libraries#Hot_Keys_.28maximize.29)**
+**This can also focus on other program IDs! See also: [Windows Libraries](Windows-Libraries)**
 
 Note: Minimized programs will always lose focus when minimized unless clicked in taskbar.
 
@@ -1201,7 +1201,7 @@ NEXT
 
 ## Registered Fonts
 
-> The Registry lists the Font Names and associated TTF file names that are needed with the [Windows_Libraries#Font_Dialog_Box](Windows_Libraries#Font_Dialog_Box) in a program.
+> The Registry lists the Font Names and associated TTF file names that are needed with the [Windows Libraries](Windows-Libraries) in a program.
 
 > The following program uses Registry functions from *advapi32.dll* to read the list of registered fonts and put them into a file.
 

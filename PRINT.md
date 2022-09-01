@@ -25,7 +25,7 @@ The [PRINT](PRINT) statement prints numeric or string expressions to the program
   - If the value is positive, the number is prefixed with a space character, otherwise, the number is prefixed with a negative sign (-).
   - If the value is an integer (whole number), no decimal point or fractional part will be printed.
   - If the value is not an [INTEGER](INTEGER)(whole number) and has zero for a coefficient, no leading zero is printed. EX: -0.123 prints "-.123 "
-  - If the expression is in [scientific notation](scientific notation), the number is also printed in scientific notation.
+  - If the expression is in [scientific notation](scientific-notation), the number is also printed in scientific notation.
   - The number is [PRINT](PRINT) with a space after it unless [STR$](STR$)(number) is used to convert it to string text.
   - Numerical values MUST be added to a PRINT statement string using [comma](comma)s or [semicolon](semicolon)s on each side of the value or by using [STR$](STR$) to convert the value to a string to use [concatenation](concatenation) (+ string addition).
 * [VIEW PRINT](VIEW PRINT) can set up a viewport area for PRINTs. Text printed on the bottom view port row will scroll the text upward. 
@@ -38,14 +38,14 @@ The [PRINT](PRINT) statement prints numeric or string expressions to the program
   - **1** _KEEPBACKGROUND: Text background transparent. Only the text is displayed over anything behind it.
   - **2** _ONLYBACKGROUND: Text background is only displayed. Text is transparent to anything behind it.
   - **3** _FILLBACKGROUND: Text and background block anything behind them. Default setting.
-  - * Use the [_PRINTMODE (function)](_PRINTMODE (function)) to find the current _PRINTMODE setting number.
+  - * Use the [_PRINTMODE (function)](_PRINTMODE-(function)) to find the current _PRINTMODE setting number.
 * [WRITE](WRITE) can be used to print a list of comma separated data values to the screen with [comma](comma)s between each value.
 * Use [_DEST](_DEST) [_CONSOLE](_CONSOLE) before PRINT statements to be used in a [$CONSOLE]($CONSOLE) window.
 * Use [_CONTROLCHR](_CONTROLCHR) **OFF** to PRINT the unprintable lower [ASCII](ASCII) control characters in QB64. 
 
 ## Example(s)
 
-*Example 1:* Using semicolons, comma tabs or concatenation to insert [ASCII](ASCII) characters and numbers in a PRINT:
+Using semicolons, comma tabs or concatenation to insert [ASCII](ASCII) characters and numbers in a PRINT:
 
 ```vb
 
@@ -72,7 +72,7 @@ Hello city!
 
 > First PRINT prints the text between two quotation marks, then it prints the value 123, notice that there are no quotation marks when printing the value, quotation marks mean that it will be treated like a literal string of text. a$ is set to "Hello country" and 'a' is set to the value 321, the dollar sign is used when a variable holds the text string. The contents of a$ is then printed and the "," means that the value of 'a' is printed separated by a tab and ";" means that there is no separation from the other text except for the leading positive value space.
 
-*Example 2:* Changing colors in a line of text using semicolons with colon separators between PRINTs on the same code line.
+Changing colors in a line of text using semicolons with colon separators between PRINTs on the same code line.
 
 ```vb
 
@@ -93,7 +93,7 @@ Start aqua and end blue.
 
 * [_PRINTMODE](_PRINTMODE), [_PRINTSTRING](_PRINTSTRING), [PRINT USING](PRINT-USING)
 * [SPC](SPC), [TAB](TAB), [SPACE$](SPACE$), [SCREEN](SCREEN)
-* [CSRLIN](CSRLIN), [POS](POS), [SCREEN (function)](SCREEN (function))
+* [CSRLIN](CSRLIN), [POS](POS), [SCREEN (function)](SCREEN-(function))
 * [COLOR](COLOR), [LOCATE](LOCATE), [VIEW PRINT](VIEW-PRINT)
 * [INPUT](INPUT), [STR$](STR$), [CHR$](CHR$)
 * [ASCII](ASCII) (character codes), [_CONTROLCHR](_CONTROLCHR)

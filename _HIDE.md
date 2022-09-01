@@ -1,10 +1,8 @@
 The [_HIDE](_HIDE) action is used to hide the console window opened by a [SHELL](SHELL) statement.
 
-
 ## Syntax
 
->  [SHELL](SHELL) [**_HIDE**] StringCommandLine$
-
+> [SHELL](SHELL) [**_HIDE**] StringCommandLine$
 
 ## Description
 
@@ -12,11 +10,9 @@ The [_HIDE](_HIDE) action is used to hide the console window opened by a [SHELL]
 * [_HIDE](_HIDE) must be used when sending ("piping") screen information to a file.
 * **Note:** Some commands may not work without adding CMD /C to the start of the command line.
 
-
 ## Example(s)
 
-## Example(s)
- Subprogram that displays long and short filenames using the DIR /X option (WindowsNT or above) in SCREEN 12:
+Subprogram that displays long and short filenames using the DIR /X option (WindowsNT or above) in SCREEN 12:
 
 ```vb
 
@@ -57,12 +53,7 @@ END SUB
 
 *Explanation:* The above routine can also be used to place the file name info into string arrays by using the count variable cnt% to determine the index. Long file names are normally returned by **QB64**. To keep older QBasic programs compatible, you may want to only use the short names when displaying the files on the screen.
 
-
 ## See Also
 
 * [SHELL](SHELL), [_DONTWAIT](_DONTWAIT)
-* [FILELIST$ (function)](FILELIST$ (function)) ([FILES](FILES) function, member-contributed)
-
-
-
-
+* [FILELIST$ (function)](FILELIST$-(function)) ([FILES](FILES) function, member-contributed)

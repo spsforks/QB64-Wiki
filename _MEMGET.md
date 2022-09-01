@@ -1,15 +1,12 @@
 The [_MEMGET](_MEMGET) statement reads a portion of a memory block at an OFFSET position into a variable, array or user defined type.
 
-
 ## Syntax
 
->  [_MEMGET](_MEMGET) memoryBlock, bytePosition, destinationVariable
+> [_MEMGET](_MEMGET) memoryBlock, bytePosition, destinationVariable
 
-
-* memoryBlock is a [_MEM](_MEM) variable type memory block name created by [_MEMNEW](_MEMNEW) or the [_MEM (function)](_MEM (function)) function.
+* memoryBlock is a [_MEM](_MEM) variable type memory block name created by [_MEMNEW](_MEMNEW) or the [_MEM (function)](_MEM-(function)) function.
 * bytePosition is the memoryBlock.[OFFSET](OFFSET) memory start position plus any bytes to move into the block. 
 * destinationVariable is the variable assigned to hold the data. The number of bytes read is determined by the variable [type](type) used.
-
 
 ## Description
 
@@ -19,10 +16,9 @@ The [_MEMGET](_MEMGET) statement reads a portion of a memory block at an OFFSET 
 * [LEN](LEN) can be used to determine the byte size of numerical or user defined variable [type](type)s regardless of the value held.
 * [STRING](STRING) values should be of a defined length. Variable length strings can actually move around in memory and not be found.
 
-
-PageExamples]]
 ## Example(s)
- Shows how to read the PSET color values from a program's [SCREEN](SCREEN) memory to an array.
+
+Shows how to read the PSET color values from a program's [SCREEN](SCREEN) memory to an array.
 
 ```vb
 
@@ -44,15 +40,10 @@ END
 
 ```
 
-
 ## See Also
 
-* [_MEMGET (function)](_MEMGET (function))
+* [_MEMGET (function)](_MEMGET-(function))
 * [_MEMPUT](_MEMPUT)
 * [_MEM](_MEM)
 * [_MEMIMAGE](_MEMIMAGE)
 * [_MEMFREE](_MEMFREE)
-
-
-
-

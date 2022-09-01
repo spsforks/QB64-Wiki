@@ -2,7 +2,7 @@ The [_MOUSEHIDE](_MOUSEHIDE) statement hides the mouse cursor.
 
 ## Syntax
 
->  [_MOUSEHIDE](_MOUSEHIDE)
+> [_MOUSEHIDE](_MOUSEHIDE)
 
 ## See Also
 

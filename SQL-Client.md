@@ -538,7 +538,7 @@ This works in Linux (Ubuntu) too with minimal changes:
 1. Use the 'Synaptic Package Manager' to install 'mysql-client-5.1'
 2. Change: DECLARE DYNAMIC LIBRARY "mysql" to DECLARE DYNAMIC LIBRARY "mysqlclient:16.0.0" 
 
->  Or just copy this .so lib to your QB64 folder and rename it *libmysql.so*(do not use *.so* extension in [DECLARE LIBRARY](DECLARE LIBRARY) name).
+>  Or just copy this .so lib to your QB64 folder and rename it *libmysql.so*(do not use *.so* extension in [DECLARE LIBRARY](DECLARE-LIBRARY) name).
 
 ## See Also
 

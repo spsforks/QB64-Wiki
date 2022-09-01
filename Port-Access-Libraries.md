@@ -14,7 +14,7 @@
 
 **Parallel Ports do Not Require an External LPT Device Connection to Function.**
 
-> *Example 1:* Reading the Parallel Port Data, Status and Control register settings before and after reversing it.
+> Reading the Parallel Port Data, Status and Control register settings before and after reversing it.
 
 ```vb
 
@@ -143,7 +143,7 @@ Reverse read only mode may set all byte values to 0 or 255 if all pins are held 
 
 **Serial Communication Ports Require an External Serial Device or PC COM Port Connection to function!**
 
-> *Example 2:* A 3 wire Teletype program that allows two computers to serially communicate through each keyboard:
+> A 3 wire Teletype program that allows two computers to serially communicate through each keyboard:
 
 ```vb
 

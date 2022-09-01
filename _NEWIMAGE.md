@@ -1,17 +1,14 @@
 The [_NEWIMAGE](_NEWIMAGE) function prepares a window image surface and returns the [LONG](LONG) [handle](handle) value.
 
-
 ## Syntax
 
->  handle& = [_NEWIMAGE](_NEWIMAGE)(width&, height&[, {*0*|*1*|*2*|*7*|*8*|*9*|*10*|*11*|*12*|*13*|*256*|*32*}])
-
+> handle& = [_NEWIMAGE](_NEWIMAGE)(width&, height&[, {*0*|*1*|*2*|*7*|*8*|*9*|*10*|*11*|*12*|*13*|*256*|*32*}])
 
 ## Parameter(s)
 
 * Minimum [LONG](LONG) screen dimensions are width& >= 1, height& >= 1 measured in pixels as [INTEGER](INTEGER) or [LONG](LONG) values.
 ** For mode 0 (text), width& and height& are measured in character blocks, not pixels.
 * Mode is either a QBasic type [SCREEN](SCREEN) mode (0 to 2 or 7 to 13), 256 colors or 32 bit (16 million colors) compatible.
-
 
 ## Description
 
@@ -22,15 +19,16 @@ The [_NEWIMAGE](_NEWIMAGE) function prepares a window image surface and returns 
 * To view the image page, just use [SCREEN](SCREEN) handle&. Even if another procedure changes the screen mode and clears the screen, the image can be restored later by using the same SCREEN handle mode.
 * Use the [_COPYIMAGE](_COPYIMAGE) function to preserve a SCREEN handle value when changing to another screen mode to restore it later.
 * **32 bit screen surface backgrounds (black) have zero [_ALPHA](_ALPHA) so that they are transparent when placed over other surfaces.**
->  Use [CLS](CLS) or [_DONTBLEND](_DONTBLEND) to make a new surface background [_ALPHA](_ALPHA) 255 or opague.
-*  **Images are not deallocated when the [SUB](SUB) or [FUNCTION](FUNCTION) they are created in ends. Free them with [_FREEIMAGE](_FREEIMAGE).**
+
+> Use [CLS](CLS) or [_DONTBLEND](_DONTBLEND) to make a new surface background [_ALPHA](_ALPHA) 255 or opague.
+
+* **Images are not deallocated when the [SUB](SUB) or [FUNCTION](FUNCTION) they are created in ends. Free them with [_FREEIMAGE](_FREEIMAGE).**
 * **It is important to free unused or uneeded images with [_FREEIMAGE](_FREEIMAGE) to prevent CPU [ERROR_Codes#Other_Errors](ERROR_Codes#Other_Errors).**
 * **Do not try to free image handles currently being used as the active [SCREEN](SCREEN). Change screen modes first.**
 
-
 ## Example(s)
 
-*Example 1:* Shrinking a SCREEN 0 text window's size:
+Shrinking a SCREEN 0 text window's size:
 
 ```vb
 
@@ -38,8 +36,7 @@ SCREEN _NEWIMAGE(28, 25, 0)
 
 ```
 
-
-*Example 2:* Creating an 800 by 600 window version of SCREEN 12 with 256 colors (text 37 X 100):
+Creating an 800 by 600 window version of SCREEN 12 with 256 colors (text 37 X 100):
 
 ```vb
 
@@ -48,18 +45,17 @@ SCREEN handle&
 
 ```
 
-
-*Example 3:* Setting up a 32 bit SCREEN with _NEWIMAGE for page flipping in QB64.
+Setting up a 32 bit SCREEN with _NEWIMAGE for page flipping in QB64.
 
 ```vb
 
 SCREEN _NEWIMAGE(640, 480, 32), , 1, 0 
 
 ```
->  *Note:* [_DISPLAY](_DISPLAY) may be used as a substitute for page flipping or [PCOPY](PCOPY).
 
+> *Note:* [_DISPLAY](_DISPLAY) may be used as a substitute for page flipping or [PCOPY](PCOPY).
 
-*Example 4:* Switching between two different SCREEN modes
+Switching between two different SCREEN modes
 
 ```vb
 
@@ -92,17 +88,16 @@ SCREEN mode2&  'back to small window
 COLOR 14: LOCATE 16, 16: PRINT "LAST " 
 
 ```
-> *Explanation:* The [_DEST (function)](_DEST (function)) function can determine the present screen mode destination handle. The second _NEWIMAGE  handle is created using a SCREEN 13 palette(256 colors also). Each SCREEN is worked on after changing the destination with [_DEST](_DEST) *handle&* statement. Images can be created before viewing them. When a key is pressed the second SCREEN created is displayed and so on. 
+
+> *Explanation:* The [_DEST (function)](_DEST-(function)) function can determine the present screen mode destination handle. The second _NEWIMAGE  handle is created using a SCREEN 13 palette(256 colors also). Each SCREEN is worked on after changing the destination with [_DEST](_DEST) *handle&* statement. Images can be created before viewing them. When a key is pressed the second SCREEN created is displayed and so on. 
 
 > **Legacy SCREEN modes can also return a _DEST value, but the value will create a handle error.** To restore legacy screens get the[_COPYIMAGE](_COPYIMAGE) function value before changing screens. Then restore it using SCREEN oldmode&.
-
 
 ### More examples
 
 * [SAVEIMAGE](SAVEIMAGE) (Bitmap creation)
 * [_FILE$](_FILE$) (restoring previous screen)
 * [_PIXELSIZE](_PIXELSIZE) (GetImage function example)
-
 
 ## See Also
 
@@ -111,9 +106,5 @@ COLOR 14: LOCATE 16, 16: PRINT "LAST "
 * [_FREEIMAGE](_FREEIMAGE)
 * [_PUTIMAGE](_PUTIMAGE)
 * [_SCREENIMAGE](_SCREENIMAGE)
-* [_CLIPBOARDIMAGE (function)](_CLIPBOARDIMAGE (function))
+* [_CLIPBOARDIMAGE (function)](_CLIPBOARDIMAGE-(function))
 * [SCREEN](SCREEN)
-
-
-
-

@@ -16,7 +16,7 @@ The [ON STRIG(n)](ON-STRIG(n)) statement is an event procedure that directs prog
 
 ## Example(s)
 
-*Example 1:* Reading a STRIG event to do something in a [GOSUB](GOSUB) procedure.
+Reading a STRIG event to do something in a [GOSUB](GOSUB) procedure.
 
 ```vb
 
@@ -39,7 +39,7 @@ RETURN
 
 ```
 
-*Example 2:* Displays any number of game pad or joystick device button presses.
+Displays any number of game pad or joystick device button presses.
 
 ```vb
 

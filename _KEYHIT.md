@@ -1,21 +1,18 @@
 The [_KEYHIT](_KEYHIT) function returns [ASCII](ASCII) one and two byte, OpenGL Virtual Key and Unicode keyboard key press codes.
 
-
 ## Syntax
 
 > keycode& = [_KEYHIT](_KEYHIT)
 
-
 ## Description
 
 * Return values range up to &H40000000 so use a [LONG](LONG) or [_INTEGER64](_INTEGER64) variable type. See the [_KEYDOWN](_KEYDOWN) code list:
-> * 0-255: [ASCII](ASCII) values (Refer to [http://en.wikipedia.org/wiki/Code_page_437 CP437]).
-> * 256-65535: [ASCII#Two_Byte_Codes](ASCII#Two_Byte_Codes) character codes : code = [CVI](CVI)([CHR$](CHR$)(0) + [CHR$](CHR$)(scancode)) (unaffected by SHIFT/ALT/CTRL modifiers).
+> * 0-255: [ASCII](ASCII) values (Refer to [CP437](http://en.wikipedia.org/wiki/Code_page_437)).
+> * 256-65535: [ASCII](ASCII) character codes : code = [CVI](CVI)([CHR$](CHR$)(0) + [CHR$](CHR$)(scancode)) (unaffected by SHIFT/ALT/CTRL modifiers).
 > * 65536-&H40000000: [_KEYDOWN](_KEYDOWN) (designated with + for 100000 on keyboard below)
 > * **Negative** [LONG](LONG) values returned indicate that a key was released or a lock function key has been turned off.
 * **Note: _KEYHIT can only return one value at a time so use the [_KEYDOWN](_KEYDOWN) keyhit value to find key combinations.**
 * To receive input from a [$CONSOLE]($CONSOLE) window, use [_CINP](_CINP).
-
 
 ```text
 
@@ -43,23 +40,20 @@ The [_KEYHIT](_KEYHIT) function returns [ASCII](ASCII) one and two byte, OpenGL 
 
 ```
 
-<sub>NOTE: The above commented table can be copied and pasted directly into the QB64 IDE</sub>
+NOTE: The above commented table can be copied and pasted directly into the QB64 IDE.
  
- 
-> * >= &H40000000: [Unicode](Unicode).
+> >= &H40000000: [Unicode](Unicode).
 
 * Font **cyberbit.ttf**, included with QB64 (**version 0.92 and up**), is required to facilitate the **IME**(in Chinese settings) only. The 12.7 MB font is free for **non-commercial** use and is not loaded unless the user switches to the **Input Mode Editor**. Set to "UNICODE".
-**[http://www.fileformat.info/tip/microsoft/enter_unicode.htm Setting up the Unicode Input Method Editor in Windows]**
-If you need help with IME support in **Vista** see the following article: [http://blogs.msdn.com/b/michkap/archive/2006/07/20/671835.aspx Setting up IME in Vista]
+**[Setting up the Unicode Input Method Editor in Windows](http://www.fileformat.info/tip/microsoft/enter_unicode.htm)**
+If you need help with IME support in **Vista** see the following article: [Setting up IME in Vista](http://blogs.msdn.com/b/michkap/archive/2006/07/20/671835.aspx)
 * QB64 can use several Windows fonts when **cyberbit** is not present so it is not necessary to include with program packages. 
 * An **important difference** between [INKEY$](INKEY$) and _KEYHIT is how they work when **CTRL, ALT** or **SHIFT** are used. INKEY$ returns a different code if you hold down CTRL, ALT or SHIFT before pressing  F1 (for example). _KEYHIT will return the same code regardless of which modifiers were used but you can check [_KEYDOWN](_KEYDOWN) to see which modifying keys are being used.
 * **Keyboards with an Alt Gr key note:** _KEYHIT may return both Alt (100307) and Ctrl (100306) codes when AltGr key is pressed or released.
 
-
 ## Example(s)
 
-## Example(s)
- This routine will return the codes for any keyboard presses.
+This routine will return the codes for any keyboard presses.
 
 ```vb
 
@@ -111,19 +105,13 @@ DO
 LOOP
 
 ```
-<sub>Code by Galleon</sub>
-
 
 ## See Also
 
 * [_KEYDOWN](_KEYDOWN), [_CINP](_CINP)
-* [_MAPUNICODE](_MAPUNICODE), [_MAPUNICODE (function)](_MAPUNICODE (function)) 
+* [_MAPUNICODE](_MAPUNICODE), [_MAPUNICODE (function)](_MAPUNICODE-(function)) 
 * [INKEY$](INKEY$), [ASCII](ASCII) (code table), 
-* [Unicode](Unicode), [Code Pages](Code Pages) (by region)
+* [Unicode](Unicode), [Code Pages](Code-Pages) (by region)
 * [INP](INP)([&H](&H)), [Scancodes](Scancodes)
-* [ON KEY(n)](ON KEY(n)), [KEY(n)](KEY(n)), [KEY n](KEY n)
-* [Windows_Libraries#Hot_Keys_.28maximize.29](Windows_Libraries#Hot_Keys_.28maximize.29)
-
-
-
-
+* [ON KEY(n)](ON-KEY(n)), [KEY(n)](KEY(n)), [KEY n](KEY-n)
+* [Windows Libraries](Windows-Libraries)

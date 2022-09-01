@@ -1,17 +1,12 @@
-DISPLAYTITLE: _MOUSEPIPEOPEN
-
 The [_MOUSEPIPEOPEN](_MOUSEPIPEOPEN) function creates a pipe handle value for a mouse when using a virtual keyboard.
-
 
 ## Syntax
 
->  vkMousePipe = [_MOUSEPIPEOPEN](_MOUSEPIPEOPEN)
-
+> vkMousePipe = [_MOUSEPIPEOPEN](_MOUSEPIPEOPEN)
 
 ## Description
 
 * The pipe handle value can be used optionally with [_MOUSEINPUT](_MOUSEINPUT), [_MOUSEX](_MOUSEX), [_MOUSEY](_MOUSEY), and [_MOUSEBUTTON](_MOUSEBUTTON) when required.
-
 
 ## Example(s)
 
@@ -96,16 +91,10 @@ END IF
         IF VkMousePipeCapture = 0 THEN _MOUSEINPUTPIPE VkMousePipe
     END I
 
-
 ```
 
->  When using the [$VIRTUALKEYBOARD]($VIRTUALKEYBOARD), the keyboard captures mouse input appropriately whilst selectively letting presses originating on non-key areas of the screen filter through to the default mouse queue.
-
+> When using the [$VIRTUALKEYBOARD]($VIRTUALKEYBOARD), the keyboard captures mouse input appropriately whilst selectively letting presses originating on non-key areas of the screen filter through to the default mouse queue.
 
 ## See Also
 
 * [$VIRTUALKEYBOARD]($VIRTUALKEYBOARD)
-
-
-
-

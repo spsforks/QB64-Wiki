@@ -9,7 +9,7 @@ The **$STATIC** Metacommand allows the creation of STATIC(un-changeable) arrays.
 
 * QBasic [Metacommand](Metacommand)s require a REM or apostrophy (') before them and are normally placed at the start of the main module.
 * Static arrays cannot be resized. If a variable is used to size any array, it becomes [$DYNAMIC]($DYNAMIC).
-* A [REDIM](REDIM) statement has no effect on [$STATIC]($STATIC) arrays except perhaps a [ERROR Codes](ERROR Codes) at the [REDIM](REDIM) code.
+* A [REDIM](REDIM) statement has no effect on [$STATIC]($STATIC) arrays except perhaps a [ERROR Codes](ERROR-Codes) at the [REDIM](REDIM) code.
 * The array's type cannot be changed once [DIM](DIM) and a literal value sets the dimensions and element size.
 * [$STATIC]($STATIC) defined program [arrays](arrays) cannot be [REDIM](REDIM) or use [_PRESERVE](_PRESERVE).
 

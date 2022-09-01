@@ -1,28 +1,24 @@
 The [_FREEFONT](_FREEFONT) statement frees a font handle that was created by [_LOADFONT](_LOADFONT).
 
-
-
 ## Syntax
 
 > [_FREEFONT](_FREEFONT) (fontHandle&)
-
 
 ## Description
 
 * Unloads fonts that are no longer in use or needed in order to free program memory and resources.
 * You cannot free a font which is in use. Change the font to a QB64 default font size before freeing the handle (see example below).
 * Predefined **QB64** font handle numbers can be used before freeing a font:
-****_FONT 8 ** - default font for [SCREEN (statement)](SCREEN (statement)) 1, 2, 7, 8 or 13
-****_FONT 14** - default font for [SCREEN (statement)](SCREEN (statement)) 9 or 10
-****_FONT 16** - default font for [SCREEN (statement)](SCREEN (statement)) 0 ([WIDTH](WIDTH) 80, 25 text only), 11 or 12
-****_FONT 9, 15** and **17** are the double width versions of 8, 14 and 16 respectively in text **SCREEN 0**.
-* If the font handle is invalid (equals -1 or 0), an [ERROR Codes](ERROR Codes) will occur. **Check handle values before using or freeing them.**
+  * **_FONT 8** - default font for [SCREEN (statement)](SCREEN-(statement)) 1, 2, 7, 8 or 13
+  * **_FONT 14** - default font for [SCREEN (statement)](SCREEN-(statement)) 9 or 10
+  * **_FONT 16** - default font for [SCREEN (statement)](SCREEN-(statement)) 0 ([WIDTH](WIDTH) 80, 25 text only), 11 or 12
+  * **_FONT 9, 15** and **17** are the double width versions of 8, 14 and 16 respectively in text **SCREEN 0**.
+* If the font handle is invalid (equals -1 or 0), an [ERROR Codes](ERROR-Codes) will occur. **Check handle values before using or freeing them.**
 * You cannot free inbuilt/default QB64 fonts nor do they ever need freed. 
-
 
 ## Example(s)
 
-*Example 1:* Previews and creates a file list of valid MONOSPACE TTF fonts by checking the [_LOADFONT](_LOADFONT) handle values.
+Previews and creates a file list of valid MONOSPACE TTF fonts by checking the [_LOADFONT](_LOADFONT) handle values.
 
 ```vb
 
@@ -56,18 +52,14 @@ PRINT: PRINT: PRINT "Found"; found; "TTF files,"; OK; "can use Monospace,"
 END 
 
 ```
-<sub>Code by Ted Weissgerber</sub>
 
 ```text
-
 
 Found 106 TTF files, 13 can use Monospace.
 
 ```
 
-
-
-*Example 2:* Using a _FREEFONT sub-procedure. 
+Using a _FREEFONT sub-procedure. 
 
 ```vb
 
@@ -103,12 +95,7 @@ RETURN
 
 ```
 
-
 ## See Also
 
 * [_FONT](_FONT)
 * [_LOADFONT](_LOADFONT)
-
-
-
-

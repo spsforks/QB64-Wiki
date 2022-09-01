@@ -1,10 +1,8 @@
 The [_ATANH](_ATANH) returns the arc hyperbolic tangent of x!, expressed in radians.
 
-
 ## Syntax
 
->  return_value! = [_ATANH](_ATANH)(x!)
-
+> return_value! = [_ATANH](_ATANH)(x!)
 
 ## See Also
 
@@ -17,8 +15,3 @@ The [_ATANH](_ATANH) returns the arc hyperbolic tangent of x!, expressed in radi
 * [_ATAN2](_ATAN2) (Compute arc tangent with two parameters)
 * [_HYPOT](_HYPOT) (hypotenuse)
 *[Mathematical Operations](Mathematical-Operations)
-*[Mathematical Operations#Derived_Mathematical_Functions](Mathematical-Operations#Derived_Mathematical_Functions)
-
-
-
-

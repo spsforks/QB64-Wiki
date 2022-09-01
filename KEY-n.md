@@ -111,7 +111,7 @@ Use CHR$(0) for the first byte flag for non-function keys. You can substitute a 
 
 ## Examples
 
-*Example 1:* Shows a list of all the string assignments to the function keys F1-F12 (Prints help every time F1 is pressed in the input)
+Shows a list of all the string assignments to the function keys F1-F12 (Prints help every time F1 is pressed in the input)
 
 ```vb
 

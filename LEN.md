@@ -15,13 +15,13 @@ The [LEN](LEN) function returns the number of bytes used by a variable value and
   * *Note:* [_BIT](_BIT) variable types and bit multiples **cannot be measured in bytes**.
 * **LEN cannot return lengths of literal numerical values and will create a "variable required" status error in the IDE.**
 * **LEN =** can be used with a user defined [TYPE](TYPE) variable to determine the number of bytes used in [RANDOM](RANDOM) file records:
-> `[OPEN](OPEN) file$ FOR [RANDOM](RANDOM) AS #n LEN <nowiki>=</nowiki> LEN(recordTypeVariable)`**
+> `[OPEN](OPEN) file$ FOR [RANDOM](RANDOM) AS #n LEN = LEN(recordTypeVariable)`**
   * If a LEN = statement is not used, [RANDOM](RANDOM) default record length is 128 or sequencial is 512 up to a maximum of 32767 bytes.
   * [BINARY](BINARY) OPEN statements will ignore LEN = statements. The byte size of a [GET](GET) or [PUT](PUT) is determined by the [Variable Types](Variable-Types).
 
 ## Example(s)
 
-*Example 1:* With a string variable the byte size is the same as the number of characters.
+With a string variable the byte size is the same as the number of characters.
 
 ```vb
 

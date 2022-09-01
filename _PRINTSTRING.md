@@ -1,39 +1,34 @@
 The [_PRINTSTRING](_PRINTSTRING) statement prints text [STRING](STRING) using graphic column and row coordinate positions.
 
-
 ## Syntax
 
->  [_PRINTSTRING](_PRINTSTRING)(column, row), textExpression$[, imageHandle&] 
-
+> [_PRINTSTRING](_PRINTSTRING)(column, row), textExpression$[, imageHandle&] 
 
 ## Parameter(s)
 
 * column and row are [INTEGER](INTEGER) or [LONG](LONG) starting PIXEL (graphic) column and row coordinates to set text or custom fonts.
 * textExpression$ is any literal or variable [STRING](STRING) value of text to be displayed.
-* imageHandle& is the optional image or destination to use. Zero designates current [SCREEN (statement)](SCREEN (statement)) page.
-
+* imageHandle& is the optional image or destination to use. Zero designates current [SCREEN (statement)](SCREEN-(statement)) page.
 
 ## Description
 
 * The starting coordinate sets the top left corner of the text to be printed. Use [_FONTHEIGHT](_FONTHEIGHT) to calculate that text or [_FONT](_FONT) position
-* The [_FONT](_FONT) size can affect the [SCREEN (statement)](SCREEN (statement)) and row heights.
-** Custom fonts are not required. [_PRINTSTRING](_PRINTSTRING) can print all [ASCII](ASCII) characters.
+* The [_FONT](_FONT) size can affect the [SCREEN (statement)](SCREEN-(statement)) and row heights.
+  * Custom fonts are not required. [_PRINTSTRING](_PRINTSTRING) can print all [ASCII](ASCII) characters.
 * [_PRINTWIDTH](_PRINTWIDTH) can be used to determine how wide a text print will be so that the screen width is not exceeded.
 * If the imageHandle& is omitted, the current image, page or screen destination is used.
 * Can use the current font alpha blending with a designated image background. See the [_RGBA](_RGBA) function example.
 * Use the [_PRINTMODE](_PRINTMODE) statement before printing to set how the background is rendered.
-** Use the [_PRINTMODE (function)](_PRINTMODE (function)) to find the current _PRINTMODE setting.
+  * Use the [_PRINTMODE (function)](_PRINTMODE-(function)) to find the current _PRINTMODE setting.
 * In SCREEN 0 (text only), [_PRINTSTRING](_PRINTSTRING) works as one-line replacement for **LOCATE x, y: PRINT text$**, without changing the current cursor position.
-
 
 ## Availability
 
 * In versions of QB64 prior to 1.000 _PRINTSTRING can only be used in graphic, 256 color or 32 bit screen modes, not SCREEN 0.*
 
-
 ## Example(s)
 
-*Example 1:* Printing those unprintable [ASCII](ASCII) control characters is no longer a problem!
+Printing those unprintable [ASCII](ASCII) control characters is no longer a problem!
 
 ```vb
 
@@ -53,14 +48,11 @@ END
 
 ```text
 
-
   ☺ ☻ ♥ ♦ ♣ ♠ • ◘ ○ ◙ ♂ ♀ ♪ ♫ ☼ ► ◄ ↕ ‼ ¶ § ▬ ↨ ↑ ↓ → ← ∟ ↔ ▲ ▼
 
 ```
 
-
-
-*Example 2:* Making any **QB64 program window** larger using a SUB that easily converts PRINT to [_PRINTSTRING](_PRINTSTRING). 
+Making any **QB64 program window** larger using a SUB that easily converts PRINT to [_PRINTSTRING](_PRINTSTRING). 
 
 ```vb
 
@@ -89,12 +81,11 @@ _PRINTSTRING (col%, row%), Text$
 END SUB 
 
 ```
-<sub>Code by Ted Weissgerber</sub>
->  *Explanation:* The procedure above creates a larger version of a SCREEN 13 window by stretching it with [_PUTIMAGE](_PUTIMAGE). It cannot stretch PRINTed text so [_PRINTSTRING](_PRINTSTRING) must be used instead. [LOCATE](LOCATE) sets the PRINT cursor position for [CSRLIN](CSRLIN) and [POS](POS)(0) to read. The SUB then converts the coordinates to graphical ones. Then **change** [PRINT](PRINT) to PRINTS using the IDE **Search Menu**.
-[https://www.dropbox.com/s/tcdik1ajegbeiz4/HOWIE.zip?dl=0 Download of Example 2 Bitmap images]
 
+> *Explanation:* The procedure above creates a larger version of a SCREEN 13 window by stretching it with [_PUTIMAGE](_PUTIMAGE). It cannot stretch PRINTed text so [_PRINTSTRING](_PRINTSTRING) must be used instead. [LOCATE](LOCATE) sets the PRINT cursor position for [CSRLIN](CSRLIN) and [POS](POS)(0) to read. The SUB then converts the coordinates to graphical ones. Then **change** [PRINT](PRINT) to PRINTS using the IDE **Search Menu**.
+[Download of Example 2 Bitmap images](https://www.dropbox.com/s/tcdik1ajegbeiz4/HOWIE.zip?dl=0)
 
-*Example 3:* Rotating a text string around a graphic object.
+Rotating a text string around a graphic object.
 
 ```vb
 
@@ -122,9 +113,6 @@ COLOR 15
 END 
 
 ```
-<sub>Adapted from code by Unseen Machine</sub>
-
-
 
 ## See Also
 
@@ -132,8 +120,4 @@ END
 * [_CONTROLCHR](_CONTROLCHR) (turns [ASCII](ASCII) control characters OFF or ON)
 * [_FONT](_FONT), [_LOADFONT](_LOADFONT), [_FONTHEIGHT](_FONTHEIGHT), [_FONTWIDTH](_FONTWIDTH)
 * [_SCREENIMAGE](_SCREENIMAGE), [_SCREENPRINT](_SCREENPRINT)
-* [Text Using Graphics](Text Using Graphics)
-
-
-
-
+* [Text Using Graphics](Text-Using-Graphics)

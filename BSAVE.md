@@ -20,13 +20,13 @@
 * [SCREEN](SCREEN) 12 can only GET 1/3 of the screen image at one time using a 26K array. 
 * Image arrays are [DIM](DIM)ensioned as [INTEGER](INTEGER). Use [DEFINT](DEFINT) when working with large graphic arrays.
 * Any arrays can be saved, but image arrays are most common.
-* [DEF SEG](DEF SEG) = [VARSEG](VARSEG) must be used to designate the array segment position in memory.
+* [DEF SEG](DEF-SEG) = [VARSEG](VARSEG) must be used to designate the array segment position in memory.
 * [VARPTR](VARPTR) returns the array index offset of the memory segment. Array sizes are limited to 32767 Integer elements due to the use of [VARPTR](VARPTR) in QBasic and **QB64**'s emulated conventional memory.
 * [BSAVE](BSAVE) files can later be opened with [BLOAD](BLOAD).
 
 ## Example(s)
 
-*Example 1:* Saving array data to a file quickly.
+Saving array data to a file quickly.
 
 ```vb
 
@@ -41,7 +41,7 @@ DEF SEG
 
 > *Explanation:* Procedure determines the filesize from the array size automatically. [LBOUND](LBOUND) is used with [UBOUND](UBOUND) to determine array size and byte size. Works with any type of array except variable-length strings. Used for saving program data fast.
 
-*Example 2:* [BSAVE](BSAVE)ing a bitmap and calculating the file size
+[BSAVE](BSAVE)ing a bitmap and calculating the file size
 
 ```vb
 
@@ -58,7 +58,7 @@ DEF SEG
 
 > *Explanation:* The [FOR...NEXT](FOR...NEXT) loop reads backwards through the image array until it finds a value not 0. The [LONG](LONG) ArraySize& value is doubled and 200 is added. BMPhead.PWidth and BMPhead.PDepth are found by reading the bitmap's information header using a [TYPE](TYPE) definition. See [Bitmaps](Bitmaps).
 
-*Example 3:* Using [PUT](PUT) and [GET](GET) to write and read array data from a file without using BSAVE or [BLOAD](BLOAD):
+Using [PUT](PUT) and [GET](GET) to write and read array data from a file without using BSAVE or [BLOAD](BLOAD):
 
 ```vb
 

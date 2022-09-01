@@ -6,17 +6,17 @@ The **POKE** statement sets the value of a specified memory address offset. **QB
 
 * Writes a value to the *segment_offset* address in memory.
 * POKE can only be used to set a value from 0 to 255 (one byte).
-* A segment should be defined using [DEF SEG](DEF SEG), if you don't define a segment qbasics ordinary segment will be used.
+* A segment should be defined using [DEF SEG](DEF-SEG), if you don't define a segment qbasics ordinary segment will be used.
 * POKE sends byte values to memory areas. It does not directly access registers.
 * Important [SCREEN (statement)](SCREEN-(statement)) segments using [PEEK](PEEK) and [POKE](POKE) include &HB800 (text segment) and &HA000 (graphics segment).
-* [DEF SEG](DEF SEG) should always be used to reset the default segment when access to other memory is no longer necessary.
+* [DEF SEG](DEF-SEG) should always be used to reset the default segment when access to other memory is no longer necessary.
 * POKE is safer to use than [OUT](OUT) which could damage a PC register.
 * **Warning: DEF SEG, VARSEG , VARPTR, PEEK or POKE access QB64's emulated 16 bit conventional memory block!** 
 >  **It is highly recommended that QB64's [_MEM](_MEM) memory system be used to avoid running out of memory.**
 
 ## Example(s)
 
-> *Example 1:* Turning keyboard Lock and Insert modes on and off.
+> Turning keyboard Lock and Insert modes on and off.
 
 ```vb
 
@@ -48,7 +48,7 @@ The **POKE** statement sets the value of a specified memory address offset. **QB
 
 > **Warning: The keyboard lights may NOT change so it is a good idea to restore the original settings!**
 
-*Example 2:* A small PEEK and POKE fractal program.
+A small PEEK and POKE fractal program.
 
 ```vb
 
@@ -64,7 +64,7 @@ DEF SEG
 
 ``` 
 
-*Example 3:* Highlighting a row of text in Screen 0
+Highlighting a row of text in Screen 0
 
 ```vb
 

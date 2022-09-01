@@ -13,7 +13,7 @@ The **SHARED** statement allows variables to be passed automatically to any [SUB
 
 ## Example(s)
 
-*Example 1:* Defining variable types with [AS](AS) or type suffixes.
+Defining variable types with [AS](AS) or type suffixes.
 
 ```vb
 

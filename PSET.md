@@ -32,7 +32,7 @@ DRAW "U20 R20 D20 L20"
 
 > *Screen results:* A drawn box that is bright red.
 
-*Example 2:* Magnifying a box portion of a Mandelbrot image with PSET
+Magnifying a box portion of a Mandelbrot image with PSET
 
 ```vb
 

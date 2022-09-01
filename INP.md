@@ -12,7 +12,7 @@
 
 ## Example(s)
 
-*Example 1:* Reading the current RGB color settings used in a bitmap to an array.
+Reading the current RGB color settings used in a bitmap to an array.
 
 ```vb
 

@@ -24,7 +24,7 @@ The [CIRCLE](CIRCLE) statement is used in graphic [SCREEN (statement)](SCREEN-(s
 
 ## Example(s)
 
-*Example 1:* Finding when the mouse is inside of a circular area:
+Finding when the mouse is inside of a circular area:
 
 ```vb
 

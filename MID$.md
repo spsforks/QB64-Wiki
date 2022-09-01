@@ -23,7 +23,7 @@ The [MID$](MID$) function returns a portion of a [STRING](STRING).
 
 ## Example(s)
 
-*Example 1:* Getting the hour and minutes from [TIME$](TIME$)
+Getting the hour and minutes from [TIME$](TIME$)
 
 ```vb
 

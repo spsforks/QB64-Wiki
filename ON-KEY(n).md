@@ -23,7 +23,7 @@ The [ON KEY(n)](ON-KEY(n)) statement defines a line number or label to go to (or
 
 ## Example(s)
 
-*Example 1:* Using ON KEY with [GOSUB](GOSUB) to execute code.
+Using ON KEY with [GOSUB](GOSUB) to execute code.
 
 ```vb
 
@@ -39,7 +39,7 @@ RETURN
 
 ```
 
-*Example 2:* Setting multiple ON KEY statements to send different values to a [SUB](SUB) procedure.
+Setting multiple ON KEY statements to send different values to a [SUB](SUB) procedure.
 
 ```vb
   

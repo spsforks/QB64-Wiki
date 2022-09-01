@@ -20,7 +20,7 @@ The [FILES](FILES) statement is used to print a list of files in the current dir
 
 ## Example(s)
 
-*Example 1:* Finding a list of all BAS files in the current folder. 
+Finding a list of all BAS files in the current folder. 
 
 ```vb
 

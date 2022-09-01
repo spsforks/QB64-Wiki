@@ -1,17 +1,14 @@
 The [_CINP](_CINP) function returns keyboard key press codes from a [$CONSOLE]($CONSOLE) window. Windows-only.
 
-
 ## Syntax
 
 > keycode& = [_CINP](_CINP)
 
-
 ## Description
 
 * Return values are the same as the ones for [INP](INP) when used to read keyboard input. See table below.
-> * **Negative** [LONG](LONG) values returned indicate that a key was released or a lock function key has been turned off.
-* [Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions](Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions).
-
+  * **Negative** [LONG](LONG) values returned indicate that a key was released or a lock function key has been turned off.
+* [Keywords currently not supported](Keywords_currently_not_supported_by_QB64).
 
 ```text
 
@@ -33,11 +30,9 @@ The [_CINP](_CINP) function returns keyboard key press codes from a [$CONSOLE]($
 
 ```
 
-
-
 ## Example(s)
 
-*Example 1:* Reading individual key strokes from a console window (Windows).
+Reading individual key strokes from a console window (Windows).
 
 ```vb
 
@@ -58,14 +53,8 @@ END
 
 ```
 
-
 ## See Also
 
 * [$CONSOLE]($CONSOLE), [_CONSOLE](_CONSOLE)
 * [_CONSOLEINPUT](_CONSOLEINPUT)
 * [_MOUSEX](_MOUSEX), [_MOUSEY](_MOUSEY), [_MOUSEBUTTON](_MOUSEBUTTON), [_MOUSEWHEEL](_MOUSEWHEEL)
-
-
-
-
-

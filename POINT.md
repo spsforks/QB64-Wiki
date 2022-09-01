@@ -39,7 +39,7 @@ Graphic cursor position syntax:
 * The [INTEGER](INTEGER) color attributes returned are limited by the number of colors in the legacy SCREEN mode used.
 * *Column* and *row* [INTEGER](INTEGER) parameters denote the graphic pixel coordinate to read.
 * In **QB64** the offscreen or off image value returned is -1. Use IF POINT(x, y) <> -1 THEN...
-* In QBasic the coordinates MUST be on the screen or an [ERROR Codes](ERROR Codes) will occur. 
+* In QBasic the coordinates MUST be on the screen or an [ERROR Codes](ERROR-Codes) will occur. 
 
 **POINT in QB64 32 Bit Graphic [_NEWIMAGE](_NEWIMAGE) or [_LOADIMAGE](_LOADIMAGE) Modes:**
 
@@ -51,7 +51,7 @@ Graphic cursor position syntax:
 
 ## Example(s)
 
-*Example 1:* How [_RGB](_RGB) 32 bit values return [DOUBLE](DOUBLE) or [_UNSIGNED](_UNSIGNED) [LONG](LONG) values in QB64.
+How [_RGB](_RGB) 32 bit values return [DOUBLE](DOUBLE) or [_UNSIGNED](_UNSIGNED) [LONG](LONG) values in QB64.
 
 ```vb
 
@@ -78,7 +78,7 @@ _RGB OK
 
 ```
 
-*Example 2:* Using a [POINT](POINT) mouse routine to get the 32 bit color values of the image.
+Using a [POINT](POINT) mouse routine to get the 32 bit color values of the image.
 
 ```vb
 
@@ -152,5 +152,5 @@ END
 * [_MEMIMAGE](_MEMIMAGE), [_MEMGET](_MEMGET)
 * [PSET](PSET), [PRESET](PRESET)
 * [SCREEN](SCREEN), [SCREEN (function)](SCREEN-(function)) (text pointer function)
-* [GET (graphics statement)](GET (graphics statement)), [PUT (graphics statement)](PUT (graphics statement))
+* [GET (graphics statement)](GET-(graphics-statement)), [PUT (graphics statement)](PUT-(graphics-statement))
 * [Bitmaps](Bitmaps), [Creating Sprite Masks](Creating-Sprite-Masks), [Text Using Graphics](Text-Using-Graphics) (Demo)

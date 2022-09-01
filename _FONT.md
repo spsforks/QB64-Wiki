@@ -1,38 +1,32 @@
 The [_FONT](_FONT) statement sets the current [_LOADFONT](_LOADFONT) function font handle to be used by [PRINT](PRINT). 
 
-
 ## Syntax
 
->  [_FONT](_FONT) fontHandle&[, imageHandle&]
-
+> [_FONT](_FONT) fontHandle&[, imageHandle&]
 
 ## Parameter(s)
 
-* fontHandle& is the handle retrieved from [_LOADFONT](_LOADFONT) function, the [_FONT (function)](_FONT (function)) function, or a predefined handle.
+* fontHandle& is the handle retrieved from [_LOADFONT](_LOADFONT) function, the [_FONT (function)](_FONT-(function)) function, or a predefined handle.
 * If the image handle is omitted the current image [_DEST](_DEST)ination is used. Zero can designate the current program [SCREEN](SCREEN).
-
 
 ## Description
 
 * Predefined **QB64** font handle numbers can be used before freeing a font:
-****_FONT 8 ** - default font for [SCREEN (statement)](SCREEN (statement)) 1, 2, 7, 8 or 13
-****_FONT 14** - default font for [SCREEN (statement)](SCREEN (statement)) 9 or 10
-****_FONT 16** - default font for [SCREEN (statement)](SCREEN (statement)) 0 ([WIDTH](WIDTH) 80, 25 text only), 11 or 12
-****_FONT 9, 15** and **17** are the double width versions of 8, 14 and 16 respectively in text **SCREEN 0 only**.
+  * **_FONT 8** - default font for [SCREEN (statement)](SCREEN-(statement)) 1, 2, 7, 8 or 13
+  * **_FONT 14** - default font for [SCREEN (statement)](SCREEN-(statement)) 9 or 10
+  * **_FONT 16** - default font for [SCREEN (statement)](SCREEN-(statement)) 0 ([WIDTH](WIDTH) 80, 25 text only), 11 or 12
+  * **_FONT 9, 15** and **17** are the double width versions of 8, 14 and 16 respectively in text **SCREEN 0 only**.
 * [Unicode](Unicode) characters can be assigned to a monospace font that contains those unicode characters using the [_MAPUNICODE](_MAPUNICODE) TO [ASCII](ASCII) mapping statement. The optional **IME cyberbit.ttf** font included with QB64 can also be used.
 * Can alpha blend a font with a background screen created by [_NEWIMAGE](_NEWIMAGE) in 32 bit color.
 * **Check for valid handle values greater than 0 before using or freeing font handles.**
-* Free **unused** font handles with [_FREEFONT](_FREEFONT). Freeing invalid handles will create an [ERROR Codes](ERROR Codes) error.
+* Free **unused** font handles with [_FREEFONT](_FREEFONT). Freeing invalid handles will create an [ERROR Codes](ERROR-Codes) error.
 * **NOTE: SCREEN 0 can only use one font type and style per viewed SCREEN page. Font size may also affect the window size.**
 
-
 ## Example(s)
 
-## Example(s)
- Previewing a font in SCREEN 0. A different true type font can be substituted below. 
+Previewing a font in SCREEN 0. A different true type font can be substituted below. 
 
 ```vb
-
 
 fontpath$ = ENVIRON$("SYSTEMROOT") + "\fonts\lucon.ttf" 'Find Windows Folder Path.
 DO: CLS
@@ -71,20 +65,13 @@ IF font& > 0 THEN
 END IF
 RETURN
 
-
 ```
+
 **NOTE:** [ENVIRON$](ENVIRON$)("SYSTEMROOT") returns a string value of: "C:\WINDOWS". Add the "\FONTS\" folder and the **.TTF** font file name.
-
-
-
 
 ## See Also
 
-* [_FONT (function)](_FONT (function))
+* [_FONT (function)](_FONT-(function))
 * [_LOADFONT](_LOADFONT), [_FREEFONT](_FREEFONT)
 * [Unicode](Unicode), [_MAPUNICODE](_MAPUNICODE)
-* [Windows_Libraries#Font_Dialog_Box](Windows_Libraries#Font_Dialog_Box)
-
-
-
-
+* [Windows Libraries](Windows-Libraries)

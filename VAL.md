@@ -8,7 +8,7 @@ The [VAL](VAL) Function returns the decimal numerical equivalent value of a [STR
 
 * VAL converts string numbers to numerical values including decimal point values and prefixed "[&H](&H)" hexadecimal, "[&O](&O)" octal. 
 * VAL conversion stops at non-numeric characters except for letter "D" or "E" exponential notation values.
-> String values with "D" and "E" letters between numbers may be converted also! EX: **VAL("9D4") <nowiki>=</nowiki> 90000**
+> String values with "D" and "E" letters between numbers may be converted also! EX: **VAL("9D4") = 90000**
 * If the first string character is not a number VAL returns 0. VAL may return erratic values with "%" or "&" starting characters. 
 * Hexadecimal [HEX$](HEX$) string values with the "[&H](&H)" prefix can be converted to a decimal value with digits 0 to 9 and letters A to F, like; dec = VAL("&H"+hexvar$). 
 * Octal [OCT$](OCT$) string values with the "[&O](&O)" prefix can be converted to a decimal value with digits from 0 to 7 only.
@@ -18,7 +18,7 @@ The [VAL](VAL) Function returns the decimal numerical equivalent value of a [STR
 
 ## Example(s)
 
-*Example 1:* Differences in values returned with QBasic and QB64:
+Differences in values returned with QBasic and QB64:
 
 ```vb
 

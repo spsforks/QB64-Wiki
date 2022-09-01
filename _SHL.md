@@ -1,10 +1,8 @@
 The [_SHL](_SHL) function is used to shift the bits of a numerical value to the left.
 
-
 ## Syntax
 
 > result = [_SHL](_SHL)(numericalVariable, numericalValue)
-
 
 ## Parameter(s)
 
@@ -13,24 +11,20 @@ The [_SHL](_SHL) function is used to shift the bits of a numerical value to the 
 * numericalValue is the number of places to shift the bits.
 * While 0 is a valid value it will have no affect on the variable being shifted.
 
-
 ## Description
 
 * Allows for multiplication of a value by 2 faster than normal multiplication (see example 2 below).
 * Bits that reach the end of a variable's bit count are dropped (when using a variable of the same type - otherwise they will carry over).
 * The type of variable used to store the results should match the type of the variable being shifted.
 
-
 ## Availability
 
 * **Version 1.3 and up**.
 
-
 ## Example(s)
 
-*Example 1:*
-
 ```vb
+
 A~%% = 1 'set right most bit of an_UNSIGNED _BYTE
 PRINT A~%%
 PRINT _SHL(A~%%,7)
@@ -41,16 +35,11 @@ PRINT B~%%
 
 ```text
 
-
  1
  128
  0
 
 ```
-
-
-
-*Example 2:*
 
 ```vb
 
@@ -62,7 +51,6 @@ NEXT I%%
 ```
 
 ```text
-
 
    1
    2
@@ -77,13 +65,9 @@ NEXT I%%
 ```
 
 * Note: When directly [PRINT](PRINT)ing to screen, the result is calculated internally using a larger variable type so the left most bit is carried to the next value.
-** To avoid this store the result in a variable of the same type before printing.
+  * To avoid this store the result in a variable of the same type before printing.
 
 ## See Also
 
 * [_SHR](_SHR), [INTEGER](INTEGER), [LONG](LONG)
 * [_BYTE](_BYTE), [_INTEGER64](_INTEGER64)
-
-
-
-

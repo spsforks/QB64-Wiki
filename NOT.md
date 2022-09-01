@@ -15,7 +15,7 @@ MISSING: Relational Table
 
 ## Example(s)
 
-*Example 1:* Alternating between two conditions in a program loop.
+Alternating between two conditions in a program loop.
 
 ```vb
 DO
@@ -28,7 +28,7 @@ LOOP UNTIL k$ = CHR$(27) ' escape key quit
 
 ```
 
-*Example 2:* Reading a file until it reaches the End Of File.
+Reading a file until it reaches the End Of File.
 
 ```vb
 DO WHILE NOT EOF(1) 
@@ -39,7 +39,7 @@ LOOP
 
 > *Explanation:* [EOF](EOF) will return 0 until a file ends. NOT converts 0 to -1 so that the loop continues to run. When EOF becomes -1, NOT converts it to 0 to end the loop.
 
-*Example 3:* So why does **NOT 5 = -6**? Because NOT changes every bit of a value into the opposite:
+So why does **NOT 5 = -6**? Because NOT changes every bit of a value into the opposite:
 
 ```vb
 

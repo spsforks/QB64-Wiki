@@ -1,10 +1,8 @@
 The [_BUTTON](_BUTTON) function returns -1 when specified button number on a controller device is pressed.
 
-
 ## Syntax
 
->  press%% = [_BUTTON](_BUTTON)(button_number%)
-
+> press%% = [_BUTTON](_BUTTON)(button_number%)
 
 ## Description
 
@@ -13,11 +11,9 @@ The [_BUTTON](_BUTTON) function returns -1 when specified button number on a con
 * **The number of [_DEVICES](_DEVICES) must be read before using [_DEVICE$](_DEVICE$), [_DEVICEINPUT](_DEVICEINPUT) or [_LASTBUTTON](_LASTBUTTON).**
 * **Note:** The number 2 button is the center button in this device configuration. Center is also designated as [_MOUSEBUTTON](_MOUSEBUTTON)(3).
 
-
 ## Example(s)
 
-## Example(s)
- Reading multiple controller device buttons, axis and wheels.
+Reading multiple controller device buttons, axis and wheels.
 
 ```vb
 
@@ -45,8 +41,7 @@ LOOP UNTIL INKEY$ = CHR$(27) 'escape key exit
 END 
 
 ```
->  *Note:* When there is no device control to read, a [FOR...NEXT](FOR...NEXT) n = 1 TO 0 loop will not run thus avoiding a control function read error.
-
+> *Note:* When there is no device control to read, a [FOR...NEXT](FOR...NEXT) n = 1 TO 0 loop will not run thus avoiding a control function read error.
 
 ## See Also
 
@@ -54,8 +49,4 @@ END
 * [_AXIS](_AXIS), [_WHEEL](_WHEEL), [_BUTTONCHANGE](_BUTTONCHANGE)
 * [_DEVICE$](_DEVICE$), [_DEVICES](_DEVICES)
 * [_MOUSEBUTTON](_MOUSEBUTTON)
-* [Controller Devices](Controller Devices)
-
-
-
-
+* [Controller Devices](Controller-Devices)

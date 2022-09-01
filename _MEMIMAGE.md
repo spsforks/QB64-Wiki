@@ -1,16 +1,13 @@
 The [_MEMIMAGE](_MEMIMAGE) function returns a [_MEM](_MEM) value referring to an image's memory using a designated image handle.
 
-
 ## Syntax
 
->  imageBlock = [_MEMIMAGE](_MEMIMAGE)[(imageHandle&)]
-
+> imageBlock = [_MEMIMAGE](_MEMIMAGE)[(imageHandle&)]
 
 ## Parameter(s)
 
 * The imageBlock [_MEM](_MEM) type variable holds the read-only elements .OFFSET, .SIZE, .TYPE and .ELEMENTSIZE.
 * If the optional imageHandle& isn't passed, it is assumed to be the current [_DEST](_DEST)ination program screen image. 
-
 
 ## Description
 
@@ -18,10 +15,9 @@ The [_MEMIMAGE](_MEMIMAGE) function returns a [_MEM](_MEM) value referring to an
 * All values created by this function must be freed using [_MEMFREE](_MEMFREE) with a valid [_MEM](_MEM) [type](type) variable.
 * Image handle values and the memory used must still be freed using [_FREEIMAGE](_FREEIMAGE) when no longer required.
 
-
 ## Example(s)
 
-*Example 1:* Darkening an image using memory with [$CHECKING]($CHECKING):OFF for greater speed. Use any 24 bit image file name on the second code line.
+Darkening an image using memory with [$CHECKING]($CHECKING):OFF for greater speed. Use any 24 bit image file name on the second code line.
 
 ```vb
 
@@ -57,11 +53,10 @@ _MEMFREE Buffer
 END SUB 
 
 ```
-Code by Galleon
->  *Explanation:* The second value passed to DarkenImage is a value from 0.0 to 1.0 where 0.0 is full darkness and 1 is none.
 
+> *Explanation:* The second value passed to DarkenImage is a value from 0.0 to 1.0 where 0.0 is full darkness and 1 is none.
 
-*Example 2:* Reading information stored in an image with [_MEMIMAGE](_MEMIMAGE) to print [ASC](ASC) text characters to the screen.
+Reading information stored in an image with [_MEMIMAGE](_MEMIMAGE) to print [ASC](ASC) text characters to the screen.
 
 ```vb
 
@@ -87,8 +82,8 @@ PRINT x1$ 'prints HELLO WORLD
 END 
 
 ```
->  *Notes:* The colors in the upper left corner are the text data used. An image could hold a hidden text message this way.
 
+> *Notes:* The colors in the upper left corner are the text data used. An image could hold a hidden text message this way.
 
 ## See Also
 
@@ -97,7 +92,3 @@ END
 * [_MEMGET](_MEMGET), [_MEMPUT](_MEMPUT)
 * [_MEMFREE](_MEMFREE)
 * [$CHECKING]($CHECKING)
-
-
-
-

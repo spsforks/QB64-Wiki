@@ -1,16 +1,13 @@
 The [_SNDRAW](_SNDRAW) statement plays sound wave sample frequencies created by a program. 
 
-
 ## Syntax
 
->  [_SNDRAW](_SNDRAW) leftSample[, rightSample][, pipeHandle&]
-
+> [_SNDRAW](_SNDRAW) leftSample[, rightSample][, pipeHandle&]
 
 ## Parameter(s)
 
 * The leftSample and rightSample value(s) can be any [SINGLE](SINGLE) or [DOUBLE](DOUBLE) literal or variable frequency value from -1.0 to 1.0.
 * The pipeHandle& parameter refers to the sound pipe opened using [_SNDOPENRAW](_SNDOPENRAW). 
-
 
 ## Description
 
@@ -23,10 +20,9 @@ The [_SNDRAW](_SNDRAW) statement plays sound wave sample frequencies created by 
 * [_SNDRATE](_SNDRATE) determines how many samples are played per second, but timing is done by the sound card, not your program. 
 * **Do not attempt to use [_TIMER](_TIMER) or [_DELAY](_DELAY) or [_LIMIT](_LIMIT) to control the timing of _SNDRAW. You may use them for delays or to limit your program's CPU usage, but how much to queue should only be based on the [_SNDRAWLEN](_SNDRAWLEN).**
 
-
 ## Example(s)
 
-*Example 1:* Sound using a sine wave with _SNDRAW Amplitude * SIN(8 * ATN(1) * Duration * (Frequency / _SNDRATE))
+Sound using a sine wave with _SNDRAW Amplitude * SIN(8 * ATN(1) * Duration * (Frequency / _SNDRATE))
 
 ```vb
 
@@ -43,13 +39,13 @@ DO: LOOP WHILE _SNDRAWLEN
 END 
 
 ```
-<sub>Code by DarthWho</sub>
+
 > *Explanation:* The loop Duration is determined by the number of seconds times the [_SNDRATE](_SNDRATE) number of samples per second. Square waves can use the same formula with Amplitude * [SGN](SGN)(SIN(8 * ATN(1) * Duration * (Frequency/_SNDRATE))).
 
-
-*Example 2:* A simple ringing bell tone that tapers off.
+A simple ringing bell tone that tapers off.
 
 ```vb
+
 t = 0
 tmp$ = "Sample = ##.#####   Time = ##.#####"
 LOCATE 1, 60: PRINT "Rate:"; _SNDRATE
@@ -71,10 +67,8 @@ LOOP
 END 
 
 ```
-<sub>Code by Artelius (responsible for the implementation of _SNDRAW)</sub>
 
-
-*Example 3:* Routine uses _SNDRAW to display and play 12 notes from octaves 1 through 9.
+Routine uses _SNDRAW to display and play 12 notes from octaves 1 through 9.
 
 ```vb
 
@@ -111,8 +105,6 @@ DO: LOOP WHILE _SNDRAWLEN   'flush the sound playing buffer
 END SUB 
 
 ```
-<sub>Code by CodeGuy</sub>
-
 
 ## See Also
 
@@ -121,8 +113,4 @@ END SUB
 * [_SNDOPEN](_SNDOPEN)
 * [PLAY](PLAY), [BEEP](BEEP)
 * Music Frequency table in [SOUND](SOUND).
-* [DTMF Phone Demo](DTMF Phone Demo)
-
-
-
-
+* [DTMF Phone Demo](DTMF-Phone-Demo)

@@ -34,7 +34,7 @@ STICK(3) returns row coordinate of device 2 if used. (QBasic maximum was 2 contr
 
 ## Example(s)
 
-*Example 1:* Displays the input from 3 joysticks, all with dual sticks and 3 buttons.
+Displays the input from 3 joysticks, all with dual sticks and 3 buttons.
 
 ```vb
 

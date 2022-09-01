@@ -19,7 +19,7 @@
 
 ## Example(s)
 
-*Example 1:* QBasic signed integers were limited from -32768 to 32767, but could not exceed 32767 or it would error:
+QBasic signed integers were limited from -32768 to 32767, but could not exceed 32767 or it would error:
 
 ```vb
 

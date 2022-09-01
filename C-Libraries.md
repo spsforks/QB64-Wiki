@@ -98,7 +98,7 @@ END DECLARE
 
 ```
 
-*Example 1:* How to use the SUB **memmove** to transfer [TYPE](TYPE) data when using Libraries.
+How to use the SUB **memmove** to transfer [TYPE](TYPE) data when using Libraries.
 
 ```vb
 
@@ -131,7 +131,7 @@ PRINT d(10).c
 
 > *Explanation:* When a [TYPE](TYPE) variable is moved to another variable or array index, all [TYPE](TYPE) dot values are moved with it.
 
-*Example 2:* Creating different **memset** functions for each variable type to be used.
+Creating different **memset** functions for each variable type to be used.
 
 ```vb
 
@@ -200,7 +200,7 @@ PRINT bitcast##(swap_endian(Value&))
 
 ## Fast Math
 
-**Fastmath.h** header file. Library to speed up program calculations. Use with [DECLARE LIBRARY](DECLARE LIBRARY) "Fastmath"
+**Fastmath.h** header file. Library to speed up program calculations. Use with [DECLARE LIBRARY](DECLARE-LIBRARY) "Fastmath"
 
 ```text
 
@@ -859,7 +859,7 @@ long Misc_UnSetRMBit(long x)
 
 **[Latest Fast Math Update](http://dl.dropbox.com/u/12359848/fastmath.h)**
 
-*Example 1:* Using **trailzcount** to speed up the process of finding the prime factors of a number.
+Using **trailzcount** to speed up the process of finding the prime factors of a number.
 
 ```vb
 
@@ -887,7 +887,7 @@ PRINT
 
 ```
 
-*Example 2:* Using **parity** to detect single bit errors simulated using **unsetrmbit**.
+Using **parity** to detect single bit errors simulated using **unsetrmbit**.
 
 ```vb
 
@@ -924,6 +924,6 @@ NEXT
 ## See Also
 
 * [DECLARE LIBRARY](DECLARE-LIBRARY), [BYVAL](BYVAL)
-* [_OFFSET](_OFFSET), [_OFFSET (function)](_OFFSET (function)) (lp, ptr and p names)
+* [_OFFSET](_OFFSET), [_OFFSET (function)](_OFFSET-(function)) (lp, ptr and p names)
 * [DLL Libraries](DLL-Libraries), [Windows Libraries](Windows-Libraries)
 * [Libraries#C++_Variable_Types](Libraries#C++_Variable_Types)

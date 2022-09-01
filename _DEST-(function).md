@@ -1,10 +1,8 @@
 The [_DEST](_DEST) function returns the handle value of the current write page (the image used for drawing).
 
-
 ## Syntax
 
 > result& = [_DEST](_DEST)
-
 
 ## Description
 
@@ -13,13 +11,8 @@ The [_DEST](_DEST) function returns the handle value of the current write page (
 * Keep the _NEWIMAGE handle values when you move to another SCREEN mode so that you can return to that screen later. You can go to another screen mode and return without having to redo the screen. 
 * [_DEST](_DEST) return values do not change in legacy screen modes. The value will not help restore them.
 
-
 ## See Also
 
 * [_DEST](_DEST)
-* [_SOURCE (function)](_SOURCE (function))
+* [_SOURCE (function)](_SOURCE-(function))
 * [SCREEN](SCREEN)
-
-
-
-

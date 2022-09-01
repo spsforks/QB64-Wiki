@@ -17,7 +17,7 @@ The [COS](COS) function returns the horizontal component or the cosine of an ang
 
 ## Example(s)
 
-*Example 1:* Converting degree angles to radians for QBasic's trig functions and drawing the line at the angle.
+Converting degree angles to radians for QBasic's trig functions and drawing the line at the angle.
 
 ```vb
 

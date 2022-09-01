@@ -33,7 +33,7 @@ A [FUNCTION](FUNCTION) block statement is used to create a function procedure to
 
 ## Example(s)
 
-*Example 1:* A simple function that returns the current path. Place [FUNCTION](FUNCTION) or [SUB](SUB) procedures after the program [END](END).
+A simple function that returns the current path. Place [FUNCTION](FUNCTION) or [SUB](SUB) procedures after the program [END](END).
 
 ```vb
 
@@ -52,7 +52,7 @@ END FUNCTION
 
 ```
 
-*Example 1:* Returns a [LONG](LONG) array byte size required for a certain sized graphics screen pixel area [GET (graphics statement)](GET-(graphics-statement)).
+Returns a [LONG](LONG) array byte size required for a certain sized graphics screen pixel area [GET (graphics statement)](GET-(graphics-statement)).
 
 ```vb
 

@@ -21,7 +21,7 @@ The [_TITLE](_TITLE) statement provides the program name in the title bar of the
 
 ## Example(s)
 
-*Example 1:* How to create the window title bar.
+How to create the window title bar.
 
 ```vb
 
@@ -30,7 +30,7 @@ _TITLE "My New Program"
 ```
 
 
-*Example 2:* How to find the currently running program module name and current path using a Windows API Library.
+How to find the currently running program module name and current path using a Windows API Library.
 
 ```vb
 

@@ -12,7 +12,7 @@
 
 ## Example(s)
 
-*Example 1:* How VARPTR$ reads consecutive values from memory.
+How VARPTR$ reads consecutive values from memory.
 
 ```vb
 

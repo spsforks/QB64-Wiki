@@ -72,21 +72,21 @@ NEXT
 
 Attribute  Hex value      Red        Green       Blue 
 
-COLOR 1 <nowiki>=</nowiki> &HFF0000A8       00         00         A8
-COLOR 2 <nowiki>=</nowiki> &HFF00A800       00         A8         00
-COLOR 3 <nowiki>=</nowiki> &HFF00A8A8       00         A8         A8
-COLOR 4 <nowiki>=</nowiki> &HFFA80000       A8         00         00
-COLOR 5 <nowiki>=</nowiki> &HFFA800A8       A8         00         A8
-COLOR 6 <nowiki>=</nowiki> &HFFA85400       A8         54         00
-COLOR 7 <nowiki>=</nowiki> &HFFA8A8A8       A8         A8         A8
-COLOR 8 <nowiki>=</nowiki> &HFF545454       54         54         54
-COLOR 9 <nowiki>=</nowiki> &HFF5454FC       54         54         FC
-COLOR 10 <nowiki>=</nowiki> &HFF54FC54      54         FC         54
-COLOR 11 <nowiki>=</nowiki> &HFF5454FC      54         FC         FC
-COLOR 12 <nowiki>=</nowiki> &HFFFC5454      FC         54         54
-COLOR 13 <nowiki>=</nowiki> &HFFFC54FC      FC         54         FC
-COLOR 14 <nowiki>=</nowiki> &HFFFCFC54      FC         FC         54
-COLOR 15 <nowiki>=</nowiki> &HFFFCFCFC      FC         FC         FC
+COLOR 1 = &HFF0000A8       00         00         A8
+COLOR 2 = &HFF00A800       00         A8         00
+COLOR 3 = &HFF00A8A8       00         A8         A8
+COLOR 4 = &HFFA80000       A8         00         00
+COLOR 5 = &HFFA800A8       A8         00         A8
+COLOR 6 = &HFFA85400       A8         54         00
+COLOR 7 = &HFFA8A8A8       A8         A8         A8
+COLOR 8 = &HFF545454       54         54         54
+COLOR 9 = &HFF5454FC       54         54         FC
+COLOR 10 = &HFF54FC54      54         FC         54
+COLOR 11 = &HFF5454FC      54         FC         FC
+COLOR 12 = &HFFFC5454      FC         54         54
+COLOR 13 = &HFFFC54FC      FC         54         FC
+COLOR 14 = &HFFFCFC54      FC         FC         54
+COLOR 15 = &HFFFCFCFC      FC         FC         FC
 
 ```
 
@@ -100,7 +100,7 @@ COLOR 15 <nowiki>=</nowiki> &HFFFCFCFC      FC         FC         FC
 
 > **OUT &H3C7, attribute** 'Set port to read RGB settings with:
 
-> **color_intensity <nowiki>=</nowiki> INP(&H3C9)** 'reads present intensity setting
+> **color_intensity = INP(&H3C9)** 'reads present intensity setting
  
 > **OUT &H3C8, attribute** 'Set port to write RGB settings with:
 
@@ -112,7 +112,7 @@ COLOR 15 <nowiki>=</nowiki> &HFFFCFCFC      FC         FC         FC
 
 ## Example(s)
 
-*Example 1:* Reading the default RGB color settings of color attribute 15.
+Reading the default RGB color settings of color attribute 15.
 
 ```vb
 

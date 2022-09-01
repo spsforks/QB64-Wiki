@@ -4,7 +4,7 @@
 
 * True evaluations return -1. [NOT](NOT) 0 = -1 in Basic. Can be used to increment a value.
 * For positive True results, subtract it, multiply it by a negative value or use [ABS](ABS).
-* False evaluations return 0. Watch out for [ERROR Codes](ERROR Codes)!
+* False evaluations return 0. Watch out for [ERROR Codes](ERROR-Codes)!
 
 MISSING: Relational Table
 
@@ -21,7 +21,7 @@ MISSING: Logical Truth Table
 * Parenthesis are allowed inside of boolean statements to clarify an evaluation.
 * **Note that Basic returns -1 for True and 0 for False.**
 
-*Example 1:* Using 2 different boolean evaluations to determine a leap year.
+Using 2 different boolean evaluations to determine a leap year.
 
 ```vb
 
@@ -47,7 +47,7 @@ Entry year = 1900
 
 >  leap2 = (-1) - (-1) + (0) = -1 + 1 + 0 = 0
 
-*Example 2:* Moving an [ASCII](ASCII) character using the arrow keys and boolean statements to determine the new coordinate.
+Moving an [ASCII](ASCII) character using the arrow keys and boolean statements to determine the new coordinate.
 
 ```vb
 

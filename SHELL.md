@@ -29,7 +29,7 @@ The [SHELL](SHELL) statement allows a program to run external programs or comman
 
 ## Example(s)
 
-*Example 1:* When working with file or folder names with spaces, add quotation marks around the path and/or file name with [CHR$](CHR$)(34).
+When working with file or folder names with spaces, add quotation marks around the path and/or file name with [CHR$](CHR$)(34).
 
 ```vb
 

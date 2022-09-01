@@ -28,7 +28,7 @@
 
 ```
 
-*Example 1:* Changing the DAC attributes to use [OUT](OUT) for custom colors.
+Changing the DAC attributes to use [OUT](OUT) for custom colors.
 
 ```vb
 
@@ -44,7 +44,7 @@ OUT &H3C0, 32            ' close port access
 
 > *Explanation:* The procedure is a MUST to import 4 BPP bitmap colors in SCREEN 7 or 9. The InitDAC% value is not used, but that code line opens the DAC color port. Now all color attributes 0 to 15 can be used for custom or imported bitmap RGB color settings. 
 
-*Example 2:* Disabling blinking colors in fullscreen SCREEN 0 mode enabling high intensity only. ([DAC](DAC))
+Disabling blinking colors in fullscreen SCREEN 0 mode enabling high intensity only. ([DAC](DAC))
 
 ```vb
 

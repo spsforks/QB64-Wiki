@@ -366,6 +366,6 @@ Michael
 
 ## See Also
 
-* [_OFFSET](_OFFSET), [_OFFSET (function)](_OFFSET (function))
+* [_OFFSET](_OFFSET), [_OFFSET (function)](_OFFSET-(function))
 * [BYVAL](BYVAL), [_UNSIGNED](_UNSIGNED)
 * [DECLARE LIBRARY](DECLARE-LIBRARY)

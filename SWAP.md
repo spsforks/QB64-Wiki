@@ -14,7 +14,7 @@ The SWAP statement is used to exchange two variable or array element values.
 
 ## Example(s)
 
-*Example 1:* A simple SWAP of [STRING](STRING) values.
+A simple SWAP of [STRING](STRING) values.
 
 ```vb
 

@@ -1,10 +1,8 @@
 The [_PRINTWIDTH](_PRINTWIDTH) function returns the width in pixels of the text [STRING](STRING) specified.
 
-
 ## Syntax
 
->  pixelWidth% = [_PRINTWIDTH](_PRINTWIDTH)(textToPrint$[, destinationHandle&])
-
+> pixelWidth% = [_PRINTWIDTH](_PRINTWIDTH)(textToPrint$[, destinationHandle&])
 
 ## Description
 
@@ -14,11 +12,9 @@ The [_PRINTWIDTH](_PRINTWIDTH) function returns the width in pixels of the text 
 * Can be used with variable-width fonts or built-in fonts, unlike [_FONTWIDTH](_FONTWIDTH) which requires a MONOSPACE font handle.
 * In SCREEN 0, _PRINTWIDTH returns the character length of a text string, exactly as [LEN](LEN)(textToPrint$) (**version 1.000 and up**).
 
-
 ## Example(s)
 
-## Example(s)
- SUB returns font or screen mode's text block size using _PRINTWIDTH and [_FONTHEIGHT](_FONTHEIGHT) without a handle parameter.
+SUB returns font or screen mode's text block size using _PRINTWIDTH and [_FONTHEIGHT](_FONTHEIGHT) without a handle parameter.
 
 ```vb
 
@@ -44,17 +40,12 @@ TextHeight& = _FONTHEIGHT         'can measure normal text block heights also
 END SUB 
 
 ```
-<sub>Code by Ted Weissgerber</sub>
-**Note:** The SUB procedure does not need the font handle for font sizes after [_FONT](_FONT) enables one.
 
+**Note:** The SUB procedure does not need the font handle for font sizes after [_FONT](_FONT) enables one.
 
 ## See Also
 
 * [_FONTWIDTH](_FONTWIDTH), [_FONTHEIGHT](_FONTHEIGHT)
 * [_NEWIMAGE](_NEWIMAGE), [_LOADFONT](_LOADFONT)
 * [_PRINTSTRING](_PRINTSTRING), [_FONT](_FONT)
-* [Text Using Graphics](Text Using Graphics)
-
-
-
-
+* [Text Using Graphics](Text-Using-Graphics)

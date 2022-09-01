@@ -1,10 +1,8 @@
 The **_FILEEXISTS** function determines if a designated file name exists and returns true (-1) or false (0).
 
-
 ## Syntax
 
->  theFileExists% = [_FILEEXISTS](_FILEEXISTS)(filename$)
-
+> theFileExists% = [_FILEEXISTS](_FILEEXISTS)(filename$)
 
 ## Description
 
@@ -14,25 +12,19 @@ The **_FILEEXISTS** function determines if a designated file name exists and ret
 * The function will use the appropriate Operating System path separators. [_OS$](_OS$) can determine the operating system.
 * **This function does not guarantee that a file can be accessed or opened, just that it exists.**
 
-
 ## Example(s)
 
-Example:* Checks if a file exists before opening it.
+Checks if a file exists before opening it.
 
 ```vb
 
 Cl PRINT "Settings file found."
 END IF
 
-```}}
-
+```
 
 ## See Also
 
 * [_DIREXISTS](_DIREXISTS), [_OS$](_OS$)
 * [SHELL](SHELL), [FILES](FILES)
 * [KILL](KILL)
-
-
-
-

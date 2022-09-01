@@ -25,7 +25,7 @@ The [CLS](CLS) statement clears the [_DEST](_DEST).
 
 ## Example(s)
 
-*Example 1:* Printing black text on a white background in QB64.
+Printing black text on a white background in QB64.
 
 ```vb
 

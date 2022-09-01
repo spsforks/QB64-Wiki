@@ -8,7 +8,7 @@ More than one argument or parameter are separated by commas.
 
 ## Example(s)
 
-*Example 1:* The color argument in PSET is optional
+The color argument in PSET is optional
 
 ```vb
 
@@ -18,7 +18,7 @@ PSET (165, 100), 15
 
 ```
 
-*Example 2:* Must place a comma to seperate arguments if you use any other argument after it.
+Must place a comma to seperate arguments if you use any other argument after it.
 
 ```vb
 

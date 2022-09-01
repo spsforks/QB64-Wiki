@@ -12,4 +12,4 @@ The [_SCREENICON](_SCREENICON) statement can be used to minimize the main progra
 
 * [$SCREENHIDE]($SCREENHIDE), [$SCREENSHOW]($SCREENSHOW), [$CONSOLE]($CONSOLE) (QB64 [Metacommand](Metacommand)s)
 * [_SCREENHIDE](_SCREENHIDE), [_SCREENSHOW](_SCREENSHOW), [_CONSOLE](_CONSOLE)
-* [_SCREENICON (function)](_SCREENICON (function))
+* [_SCREENICON (function)](_SCREENICON-(function))

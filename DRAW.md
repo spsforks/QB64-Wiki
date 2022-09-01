@@ -40,7 +40,7 @@ The [DRAW](DRAW) statement uses a [STRING](STRING) expression to draw lines on t
 
 ## Example(s)
 
-*Example 1:* Placing an octagon shape DRAW across the the screen using PSET.
+Placing an octagon shape DRAW across the the screen using PSET.
 
 ```vb
 

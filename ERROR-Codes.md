@@ -15,7 +15,7 @@ These errors can be triggered in QB64, and may be caught by an [ON ERROR](ON-ERR
 | 3 | RETURN without GOSUB | The [RETURN](RETURN) statement was encountered without first executing a corresponding [GOSUB](GOSUB). |
 | 4 | Out of DATA | The [READ](READ) statement has read past the end of a [DATA](DATA) block. Use [RESTORE](RESTORE) to change the current data item if necessary. |
 | 5 | Illegal function call | A function was called with invalid parameters, in the wrong graphics mode or otherwise in an illegal fashion. [Illegal Function](Illegal Function) gives some suggestions. |
-| 6 | Overflow | A numeric operation has resulted in a value beyond a variable's allowed range. See [Variable Types](Variable Types). |
+| 6 | Overflow | A numeric operation has resulted in a value beyond a variable's allowed range. See [Variable Types](Variable-Types). |
 | 7 | Out of memory | Generic out of memory condition. |
 | 9 | Subscript out of range | An [Arrays](Arrays) [UBOUND](UBOUND) or [LBOUND](LBOUND) [DIM](DIM) boundary has been exceeded. |
 | 10 | Duplicate definition | An array created with [DIM](DIM) was redefined with [DIM](DIM) or [REDIM](REDIM). |
@@ -48,8 +48,8 @@ These errors can be triggered in QB64 but will not be caught by an [ON ERROR](ON
 | 11 | Division by zero | Only relevant for integer division, and may not be caught on all operating systems. |
 | 256 | Out of stack space | Too many nested [GOSUB](GOSUB) calls. |
 | 257 | Out of memory | Generic out of memory condition. |
-| 259 | Cannot find dynamic library file | A .dll, .so or .dylib file referred to by [DECLARE LIBRARY](DECLARE LIBRARY) was not found. |
-| 260, 261 | Sub/Function does not exist in dynamic library | A function declared with [DECLARE LIBRARY](DECLARE LIBRARY) does not exist. |
+| 259 | Cannot find dynamic library file | A .dll, .so or .dylib file referred to by [DECLARE LIBRARY](DECLARE-LIBRARY) was not found. |
+| 260, 261 | Sub/Function does not exist in dynamic library | A function declared with [DECLARE LIBRARY](DECLARE-LIBRARY) does not exist. |
 | 270 | _GL command called outside of SUB _GL's scope |
 | 271 | END/SYSTEM called within SUB _GL's scope |
 | 300 | Memory region out of range | Triggrered by _MEM commands. |

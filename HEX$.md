@@ -17,7 +17,7 @@ The [HEX$](HEX$) function returns the base 16 hexadecimal representation of an [
 
 ## Example(s)
 
-*Example 1:* Comparing decimal, hexadecimal and octal string values 0 to 15.
+Comparing decimal, hexadecimal and octal string values 0 to 15.
 
 ```vb
 

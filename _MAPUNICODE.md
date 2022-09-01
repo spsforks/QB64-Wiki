@@ -2,21 +2,18 @@ The [_MAPUNICODE](_MAPUNICODE) statement maps a [Unicode](Unicode) value to an [
 
 ## Syntax
 
->  [_MAPUNICODE](_MAPUNICODE) unicode& **TO** asciiCode%
+> [_MAPUNICODE](_MAPUNICODE) unicode& **TO** asciiCode%
 
-
-* The [LONG](LONG) unicode& value is a [HEX$](HEX$) or decimal code value from a [Unicode](Unicode) [Code Pages](Code Pages). 
+* The [LONG](LONG) unicode& value is a [HEX$](HEX$) or decimal code value from a [Unicode](Unicode) [Code Pages](Code-Pages). 
 * The asciiCode% [INTEGER](INTEGER) parameter is any [ASCII](ASCII) or Extended code value from 0 to 255.
-* Use the Unicode Page Table values listed here: [http://en.wikipedia.org/wiki/Category:DOS_code_pages DOS Code Pages] or [http://unicode.org/Public/MAPPINGS/VENDORS/MICSFT/WINDOWS/ Windows Mapping]
+* Use the Unicode Page Table values listed here: [DOS Code Pages](http://en.wikipedia.org/wiki/Category:DOS_code_pages) or [Windows Mapping](http://unicode.org/Public/MAPPINGS/VENDORS/MICSFT/WINDOWS/)
 * Once the codes are mapped, key entries will display the unicode character in the **monospace ** [_FONT](_FONT) selected.
-* The [_MAPUNICODE (function)](_MAPUNICODE (function)) function can be used to verify or read the present [Unicode](Unicode) UTF32 code point settings.
+* The [_MAPUNICODE (function)](_MAPUNICODE-(function)) function can be used to verify or read the present [Unicode](Unicode) UTF32 code point settings.
 * **[_MAPUNICODE](_MAPUNICODE) can place the Unicode characters TO any [ASCII](ASCII) code space you desire (0 to 255)**.
 
-
 ## Example(s)
 
-## Example(s)
- Converting the extended [ASCII](ASCII) characters to other characters using DATA from the Unicode [Code Pages](Code Pages).
+Converting the extended [ASCII](ASCII) characters to other characters using DATA from the Unicode [Code Pages](Code-Pages).
 
 ```vb
 
@@ -48,19 +45,14 @@ DATA 945,223,915,960,931,963,181,964,934,920,937,948,8734,966,949,8745
 DATA 8801,177,8805,8804,8992,8993,247,8776,176,8729,183,8730,8319,178,9632,160 
 
 ```
->  *Note:* The Unicode data field is created by adding DATA before each line listed for the appropriate [Code Pages](Code Pages).
 
-
+> *Note:* The Unicode data field is created by adding DATA before each line listed for the appropriate [Code Pages](Code-Pages).
 
 ## See Also
 
-* [_MAPUNICODE (function)](_MAPUNICODE (function)) 
+* [_MAPUNICODE (function)](_MAPUNICODE-(function)) 
 * [ASCII](ASCII), [Unicode](Unicode), [_FONT](_FONT)
 * [_KEYHIT](_KEYHIT), [_KEYDOWN](_KEYDOWN)
 * [ASC](ASC), [INKEY$](INKEY$), [CHR$](CHR$)
-* [Code Pages](Code Pages) (by region)
-* [Text Using Graphics](Text Using Graphics)
-
-
-
-
+* [Code Pages](Code-Pages) (by region)
+* [Text Using Graphics](Text-Using-Graphics)

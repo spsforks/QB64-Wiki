@@ -1,24 +1,21 @@
 The [_PRINTIMAGE](_PRINTIMAGE) statement prints a colored image on the printer, stretching it to full paper size first.
- 
 
 ## Syntax
  
->  [_PRINTIMAGE](_PRINTIMAGE) imageHandle&
-
-
+> [_PRINTIMAGE](_PRINTIMAGE) imageHandle&
 
 * imageHandle& is created by the [_LOADIMAGE](_LOADIMAGE), [_NEWIMAGE](_NEWIMAGE) or [_COPYIMAGE](_COPYIMAGE) functions.
 * Use a white background to save ink. `[CLS](CLS) , _RGB(255, 255, 255)` can be used to set the white background in any [SCREEN](SCREEN) mode.
 * The image may be stretched disproportionately using normal screen sizes. To compensate, use a [_NEWIMAGE](_NEWIMAGE) screen that is proportional to the paper size. *e.g.* A 640 X 900 SCREEN page is roughly the same as 3 times a 210mm X 297mm paper size.
 * [_NEWIMAGE](_NEWIMAGE) or graphic screen pages can use [_PRINTSTRING](_PRINTSTRING) to print different sized text [_FONT](_FONT)s.
-* [Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions](Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions)
-
+* [Keywords currently not supported](Keywords_currently_not_supported_by_QB64)
 
 ## Example(s)
 
-*Example 1:* Shows how to transfer custom font text on screen pages to the printer in Windows. Change the font path for other OS's.
+Shows how to transfer custom font text on screen pages to the printer in Windows. Change the font path for other OS's.
 
 ```vb
+
 PageScale = 10
 PageHeight = 297 * PageScale 'A4 paper size is 210 X 297 mm
 PageWidth = 210 * PageScale
@@ -69,11 +66,10 @@ CursorPosY = CursorPosY + FontHeight            'adjust print position down
 RETURN 
 
 ```
-<sub>Code by Galleon</sub>
+
 > *Explanation:* CLS with the color white makes sure that the background is not printed a color. The PrintText [GOSUB](GOSUB) sets the [COLOR](COLOR) of the text to red with a transparent background using [_RGBA](_RGBA) to set the [_ALPHA](_ALPHA) transparency to zero or clear black.
 
-
-*Example 2:* Printing an old SCREEN 12 [ASCII](ASCII) table using a deeper sized page to prevent stretching by [_PRINTIMAGE](_PRINTIMAGE).
+Printing an old SCREEN 12 [ASCII](ASCII) table using a deeper sized page to prevent stretching by [_PRINTIMAGE](_PRINTIMAGE).
 
 ```vb
 
@@ -163,17 +159,12 @@ COLOR FG: _PRINTSTRING (Scol, Srow), CHR$(ASCode)
 END SUB 
 
 ```
-<sub>Code by Ted Weissgerber</sub>
-> *Explanation:* The [ASCII](ASCII) character table was originally made in [SCREEN](SCREEN) 12 (640 X 480) and was adapted to 256 colors.
 
+> *Explanation:* The [ASCII](ASCII) character table was originally made in [SCREEN](SCREEN) 12 (640 X 480) and was adapted to 256 colors.
 
 ## See Also
 
 * [_LOADIMAGE](_LOADIMAGE), [_NEWIMAGE](_NEWIMAGE)
 * [_COPYIMAGE](_COPYIMAGE)
 * [LPRINT](LPRINT)
-* [Windows Printer Settings](Windows Printer Settings)
-
-
-
-
+* [Windows Printer Settings](Windows-Printer-Settings)

@@ -1,14 +1,13 @@
 The [_MEM](_MEM) variable type can be used when working with memory blocks. It has no variable [type](type) suffix.
 
-
 ## Syntax
 
->   [DIM](DIM) m [AS](AS) [_MEM](_MEM)
-
+> [DIM](DIM) m [AS](AS) [_MEM](_MEM)
 
 ## Description
 
 *Variable TYPE:*
+
 * Memory DOT values are actually part of the built in memory variable [type](type) in QB64. The following [TYPE](TYPE) is built in:
 
 ```text
@@ -27,50 +26,46 @@ The above [TYPE](TYPE) is for clarification purposes only. It **doesn't need** t
 
 ```
 
-
 ### Usage
 
 * The _MEM type contains the following **read-only** elements where *name* is the _MEM variable name:
-> : *name***.OFFSET** is the current start position in the memory block AS [_OFFSET](_OFFSET). Add bytes to change position.
-> : *name***.SIZE** is the remaining size of the block at current position in bytes AS [_OFFSET](_OFFSET)
-> : *name***.TYPE** is the type (represented as bits combined to form a value) AS [LONG](LONG):
+  * *name***.OFFSET** is the current start position in the memory block AS [_OFFSET](_OFFSET). Add bytes to change position.
+  * *name***.SIZE** is the remaining size of the block at current position in bytes AS [_OFFSET](_OFFSET)
+  * *name***.TYPE** is the type (represented as bits combined to form a value) AS [LONG](LONG):
+    * TYPE values (version 1.000 and up)
+      * 0 = UDT ([TYPE](TYPE)) or memory created by [_MEMNEW](_MEMNEW)
+      * 1 = 1 bit   ELEMENT.SIZE=1   * Only used along with specific types (currently integers or floats)
+      * 2 = 2 bit. ELEMENT.SIZE=2
+      * 4 = 4 bit. ELEMENT.SIZE=4
+      * 8 = 8 bit. ELEMENT.SIZE=8
+      * 16 = 16 bit. ELEMENT.SIZE=16
+      * 32 = 32 bit. ELEMENT.SIZE=32
+      * 64 = 64 bit. ELEMENT.SIZE=64
+      * 128 = 128 bit. ELEMENT.SIZE=128
+      * 256 = 256 bit. ELEMENT.SIZE=256
+      * 512(+ bit*) = integer types only(ie. whole numbers)
+      * 1024(+ bit*) = floating point types only(ie. numbers that can have a decimal point)
+      * 2048 = [STRING](STRING) type only
+      * 4096(+ 512 + bit*) = [_UNSIGNED](_UNSIGNED) integer type only
+      * 8192 = [_MEM](_MEM) type only
+      * 16384(+ 512 + bit*)= [_OFFSET](_OFFSET) type only
 
-## .TYPE values (version 1.000 and up)
-
-> ::* 0 = UDT ([TYPE](TYPE)) or memory created by [_MEMNEW](_MEMNEW)
-> ::* 1 = 1 bit   ELEMENT.SIZE=1   *Only used along with specific types (currently integers or floats)
-> ::* 2 = 2 bit. ELEMENT.SIZE=2   *
-> ::* 4 = 4 bit. ELEMENT.SIZE=4   *
-> ::* 8 = 8 bit. ELEMENT.SIZE=8   *
-> ::* 16 = 16 bit. ELEMENT.SIZE=16  *
-> ::* 32 = 32 bit. ELEMENT.SIZE=32  *
-> ::* 64 = 64 bit. ELEMENT.SIZE=64  *
-> ::* 128 = 128 bit. ELEMENT.SIZE=128 *
-> ::* 256 = 256 bit. ELEMENT.SIZE=256 *
-> ::* 512(+ bit*) = integer types only(ie. whole numbers)
-> ::* 1024(+ bit*) = floating point types only(ie. numbers that can have a decimal point)
-> ::* 2048 = [STRING](STRING) type only
-> ::* 4096(+ 512 + bit*) = [_UNSIGNED](_UNSIGNED) integer type only
-> ::* 8192 = [_MEM](_MEM) type only
-> ::* 16384(+ 512 + bit*)= [_OFFSET](_OFFSET) type only
 *Note: If a future integer, float or other type doesn't have a size that is 1,2,4,8,16,32,64,128 or 256 it won't have a size-bit set.*
 
-### Versions prior to 1.000
-
-> ::* 1 = Integer types such as [_BYTE](_BYTE), [INTEGER](INTEGER), [LONG](LONG), [_INTEGER64](_INTEGER64) or [_OFFSET](_OFFSET)
-> ::* 2 = [_UNSIGNED](_UNSIGNED) variable types. Value must be added to the variable type value.(2 cannot be used by itself)
-> ::* 3 = ALL [_UNSIGNED](_UNSIGNED) [INTEGER](INTEGER) type values.(add 1 + 2)
-> ::* 4 = Floating point types such as [SINGLE](SINGLE), [DOUBLE](DOUBLE) or [_FLOAT](_FLOAT)
-> ::* 8 = [STRING](STRING) 
-> ::* 0 = unknown(eg. created with [_MEMNEW](_MEMNEW)) or [TYPE](TYPE)
+    * Versions prior to 1.000
+      * 1 = Integer types such as [_BYTE](_BYTE), [INTEGER](INTEGER), [LONG](LONG), [_INTEGER64](_INTEGER64) or [_OFFSET](_OFFSET)
+      * 2 = [_UNSIGNED](_UNSIGNED) variable types. Value must be added to the variable type value.(2 cannot be used by itself)
+      * 3 = ALL [_UNSIGNED](_UNSIGNED) [INTEGER](INTEGER) type values.(add 1 + 2)
+      * 4 = Floating point types such as [SINGLE](SINGLE), [DOUBLE](DOUBLE) or [_FLOAT](_FLOAT)
+      * 8 = [STRING](STRING) 
+      * 0 = unknown(eg. created with [_MEMNEW](_MEMNEW)) or [TYPE](TYPE)
 
 * **Note: [_OFFSET](_OFFSET) values cannot be cast to other variable [type](type)s reliably. _MEM is a reserved custom variable [type](type).**
-* **[_MEM (function)](_MEM (function)) cannot reference variable length [STRING](STRING) variable values. String values must be designated as a fixed-[LEN](LEN) string.**
-
+* **[_MEM (function)](_MEM-(function)) cannot reference variable length [STRING](STRING) variable values. String values must be designated as a fixed-[LEN](LEN) string.**
 
 ## Example(s)
 
-*Example 1:* Demonstration of .IMAGE to determine an image's dimensions, .TYPE to verify the type and [_MEMEXISTS](_MEMEXISTS) to check image has not been freed
+Demonstration of .IMAGE to determine an image's dimensions, .TYPE to verify the type and [_MEMEXISTS](_MEMEXISTS) to check image has not been freed
 
 ```vb
 
@@ -95,8 +90,7 @@ END IF
 
 ```
 
-
-*Example 2:* Converts the current [_DEST](_DEST) [SCREEN](SCREEN) 13 image memory altered by [PSET](PSET) to a [STRING](STRING) value. SCREEN 13 only.
+Converts the current [_DEST](_DEST) [SCREEN](SCREEN) 13 image memory altered by [PSET](PSET) to a [STRING](STRING) value. SCREEN 13 only.
 
 ```vb
 
@@ -119,14 +113,13 @@ _MEMFREE m
 
 ```text
 
-
  5
 HELLO
  5448320  6400  1
 
 ```
 
->  *Explanation:* When a numerical [_BYTE](_BYTE) value is converted to a [STRING](STRING), each byte is converted to an [ASCII](ASCII) character. The QB64 IDE will capitalize _MEM dot values.
+> *Explanation:* When a numerical [_BYTE](_BYTE) value is converted to a [STRING](STRING), each byte is converted to an [ASCII](ASCII) character. The QB64 IDE will capitalize _MEM dot values.
 
 ```text
 
@@ -135,8 +128,7 @@ HELLO
 
 ```
 
-
-*Example 3:* Using _MEM to convert _OFFSET to _INTEGER64.
+Using _MEM to convert _OFFSET to _INTEGER64.
 
 ```vb
 
@@ -163,21 +155,14 @@ _MEMFREE m 'Free the memblock
 $CHECKING:ON
 END FUNCTION
 
-
 ```
 
 *Explanation:* The above will print two numbers for us which should match.  These numbers will vary, as they're representations of where X is stored in memory, and that position is going to vary every time the program is run.  What it should illustrate, however, is a way to convert _OFFSET to _INTEGER64 values, which can sometimes be useful when trying to run calculations involving mem.SIZE, mem.TYPE, or mem.ELEMENTSIZE.
 
-
-
 ## See Also
 
-* [_MEM (function)](_MEM (function))
+* [_MEM (function)](_MEM-(function))
 * [_MEMELEMENT](_MEMELEMENT), [_MEMCOPY](_MEMCOPY)
 * [_MEMIMAGE](_MEMIMAGE), [_MEMNEW](_MEMNEW)
 * [_MEMGET](_MEMGET), [_MEMPUT](_MEMPUT)
 * [_MEMFILL](_MEMFILL), [_MEMFREE](_MEMFREE)
-
-
-
-

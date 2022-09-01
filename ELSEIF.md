@@ -34,7 +34,7 @@
 
 ## Example(s)
 
-*Example 1:* IF statement using ELSE IF in one statement line.
+IF statement using ELSE IF in one statement line.
 
 ```vb
 

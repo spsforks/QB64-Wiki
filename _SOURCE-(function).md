@@ -2,7 +2,7 @@ The [_SOURCE (function)](_SOURCE-(function)) function returns the present image 
 
 ## Syntax
 
->  currentSource& = [_SOURCE (function)](_SOURCE-(function))
+> currentSource& = [_SOURCE (function)](_SOURCE-(function))
 
 ## Description
 

@@ -300,7 +300,7 @@ FILELIST$([drive:][path][filename][/A[:]attrib](:]attrib)[/L][/O[:]sortorder](:]
                    filename$ = FILELIST$(CHR$(34) + Spec$ + CHR$(34))
 
 
- **NOTE: [LINE INPUT](LINE INPUT) allows quoted entries such as: "free cell.ico" for filenames with spaces.**
+ **NOTE: [LINE INPUT](LINE-INPUT) allows quoted entries such as: "free cell.ico" for filenames with spaces.**
 
 ```
 

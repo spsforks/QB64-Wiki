@@ -2,7 +2,7 @@ The [_SCREENSHOW](_SCREENSHOW) statement can be used to display the main program
 
 ## Syntax
 
->  [_SCREENSHOW](_SCREENSHOW)
+> [_SCREENSHOW](_SCREENSHOW)
 
 ## Description
 

@@ -1,10 +1,8 @@
 The [_ASINH](_ASINH) returns the arc hyperbolic sine of x, expressed in radians.
 
-
 ## Syntax
 
->  return_value! = [_ASINH](_ASINH)(x!)
-
+> return_value! = [_ASINH](_ASINH)(x!)
 
 ## See Also
 
@@ -17,8 +15,3 @@ The [_ASINH](_ASINH) returns the arc hyperbolic sine of x, expressed in radians.
 * [_ATAN2](_ATAN2) (Compute arc tangent with two parameters)
 * [_HYPOT](_HYPOT) (hypotenuse)
 *[Mathematical Operations](Mathematical-Operations)
-*[Mathematical Operations#Derived_Mathematical_Functions](Mathematical-Operations#Derived_Mathematical_Functions)
-
-
-
-

@@ -10,7 +10,7 @@ The [_WINDOWHANDLE](_WINDOWHANDLE) function returns the window handle assigned t
 
 * The result is an [_INTEGER64](_INTEGER64) number assigned by Windows to your running program.
 * Use it to make [Windows Libraries](Windows Libraries) that require a window handle to be passed.
-* [Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions](Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions).
+* [Keywords currently not supported](Keywords_currently_not_supported_by_QB64).
 
 
 ## Availability

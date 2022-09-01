@@ -1,17 +1,14 @@
 The [_READBIT](_READBIT) function is used to check the state of a specified bit of a integer value.
 
-
 ## Syntax
 
 > result = [_READBIT](_READBIT)(numericalVariable, numericalValue)
-
 
 ## Parameter(s)
 
 * numericalVariable is the variable to read the state of a bit of and can be of the following types: [_BYTE](_BYTE), [INTEGER](INTEGER), [LONG](LONG), or [_INTEGER64](_INTEGER64).
 * Integer values can be signed or [_UNSIGNED](_UNSIGNED).
 * numericalValue the number of the bit to be read.
-
 
 ## Description
 
@@ -23,10 +20,7 @@ The [_READBIT](_READBIT) function is used to check the state of a specified bit 
 
 * **Version 1.4 and up**.
 
-
 ## Example(s)
-
-*Example 1:*
 
 ```vb
 
@@ -40,14 +34,10 @@ IF _READBIT(A~%%,2) = -1 THEN PRINT "ON" ELSE PRINT "OFF"
 
 ```text
 
-
 Bit 4 is currently ON
 And bit 2 is currently OFF
 
 ```
-
-
-*Example 2:*
 
 ```vb
 
@@ -61,19 +51,13 @@ PRINT "B& in binary is: "; Binary$
 
 ```text
 
-
 B& = 12589575
 B& in binary is: 00000000110000000001101000000111
 
 ```
-
-
 
 ## See Also
 
 * [_SHL](_SHL), [_SHR](_SHR), [INTEGER](INTEGER), [LONG](LONG)
 * [_SETBIT](_SETBIT), [_BYTE](_BYTE), [_INTEGER64](_INTEGER64)
 * [_RESETBIT](_RESETBIT), [_TOGGLEBIT](_TOGGLEBIT)
-
-
-

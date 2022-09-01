@@ -12,7 +12,7 @@ The [SQR](SQR) function returns the square root of a numerical value.
 
 ## Example(s)
 
-*Example 1:* Finding the hypotenuse of a right triangle:
+Finding the hypotenuse of a right triangle:
 
 ```vb
 

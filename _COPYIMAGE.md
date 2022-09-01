@@ -1,10 +1,8 @@
 This function creates an identical designated image in memory with a different negative [LONG](LONG) handle value.
 
-
 ## Syntax
 
->  newhandle& = [_COPYIMAGE](_COPYIMAGE)(imageHandle&[, mode%])
-
+> newhandle& = [_COPYIMAGE](_COPYIMAGE)(imageHandle&[, mode%])
 
 ## Parameter(s)
 
@@ -14,22 +12,22 @@ This function creates an identical designated image in memory with a different n
 * *Mode* 32 can be used to convert 256 color images to 32 bit colors.
 * *Mode* 33 images are hardware accelerated in **version 1.000 and up**, and are created using [_LOADIMAGE](_LOADIMAGE) or [_COPYIMAGE](_COPYIMAGE).
 
-
 ## Description
 
 * The function copies any image or screen handle to a new and unique negative [LONG](LONG) handle value.
 * Valid copy handles are less than -1. Invalid handles return -1 or 0 if it was never created.
 * Every attribute of the passed image or program screen is copied to a new handle value in memory.
 * **32 bit screen surface backgrounds (black) have zero [_ALPHA](_ALPHA) so that they are transparent when placed over other surfaces.**
->  Use [CLS](CLS) or [_DONTBLEND](_DONTBLEND) to make a new surface background [_ALPHA](_ALPHA) 255 or opaque.
+
+> Use [CLS](CLS) or [_DONTBLEND](_DONTBLEND) to make a new surface background [_ALPHA](_ALPHA) 255 or opaque.
+
 * **Images are not deallocated when the [SUB](SUB) or [FUNCTION](FUNCTION) they are created in ends. Free them with [_FREEIMAGE](_FREEIMAGE).**
 * **It is important to free discarded images with [_FREEIMAGE](_FREEIMAGE) to prevent PC memory allocation errors!**
 * **Do not try to free image handles currently being used as the active [SCREEN](SCREEN). Change screen modes first.**
 
-
 ## Example(s)
 
-;Example 1:Restoring a Legacy SCREEN using the _COPYIMAGE return value.
+Restoring a Legacy SCREEN using the _COPYIMAGE return value.
 
 ```vb
 
@@ -50,10 +48,12 @@ IF s& < -1 THEN _FREEIMAGE s&
 END
 
 ```
-<sub>Code courtesy of Galleon</sub>
-;Note:Only free valid handle values with [_FREEIMAGE](_FREEIMAGE) AFTER a new [SCREEN](SCREEN) mode is being used by the program.
-----
-;Example 2:Program that copies desktop to a hardware image to form a 3D triangle (**version 1.000 and up**):
+
+*Note:* Only free valid handle values with [_FREEIMAGE](_FREEIMAGE) AFTER a new [SCREEN](SCREEN) mode is being used by the program.
+
+---
+
+Program that copies desktop to a hardware image to form a 3D triangle (**version 1.000 and up**):
 
 ```vb
 
@@ -65,8 +65,6 @@ _DISPLAY
 DO: _LIMIT 30: LOOP UNTIL INKEY$ <> ""
 
 ```
-<sub>Code courtesy of Galleon</sub>
-
 
 ## See Also
 
@@ -74,10 +72,6 @@ DO: _LIMIT 30: LOOP UNTIL INKEY$ <> ""
 * [_PUTIMAGE](_PUTIMAGE), [_MAPTRIANGLE](_MAPTRIANGLE)
 * [_SOURCE](_SOURCE), [_DEST](_DEST)
 * [_FREEIMAGE](_FREEIMAGE)
-* [_FILELIST$ (function)](_FILELIST$ (function)) (Demo of _COPYIMAGE)
+* [_FILELIST$ (function)](_FILELIST$-(function)) (Demo of _COPYIMAGE)
 * [_DISPLAYORDER](_DISPLAYORDER)
-* [Hardware images](Hardware images)
-
-
-
-
+* [Hardware images](Hardware-images)

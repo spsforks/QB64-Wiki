@@ -1,10 +1,8 @@
 The [_DELAY](_DELAY) statement suspends program execution for a [SINGLE](SINGLE) value of seconds.
 
-
 ## Syntax
 
 > [_DELAY](_DELAY) seconds!
-
 
 ## Description
 
@@ -12,13 +10,8 @@ The [_DELAY](_DELAY) statement suspends program execution for a [SINGLE](SINGLE)
 * While waiting, cpu cycles are relinquished to other applications.
 * Delays are not affected by midnight timer corrections.
 
-
 ## See Also
 
 * [_LIMIT](_LIMIT)
 * [TIMER](TIMER)
-* [ON TIMER(n)](ON TIMER(n))
-
-
-
-
+* [ON TIMER(n)](ON-TIMER(n))

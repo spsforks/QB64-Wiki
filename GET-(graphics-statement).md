@@ -36,7 +36,7 @@ The [GET (graphics statement)](GET-(graphics-statement)) statement is used in gr
 
 ## Example(s)
 
-*Example 1:* How to use GET and PUT to move a sprite with the arrow keys.
+How to use GET and PUT to move a sprite with the arrow keys.
 
 ```vb
 

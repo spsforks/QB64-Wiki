@@ -2,18 +2,15 @@ The [_STARTDIR$](_STARTDIR$) function returns the path a user called a QB64 prog
 
 ## Syntax
 
->  callPath$ = [_STARTDIR$](_STARTDIR$)
-
+> callPath$ = [_STARTDIR$](_STARTDIR$)
 
 ## Description
 
 * Returns a [STRING](STRING) representing the user's program calling path.
 
-
 ## Example(s)
 
-## Example(s)
- Showcasing QB64 path functions:
+Showcasing QB64 path functions:
 
 ```vb
 
@@ -25,14 +22,8 @@ PRINT _STARTDIR$
 SYSTEM 
 
 ```
-Code by Galleon
-
 
 ## See Also
 
 * [_CWD$](_CWD$)
 * [SHELL](SHELL)
-
-
-
-

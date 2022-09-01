@@ -43,7 +43,7 @@ The [DIM](DIM) statement is used to declare a variable or a list of variables as
 
 ## Example(s)
 
-*Example 1:* Defines Qt variable as a one byte fixed length string.
+Defines Qt variable as a one byte fixed length string.
 
 ```vb
 

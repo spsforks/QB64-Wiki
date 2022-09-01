@@ -32,7 +32,7 @@ A **SUB** procedure is a procedure within a program that can calculate and retur
 
 ## Example(s)
 
-*Example 1:* Text [PRINT](PRINT) screen centering using [PEEK](PEEK) to find the SCREEN mode width. Call and SUB procedure code:
+Text [PRINT](PRINT) screen centering using [PEEK](PEEK) to find the SCREEN mode width. Call and SUB procedure code:
 
 ```vb
 

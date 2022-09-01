@@ -17,7 +17,7 @@ The **PUT #** file or port statement writes data to a specific byte or record lo
 
 ## Example(s)
 
-*Example 1:* Using a [TYPE](TYPE) record variable(Contact) to enter a new [RANDOM](RANDOM) record to a file.
+Using a [TYPE](TYPE) record variable(Contact) to enter a new [RANDOM](RANDOM) record to a file.
 
 ```vb
 

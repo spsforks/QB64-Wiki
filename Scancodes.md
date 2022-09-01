@@ -48,7 +48,7 @@
 
 ## Example(s)
 
-*Example 1:* Displays the scan codes for most any keyboard press or release by the user.
+Displays the scan codes for most any keyboard press or release by the user.
 
 ```vb
 
@@ -64,7 +64,7 @@ LOOP UNTIL scancode% = 1  ' [Esc] key exit
 
 *Explanation:* Green is a press code and red is the release code. Num Lock mode may display the Left Shift key press(42) and release(170) codes, plus code 224, but the designated codes are returned also. **QB64** does not return those extra codes.
 
-*Example 2:* Unlike QBasic, INP(&H60) in **QB64** reads from a queue so you never miss a key press.
+Unlike QBasic, INP(&H60) in **QB64** reads from a queue so you never miss a key press.
 
 ```vb
  
@@ -99,7 +99,7 @@ END
 
 *Explanation:* INP does not clear the keyboard buffer so it may beep. To eliminate the problem use INKEY$ before or after reading with INP(96). INP will still return the press code. The array can hold more than one code return. QBasic users may note that the arrow pad and Home pad keypresses also alternate codes 42 and 170 due to Number Lock setting. That will not happen in **QB64**.
 
-*Example 3:* A simple MULTIKEY demo using the SC Array to hold multiple key presses for diagonal arrow key moves.
+A simple MULTIKEY demo using the SC Array to hold multiple key presses for diagonal arrow key moves.
 
 ```vb
 

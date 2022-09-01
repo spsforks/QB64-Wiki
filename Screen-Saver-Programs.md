@@ -50,5 +50,5 @@ SYSTEM * *                     'close screen saver immediately
 ## See Also
 
 * [_MOUSEMOVEMENTX](_MOUSEMOVEMENTX), [_MOUSEMOVEMENTY](_MOUSEMOVEMENTY)
-* [SCREEN (statement)](SCREEN (statement)), [_SCREENIMAGE](_SCREENIMAGE)
+* [SCREEN (statement)](SCREEN-(statement)), [_SCREENIMAGE](_SCREENIMAGE)
 * [SAVEIMAGE](SAVEIMAGE) (save image to bitmap program)

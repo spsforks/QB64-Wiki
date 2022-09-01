@@ -475,11 +475,11 @@ SYSTEM
 
 ## OFFSET
 
-[_OFFSET (function)](_OFFSET (function)) returns the memory offset position as a flexible sized value for a designated variable. See [Using _OFFSET](Using _OFFSET).
+[_OFFSET (function)](_OFFSET-(function)) returns the memory offset position as a flexible sized value for a designated variable. See [Using _OFFSET](Using--OFFSET).
 
 **Warning: [_OFFSET](_OFFSET) values cannot be reassigned to other variable [TYPE](TYPE).**
 
-**[_OFFSET](_OFFSET) values can only be used in conjunction with [_MEM](_MEM)ory and [DECLARE DYNAMIC LIBRARY](DECLARE DYNAMIC LIBRARY) procedures.**
+**[_OFFSET](_OFFSET) values can only be used in conjunction with [_MEM](_MEM)ory and [DECLARE DYNAMIC LIBRARY](DECLARE-DYNAMIC-LIBRARY) procedures.**
 
 ## See Also
 

@@ -13,7 +13,7 @@ The [LTRIM$](LTRIM$) function removes leading space characters from a [STRING](S
 
 ## Example(s)
 
-*Example 1:* Trimming a positive string number.
+Trimming a positive string number.
 
 ```vb
 

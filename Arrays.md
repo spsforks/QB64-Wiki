@@ -43,7 +43,7 @@ Arrays in QuickBASIC 4.5 and QBasic are limited to 32767 elements, while arrays 
 
 [DIM](DIM) reserves the array's name, variable type and number of elements in memory before the array is used. DIM reserves a [STATIC](STATIC) (unchangeable) array unless the [$DYNAMIC]($DYNAMIC) (changeable) metacommand is used at the program's start or [REDIM](REDIM) was used to dimension the array originally.
 
-*Example 1:* Dimensions an array named 'Array' that is capable of holding 101 integer values including element 0.
+Dimensions an array named 'Array' that is capable of holding 101 integer values including element 0.
 
 ```vb
 
@@ -55,7 +55,7 @@ An array starts at element 0 unless changed by [OPTION BASE](OPTION BASE) 1 (whi
 
 [DIM](DIM)ensioning with a range is possible also by using TO between the minimum and  highest elements. Arrays can start and end at any element(index) value up to 32767. **QB64** allows larger array sizes! 
 
-*Example 2:* dimensions an Integer array that can hold 100 values in indices 1 to 100.
+dimensions an Integer array that can hold 100 values in indices 1 to 100.
 
 ```vb
 
@@ -78,7 +78,7 @@ REDIM Array$(1000)      ' REDIM creates a dynamic array
 
 **QB64** has a REDIM [_PRESERVE](_PRESERVE) action which can be used in a REDIM statement in order to preserve the data information in the array. 
 
-*Example 4:* REDIM without the _PRESERVE action erases the array contents
+REDIM without the _PRESERVE action erases the array contents
 
 ```vb
 
@@ -103,7 +103,7 @@ REDIM Array$(1000)      ' REDIM creates a dynamic array
 
 [_PRESERVE](_PRESERVE) also allows the lowest index to be changed. The old starting index data value will always be in the lowest new index when the index range limits are changed.
 
-*Example 5:* Changing the starting index number using the [_PRESERVE](_PRESERVE) action moves the data. 
+Changing the starting index number using the [_PRESERVE](_PRESERVE) action moves the data. 
 
 ```vb
 
@@ -123,7 +123,7 @@ I'm 50...
 
 ```
 
-*Example 6:* The memory segment address of the array is defined in [DEF SEG](DEF SEG).
+The memory segment address of the array is defined in [DEF SEG](DEF-SEG).
 
 ```vb
 
@@ -170,7 +170,7 @@ Multiple dimensions are possible to create tables of values. QuickBASIC can use 
 
 ```
 
-*Example 7:* Creating a two-dimensional array. A comma separates each dimension size.
+Creating a two-dimensional array. A comma separates each dimension size.
 
 ```vb
 
@@ -180,7 +180,7 @@ Multiple dimensions are possible to create tables of values. QuickBASIC can use 
 
 One dimension could hold the month number and the other the number of items sold in 10 categories.
 
-*Example 8:* Dimensioning using index ranges.
+Dimensioning using index ranges.
 
 ```vb
 
@@ -225,11 +225,11 @@ Arrays can be sorted numerically or alphabetically using various sorting routine
 
 Since variables and arrays exist in memory, data is lost when a program closes. To preserve program data you must either create a permanent [DATA](DATA) field or save the data to files.
 
-The next time a program is used, it can [OPEN](OPEN) that file and quickly restore all of the array data using a loop or **QB64** can [GET](GET) the entire file's data in one GET. Use [LINE INPUT (file statement)](LINE INPUT (file statement)) # to set the array sizes by counting the number of data rows in a file if you used a [WRITE](WRITE) **CSV**(comma separated values) or a [PRINT (file statement)](PRINT (file statement)) # sequencial file. The number of records in a [TYPE](TYPE) or [FIELD](FIELD) defined [RANDOM](RANDOM) access file can be found by dividing the record size into the [LOF](LOF). You may want to make the array slightly larger for new entries.
+The next time a program is used, it can [OPEN](OPEN) that file and quickly restore all of the array data using a loop or **QB64** can [GET](GET) the entire file's data in one GET. Use [LINE INPUT (file statement)](LINE INPUT (file statement)) # to set the array sizes by counting the number of data rows in a file if you used a [WRITE](WRITE) **CSV**(comma separated values) or a [PRINT (file statement)](PRINT-(file-statement)) # sequencial file. The number of records in a [TYPE](TYPE) or [FIELD](FIELD) defined [RANDOM](RANDOM) access file can be found by dividing the record size into the [LOF](LOF). You may want to make the array slightly larger for new entries.
 
 ### Image Arrays
 
-[INTEGER](INTEGER) arrays are used to hold image information when using the following graphic procedures: [GET (graphics statement)](GET (graphics statement)), [PUT (graphics statement)](PUT (graphics statement)), [BSAVE](BSAVE) and [BLOAD](BLOAD). 
+[INTEGER](INTEGER) arrays are used to hold image information when using the following graphic procedures: [GET (graphics statement)](GET-(graphics-statement)), [PUT (graphics statement)](PUT-(graphics-statement)), [BSAVE](BSAVE) and [BLOAD](BLOAD). 
 
 The [INTEGER](INTEGER) array size can be estimated by multiplying the height by the width of the image area. To find the actual size needed you can use the following routine to count backwards until something is found in the array. The example below returns the array size required to create a 20 by 20 image:
 
@@ -247,7 +247,7 @@ END
 
 ```
 
-**Note: QB64 can [GET (graphics statement)](GET (graphics statement)) the entire SCREEN 12 area into one array!**
+**Note: QB64 can [GET (graphics statement)](GET-(graphics-statement)) the entire SCREEN 12 area into one array!**
 
 See also: [Creating Sprite Masks](Creating_Sprite_Masks)
 

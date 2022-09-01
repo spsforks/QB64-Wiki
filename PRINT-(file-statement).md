@@ -26,7 +26,7 @@ The [PRINT (file statement)](PRINT-(file-statement)) statement prints numeric or
   - If the value is not an integer (whole number) and has zero for a coefficient, no leading zero is written. For example, -0.123 is written as "-.123 "
   - If a numeric literal is in scientific notation, the number is also written in scientific notation. [PRINT USING (file statement)](PRINT-USING-(file-statement)) can return actual rounded numerical values in string form.
   - The numerical value is always followed by a space character unless [STR$](STR$) is used to convert it to a string value.
-* Whenever [PRINT (file statement)](PRINT (file statement)) moves the file cursor to a new file row, a carriage return character ([CHR$](CHR$)) followed by a line feed character ([CHR$](CHR$)) is written. The combination are referred to as the "CRLF" character.
+* Whenever [PRINT (file statement)](PRINT-(file-statement)) moves the file cursor to a new file row, a carriage return character ([CHR$](CHR$)) followed by a line feed character ([CHR$](CHR$)) is written. The combination are referred to as the "CRLF" character.
 * **Note: [RANDOM](RANDOM) and [BINARY](BINARY) files are not affected by PRINT # statements to them and will create a syntax error in QB64!**
 
 ## Example(s)

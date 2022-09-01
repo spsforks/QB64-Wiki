@@ -21,7 +21,7 @@ The [INPUT$](INPUT$) function is used to receive data from the user's keyboard, 
 
 ## Example(s)
 
-*Example 1:* A keyboard limited length entry can be made with a fixed blinking cursor. Entry must be completed before it can be shown.
+A keyboard limited length entry can be made with a fixed blinking cursor. Entry must be completed before it can be shown.
 
 ```vb
 

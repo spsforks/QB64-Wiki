@@ -1,11 +1,8 @@
 The [_DEPTHBUFFER](_DEPTHBUFFER) statement turns depth buffering ON or OFF, LOCKs or _CLEARS the buffer.
 
-
-
 ## Syntax
 
->  [_DEPTHBUFFER](_DEPTHBUFFER) {ON|OFF|LOCK|_CLEAR}[,handle&]
-
+> [_DEPTHBUFFER](_DEPTHBUFFER) {ON|OFF|LOCK|_CLEAR}[,handle&]
 
 ## Description
 
@@ -17,14 +14,8 @@ The [_DEPTHBUFFER](_DEPTHBUFFER) statement turns depth buffering ON or OFF, LOCK
 * LOCKing the depth buffer makes it read only. New content cannot be drawn unless it is closer than existing content, but when that new content is drawn it will not update the depth buffer.
 * Turning OFF or LOCKing the depth buffer is typically performed when semi-transparent content is being drawn. 
 
-
-
 ## See Also
 
 * [_MAPTRIANGLE](_MAPTRIANGLE)
 * [_PUTIMAGE](_PUTIMAGE)
 * [_DISPLAY](_DISPLAY)
-
-
-
-

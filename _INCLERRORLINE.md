@@ -1,27 +1,19 @@
 The _INCLERRORLINE$ function returns the line number in an [$INCLUDE]($INCLUDE) file that caused the most recent error.
 
-
-
 ## Syntax
 
->  errline& = [_INCLERRORLINE](_INCLERRORLINE)
-
+> errline& = [_INCLERRORLINE](_INCLERRORLINE)
 
 ## Description
 
 * If the last error occurred in the main module, _INCLERRORLINE returns 0.
 * By checking _INCLERRORLINE you can report exactly what line inside an included module caused the last error.
 
-
 ## Availability
 
 * **Version 1.1 and up**.
 
-
 ## Example(s)
-
-## Example(s)
-
 
 ```vb
 
@@ -54,8 +46,6 @@ ERROR  250  ON LINE:  9
 
 ```
 
-
-
 ## See Also
 
 * [ERL](ERL) (last line number used before an error occurred, when line numbers are used) 
@@ -67,8 +57,3 @@ ERROR  250  ON LINE:  9
 * [$INCLUDE]($INCLUDE) (invoke a source code file to be inserted at that point)
 * [ON ERROR](ON-ERROR) (calls error handing routine using [GOTO](GOTO) only)
 * [Error Codes](ERROR-Codes) (list of all QB64 errors)
-
-
-
-
-

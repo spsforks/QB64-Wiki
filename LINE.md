@@ -25,7 +25,7 @@ The [LINE](LINE) statement is used in graphic [SCREEN (statement)](SCREEN-(state
 
 ## Example(s)
 
-*Example 1:* Following one line with another by omitting the second line's first coordinate parameter bracket entirely:
+Following one line with another by omitting the second line's first coordinate parameter bracket entirely:
 
 ```vb
 

@@ -11,7 +11,7 @@
   - [STRING](STRING) = 1 byte/character, [INTEGER](INTEGER) = 2 bytes, [LONG](LONG) = 4 bytes, [SINGLE](SINGLE) = 4 bytes [DOUBLE](DOUBLE) = 8 bytes 
   - [_BYTE](_BYTE) = 1 byte, [_INTEGER64](_INTEGER64) = 8 bytes, [_FLOAT](_FLOAT) = 10 bytes (so far)
 * If no record length is used in the [OPEN](OPEN) statement, the default record size is 128 bytes except for the last record.
-* A record length cannot exceed 32767 or an [ERROR Codes](ERROR Codes) will occur!
+* A record length cannot exceed 32767 or an [ERROR Codes](ERROR-Codes) will occur!
 * To determine the number of records in a file the records% = [LOF](LOF) \ recordlength%. 
 * When **variable length strings** are PUT into RANDOM files the record length must exceed the maximum string entry by: 
   - 2 bytes are reserved for recording variable string lengths up to 32767 bytes (LEN = longest + 2) 
@@ -20,7 +20,7 @@
 
 ## Example(s)
 
-*Example 1:* Function that finds a RANDOM file's record number for a string value such as a phone number.
+Function that finds a RANDOM file's record number for a string value such as a phone number.
 
 ```vb
 

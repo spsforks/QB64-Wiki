@@ -1,10 +1,8 @@
 The [_RGB](_RGB) function returns the closest palette attribute index (legacy SCREEN modes) OR the [LONG](LONG) 32-bit color value (32-bit screens). 
 
-
 ## Syntax
 
->  colorIndex~& = [_RGB](_RGB)(red&, green&, blue&[, imageHandle&])
-
+> colorIndex~& = [_RGB](_RGB)(red&, green&, blue&[, imageHandle&])
 
 ## Description
 
@@ -20,11 +18,9 @@ The [_RGB](_RGB) function returns the closest palette attribute index (legacy SC
 * Colors returned are always opaque as the transparency value is always 255. Use [_ALPHA](_ALPHA) or [_CLEARCOLOR](_CLEARCOLOR) to change it.
 * **NOTE: Default 32-bit backgrounds are clear black or [_RGBA](_RGBA)(0, 0, 0, 0). Use [CLS](CLS) to make the black opaque.**
 
-
 ## Example(s)
 
-## Example(s)
- Converting the color port RGB intensity palette values 0 to 63 to 32 bit hexadecimal values. 
+Converting the color port RGB intensity palette values 0 to 63 to 32 bit hexadecimal values. 
 
 ```vb
 
@@ -44,36 +40,31 @@ NEXT
 
 ```text
 
-COLOR 1 <nowiki>=</nowiki> &HFF0000A8
-COLOR 2 <nowiki>=</nowiki> &HFF00A800
-COLOR 3 <nowiki>=</nowiki> &HFF00A8A8
-COLOR 4 <nowiki>=</nowiki> &HFFA80000
-COLOR 5 <nowiki>=</nowiki> &HFFA800A8
-COLOR 6 <nowiki>=</nowiki> &HFFA85400
-COLOR 7 <nowiki>=</nowiki> &HFFA8A8A8
-COLOR 8 <nowiki>=</nowiki> &HFF545454
-COLOR 9 <nowiki>=</nowiki> &HFF5454FC
-COLOR 10 <nowiki>=</nowiki> &HFF54FC54
-COLOR 11 <nowiki>=</nowiki> &HFF54FCFC
-COLOR 12 <nowiki>=</nowiki> &HFFFC5454
-COLOR 13 <nowiki>=</nowiki> &HFFFC54FC
-COLOR 14 <nowiki>=</nowiki> &HFFFCFC54
-COLOR 15 <nowiki>=</nowiki> &HFFFCFCFC
+COLOR 1 = &HFF0000A8
+COLOR 2 = &HFF00A800
+COLOR 3 = &HFF00A8A8
+COLOR 4 = &HFFA80000
+COLOR 5 = &HFFA800A8
+COLOR 6 = &HFFA85400
+COLOR 7 = &HFFA8A8A8
+COLOR 8 = &HFF545454
+COLOR 9 = &HFF5454FC
+COLOR 10 = &HFF54FC54
+COLOR 11 = &HFF54FCFC
+COLOR 12 = &HFFFC5454
+COLOR 13 = &HFFFC54FC
+COLOR 14 = &HFFFCFC54
+COLOR 15 = &HFFFCFCFC
 
 ```
 
 > *Note:* This procedure also shows how the returns from [_RGB](_RGB) and [_RGB32](_RGB32) differ in a non-32 bit screen mode.
-
 
 ## See Also
 
 * [_RGBA](_RGBA), [_RGB32](_RGB32), [_RGBA32](_RGBA32)
 * [_RED](_RED), [_GREEN](_GREEN), [_BLUE](_BLUE)
 * [_LOADIMAGE](_LOADIMAGE), [_NEWIMAGE](_NEWIMAGE)
-* [HEX$ 32 Bit Values](HEX$ 32 Bit Values), [POINT](POINT)
+* [HEX$ 32 Bit Values](HEX$-32-Bit-Values), [POINT](POINT)
 * [SAVEIMAGE](SAVEIMAGE)
-* [http://www.w3schools.com/html/html_colornames.asp Hexadecimal Color Values]
-
-
-
-
+* [Hexadecimal Color Values](http://www.w3schools.com/html/html_colornames.asp)

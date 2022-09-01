@@ -17,7 +17,7 @@ The **RIGHT$** function returns a set number of characters in a [STRING](STRING)
 
 ## Example(s)
 
-*Example 1:* Getting the right portion of a string value such as a person's last name. 
+Getting the right portion of a string value such as a person's last name. 
 
 ```vb
 

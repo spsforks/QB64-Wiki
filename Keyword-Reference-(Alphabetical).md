@@ -233,8 +233,8 @@
 * [PRINT USING (file statement)](PRINT-USING-(file-statement)) prints a template formatted [STRING](STRING) to a file.
 * [PSET](PSET) (statement) sets a pixel coordinate to the current color unless a color is designated.
 * [PUT](PUT) (file I/O statement) writes data sequencially or to a designated position using a variable value.
-* [PUT (TCP/IP statement)](PUT (TCP/IP statement)) sends raw data to a user's connection handle. 
-* [PUT (graphics statement)](PUT (graphics statement)) places pixel data stored in an [INTEGER](INTEGER) array to a specified area of the [SCREEN](SCREEN).
+* [PUT (TCP/IP statement)](PUT-(TCP-IP-statement)) sends raw data to a user's connection handle. 
+* [PUT (graphics statement)](PUT-(graphics-statement)) places pixel data stored in an [INTEGER](INTEGER) array to a specified area of the [SCREEN](SCREEN).
 
 ### R
 
@@ -381,7 +381,7 @@ Keywords beginning with underscores are QB64 specific. **To use them without the
 * [_CLIP](_CLIP) ([PUT (graphics statement)](PUT-(graphics-statement)) graphics option) allows placement of an image partially off of the screen.
 * [_CLIPBOARD$](_CLIPBOARD$) (function) returns the operating system's clipboard contents as a [STRING](STRING).
 * [_CLIPBOARD$ (statement)](_CLIPBOARD$-(statement)) sets and overwrites the [STRING](STRING) value in the operating system's clipboard. 
-* [_CLIPBOARDIMAGE (function)](_CLIPBOARDIMAGE (function)) pastes an image from the clipboard into a new QB64 image in memory.
+* [_CLIPBOARDIMAGE (function)](_CLIPBOARDIMAGE-(function)) pastes an image from the clipboard into a new QB64 image in memory.
 * [_CLIPBOARDIMAGE](_CLIPBOARDIMAGE) (statement) copies a valid QB64 image to the clipboard.
 * [$COLOR]($COLOR) (metacommand) includes named color constants in a program
 * [_COMMANDCOUNT](_COMMANDCOUNT) (function) returns the number of arguments passed to the compiled program from the command line.
@@ -393,7 +393,7 @@ Keywords beginning with underscores are QB64 specific. **To use them without the
 * [_CONSOLETITLE](_CONSOLETITLE) (statement) creates the title of the console window using a literal or variable [STRING](STRING).
 * [_CONTINUE](_CONTINUE) (statement) skips the remaining lines in a control block (DO/LOOP, FOR/NEXT or WHILE/WEND)
 * [_CONTROLCHR](_CONTROLCHR) (statement) [OFF](OFF) allows the control characters to be used as text characters. [ON](ON) (default) can use them as commands.
-* [_CONTROLCHR (function)](_CONTROLCHR (function))   returns the current state of _CONTROLCHR as 1 when OFF and 0 when ON.
+* [_CONTROLCHR (function)](_CONTROLCHR-(function))   returns the current state of _CONTROLCHR as 1 when OFF and 0 when ON.
 * [_COPYIMAGE](_COPYIMAGE) (function) copies an image handle value to a new designated handle.
 * [_COPYPALETTE](_COPYPALETTE) (statement) copies the color palette intensities from one 4 or 8 BPP image to another image.
 * [_CV](_CV) (function) converts any [_MK$](_MK$) [STRING](STRING) value to the designated numerical type value.
@@ -414,14 +414,14 @@ Keywords beginning with underscores are QB64 specific. **To use them without the
 * [_DESKTOPHEIGHT](_DESKTOPHEIGHT) (function) returns the height of the desktop (not program window).
 * [_DESKTOPWIDTH](_DESKTOPWIDTH) (function) returns the width of the desktop (not program window).
 * [_DEST](_DEST) (statement) sets the current write image or [SCREEN](SCREEN) page destination for prints or graphics.
-* [_DEST (function)](_DEST (function)) returns the current destination screen page or image handle value.
+* [_DEST (function)](_DEST-(function)) returns the current destination screen page or image handle value.
 * [_DEVICE$](_DEVICE$) (function) returns a [STRING](STRING) expression listing a designated numbered input device name and types of input.
 * [_DEVICEINPUT](_DEVICEINPUT) (function) returns the [_DEVICES](_DEVICES) number of an [_AXIS](_AXIS), [_BUTTON](_BUTTON) or [_WHEEL](_WHEEL) event.
 * [_DEVICES](_DEVICES) (function) returns the number of input devices found on a computer system including the keyboard and mouse.
 * [_DIR$](_DIR$) (function) returns common paths in Windows only, like My Documents, My Pictures, My Music, Desktop.
 * [_DIREXISTS](_DIREXISTS) (function) returns -1 if the Directory folder name [STRING](STRING) parameter exists. Zero if it does not.
 * [_DISPLAY](_DISPLAY) (statement) turns off the [_AUTODISPLAY](_AUTODISPLAY) while only displaying the screen changes when called.
-* [_DISPLAY (function)](_DISPLAY (function)) returns the handle of the current image that is displayed on the screen.
+* [_DISPLAY (function)](_DISPLAY-(function)) returns the handle of the current image that is displayed on the screen.
 * [_DISPLAYORDER](_DISPLAYORDER) (statement) designates the order to render software, hardware and custom-opengl-code.
 * [_DONTBLEND](_DONTBLEND) (statement) statement turns off default [_BLEND](_BLEND) 32 bit [_ALPHA](_ALPHA) blending for the current image or screen.
 * [_DONTWAIT](_DONTWAIT) ([SHELL](SHELL) action) specifies that the program should not wait until the shelled command/program is finished.
@@ -445,7 +445,7 @@ Keywords beginning with underscores are QB64 specific. **To use them without the
 * [_FINISHDROP](_FINISHDROP) (statement)  resets [_TOTALDROPPEDFILES](_TOTALDROPPEDFILES) and clears the [_DROPPEDFILE](_DROPPEDFILE) list of items (files/folders).
 * [_FLOAT](_FLOAT) (numerical type ##) offers the maximum floating-point decimal precision available using QB64.
 * [_FONT](_FONT) (statement) sets the current font handle to be used by PRINT or [_PRINTSTRING](_PRINTSTRING).
-* [_FONT (function)](_FONT (function)) creates a new font handle from a designated image handle.
+* [_FONT (function)](_FONT-(function)) creates a new font handle from a designated image handle.
 * [_FONTHEIGHT](_FONTHEIGHT) (function) returns the current text or font height.
 * [_FONTWIDTH](_FONTWIDTH) (function) returns the current text or font width.
 * [_FREEFONT](_FREEFONT) (statement) releases the current font handle from memory.
@@ -498,8 +498,8 @@ Keywords beginning with underscores are QB64 specific. **To use them without the
 
 * [_MAPTRIANGLE](_MAPTRIANGLE) (statement) maps a triangular image source area to put on a destination area.
 * [_MAPUNICODE](_MAPUNICODE) (statement) maps a [Unicode](Unicode) value to an [ASCII](ASCII) code number.
-* [_MAPUNICODE (function)](_MAPUNICODE (function)) returns the [Unicode](Unicode) (UTF32) code point value of a mapped [ASCII](ASCII) character code.
-* [_MEM (function)](_MEM (function)) returns [_MEM](_MEM) block referring to the largest continuous memory region beginning at a designated variable's offset.
+* [_MAPUNICODE (function)](_MAPUNICODE-(function)) returns the [Unicode](Unicode) (UTF32) code point value of a mapped [ASCII](ASCII) character code.
+* [_MEM (function)](_MEM-(function)) returns [_MEM](_MEM) block referring to the largest continuous memory region beginning at a designated variable's offset.
 * [_MEM](_MEM) (variable type) contains read only dot elements for the OFFSET, SIZE, TYPE and ELEMENTSIZE of a block of memory.
 * [_MEMCOPY](_MEMCOPY) (statement) copies a value from a designated OFFSET and SIZE [TO](TO) a block of memory at a designated OFFSET.
 * [_MEMELEMENT](_MEMELEMENT) (function) returns a [_MEM](_MEM) block referring to a variable's memory (but not past it).
@@ -507,7 +507,7 @@ Keywords beginning with underscores are QB64 specific. **To use them without the
 * [_MEMFILL](_MEMFILL) (statement) fills a designated memory block OFFSET with a certain SIZE and TYPE of value.
 * [_MEMFREE](_MEMFREE) (statement) frees a designated memory block in a program. Only free memory blocks once.
 * [_MEMGET](_MEMGET) (statement) reads a value from a designated memory block at a designated  OFFSET
-* [_MEMGET (function)](_MEMGET (function)) returns a value from a designated memory block and OFFSET using a designated variable [TYPE](TYPE).
+* [_MEMGET (function)](_MEMGET-(function)) returns a value from a designated memory block and OFFSET using a designated variable [TYPE](TYPE).
 * [_MEMIMAGE](_MEMIMAGE) (function) returns a [_MEM](_MEM) block referring to a designated image handle's memory
 * [_MEMNEW](_MEMNEW) (function) allocates new memory with a designated SIZE and returns a [_MEM](_MEM) block referring to it.
 * [_MEMPUT](_MEMPUT) (statement) places a designated value into a designated memory block OFFSET
@@ -529,12 +529,12 @@ Keywords beginning with underscores are QB64 specific. **To use them without the
 
 * [_NEWIMAGE](_NEWIMAGE) (function) creates a designated size program [SCREEN](SCREEN) or page image and returns a handle value.
 * [$NOPREFIX]($NOPREFIX) (metacommand) allows QB64-specific keywords to be used without the underscore prefix.
-* [_NUMLOCK (function)](_NUMLOCK (function)) returns -1 when Num Lock is on
+* [_NUMLOCK (function)](_NUMLOCK-(function)) returns -1 when Num Lock is on
 * [_NUMLOCK](_NUMLOCK) (statement) sets Num Lock key state
 
 ### _O
 
-* [_OFFSET (function)](_OFFSET (function)) returns the memory offset of a variable when used with [DECLARE LIBRARY](DECLARE-LIBRARY) or [_MEM](_MEM) only.
+* [_OFFSET (function)](_OFFSET-(function)) returns the memory offset of a variable when used with [DECLARE LIBRARY](DECLARE-LIBRARY) or [_MEM](_MEM) only.
 * [_OFFSET](_OFFSET) (%& numerical type) can be used store the value of an offset in memory when using [DECLARE LIBRARY](DECLARE-LIBRARY) or [MEM](MEM) only.
 * [_OPENCLIENT](_OPENCLIENT) (TCP/IP function) connects to a Host on the Internet as a Client and returns the Client status handle.
 * [_OPENCONNECTION](_OPENCONNECTION) (TCP/IP function) open's a connection from a client that the host has detected and returns a status handle.
@@ -546,13 +546,13 @@ Keywords beginning with underscores are QB64 specific. **To use them without the
 ### _P
 
 * [_PALETTECOLOR](_PALETTECOLOR) (statement) sets the color value of a palette entry of an image using 256 colors or less palette modes.
-* [_PALETTECOLOR (function)](_PALETTECOLOR (function)) return the 32 bit attribute color setting of an image or screen page handle's palette.
+* [_PALETTECOLOR (function)](_PALETTECOLOR-(function)) return the 32 bit attribute color setting of an image or screen page handle's palette.
 * [_PI](_PI) (function) returns the value of **π** or parameter multiples for angle or [CIRCLE](CIRCLE) calculations.
 * [_PIXELSIZE](_PIXELSIZE) (function) returns the pixel palette mode of a designated image handle.
 * [_PRESERVE](_PRESERVE) ([REDIM](REDIM) action) preserves the data presently in an array when [REDIM](REDIM) is used.
 * [_PRINTIMAGE](_PRINTIMAGE) (statement) sends an image to the printer that is stretched to the current printer paper size.
 * [_PRINTMODE](_PRINTMODE) (statement) sets the text or _FONT printing mode on a background when using PRINT or [_PRINTSTRING](_PRINTSTRING).
-* [_PRINTMODE (function)](_PRINTMODE (function)) returns the present [_PRINTMODE](_PRINTMODE) value number.
+* [_PRINTMODE (function)](_PRINTMODE-(function)) returns the present [_PRINTMODE](_PRINTMODE) value number.
 * [_PRINTSTRING](_PRINTSTRING) (statement) locates and prints a text [STRING](STRING) using graphic coordinates.
 * [_PRINTWIDTH](_PRINTWIDTH) (function) returns the pixel width of a text string to be printed using [_PRINTSTRING](_PRINTSTRING).
 * [_PUTIMAGE](_PUTIMAGE) (statement) maps a rectangular image source area to an image destination area.
@@ -567,7 +567,7 @@ Keywords beginning with underscores are QB64 specific. **To use them without the
 * [_RESETBIT](_RESETBIT) (function) is used to set the specified bit of an integer variable to 0.
 * [$RESIZE]($RESIZE) ([Metacommand](Metacommand)) used with ON allows a user to resize the program window where OFF does not.
 * [_RESIZE](_RESIZE) (statement) sets resizing of the window ON or OFF and sets the method as _STRETCH or _SMOOTH.
-* [_RESIZE (function)](_RESIZE (function)) returns -1 when a program user wants to resize the program screen.
+* [_RESIZE (function)](_RESIZE-(function)) returns -1 when a program user wants to resize the program screen.
 * [_RESIZEHEIGHT](_RESIZEHEIGHT) (function) returns the requested new user screen height when [$RESIZE]($RESIZE):ON allows it.
 * [_RESIZEWIDTH](_RESIZEWIDTH) (function) returns the requested new user screen width when [$RESIZE]($RESIZE):ON allows it.
 * [_RGB](_RGB) (function) returns the closest palette index OR the [LONG](LONG) 32 bit color value in 32 bit screens.
@@ -582,7 +582,7 @@ Keywords beginning with underscores are QB64 specific. **To use them without the
 * [_SCREENEXISTS](_SCREENEXISTS) (function) returns a -1 value once a screen has been created.
 * [$SCREENHIDE]($SCREENHIDE) ([QB64 [Metacommand]]) hides the program window from view.
 * [_SCREENHIDE](_SCREENHIDE) (statement) hides the program window from view.
-* [_SCREENICON (function)](_SCREENICON (function)) returns -1 or 0 to indicate if the window has been minimized to an icon on the taskbar. 
+* [_SCREENICON (function)](_SCREENICON-(function)) returns -1 or 0 to indicate if the window has been minimized to an icon on the taskbar. 
 * [_SCREENICON](_SCREENICON) (statement) minimizes the program window to an icon on the taskbar. 
 * [_SCREENIMAGE](_SCREENIMAGE) (function) creates an image of the current desktop and returns an image handle.
 * [_SCREENMOVE](_SCREENMOVE) (statement) positions program window on the desktop using designated coordinates or the _MIDDLE option.
@@ -591,7 +591,7 @@ Keywords beginning with underscores are QB64 specific. **To use them without the
 * [_SCREENSHOW](_SCREENSHOW) (statement) displays the program window after it has been hidden by [_SCREENHIDE](_SCREENHIDE).
 * [_SCREENX](_SCREENX) (function) returns the program window's upper left corner horizontal position on the desktop.
 * [_SCREENY](_SCREENY) (function) returns the program window's upper left corner vertical position on the desktop.
-* [_SCROLLLOCK (function)](_SCROLLLOCK (function)) returns -1 when Scroll Lock is on
+* [_SCROLLLOCK (function)](_SCROLLLOCK-(function)) returns -1 when Scroll Lock is on
 * [_SCROLLLOCK](_SCROLLLOCK) (statement) sets Scroll Lock key state
 * [_SETALPHA](_SETALPHA) (statement) sets the alpha channel transparency level of some or all of the pixels of an image.
 * [_SETBIT](_SETBIT) (function) is used to set the specified bit of an integer variable to 1.
@@ -622,7 +622,7 @@ Keywords beginning with underscores are QB64 specific. **To use them without the
 * [_SNDSTOP](_SNDSTOP) (statement) stops playing a sound handle.
 * [_SNDVOL](_SNDVOL) (statement) sets the volume of a sound file handle.
 * [_SOURCE](_SOURCE) (statement) sets the source image handle.
-* [_SOURCE (function)](_SOURCE (function)) returns the present source image handle value.
+* [_SOURCE (function)](_SOURCE-(function)) returns the present source image handle value.
 * [_STARTDIR$](_STARTDIR$) (function) returns the user's program calling path as a [STRING](STRING).
 * [_STRCMP](_STRCMP) (function) compares the relationship between two strings.
 * [_STRICMP](_STRICMP) (function) compares the relationship between two strings, without regard for case-sensitivity.

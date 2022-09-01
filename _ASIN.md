@@ -1,10 +1,8 @@
 The [_ASIN](_ASIN) function returns the angle measured in radians based on an input [SIN](SIN)e value ranging from -1 to 1.
 
-
 ## Syntax
 
->  radian_angle! = [_ASIN](_ASIN)(sine_value!)
-
+> radian_angle! = [_ASIN](_ASIN)(sine_value!)
 
 ## Description
 
@@ -12,16 +10,13 @@ The [_ASIN](_ASIN) function returns the angle measured in radians based on an in
 * ARCSINE is the inverse function of [SIN](SIN)e, and turns a [SIN](SIN)e value back into an angle.
 * Note: Due to rounding with floating point math, the [_ASIN](_ASIN) may not always give a perfect match for the [SIN](SIN) angle which generated this. You can reduce the number of rounding errors by increasing the precision of your calculations by using [DOUBLE](DOUBLE) or [_FLOAT](_FLOAT) precision variables instead of [SINGLE](SINGLE).
 
-
 ## Availability
 
 * **Version 1.000 and up**
 
-
 ## Example(s)
 
-## Example(s)
- Converting a radian angle to its SINe and using that value to find the angle in degrees again using _ASIN:
+Converting a radian angle to its SINe and using that value to find the angle in degrees again using _ASIN:
 
 ```vb
 
@@ -36,10 +31,8 @@ PRINT "The ASIN of "; C; " is: "; A
 PRINT "Notice, A is the Angle in Radians.  If we convert it to degrees, the value is "; _R2D(A) 
 
 ```
-<sub>Example by SMcNeill</sub>
 
 ```text
-
 
 Give me an Angle (in Degrees) => ? 60
 
@@ -48,8 +41,6 @@ The ACOS of   .8660254037844386  is:   1.047197551196598
 Notice, A is the Angle in Radians.  If we convert it to degrees, we discover the value is  60
 
 ```
-
-
 
 ## See Also
 
@@ -62,8 +53,3 @@ Notice, A is the Angle in Radians.  If we convert it to degrees, we discover the
 * [_ATAN2](_ATAN2) (Compute arc tangent with two parameters)
 * [_HYPOT](_HYPOT) (hypotenuse)
 *[Mathematical Operations](Mathematical-Operations)
-*[Mathematical Operations#Derived_Mathematical_Functions](Mathematical-Operations#Derived_Mathematical_Functions)
-
-
-
-

@@ -26,7 +26,7 @@ The [GET #](GET-#) statement reads data from a file or port device by bytes or r
 
 ## Example(s)
 
-*Example 1:* Opening a RANDOM file using LEN to calculate and LEN = to designate the file record size.
+Opening a RANDOM file using LEN to calculate and LEN = to designate the file record size.
 
 ```vb
 

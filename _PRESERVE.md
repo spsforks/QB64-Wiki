@@ -1,33 +1,28 @@
 The [_PRESERVE](_PRESERVE) [REDIM](REDIM) action preserves the current contents of [$DYNAMIC]($DYNAMIC) [arrays](arrays), when resizing or changing indices.
 
-
 ## Syntax
  
->  [REDIM](REDIM) [_PRESERVE](_PRESERVE) array(newLowerIndex& [TO newUpperIndex&]) [AS variabletype]
-
+> [REDIM](REDIM) [_PRESERVE](_PRESERVE) array(newLowerIndex& [TO newUpperIndex&]) [AS variabletype]
 
 ## Description
 
 * [REDIM](REDIM) or the [$DYNAMIC]($DYNAMIC) metacommand must be used when the array is first created to be able to resize and preserve.
 * If [_PRESERVE](_PRESERVE) is not used, the current contents of the array are cleared by [REDIM](REDIM).
-** All element values of an array are preserved if the array size is increased.
-** The remaining elements of the array are preserved if the array size is decreased.
-** If the new index range is different from the original, all values will be moved to the new corresponding indices.
+  * All element values of an array are preserved if the array size is increased.
+  * The remaining elements of the array are preserved if the array size is decreased.
+  * If the new index range is different from the original, all values will be moved to the new corresponding indices.
 * **REDIM [_PRESERVE](_PRESERVE) cannot change the number of array dimensions, but can change the number of elements.**
 * **Always use the same array [TYPE](TYPE) suffix ([AS](AS) type) or a new array type with the same name may be created.**
-
 
 ## Error(s)
 
 * [SUB](SUB) or [FUNCTION](FUNCTION) arrays created using [REDIM](REDIM) require that they be recreated to be used after arrays are [ERASE](ERASE)d.
-* **Warning:** Do not use negative upper array index values as an "Out of Memory" [ERROR Codes](ERROR Codes) (or global Operating System errors) will occur.**
+* **Warning:** Do not use negative upper array index values as an "Out of Memory" [ERROR Codes](ERROR-Codes) (or global Operating System errors) will occur.**
 * Use [_PRESERVE](_PRESERVE) before [SHARED](SHARED) or an "invalid variable name" error will occur.
-
 
 ## Example(s)
 
-*Example 1:* Changing the upper and lower array bounds
-
+Changing the upper and lower array bounds.
 
 ```vb
 
@@ -37,11 +32,10 @@ REDIM _PRESERVE a(20 TO 40)
 PRINT a(20)
 
 ```
+
 > *Explanation:* a(20) is now the 123 value a(5) was. The upper or lower bounds of arrays can be changed, but the type cannot. New array indices like a(40) are null(0) or empty strings. If the array element count is not reduced, all of the data will be preserved.
 
-
-*Example 2:* Sizing an array while storing file data.
-
+Sizing an array while storing file data.
 
 ```vb
 
@@ -66,14 +60,8 @@ END
 
 ```
 
-
-
 ## See Also
 
 * [REDIM](REDIM)
 * [$DYNAMIC]($DYNAMIC)
 * [Arrays](Arrays)
-
-
-
-

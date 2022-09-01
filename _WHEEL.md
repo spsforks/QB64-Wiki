@@ -15,7 +15,7 @@ The [_WHEEL](_WHEEL) function returns the relative position of a specified wheel
 
 ## Example(s)
 
-*Example 1:* Reading multiple controller device buttons, axis and wheels.
+Reading multiple controller device buttons, axis and wheels.
 
 ```vb
 
@@ -46,7 +46,7 @@ END
 >  *Note:* When there is no device control to read, a [FOR...NEXT](FOR...NEXT) n = 1 TO 0 loop will not run thus avoiding a control function read error.
 
 
-*Example 2:* Why does a mouse have 3 wheels? Relative x and y movements can be read using the first 2 _WHEEL reads.
+Why does a mouse have 3 wheels? Relative x and y movements can be read using the first 2 _WHEEL reads.
 
 ```vb
 
@@ -72,7 +72,7 @@ LOOP UNTIL INKEY$ = CHR$(27)
 * [_AXIS](_AXIS), [_BUTTON](_BUTTON), [_BUTTONCHANGE](_BUTTONCHANGE)
 * [_DEVICES](_DEVICES), [_DEVICE$](_DEVICE$), [_DEVICEINPUT](_DEVICEINPUT)
 * [_MOUSEMOVEMENTX](_MOUSEMOVEMENTX), [_MOUSEMOVEMENTY](_MOUSEMOVEMENTY)
-* [Controller Devices](Controller Devices)
+* [Controller Devices](Controller-Devices)
 
 
 
