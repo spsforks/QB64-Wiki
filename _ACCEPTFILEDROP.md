@@ -1,10 +1,8 @@
 The [_ACCEPTFILEDROP](_ACCEPTFILEDROP) statement prepares a program window to receive files dropped from Windows Explorer in a drag/drop operation.
 
-
 ## Syntax
 
 >  [_ACCEPTFILEDROP](_ACCEPTFILEDROP) [{ON|OFF}]
-
 
 ## Description
 
@@ -14,16 +12,13 @@ The [_ACCEPTFILEDROP](_ACCEPTFILEDROP) statement prepares a program window to re
 * If using [_DROPPEDFILE](_DROPPEDFILE) with an index, you must call [_FINISHDROP](_FINISHDROP) after you finish working with the list.
 * **[Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions](Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions)**.
 
-
 ## Availability
 
 * **Version 1.3 and up**.
 
-
 ## Example(s)
 
-## Example(s)
- Accepting files dragged from a folder and processing the list received sequentially. 
+Accepting files dragged from a folder and processing the list received sequentially. 
 
 ```vb
 
@@ -56,7 +51,6 @@ DO
 LOOP
 
 ```
-
 
 ## See Also
 
