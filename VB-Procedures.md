@@ -26,7 +26,7 @@ END FUNCTION
 
 ### CVC
 
->  VB also had the CVC function to convert MKC$ currency **8 byte** string values back to currency amounts. QB64 can use [_CV](_CV) with [_INTEGER64](_INTEGER64) to convert those values back to [_FLOAT](_FLOAT) currency values:
+> VB also had the CVC function to convert MKC$ currency **8 byte** string values back to currency amounts. QB64 can use [_CV](_CV) with [_INTEGER64](_INTEGER64) to convert those values back to [_FLOAT](_FLOAT) currency values:
 
 ```vb
 
@@ -54,7 +54,7 @@ END FUNCTION
 
 ### PUT
 
->  Currency values can be [PUT](PUT) directly into [BINARY](BINARY) or [RANDOM](RANDOM) files using an [_INTEGER64](_INTEGER64) variable value.
+> Currency values can be [PUT](PUT) directly into [BINARY](BINARY) or [RANDOM](RANDOM) files using an [_INTEGER64](_INTEGER64) variable value.
 
 ```vb
 
@@ -73,7 +73,7 @@ END
 
 ### GET
 
->  If currency values are [PUT](PUT) directly into a [BINARY](BINARY) or [RANDOM](RANDOM) file, [_INTEGER64](_INTEGER64) can [GET](GET) them directly. Then divide by 10 ^ 4: 
+> If currency values are [PUT](PUT) directly into a [BINARY](BINARY) or [RANDOM](RANDOM) file, [_INTEGER64](_INTEGER64) can [GET](GET) them directly. Then divide by 10 ^ 4: 
 
 ```vb
 
@@ -92,7 +92,6 @@ END
 
 > *Note:* The currency value can be any [SINGLE](SINGLE), [DOUBLE](DOUBLE) or [_FLOAT](_FLOAT) floating decimal point value that will hold the range of values.
 
-## References
-
 ## See Also
+
 * [PDS (7.1) Procedures](PDS-(7.1)-Procedures)

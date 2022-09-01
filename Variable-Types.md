@@ -39,12 +39,12 @@ All types dealing with number values are signed as a default. The symbol to defi
 
 **Defining variable types:**
 
->  [DIM](DIM) *variable* [AS](AS) *type*
->  [_DEFINE](_DEFINE) *range1-range2* [AS](AS) *value_type*
->  [DEFINT](DEFINT) *range1-range2*
->  [DEFLNG](DEFLNG) *range1-range2*
->  [DEFSNG](DEFSNG) *range1-range2*
->  [DEFDBL](DEFDBL) *range1-range2*
+> [DIM](DIM) *variable* [AS](AS) *type*
+> [_DEFINE](_DEFINE) *range1-range2* [AS](AS) *value_type*
+> [DEFINT](DEFINT) *range1-range2*
+> [DEFLNG](DEFLNG) *range1-range2*
+> [DEFSNG](DEFSNG) *range1-range2*
+> [DEFDBL](DEFDBL) *range1-range2*
 
 Where *range1* and *range2* are the range of first letters to be defined as the default *type* when the variable is having no suffix and are not otherwise defined, the starting letter of the variable then defines the *type* as specified by the DEFxxx and _DEFINE statements. The QB64 types can only be defaulted using [_DEFINE](_DEFINE).
 

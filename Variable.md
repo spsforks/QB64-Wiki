@@ -28,7 +28,7 @@ All numerical variables default to 0 and all string variables default to "" at t
 
 [STATIC](STATIC) sub-procedure values keep their value after the sub-procedure is exited. They will hold an empty value when first used.
 
-Variables are used to hold program data information that is attained through the program flow, either by user input, calculations or by other ways of communicaton (as with I/O, memory, TCP/IP or files).
+Variables are used to hold program data information that is attained through the program flow, either by user input, calculations or by other ways of communication (as with I/O, memory, TCP/IP or files).
 
 Assignment of variable values can be done using the = assignment symbol (variable1.number = 500, for example).
 
