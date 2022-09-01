@@ -81,7 +81,7 @@ x& = ShowWindow&(hwnd%&, 2) 'minimize
 
 DO: _LIMIT 30 'save CPU usage while waiting for key press
 
-  IF GetKeyState(16) < 0 AND GetKeyState(17) < 0 THEN '<####  Shift+A
+  IF GetKeyState(16) < 0 AND GetKeyState(17) < 0 THEN '<==== Shift+A
     FGwin%& = GetForegroundWindow%& 'get current process in focus
     y& = ShowWindow&(hwnd%&, 1) 'maximize minimized program
 

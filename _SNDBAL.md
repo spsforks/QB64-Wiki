@@ -32,8 +32,6 @@ _SNDPLAY h&
 
 ```
 
-## Example(s)
-
 Loading a sound after **build 20170811/60** - no need to specify "sound capabilities" in [_SNDOPEN](_SNDOPEN). 
 
 ```vb

@@ -28,7 +28,7 @@ The [_PRINTSTRING](_PRINTSTRING) statement prints text [STRING](STRING) using gr
 
 ## Example(s)
 
-Printing those unprintable [ASCII](ASCII) control characters is no longer a problem!
+Printing those unprintable [ASCII](ASCII) control characters is no longer a problem.
 
 ```vb
 

@@ -58,8 +58,6 @@ END FUNCTION
 
 ```
 
-Code by Ted Weissgerber
-
 ```text
 
 06-02-2010

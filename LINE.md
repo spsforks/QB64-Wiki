@@ -38,7 +38,7 @@ END
 
 ```
 
-> *Explanation:* The full equivalent LINE statement would be: **green**
+> *Explanation:* The full equivalent LINE statement would be: **LINE(200, 200)-(400, 200), 12**
 
 Creating styled lines and boxes with the LINE statement. Different style values create different dashed line spacing.
 

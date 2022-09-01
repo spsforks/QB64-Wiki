@@ -87,9 +87,7 @@ _PUTIMAGE (0, 0), i ' places image at upper left corner of window w/o stretching
 
 ```
 
-> *Explanation:* When QB64 loads a 256 color .PNG file containing a transparent color, that color will be treated as transparent when _PUTIMAGE is used to put it onto another image. So actually, you can use a 256-color .PNG file containing transparency information in a 256 color screen mode in QB64.
-
-Flipping and enlarging an image with _PUTIMAGE by swapping or increasing the destination coordinates.
+Flipping and enlarging an image with _PUTIMAGE by swapping or increasing the desination coordinates.
 
 ```vb
 

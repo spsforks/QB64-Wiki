@@ -10,19 +10,19 @@
 
 **QB64 Number Types**
 
-* [_BIT](_BIT) [**`**]: 1 bit signed whole number values of 0 or -1 signed or 0 or 1 unsigned. [_BIT](_BIT) * 8 can hold a signed or unsigned [_BYTE](_BYTE) value.
+* [_BIT](_BIT) [**\`**]: 1 bit signed whole number values of 0 or -1 signed or 0 or 1 unsigned. [_BIT](_BIT) * 8 can hold a signed or unsigned [_BYTE](_BYTE) value.
 * [_BYTE](_BYTE) [**%%**]: 1 byte signed whole number values from -128 to 127. Unsigned values from 0 to 255.
 * [_INTEGER64](_INTEGER64) [**&&**]: 8 byte signed whole number values from -9223372036854775808 to 9223372036854775807
 * [_FLOAT](_FLOAT) [##]: currently set as 10 byte signed floating decimal point values up to 1.1897E+4932. **Cannot be unsigned.**
-* [_OFFSET](_OFFSET) [%&]: undefined flexable length integer offset values used in [DECLARE DYNAMIC LIBRARY](DECLARE-DYNAMIC-LIBRARY) declarations. 
+* [_OFFSET](_OFFSET) [%&]: undefined flexible length integer offset values used in [DECLARE DYNAMIC LIBRARY](DECLARE-DYNAMIC-LIBRARY) declarations.
 
 **Signed and Unsigned Integer Values**
 
 Negative (signed) numerical values can affect calculations when using any of the BASIC operators. SQR cannot use negative values! There may be times that a calculation error is made using those negative values. The SGN function returns the sign of a value as -1 for negative, 0 for zero and 1 for unsigned positive values. ABS always returns an unsigned value.
 
-* [SGN](SGN)(n) returns the value's sign as -1 if negative, 0 if zero or 1 if positive.
-* [ABS](ABS)(n) changes negative values to the equivalent positive values.
-* **QB64:** [_UNSIGNED](_UNSIGNED) in a [DIM](DIM), [AS](AS) or [_DEFINE](_DEFINE) statement for only positive [INTEGER](INTEGER) values.
+> * [SGN](SGN)(n) returns the value's sign as -1 if negative, 0 if zero or 1 if positive.
+> * [ABS](ABS)(n) changes negative values to the equivalent positive values.
+> * **QB64:** [_UNSIGNED](_UNSIGNED) in a [DIM](DIM), [AS](AS) or [_DEFINE](_DEFINE) statement for only positive [INTEGER](INTEGER) values.
 
 [_UNSIGNED](_UNSIGNED) integer, byte and bit variable values can use the tilde ~ suffix before the type suffix to define the type.
 

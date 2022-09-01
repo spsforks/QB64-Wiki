@@ -72,6 +72,7 @@ NEXT
 
 Attribute  Hex value      Red        Green       Blue 
 
+COLOR 0 = &HFF000050       00         00         50
 COLOR 1 = &HFF0000A8       00         00         A8
 COLOR 2 = &HFF00A800       00         A8         00
 COLOR 3 = &HFF00A8A8       00         A8         A8

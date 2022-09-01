@@ -21,7 +21,7 @@ The [_MOUSESHOW](_MOUSESHOW) statement displays the mouse cursor and can change 
 
 ### QBasic/QuickBASIC
 
-* _MOUSEHIDE statements do not accumulate like they did with [CALL ABSOLUTE](CALL-ABSOLUTE) or [INTERRUPT](INTERRUPT) in QBasic.
+> _MOUSESHOW "DEFAULT" can be used after a mouse cursor statement above was previously used.
 
 ## Example(s)
 

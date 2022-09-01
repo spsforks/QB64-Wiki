@@ -14,7 +14,7 @@ The [VAL](VAL) Function returns the decimal numerical equivalent value of a [STR
 * Octal [OCT$](OCT$) string values with the "[&O](&O)" prefix can be converted to a decimal value with digits from 0 to 7 only.
 * Presently VAL **cannot** convert QB64 binary [&B](&B) prefixed strings from binary to decimal in **QB64**.
 * For character values of [ASCII](ASCII) data use [ASC](ASC) to get the value. 
-* In QB64 use an [INTEGER](INTEGER) return variable to hold integer values  returned by VAL [HEX$](HEX$) strings: **value% <nowiki>= VAL("&HFFFF") =</nowiki> -1**
+* In QB64 use an [INTEGER](INTEGER) return variable to hold integer values  returned by VAL [HEX$](HEX$) strings: **value% = VAL("&HFFFF") = -1**
 
 ## Example(s)
 

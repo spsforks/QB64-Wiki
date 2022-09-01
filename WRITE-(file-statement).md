@@ -17,7 +17,8 @@ The [WRITE (file statement)](WRITE-(file-statement)) file statement writes a lis
 * [Semicolon](Semicolon)s cannot be used in or following the WRITE statement!
 
 ## Example(s)
- Writes new data to a text file sequentially and reads it back to the program screen.
+
+Writes new data to a text file sequentially and reads it back to the program screen.
 
 ```vb
 

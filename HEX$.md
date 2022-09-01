@@ -4,7 +4,7 @@ The [HEX$](HEX$) function returns the base 16 hexadecimal representation of an [
 
 > result$ = [HEX$](HEX$)(decimalNumber)
 
-## Parameters
+## Parameter(s)
 
 * number can be any [INTEGER](INTEGER), [LONG](LONG) or [_INTEGER64](_INTEGER64) value, positive or negative.
 * number can also be any [SINGLE](SINGLE), [DOUBLE](DOUBLE) or [_FLOAT](_FLOAT) value, but only the integer part of the value is converted in that case. That is, from the value *-123.45* the function would convert the *-123* only.

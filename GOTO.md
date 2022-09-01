@@ -4,9 +4,11 @@ The [GOTO](GOTO) statement sends the procedure to a line label or a line number 
  
 > [GOTO](GOTO) {*lineNumber*|*lineLabel*}
 
-***IF** Syntax:*
+*[IF](IF) Syntax:*
 
 > IF condition [GOTO](GOTO) {*lineNumber*|*lineLabel*}
+> IF condition THEN [GOTO](GOTO) {*lineNumber*|*lineLabel*}
+> IF condition THEN *lineNumber* ' GOTO may be omitted when line numbers are used
 
 ## Description
 

@@ -77,8 +77,6 @@ The [KEY n](KEY-n) statement is used to assign a "soft key" string or a flag and
 
 ```
 
-<sub>NOTE: The above commented table can be copied and pasted directly into the QB64 IDE</sub>
-
 **Trapping Ctrl, Alt and Shift key combinations**
 
 > Keyboard Flag values can be added to monitor more than one control key. For example, flag combination 12 would flag both the Ctrl and Alt key presses. Since the flag already determines the function key to monitor, you don't necessarily have to use it's scancode. You can look for a key combination such as Ctrl + by using the plus key's scancode which is 13 as shown below: 
@@ -160,8 +158,6 @@ PRINT "Control and + keys pressed!";
 RETURN 
 
 ```
-
-Code by Ted Weissgerber
 
 Differentiating the extended cursor keypad arrows from the predefined Number Pad arrow keys.
 

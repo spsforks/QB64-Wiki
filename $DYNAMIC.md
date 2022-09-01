@@ -2,7 +2,7 @@ The [$DYNAMIC]($DYNAMIC) [Metacommand](Metacommand) allows the creation of dynam
 
 ## Syntax
  
-> {[REM](REM) | ' } [$DYNAMIC]($DYNAMIC)
+> {[REM](REM) | ['](apostrophe) } [$DYNAMIC]($DYNAMIC)
 
 ## Description
 

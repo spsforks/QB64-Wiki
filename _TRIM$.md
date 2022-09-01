@@ -13,7 +13,7 @@ The [_TRIM$](_TRIM$) function removes both leading and trailing space characters
 
 ## Example(s)
 
-*Example: Demonstrating how _TRIM$(text$) can replace LTRIM$(RTRIM$(text$)):
+Demonstrating how _TRIM$(text$) can replace LTRIM$(RTRIM$(text$)):
 
 ```vb
 

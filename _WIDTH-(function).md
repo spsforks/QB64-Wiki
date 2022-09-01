@@ -1,4 +1,4 @@
-The _WIDTH function returns the width of an image handle or of the current write page.
+The [_WIDTH (function)](_WIDTH-(function)) function returns the width of an image handle or of the current write page.
 
 ## Syntax
 
@@ -6,12 +6,12 @@ The _WIDTH function returns the width of an image handle or of the current write
 
 ## Description
 
-* If imageHandle& is omitted, it's assumed to be the handle of the current SCREEN or write page.
-* To get the width of the current program screen window use zero for the handle value or nothing: `columns& = _WIDTH(0)` or `columns& = _WIDTH`
-* If the image specified by imageHandle& is in text only(SCREEN 0) mode, the number of characters per row is returned.
+* If imageHandle& is omitted, it's assumed to be the handle of the current [SCREEN](SCREEN) or write page.
+* To get the width of the current program [SCREEN](SCREEN) window use zero for the handle value or nothing: columns& = [_WIDTH (function)](_WIDTH-(function))(0) *or* columns& = [_WIDTH (function)](_WIDTH-(function))
+* If the image specified by imageHandle& is in text only([SCREEN](SCREEN) 0) mode, the number of characters per row is returned.
 * If the image specified by imageHandle& is in graphics mode, the number of pixels per row is returned.
-* If imageHandle& is an invalid handle, then an invalid handle error is returned.
-* The last visible pixel coordinate of a program screen is `_WIDTH - 1`.
+* If imageHandle& is an invalid handle, then an [ERROR Codes](ERROR-Codes) is returned.
+* The last visible pixel coordinate of a program [SCREEN](SCREEN) is **[_WIDTH (function)](_WIDTH-(function)) - 1**.
 
 ## Example(s)
 

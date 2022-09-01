@@ -12,8 +12,8 @@ The [LPRINT](LPRINT) statement sends string text or numerical values to a parall
 * Assumes a 80 character wide page. **[Keywords currently not supported by QB64](Keywords-currently-not-supported-by-QB64)**
 * [LPRINT USING](LPRINT-USING) can print formatted text data to a page identically to how [PRINT USING](PRINT-USING) formats a program screen.
 * [COLOR](COLOR)ed text and images can be printed using [_PRINTIMAGE](_PRINTIMAGE) which stretches them to fit the default printer's paper size.
-* LPRINT will only print to the default USB or LPT printer set up in Windows.  **[Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions](Keywords-currently-not-supported-by-QB64#Keywords-Not-Supported-in-Linux-or-MAC-OSX-versions)**
-  * To print in Linux, see [Connecting to printer via TCP/IP](Connecting-to-printer-via-TCP/IP).
+* LPRINT will only print to the default USB or LPT printer set up in Windows.  **[Keywords currently not supported](Keywords-currently-not-supported-by-QB64)**
+  * To print in Linux, see [Connecting to printer via TCP/IP](Connecting-to-printer-via-TCP-IP).
 * Note: Printer *escape codes* starting with [CHR$](CHR$)(27) will not work with LPRINT and may produce text printing errors.
 
 ## See Also

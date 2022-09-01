@@ -71,7 +71,7 @@ END SUB
 
 ```
 
-> *Notes:* When [_DISPLAY](_DISPLAY) is commented out, the hardware Menu Test screen portion will blink and key codes may be seen underneath.
+> *Notes:* When _DISPLAY is commented out, the hardware Menu Test screen portion will blink and key codes may be seen underneath.
 
 ## See Also
 

@@ -16,8 +16,6 @@ A [FUNCTION](FUNCTION) block statement is used to create a function procedure to
 * Functions are often referred to in program calculations, not called like SUB procedures. [CALL](CALL) cannot be used with functions.
 * If there are no parameters passed or they are [SHARED](SHARED) the *parameters* and parenthesis are not required.
 * Variable names within the procedure do not have to match the names used in the reference parameters, just the value types.
-* To pass parameter variables [BYVAL](BYVAL) to protect the value in a call, parenthesis can be placed around each variable name also.
-* To pass [arrays](arrays) to a sub-procedure use empty brackets after the name or indicate the index in the call.
 * All [$DYNAMIC]($DYNAMIC) variable values return to 0 or null strings when the procedure is exited except when a variable or the entire function is [STATIC](STATIC). This can save program memory as all [$DYNAMIC]($DYNAMIC) memory used in a FUNCTION is released on procedure exit.
 * FUNCTION procedure code can use [GOSUB](GOSUB) and [GOTO](GOTO) line numbers or labels inside of the procedure when necessary. 
 * For early function exits use [EXIT](EXIT) [FUNCTION](FUNCTION) before [END FUNCTION](END-FUNCTION) and [GOSUB](GOSUB) procedures using [RETURN](RETURN).

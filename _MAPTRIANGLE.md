@@ -32,7 +32,7 @@ The [_MAPTRIANGLE](_MAPTRIANGLE) statement maps a triangular portion of an image
 
 ## Example(s)
 
-Rotating the an image using a rotation and zoom SUB with _MAPTRIANGLE.
+Rotating an image using a rotation and zoom SUB with _MAPTRIANGLE.
 
 ```vb
 

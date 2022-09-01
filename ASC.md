@@ -9,7 +9,7 @@ The [ASC](ASC) function returns the [ASCII](ASCII) code number of a certain [STR
 * If the optional position% parameter is omitted, ASC will return the [ASCII](ASCII) code of the first [STRING](STRING) character.
 * [ASCII](ASCII) code [INTEGER](INTEGER) or [_UNSIGNED](_UNSIGNED) [_BYTE](_BYTE) values returned range from 0 to 255. 
 * ASC returns 0 when reading [ASCII](ASCII) 2 byte codes returned by [INKEY$](INKEY$) when the arrow, function, Home/Page keys are used. 
-  * Use QB64's position% parameter to read the second byte if necessary. green
+  * Use QB64's position% parameter to read the second byte if necessary. IF ASC(key$) <nowiki>=</nowiki> 0 THEN byte2 <nowiki>=</nowiki> ASC(key$, 2)
 * In **QB64** ASC string byte position reads are about **5 times faster** than [MID$](MID$) when parsing strings. See [MID$](MID$) *Example 2*.
 
 ## Error(s)

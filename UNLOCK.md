@@ -2,9 +2,9 @@ The UNLOCK statement opens access to parts or all of a file to other programs an
 
 ## Syntax
 
->  [UNLOCK](UNLOCK) [#]fileNumber%
->  [UNLOCK](UNLOCK) [#]fileNumber%, record&
->  [UNLOCK](UNLOCK) [#]fileNumber%, [firstRecord&] TO lastRecord&
+> UNLOCK [#]fileNumber%
+> UNLOCK [#]fileNumber%, record&
+> UNLOCK [#]fileNumber%, [firstRecord&] TO lastRecord&
 
 ## Description
 

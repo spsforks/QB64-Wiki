@@ -6,7 +6,7 @@ The [_SCREENPRINT](_SCREENPRINT) statement simulates typing text into a Windows 
 
 ## Description
 
-* [Keywords currently not supported](Keywords_currently_not_supported_by_QB64)
+* [Keywords currently not supported](Keywords-currently-not-supported-by-QB64)
 * text$ is the text to be typed into a focused program's text entry area, one character at a time.
 * Set the focus to a desktop program by using the [_SCREENIMAGE](_SCREENIMAGE) handle as the [_SOURCE](_SOURCE). Use the image to map the desired area. 
 * [_SCREENCLICK](_SCREENCLICK) can also be used to set the focus to a program's text entry area on the desktop.

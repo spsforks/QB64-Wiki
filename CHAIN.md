@@ -21,7 +21,7 @@
 * To pass data from one module to the other use [COMMON SHARED](COMMON-SHARED). The COMMON list should match [Variable Types](Variable-Types)s and names.
 * **QB64 does not retain the [SCREEN](SCREEN) mode like QBasic did.** 
 * Variable data can be passed in files instead of using [COMMON SHARED](COMMON-SHARED) values. **QB64** uses files to pass [COMMON](COMMON) lists.
-* [Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions](Keywords-currently-not-supported-by-QB64#Keywords-Not-Supported-in-Linux-or-MAC-OSX-versions)**.
+* [Keywords currently not supported](Keywords-currently-not-supported-by-QB64)**.
 
 ## Example(s)
 

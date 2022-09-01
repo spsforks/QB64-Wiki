@@ -14,7 +14,7 @@
 
 ## Example(s)
 
-*Example 1:* Adding named color constants for SCREEN 0:
+Adding named color constants for SCREEN 0:
 
 ```vb
 

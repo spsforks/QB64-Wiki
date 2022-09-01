@@ -115,6 +115,6 @@ END SUB
 ## See Also
 
 * [PUT](PUT), [SEEK](SEEK), [SEEK (statement)](SEEK-(statement)) 
-* [INPUT (file statement)](INPUT-(file-statement)), [GET (TCP/IP statement)](GET-(TCP/IP-statement))
+* [INPUT (file statement)](INPUT-(file-statement)), [GET (TCP/IP statement)](GET-(TCP-IP-statement))
 * [FIELD](FIELD), [RANDOM](RANDOM), [BINARY](BINARY)
 * [LEN](LEN), [LOF](LOF), [EOF](EOF)

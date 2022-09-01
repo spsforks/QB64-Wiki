@@ -49,11 +49,9 @@ END
 
 ```
 
-*Note:* Only free valid handle values with [_FREEIMAGE](_FREEIMAGE) AFTER a new [SCREEN](SCREEN) mode is being used by the program.
+> *Note:* Only free valid handle values with [_FREEIMAGE](_FREEIMAGE) AFTER a new [SCREEN](SCREEN) mode is being used by the program.
 
----
-
-Program that copies desktop to a hardware image to form a 3D triangle (**version 1.000 and up**):
+Program that copies desktop to a hardware image to form a 3D triangle:
 
 ```vb
 

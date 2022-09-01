@@ -33,7 +33,6 @@ A [TIMER](TIMER) statement enables, turns off or stops timer event trapping. QBa
 
 ## Example(s)
 
-## Example(s)
  How to update the time while [PRINT](PRINT) at the same time in a program.
 
 ```vb

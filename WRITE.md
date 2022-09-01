@@ -13,7 +13,8 @@ The WRITE statement writes a [comma](comma)-separated list of values to the scre
 * [Semicolon](Semicolon)s cannot be used in or following the WRITE statement!
 
 ## Example(s)
- Comparing WRITE to the same PRINT statement.
+
+Comparing WRITE to the same PRINT statement.
 
 ```vb
 

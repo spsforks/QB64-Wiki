@@ -10,7 +10,7 @@ The [$ERROR]($ERROR) metacommand triggers a compilation error.
 * MESSAGE is any text. Quotation marks are not required.
 * When QB64 tries to compile an $ERROR metacommand a compilation error is triggered and MESSAGE is shown to the user. This is useful in [$IF]($IF) blocks.
 
-## Description
+### Details
 
 * If there is a particular situation where you know your program will not work properly, you can prevent the user compiling and give them a helpful error message instead by checking for the condition with [$IF]($IF).
 * An [$ERROR]($ERROR) directive not inside an [$IF]($IF) (or [$ELSEIF]($ELSEIF)) block is useless because the program will never compile.

@@ -31,8 +31,6 @@ RETURN
 
 ```
 
-Code by Cyperium
-
 ```text
 
 1. It goes to the subroutine.
@@ -60,8 +58,6 @@ PRINT "It went there."
 RETURN 
 
 ```
-
-Code by Cyperium
 
 ```text
 

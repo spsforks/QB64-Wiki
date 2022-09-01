@@ -220,8 +220,6 @@ LOOP
 
 ```
  
-Adapted from code by Daniel
-
 > *Note:* The image can be placed off of the screen without error. The image moves 10 pixels to move faster. [CLS](CLS) eliminates any background.
 
 Creating upper [ASCII](ASCII) characters in a QB program using **Alt +** three number keys:
@@ -245,8 +243,6 @@ PRINT num$
 PRINT CHR$(VAL(num$)
 
 ```
-
-Code by Ted Weissgerber
 
 ```text
 

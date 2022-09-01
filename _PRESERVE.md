@@ -22,7 +22,7 @@ The [_PRESERVE](_PRESERVE) [REDIM](REDIM) action preserves the current contents 
 
 ## Example(s)
 
-Changing the upper and lower array bounds.
+Changing the upper and lower array bounds
 
 ```vb
 

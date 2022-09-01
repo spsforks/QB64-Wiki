@@ -11,7 +11,7 @@ The [_DIREXISTS](_DIREXISTS) function determines if a designated file path or fo
 * The function reads the system information directly without using a [SHELL](SHELL) procedure.
 * The function will use the appropriate Operating System path separators. [_OS$](_OS$) can determine the operating system.
 * **This function does not guarantee that a path can be accessed, only that it exists.**
-* **NOTE: Checking if a folder exists in a CD drive may cause the tray to open automatically to request a disk when empty.** To find drives in Windows, use this API Library: [Windows Libraries](Windows-Libraries)
+* **NOTE: Checking if a folder exists in a CD drive may cause the tray to open automatically to request a disk when empty.**
 
 ## Example(s)
 
