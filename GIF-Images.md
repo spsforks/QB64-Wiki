@@ -415,6 +415,8 @@ END SUB
 
 Copy the code from the [FILELIST$ (function)](FILELIST$-(function)) or [FILELIST$](FILELIST$) page to a text file named *_FILE$.BM* and use when compiling. Just save with .BM extension (*Save As ALL files*) in Notepad or other text editor. The file is not necessary after the program is compiled.
 
+NOTE: This has been reported to only work using 256-color images, and you need to keep the code loading into a 32-bit image destination as the source?
+
 ## See Also
 
 * [GIF Creation](GIF-Creation), [Bitmaps](Bitmaps)
