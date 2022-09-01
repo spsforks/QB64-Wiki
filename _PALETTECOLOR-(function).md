@@ -14,7 +14,7 @@ The [_PALETTECOLOR](_PALETTECOLOR-(function)) function is used to return the 32-
 
 ## Example(s)
 
-*Example:* How _PALETTECOLOR works on 32 bit RGB compared to a 4 BPP(SCREEN 12) QBasic procedure.
+How _PALETTECOLOR works on 32-bit RGB compared to a 4-BPP (SCREEN 12) QBasic procedure.
 
 ```vb
 
