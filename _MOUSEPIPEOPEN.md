@@ -10,7 +10,7 @@ The [_MOUSEPIPEOPEN](_MOUSEPIPEOPEN) function creates a pipe handle value for a 
 
 ## Example(s)
 
-*Snippet:* The following snippet isn't runnable/compilable, but it showcases the use of the [_MOUSEPIPEOPEN](_MOUSEPIPEOPEN) function.
+The following snippet isn't runnable/compilable, but it showcases the use of the [_MOUSEPIPEOPEN](_MOUSEPIPEOPEN) function.
 
 ```vb
 
