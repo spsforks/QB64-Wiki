@@ -12,7 +12,7 @@ The [_INFLATE$](_INFLATE$) function decompresses a [STRING](STRING) compressed b
 
 ## Availability
 
-* **Version 1.4 and up**.
+* Version 1.4 and up.
 
 ## Example(s)
 
@@ -34,6 +34,7 @@ PRINT USING "(compressed size is #.###% of the original)"; ((LEN(b$) * 100) / LE
 c$ = _INFLATE$(b$)
 PRINT "After using _INFLATE$ to decompress it, LEN ="; LEN(c$)
  
+
 ```
 
 ```text

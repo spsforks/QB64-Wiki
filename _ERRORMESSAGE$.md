@@ -2,8 +2,8 @@ The [_ERRORMESSAGE$](_ERRORMESSAGE$) function returns a human-readable descripti
 
 ## Syntax
 
-* e$ = [_ERRORMESSAGE$](_ERRORMESSAGE$)
-* e$ = [_ERRORMESSAGE$](_ERRORMESSAGE$)(errorCode%)
+> e$ = [_ERRORMESSAGE$](_ERRORMESSAGE$)
+> e$ = [_ERRORMESSAGE$](_ERRORMESSAGE$)(errorCode%)
 
 ## Description
 
@@ -33,11 +33,9 @@ Using an error handler that ignores any error.
 
 ## See Also
 
-* [ERL](ERL) (last line number used before an error occurred, when line numbers are used) 
-* [ERR](ERR) (error code number) 
-* [ERROR](ERROR) (simulates error)
-* [_ERRORLINE](_ERRORLINE) (actual text code line)
-* [_INCLERRORFILE$](_INCLERRORFILE$) (name of [$INCLUDE](INCLUDE) file where error occurred, when $INCLUDE files are used
-* [_INCLERRORLINE](_INCLERRORLINE) (returns the line number in an [$INCLUDE](INCLUDE) file that caused the most recent error, when an $INCLUDE file is being used)
-* [ON ERROR](ON-ERROR) (calls error handing routine using [GOTO](GOTO) only)
-* [Error Codes](ERROR-Codes) (list of all QB64 errors)
+* [ON ERROR](ON-ERROR)
+* [_ERRORLINE](_ERRORLINE)
+* [_INCLERRORLINE](_INCLERRORLINE), [_INCLERRORFILE$](_INCLERRORFILE$)
+* [ERR](ERR), [ERL](ERL)
+* [ERROR](ERROR)
+* [ERROR Codes](ERROR-Codes)

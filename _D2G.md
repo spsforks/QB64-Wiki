@@ -4,6 +4,10 @@ The [_D2G](_D2G) function converts a **degree** value into a **gradian** value.
 
 > result = [_D2G](_D2G)(num)
 
+## Availability
+
+* Version 1.000 and up.
+
 ## Example(s)
 
 Coverting Degrees into Gradians.

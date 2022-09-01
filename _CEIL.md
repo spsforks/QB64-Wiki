@@ -7,6 +7,10 @@ The [_CEIL](_CEIL) function rounds a numeric value up to the next whole number o
 * [_CEIL](_CEIL) returns he smallest integral value that is greater than the numerical expression (as a floating-point value).
 * This means that [_CEIL](_CEIL) rounds up for both positive and negative numbers.
 
+## Availability
+
+* Version 1.000 and up.
+
 ## Example(s)
 
 Displaying the rounding behavior of [INT](INT), [CINT](CINT) and [FIX](FIX) vs [_CEIL](_CEIL).

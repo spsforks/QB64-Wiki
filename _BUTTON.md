@@ -6,6 +6,7 @@ The [_BUTTON](_BUTTON) function returns -1 when specified button number on a con
 
 ## Description
 
+* The **[_DEVICEINPUT](_DEVICEINPUT) function should be read first to specify which device [_BUTTON](_BUTTON) is intended to check.**
 * Values returned are -1 for a press and 0 when a button is released or not pressed.
 * The button_number% must be a number which does not exceed the number of buttons found by the [_LASTBUTTON](_LASTBUTTON) function.
 * **The number of [_DEVICES](_DEVICES) must be read before using [_DEVICE$](_DEVICE$), [_DEVICEINPUT](_DEVICEINPUT) or [_LASTBUTTON](_LASTBUTTON).**
@@ -41,6 +42,7 @@ LOOP UNTIL INKEY$ = CHR$(27) 'escape key exit
 END 
 
 ```
+
 > *Note:* When there is no device control to read, a [FOR...NEXT](FOR...NEXT) n = 1 TO 0 loop will not run thus avoiding a control function read error.
 
 ## See Also

@@ -19,7 +19,8 @@ Checks if a folder exists before proceeding.
 
 ```vb
 
-Cl PRINT "Folder found."
+IF _DIREXISTS("internal\temp") THEN
+    PRINT "Folder found."
 END IF
 
 ```

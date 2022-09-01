@@ -4,6 +4,11 @@ The [_CAPSLOCK (function)](_CAPSLOCK-(function)) function returns the current st
 
 > keyStatus%% = [_CAPSLOCK (function)](_CAPSLOCK-(function))
 
+## Availability
+
+* Version 1.4 and up.
+* [Keywords currently not supported](Keywords-currently-not-supported-by-QB64).
+
 ## See Also
 
 * [_NUMLOCK (function)](_NUMLOCK-(function)), [_SCROLLLOCK (function)](_SCROLLLOCK-(function))

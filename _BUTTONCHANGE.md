@@ -6,6 +6,7 @@ The [_BUTTONCHANGE](_BUTTONCHANGE) function returns -1 or 1 when a specified but
 
 ## Description
 
+* The **[_DEVICEINPUT](_DEVICEINPUT) function should be read first to specify which device [_BUTTONCHANGE](_BUTTONCHANGE) is intended to check.**
 * Values returned are -1 for a press and 1 when a button is released. No press or release event returns zero.
 * The button_number% must be a number which does not exceed the number of buttons found by the [_LASTBUTTON](_LASTBUTTON) function.
 * **The number of [_DEVICES](_DEVICES) must be read before using [_DEVICE$](_DEVICE$), [_DEVICEINPUT](_DEVICEINPUT) or [_LASTBUTTON](_LASTBUTTON).**
@@ -41,6 +42,7 @@ LOOP UNTIL INKEY$ = CHR$(27) 'escape key exit
 END 
 
 ```
+
 > *Note:* When there is no device control to read, a [FOR...NEXT](FOR...NEXT) n = 1 TO 0 loop will not run thus avoiding a control function read error.
 
 ## See Also

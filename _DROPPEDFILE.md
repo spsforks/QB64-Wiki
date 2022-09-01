@@ -20,7 +20,7 @@ The [_DROPPEDFILE](_DROPPEDFILE) function returns the list of items (files or fo
 
 ## Availability
 
-* **Version 1.3 and up**.
+* Version 1.3 and up.
 
 ## Example(s)
 

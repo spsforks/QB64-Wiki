@@ -4,6 +4,10 @@ The [_G2D](_G2D) function converts a **gradian** value into a **degree** value.
 
 > result = [_G2D](_G2D)(num)
 
+## Availability
+
+* Version 1.000 and up.
+
 ## Example(s)
 
 Coverting Gradians into Degree.

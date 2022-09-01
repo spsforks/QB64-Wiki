@@ -25,7 +25,7 @@ The [_DISPLAYORDER](_DISPLAYORDER) statement defines the order to render softwar
 
 ## Availability
 
-* **Version 1.000 and up.**
+* Version 1.000 and up.
 
 ## See Also
 

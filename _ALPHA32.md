@@ -7,9 +7,9 @@ The [_ALPHA32](_ALPHA32) function returns the alpha transparency level of a 32 b
 ## Parameter(s)
 
 * color32& is the [_UNSIGNED](_UNSIGNED) [LONG](LONG) 32 bit color value used to retrieve the alpha level.
-** Color values that are set as a [_CLEARCOLOR](_CLEARCOLOR) always have an alpha level of 0 (transparent).
-** [_SETALPHA](_SETALPHA) can set any alpha level from 0 (or fully transparent) to 255 (or opaque).
-** Normal color values that are set by [_RGB](_RGB) or [_RGB32](_RGB32) always have an alpha level of 255 (opaque).
+  * Color values that are set as a [_CLEARCOLOR](_CLEARCOLOR) always have an alpha level of 0 (transparent).
+  * [_SETALPHA](_SETALPHA) can set any alpha level from 0 (or fully transparent) to 255 (or opaque).
+  * Normal color values that are set by [_RGB](_RGB) or [_RGB32](_RGB32) always have an alpha level of 255 (opaque).
 
 ## Description
 

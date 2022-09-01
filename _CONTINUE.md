@@ -4,6 +4,10 @@ The [_CONTINUE](_CONTINUE) statement is used in a [DO...LOOP](DO...LOOP), [WHILE
 
 > [_CONTINUE](_CONTINUE)
 
+## Availability
+
+* Build 20170628/55 and up.
+
 ## Example(s)
 
 ```vb

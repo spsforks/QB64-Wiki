@@ -12,7 +12,7 @@ The [_CLIPBOARDIMAGE (function)](_CLIPBOARDIMAGE-(function)) function pastes an 
 
 ## Availability
 
-* **Build 20170906/64** onward.
+* Build 20170906/64 and up.
 
 ## Example(s)
 

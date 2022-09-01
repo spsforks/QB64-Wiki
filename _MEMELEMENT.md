@@ -19,35 +19,35 @@ The [_MEMELEMENT](_MEMELEMENT) function returns a [_MEM](_MEM) block referring t
     * [LEN](LEN) = [STRING](STRING) or [_OFFSET](_OFFSET) byte sizes vary so use [LEN](LEN)(variable) for the number of bytes.
   * *name***.TYPE** is the type (represented as bits combined to form a value) AS [LONG](LONG) (see below).
 
-## .TYPE values (version 1.000 and up)
+### .TYPE values (version 1.000 and up)
 
-    * 0 = UDT ([TYPE](TYPE)) or memory created by [_MEMNEW](_MEMNEW)
-    * 1 = 1 bit. ELEMENT.SIZE=1 *Only used along with specific types (currently integers or floats)*
-    * 2 = 2 bit. ELEMENT.SIZE=2
-    * 4 = 4 bit. ELEMENT.SIZE=4
-    * 8 = 8 bit. ELEMENT.SIZE=8 
-    * 16 = 16 bit. ELEMENT.SIZE=16
-    * 32 = 32 bit. ELEMENT.SIZE=32
-    * 64 = 64 bit. ELEMENT.SIZE=64
-    * 128 = 128 bit. ELEMENT.SIZE=128
-    * 256 = 256 bit. ELEMENT.SIZE=256
-    * 512(+ bit*) = integer types only(ie. whole numbers)
-    * 1024(+ bit*) = floating point types only(ie. numbers that can have a decimal point)
-    * 2048 = [STRING](STRING) type only
-    * 4096(+ 512 + bit*) = [_UNSIGNED](_UNSIGNED) integer type only
-    * 8192 = [_MEM](_MEM) type only
-    * 16384(+ 512 + bit*)= [_OFFSET](_OFFSET) type only
+* 0 = UDT ([TYPE](TYPE)) or memory created by [_MEMNEW](_MEMNEW)
+* 1 = 1 bit. ELEMENT.SIZE=1 *Only used along with specific types (currently integers or floats)*
+* 2 = 2 bit. ELEMENT.SIZE=2
+* 4 = 4 bit. ELEMENT.SIZE=4
+* 8 = 8 bit. ELEMENT.SIZE=8 
+* 16 = 16 bit. ELEMENT.SIZE=16
+* 32 = 32 bit. ELEMENT.SIZE=32
+* 64 = 64 bit. ELEMENT.SIZE=64
+* 128 = 128 bit. ELEMENT.SIZE=128
+* 256 = 256 bit. ELEMENT.SIZE=256
+* 512(+ bit*) = integer types only(ie. whole numbers)
+* 1024(+ bit*) = floating point types only(ie. numbers that can have a decimal point)
+* 2048 = [STRING](STRING) type only
+* 4096(+ 512 + bit*) = [_UNSIGNED](_UNSIGNED) integer type only
+* 8192 = [_MEM](_MEM) type only
+* 16384(+ 512 + bit*)= [_OFFSET](_OFFSET) type only
 
 *Note: If a future integer, float or other type doesn't have a size that is 1,2,4,8,16,32,64,128 or 256 it won't have a size-bit set.*
 
-### Versions prior to 1.000
+#### Versions prior to 1.000
 
-    * 1 = Integer types such as [_BYTE](_BYTE), [INTEGER](INTEGER), [LONG](LONG), [_INTEGER64](_INTEGER64) or [_OFFSET](_OFFSET)
-    * 2 = [_UNSIGNED](_UNSIGNED) variable types. Value must be added to the variable type value.(2 cannot be used by itself)
-    * 3 = ALL [_UNSIGNED](_UNSIGNED) [INTEGER](INTEGER) type values.(add 1 + 2)
-    * 4 = Floating point types such as [SINGLE](SINGLE), [DOUBLE](DOUBLE) or [_FLOAT](_FLOAT)
-    * 8 = [STRING](STRING) 
-    * 0 = unknown(eg. created with [_MEMNEW](_MEMNEW)) or [TYPE](TYPE)
+* 1 = Integer types such as [_BYTE](_BYTE), [INTEGER](INTEGER), [LONG](LONG), [_INTEGER64](_INTEGER64) or [_OFFSET](_OFFSET)
+* 2 = [_UNSIGNED](_UNSIGNED) variable types. Value must be added to the variable type value.(2 cannot be used by itself)
+* 3 = ALL [_UNSIGNED](_UNSIGNED) [INTEGER](INTEGER) type values.(add 1 + 2)
+* 4 = Floating point types such as [SINGLE](SINGLE), [DOUBLE](DOUBLE) or [_FLOAT](_FLOAT)
+* 8 = [STRING](STRING) 
+* 0 = unknown(eg. created with [_MEMNEW](_MEMNEW)) or [TYPE](TYPE)
 
 **Note: [_MEM](_MEM) and [_OFFSET](_OFFSET) values cannot be cast to other variable types.**
 

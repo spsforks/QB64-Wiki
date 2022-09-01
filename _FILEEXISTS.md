@@ -18,7 +18,8 @@ Checks if a file exists before opening it.
 
 ```vb
 
-Cl PRINT "Settings file found."
+IF _FILEEXISTS("mysettings.ini") THEN
+    PRINT "Settings file found."
 END IF
 
 ```

@@ -2,7 +2,7 @@
 
 ## Syntax
 
->  [SHELL](SHELL) [[_DONTWAIT](_DONTWAIT)] [commandLine$]
+> [SHELL](SHELL) [_DONTWAIT] [commandLine$]
 
 ## Description
 

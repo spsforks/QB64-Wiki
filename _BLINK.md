@@ -11,13 +11,14 @@ The [_BLINK](_BLINK) statement toggles blinking colors in text mode (SCREEN 0). 
 * [_BLINK](_BLINK) is only effective in SCREEN 0. It's ignored in graphic modes.
 * IF [_DISPLAY](_DISPLAY) is used, blinking is disabled, even if _BLINK is ON, but high intensity backgrounds aren't enabled in this case.
 
-## Availability:
+## Availability
 
 * Build 20170816/61 up (August 16, 2017).
 
 ## Example(s)
 
 ```vb
+
 COLOR 16, 7
 PRINT "This is printed in black over gray background. Black letters are blinking."
 PRINT "Hit a key..."

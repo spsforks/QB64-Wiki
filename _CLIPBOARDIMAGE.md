@@ -13,7 +13,7 @@ The [_CLIPBOARDIMAGE](_CLIPBOARDIMAGE) statement copies a valid QB64 image to th
 
 ## Availability
 
-* **Build 20170906/64** onward.
+* Build 20170906/64 and up.
 
 ## Example(s)
 

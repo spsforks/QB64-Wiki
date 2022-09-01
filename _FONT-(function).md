@@ -1,8 +1,8 @@
-The [_FONT](_FONT) function retrieves the font handle from the specified image handle or the current [_DEST](_DEST)ination page's font.
+The [_FONT (function)](_FONT-(function)) function retrieves the font handle from the specified image handle or the current [_DEST](_DEST)ination page's font.
 
 ## Syntax
 
-> fontHandle& = [_FONT](_FONT)[(imageHandle&)]
+> fontHandle& = [_FONT (function)](_FONT-(function))[(imageHandle&)]
 
 ## Description
 

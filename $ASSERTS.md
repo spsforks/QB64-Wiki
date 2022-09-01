@@ -1,20 +1,21 @@
-This metacommand enables debug tests with the [_ASSERT](_ASSERT) statement.
+The [$ASSERTS]($ASSERTS) metacommand enables debug tests with the [_ASSERT](_ASSERT) macro.
 
 ## Syntax
 
-> [$ASSERTS]($ASSERTS)[:CONSOLE]
+> [$ASSERTS]($ASSERTS)
+> [$ASSERTS]($ASSERTS):CONSOLE
 
 ## Description
 
-* The metacommand does not require a comment or [REM](REM) before it. There is no space after the colon.
-* If this metacommand is used in a program and any of the set [_ASSERT](_ASSERT) checkpoints will fail, then the program will stop with an **_ASSERT failed** error.
-* Detailed error messages passed to the [_ASSERT](_ASSERT) statement will be displayed in the console window, but only if [$ASSERTS]($ASSERTS) is used.
+* If an error message is passed to the [_ASSERT](_ASSERT) statement, it is displayed in the console window if [$ASSERTS]($ASSERTS) is used.
 
-> Note: This metacommand is the main switch to enable debug tests during development. Later just remove this metacommand to compile the program without debugging code, all the [_ASSERT](_ASSERT) statements may remain in the code for later debugging sessions, they are simply ignored without this metacommand.
+## Availability
+
+* Version 1.4 and up.
 
 ## Example(s)
 
-> Example:Adding test checks for parameter inputs in a function.
+Adding test checks for parameter inputs in a function.
 
 ```vb
 
@@ -41,9 +42,4 @@ END FUNCTION
 
 * [_ASSERT](_ASSERT)
 * [$CHECKING]($CHECKING)
-* [Relational Operations](Relational_Operations)
-* [ERROR Codes](ERROR-Codes)
-
-
-
-
+* [Relational Operations](Relational-Operations)

@@ -9,6 +9,10 @@ The [_DESKTOPHEIGHT](_DESKTOPHEIGHT) function returns the height of the users cu
 * No parameters are needed for this function.
 * This returns the height of the user's desktop, not the size of any screen or window which might be open on that desktop.
 
+## Availability
+
+* Version 1.000 and up.
+
 ## Example(s)
 
 ```vb

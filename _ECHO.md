@@ -9,6 +9,10 @@ The [_ECHO](_ECHO) statement allows outputting text to a [$CONSOLE]($CONSOLE) wi
 * [_ECHO](_ECHO) is a shorthand to saving current [_DEST](_DEST), switching to [_DEST](_DEST) [_CONSOLE](_CONSOLE), [PRINT](PRINT)ing, then switching back to the previous [_DEST](_DEST).
 * To output numbers, use the [STR$](STR$) function.
 
+## Availability
+
+* Version 1.3 and up.
+
 ## Example(s)
 
 ```vb

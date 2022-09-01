@@ -1,4 +1,4 @@
-The [_CLIPBOARD$ (statement)](_CLIPBOARD$-(statement)) statement copies the [STRING](STRING) value into the system clipboard.
+The [_CLIPBOARD$ (statement)](_CLIPBOARD$-(statement)) statement copies the specified [STRING](STRING) value into the operating system's clipboard.
 
 ## Syntax
 

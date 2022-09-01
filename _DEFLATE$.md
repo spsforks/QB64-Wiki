@@ -11,7 +11,7 @@ The [_DEFLATE$](_DEFLATE$) function compresses a [STRING](STRING).
 
 ## Availability
 
-* **Version 1.4 and up**.
+* Version 1.4 and up.
 
 ## Example(s)
 

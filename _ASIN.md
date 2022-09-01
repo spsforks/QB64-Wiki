@@ -12,7 +12,7 @@ The [_ASIN](_ASIN) function returns the angle measured in radians based on an in
 
 ## Availability
 
-* **Version 1.000 and up**
+* Version 1.000 and up.
 
 ## Example(s)
 

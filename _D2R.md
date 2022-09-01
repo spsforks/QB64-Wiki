@@ -4,6 +4,10 @@ The [_D2R](_D2R) function converts a **degree** value into a **radian** value.
 
 > result = [_D2R](_D2R)(num)
 
+## Availability
+
+* Version 1.000 and up.
+
 ## Example(s)
 
 Coverting Degrees into Radians.

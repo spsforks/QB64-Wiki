@@ -44,7 +44,7 @@ SCREEN i&
 ```vb
 
 SCREEN _NEWIMAGE(800, 600, 32)
-img& = _LOADIMAGE("QB64.PNG")                           'use any 24/32 bit image
+img& = _LOADIMAGE("QB64.PNG")                           'load the image file to be drawn
 
 wide% = _WIDTH(img&): deep% = _HEIGHT(img&)
 TLC$ = "BL" + STR$(wide% \ 2) + "BU" + STR$(deep% \ 2)  'start draw at top left corner
@@ -66,6 +66,9 @@ DO
 LOOP UNTIL INKEY$ > "" 
 
 ```
+
+
+> *NOTE:* Speed varies with image size.
 
 ### More examples
 

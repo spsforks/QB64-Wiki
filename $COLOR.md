@@ -3,7 +3,6 @@
 ## Syntax
 
 >  [$COLOR]($COLOR):0
-
 >  [$COLOR]($COLOR):32
 
 ## Description
@@ -11,25 +10,27 @@
 * [$COLOR]($COLOR):0 adds [CONST](CONST) for colors 0-15. The actual constant names can be found in the file **source/utilities/color0.bi**.
 * [$COLOR]($COLOR):32 adds [CONST](CONST) for 32-bit colors, similar to HTML color names. The actual constant names can be found in the file **source/utilities/color32.bi**.
 * [$COLOR]($COLOR) is a shorthand to manually using [$INCLUDE]($INCLUDE) pointing to the files listed above.
-* Not compatible with [$NOPREFIX]($NOPREFIX).
+* *NOTE*: When using [$NOPREFIX]($NOPREFIX), the color constants change to **C_<old name>** (ex: **Blue** becomes **C_Blue**).
 
 ## Example(s)
 
-Example 1: Adding named color constants for SCREEN 0.
+*Example 1:* Adding named color constants for SCREEN 0:
 
 ```vb
 
 $COLOR:0
 COLOR BrightWhite, Red
-PRINT "Bright white on red."
+PRINT "BrightWhite on red."
 
 ```
-OutputStartBG4
+
+```text
+
 Bright white on red.
 
 ```
 
-Example 2: Adding named color constants for 32-bit modes.
+Adding named color constants for 32-bit modes:
 
 ```vb
 
@@ -38,10 +39,24 @@ $COLOR:32
 COLOR CrayolaGold, DarkCyan
 PRINT "CrayolaGold on DarkCyan."
 
+
+```
+
+Using [$COLOR]($COLOR) with [$NOPREFIX]($NOPREFIX):
+
+```vb
+
+$NOPREFIX
+$COLOR:0
+COLOR C_BrightWhite, C_Red
+PRINT "BrightWhite on Red."
+ 
+
 ```
 
 ## See Also
 
 * [COLOR](COLOR), [SCREEN](SCREEN) 
 * [_NEWIMAGE](_NEWIMAGE), [$INCLUDE]($INCLUDE)
+* [$NOPREFIX]($NOPREFIX)
 * [Metacommand](Metacommand)

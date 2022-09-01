@@ -1,10 +1,8 @@
 The [$SCREENSHOW]($SCREENSHOW) [Metacommand](Metacommand) can be used to display the main program window throughout the program.
 
-
 ## Syntax
 
 >  $SCREENSHOW
-
 
 ## Description
 
@@ -13,13 +11,8 @@ The [$SCREENSHOW]($SCREENSHOW) [Metacommand](Metacommand) can be used to display
 * If [$SCREENHIDE]($SCREENHIDE) and then [$SCREENSHOW]($SCREENSHOW) are used in the same program module the window will not be hidden.
 * **QB64 [Metacommand](Metacommand)s cannot be commented out with [apostrophe](apostrophe) or [REM](REM).**
 
-
 ## See Also
 
 * [$CONSOLE]($CONSOLE), [$SCREENHIDE]($SCREENHIDE) (QB64 [Metacommand](Metacommand)s)
 * [_SCREENHIDE](_SCREENHIDE), [_SCREENSHOW](_SCREENSHOW)
 * [_CONSOLE](_CONSOLE)
-
-
-
-

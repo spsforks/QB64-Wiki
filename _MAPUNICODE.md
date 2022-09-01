@@ -26,7 +26,6 @@ FOR ASCIIcode = 128 TO 255
   _MAPUNICODE Unicode TO ASCIIcode
 NEXT
 
-
 FOR i = 128 TO 255
   PRINT CHR$(i) + " ";
   cnt = cnt + 1

@@ -11,7 +11,7 @@ The [_FINISHDROP](_FINISHDROP) statement resets [_TOTALDROPPEDFILES](_TOTALDROPP
 
 ## Availability
 
-* **Version 1.3 and up**.
+* Version 1.3 and up.
 
 ## Example(s)
 

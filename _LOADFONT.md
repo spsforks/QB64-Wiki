@@ -96,7 +96,7 @@ DECLARE CUSTOMTYPE LIBRARY 'Directory Information using KERNEL32 provided by Dav
     FUNCTION GetModuleFileNameW& (BYVAL hModule AS LONG, lpFileName AS STRING, BYVAL nSize AS LONG)
 END DECLARE
 
-'###  SHOW CURRENT PROGRAM
+'=== SHOW CURRENT PROGRAM
 FileName$ = SPACE$(512)
 
 Result = GetModuleFileNameA(0, FileName$, LEN(FileName$))

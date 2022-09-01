@@ -4,6 +4,10 @@ The [_G2R](_G2R) function converts a **gradian** value into a **radian** value.
 
 > result = [_G2R](_G2R)(num)
 
+## Availability
+
+* Version 1.000 and up.
+
 ## Example(s)
 
 Coverting Gradians into Radians.

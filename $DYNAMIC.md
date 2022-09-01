@@ -1,4 +1,4 @@
-The [$DYNAMIC]($DYNAMIC) [Metacommand](Metacommand) allows the creation of dynamic (changeable) arrays.
+The [$DYNAMIC]($DYNAMIC) [Metacommand](Metacommand) allows the creation of dynamic (resizable) arrays.
 
 ## Syntax
  
@@ -6,7 +6,7 @@ The [$DYNAMIC]($DYNAMIC) [Metacommand](Metacommand) allows the creation of dynam
 
 ## Description
 
-* QBasic [Metacommand](Metacommand) require [REM](REM) or [Apostrophe](Apostrophe) (') before them and are always placed at the start of the main module.
+* QBasic [Metacommand](Metacommand) require [REM](REM) or [Apostrophe](Apostrophe) (') before them and are normally placed at the start of the main module.
 * Dynamic arrays can be resized using [REDIM](REDIM). The array's type cannot be changed.
 * All data in the array will be lost when [REDIM](REDIM)ensioned except when [_PRESERVE](_PRESERVE) is used.
 * [REDIM](REDIM) [_PRESERVE](_PRESERVE) can preserve and may move the previous array data when the array boundaries change.

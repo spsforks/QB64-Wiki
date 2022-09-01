@@ -1,10 +1,8 @@
 The [$RESIZE]($RESIZE) [Metacommand](Metacommand) determines if a program window can be resized by the user.
 
-
 ## Syntax
 
 >  [$RESIZE]($RESIZE):{ON|OFF|STRETCH|SMOOTH}
-
 
 ## Description
 
@@ -13,15 +11,12 @@ The [$RESIZE]($RESIZE) [Metacommand](Metacommand) determines if a program window
 * $RESIZE:STRETCH the screen will be stretched to fit the new window size with a 1 to 1 ratio of width and height.
 * $RESIZE:SMOOTH the screen will be stretched also, but with linear filtering applied to the pixels.
 
-
 ## Availability
 
-* **Version 1.000 and up**.
-
-
-## Example(s)
+* Version 1.000 and up.
 
 ## Example(s)
+
  Resizing a program screen when the user changes it without clearing the entire screen image:
 
 ```vb
@@ -57,8 +52,6 @@ DO
 LOOP UNTIL k& = 27 OR k& = 32
 
 SYSTEM
-
-
 
 ' *************************************************************************************************
 ' *                                                                                               *
@@ -108,18 +101,11 @@ FUNCTION CheckResize (CurrentScreen AS _UNSIGNED LONG)
 
     END IF
 
-
 END FUNCTION
 
 ```
-Code by waltersmind
-
 
 ## See Also
 
 * [_RESIZE](_RESIZE), [_RESIZE (function)](_RESIZE-(function))
 * [_RESIZEWIDTH](_RESIZEWIDTH), [_RESIZEHEIGHT](_RESIZEHEIGHT) (functions return the requested dimensions)
-
-
-
-

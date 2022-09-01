@@ -7,10 +7,10 @@ The [_KEYHIT](_KEYHIT) function returns [ASCII](ASCII) one and two byte, OpenGL 
 ## Description
 
 * Return values range up to &H40000000 so use a [LONG](LONG) or [_INTEGER64](_INTEGER64) variable type. See the [_KEYDOWN](_KEYDOWN) code list:
-> * 0-255: [ASCII](ASCII) values (Refer to [CP437](http://en.wikipedia.org/wiki/Code_page_437)).
-> * 256-65535: [ASCII](ASCII) character codes : code = [CVI](CVI)([CHR$](CHR$)(0) + [CHR$](CHR$)(scancode)) (unaffected by SHIFT/ALT/CTRL modifiers).
-> * 65536-&H40000000: [_KEYDOWN](_KEYDOWN) (designated with + for 100000 on keyboard below)
-> * **Negative** [LONG](LONG) values returned indicate that a key was released or a lock function key has been turned off.
+  * 0-255: [ASCII](ASCII) values (Refer to [CP437](http://en.wikipedia.org/wiki/Code_page_437)).
+  * 256-65535: [ASCII](ASCII) character codes : code = [CVI](CVI)([CHR$](CHR$)(0) + [CHR$](CHR$)(scancode)) (unaffected by SHIFT/ALT/CTRL modifiers).
+  * 65536-&H40000000: [_KEYDOWN](_KEYDOWN) (designated with + for 100000 on keyboard below)
+  * **Negative** [LONG](LONG) values returned indicate that a key was released or a lock function key has been turned off.
 * **Note: _KEYHIT can only return one value at a time so use the [_KEYDOWN](_KEYDOWN) keyhit value to find key combinations.**
 * To receive input from a [$CONSOLE]($CONSOLE) window, use [_CINP](_CINP).
 
@@ -39,8 +39,6 @@ The [_KEYHIT](_KEYHIT) function returns [ASCII](ASCII) one and two byte, OpenGL 
 '     **    Lower value = LCase/NumLock On __________________ + = add 100000 **
 
 ```
-
-NOTE: The above commented table can be copied and pasted directly into the QB64 IDE.
  
 > >= &H40000000: [Unicode](Unicode).
 

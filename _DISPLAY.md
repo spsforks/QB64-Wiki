@@ -43,7 +43,6 @@ LOOP UNTIL INKEY$ = CHR$(27)
 
 CONST MenuHeight = 200
 
-
 SCREEN _NEWIMAGE(640, 480, 32)
 'SLEEP 1
 LOCATE 20
@@ -53,7 +52,6 @@ DO
     k = _KEYHIT
     IF k <> 0 THEN PRINT k,
 LOOP UNTIL k = 32 OR k = 27
-
 
 SUB DisplayMenu
 STATIC init, MS_HW AS LONG

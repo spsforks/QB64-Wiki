@@ -42,5 +42,5 @@ END SUB
 
 ## See Also
 
-* [Keyword Reference - Alphabetical](Keyword-Reference---Alphabetical) *All commands in the list are valid. For those without a wiki page, usage follows OpenGL standards.*
+* [_GLRENDER](_GLRENDER)
 * [SUB](SUB)

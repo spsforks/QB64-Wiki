@@ -1,4 +1,4 @@
-The [_CLIPBOARD$](_CLIPBOARD$) function returns the current Operating System's clipboard contents as a [STRING](STRING).
+The [_CLIPBOARD$](_CLIPBOARD$) function returns the current operating system's clipboard contents as a [STRING](STRING).
 
 ## Syntax
 
@@ -93,7 +93,6 @@ DO: _LIMIT 30 'save CPU usage while waiting for key press
     PRINT " Press Ctrl+Shift to see clipboard menu."
   END IF
 LOOP
-
 
 SUB GetKey
 CLS

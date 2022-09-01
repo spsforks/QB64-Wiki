@@ -38,7 +38,7 @@ Rotating the an image using a rotation and zoom SUB with _MAPTRIANGLE.
 
 SCREEN _NEWIMAGE(800, 600, 32)
 
-Image& = _LOADIMAGE("qb64_trans.png")   'any 24/32 bit image
+Image& = _LOADIMAGE("qb64_trans.png")   'replace with your own image
 
 DO
   CLS
@@ -154,7 +154,7 @@ PLANECOL(5) = 8
 '
 _TITLE "QB64 _MAPTRIANGLE CUBE DEMO"
 SCREEN _NEWIMAGE(800, 600, 32)
-TextureImage& = _LOADIMAGE("qb64_trans.png") 'any 24/32 bit image
+TextureImage& = _LOADIMAGE("qb64_trans.png") **'<<<< **replace with your own image
 '_PUTIMAGE , Image&
 
 DO
@@ -238,7 +238,6 @@ DO
   _DISPLAY
 LOOP UNTIL INKEY$ <> ""
 WIDTH 80: SCREEN 0: CLS
-
 
 SUB DrawHline (fromx%, tox%, yy%, col%)
   'DEF SEG = &HA000
@@ -444,7 +443,7 @@ PLANECOL(5) = 8
 _TITLE "QB64 _MAPTRIANGLE CUBE DEMO"
 SCREEN _NEWIMAGE(800, 600, 32)
 
-TextureImage& = _LOADIMAGE("qb64_trans.png", 32) 'any 24/32 bit image
+TextureImage& = _LOADIMAGE("qb64_trans.png", 32)'replace with your own image
 _SETALPHA 128, , TextureImage&
 TextureImage& = _COPYIMAGE(TextureImage&, 33)'copy of hardware image
 

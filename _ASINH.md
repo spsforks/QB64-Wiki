@@ -1,4 +1,4 @@
-The [_ASINH](_ASINH) returns the arc hyperbolic sine of x, expressed in radians.
+The [_ASINH](_ASINH) function returns the arc hyperbolic sine of x, expressed in radians.
 
 ## Syntax
 

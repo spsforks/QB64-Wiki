@@ -1,13 +1,13 @@
-This function creates an identical designated image in memory with a different negative [LONG](LONG) handle value.
+The [_COPYIMAGE](_COPYIMAGE) function creates an identical designated image in memory with a different negative [LONG](LONG) handle value.
 
 ## Syntax
 
-> newhandle& = [_COPYIMAGE](_COPYIMAGE)(imageHandle&[, mode%])
+> newhandle& = [_COPYIMAGE](_COPYIMAGE)[(imageHandle&[, mode%)]]
 
 ## Parameter(s)
 
 * The [LONG](LONG) *newhandle&* value returned will be different than the source handle value supplied.
-* If *imageHandle&* is designated being zero, the current software [_DEST](_DEST) screen or image is copied.
+* If *imageHandle&* parameter is omitted or zero is designated, the current software [_DEST](_DEST) screen or image is copied.
 * If 1 is designated instead of an *imageHandle&*, it designates the last OpenGL hardware surface to copy.
 * *Mode* 32 can be used to convert 256 color images to 32 bit colors.
 * *Mode* 33 images are hardware accelerated in **version 1.000 and up**, and are created using [_LOADIMAGE](_LOADIMAGE) or [_COPYIMAGE](_COPYIMAGE).

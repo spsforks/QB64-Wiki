@@ -2,7 +2,7 @@
 
 ## Syntax
 
-> [_KEYCLEAR](_KEYCLEAR) [buffer&]
+> [_KEYCLEAR](_KEYCLEAR) buffer&
 
 ## Parameter(s)
 

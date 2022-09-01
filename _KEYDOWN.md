@@ -48,8 +48,6 @@ The **_KEYDOWN** function returns whether modifying keys like CTRL, ALT, SHIFT, 
 
 ```
 
-NOTE: The above commented table can be copied and pasted directly into the QB64 IDE.
-
 ```text
 
          **65536-&H40000000: QB64-specific Virtual Key codes:**

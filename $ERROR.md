@@ -1,10 +1,8 @@
 The [$ERROR]($ERROR) metacommand triggers a compilation error.
 
-
 ## Syntax
 
 >  [$ERROR]($ERROR) MESSAGE
-
 
 ## Description
 
@@ -12,15 +10,12 @@ The [$ERROR]($ERROR) metacommand triggers a compilation error.
 * MESSAGE is any text. Quotation marks are not required.
 * When QB64 tries to compile an $ERROR metacommand a compilation error is triggered and MESSAGE is shown to the user. This is useful in [$IF]($IF) blocks.
 
-
 ## Description
 
 * If there is a particular situation where you know your program will not work properly, you can prevent the user compiling and give them a helpful error message instead by checking for the condition with [$IF]($IF).
 * An [$ERROR]($ERROR) directive not inside an [$IF]($IF) (or [$ELSEIF]($ELSEIF)) block is useless because the program will never compile.
 
-
 ## Example(s)
-
 
 ```vb
 
@@ -29,14 +24,10 @@ $IF VERSION < 2.1 OR WINDOWS = 0 THEN
 $END IF
 
 ```
-*Output*: Compilation check failed: REQUIRES WINDOWS QB64 VERSION 2.1 OR ABOVE on line 2 (assuming your version of QB64 doesn't meet those requirements).
 
+*Output*: Compilation check failed: REQUIRES WINDOWS QB64 VERSION 2.1 OR ABOVE on line 2 (assuming your version of QB64 doesn't meet those requirements).
 
 ## See Also
 
 * [Metacommand](Metacommand)
 * [$IF]($IF)
-
-
-
-

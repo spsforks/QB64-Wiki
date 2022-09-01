@@ -1,12 +1,12 @@
-The [_CONSOLETITLE](_CONSOLETITLE) statement creates the title of the console window using a literal or variable [STRING](STRING).
+The [_CONSOLETITLE](_CONSOLETITLE) statement sets the console window's title-bar text.
 
 ## Syntax
 
 > [_CONSOLETITLE](_CONSOLETITLE) text$
 
-## Description
+## Parameter(s)
 
-* The *text$* used can be a literal or variable [STRING](STRING) value.
+* *text$* can be any literal or variable [STRING](STRING) value.
 
 ## Example(s)
  
@@ -25,7 +25,7 @@ END
 
 ```
 
-> *Note:* You can also use [SHELL](SHELL) "title consoletitle" to set the title of the console window. However, **the recommended practice is to use [_CONSOLETITLE](_CONSOLETITLE)**.
+> *Note:* You can also use [SHELL](SHELL) "title consoletitle" to set the title of the console window. However, the recommended practice is to use [_CONSOLETITLE](_CONSOLETITLE).
 
 ## See Also
 

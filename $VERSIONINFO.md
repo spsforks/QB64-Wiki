@@ -13,11 +13,16 @@ The [$VERSIONINFO]($VERSIONINFO) [Metacommand](Metacommand) adds text metadata t
 
 * Text and numerical values are string literals without quotes entered by programmer. **No variables are accepted.** (variable names would be interpreted as literals).
 * Numeric key=*value* must be 4 comma-separated numerical text values entered by programmer which usually stand for major, minor, revision and build numbers).
+* A manifest file is automatically embedded into the resulting .exe file so that Common Controls v6.0 gets linked at runtime, if required.
 * Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions](Keywords-currently-not-supported-by-QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions).
+
+## Availability
+
+* Build 20170429/52 and up.
 
 ## Example(s)
 
-*Example:* Adding metadata to a Windows exe compiled with QB64:
+Adding metadata to a Windows exe compiled with QB64:
 
 ```vb
 

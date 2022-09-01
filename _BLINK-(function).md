@@ -4,6 +4,10 @@ The [_BLINK](_BLINK) function returns the current blink setting for SCREEN 0 col
 
 > blinkState%% = [_BLINK](_BLINK)
 
+## Availability
+
+* Build 20170816/61 and up.
+
 ## Example(s)
 
 ```vb

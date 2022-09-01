@@ -2,7 +2,7 @@
 
 ## Syntax
 
-> {[REM](REM) | [REM](REM) } $INCLUDE: 'sourceFile'
+> {[REM](REM) | ['](apostrophe) } [$INCLUDE]($INCLUDE): 'sourceFile'
 
 ## Description
 
@@ -15,23 +15,19 @@
 
 * Assemble the code to be reused into a file.
 * Common extensions are **.BI** (for declarations, usually included in the beginning of a program) or **.BM** (with SUBs and FUNCTIONs, usually included at the end of a program).
-** Any extension can be used, as long as the file contains code in plain text (binary files are not accepted).
+  * Any extension can be used, as long as the file contains code in plain text (binary files are not accepted).
 * $INCLUDE any [DIM](DIM), [CONST](CONST), [SHARED](SHARED) arrays or [DATA](DATA) at the **beginning** of the main program code. 
 * $INCLUDE [SUB](SUB)s or [FUNCTION](FUNCTION)s at the bottom of the main program code **after any SUB procedures.**
-** **Note:** [TYPE](TYPE) definitions, [DATA](DATA) and [DECLARE LIBRARY](DECLARE-LIBRARY) can be placed inside of sub-procedures.
+  * **Note:** [TYPE](TYPE) definitions, [DATA](DATA) and [DECLARE LIBRARY](DECLARE-LIBRARY) can be placed inside of sub-procedures.
 * **Compile** the program.
 **Note: Once the program is compiled, the included text files are no longer needed with the program EXE.*
-
-## Special notes
-
-If an error occurs in an include file: 
-* in addition to [_ERRORLINE](_ERRORLINE), the function [_INCLERRORLINE](_INCLERRORLINE) also returns the number of which text line in the include file caused the error. It is 0 if an include file is not being executed. 
-* the function [_INCLERRORFILE$](_INCLERRORFILE$) contains the name of the include file where the error occurred. It is "" if an include file is not being executed. 
 
 ## Example(s)
 
 ```vb
+
 ** '$INCLUDE:** 'QB.BI'
+
 ```
 
 ### More examples
@@ -45,7 +41,3 @@ If an error occurs in an include file:
 * [INTERRUPT](INTERRUPT), [INTERRUPTX](INTERRUPTX) 
 * [TYPE](TYPE), [DIM](DIM)
 * [Metacommand](Metacommand)
-* [_ERRORLINE](_ERRORLINE) (actual number of text code line where error occurred)
-* [_INCLERRORFILE$](_INCLERRORFILE$) (name of [$INCLUDE](INCLUDE) file where error occurred, when $INCLUDE files are used
-* [_INCLERRORLINE](_INCLERRORLINE) (returns the line number in an [$INCLUDE](INCLUDE) file that caused the most recent error, when an $INCLUDE file is being used)
-

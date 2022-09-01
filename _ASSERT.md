@@ -12,7 +12,7 @@ The [_ASSERT](_ASSERT) statement can be used to perform tests in code that's in 
 
 ## Availability
 
-* **Version 1.4 and up**.
+* Version 1.4 and up.
 
 ## Example(s)
 

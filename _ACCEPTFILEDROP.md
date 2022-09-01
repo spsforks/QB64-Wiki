@@ -14,7 +14,7 @@ The [_ACCEPTFILEDROP](_ACCEPTFILEDROP) statement prepares a program window to re
 
 ## Availability
 
-* **Version 1.3 and up**.
+* Version 1.3 and up.
 
 ## Example(s)
 

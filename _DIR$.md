@@ -6,7 +6,7 @@ The [_DIR$](_DIR$) function returns common paths in **Windows** only such as My 
 
 ## Parameter(s)
 
-* *folderspecification* may be "desktop", "download", "documents", "music", "video", "pictures", "appdata", "program data", "local data".
+* *folderspecification* may be "desktop", "download", "documents", "music", "video", "pictures", "appdata", "program data", "local data", "program files", "program files (x86)", "temp".
 * Some variation is accepted for the folder specification:
     * MY DOCUMENTS, TEXT, DOCUMENT, DOCUMENTS, DOWNLOAD, DOWNLOADS
     * MY MUSIC, MUSIC, AUDIO, SOUND, SOUNDS
@@ -33,7 +33,7 @@ PRINT "PICTURES=" + _DIR$("pictures")
 PRINT "MUSIC=" + _DIR$("music")
 PRINT "VIDEO=" + _DIR$("video")
 PRINT "APPLICATION DATA=" + _DIR$("data")
-PRINT "LOCAL APPLICATION DATA=" + _DIR$("local application data"
+PRINT "LOCAL APPLICATION DATA=" + _DIR$("local application data")
 
 ```
 

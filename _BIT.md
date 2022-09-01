@@ -2,9 +2,9 @@ The [_BIT](_BIT) datatype can return only values of 0 (bit off) and -1 (bit on).
 
 ## Syntax
 
-> [DIM](DIM) variable [AS](AS) [[_UNSIGNED](_UNSIGNED)] [_BIT](_BIT) [* numberofbits]
+> [DIM](DIM) variable [AS](AS) [_UNSIGNED] [_BIT](_BIT) [* numberofbits]
 
->  [_DEFINE](_DEFINE) Letter[-Range|,...] [AS](AS) [[_UNSIGNED](_UNSIGNED)] [_BIT](_BIT) [* numberofbits]
+> [_DEFINE](_DEFINE) Letter[-Range|,...] [AS](AS) [_UNSIGNED] [_BIT](_BIT) [* numberofbits]
 
 ## Description
 
@@ -17,7 +17,7 @@ The [_BIT](_BIT) datatype can return only values of 0 (bit off) and -1 (bit on).
 
 Use a [_BYTE](_BYTE) and assign up to 8 bit values as shown below.
 
-***Suffix Symbols** The [_BIT](_BIT) type suffix used is below the grave accent (\`), usually located under the tilde (~) key (not an apostrophe). Foreign keyboards may not have the ` key. Try Alt+96 in the IDE.
+***Suffix Symbols** The [_BIT](_BIT) type suffix used is below the grave accent (\`), usually located under the tilde (~) key (not an apostrophe). Foreign keyboards may not have the \` key. Try Alt+96 in the IDE.
 
 > You can define a bit on-the-fly by adding a \` after the variable, like this: `variable\` = -1`
 
@@ -29,9 +29,8 @@ Use a [_BYTE](_BYTE) and assign up to 8 bit values as shown below.
 
 * The **MSB** is the most significant(largest) bit value and **LSB** is the least significant bit of a binary or register memory address value. The order in which the bits are read determines the binary or decimal byte value. There are two common ways to read a byte:
 
-   **"Big-endian"**: MSB is the first bit encountered, decreasing to the LSB as the last bit by position, memory address or time.
-   
-   **"Little-endian"**: LSB is the first bit encountered, increasing to the MSB as the last bit by position, memory address or time.
+  * **"Big-endian"**: MSB is the first bit encountered, decreasing to the LSB as the last bit by position, memory address or time.
+  * **"Little-endian"**: LSB is the first bit encountered, increasing to the MSB as the last bit by position, memory address or time.
 
 ```text
 

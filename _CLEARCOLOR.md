@@ -89,7 +89,7 @@ END
 
 ```
 
-> *Note:* If the _CLEARCOLOR image background was not put onto a separate page, [_SETALPHA](_SETALPHA) would display it also.
+> *Note:* If the _CLEARCOLOR background was not put onto a separate page, [_SETALPHA](_SETALPHA) would display it also.
 
 ## See Also
 

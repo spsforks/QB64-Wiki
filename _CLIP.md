@@ -2,13 +2,13 @@ The [_CLIP](_CLIP) option is used in a QB64 graphics [PUT (graphics statement)](
 
 ## Syntax
 
-> [PUT (graphics statement)](PUT-(graphics-statement)) [[STEP](STEP)](column, row), image_array(start)[, [_CLIP] [{XOR|PSET|AND|OR|PRESET}][, omitcolor]
+> [PUT (graphics statement)](PUT-(graphics-statement)) [[STEP]([STEP)](column, row), image_array(start)[, [[_CLIP]]] [{XOR|PSET|AND|OR|PRESET}][, omitcolor]
 
 ## Description
 
 * _CLIP should be placed immediately before the PUT action if used. XOR is default when not used.
 * The offscreen portions of the image will be the omit color.
-* [GET (graphics statement)](GET) can get portions of the images off screen in **QB64**.
+* [GET (graphics statement)](GET-(graphics-statement)) can get portions of the images off screen in **QB64**.
 
 ## Example(s)
 
