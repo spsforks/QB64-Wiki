@@ -37,7 +37,6 @@ END
 
 ```
 
-<sub>Code by Ted Weissgerber</sub>
 
 > *Explanation:* INPUT in QB64 limits integer entries to 32767 maximum. MOD 256 finds the part of a value from 0 to 255 while the second value is the number of times that 256 can go into the value. [_PRINTSTRING](_PRINTSTRING) can print all of the [ASCII](ASCII) characters.
 

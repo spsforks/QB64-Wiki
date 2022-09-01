@@ -16,10 +16,10 @@ The multi-modular technique goes back to when QBasic and QuickBASIC had module s
 
 ## Usage
 
-* The starting [line number](line number) MUST be one used in the main module code, even if RUN is called from within a SUB or FUNCTION.
+* The starting [line number](line-number) MUST be one used in the main module code, even if RUN is called from within a SUB or FUNCTION.
 * If no line number is given the currently loaded program runs from the first executable line.
 * In **QB64** RUN can open any kind of executable program and provide case sensitive program specific parameters. 
-** Recommended practice to run external programs is to use [SHELL](SHELL).
+  * Recommended practice to run external programs is to use [SHELL](SHELL).
 * RUN closes all open files and closes the invoking program module before the called program starts.
 * RUN resets the [RANDOMIZE](RANDOMIZE) sequence to the starting [RND](RND) function value.
 * **Note: Calling RUN repeatedly may cause a stack leak in QB64 if it is called from within a [SUB](SUB) or [FUNCTION](FUNCTION). Avoid when possible.**

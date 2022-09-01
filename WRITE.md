@@ -1,15 +1,15 @@
-The [WRITE](WRITE) statement writes a [comma](comma)-separated list of values to the screen without spacing.
+The WRITE statement writes a [comma](comma)-separated list of values to the screen without spacing.
 
 ## Syntax
 
-> [WRITE](WRITE) [expression, List]
+> WRITE [expression, List]
 
 ## Description
 
 * expressionList is a comma-separated list of variable or literal values to be written to the screen.
 * Write statement separates displayed values using [comma](comma) separators(required) that will display on the screen. 
 * Leading and trailing number spaces are omitted when displaying numerical values.
-* [STRING](STRING) [quotation mark](quotation mark)s will also be displayed.
+* [STRING](STRING) [quotation mark](quotation-mark)s will also be displayed.
 * [Semicolon](Semicolon)s cannot be used in or following the WRITE statement!
 
 ## Example(s)
@@ -28,7 +28,7 @@ WRITE a%, b$, c!   'displays commas between values, strings retain end quotes
 
 ```text
 
-123        Hello      3.1415 
+123        Hello      3.1415
 123,"Hello",3.1415 
 
 ```

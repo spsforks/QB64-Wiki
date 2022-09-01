@@ -1,8 +1,10 @@
-The **VAL** Function returns the decimal numerical equivalent value of a [STRING](STRING) numerical value.
+The [VAL](VAL) Function returns the decimal numerical equivalent value of a [STRING](STRING) numerical value.
 
 ## Syntax
 
-> value = VAL(string_value$)
+> value = [VAL](VAL)(string_value$)
+
+## Description
 
 * VAL converts string numbers to numerical values including decimal point values and prefixed "[&H](&H)" hexadecimal, "[&O](&O)" octal. 
 * VAL conversion stops at non-numeric characters except for letter "D" or "E" exponential notation values.
@@ -13,6 +15,8 @@ The **VAL** Function returns the decimal numerical equivalent value of a [STRING
 * Presently VAL **cannot** convert QB64 binary [&B](&B) prefixed strings from binary to decimal in **QB64**.
 * For character values of [ASCII](ASCII) data use [ASC](ASC) to get the value. 
 * In QB64 use an [INTEGER](INTEGER) return variable to hold integer values  returned by VAL [HEX$](HEX$) strings: **value% <nowiki>= VAL("&HFFFF") =</nowiki> -1**
+
+## Example(s)
 
 *Example 1:* Differences in values returned with QBasic and QB64:
 
@@ -26,7 +30,7 @@ PRINT VAL("&HFFFF&") '65535 in both
 
 > *Explanation:* A quirk in QBasic returned VAL values of 203 for "&" and "&H" that was never fixed until PDS(7.1).
 
-*Example 2:* Converting a string with some number characters
+Converting a string with some number characters
 
 ```vb
 
@@ -42,7 +46,7 @@ PRINT VAL("&HFFFF&") '65535 in both
 
 ```
 
-*Example 3:* Converting literal and variable [STRING](STRING) values to numerical values.
+Converting literal and variable [STRING](STRING) values to numerical values.
 
 ```vb
 
@@ -63,7 +67,7 @@ PRINT VAL("10") + VAL(a$) + 1
 
 > If VAL wasn't used the program would break with an error, as you can't add the value 1 to a string, if the 1 was a string ("1") then the program would return "10331", but now since we used VAL, the numbers were added as they should.
 
-*Example 4:* Converting a hexadecimal value to decimal value using HEX$ with VAL.
+Converting a hexadecimal value to decimal value using HEX$ with VAL.
 
 ```vb
 

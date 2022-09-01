@@ -2,12 +2,11 @@
 
 ## Legacy Support
 
-**QB64 implements memory access using [_MEM](_MEM) and related functions. For that reason, [DEF SEG](DEF-SEG) isn't recommended practice anymore and is supported to maintain compatibility with legacy code.**
+* **QB64 implements memory access using [_MEM](_MEM) and related functions. For that reason, [DEF SEG](DEF-SEG) isn't recommended practice anymore and is supported to maintain compatibility with legacy code.**
 
 ## Syntax
 
 >  [DEF SEG](DEF-SEG) [=][{segment|VARSEG(variable}]
-
 
 ## Description
 

@@ -24,7 +24,7 @@ Using [INSTR](INSTR) to locate the string positions and a [MID$ (statement)](MID
  DO
    position% = INSTR(start%, text$, "dog")
    IF position% THEN            ' when position is a value greater than 0
-     MID$(text$, position%, 3) = "rat"   ' changes "dog" to "rat" when found
+	MID$(text$, position%, 3) = "rat" ' change "dog" to "rat" when found
      start% = position% + 1     ' advance one position to search rest of string
    END IF
  LOOP UNTIL position% = 0       ' no other matches found

@@ -14,7 +14,7 @@ The **TIMER** function returns the number of seconds past the previous midnite d
 * **QB64** can read [DOUBLE](DOUBLE) *accuracy* down to 1 millisecond. Example: start# <nowiki>=</nowiki> TIMER(.001) 
 * Use [DOUBLE](DOUBLE) variables for millisecond accuracy as [SINGLE](SINGLE) values are only accurate to 100ths of a second later in the day!
 * TIMER loops should use a midnight adjustment to avoid non-ending loops in QBasic.
-* TIMER can also be used for timing program Events. See [ON TIMER(n)](ON TIMER(n)) or the [TIMER (statement)](TIMER (statement))
+* TIMER can also be used for timing program Events. See [ON TIMER(n)](ON-TIMER(n)) or the [TIMER (statement)](TIMER-(statement))
 * **QB64** can use a [_DELAY](_DELAY) down to .001(one millisecond) or [_LIMIT](_LIMIT) loops per second. Both help limit program CPU usage.
 
 ## Example(s)
@@ -25,7 +25,7 @@ The **TIMER** function returns the number of seconds past the previous midnite d
 
 DO
   PRINT "Hello";
-  Delay .5  'accuracy down to .05 seconds or 1/18th of a second in Qbasic
+  Delay .5  'accuracy down to .05 seconds or 1/18th of a second in QBasic
   PRINT "World!";
 LOOP UNTIL INKEY$ = CHR$(27) 'escape key exit
 
@@ -42,7 +42,7 @@ END SUB
 
 > *Explanation:* When the delay time is added to the present TIMER value, it could be over the maximum number of 86399 seconds. So when TIMER becomes less than start it has reached midnight. The delay value then must be corrected by subtracting 86400.
 
-*Example 2:* Looping one TIMER tick of 1/18th of a second (ticks per second can be changed)
+Looping one TIMER tick of 1/18th of a second (ticks per second can be changed)
 
 ```vb
 
@@ -73,7 +73,7 @@ END
 
 > *Explanation:* The [POKE](POKE) before the delay loop sets the tick count to 0. The [PEEK](PEEK) count increases until the tick count returns 18 ticks and ends the loop. The same thing could be approximated by using a delay loop with: second! <nowiki>=</nowiki> **TIMER** + 1
 
-*Example 3:* Using a [DOUBLE](DOUBLE) variable for [TIMER](TIMER)(.001) millisecond accuracy in **QB64** throughout the day.
+Using a [DOUBLE](DOUBLE) variable for [TIMER](TIMER)(.001) millisecond accuracy in **QB64** throughout the day.
 
 ```vb
 

@@ -13,26 +13,28 @@ The [DRAW](DRAW) statement uses a [STRING](STRING) expression to draw lines on t
 * Draw strings use letters followed by the number of pixels to move, an angle, coordinate or a color value.
 * Draw strings are flexible with spacing. **Spacing is not required.** [DRAW](DRAW) will look for a number value after a valid letter.
 * DRAW statements are not case sensitive.
-  - "**B**" (blind) before a line move designates that the line move will be hidden. Use to offset from a "P" or [PAINT](PAINT) border. 
-  - "**C** n" designates the color attribute or [_RGB](_RGB) [STR$](STR$) numerical color value to be used in the draw statement immediately after. 
-  - "**M** x, y" can move to another coordinate area of the screen. When a + or - sign is used before a coordinate, it is a relative coordinate move similar to using the [STEP](STEP) graphics keyword. DRAW "M+=" + [VARPTR$](VARPTR$)(variable%)
-  - "**N**" before a line move designates that the graphic cursor will return to the starting position after the line is drawn.
-  - "**P** f [, b]" is used to [PAINT](PAINT) enclosed objects. f denotes the fill color and b the border color, if needed.
-  - "**S** n" changes the pixel move size of the lines. Default is 4 (1 pixel) minimum. "S8" would double the pixel line moves.
-  - "**X**" + [VARPTR$](VARPTR$)(value) can draw another substring.
+  * "**B**" (blind) before a line move designates that the line move will be hidden. Use to offset from a "P" or [PAINT](PAINT) border.
+  * "**C** n" designates the color attribute or [_RGB](_RGB) [STR$](STR$) numerical color value to be used in the draw statement immediately after.
+  * "**M** x, y" can move to another coordinate area of the screen. When a + or - sign is used before a coordinate, it is a relative coordinate move similar to using the [STEP](STEP) graphics keyword. DRAW "M+=" + [VARPTR$](VARPTR$)(variable%)
+  * "**N**" before a line move designates that the graphic cursor will return to the starting position after the line is drawn.
+  * "**P** f [, b]" is used to [PAINT](PAINT) enclosed objects. f denotes the fill color and b the border color, if needed.
+  * "**S** n" changes the pixel move size of the lines. Default is 4 (1 pixel) minimum. "S8" would double the pixel line moves.
+  * "**X**" + [VARPTR$](VARPTR$)(value) can draw another substring.
+
 * Certain letter designations create line moves on the SCREEN. Each move is followed by the number of pixels:
-  - "**D** n" draws a line vertically DOWN n pixels.
-  - "**E** n" draws a diagonal / line going UP and RIGHT n pixels each direction.
-  - "**F** n" draws a diagonal \ line going DOWN and RIGHT n pixels each direction.
-  - "**G** n" draws a diagonal / LINE going DOWN and LEFT n pixels each direction.
-  - "**H** n" draws a diagonal \ LINE going UP and LEFT n pixels each direction.
-  - "**L** n" draws a line horizontally LEFT n pixels.
-  - "**R** n" draws a line horizontally RIGHT n pixels.
-  - "**U** n" draws a line vertically UP n pixels.
+  * "**D** n" draws a line vertically DOWN n pixels.
+  * "**E** n" draws a diagonal / line going UP and RIGHT n pixels each direction.
+  * "**F** n" draws a diagonal \ line going DOWN and RIGHT n pixels each direction.
+  * "**G** n" draws a diagonal / LINE going DOWN and LEFT n pixels each direction.
+  * "**H** n" draws a diagonal \ LINE going UP and LEFT n pixels each direction.
+  * "**L** n" draws a line horizontally LEFT n pixels.
+  * "**R** n" draws a line horizontally RIGHT n pixels.
+  * "**U** n" draws a line vertically UP n pixels.
+
 * Angles are used to rotate all subsequent draw moves.
-  - "**A** n" can use values of 1 to 3 to rotate up to 3 90 degree(270) angles.
-  - **TA** n" can use any n angle from -360 to 0 to 360 to rotate a DRAW (Turn Angle). "TA0" resets to normal.
-  - When [VARPTR$](VARPTR$) is used, DRAW functions such as **TA** angles use an equal sign: "TA=" + VARPTR$(angle%)
+  * "**A** n" can use values of 1 to 3 to rotate up to 3 90 degree(270) angles.
+  * **TA** n" can use any n angle from -360 to 0 to 360 to rotate a DRAW (Turn Angle). "TA0" resets to normal.
+  * When [VARPTR$](VARPTR$) is used, DRAW functions such as **TA** angles use an equal sign: "TA=" + VARPTR$(angle%)
 * The graphic cursor is set to the center of the program window on program start for [STEP](STEP) relative coordinates.
 * **DRAW can be used in any graphic screen mode, but cannot be used in the default screen mode 0 as it is text only.** 
 
@@ -56,7 +58,7 @@ NEXT i%
 
 *Explanation:* Once a DRAW string variable is created, it can be used to draw a shape throughout the program at any time. 
 
-*Example 2:* Creating an analog clock's hour markers using "TA=" + [VARPTR$](VARPTR$)(angle).
+Creating an analog clock's hour markers using "TA=" + [VARPTR$](VARPTR$)(angle).
 
 ```vb
 
@@ -73,7 +75,7 @@ NEXT
 
 *Explanation:* To place 12 circles in a circle each move is 30 degrees. PSET sets the center of the circular path every loop. TA moves counter-clockwise with positive degree angles. Once TA sets the angle a blind Up move is at that angle. The hour circles use the end point of the blind line as centers using the STEP relative coordinates of 0. After the circles are drawn, a draw "P" string paints the circle centers. DRAW paint strings use the last coordinate position also.
 
-*Example 3:* Creating a moving second hand for the clock above (SCREEN 12). (See [TIME$](TIME$) example 1)
+Creating a moving second hand for the clock above (SCREEN 12). (See [TIME$](TIME$) example 1)
 
 ```vb
 
@@ -91,7 +93,7 @@ LOOP
 
 *Explanation:* The degrees to move from the original UP line move is calculated by dividing 360/60 seconds in a full rotation. That value of 6 is made negative to use TA correctly and multiplied by the [VAL](VAL)ue of seconds from the TIME$ function. The degree angle is converted by [STR$](STR$) to a string and added to the DRAW string using the [STRING](STRING) **concatenation +** operator. Do not use semicolons to create DRAW strings. Once the second hand is placed on the screen, a loop waits for the second value to change. It then erases the hand and it repeats the process again.
 
-*Example 4:* Creating digital displays using DRAW format strings to create the LED segments. (See [SELECT CASE](SELECT-CASE) example 5)
+Creating digital displays using DRAW format strings to create the LED segments. (See [SELECT CASE](SELECT-CASE) example 5)
 
 ```vb
 
@@ -136,11 +138,12 @@ DO
 LOOP UNTIL num > 9 
 
 ```
-<sub>Code by Ted Weissgerber</sub>
+
+Code by Ted Weissgerber
 
 > *Explanation:* The DRAW strings can be used more than once with different [PSET](PSET) positions to create more digits.
 
-*Example 5:* Using 32 bit or [_RGB](_RGB) color [STR$](STR$) values when using the DRAW C text statement
+Using 32 bit or [_RGB](_RGB) color [STR$](STR$) values when using the DRAW C text statement
 
 ```vb
 

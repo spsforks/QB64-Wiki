@@ -1,20 +1,32 @@
-The [WHILE...WEND](WHILE...WEND) statement is used to repeat a block of statements while the condition is met.
+The WHILE...WEND statement is used to repeat a block of statements while the condition is met.
 
 ## Syntax
 
-> [WHILE](WHILE) condition
+> WHILE condition
 > .
 > .
 > .
-> [WEND](WEND)
+> WEND
 
 ## Description
 
 * condition is a numeric expression used to determine if the loop will execute.
 * statements will execute repeatedly while condition is a non-zero value.
-* [EXIT](EXIT) WHILE can be used for emergency exits from the loop in QB64 only.
+* [EXIT WHILE](EXIT-WHILE) can be used for emergency exits from the loop.
+* Use [_CONTINUE](_CONTINUE) to skip the remaining lines in the iteration without leaving the loop.
 * A [DO...LOOP](DO...LOOP) can use the same DO WHILE condition to get the same results.
 * WHILE loops only run if the WHILE condition is True.
+
+**Relational Operators:**
+
+| Symbol | Condition | Example Usage |
+| -- | -- | -- |
+| = | Equal | IF a = b THEN |
+| <> | NOT equal | IF a <> b THEN |
+| < | Less than | IF a < b THEN |
+| > | Greater than | IF a > b THEN |
+| <= | Less than or equal | IF a <= b THEN |
+| >= | Greater than or equal | IF a >= b THEN |
 
 ## Example(s)
 
@@ -32,7 +44,7 @@ WEND
 
 ```
 
-*Example 2:* Clearing the keyboard buffer.
+Clearing the keyboard buffer.
 
 ```vb
 

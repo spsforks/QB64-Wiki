@@ -35,7 +35,7 @@ Tom
 
 ```
 
-*Example 2:* A replace function using LEFT$ and [RIGHT$](RIGHT$) with [INSTR](INSTR) to insert a different length word into an existing string. 
+A replace function using LEFT$ and [RIGHT$](RIGHT$) with [INSTR](INSTR) to insert a different length word into an existing string.
 
 ```vb
 
@@ -72,7 +72,7 @@ This is your sentence to change your words.
 
 ```
 
-> *Note:* The [MID$ (statement)](MID$ (statement)) statement can only substitute words or sections of the original string length. It cannot change the string length.
+> *Note:* The [MID$ (statement)](MID$-(statement)) statement can only substitute words or sections of the original string length. It cannot change the string length.
 
 ## See Also
 

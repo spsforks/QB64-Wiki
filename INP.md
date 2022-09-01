@@ -7,7 +7,7 @@
 * **QB64 has limited access to registers. VGA memory and registers are emulated.**
 * Address can be a decimal or hexadecimal [INTEGER](INTEGER) value.
 * [INP](INP) reads directly from a register or port address.
-* It does not require a [DEF SEG](DEF SEG) memory segment address like [PEEK](PEEK) or [POKE](POKE) do.
+* It does not require a [DEF SEG](DEF-SEG) memory segment address like [PEEK](PEEK) or [POKE](POKE) do.
 * Reads color port intensity settings after `[OUT](OUT) &H3C7, attribute` sets the starting attribute read mode.
 
 ## Example(s)
@@ -25,7 +25,7 @@ NEXT
 
 ```
 
-*Example 2:* Reading the keyboard Scan Codes as an alternative to [INKEY$](INKEY$)
+Reading the keyboard Scan Codes as an alternative to [INKEY$](INKEY$)
 
 ```vb
 
@@ -37,7 +37,7 @@ LOOP UNTIL scancode% = 1 ' [ESC] keypress exit
 
 ```
 
-*Example 3:* A simple ping pong game using an array function to read multiple keys for two players.
+A simple ping pong game using an array function to read multiple keys for two players.
 
 ```vb
 
@@ -86,7 +86,6 @@ x = x + dx
 y = y + dy
 
 PUT(x, y), ball%(0)
-
 
 LINE (20, LTpos)-(20, LTpos + 100)
 LINE (620, RTpos)-(620, RTpos + 100)

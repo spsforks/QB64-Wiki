@@ -18,7 +18,7 @@ The **SHELL** function displays the console and returns the [INTEGER](INTEGER) c
 
 Shelling to another QB64 program will return the exit code when one is set in the  program that is run.
 
-```vb
+```text
 
 'DesktopSize.BAS ** Compile in Windows with QB64 first
 

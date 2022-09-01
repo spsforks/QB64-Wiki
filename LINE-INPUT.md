@@ -5,7 +5,6 @@ The [LINE INPUT](LINE-INPUT) statement requests a [STRING](STRING) keyboard entr
 >  [LINE INPUT](LINE-INPUT) [;] "[text prompt or question]"{,|;} stringVariable$
 >  [LINE INPUT](LINE-INPUT) ; stringVariable$
 
-
 ## Parameter(s)
 
 * A [semicolon](semicolon) immediately after LINE INPUT stops the cursor after the entry and prevents screen roll on the lowest two screen rows.
@@ -14,8 +13,8 @@ The [LINE INPUT](LINE-INPUT) statement requests a [STRING](STRING) keyboard entr
 
 ## Description
 
-* Cannot use numerical [type](type) variables or [comma](comma) separated variable lists for multiple entries.
-* Allows [comma](comma)s and [quotation mark](quotation mark)s in the user input, unlike [INPUT](INPUT) where commas denote extra input values and quotes delimit strings. 
+* Cannot use numerical [Variable Types](Variable-Types) variables or [comma](comma) separated variable lists for multiple entries.
+* Allows [comma](comma)s and [quotation mark](quotation-mark)s in the user input, unlike [INPUT](INPUT) where commas denote extra input values and quotes delimit strings.
 * The statement halts the program until an entry is made. Pressing Enter ends the entry and code execution resumes.
 * LINE INPUT does not trim off leading or trailing spaces in the string entry like [INPUT](INPUT) string returns.
 * Use [VAL](VAL) to convert string numbers and [&O](&O) (octal), [&H](&H) (hexadecimal) or [&B](&B) (binary) prefixed entries into numerical values. 

@@ -2,7 +2,7 @@ The **STR$** function returns the [STRING](STRING) representation of a numerical
 
 ## Syntax
 
-> : result$ = **STR$(**number**)**
+> result$ = **STR$(**number**)**
 
 ## Parameter(s)
 

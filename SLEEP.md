@@ -6,7 +6,7 @@ SLEEP pauses the program indefinitely or for a specified number of seconds, prog
 
 * Seconds are an optional [INTEGER](INTEGER) value. If there is no parameter, then it waits for a keypress.
 * Any user keypress will abort the SLEEP time.
-* SLEEP does NOT clear the keyboard buffer so it can affect [INKEY$](INKEY$), [INPUT](INPUT), [INPUT$](INPUT$) and [LINE INPUT](LINE INPUT) reads. 
+* SLEEP does NOT clear the keyboard buffer so it can affect [INKEY$](INKEY$), [INPUT](INPUT), [INPUT$](INPUT$) and [LINE INPUT](LINE-INPUT) reads.
 * Use an [INKEY$](INKEY$) keyboard buffer clearing loop when an empty keyboard buffer is necessary.
 * SLEEP allows other programs to share the processor time during the interval.
 

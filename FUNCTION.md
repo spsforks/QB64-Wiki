@@ -20,12 +20,12 @@ A [FUNCTION](FUNCTION) block statement is used to create a function procedure to
 * To pass [arrays](arrays) to a sub-procedure use empty brackets after the name or indicate the index in the call.
 * All [$DYNAMIC]($DYNAMIC) variable values return to 0 or null strings when the procedure is exited except when a variable or the entire function is [STATIC](STATIC). This can save program memory as all [$DYNAMIC]($DYNAMIC) memory used in a FUNCTION is released on procedure exit.
 * FUNCTION procedure code can use [GOSUB](GOSUB) and [GOTO](GOTO) line numbers or labels inside of the procedure when necessary. 
-* For early function exits use [EXIT](EXIT) [FUNCTION](FUNCTION) before [END FUNCTION](END FUNCTION) and [GOSUB](GOSUB) procedures using [RETURN](RETURN).
-* **QB64 ignores all procedural DECLARE statements.** Define all *parameter* [Data types](Data types) in the FUNCTION procedure.
+* For early function exits use [EXIT](EXIT) [FUNCTION](FUNCTION) before [END FUNCTION](END-FUNCTION) and [GOSUB](GOSUB) procedures using [RETURN](RETURN).
+* **QB64 ignores all procedural DECLARE statements.** Define all *parameter* [Data types](Data-types) in the FUNCTION procedure.
 *  **Images are not deallocated when the [SUB](SUB) or [FUNCTION](FUNCTION) they are created in ends. Free them with [_FREEIMAGE](_FREEIMAGE).**
-* The IDE can create the FUNCTION and END FUNCTION lines for you. Use the *New FUNCTION...* option in the Edit Menu. A box will come up for you to enter a name for the FUNCTION. Enter all code between the FUNCTION and [END FUNCTION](END FUNCTION) lines.
+* The IDE can create the FUNCTION and END FUNCTION lines for you. Use the *New FUNCTION...* option in the Edit Menu. A box will come up for you to enter a name for the FUNCTION. Enter all code between the FUNCTION and [END FUNCTION](END-FUNCTION) lines.
 
-## QBasic/QuickBASIC
+## QBasic
 
 * Once a FUNCTION was created and used, the QBasic IDE would DECLARE it when the file was saved. **QB64 doesn't need these declarations.**
 * QBasic's IDE could place a [DEFINT](DEFINT), [DEFSNG](DEFSNG), [DEFLNG](DEFLNG), [DEFDBL](DEFDBL) or [DEFSTR](DEFSTR) statement before the FUNCTION line if it is used in the main module. It may even be the wrong variable type needed.
@@ -52,7 +52,7 @@ END FUNCTION
 
 ```
 
-*Example 2:* Returns a [LONG](LONG) array byte size required for a certain sized graphics screen pixel area [GET (graphics statement)](GET-(graphics-statement)).
+*Example 1:* Returns a [LONG](LONG) array byte size required for a certain sized graphics screen pixel area [GET (graphics statement)](GET-(graphics-statement)).
 
 ```vb
 
@@ -84,4 +84,4 @@ END FUNCTION
 
 * [SUB](SUB), [SCREEN (statement)](SCREEN-(statement)) 
 * [EXIT](EXIT) (statement), [END](END)
-* [_EXIT (function)](_EXIT (function))
+* [_EXIT (function)](_EXIT-(function))

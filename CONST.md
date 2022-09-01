@@ -8,14 +8,14 @@ The [CONST](CONST) statement globally defines one or more named numeric or strin
 
 * constantName is the constant name or list of names assigned by the programmer.
 * value is the value to initialize the global constant which cannot change once defined.
-    - If constantName specifies a numeric type, value must be a numeric expression containing literals and other constants.
-    - If constantName specifies a string type, the value must be a literal value.
+  * If constantName specifies a numeric type, value must be a numeric expression containing literals and other constants.
+  * If constantName specifies a string type, the value must be a literal value.
 
 ## Description
 
 * The constantName does not have to include a type suffix. The datatype is automatically infered by the compiler using the value.
-* Constant values cannot reference a variable, [SUB](SUB) or [FUNCTION](FUNCTION) return values when defined.
-    - The exception to the above are color functions [_RGB32](_RGB32) and [_RGBA32](_RGBA32), which can be used in a CONST statement. See *Example 2* below.
+* Constant values cannot reference a variable or [FUNCTION](FUNCTION) return values.
+  * The exception to the above are the internal functions: [_PI](_PI), [_ACOS](_ACOS), [_ASIN](_ASIN), [_ARCSEC](_ARCSEC), [_ARCCSC](_ARCCSC), [_ARCCOT](_ARCCOT), [_SECH](_SECH), [_CSCH](_CSCH), [_COTH](_COTH), [COS](COS), [SIN](SIN), [TAN](TAN), [LOG](LOG), [EXP](EXP), [ATN](ATN), [_D2R](_D2R), [_D2G](_D2G), [_R2D](_R2D), [_R2G](_R2G), [_G2D](_G2D), [_G2R](_G2R), [ABS](ABS), [SGN](SGN), [INT](INT), [_ROUND](_ROUND), [_CEIL](_CEIL), [FIX](FIX), [_SEC](_SEC), [_CSC](_CSC), [_COT](_COT), [ASC](ASC), [_RGB32](_RGB32), [_RGBA32](_RGBA32), [_RGB](_RGB), [_RGBA](_RGBA), [_RED32](_RED32), [_GREEN32](_GREEN32), [_BLUE32](_BLUE32), [_ALPHA32](_ALPHA32), [_RED](_RED), [_GREEN](_GREEN), [_BLUE](_BLUE), [_ALPHA](_ALPHA) (See Example 2 below).
 * Constants cannot be reassigned values. They retain the same value throughout all of the program procedures.
 * Constants defined in module-level code have [SHARED](SHARED) scope, so they can also be used in [SUB](SUB) or [FUNCTION](FUNCTION) procedures.
 * Constants defined in [SUB](SUB) or [FUNCTION](FUNCTION) procedures are local to those procedures.

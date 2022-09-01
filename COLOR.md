@@ -11,11 +11,13 @@ The [COLOR](COLOR) statement is used to change the foreground and background col
 * To change the background& color only, use a comma and the desired color. Ex: [COLOR](COLOR) , background&
 * Graphic drawing statements like [PSET](PSET), [PRESET](PRESET), [LINE](LINE), etc, also use the colors set by the [COLOR](COLOR) statement if no color is passed when they are called.
 * The [$COLOR]($COLOR) metacommand adds named color constants for both text and 32-bit modes.
+* [COLOR](COLOR) works when outputting text to [$CONSOLE]($CONSOLE).
+  * On macOS, colors in console mode will not match the VGA palette. See [https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit 8-bit ANSI colors]
 
 ## Screen Mode Attributes
 
 * **SCREEN 0** background& colors 0 to 7 can be changed each text character without affecting other text. Use [CLS](CLS) after a background color statement to create a fullscreen background color. 64 [DAC](DAC) hues with 16 high intensity blinking foreground (16 to 31) color attributes. See [_BLINK](_BLINK).
-** See example 7 below for more SCREEN 0 background colors.
+  * See example 7 below for more SCREEN 0 background colors.
 * **SCREEN 1** has **4 background color attributes**: 0 = black, 1 = blue, 2 = green, 3 = grey. White foreground color only.
 * **SCREEN 2** is **monochrome** with white forecolor and black background.
 * **SCREEN 7** can use 16 ([DAC](DAC)) colors with background colors. RGB settings can be changed in colors 0 to 7 using [_PALETTECOLOR](_PALETTECOLOR). 
@@ -46,10 +48,11 @@ RGB intensity values can be converted to hexadecimal values to create the [LONG]
 
 SCREEN 12
 alpha$ = "FF" 'solid alpha colors only
+OUT &H3C8, 0: OUT &H3C9, 0: OUT &H3C9, 0: OUT &H3C9, 20 'set black background to dark blue
 PRINT "Attribute = Hex value      Red          Green         Blue "
 PRINT
 COLOR 7 
-FOR attribute = 1 TO 15
+FOR attribute = 0 TO 15
   OUT &H3C7, attribute 'set color attribute to read
   red$ = HEX$(INP(&H3C9) * 4) 'convert port setting to 32 bit values
   grn$ = HEX$(INP(&H3C9) * 4)
@@ -88,6 +91,7 @@ COLOR 15 <nowiki>=</nowiki> &HFFFCFCFC      FC         FC         FC
 ```
 
 > *Explanation:* The RGB intensity values are multiplied by 4 to get the [_RGB](_RGB) intensity values as [HEX$](HEX$) values. The individual 2 digit [HEX$](HEX$) intensity values can be added to "&HFF" to make up the 32-bit hexadecimal string value necessary for [VAL](VAL) to return to [_PALETTECOLOR](_PALETTECOLOR). The statement is only included in the example to show how that can be done with any 32-bit color value.
+> **Note:** Black has a blue hex value of 50 due to the [OUT](OUT) background color setting which makes it dark blue.
 
 ### Read & write color port intensities with [INP](INP) & [OUT](OUT)
 
@@ -126,7 +130,7 @@ PRINT red%, green%, blue%
 
 ```
 
-*Example 2:* Changing the color settings of attribute 0 (the background) to blue in [SCREEN](SCREEN)s 12 or 13.
+Changing the color settings of attribute 0 (the background) to dark blue in [SCREEN](SCREEN)s 12 or 13.
 
 ```vb
 
@@ -134,7 +138,7 @@ SCREEN 12
 OUT &H3C8, 0          'set color port attribute to write
 OUT &H3C9, 0          'red intensity
 OUT &H3C9, 0          'green intensity
-OUT &H3C9, 42         'blue intensity 
+OUT &H3C9, 30         'blue intensity
 
 OUT &H3C7, 0
 PRINT INP(&H3C9); INP(&H3C9); INP(&H3C9)
@@ -144,11 +148,11 @@ END
 
 ```text
 
-OutputStartBG1 0  0  42 
+ 0  0  30 
 
 ```
 
-*Example 3:* Printing in fullscreen SCREEN 0 mode with a color background under the text only.
+Printing in fullscreen SCREEN 0 mode with a color background under the text only.
 
 ```vb
 
@@ -157,15 +161,9 @@ COLOR 14, 6: LOCATE 4, 4: PRINT "Hello!"
 
 ```
 
-```text
+> *Result:* Hello! is printed in flashing high intensity yellow with brown background behind text only when in QBasic [_FULLSCREEN](_FULLSCREEN).
 
-
-
-    Hello!
-
-```
-
-*Example 4:* Using [CLS](CLS) after setting the background color in SCREEN 0 to make the color cover the entire screen.
+Using [CLS](CLS) after setting the background color in SCREEN 0 to make the color cover the entire screen.
 
 ```vb
 
@@ -182,7 +180,9 @@ Hello
 
 ```
 
-*Example 5:* Using a different foreground color for each letter:
+> *Result:* The blue word Hello is printed to a totally grey background in [_FULLSCREEN](_FULLSCREEN).
+
+Using a different foreground color for each letter:
 
 ```vb
 

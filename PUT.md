@@ -43,7 +43,7 @@ CLOSE #1
 
 > *Note:* The DOT record variable values were created or changed before the PUT. The record length is 32 bytes.
 
-*Example 2:* Placing the contents of a numerical array into a [BINARY](BINARY) file. You may want to put the array size at the beginning too.
+Placing the contents of a numerical array into a [BINARY](BINARY) file. You may want to put the array size at the beginning too.
 
 ```vb
 

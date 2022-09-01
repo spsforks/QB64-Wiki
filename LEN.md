@@ -6,18 +6,18 @@ The [LEN](LEN) function returns the number of bytes used by a variable value and
 
 * Literal or variable [STRING](STRING) values return the number of string bytes which is the same as the number of string characters.
 * A numerical *variable* will return the number of bytes used by a numerical variable type.
-** [_BYTE](_BYTE) variable types return 1 byte.
-** [INTEGER](INTEGER) variable types return 2 bytes.
-** [SINGLE](SINGLE) and [LONG](LONG) integer variable types return 4 bytes.
-** [DOUBLE](DOUBLE) and [_INTEGER64](_INTEGER64) variable types return 8 bytes.
-** [_FLOAT](_FLOAT) variable types return 32 bytes.
-** [_OFFSET](_OFFSET) and [_MEM](_MEM) variable types return varying byte sizes.
-** *Note:* [_BIT](_BIT) variable types and bit multiples **cannot be measured in bytes**. 
+  * [_BYTE](_BYTE) variable types return 1 byte.
+  * [INTEGER](INTEGER) variable types return 2 bytes.
+  * [SINGLE](SINGLE) and [LONG](LONG) integer variable types return 4 bytes.
+  * [DOUBLE](DOUBLE) and [_INTEGER64](_INTEGER64) variable types return 8 bytes.
+  * [_FLOAT](_FLOAT) variable types return 32 bytes.
+  * [_OFFSET](_OFFSET) and [_MEM](_MEM) variable types return varying byte sizes.
+  * *Note:* [_BIT](_BIT) variable types and bit multiples **cannot be measured in bytes**.
 * **LEN cannot return lengths of literal numerical values and will create a "variable required" status error in the IDE.**
 * **LEN =** can be used with a user defined [TYPE](TYPE) variable to determine the number of bytes used in [RANDOM](RANDOM) file records:
-> ::: `[OPEN](OPEN) file$ FOR [RANDOM](RANDOM) AS #n LEN = LEN(recordTypeVariable)`** 
-> * If a LEN = statement is not used, [RANDOM](RANDOM) default record length is 128 or sequencial is 512 up to a maximum of 32767 bytes. 
-> * [BINARY](BINARY) OPEN statements will ignore LEN = statements. The byte size of a [GET](GET) or [PUT](PUT) is determined by the [Variable Types](Variable-Types).
+> `[OPEN](OPEN) file$ FOR [RANDOM](RANDOM) AS #n LEN <nowiki>=</nowiki> LEN(recordTypeVariable)`**
+  * If a LEN = statement is not used, [RANDOM](RANDOM) default record length is 128 or sequencial is 512 up to a maximum of 32767 bytes.
+  * [BINARY](BINARY) OPEN statements will ignore LEN = statements. The byte size of a [GET](GET) or [PUT](PUT) is determined by the [Variable Types](Variable-Types).
 
 ## Example(s)
 
@@ -36,7 +36,7 @@ PRINT LEN(LastName$); "bytes"
 
 ```
 
-*Example 2:* Testing [INPUT](INPUT) for numerical [STRING](STRING) entries from a user. 
+Testing [INPUT](INPUT) for numerical [STRING](STRING) entries from a user.
 
 ```vb
 
@@ -51,7 +51,7 @@ PRINT LEN(num$), L
 
 > *Note:* [&H](&H), [&O](&O), D and E will also be accepted as numerical type data in a [VAL](VAL) conversion, but will add to the entry length.
 
-*Example 3:* With numerical value types you MUST use a variable to find the inherent byte length when using LEN.
+With numerical value types you MUST use a variable to find the inherent byte length when using LEN.
 
 ```vb
 
@@ -81,7 +81,7 @@ _FLOAT = 32 bytes
 
 ```
 
-*Example 4:* Opening a RANDOM file using LEN to calculate and LEN = to designate the file record size.
+Opening a RANDOM file using LEN to calculate and LEN = to designate the file record size.
 
 ```vb
 
@@ -128,7 +128,6 @@ END
 ```
 
 > *Explanation:* The byte size of the record [TYPE](TYPE) determines the [LOF](LOF) byte size of the file and can determine the number of records.
-
 > To read the last record [GET](GET) the number of records. To add a record, use the number of records + 1 to [PUT](PUT) new record data.
 
 ## See Also

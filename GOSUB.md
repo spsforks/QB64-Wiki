@@ -28,8 +28,10 @@ subroutine:
 PRINT "2. It is at the subroutine."
 RETURN
 
+
 ```
-<sub>Code by Cyperium</sub>
+
+Code by Cyperium
 
 ```text
 
@@ -58,7 +60,8 @@ PRINT "It went there."
 RETURN 
 
 ```
-<sub>Code by Cyperium</sub>
+
+Code by Cyperium
 
 ```text
 

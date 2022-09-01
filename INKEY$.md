@@ -110,7 +110,7 @@ DO: K$ = INKEY$: PRINT K$: LOOP UNTIL K$ = ""
 
 > See also: [_KEYCLEAR](_KEYCLEAR)
 
-*Example 2:* Entering a Ctrl + letter keypress combination will print [ASCII](ASCII) Control characters 1 to 26. .
+Entering a Ctrl + letter keypress combination will print [ASCII](ASCII) Control characters 1 to 26. .
 
 ```vb
 
@@ -123,7 +123,7 @@ LOOP UNTIL K$ = CHR$(27) 'Esc key exit
 
 > *Note:* The above code will print Esc arrow, Backspace symbol, and 2 byte characters led by CHR$(0) in addition to normal keys.
 
-*Example 3:* Use [UCASE$](UCASE$)(INKEY$) in a keyboard read loop looking for uppercase "Y" or "N" user inputs to avoid multiple IF statements.
+Use [UCASE$](UCASE$)(INKEY$) in a keyboard read loop looking for uppercase "Y" or "N" user inputs to avoid multiple IF statements.
 
 ```vb
 
@@ -137,7 +137,7 @@ LOOP
 
 ```
 
-*Example 4:* Getting just number values entered by a user in an INKEY$ input loop.
+Getting just number values entered by a user in an INKEY$ input loop.
 
 ```vb
 
@@ -159,7 +159,7 @@ LOOP UNTIL K$ = CHR$(13) AND L > 0 'assures something is entered
 
 > *Explanation:* [SLEEP](SLEEP) waits for a keypress. It also allows background programs to share the processor and it leaves the keypress in the buffer for INKEY$. Keyboard string number characters range from [ASCII](ASCII) codes 48 to 57. Any other entry is ignored by the IF statement. A decimal point (code 46) entry is allowed once in the input. The flag value stops further decimal point additions. Backspacing (code 8) is also allowed if the entry has at least one character. The cursor column returned by [POS](POS)(0) reverts too after the end of the entry when printed each loop. The loop exits when [Enter] (code 13) is pressed and the entry has a length.
 
-*Example 5:* Using arrow keys to move a text character. A change from a previous position tells program when to PRINT:
+Using arrow keys to move a text character. A change from a previous position tells program when to PRINT:
 
 ```vb
 
@@ -183,7 +183,7 @@ END
 
 ```
 
-*Example 6:* Using INKEY$ with the arrow or WASD keys to move the QB64 bee image sprite with [_PUTIMAGE](_PUTIMAGE):
+Using INKEY$ with the arrow or WASD keys to move the QB64 bee image sprite with [_PUTIMAGE](_PUTIMAGE):
 
 ```vb
 
@@ -219,11 +219,12 @@ DO
 LOOP 
 
 ```
-<sub>Adapted from code by Daniel</sub>
+ 
+Adapted from code by Daniel
 
 > *Note:* The image can be placed off of the screen without error. The image moves 10 pixels to move faster. [CLS](CLS) eliminates any background.
 
-*Example 7:* Creating upper [ASCII](ASCII) characters in a QB program using **Alt +** three number keys:
+Creating upper [ASCII](ASCII) characters in a QB program using **Alt +** three number keys:
 
 ```vb
 
@@ -244,7 +245,8 @@ PRINT num$
 PRINT CHR$(VAL(num$)
 
 ```
-<sub>Code by Ted Weissgerber</sub>
+
+Code by Ted Weissgerber
 
 ```text
 
@@ -262,4 +264,4 @@ PRINT CHR$(VAL(num$)
 * [INPUT$](INPUT$), [INP](INP)
 * [CHR$](CHR$), [ASCII](ASCII)
 * [ASC](ASC), [Scancodes](Scancodes) (keyboard)
-* [Windows_Libraries#Hot_Keys_.28maximize.29](Windows-Libraries#Hot_Keys_.28maximize.29)
+* [Windows_Libraries#Hot_Keys_.28maximize.29](Windows-Libraries#Hot-Keys-.28maximize.29)

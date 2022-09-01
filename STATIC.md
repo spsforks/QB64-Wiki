@@ -1,8 +1,9 @@
-The [STATIC](STATIC) keyword is used in declaration statements to control where variables are stored.
+The STATIC keyword is used in declaration statements to control where variables are stored.
 
 ## Syntax
 
-> [STATIC](STATIC) variableName[()] [[AS](AS) dataType][, ...]
+> STATIC variableName[()] [AS dataType][, ...]
+> STATIC [AS dataType] variableName[()][, ...]
 
 ## Syntax
 
@@ -12,10 +13,10 @@ The [STATIC](STATIC) keyword is used in declaration statements to control where 
 
 * A STATIC list can be used in [SUB](SUB) and [FUNCTION](FUNCTION) procedures to designate one or more variables to retain their values. 
 * Variables and arrays with static storage will retain their values in between procedure calls. The values may also be used recursively.
-> * variableName may include a type suffix or use [AS](AS) to specify a type other than the default [SINGLE](SINGLE) type.
-> * Arrays with static storage are declared by specifying empty parenthesis following the array name. See [Arrays](Arrays)
+  * variableName may include a type suffix or use [AS](AS) to specify a type other than the default [SINGLE](SINGLE) type.
+  * Arrays with static storage are declared by specifying empty parenthesis following the array name. See [Arrays](Arrays)
 * STATIC can be used after the name of a [SUB](SUB) or [FUNCTION](FUNCTION) in the procedure to force all variables to retain their values.
-* **Recursive procedures may be required to be STATIC to avoid a Stack Overflow! QB64 programs may just close!**
+* **Recursive procedures may be required to be STATIC to avoid a Stack Overflow error. QB64 programs may just close.**
 * [$STATIC]($STATIC) defined program [arrays](arrays) cannot be [REDIM](REDIM) or use [_PRESERVE](_PRESERVE).
 
 ## Example(s)
@@ -48,13 +49,13 @@ END FUNCTION
 
 > *Explanation:* The [FUNCTION](FUNCTION) above returns a [STRING](STRING) value representing the bits ON in an [INTEGER](INTEGER) value. The string can be printed to the screen to see what is happening in a port register. **STATIC** keeps the function from overloading the memory "Stack" and is normally REQUIRED when recursive calls are used in QBasic! **QB64 procedures will close without warning or error!**
 
-*Example 2:* Using a static array to cache factorials, speeding up repeated calculations:
+Using a static array to cache factorials, speeding up repeated calculations:
 
 ```vb
 
 PRINT Factorial(0)
 PRINT Factorial(5)
-PRINT Factorial(50
+PRINT Factorial(50)
 
 FUNCTION Factorial# ( n AS DOUBLE )
     CONST maxNToCache = 50
@@ -84,6 +85,7 @@ FUNCTION Factorial# ( n AS DOUBLE )
     resultCache(n) = INT(n) * Factorial(INT(n) - 1)
     Factorial = resultCache(n)
 END FUNCTION
+
 
 ```
 

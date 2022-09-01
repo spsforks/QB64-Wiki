@@ -1,13 +1,11 @@
-[ELSE](ELSE) is used in [IF...THEN](IF...THEN) or [SELECT CASE](SELECT CASE) statements to offer an alternative to other conditional statements.
+[ELSE](ELSE) is used in [IF...THEN](IF...THEN) or [SELECT CASE](SELECT-CASE) statements to offer an alternative to other conditional statements.
 
 ## Syntax
 
-### Single-line Syntax
-
+*Single-line syntax:*
 >  [IF](IF) condition [THEN](THEN) *{code}* [ELSE](ELSE) *{alternative-code}*
 
-### Block Syntax
-
+*Block syntax:*
 > [IF](IF) condition [THEN](THEN)
 >   *{code}*
 >   ⋮
@@ -34,9 +32,10 @@
 
 IF x = 100 THEN PRINT "100" ELSE PRINT "Not 100"
 
+
 ```
 
-*Example 2:* Multiple line IF statement block
+Multiple line IF statement block
 
 ```vb
 
@@ -45,13 +44,15 @@ IF x = 100 THEN ' code executed MUST be on next statement line!
 ELSE PRINT "Not 100"
 END IF
 
+
 ```
 
-*Example 3:* To alternate between any two values (as long as the value after ELSE is the same as the condition)
+To alternate between any two values (as long as the value after ELSE is the same as the condition)
 
 ```vb
 
 IF a = 3 THEN a = 5 ELSE a = 3
+
 
 ```
 

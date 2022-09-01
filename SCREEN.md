@@ -2,7 +2,7 @@ The [SCREEN](SCREEN) statement sets the video display mode and size of the progr
 
 ## Syntax
 
->  [SCREEN](SCREEN) {*mode%*|*imagehandle&*} [, , active_page, visual_page] 
+> **SCREEN** {*mode%*|*imagehandle&*} [, , active_page, visual_page]
 
 ## Parameter(s)
  

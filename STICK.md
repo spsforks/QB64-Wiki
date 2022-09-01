@@ -2,11 +2,11 @@ The **STICK** function returns the directional axis coordinate move of game port
 
 ## Syntax
 
->  coordinate_move% = [STICK](STICK)(direction%)
+> coordinate_move% = STICK(direction%)
 
 ## QB64 Syntax
 
->  coordinate_move% = [STICK](STICK)(direction%[, axis_number%])
+> coordinate_move% = STICK(*direction%*[, *axis_number%*])
 
 ## Description
 
@@ -56,7 +56,7 @@ LOOP UNTIL INKEY$ > ""
 
 > *Explanation:* Notice the extra **QB64 only** parameters used to cater for the 2nd stick and the buttons of the 3rd joystick.
 
-*Example 2:* Displays the Sidewinder Precision Pro Stick, Slider, Z Axis, and Hat Point of View.
+Displays the Sidewinder Precision Pro Stick, Slider, Z Axis, and Hat Point of View.
 
 ```vb
 
@@ -81,6 +81,7 @@ DO: _LIMIT 50
 LOOP UNTIL INKEY$ <> "" 
 
 ```
+
 >  *Explanation:* Each axis on the first controller found is either STICK(0, n) or STICK(1, n) with n increasing when necessary.
 
 ```text
@@ -90,7 +91,7 @@ Number of input devices found = 3
 Buttons: 512
 [MOUSE][BUTTON][AXIS][WHEEL]
 Buttons: 3
-[CONTROLLER][NAME][Microsoft Sidewinder Precision Pro (USB)](NAME][Microsoft Sidewinder Precision Pro (USB))[BUTTON][AXIS]
+[CONTROLLER][NAME][Microsoft Sidewinder Precision Pro (USB)](NAME][Microsoft-Sidewinder-Precision-Pro-(USB))[BUTTON][AXIS]
 Buttons: 9
 
   X    Main     Y          Slider         Z-axis           POV
@@ -101,8 +102,6 @@ Buttons: 9
 ```
 
 > *Note:* A Sidewinder Precision Pro requires that pins 2 and 7(blue and purple) be connected together for digital USB recognition.
-
- [Sidewinder Precision Pro game port to USB adapter](http://www.amazon.com/Belkin-F3U200-08INCH-Joystick-Adapter-SideWinder/dp/B000067RIV)
 
 ## See Also
  

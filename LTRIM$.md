@@ -29,7 +29,7 @@ PRINT "[" + number$ + "]"
 
 ```
 
-*Example 2:* Trimming leading spaces from text strings.
+Trimming leading spaces from text strings.
 
 ```vb
 
@@ -45,13 +45,14 @@ some text
 
 ```
 
-*Example 3:* A TRIM$ function to trim spaces off of both ends of a string.
+A TRIM$ function to trim spaces off of both ends of a string.
 
 ```vb
 
 text$ = "        Text String           "
 trimmed$ = TRIM$(text$)
 PRINT CHR$(26) + trimmed$ + CHR$(27) 
+
 FUNCTION TRIM$(text$)
 TRIM$ = LTRIM$(RTRIM$(text$))
 END FUNCTION 

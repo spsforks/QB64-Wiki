@@ -1,16 +1,16 @@
-The [WAIT](WAIT) statement waits until the value read from an I/O port has certain bits set.
+The WAIT statement waits until the value read from an I/O port has certain bits set.
 
 ## Syntax
 
-> [WAIT](WAIT) port%, andMask% [, xorMask%]
+> WAIT port%, andMask%[, xorMask%]
 
 ## Description
 
-* The [WAIT](WAIT) statement reads a value from port% using [INP](INP).
-* If xorMask% is specified, the value is [XOR](XOR)'d with xorMask%. It has the effect of "toggle these bits".
-* The value is then [AND](AND)'d with andMask%. It has the effect of "check if these bits are set".
-* If the final value is non-zero, [WAIT](WAIT) returns. Otherwise, another value is read from port% and checked again.
-* The [WAIT](WAIT) statement returns immediately if port% is not supported.
+* The WAIT statement reads a value from port% using INP.
+* If xorMask% is specified, the value is XOR'd with xorMask%. It has the effect of "toggle these bits".
+* The value is then AND'd with andMask%. It has the effect of "check if these bits are set".
+* If the final value is non-zero, WAIT returns. Otherwise, another value is read from port% and checked again.
+* The WAIT statement returns immediately if port% is not supported.
 
 ## Example(s)
 

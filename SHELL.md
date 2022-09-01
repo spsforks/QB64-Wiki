@@ -22,7 +22,7 @@ The [SHELL](SHELL) statement allows a program to run external programs or comman
 * For other operating systems, both the quotation mark character and the apostrophe can be used to enclose a file name that contains spaces.
 * **NOTE: Use [CHDIR](CHDIR) instead of CD as SHELL commands cannot affect the current program path.**
 
-## QBasic/QuickBASIC
+## QBasic
 
 * **QBasic BAS files could be run like compiled programs without returning to the IDE when [SYSTEM](SYSTEM) was used to [END](END) them.**
 * A user would invoke it with `SHELL "QB.EXE /L /RUN program.BAS"`
@@ -38,7 +38,7 @@ SHELL "start Notepad temp.dir" ' display temp file contents in Notepad window
 
 ```
 
-> <sub>Contents of *temp.dir* text file:</sub>
+> Contents of *temp.dir* text file:
 
 ```text
 
@@ -46,7 +46,7 @@ Free Cell.ico
 
 ```
 
-*Example 2:* Opening a Windows program (Notepad) to read or print a Basic created text file.
+Opening a Windows program (Notepad) to read or print a Basic created text file.
 
 ```vb
 
@@ -60,10 +60,10 @@ SHELL "CMD /C start /max notepad " + filename$  ' display in Notepad full screen
 > *Explanation:* Notepad is an easy program to open in Windows as no path is needed. Windows NT computers, including XP, use CMD /C where older versions of DOS don't require any command reference. The top command opens Notepad in a normal window for a user to view the file. They can use Notepad to print it. The second command places Notepad file in the taskbar and prints it automatically. The filename variable is added by the program using proper spacing. 
 
 > * **Start** is used to allow a Basic program to run without waiting for Notepad to be closed.
-> * **/min** places the window into the taskbar. **/max** is fullscreen and no option is a normal window.
-> * Notepad's **/p** option prints the file contents, even with USB printers.
+  * **/min** places the window into the taskbar. **/max** is fullscreen and no option is a normal window.
+  * Notepad's **/p** option prints the file contents, even with USB printers.
 
-*Example 3:* Function that returns the program's current working path.
+Function that returns the program's current working path.
 
 ```vb
 
@@ -87,13 +87,11 @@ SHELL "CMD /C start /max notepad " + filename$  ' display in Notepad full screen
 
 ```
 
-<sub>Code by Ted Weissgerber</sub>
 
-> *Explanation:* The **SHELL "CD"** statement requests the current working path. This info is normally printed to the screen, but the **>** pipe character sends the information to the DOS-DATA.INF file instead(**QB64** can use [_HIDE](_HIDE) to not display the DOS window). The function uses the [OPEN](OPEN) FOR [APPEND](APPEND) mode to check for the file and the data([INPUT (file mode)](INPUT-(file-mode)) would create an error if file does not exist). The current path is listed on one line of the file. The file is opened and [LINE INPUT (file statement)](LINE INPUT (file statement)) returns one line of the file text. The function adds a "\" so that the Path$ returned can be used in another file statement by just adding a file name. Save the Path$ to another variable for later use when the program has moved to another directory.
-
+> *Explanation:* The **SHELL "CD"** statement requests the current working path. This info is normally printed to the screen, but the **>** pipe character sends the information to the DOS-DATA.INF file instead(**QB64** can use [_HIDE](_HIDE) to not display the DOS window). The function uses the [OPEN](OPEN) FOR [APPEND](APPEND) mode to check for the file and the data([INPUT (file mode)](INPUT-(file-mode)) would create an error if file does not exist). The current path is listed on one line of the file. The file is opened and [LINE INPUT (file statement)](LINE-INPUT-(file-statement)) returns one line of the file text. The function adds a "\" so that the Path$ returned can be used in another file statement by just adding a file name. Save the Path$ to another variable for later use when the program has moved to another directory.
 >  In **QB64** you can simply use the [_CWD$](_CWD$) statement for the same purpose of the example above.
 
-*Example 4:* Determining if a drive or path exists. Cannot use with a file name specification.
+Determining if a drive or path exists. Cannot use with a file name specification.
 
 ```vb
 
@@ -114,21 +112,19 @@ END FUNCTION
 
 ```
 
-<sub>Code by Ted Weissgerber</sub>
 
-> *Explanation: IF Exist* checks for the drive path. *\Nul* allows an emply folder at end of path. *Echo* prints **yes** in the file if it exists.
-
+> *Explanation: IF Exist* checks for the drive path. *\Nul* allows an empty folder at end of path. *Echo* prints **yes** in the file if it exists.
 >  In **QB64** you can simply use the [_FILEEXISTS](_FILEEXISTS) statement for the same purpose of the example above.
 
 *Snippet 1:* When looking for **printers** this command gives you a file list with the default printer marked as **TRUE**:
 
-```text
+```vb
 
 SHELL _HIDE "CMD /C" + "wmic printer get name,default > default.txt"
 
 ```
 
-**Created file's text:**
+> Created file's text:
 
 ```text
 
@@ -144,13 +140,13 @@ Default  Name
 
 *Snippet 2:* Here is the code to set the default printer to the "HP Officejet Pro 8600":
 
-```text
+```vb
 
 SHELL _HIDE "CMD /C" + "wmic printer where name='HP Officejet Pro 8600' call setdefaultprinter"
 
 ```
 
->  After executing this program, and then running the first snippet again, we see the following **contents of the text file:**
+> After executing this program, and then running the first snippet again, we see the following contents of the text file:
 
 ```text
 
@@ -167,7 +163,7 @@ Default  Name
 *See examples in:*
 
 * [FILELIST$ (function)](FILELIST$-(function)) (member-contributed file search routine)
-* *File Exist* C++ Function that does not create a temp file: [Windows_Libraries#File_Exist](Windows-Libraries#File_Exist)
+* *File Exist* C++ Function that does not create a temp file: [Windows_Libraries#File_Exist](Windows-Libraries#File-Exist)
 
 ## See Also
 

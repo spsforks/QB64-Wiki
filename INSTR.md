@@ -19,8 +19,9 @@ The [INSTR](INSTR) function searches for the first occurence of a search [STRING
 * The searchString$ should be smaller or equal in [LEN](LEN) to the baseString$, or 0 is returned.
 * Non-zero position% return values can be used as a new start position by adding 1 to re-search the base string. See the example below.
 * In a loop, INSTR can search an entire file for occurences of certain words. See the [MID$ (statement)](MID$-(statement)) statement example.
+* To search right to left, use [_INSTRREV](_INSTRREV)
 
-## QBasic/QuickBASIC
+## QBasic
 
 * The start% position had to be at least 1 or greater when used or there will be an [ERROR Codes](ERROR-Codes) error. In **QB64**, a start% value of 0 or negative is interpreted as 1 and doesn't generate an error.
 
@@ -57,3 +58,4 @@ There is 'cats' in the string at position: 62
 * [LEFT$](LEFT$), [RIGHT$](RIGHT$)
 * [LCASE$](LCASE$), [UCASE$](UCASE$)
 * [STRING](STRING), [INTEGER](INTEGER)
+* [_INSTRREV](_INSTRREV)

@@ -32,7 +32,7 @@ LOOP UNTIL i% = 0
 
 > *Explanation:* In **QB64** the count will go to 32767, then count up from -32768 to 0 before repeating the process without error. 
 
-*Example 2:* When a signed **QB64** INTEGER value exceeds 32767, the value may become a negative value:
+When a signed **QB64** INTEGER value exceeds 32767, the value may become a negative value:
 
 ```vb
 
@@ -49,7 +49,7 @@ PRINT i%
 
 > *Explanation:* Use an [_UNSIGNED](_UNSIGNED) INTEGER or a ~% variable type suffix for only positive integer values up to 65535.
 
-*Example 3:* In **QB64** [_UNSIGNED](_UNSIGNED) INTEGER values greater than 65535 cycle over again from zero:
+In **QB64** [_UNSIGNED](_UNSIGNED) INTEGER values greater than 65535 cycle over again from zero:
 
 ```vb
 

@@ -10,13 +10,13 @@ The [CIRCLE](CIRCLE) statement is used in graphic [SCREEN (statement)](SCREEN-(s
 * Coordinates designate the center position of the circle. Can be partially drawn offscreen.
 * radius% is an [INTEGER](INTEGER) value for half of the total circle diameter.
 * drawColor% is any available color attribute in the [SCREEN (statement)](SCREEN-(statement)) mode used. 
-* startRadian! and stopRadian! can be any [SINGLE](SINGLE) value from 0 to 2 * � to create partial circles or ellipses.
+* startRadian! and stopRadian! can be any [SINGLE](SINGLE) value from 0 to 2 * &pi; to create partial circles or ellipses.
 * aspect! [SINGLE](SINGLE) values of 0 to 1 affect the vertical height and values over 1 affect the horizontal width of an ellipse. Aspect = 1 is a normal circle.
 
 ## Description
  
 * When using aspect! the startRadian! and stopRadian! commas must be included even if not used.
-* Radians move in a counter clockwise direction from 0 to 2 * �. Zero and 2 * � are the same circle radian at 3 o'clock.
+* Radians move in a counter clockwise direction from 0 to 2 * &pi;. Zero and 2 * &pi; are the same circle radian at 3 o'clock.
 * Negative radian values can be used to draw lines from the end of an arc or partial ellipse to the circle center.
 * Commas after the drawColor% parameter are not required when creating a normal circle. drawColor% can also be omitted to use the last color used in a draw statement.
 * The graphic cursor is set to the center of the program window on program start for [STEP](STEP) relative coordinates.
@@ -46,7 +46,7 @@ LOOP UNTIL INKEY$ = CHR$(27) 'escape key exit
 
 > *Explanation:* The square of the circle radius will be greater than or equal to the sum of the square of the mouse coordinates minus the center position when the pointer is inside of the circle. In this example the circle color will change from red to green.
 
-*Example 2:* Program illustrates how the CIRCLE command using a negative radian value can be used to create the hands of a clock.
+Program illustrates how the CIRCLE command using a negative radian value can be used to create the hands of a clock.
 
 ```vb
 
@@ -137,8 +137,10 @@ DO
     IF hours% = 0 THEN hours% = 12
 LOOP UNTIL INKEY$ <> "" 'stop program if user presses a key 
 
+
 ```
-<sub>code by Terry Ritchie</sub>
+
+code by Terry Ritchie
 
 ## See Also
 

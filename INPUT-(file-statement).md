@@ -1,21 +1,21 @@
-The [INPUT #](INPUT-(file-mode)) file or port statement reads sequential data using one variable or a comma separated list of matching variable types.
+The [INPUT #](INPUT-#) file or port statement reads sequential data using one variable or a comma separated list of matching variable types.
 
 ## Syntax
  
-> [INPUT #](INPUT-(file-mode))fileNumber&, variable1[, variable2, ..., variableN]
+> [INPUT #](INPUT-#)fileNumber&, variable1[, variable2, ..., variableN]
 
 ## Parameter(s)
 
 * fileNumber& is a positive [LONG](LONG) integer value used to [OPEN](OPEN) the file FOR [INPUT (file mode)](INPUT-(file-mode)) mode. 
-* The [type](type) of the *variable* used defines the value or list of values to be returned from the file. Numeric types must match the values returned.
+* The [Variable Types](Variable-Types) of the *variable* used defines the value or list of values to be returned from the file. Numeric types must match the values returned.
 * As reflected in the syntax you can list a number of variables with different types seperated by a comma and they will hold the values in the file (keep in mind that the information in the file should match the variable types used).
 
 ## Description
 
 * The file number can be determined by the programmer or be an unused number returned by the [FREEFILE](FREEFILE) function.
-* Variable types must match the numerical [type](type)s being read. [STRING](STRING) variables can return unquoted numeric values.
+* Variable types must match the numerical [Variable Types](Variable-Types)s being read. [STRING](STRING) variables can return unquoted numeric values.
 * Leading or trailing spaces of [STRING](STRING) values must be inside of quotes. [WRITE (file statement)](WRITE-(file-statement)) writes strings inside of quotes automatically. [PRINT (file statement)](PRINT-(file-statement)) removes quotes.
-* [INPUT #](INPUT-(file-mode)) will read each value until it encounters a comma for the next value in a list.
+* [INPUT #](INPUT-#) will read each value until it encounters a comma for the next value in a list.
 * Use the [EOF](EOF) function to avoid reading past the end of a file.
 * Files created by [WRITE (file statement)](WRITE-(file-statement)) usually have the same number of values on each file line. If INPUT reads more or less values, it may read beyond the [EOF](EOF) or return bad data.
 * Use the [LINE INPUT (file statement)](LINE-INPUT-(file-statement)) for files created with PRINT # or PRINT #, USING. 
@@ -65,7 +65,7 @@ END
 
 > *File content:* [WRITE (file statement)](WRITE-(file-statement)) string values will include quotation marks, but they are not required to read the file value as a string.
 
-*Example 2:* Commas inside of string values will not affect the INPUT value as those commas are not [WRITE (file statement)](WRITE-(file-statement)) separators.
+Commas inside of string values will not affect the INPUT value as those commas are not [WRITE (file statement)](WRITE-(file-statement)) separators.
 
 ```vb
 
@@ -75,7 +75,6 @@ y$ = "I'm fine."
 OPEN "testinp.dat" FOR OUTPUT AS #1
 WRITE #1, x$, y$
 CLOSE #1
-
 
 OPEN "testinp.dat" FOR INPUT AS #1
 

@@ -21,7 +21,16 @@
 * If the comparisons are based on multiple conditions being true, it may require many ELSEIF comparisons. ELSE could help cover some of those conditions.
 * You can use [SELECT CASE](SELECT-CASE) when IF blocks have a long list of alterative ELSEIF conditions.
 
-MISSING: Relational Table
+**Relational Operators:**
+
+| Symbol | Condition | Example Usage |
+| -- | -- | -- |
+| = | Equal | IF a = b THEN |
+| <> | NOT equal | IF a <> b THEN |
+| < | Less than | IF a < b THEN |
+| > | Greater than | IF a > b THEN |
+| <= | Less than or equal | IF a <= b THEN |
+| >= | Greater than or equal | IF a >= b THEN |
 
 ## Example(s)
 
@@ -31,9 +40,10 @@ MISSING: Relational Table
 
 IF x = 100 THEN COLOR 10: PRINT x ELSE IF x > 100 THEN COLOR 12: PRINT x ELSE PRINT "< 100"
 
+
 ```
 
-*Example 2:* IF statement block
+IF statement block
 
 ```vb
 
@@ -42,6 +52,7 @@ IF x = 100 THEN ' must place ANY code on next line!
 ELSEIF x > 100 THEN COLOR 12: PRINT x
 ELSE : PRINT "< 100"
 END IF
+
 
 ```
 

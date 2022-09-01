@@ -25,7 +25,7 @@ Y# = CVD(N$)
 
 >  *Explanation:* Reads a field from file #1, and converts the first eight bytes (N$) into an double-precision number assigned to the variable Y#.
 
-*Example 2:* Showcases the reduced space to store an encoded number.
+Showcases the reduced space to store an encoded number.
 
 ```vb
 

@@ -12,11 +12,10 @@ The **READ** statement reads values from a [DATA](DATA) field and assigns them t
    - Numerical type READ variables can only read **unquoted** numerical DATA values! 
    - **If they do not agree, a [ERROR Codes](ERROR Codes) may result when run reading string data as numerical values!**
 * If the number of variables specified is fewer than the number of elements in the DATA statement(s), subsequent READ statements begin reading data at the next unread element. If there are no subsequent READ statements, the extra data is ignored.
-* If variable reads exceed the number of elements in the DATA field(s), an [ERROR Codes](ERROR Codes) will occur!
+* If variable reads exceed the number of elements in the DATA field(s), an [ERROR Codes](ERROR-Codes) will occur!
 * Use the [RESTORE](RESTORE) statement to reread DATA statements from the start, with or without a line label as required.
 * [ACCESS](ACCESS) READ can be used in an [OPEN](OPEN) statement to limit file access to read only, preserving file data.
 * **WARNING! Do not place DATA fields after [SUB](SUB) or [FUNCTION](FUNCTION) procedures! QB64 will FAIL to compile properly!**
-
 > QBasic allowed programmers to add DATA fields anywhere because the IDE separated the main code from other procedures.
 
 ## Example(s)
@@ -47,7 +46,7 @@ DATA 5.08, 5.55, 4.00, 3.16, 3.37
 
 > *Explanation:* This program reads the values from the DATA statements into array A. After execution, the value of A(1) is 3.08, and so on. The DATA statements may be placed anywhere in the program; they may even be placed ahead of the READ statement.
 
-*Example 2:* Reading three pieces of data at once.
+Reading three pieces of data at once.
 
 ```vb
 

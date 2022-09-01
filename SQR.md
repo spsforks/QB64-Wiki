@@ -1,12 +1,14 @@
-The **SQR** function returns the square root of a numerical value.
+The [SQR](SQR) function returns the square root of a numerical value.
 
 ## Syntax
 
-> square_root = **SQR(**value**)**
+> square_root = [SQR](SQR)(value)
+
+## Description
 
 * The *square root* returned is normally a [SINGLE](SINGLE) or [DOUBLE](DOUBLE) numerical value.
 * The *value* parameter can be any **positive** numerical type. **Negative parameter values will not work!**
-* Other exponential root functions can use fractional exponents([^](^)) enclosed in **parenthesis only**. EX: root <nowiki> = </nowiki> c ^ (a / b)
+* Other exponential root functions can use fractional exponents([^](^)) enclosed in **parenthesis only**. EX: green
 
 ## Example(s)
 
@@ -25,7 +27,7 @@ The **SQR** function returns the square root of a numerical value.
 
 ```
 
-*Example 2:* Finding the Cube root of a number. 
+Finding the Cube root of a number.
 
 ```vb
 
@@ -41,7 +43,7 @@ PRINT cuberoot
 
 ```
 
-*Example 3:* Negative roots return fractional values of one.
+Negative roots return fractional values of one.
 
 ```vb
 
@@ -59,7 +61,7 @@ PRINT cuberoot
 
 > *Explanation:* A negative root means that the exponent value is actually inverted to a fraction of 1. So x ^ -2 actually means the result will be: 1 / (x ^ 2).
 
-*Example 4:* Fast Prime number checker limits the numbers checked to the square root (half way).
+Fast Prime number checker limits the numbers checked to the square root (half way).
 
 ```vb
 
@@ -95,4 +97,4 @@ PRIME! How'd you find me?
 * [MOD](MOD) (integer remainder division)
 * [^](^) (exponential operator)
 * [Mathematical Operations](Mathematical-Operations)
-* [Mathematical Operations#Derived_Mathematical_Functions](Mathematical-Operations#Derived_Mathematical_Functions)
+* [Mathematical_Operations#Derived_Mathematical_Functions](Mathematical-Operations#Derived-Mathematical-Functions)

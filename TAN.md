@@ -11,7 +11,7 @@ The [TAN](TAN) function returns the ratio of [SIN](SIN)e to [COS](COS)ine or tan
 ## Description
 
 * To convert from degrees to radians, multiply degrees * π/180.
-* TANGENT is the gradient or slope of the circle or arc at [SIN](SIN)(�) / [COS](COS)(�). Do not use division when the [COS](COS) = 0 to avoid [ERROR Codes](ERROR Codes).
+* TANGENT is the gradient or slope of the circle or arc at [SIN](SIN)(&theta;) / [COS](COS)(&theta;). Do not use division when the [COS](COS) = 0 to avoid [ERROR Codes](ERROR-Codes).
 
 ## Example(s)
 
@@ -80,7 +80,7 @@ LOOP UNTIL INKEY$ = CHR$(27)
 END SUB 
 
 ```
-<sub>Code by Unseen Machine</sub>
+
 
 ## See Also
 
@@ -89,4 +89,4 @@ END SUB
 * [ATN](ATN) (arctangent)
 * [Mathematical Operations](Mathematical-Operations)
 * [Text Using Graphics](Text-Using-Graphics)
-* [Derived_Mathematical_Functions](Mathematical-Operations#Derived_Mathematical_Functions)
+* [Mathematical_Operations#Derived_Mathematical_Functions](Mathematical-Operations#Derived-Mathematical-Functions)

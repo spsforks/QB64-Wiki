@@ -6,12 +6,12 @@ The [FIX](FIX) function rounds a numerical value to the next whole number closes
 
 ## Parameter(s)
 
-* expression is any [Data types](Data types) of literal or variable numerical value or mathematical calculation.
+* expression is any [Data types](Data-types) of literal or variable numerical value or mathematical calculation.
 
 ## Description
 
 * [FIX](FIX) effectively truncates (removes) the fractional part of expression, returning the integer part.
-    - This means that [FIX](FIX) rounds down for positive values and up for negative values.
+  * This means that [FIX](FIX) rounds down for positive values and up for negative values.
 * Use [INT](INT) to round down negative values. Positive values are rounded down by both.
 
 ## Example(s)
@@ -26,13 +26,12 @@ The [FIX](FIX) function rounds a numerical value to the next whole number closes
 ``` 
 
 ```text
-
 2 
 -2
 
 ```
 
-*Example 2:* The NORMAL arithmetic method (round half up) can be achieved using the function in the example code below:
+The NORMAL arithmetic method (round half up) can be achieved using the function in the example code below:
 
 ```vb
 
@@ -50,7 +49,6 @@ END FUNCTION
 ``` 
 
 ```text
-
 1
 2
 3

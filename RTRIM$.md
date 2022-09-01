@@ -1,15 +1,15 @@
-The [RTRIM$](RTRIM$) function removes trailing space characters from a [STRING](STRING) value.
+The RTRIM$ function removes trailing space characters from a STRING value.
 
 
 ## Syntax
 
-> return$ = [RTRIM$](RTRIM$)(value$)
+> return$ = RTRIM$(value$)
 
 ## Description
 
-* value$ is the [STRING](STRING) value to trim.
+* value$ is the STRING value to trim.
 * If value$ contains no trailing space characters, value$ is returned unchanged.
-* Convert fixed length [STRING](STRING) values by using a different return$ variable.
+* Convert fixed length STRING values by using a different return$ variable.
 
 ## Example(s)
 

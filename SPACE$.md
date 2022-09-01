@@ -1,4 +1,4 @@
-The [SPACE$](SPACE$) function returns a [STRING](STRING) consisting of a number of space characters.
+The SPACE$ function returns a STRING consisting of a number of space characters.
 
 ## Syntax
 
@@ -41,7 +41,7 @@ abc   def
 
 ```
 
-*Example 2:* In [SCREEN](SCREEN) 0 SPACE$ can be used to change the background color to make an American flag.
+In [SCREEN](SCREEN) 0 SPACE$ can be used to change the background color to make an American flag.
 
 ```vb
 
@@ -101,7 +101,6 @@ COLOR 7, 0
 END
 
 ```
-<sub>Code by Solitaire</sub>
 
 > *Explanation:* In [SCREEN](SCREEN) 0, the background color is only placed with the the printed text and spaces. [CLS](CLS) can color the entire screen.
 

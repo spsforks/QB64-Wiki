@@ -1,4 +1,4 @@
-The [SPC](SPC) function is used in [PRINT](PRINT) and [LPRINT](LPRINT) statements to print or output a number of space characters.
+The SPC function is used in [PRINT](PRINT) and [LPRINT](LPRINT) statements to print or output a number of space characters.
 
 ## Syntax
 
@@ -11,11 +11,11 @@ The [SPC](SPC) function is used in [PRINT](PRINT) and [LPRINT](LPRINT) statement
 ## Usage
 
 * When used in a [PRINT](PRINT) statement,
-** count% is the number of space characters to print, overwriting existing characters.
-** If count% is greater than the number of columns left in the current row, remaining space characters are printed on the next row.
+  * count% is the number of space characters to print, overwriting existing characters.
+  * If count% is greater than the number of columns left in the current row, remaining space characters are printed on the next row.
 * When used in a [PRINT (file statement)](PRINT-(file-statement)) statement,
-** count% is the number of space characters to output.
-** If count% is less than or equal to zero, the function has no effect.
+  * count% is the number of space characters to output.
+  * If count% is less than or equal to zero, the function has no effect.
 
 ## Example(s)
 

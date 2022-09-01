@@ -1,15 +1,15 @@
-The [GET](GET) # statement reads data from a file or port device by bytes or record positions.
+The [GET #](GET-#) statement reads data from a file or port device by bytes or record positions.
 
 ## Syntax
 
-> [GET](GET) #fileNumber&, [position][, {targetVariable|targetArray()}]
+> [GET #](GET-#)fileNumber&, [position][, {targetVariable|targetArray()}]
 
 ## Description
 
 * fileNumber& is the file or port number used in the [OPEN](OPEN) AS [BINARY](BINARY) or [RANDOM](RANDOM) statement. 
 * The [INTEGER](INTEGER) or [LONG](LONG) byte position in a [BINARY](BINARY) file or the record position in a [RANDOM](RANDOM) file **must be greater than zero**.
 * The position can be omitted if the GET operations are consecutive based on the targetVariable [TYPE](TYPE) byte size.
-* The targetVariable [Data types](Data types) or [FIELD](FIELD) *variable* size determines the byte size and the next position in the file.
+* The targetVariable [Data types](Data-types) or [FIELD](FIELD) *variable* size determines the byte size and the next position in the file.
 * The first byte position in a file is 1. <!-- giving the previous information is enough: This may require adding one to an offset value when documentation uses that position as 0. -->
 * GET does not require a byte or record position or targetVariable (or comma) when using a [FIELD](FIELD) statement.
 * **QB64** can [PUT](PUT) the entire contents of an array to a file and later GET those contents to a targetArray() (include brackets).
@@ -73,11 +73,9 @@ END
 ```
 
 > *Explanation:* The byte size of the record [TYPE](TYPE) determines the [LOF](LOF) byte size of the file and can determine the number of records.
-
 > To read the last record [GET](GET) the number of records. To add a record, use the number of records + 1 to [PUT](PUT) new record data.
 
-
-*Example 2:* Placing the contents of a numerical array into a [BINARY](BINARY) file. You may want to put the array size at the beginning too.
+Placing the contents of a numerical array into a [BINARY](BINARY) file. You may want to put the array size at the beginning too.
 
 ```vb
 

@@ -14,7 +14,7 @@
 * Normally required at the end of a [GOSUB](GOSUB) procedure unless the procedure returns using a loop.
 * RETURN is not used in error handling procedures. Error procedures use [RESUME](RESUME) *line number* or [RESUME](RESUME).
 * GOSUB procedures use line numbers or line labels designated with a colon after the number or label.
-* If RETURN is encountered without a previous [GOSUB](GOSUB) call a [ERROR Codes](ERROR Codes) is produced. 
+* If RETURN is encountered without a previous [GOSUB](GOSUB) call a [ERROR Codes](ERROR-Codes) is produced.
 * To avoid errors, place [GOSUB](GOSUB) procedures AFTER the main program code [END](END) or after an [EXIT SUB](EXIT-SUB) or [EXIT FUNCTION](EXIT-FUNCTION) call.
 
 ## Example(s)
@@ -51,13 +51,12 @@ Aha! Five!
 
 ```
 
-*Example 2:* Returns to a specific line label.
+Returns to a specific line label.
 
 ```vb
 
 GOSUB hey 
 PRINT "it didn't go here." 
-
 hoho: 
   PRINT "it went here." 
 END 
@@ -66,7 +65,7 @@ hey:
 RETURN hoho 
 
 ```
-<sub>Code by Cyperium</sub>
+
 
 ```text
 

@@ -13,6 +13,17 @@ The **UNTIL** condition is used in [DO...LOOP](DO...LOOP) exit verifications.
 * LOOP UNTIL evaluates a condition inside of the loop. It has to loop once.
 * Skips the loop or loops until an evaluation becomes True.
 
+**Relational Operators:**
+
+| Symbol | Condition | Example Usage |
+| -- | -- | -- |
+| = | Equal | IF a = b THEN |
+| <> | NOT equal | IF a <> b THEN |
+| < | Less than | IF a < b THEN |
+| > | Greater than | IF a > b THEN |
+| <= | Less than or equal | IF a <= b THEN |
+| >= | Greater than or equal | IF a >= b THEN |
+
 ## See Also
 
 * [WHILE](WHILE)

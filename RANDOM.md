@@ -69,7 +69,7 @@ END FUNCTION
 
 > *Note:* Random files can store records holding various variable types using a [TYPE](TYPE) definition or a [FIELD](FIELD) statement.
 
-*Example 2:* When not using a [TYPE](TYPE) or fixed length strings, QB4.5 allows RANDOM files to hold variable length strings up to 2 bytes less than the LEN = record length statement:
+When not using a [TYPE](TYPE) or fixed length strings, QB4.5 allows RANDOM files to hold variable length strings up to 2 bytes less than the LEN = record length statement:
 
 ```vb
 

@@ -1,12 +1,12 @@
 [COMMON](COMMON) shares common variable values with other linked or [CHAIN](CHAIN)ed modules.
 
+## Legacy Support
+
+* The multi-modular technique goes back to when QBasic and QuickBASIC had module size constraints. In QB64 [COMMON](COMMON) has been implemented so that that older code can still be compiled, though **it is advisable to use single modules for a single project (not counting [$INCLUDE]($INCLUDE) libraries), for ease of sharing and also because the module size constraints no longer exist.**
+
 ## Syntax
 
 > [COMMON](COMMON) [SHARED] variableList 
-
-## Legacy Support
-
-The multi-modular technique goes back to when **QBasic** and **QuickBASIC** had module size constraints. In **QB64** the [COMMON](COMMON) statement has been implemented so that that older code can still be compiled, though it is advisable to use single modules for a single project (not counting [$INCLUDE]($INCLUDE) libraries), for ease of sharing and also because the module size constraints no longer exist.
 
 ## Description
 

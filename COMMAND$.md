@@ -44,13 +44,11 @@ END
 
                                     ProgramB
 
-
-
                                  Parameter = FS.EXE
 
 ```
 
-*Example 2:* Program gets the number of parameters passed to the program, and then prints those parameters to the screen one at a time. 
+Program gets the number of parameters passed to the program, and then prints those parameters to the screen one at a time.
 
 ```vb
 
@@ -70,7 +68,7 @@ a data file
 
 > *Explanation: If we start *ThisProgram.exe* with the command line **ThisProgram -l "a data file"**, COMMAND$ will return a single string of "-1 a data file" which might be hard to process and interpret properly, but COMMAND$(1) would return "-l" and COMMAND$(2) would return the quoted "a data file" option as separate entries for easier parsing and processing.
 
-*Example 3:* As part of the command array syntax, you can also just read the array to see how many commands were sent (or simply check [_COMMANDCOUNT](_COMMANDCOUNT)): 
+As part of the command array syntax, you can also just read the array to see how many commands were sent (or simply check [_COMMANDCOUNT](_COMMANDCOUNT)):
 
 ```vb
 

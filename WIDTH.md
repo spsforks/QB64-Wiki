@@ -1,4 +1,4 @@
-The [WIDTH](WIDTH) statement changes the text dimensions of certain [SCREEN (statement)](SCREEN-(statement)) modes.
+The WIDTH statement changes the text dimensions of certain SCREEN modes.
 
 ##  *SCREEN* Syntax 
 

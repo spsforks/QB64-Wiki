@@ -2,7 +2,7 @@
 
 ## Syntax
 
-> : SOUND *frequency*, *duration*
+> SOUND *frequency*, *duration*
 
 ## Description
 
@@ -12,13 +12,12 @@
 
 ## Error(s)
 
-* Low *frequency* values between 0 and 37 will create an [ERROR Codes](ERROR Codes).
+* Low *frequency* values between 0 and 37 will create an [ERROR Codes](ERROR-Codes).
 * **Warning:** SOUND may not work when the program is not in focus. Use SOUND 0, 0 at sound procedure start to set focus. 
 * **Note:** SOUND 0, 0 will not stop previous **QB64** sounds like it did in QBasic!
 * SOUND may have clicks or pauses between the sounds generated. [PLAY](PLAY) can be used for musical sounds.
 
 ```text
-
 
         **                     The Seven Music Octaves ** 
       
@@ -92,9 +91,9 @@ Octaves:
 DATA 32.7,34.65,36.71,38.9,41.2,43.65,46.25,49,51.91,55,58.27,61.74 
 
 ```
-<sub>Code adapted by Ted Weissgerber from code in ["Running MS-DOS QBasic"](http://www.amazon.com/Running-MS-DOS-QBASIC-Michael-Halvorson/dp/1556153406) by Microsoft Press</sub>
 
-*Example 2:* Playing a song called "Bonnie" with [SOUND](SOUND) frequencies. 
+
+Playing a song called "Bonnie" with [SOUND](SOUND) frequencies.
 
 ```vb
 
@@ -135,7 +134,7 @@ DATA 523,8," lies ",587,8,"O-",523,8,"ver ",440,8,"the ",392,8,"O-",330,32,"cean
 DATA 440,8,"bring ",587,8,"back ",523,8,"my ",494,8,"Bon-",440,8,"nie ",494,8,"to ",523,32,"me..!" 
 
 ```
-<sub>Code adapted by Ted Weissgerber from code ["Running MS-DOS QBasic"](http://www.amazon.com/Running-MS-DOS-QBASIC-Michael-Halvorson/dp/1556153406) by Microsoft Press</sub>
+
 
 ## See Also
  

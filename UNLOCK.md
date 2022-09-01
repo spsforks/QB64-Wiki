@@ -1,4 +1,4 @@
-This statement opens access to parts or all of a file to other programs and network users.
+The UNLOCK statement opens access to parts or all of a file to other programs and network users.
 
 ## Syntax
 
@@ -13,8 +13,9 @@ This statement opens access to parts or all of a file to other programs and netw
 * In the second syntax, record& is the record number of the file to unlock.
 * In the third syntax, the records or bytes in the range [firstRecord&,lastRecord&] are unlocked. If firstRecord& is omitted, it is assumed to be the first record or byte.
 * For files opened in [BINARY](BINARY) mode, each record corresponds to a single byte.
-* [LOCK](LOCK) and [UNLOCK](UNLOCK) statements are always used in pairs and each statement must match the other one.
+* [LOCK](LOCK) and UNLOCK statements are always used in pairs and each statement must match the other one.
 * Files must be unlocked before other programs can access them, and before the file is closed.
+* [Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions](Keywords-currently-not-supported-by-QB64#Keywords-Not-Supported-in-Linux-or-MAC-OSX-versions)
 
 ## See Also
 

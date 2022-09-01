@@ -57,7 +57,8 @@ WeekDay$ = day$
 END FUNCTION 
 
 ```
-<sub>Code by Ted Weissgerber</sub>
+
+Code by Ted Weissgerber
 
 ```text
 
@@ -68,5 +69,5 @@ Today is Wednesday, June 2, 2010
 
 ## See Also
 
-* [DATE$ (statement)](DATE$-(statement)), [TIME$](TIME$), [TIME$ (statement)](TIME$-(statement))
+* [TIME$](TIME$)
 * [VAL](VAL), [STR$](STR$), [MID$](MID$), [LEFT$](LEFT$), [IF...THEN](IF...THEN)

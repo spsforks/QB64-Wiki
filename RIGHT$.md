@@ -35,7 +35,7 @@ Williams
 
 ```
 
-*Example 2:* Adding the leading zero in single digit [HEX$](HEX$) values using RIGHT to take the right two hexadecimal string digits.
+Adding the leading zero in single digit [HEX$](HEX$) values using RIGHT to take the right two hexadecimal string digits.
 
 ```vb
 

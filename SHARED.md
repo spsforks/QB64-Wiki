@@ -6,8 +6,9 @@ The **SHARED** statement allows variables to be passed automatically to any [SUB
 
 * [DIM](DIM)ensioned variables are shared with all procedures in the program module.
 * When used with [DIM](DIM) in the main module, it eliminates the need to pass a parameter variable to a [SUB](SUB) or [FUNCTION](FUNCTION). 
-* Use [COMMON SHARED](COMMON SHARED) to share a list of variable values with sub-procedures or other modules. See also: [COMMON](COMMON)
+* Use [COMMON SHARED](COMMON-SHARED) to share a list of variable values with sub-procedures or other modules. See also: [COMMON](COMMON)
 * SHARED (**without [DIM](DIM)**) can share a list of variables inside of [SUB](SUB) or [FUNCTION](FUNCTION) procedures with the main module only.
+* When using the **AS type variable-list** syntax, type symbols cannot be used.
 > **Note: SHARED variables in sub-procedures will not be passed to other sub-procedures, only the main module.**
 
 ## Example(s)
@@ -21,7 +22,7 @@ DIM SHARED Q$, prices#, IDs%
 
 ```
 
-*Example 2:* The DIR$ function returns a filename or a list when more than one exist. The file spec can use a path and/or wildcards.
+The DIR$ function returns a filename or a list when more than one exist. The file spec can use a path and/or wildcards.
 
 ```vb
 
@@ -63,7 +64,6 @@ DIR$ = DirList$(Index%)
 END FUNCTION 
 
 ```
-<sub>Code by Ted Weissgerber</sub>
 
 > *Explanation:* The SHARED variable value *DIRcount%* can tell the main program how many files were found using a wildcard spec.
 

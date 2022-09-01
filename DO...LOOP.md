@@ -3,33 +3,41 @@
 ## Syntax
 
 *Syntax 1:*
-
-> **[DO](DO)** [{[WHILE](WHILE)|[UNTIL](UNTIL)} condition]
+> **[DO](DO)** [{WHILE|UNTIL} condition]
 >   *{code}*
 >   ⋮
 > **[LOOP](LOOP)** 
 
 *Syntax 2:*
-
 > **[DO](DO)**
 >   *{code}*
 >   ⋮
-> **[LOOP](LOOP)** [{[WHILE](WHILE)|[UNTIL](UNTIL)} condition]
+> **[LOOP](LOOP)** [{WHILE|UNTIL} condition]
 
 ## Description
 
 * **DO UNTIL or DO WHILE used with LOOP**: The condition is evaluated before running the loop code.
-   - [UNTIL](UNTIL) checks if the condition is false each time before running code.
-   - [WHILE](WHILE) checks if the condition is true each time before running code.
+> [UNTIL](UNTIL) checks if the condition is false each time before running code.
+> [WHILE](WHILE) checks if the condition is true each time before running code.
    * **DO used with LOOP UNTIL or LOOP WHILE**: The code block will run at least once:
-   - [UNTIL](UNTIL) checks if the condition is false before running loop code again.
-   - [WHILE](WHILE) checks if the condition is true before running loop code again.
+> [UNTIL](UNTIL) checks if the condition is false before running loop code again.
+> [WHILE](WHILE) checks if the condition is true before running loop code again.
 * NOTE: You cannot use a condition after both the DO and LOOP statements at the same time. 
 * Use **[EXIT](EXIT) DO** to exit a loop block even before the condition is met.
-   - If you don't specify a condition, you must exit the loop block manually using **[EXIT](EXIT) DO**.
+* Use [_CONTINUE](_CONTINUE) to skip the remaining lines in the iteration without leaving the loop.
+  * If you don't specify a condition, you must exit the loop block manually using **[EXIT](EXIT) DO**.
 * If a loop never meets an exit condition requirement, it will never stop.
 
-MISSING: Relational Table
+**Relational Operators:**
+
+| Symbol | Condition | Example Usage |
+| -- | -- | -- |
+| = | Equal | IF a = b THEN |
+| <> | NOT equal | IF a <> b THEN |
+| < | Less than | IF a < b THEN |
+| > | Greater than | IF a > b THEN |
+| <= | Less than or equal | IF a <= b THEN |
+| >= | Greater than or equal | IF a >= b THEN |
 
 ## Example(s)
 
@@ -44,7 +52,7 @@ DO: LOOP WHILE INKEY$ <> "" ' checks evaluation after one run of loop code
 
 ```
 
-*Example 2:* Using UNTIL to clear the keyboard buffer.
+Using UNTIL to clear the keyboard buffer.
 
 ```vb
 
@@ -52,10 +60,10 @@ DO UNTIL INKEY$ = "": LOOP ' checks evaluation before running loop code
 
 DO: LOOP UNTIL INKEY$ = "" ' checks evaluation after one run of loop code
 
+
 ```
 
-*Example 3:* Using a one time DO loop to exit ANY of several FOR LOOPs, without using [GOTO](GOTO). 
-
+Using a one time DO loop to exit ANY of several FOR LOOPs, without using [GOTO](GOTO).
 > SUB reads header contents of a [BSAVE](BSAVE) file that may include embedded RGB color settings before the image.
 
 ```vb
@@ -138,13 +146,14 @@ END SELECT
 END SUB 
 
 ```
-<sub>Code by Ted Weissgerber</sub>
 
-> *Explanation:* The SUB procedure reads a file that was [BSAVE](BSAVE)d previously. If the RGB colors are stored before the image, the values can only be between 0 and 63. Higher values indicate that the image width and height are located there and that there are no stored color values to be read. SUB later displays the dimensions of the file image that [GET (graphics statement)](GET (graphics statement)) placed in the file array. The loop is set to only run once by creating **a TRUE [UNTIL](UNTIL) statement** such as 1 = 1. When a screen mode cannot be determined, the user must select one.
+Code by Ted Weissgerber
 
-> Dimensions and location of width and height information indicates the screen mode as [SCREEN (statement)](SCREEN (statement)) 13 if it has 768 RGB values and dimensions of 320 X 200 max. If the file only holds 64 settings and/or is larger than 320 X 200, it uses SCREEN 12 or 9. The procedure [EXIT](EXIT)s the DO LOOP early when the image size is found with or without custom color settings. 
+> *Explanation:* The SUB procedure reads a file that was [BSAVE](BSAVE)d previously. If the RGB colors are stored before the image, the values can only be between 0 and 63. Higher values indicate that the image width and height are located there and that there are no stored color values to be read. SUB later displays the dimensions of the file image that [GET (graphics statement)](GET-(graphics-statement)) placed in the file array. The loop is set to only run once by creating **a TRUE [UNTIL](UNTIL) statement** such as 1 = 1. When a screen mode cannot be determined, the user must select one.
 
->  Divide SCREEN 13 [GET (graphics statement)](GET (graphics statement)) widths by 8.
+> Dimensions and location of width and height information indicates the screen mode as [SCREEN (statement)](SCREEN-(statement)) 13 if it has 768 RGB values and dimensions of 320 X 200 max. If the file only holds 64 settings and/or is larger than 320 X 200, it uses SCREEN 12 or 9. The procedure [EXIT](EXIT)s the DO LOOP early when the image size is found with or without custom color settings.
+
+> Divide SCREEN 13 [GET (graphics statement)](GET-(graphics-statement)) widths by 8.
 
 ## See Also
 

@@ -1,8 +1,8 @@
-This function returns the hexadecimal (base 16) representation of a numeric value as a [STRING](STRING).
+The [HEX$](HEX$) function returns the base 16 hexadecimal representation of an [INTEGER](INTEGER), [LONG](LONG) or [_INTEGER64](_INTEGER64) value as a [STRING](STRING).
 
 ## Syntax
 
-> hexvalue$ = [HEX$](HEX$)(number)
+> result$ = [HEX$](HEX$)(decimalNumber)
 
 ## Parameters
 
@@ -11,30 +11,25 @@ This function returns the hexadecimal (base 16) representation of a numeric valu
 
 ## Description
 
-* The function returns the base 16 (hexadecimal) representation of the given number as [STRING](STRING).
-* Different from [STR$](STR$), this function does not return a leading sign placeholder space, so no [LTRIM$](LTRIM$) to strip that space from positive numbers is necessary.
-* [VAL](VAL) can convert the returned hex string value back to a decimal value by prefixing the string with "[&H](&H)".
-** Eg. `decimal = VAL("&H" + hexvalue$)`.
+* The function returns the string hexadecimal (base-16) representation of decimalNumber.
+* The function does not return a leading sign space so [LTRIM$](LTRIM$) is not necessary.
+* [VAL](VAL) can convert the string value back to a decimal value by prefixing the string return with "&H": `dec = VAL("&H" + hexvar$)`.
 
 ## Example(s)
 
-Example 1: Comparing decimal, hexadecimal, octal and binary string values from 0 to 15.
+*Example 1:* Comparing decimal, hexadecimal and octal string values 0 to 15.
 
 ```vb
 
-tabletop$ = " Decimal | Hexadecimal | Octal  "
-tablesep$ = "---------+-------------+------- "
-tableout$ = "  \ \    |      \\     |   \\   " 'the PRINT USING template
+LOCATE 2, 20: PRINT "   Decimal | Hexadecimal | Octal  "
+LOCATE 3, 20: PRINT "-----------+-------------+--------"
+        template$ = "    \ \    |     \\      |    \\  "
 
-LOCATE 2, 10: PRINT tabletop$
-LOCATE 3, 10: PRINT tablesep$
 FOR n% = 0 TO 15
-    LOCATE 4 + n%, 10: PRINT USING tableout$; STR$(n%); HEX$(n%); OCT$(n%)
+  LOCATE 4 + n%, 20: PRINT USING template$; STR$(n%); HEX$(n%); OCT$(n%)
 NEXT n%
 
 ```
-
-Note: Although the decimal numbers 0-15 have a maximum width of 2 digits only, an extra space in the *tableout$* template is needed when using the (fixed width string) slash output format, as [STR$](STR$) values contain a leading sign placeholder space.
 
 ```text
 
@@ -59,13 +54,15 @@ Note: Although the decimal numbers 0-15 have a maximum width of 2 digits only, a
 
 ```
 
-Example 2:Converting a hexadecimal value to decimal.
+*Note:* Decimal [STR$](STR$) values contain a leading sign space so values require an extra space in the template using the slash format.
+
+Converting hex value to decimal.
 
 ```vb
 
-hexvalue$ = HEX$(255)
-PRINT "Hex: "; hexvalue$
-PRINT "Converting Hex value to Decimal:"; VAL("&H" + hexvalue$)
+h$ = HEX$(255)
+PRINT "Hex: "; h$
+PRINT "Converting Hex value to Decimal:"; VAL("&H" + h$)
 
 ```
 
@@ -79,6 +76,6 @@ Converting Hex value to Decimal: 255
 ## See Also
 
 * [OCT$](OCT$), [STR$](STR$), [VAL](VAL)
-* [&B](&B) (binary), [&H](&H) (hexadecimal), [&O](&O) (octal)
+* [&H](&H) (hexadecimal), [&O](&O) (octal), [&B](&B) (binary)
 * [Base Comparisons](Base-Comparisons)
 * [HEX$ 32 Bit Values](HEX$-32-Bit-Values)

@@ -33,7 +33,7 @@ CLOSE #1
 
 ```
 
-*Example 2:* How LSET can define two different string length values in one statement.
+How LSET can define two different string length values in one statement.
 
 ```vb
 

@@ -14,7 +14,7 @@ The [FILES](FILES) statement is used to print a list of files in the current dir
 * Illegal filename characters in **QB64** include * > < : " | \ / with any amount of dot extensions being allowed in Windows.
 * FILES lists can make the screen roll up. Try using SHELL "DIR" with the /P option. [DIR command](http://www.computerhope.com/dirhlp.htm).
 
-## QBasic/QuickBASIC
+## QBasic
 
 * Illegal filename characters in QBasic included *** ? , > < ; : " | \ / + [ ]** and more than one dot extension in [DOS](http://www.computerhope.com/issues/ch000209.htm).
 
@@ -76,13 +76,13 @@ DIR$ = DirList$(Index%)
 END FUNCTION 
 
 ```
-<sub>Code by Ted Weissgerber</sub>
+
+Code by Ted Weissgerber
 
 > *Explanation:* The function will verify that a file exists (even if it is empty) by returning its name, or it returns an empty string if no file exists. It can return a list of file names by using an empty string parameter("") after sending a wildcard spec to get the first file name. The number of file names found is returned by using the SHARED variable, **DIRCount%**. Unlike the PDS DIR$ function, **it must use an empty string parameter as QB64 doesn't support optional parameters.** The function does not delete empty files.
 
 *Alternative 2:*
-
-The member-contributed [FILELIST$](FILELIST$) function uses the mouse and does not affect your program screens. It can verify that a file name exists or display a list of long and short file names to choose from. It also avoids program errors when a file name does not exist.
+* The member-contributed [FILELIST$](FILELIST$) function uses the mouse and does not affect your program screens. It can verify that a file name exists or display a list of long and short file names to choose from. It also avoids program errors when a file name does not exist.
 
 ## See Also
 
@@ -91,6 +91,6 @@ The member-contributed [FILELIST$](FILELIST$) function uses the mouse and does n
 * [RMDIR](RMDIR), [KILL](KILL)
 * [_CWD$](_CWD$), [_STARTDIR$](_STARTDIR$)
 * [_FILEEXISTS](_FILEEXISTS), [_DIREXISTS](_DIREXISTS)
-* [Windows_Libraries#File_Exist](Windows-Libraries#File_Exist)
-* [Windows_Libraries#File_Open_and_Save_Dialog](Windows-Libraries#File_Open_and_Save_Dialog)
+* [Windows_Libraries#File_Exist](Windows-Libraries#File-Exist)
+* [Windows_Libraries#File_Open_and_Save_Dialog](Windows-Libraries#File-Open-and-Save-Dialog)
 * [$CONSOLE]($CONSOLE)

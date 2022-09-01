@@ -28,9 +28,9 @@ NEXT
 
 ```
 
-> *NOTE:* **GWBasic** allows **semicolons** to be used in the ROW$ definition, but QBasic and **QB64** MUST use **+** concatenation.
+> *NOTE:'GWBasic** allows **semicolons** to be used in the ROW$ definition, but QBasic and **QB64** MUST use **+** concatenation.
 
-*Example 2:* Using the function to change a Turn Angle value using DRAW.
+Using the function to change a Turn Angle value using DRAW.
 
 ```vb
 
@@ -59,7 +59,7 @@ LOOP
 
 > *Explanation:* When the VARPTR$ value is used in DRAW, **=** MUST be used to pass the value to the draw! Negative Turn Angle values move clockwise and each second moves the hand 6 degrees. **TA** uses actual degree angles starting at 0 or noon.
 
-*Example 3:* Comparing DRAW moves using VARPTR$ and [STR$](STR$) values.
+Comparing DRAW moves using VARPTR$ and [STR$](STR$) values.
 
 ```vb
 

@@ -12,8 +12,8 @@ The **LINE INPUT #** file statement reads an entire line from a text file into a
 ## Description
 
 * Reads a file using the fileNumber& [OPEN](OPEN)ed in the [INPUT (file mode)](INPUT-(file-mode)) or [BINARY](BINARY) file mode as one file line text string.
-* **NOTE:** [LINE INPUT (file statement)](LINE INPUT (file statement)) will work faster in [BINARY](BINARY) mode than in [INPUT (file mode)](INPUT-(file-mode)) mode.
-** Using **LINE INPUT #** in [BINARY](BINARY) mode is possible in **version 1.000 and up**
+* **NOTE:** [LINE INPUT (file statement)](LINE-INPUT-(file-statement)) will work faster in [BINARY](BINARY) mode than in [INPUT (file mode)](INPUT-(file-mode)) mode.
+  * Using **LINE INPUT #** in [BINARY](BINARY) mode is possible in **version 1.000 and up**
 * Can be used with [EOF](EOF) to count the number of lines of data (records) in a file using a loop.
 * Use the [EOF](EOF) function to avoid going past the end of a file and creating an error.
 * **LINE INPUT #** can even retain the original quotation marks in text.
@@ -22,7 +22,7 @@ The **LINE INPUT #** file statement reads an entire line from a text file into a
 ## Error(s)
 
 * **If an "Input past End of file" error occurs, check for CHR$(26) (end of file character) in the files being read.**
-* **Warning: files must exist to be opened in **INPUT** mode. Use [_FILEEXISTS](_FILEEXISTS) to avoid program [ERROR Codes](ERROR Codes).**
+* **Warning: files must exist to be opened in **INPUT** mode. Use [_FILEEXISTS](_FILEEXISTS) to avoid program [ERROR Codes](ERROR-Codes).**
 
 ## Example(s)
 

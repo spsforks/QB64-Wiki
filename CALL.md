@@ -4,7 +4,7 @@
 
 > [CALL](CALL) ProcedureName (parameter1, parameter2,...)]
 
-### Alternative syntax
+### Alternative Syntax
 
 > ProcedureName parameter1, parameter2,...]
 
@@ -66,4 +66,3 @@ Hello World!
 ## See Also
 
 * [SUB](SUB), [FUNCTION](FUNCTION)
-* DECLARE, [DECLARE (non-BASIC statement)](DECLARE-(non-BASIC-statement))

@@ -8,7 +8,7 @@ The [ASC (statement)](ASC-(statement)) statement allows a **QB64** program to ch
 
 * The stringExpression$ variable's value must have been previously defined and cannot be an empty string ("").
 * position% is optional. If no position is used, the leftmost character at position 1 is assumed.
-* position% cannot be zero or greater than the string's [LEN](LEN) or an [ERROR Codes](ERROR Codes) will occur.
+* position% cannot be zero or greater than the string's [LEN](LEN) or an [ERROR Codes](ERROR-Codes) will occur.
 * The [ASCII](ASCII) replacement code% value can be any [INTEGER](INTEGER) value from 0 to 255.
 * Some [ASCII](ASCII) control characters will not [PRINT](PRINT) a character or may format the [SCREEN](SCREEN). [_PRINTSTRING](_PRINTSTRING) can print them graphically.
 

@@ -31,7 +31,7 @@ END
 
 > *Explanation:* Procedure generates random integer values from 2 to 12 like a pair of dice.
 
-*Example 2:* Repeating a random number sequence with RANDOMIZE **USING** and a specific seed value in **QB64** only.
+Repeating a random number sequence with RANDOMIZE **USING** and a specific seed value in **QB64** only.
 
 ```vb
 
@@ -56,7 +56,7 @@ END SUB
 
 > *Explanation:* The second RANDOMIZE statement just continues the sequence where USING in the third restarts the sequence.
 
-*Example 3:* Random fireworks explosions:
+Random fireworks explosions:
 
 ```vb
 
@@ -106,7 +106,6 @@ LOOP
 SYSTEM
 
 ```
-<sub>Code by Ben</sub>
 
 ## See Also
  

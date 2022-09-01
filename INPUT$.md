@@ -11,10 +11,10 @@ The [INPUT$](INPUT$) function is used to receive data from the user's keyboard, 
 * fileOrPortNumber is the number that was used in the [OPEN](OPEN) AS statement.
 * Returns [STRING](STRING) values including spaces or even extended [ASCII](ASCII) characters.
 * Backspace key results in the [CHR$](CHR$)(8) character being added to an entry.
-* Use `LOCATE , , 1` to view the cursor entry. Turn the cursor off using `LOCATE , , 0`.
+* Use `[LOCATE](LOCATE) , , 1` to view the cursor entry. Turn the cursor off using `LOCATE , , 0`.
 * Use [_DEST](_DEST) [_CONSOLE](_CONSOLE) before INPUT$ is used  to receive input from a [$CONSOLE]($CONSOLE) window.
 
-## QBasic/QuickBASIC
+## QBasic
 
 * numberOfBytes% could not exceed 32767 in [BINARY](BINARY) files or a QBasic error would occur. 
 * Ctrl + Break would not interrupt the QBasic program until there was a full INPUT$ key entry. In **QB64** Ctrl + Break will immediately exit a running program.
@@ -31,7 +31,7 @@ PRINT year$              'display the text entry
 
 ```
 
-*Example 2:* Reading bytes from a text file for an 80 wide screen mode.
+Reading bytes from a text file for an 80 wide screen mode.
 
 ```vb
 
@@ -42,7 +42,7 @@ LOCATE 5, 6, 0: PRINT text$       'print text and turn cursor off
 
 ```
 
-*Example 3:* Getting the entire text file data as one string value.
+Getting the entire text file data as one string value.
 
 ```vb
 
@@ -57,6 +57,6 @@ CLOSE #1
 ## See Also
 
 * [INPUT](INPUT), [LINE INPUT](LINE-INPUT) (keyboard input)
-* [INPUT (file mode)](INPUT (file mode)), [INPUT (file statement)](INPUT-(file-statement)), [LINE INPUT (file statement)](LINE-INPUT-(file-statement)) (file input)
+* [INPUT (file mode)](INPUT-(file-mode)), [INPUT (file statement)](INPUT-(file-statement)), [LINE INPUT (file statement)](LINE-INPUT-(file-statement)) (file input)
 * [OPEN](OPEN), [LOC](LOC) (file) 
 * [LOCATE](LOCATE) (cursor on/off)

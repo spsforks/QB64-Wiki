@@ -28,7 +28,7 @@ LINE (200, 200)-(200 + x, 200 + y)
 
 ```
 
-*Example 2:* [ATN](ATN) can be used to define � in [SINGLE](SINGLE) or [DOUBLE](DOUBLE) precision. The calculation cannot be used as a [CONST](CONST)ant.
+[ATN](ATN) can be used to define &pi; in [SINGLE](SINGLE) or [DOUBLE](DOUBLE) precision. The calculation cannot be used as a [CONST](CONST)ant.
 
 ```vb
 
@@ -40,7 +40,7 @@ PRINT Pi, Pi#
 
 > *Note:* You can use QB64's native [_PI](_PI) function.
 
-*Example 3:* Finds the angle from the center point to the mouse pointer. 
+Finds the angle from the center point to the mouse pointer.
 
 ```vb
 
@@ -83,7 +83,8 @@ END IF
 END FUNCTION 
 
 ```
-<sub>Function by Galleon</sub>
+
+Function by Galleon
 
 ## See Also
 
@@ -91,4 +92,4 @@ END FUNCTION
 * [TAN](TAN) (tangent function)
 * [SIN](SIN), [COS](COS)
 * [Mathematical Operations](Mathematical-Operations)
-* [Mathematical Operations#Derived_Mathematical_Functions](Mathematical-Operations#Derived_Mathematical_Functions)
+* [Mathematical_Operations#Derived_Mathematical_Functions](Mathematical-Operations#Derived-Mathematical-Functions)

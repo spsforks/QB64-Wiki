@@ -12,7 +12,7 @@ The [ERROR](ERROR) statement is used to simulate a program error or to troublesh
 
 ## Example(s)
 
-Creating custom error codes for a program that can be handled by an [ON ERROR](ON ERROR) handling routine.
+Creating custom error codes for a program that can be handled by an [ON ERROR](ON-ERROR) handling routine.
 
 ```vb
 
@@ -23,7 +23,6 @@ x = x + 1
 IF x THEN ERROR 111
 
 END
-
 
 handler:
 PRINT ERR, _ERRORLINE
@@ -36,13 +35,8 @@ RESUME NEXT
 
 ## See Also
 
-
-
-* [ERL](ERL) (last line number used before an error occurred, when line numbers are used) 
-* [ERR](ERR) (error code number) 
-* [_ERRORLINE](_ERRORLINE) (actual text code line)
-* [_ERRORMESSAGE$](_ERRORMESSAGE$) (last error message or a specific message)
-* [_INCLERRORFILE$](_INCLERRORFILE$) (name of [$INCLUDE](INCLUDE) file where error occurred, when $INCLUDE files are used
-* [_INCLERRORLINE](_INCLERRORLINE) (returns the line number in an [$INCLUDE](INCLUDE) file that caused the most recent error, when an $INCLUDE file is being used)
-* [ON ERROR](ON-ERROR) (calls error handing routine using [GOTO](GOTO) only)
-* [Error Codes](ERROR-Codes) (list of all QB64 errors)
+* [ON ERROR](ON-ERROR)
+* [ERR](ERR), [ERL](ERL)
+* [_ERRORLINE](_ERRORLINE), [_ERRORMESSAGE$](_ERRORMESSAGE$)
+* [_INCLERRORLINE](_INCLERRORLINE), [_INCLERRORFILE$](_INCLERRORFILE$)
+* [ERROR Codes](ERROR-Codes) (list)

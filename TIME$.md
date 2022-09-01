@@ -30,11 +30,11 @@ DO
 LOOP UNTIL INKEY$ = CHR$(27) 
 
 ```
-<sub>Code by Galleon</sub>
+
 
 > Explanation: Note that [VAL](VAL)(TIME$) can just return the hour number 0 to 23 as the read stops at the first colon.
 
-*Example 2:* The following Function converts TIME$ to normal 12 hour AM-PM digital clock  format.
+The following Function converts TIME$ to normal 12 hour AM-PM digital clock  format.
 
 ```vb
 
@@ -62,12 +62,12 @@ END FUNCTION
 
 ```
 
-> *Explanation:* When hours are less than 10 (but not 0), [STR$](STR$)(H%) alone keeps a space ahead of the hour. For 2 digit hours, [LTRIM$](LTRIM$) is used to remove that leading space. For the hours of 10 AM to 12 PM, the hour [STRING](STRING) value is passed from [LEFT$](LEFT$)(TIME$, 2) at the beginning of the function.
+> *Explanation:* When hours are less than 10 (but not 0), STR$(H%) alone keeps a space ahead of the hour. For 2 digit hours, LTRIM$ is used to remove that leading space. For the hours of 10 AM to 12 PM, the hour STRING value is passed from LEFT$(TIME$, 2) at the beginning of the function.
 
 ## See Also
 
-* [TIME$ (statement)](TIME$-(statement)), [TIMER](TIMER)
-* [DATE$](DATE$), [DATE$-(statement)](DATE$-(statement)) 
+* [TIMER](TIMER)
+* [DATE$](DATE$)
 * [VAL](VAL), [STR$](STR$), [HEX$](HEX$) 
 * [LTRIM$](LTRIM$), [MID$](MID$), [LEFT$](LEFT$)
 * [IF...THEN](IF...THEN)

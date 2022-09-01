@@ -7,9 +7,9 @@ The [LBOUND](LBOUND) function returns the smallest valid index (lower bound) of 
 ## Description
 
 * arrayName specifies the name of the array.
-* dimension% specifies the dimension number, starting with **1** for the first dimension.
-** If omitted, dimension% is assumed to be **1**.
-** If dimension% is less than **1** or is greater than the number of dimensions, a [ERROR Codes](ERROR-Codes) error occurs.
+* dimension% specifies the dimension number, starting with 1 for the first dimension.
+  * If omitted, dimension% is assumed to be 1.
+  * If dimension% is less than 1 or is greater than the number of dimensions, a [ERROR Codes](ERROR-Codes) error occurs.
 * [LBOUND](LBOUND) and [UBOUND](UBOUND) are used to determine the range of valid indexes of an array.
 
 ## Example(s)

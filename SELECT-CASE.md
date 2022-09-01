@@ -11,23 +11,25 @@
 >     [statementblock-n]]
 > **END SELECT** 
 
-* **SELECT CASE** evaluates testExpression and executes the first matching [CASE](CASE) or [CASE ELSE](CASE ELSE) block and exits.
-* **SELECT EVERYCASE** allows the execution of all matching [CASE](CASE) blocks from top to bottom or the [CASE ELSE](CASE ELSE) block.
+## Description
+
+* **SELECT CASE** evaluates testExpression and executes the first matching [CASE](CASE) or [CASE ELSE](CASE-ELSE) block and exits.
+* **SELECT EVERYCASE** allows the execution of all matching [CASE](CASE) blocks from top to bottom or the [CASE ELSE](CASE-ELSE) block.
 * The literal, variable or expression testExpression comparison can result in any string or numerical type. 
 * **Note:** A testExpression variable value can be changed inside of true CASE evaluations in SELECT EVERYCASE. 
 * A testExpression derived from an expression or [FUNCTION](FUNCTION) will only be determined once at the start of the block execution.
 * <span id="allCASES">Supports individual CASE values and ranges or lists of literal values as below:</span>
-** **CASE** casevalue: code **'case compares one numerical or text value**
-** **CASE** casevalue1 [TO](TO) casevalue2: code **'case compares a range of values **
-** **CASE** casevalue1, casevalue2, casevalue3: code **'case compares a list of values separated by commas**
-** **CASE IS** > casevalue: code **'case compares a value as <nowiki> =, <>, < or > </nowiki>** 
-** **CASE ELSE**: code **'bottom case statement executes only when no other CASE is executed.**
+  * **CASE** casevalue: code **'case compares one numerical or text value**
+  * **CASE** casevalue1 [TO](TO) casevalue2: code **'case compares a range of values **
+  * **CASE** casevalue1, casevalue2, casevalue3: code **'case compares a list of values separated by commas**
+  * **CASE IS** > casevalue: code **'case compares a value as <nowiki> =, <>, < or > </nowiki>**
+  * **CASE ELSE**: code **'bottom case statement executes only when no other CASE is executed.**
 * The CASE values should cover the normal ranges of the comparison testExpression values. 
 * Use **CASE ELSE** before **END SELECT** if an alternative is necessary when no other case matches.
 * CASEs should be listed in an ascending or descending values for best and fastest results.
 * [STRING](STRING) comparisons will be based on their respective [ASCII](ASCII) code values where capital letters are valued less than lower case.
 * Use **SELECT CASE** when [IF...THEN](IF...THEN) statements get too long or complicated.
-* **SELECT CASE** and **EVERYCASE** statement blocks must **always** be ended with [END SELECT](END SELECT).
+* **SELECT CASE** and **EVERYCASE** statement blocks must **always** be ended with [END SELECT](END-SELECT).
 * Use **[colon](colon)s** to execute multiple statements in one line.
 * An **[underscore](underscore)** can be used anywhere after the code on one line to continue it to the next line in **QB64**.
 
@@ -54,7 +56,7 @@ END SELECT
 
 > *Explanation:* The first true CASE is executed and SELECT CASE is exited. "Other value" is printed for values less than 10.
 
-*Example 2:* SELECT CASE will execute the first CASE statement that is true and ignore all CASE evaluations after that:
+SELECT CASE will execute the first CASE statement that is true and ignore all CASE evaluations after that:
 
 ```vb
 
@@ -90,7 +92,7 @@ This will be displayed when a equals 100
 
 > *Explanation:* The first case where a value is true is shown, the remainder are skipped. Try changing the value of *a*.
 
-*Example 3:* Same as Example 2 but, SELECT EVERYCASE will execute every CASE statement that is true.
+Same as Example 2 but, SELECT EVERYCASE will execute every CASE statement that is true.
 
 ```vb
 
@@ -126,9 +128,9 @@ This will be shown as 100 is between 50 and 150
 
 ```
 
-> *Explanation:* [CASE ELSE](CASE ELSE) will only execute if no other CASE was true. See Example 5 for more usages.
+> *Explanation:* [CASE ELSE](CASE-ELSE) will only execute if no other CASE was true. See Example 5 for more usages.
 
-*Example 4:* SELECT CASE evaluates string values by the [ASC](ASC) code value according to [ASCII](ASCII).
+SELECT CASE evaluates string values by the [ASC](ASC) code value according to [ASCII](ASCII).
 
 ```vb
 
@@ -148,10 +150,10 @@ SELECT CASE value$
 END SELECT 
 
 ```
->  *Notes:* [STRING](STRING) values using multiple characters will be compared by the [ASCII](ASCII) code values sequentially from left to right. Once the equivalent code value of one string is larger than the other the evaluation stops. This allows string values to be compared and sorted alphabetically using [Greater Than](Greater Than) or [Less Than](Less Than) and to [SWAP](SWAP) values in [arrays](arrays) regardless of the string lengths.
 
+> *Notes:* [STRING](STRING) values using multiple characters will be compared by the [ASCII](ASCII) code values sequentially from left to right. Once the equivalent code value of one string is larger than the other the evaluation stops. This allows string values to be compared and sorted alphabetically using [Greater Than](Greater-Than) or [Less Than](Less-Than) and to [SWAP](SWAP) values in [arrays](arrays) regardless of the string lengths.
 
-*Example 5:* EVERYCASE is used to draw sections of digital numbers in a simulated LED readout using numbers from 0 to 9:
+EVERYCASE is used to draw sections of digital numbers in a simulated LED readout using numbers from 0 to 9:
 
 ```vb
 

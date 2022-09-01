@@ -4,7 +4,6 @@ The [AND (boolean)](AND-(boolean)) conditonal operator is used to include anothe
 
 >  IF condition [AND (boolean)](AND-(boolean)) condition2
 
-
 ## Description
 
 * If condition [AND (boolean)](AND-(boolean)) condition2 are true then the evaluation returns true (-1).
@@ -14,7 +13,16 @@ The [AND (boolean)](AND-(boolean)) conditonal operator is used to include anothe
 * [AND (boolean)](AND-(boolean)) and [OR (boolean)](OR-(boolean)) cannot be used to combine command line operations.
 * Not to be confused with the [AND](AND) and [OR](OR) numerical operations.
 
-MISSING: Relational Table
+**Relational Operators:**
+
+| Symbol | Condition | Example Usage |
+| -- | -- | -- |
+| = | Equal | IF a = b THEN |
+| <> | NOT equal | IF a <> b THEN |
+| < | Less than | IF a < b THEN |
+| > | Greater than | IF a > b THEN |
+| <= | Less than or equal | IF a <= b THEN |
+| >= | Greater than or equal | IF a >= b THEN |
 
 ## Example(s)
 

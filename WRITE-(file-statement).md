@@ -2,11 +2,11 @@ The [WRITE (file statement)](WRITE-(file-statement)) file statement writes a lis
 
 ## Syntax
 
-> [WRITE (file statement)](WRITE (file statement))filenumber&[, expressionList]
+> WRITE #filenumber&[, expressionList]
 
 ## Description
 
-* filenumber& is the number of the file or device [OPEN](OPEN)ed in the [OUTPUT](OUTPUT) or [APPEND](APPEND) modes. See: [FREEFILE](FREEFILE).
+* filenumber& is the number of the file or device OPENed in the OUTPUT or APPEND modes. See: FREEFILE.
 * expressionList is a comma-separated list of values to be written to the file or device.
 * WRITE can place any number and types of variable values needed in a file record separated by commas.
 * String values will have quotation marks although quotes are not required to read strings in CSV files with [INPUT (file statement)](INPUT-(file-statement)) #.

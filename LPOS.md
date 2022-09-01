@@ -7,10 +7,10 @@ The [LPOS](LPOS) function returns the current LPT printer head position.
 ## Description
 
 * index% is the index of the printer, which can have the following values:
-    - 0 - LPT1:
-    - 1 - LPT1:
-    - 2 - LPT2:
-    - 3 - LPT3:
+  * 0 - LPT1:
+  * 1 - LPT1:
+  * 2 - LPT2:
+  * 3 - LPT3:
 * The LPOS function does not necessarily give the physical position of the print head because it does not expand tab characters. In addition, some printers may buffer characters.
 
 ## Example(s)

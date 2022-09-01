@@ -10,10 +10,9 @@ The [COS](COS) function returns the horizontal component or the cosine of an ang
 
 ## Description
 
-* To convert from degrees to radians, multiply degrees * � / 180.
-* [COS](COS)INE is the horizontal component of a unit vector in the direction theta (�).
+* To convert from degrees to radians, multiply degrees * &pi; / 180.
+* [COS](COS)INE is the horizontal component of a unit vector in the direction theta (&theta;).
 * COS(x) can be calculated in either [SINGLE](SINGLE) or [DOUBLE](DOUBLE) precision depending on its argument.  
-
 > COS(4) = -.6536436 ...... COS(4#) = -.6536436208636119
 
 ## Example(s)
@@ -58,7 +57,7 @@ DEGREES% = RADIANS * 180 / PI = 45
 
 > *Explanation:* When 8.742278E-08(.00000008742278) is returned by [SIN](SIN) or COS the value  is essentially zero.
 
-*Example 2:* Creating 12 analog clock hour points using [CIRCLE](CIRCLE)s and [PAINT](PAINT)
+Creating 12 analog clock hour points using [CIRCLE](CIRCLE)s and [PAINT](PAINT)
 
 ```vb
 
@@ -73,11 +72,12 @@ DEGREES% = RADIANS * 180 / PI = 45
  NEXT 
 
 ```
-<sub>Code by Ted Weissgerber</sub>
+
+Code by Ted Weissgerber
 
 *Explanation:* The 12 circles are placed at radian angles that are 1/12 of 6.28318 or .523598 radians apart.
 
-*Example 3:* Creating a rotating spiral with COS and [SIN](SIN).
+Creating a rotating spiral with COS and [SIN](SIN).
 
 ```vb
 
@@ -104,7 +104,8 @@ DO
 LOOP UNTIL INP(&H60) = 1 'escape exit 
 
 ```
-<sub>Code by Ben</sub>
+
+Code by Ben
 
 ## See Also
 
@@ -113,4 +114,4 @@ LOOP UNTIL INP(&H60) = 1 'escape exit
 * [ATN](ATN) (arctangent)
 * [TAN](TAN) (tangent)
 *[Mathematical Operations](Mathematical-Operations)
-*[Mathematical Operations#Derived_Mathematical_Functions](Mathematical-Operations#Derived_Mathematical_Functions)
+* [Mathematical_Operations#Derived_Mathematical_Functions](Mathematical-Operations#Derived-Mathematical-Functions)

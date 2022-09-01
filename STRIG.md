@@ -1,18 +1,15 @@
 The **STRIG** function returns button press True or False status of game port (&H201) or USB joystick control device(s).
 
-
 ## Syntax
 
-> : IF STRIG(button_function%) THEN ...
+> IF STRIG(button_function%) THEN ...
 
 
 ## QB64 Syntax
 
-> : IF STRIG(*button_function%*[, *device_number%*]) THEN ...
+> IF STRIG(*button_function%*[, *device_number%*]) THEN ...
 
-
-## Description
-
+*Description:*
 * Function returns -1 when a button event(even functions) has occurred or a button is pressed(odd functions). 
 * STRIG will not read keyboard or mouse buttons detected by [_DEVICES](_DEVICES).
 * The *device number* must be used with more than 2 devices. Use device 1 function numbers for just one joystick.
@@ -70,16 +67,12 @@ DO: _LIMIT 10
 LOOP UNTIL INKEY$ > "" 
 
 ```
-> *Explanation:* Notice the extra **QB64 only** parameters used to cater for the 2nd stick and the buttons of the 3rd joystick.
 
+> *Explanation:* Notice the extra **QB64 only** parameters used to cater for the 2nd stick and the buttons of the 3rd joystick.
 
 ## See Also
  
 * [STRIG(n)](STRIG(n)) (statement)
-* [ON STRIG(n)](ON STRIG(n)), [STICK](STICK)
+* [ON STRIG(n)](ON-STRIG(n)), [STICK](STICK)
 * [_DEVICES](_DEVICES), [_DEVICE$](_DEVICE$), [_LASTBUTTON](_LASTBUTTON)
 * [http://en.wikipedia.org/wiki/Analog_stick Single and Dual Stick Controllers]
-
-
-
-

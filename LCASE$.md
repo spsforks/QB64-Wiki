@@ -1,4 +1,4 @@
-The [LCASE$](LCASE$) function outputs an all-lowercase version of a [STRING](STRING).
+The [LCASE$](LCASE$) function returns an all-lowercase version of a [STRING](STRING).
 
 ## Syntax
 

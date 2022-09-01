@@ -18,8 +18,8 @@ The [LINE](LINE) statement is used in graphic [SCREEN (statement)](SCREEN-(state
 * Creates a colored line between the given coordinates. Can be drawn partially off screen.
 * **B** creates a box outline with each side parallel to the program screen sides. **BF** creates a filled box.
 * style% can be used to create a dotted pattern to draw the line.
-    - **B** can be used with a *style%* to draw the rectangle outline using the desired pattern.
-    - **BF** ignores the style% parameter. See examples 2, 3 and 4 below.
+  * **B** can be used with a *style%* to draw the rectangle outline using the desired pattern.
+  * **BF** ignores the style% parameter. See examples 2, 3 and 4 below.
 * The graphic cursor is set to the center of the program window on program start. Using the [STEP](STEP) keyword makes the coordinates relative to the current graphic cursor.
 * [LINE](LINE) **can be used in any graphic screen mode, but cannot be used in the default screen mode 0 as it is text only.** 
 
@@ -38,9 +38,9 @@ END
 
 ```
 
-> *Explanation:* The full equivalent LINE statement would be: **LINE(200, 200)-(400, 200), 12**
+> *Explanation:* The full equivalent LINE statement would be: **green**
 
-*Example 2:* Creating styled lines and boxes with the LINE statement. Different style values create different dashed line spacing.
+Creating styled lines and boxes with the LINE statement. Different style values create different dashed line spacing.
 
 ```vb
 
@@ -55,7 +55,7 @@ END
 
 > *Explanation:* The first diagonal dashed green line bisects the red dashed square from Top Left to Bottom Right Corners.
 
-*Example 3:* The *style* value sets each 16 pixel line section as the value's bits are set on or off:
+The *style* value sets each 16 pixel line section as the value's bits are set on or off:
 
 ```vb
 
@@ -79,7 +79,7 @@ NEXT
 
 > *Explanation:* The *style* value's Most Significant Bit (MSB) is set to the left with LSB on right as 16 text blocks are set on or off.
 
-*Example 4:* Using [&B](&B) to design a style pattern:
+Using [&B](&B) to design a style pattern:
 
 ```vb
 

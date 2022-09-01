@@ -12,6 +12,18 @@ The logical [AND](AND) numerical operator compares two values in respect of thei
 * AND is often used to see if a bit is on by comparing a value to an exponent of 2.
 * Can turn off a bit by subtracting the bit on value from 255 and using that value to AND a byte value.
 
+The results of the bitwise logical operations, where *A* and *B* are operands, and *T* and *F* indicate that a bit is set or not set:
+
+| A | B |   | [NOT](NOT) B | A [AND](AND) B | A [OR](OR) B | A [XOR](XOR) B | A [EQV](EQV) B | A [IMP](IMP) B |
+| - | - | - | - | - | - | - | - | - |
+| T | T |   | F | T | T | F | T | T |
+| T | F |   | T | F | T | T | F | F |
+| F | T |   | F | F | T | T | F | T |
+| F | F |   | T | F | F | F | T | T |
+
+**[Relational Operations](Relational-Operations) return negative one (-1, all bits set) and zero (0, no bits set) for *true* and *false*, respectively.**
+This allows relational tests to be inverted and combined using the bitwise logical operations.
+
 ## Example(s)
 
 *Example 1:*
@@ -42,11 +54,11 @@ The logical [AND](AND) numerical operator compares two values in respect of thei
 
 > Both bits have to be set for the resulting bit to be set. You can use the [AND](AND) operator to get one byte of a two byte integer this way:
 
-`firstbyte = twobyteint AND 255`
+> firstbyte = twobyteint AND 255
 
 > Since 255 is 11111111 in binary, it will represent the first byte completely when compared with AND.
 
-> To find the second (HI) byte's decimal value of two byte [INTEGER](INTEGER)s use: `secondbyte = twobyteint \ 256`
+> To find the second (HI) byte's decimal value of two byte [INTEGER](INTEGER)s use: secondbyte = twobyteint \ 256
 
 *Example 3:* Finding the binary bits on in an [INTEGER](INTEGER) value. 
 
@@ -61,6 +73,7 @@ DO
   PRINT " "
 LOOP UNTIL INTvalue& = 0 'zero entry quits
 
+
 ```
 
 > Example output for 6055.
@@ -71,7 +84,7 @@ LOOP UNTIL INTvalue& = 0 'zero entry quits
 
 ```
 
-> :*Note:* The value of 32767 sets 15 bits. -1 sets all 16 bits. Negative values will all have the highest bit set. Use [LONG](LONG) variables for input values to prevent overflow errors.
+> *Note:* The value of 32767 sets 15 bits. -1 sets all 16 bits. Negative values will all have the highest bit set. Use [LONG](LONG) variables for input values to prevent overflow errors.
 
 ## See Also
 

@@ -1,18 +1,18 @@
-The [UBOUND](UBOUND) function returns the largest valid index (upper bound) of an array dimension.
+The UBOUND function returns the largest valid index (upper bound) of an array dimension.
 
 ## Syntax
 
-> *result%* = [UBOUND](UBOUND)(arrayName[, dimension%])
+> *result%* = UBOUND(arrayName[, dimension%])
 
 ## Description
 
 * arrayName specifies the name of the array.
 
-* dimension% specifies the dimension number, starting with **1** for the first dimension.
-** If omitted, dimension% is assumed to be **1**.
-** If dimension% is less than **1** or is greater than the number of dimensions, a [ERROR Codes](ERROR Codes) error occurs.
+* dimension% specifies the dimension number, starting with 1 for the first dimension.
+  * If omitted, dimension% is assumed to be 1.
+  * If dimension% is less than 1 or is greater than the number of dimensions, a [ERROR Codes](ERROR-Codes) error occurs.
 
-* [UBOUND](UBOUND), along with [LBOUND](LBOUND), is used to determine the range of valid indexes of an array.
+* UBOUND, along with LBOUND, is used to determine the range of valid indexes of an array.
 
 ## Example(s)
 

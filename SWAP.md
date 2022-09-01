@@ -1,14 +1,14 @@
-The [SWAP](SWAP) statement is used to exchange two variable or array element values.
+The SWAP statement is used to exchange two variable or array element values.
 
 ## Syntax
 
-> [SWAP](SWAP) variable1, variable2
+> SWAP variable1, variable2
 
 ## Description
 
 * variable1 and variable2 are any type variables whose values will be exchanged.
 * If either variable1 or variable2 is an array, then an element in the array must be designated.
-* [SWAP](SWAP) can be used with string or number variable values. Both must be of the same type.
+* SWAP can be used with string or number variable values. Both must be of the same type.
 * SWAP is often used to sort array elements into greater or lesser numerical or cumulative [ASCII](ASCII) [STRING](STRING) values. 
 * SWAP can be used in page flipping to change between source and destination pages.
 
@@ -35,7 +35,7 @@ one
 
 ```
 
-*Example 2:* Creating Cryptograms by scrambling EVERY capital letter in the alphabet.
+Creating Cryptograms by scrambling EVERY capital letter in the alphabet.
 
 ```vb
 
@@ -72,11 +72,11 @@ NEXT
 END 
 
 ```
-<sub>Code by Ted Weissgerber</sub>
 
-> * Explanation:* The Letter$ [STRING](STRING) [Arrays](Arrays) is first created with the letters matching the [ASCII](ASCII) code index value. Every index is **swap**ped when the letter matches it's index code until every letter is different. The Code array holds the text code solution.
 
-*Example 3:* A very quick array sorting SUB procedure using recursion sorts 10 thousand numbers in milliseconds.
+  * Explanation:* The Letter$ [STRING](STRING) [Arrays](Arrays) is first created with the letters matching the [ASCII](ASCII) code index value. Every index is **swap**ped when the letter matches it's index code until every letter is different. The Code array holds the text code solution.
+
+A very quick array sorting SUB procedure using recursion sorts 10 thousand numbers in milliseconds.
 
 ```vb
 
@@ -139,7 +139,3 @@ END SUB
 * [RND](RND), [RANDOMIZE](RANDOMIZE)
 * [CHR$](CHR$), [ASC](ASC) 
 * [ASCII](ASCII), [Arrays](Arrays)
-
-
-
-

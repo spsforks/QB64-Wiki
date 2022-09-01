@@ -140,7 +140,7 @@ Press F1 or to quit press ENTER: HelpHelpHelpHelp
 
 ```
 
-*Example 2:* Trapping the Control + key combination. Use the Control Keyboard flag 4 and + key scancode 13.
+Trapping the Control + key combination. Use the Control Keyboard flag 4 and + key scancode 13.
 
 ```vb
 
@@ -160,9 +160,10 @@ PRINT "Control and + keys pressed!";
 RETURN 
 
 ```
-<sub>Code by Ted Weissgerber</sub>
 
-*Example 3:* Differentiating the extended cursor keypad arrows from the predefined Number Pad arrow keys.
+Code by Ted Weissgerber
+
+Differentiating the extended cursor keypad arrows from the predefined Number Pad arrow keys.
 
 ```vb
 

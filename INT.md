@@ -6,7 +6,7 @@ The [INT](INT) function rounds a numeric value down to the next whole number.
 
 ## Parameter(s)
 
-* expression is any [Data types](Data types) of literal or variable numerical value or mathematical calculation.
+* expression is any [Data types](Data-types) of literal or variable numerical value or mathematical calculation.
 
 ## Description
 

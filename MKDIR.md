@@ -10,7 +10,7 @@ The [MKDIR](MKDIR) statement creates a new folder (**dir**ectory) at a specified
 * If no path is given the directory will become a sub-directory of the present directory where the program is currently running.
 * **QB64** can use both long or short path and file names with spaces when required.
 * The new folder will be created without a user prompt or verification. 
-* If a path is specified, the path must exist or a [ERROR Codes](ERROR Codes) will occur. See [_DIREXISTS](_DIREXISTS).
+* If a path is specified, the path must exist or a [ERROR Codes](ERROR-Codes) will occur. See [_DIREXISTS](_DIREXISTS).
 * [SHELL](SHELL) can use the DOS command "MD " or "MKDIR " + path$ + newfolder$ to do the same thing.
 
 ## See Also
@@ -18,4 +18,4 @@ The [MKDIR](MKDIR) statement creates a new folder (**dir**ectory) at a specified
 * [SHELL](SHELL), [CHDIR](CHDIR), [FILES](FILES)
 * [NAME](NAME), [KILL](KILL), [RMDIR](RMDIR)
 * [_DIREXISTS](_DIREXISTS)
-* [Windows_Libraries#File_Dialog_Boxes](Windows-Libraries#File_Dialog_Boxes)
+* [Windows_Libraries#File_Dialog_Boxes](Windows-Libraries#File-Dialog-Boxes)

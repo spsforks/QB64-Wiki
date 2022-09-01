@@ -24,10 +24,9 @@ Y = CVI(N$)
 ```
 
 > *Explanation:* Reads a field from file #1, and converts the first two bytes (N$) into an integer number assigned to the variable Y.
-
 > Since the representation of an integer number can use up to 5 ASCII characters (five bytes), writing to a file using [MKI$](MKI$) conversion, and then reading back with the [CVI](CVI) conversion can save up to 3 bytes of storage space.
 
-*Example 2:* How CVI converts the ASCII code values created by the MKI$ function.
+How CVI converts the ASCII code values created by the MKI$ function.
 
 ```vb
 
@@ -59,7 +58,8 @@ LOOP
 SYSTEM 
 
 ```
-<sub>Code by Ted Weissgerber</sub>
+
+Code by Ted Weissgerber
 
 > *Explanation:* All [ASCII](ASCII) characters can be displayed using [_PRINTSTRING](_PRINTSTRING) . The routine gets the [ASCII](ASCII) code, which is the actual value needed by [CVI](CVI). The first byte code is always between 0 and 255. The second byte can return 0 thru 127 and CVI multiplies that value by 256. This proves that you cannot just feed a string number value to [CVI](CVI) and get the result desired. ("90" gets decoded to 12345).
 

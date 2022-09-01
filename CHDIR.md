@@ -25,7 +25,7 @@ CHDIR "..\"      'change back to previous folder one up
 
 > *Details:* **QB64** can use long or short (8.3 notation) file and path names.
 
-*Example 2:* Using the Windows API to find the current program's name and root path. The PATH$ is a shared function value.
+Using the Windows API to find the current program's name and root path. The PATH$ is a shared function value.
 
 ```vb
 
@@ -33,7 +33,7 @@ _TITLE "My program"
 PRINT TITLE$
 PRINT PATH$
 
-FUNCTION TITLE$ *###  SHOW CURRENT PROGRAM
+FUNCTION TITLE$ *=== SHOW CURRENT PROGRAM
 SHARED PATH$           'optional path information shared with main module only
 DECLARE LIBRARY        'Directory Information using KERNEL32 provided by Dav
   FUNCTION GetModuleFileNameA (BYVAL Module AS LONG, FileName AS STRING, BYVAL nSize AS LONG)

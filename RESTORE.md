@@ -1,22 +1,23 @@
-The **RESTORE** statement is used to reset the DATA pointer to the beginning of the data.
+The [RESTORE](RESTORE) statement is used to reset the DATA pointer to the beginning of the data.
 
 ## Syntax
 
-> RESTORE [datafield]
+> [RESTORE](RESTORE) [lineNumber|lineLabel]
 
-* The datafield line label or number enables a labeled data field to be [READ](READ) more than once as required. 
+## Description
+
+* The line label or number enables a labeled data field to be [READ](READ) more than once as required.
 * Datafield label names are not required when working with ONE or a progression of data fields in the main body of code.
 * Label multiple data fields to restore them to use them again when necessary.
 * If RESTORE is used with unlabeled data fields or no datafield is designated then the first data field is read.
 * Use RESTORE to avoid an [ERROR Codes](ERROR-Codes) when reading a data field!
 * See the [DATA](DATA) statement for [STRING](STRING) data value specifications.
 * **Do not place [DATA](DATA) fields after [SUB](SUB) or [FUNCTION](FUNCTION) procedures! QB64 will FAIL to [RESTORE](RESTORE) properly!**
-
 >  QBasic allowed programmers to add DATA fields anywhere because the IDE separated the main code from other procedures.
 
 ## Example(s)
 
-Restoring a labeled DATA field to avoid going past the end of DATA.
+*Example 1:* Restoring a labeled DATA field to avoid going past the end of DATA.
 
 ```vb
 
@@ -77,7 +78,7 @@ END
 DATA "entry1", "entry2", "entry3", "stop"
 
 ```
-<sub>Code By: Cyperium</sub>
+
 
 ```text
 

@@ -15,12 +15,13 @@ The [LOCATE](LOCATE) statement locates the screen text row and column positions 
 
 * [WIDTH](WIDTH) statement can be used to determine the text width and height in [SCREEN](SCREEN) 0 and height of 30 or 60 in [SCREEN](SCREEN) 11 or 12.
 * In [_NEWIMAGE](_NEWIMAGE) graphic screen the number of text *rows* are calculated as [_HEIGHT](_HEIGHT) \ 16 except when a [_FONT](_FONT) is used. Use [_FONTHEIGHT](_FONTHEIGHT) to calculate font rows.
-* [_NEWIMAGE](_NEWIMAGE) graphic screen text *columns* are calculated as [_WIDTH (function)](_WIDTH (function)) \ 8 except when a [_FONT](_FONT) is used. Use [_PRINTWIDTH](_PRINTWIDTH) to measure a line of font text.
+* [_NEWIMAGE](_NEWIMAGE) graphic screen text *columns* are calculated as [_WIDTH (function)](_WIDTH-(function)) \ 8 except when a [_FONT](_FONT) is used. Use [_PRINTWIDTH](_PRINTWIDTH) to measure a line of font text.
 * The text *row* position is not required if the [PRINT](PRINT) is going to be on the next row. The [comma](comma) and a *column* value are required to set the column.
 * If only the *row* parameter is given, then the column position remains the same. **Neither *row* or *column* parameter can be 0.**
 * When [PRINT](PRINT)ing on the bottom 2 *rows*, use a [semicolon](semicolon) after the PRINT expression to avoid a screen roll.
 * If the cursorStart% line is given, the cursorStop% line must also be given. A wider range between them produces a taller cursor.
 * If you use LOCATE beyond the current number of rows in text mode, QB64 will try to adapt the screen instead of tossing an error.
+* When writing to the console, only the *row* and *column* arguments are used, all others are ignored. Furthermore, on non-Windows systems LOCATE statements that do not give both a *row* and *column* will be ignored entirely.
 
 ## Example(s)
 

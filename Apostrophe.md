@@ -1,11 +1,16 @@
-The **apostrophe** is used to tell the compiler to ignore a statement or programmer comment.
+The **apostrophe** allows explanatory comments, or remarks, to be inserted in a program.  These may be included anywhere in the source code and extend to the end of the line.  Comments are ignored when the program is run.
+
+## Syntax
+
+> [apostrophe](apostrophe) this is a comment
+> [REM](REM) this is also a comment
 
 ## Description
 
-* Allows programmer comments or temporary code removal.
-* [REM](REM) can also be used to "comment out" a line.
-* QBasic [Metacommand](Metacommand)s must be commented either with an apostrophe or [REM](REM).
-* [$INCLUDE]($INCLUDE) requires an apostrophe before and after the included file name.
+* [REM](REM) can also be used to insert comments but may only be used as the last, or only, statement on a line.
+* QBasic [metacommand](metacommand)s like [$INCLUDE]($INCLUDE) must be included in a comment using either [REM](REM) or [apostrophe](apostrophe).
+* [Apostrophe](Apostrophe) comments, unavailable in earlier dialects of the BASIC language, are now generally favored over [REM](REM) statements for their greater flexibility.
+* Comments are also useful for disabling code for program testing and debugging purposes.
 
 ## Example(s)
 
@@ -23,5 +28,5 @@ Print this....
 
 ## See Also
 
-* [Comma](Comma), [Semicolon](Semicolon)
 * [REM](REM)
+* [$DYNAMIC]($DYNAMIC), [$STATIC]($STATIC), [$INCLUDE]($INCLUDE)

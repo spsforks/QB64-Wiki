@@ -7,8 +7,8 @@ The [CSRLIN](CSRLIN) function returns the current text row position of the [PRIN
 ## Description
 
 *  The value returned is within the range of 1 to the current number of rows in the [SCREEN](SCREEN) mode used.
-** In [SCREEN](SCREEN) 0 (text mode), the [_HEIGHT](_HEIGHT) function returns the number of text rows.
-** In graphic modes, the number of available text rows can be calculated by dividing [_HEIGHT](_HEIGHT) (measured in pixels in graphic modes) by [_FONTHEIGHT](_FONTHEIGHT): ***totalRows%* = _HEIGHT / _FONTHEIGHT**
+  * In [SCREEN](SCREEN) 0 (text mode), the [_HEIGHT](_HEIGHT) function returns the number of text rows.
+  * In graphic modes, the number of available text rows can be calculated by dividing [_HEIGHT](_HEIGHT) (measured in pixels in graphic modes) by [_FONTHEIGHT](_FONTHEIGHT): ***totalRows%* = _HEIGHT / _FONTHEIGHT**
 *  In screen modes that support page flipping, the [CSRLIN](CSRLIN) function returns the vertical coordinate of the cursor on the active page.
 * x = [POS](POS)(0) returns the column location of the cursor.
 
@@ -29,16 +29,9 @@ PRINT "GOODBYE"
 
 ```text
 
-
-
-
          HELLO GOODBYE
 
-
-
-
          WORLD
-
 
 
 ```

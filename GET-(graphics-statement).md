@@ -1,12 +1,12 @@
 The [GET (graphics statement)](GET-(graphics-statement)) statement is used in graphics to store a box area image of the screen into an [INTEGER](INTEGER) array.
 
+## Legacy Support
+
+* **QB64 can manipulate parts of an image using [_PUTIMAGE](_PUTIMAGE). For that reason, GET isn't recommended practice anymore and is supported to maintain compatibility with legacy code.**
+
 ## Syntax
  
 >  [GET](GET) [STEP] (column1, row1)-[STEP](column2, row2), array([index])[, offscreenColor]
-
-## Legacy Support
-
-* **QB64** can manipulate parts of an image using [_PUTIMAGE](_PUTIMAGE). For that reason, **GET** isn't recommended practice anymore and is supported to maintain compatibility with legacy code.
 
 ## Parameter(s)
 
@@ -30,7 +30,7 @@ The [GET (graphics statement)](GET-(graphics-statement)) statement is used in gr
 * **In QB64, [_PUTIMAGE](_PUTIMAGE) is recommended over PUT as it can also do the [GET (graphics statement)](GET-(graphics-statement)) operation directly from the image source without requiring an array.**
 * **[PUT](PUT) and [GET](GET) file statements can also write and read image array data using [BINARY](BINARY) files instead of using [BSAVE](BSAVE) or [BLOAD](BLOAD).**
 
-## QBasic/QuickBASIC
+## QBasic
 
 * SCREEN 12 could only GET 1/3 of a full SCREEN 12 image. Rows would increment 160 each GET. **QB64** can save entire screen at once.
 
@@ -79,7 +79,7 @@ LOOP UNTIL SC(1) = 1 ' main loop until [Esc] key (scan code 1) is pressed
 
 ```
 
-*Example 2:* How to GET graphics from an image other than the present screen using [_SOURCE](_SOURCE) and [_DEST](_DEST)ination.
+How to GET graphics from an image other than the present screen using [_SOURCE](_SOURCE) and [_DEST](_DEST)ination.
 
 ```vb
 
@@ -94,7 +94,6 @@ CIRCLE (700, 300), 10, 10        'draw green circle on image page
 _SOURCE a&                       'set source as image page a&
 GET (690, 290)-(710, 310), img() 'GET a square screen area similar to a LINE Box.
 
-
 _DEST 0                          'set destination as the program screen
 PUT (100, 100), img()            'PUT the Top Left Corner of box area to pixel 100, 100
 
@@ -106,7 +105,7 @@ PUT (100, 100), img()            'PUT the Top Left Corner of box area to pixel 1
 
 * [_PUTIMAGE](_PUTIMAGE), [_LOADIMAGE](_LOADIMAGE)
 * [_MAPTRIANGLE](_MAPTRIANGLE)
-* [POINT](POINT), [PUT (graphics statement)](PUT-(graphics-statement)), [STEP](STEP) 
+* [PUT (graphics statement)](PUT-(graphics-statement)), [STEP](STEP)
 * [BSAVE](BSAVE), [BLOAD](BLOAD)
 * [Scancodes](Scancodes), [Creating Sprite Masks](Creating-Sprite-Masks) (for non-box shaped sprites)
-* [Bitmaps](Bitmaps), [GET and PUT Demo](GET-and PUT-Demo)
+* [Bitmaps](Bitmaps), [GET and PUT Demo](GET-and-PUT-Demo)
