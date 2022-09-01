@@ -15,7 +15,7 @@ The [PALETTE](PALETTE) statement can swap color settings, set colors to default 
 * [PALETTE USING](PALETTE-USING) can be used when color intensity values are stored in an [Arrays](Arrays).
 * QB64 implements the [_PALETTECOLOR](_PALETTECOLOR) statement to provide extended palette functionality.
 
-## QBasic/QuickBASIC
+## QBasic
 
 * Screens 0, 7 and 9 ([DAC](DAC)) colors could not be changed using the first syntax, but the program could use [OUT](OUT) to change intensity settings of attributes 1 thru 5.
 
@@ -27,7 +27,7 @@ Displaying all 64 DAC color hues as backgrounds in SCREEN 9 using a PALETTE swap
 
   SCREEN 9 ' background is default black
   LOCATE 20, 33: PRINT "Press any Key!"  
-  FOR i = 0 TO 63
+  FOR i = 1 TO 64
    a$ = INPUT$(1) ' wait for a keypress
    PALETTE 0, i
   NEXT 

@@ -28,53 +28,31 @@ Negative (signed) numerical values can affect calculations when using any of the
 
 ## Mathematical Operation Symbols
 
-Most of the BASIC math operators are ones that require no introduction. The addition, subtraction, multplication and division operators are ones commonly used as shown below:
+Most of the BASIC math operators are ones that require no introduction. The addition, subtraction, multiplication and division operators are ones commonly used as shown below:
 
-{| align="center" border=1 
-! Symbol 
-! Procedure Type
-! Example Usage
-! Operation Order 
-|- 
-| align="center" |[+](+) ||  Addition || align="center" | c = a + b  || align="center" | Last
-|-
-| align="center" |[-](-) ||  Subtraction  || align="center" | c = a - b || align="center" | Last
-|-
-| align="center" |[-](-) ||  Negation  || align="center" | c = - a || align="center" | Last
-|- 
-| align="center" |[*](*) ||  Multiplication || align="center" | c = a * b || align="center" | Second
-|-
-| align="center" |[/](/) ||  Division  || align="center" | c = a / b || align="center" | Second
-|}
+| Symbol | Procedure Type | Example Usage | Operation Order |
+| -- | -- | -- | -- |
+| + | Addition | c = a + b | Last |
+| - | Subtraction | c = a - b | Last |
+| - | Negation | c = -a | Last |
+| * | Multiplication | c = a * b | Second |
+| / | Division | c = a / b | Second |
 
 BASIC can also use two other operators for **[INTEGER](INTEGER) division**. Integer division returns only whole number values. [MOD](MOD) **remainder division** returns a value only if an integer division cannot divide a number exactly. Returns 0 if a value is exactly divisible.
 
-{| align="center" border=1
-!Symbol
-!Procedure Type
-!Example Usage
-!Operation Order 
-|-
-| align="center" |[\](\) ||  Integer division || align="center" | c = a \ b || align="center" | Second 
-|-
-| align="center" |[MOD](MOD) ||  Remainder division  || align="center" | c = a MOD b || align="center" | Second
-|}
+| Symbol | Procedure Type | Example Usage | Operation Order |
+| -- | -- | -- | -- |
+| \ | Integer division | c = a \ b | Second |
+| MOD | Remainder division | c = a MOD b | Second |
 
 ***It is an [ERROR](ERROR) to divide by zero or to take the remainder modulo zero.***
 
 There is also an operator for **exponential** calculations. The exponential operator is used to raise a number's value to a designated exponent of itself. In QB the exponential return values are [DOUBLE](DOUBLE) values. The [SQR](SQR) function can return a number's Square Root. For other **exponential roots** the operator can be used with fractions such as (1 / 3) designating the cube root of a number. 
 
-{| align="center" border=1
-!Symbol
-!Procedure
-!Example Usage 
-!Operation Order
-|-
-| align="center" |[^](^) || Exponent || align="center" | c = a [^](^) (1 / 2) || align="center" | First
-|-
-| align="center" | [SQR](SQR) || Square Root || align="center" | c = [SQR](SQR)(a [^](^) 2 + b [^](^) 2) || align="center" | First 
-|}
-
+| Symbol | Procedure | Example Usage | Operation Order |
+| -- | -- | -- | -- |
+| ^ | Exponent | c = a ^ (1 / 2) | First |
+| SQR | Square Root | c = SQR(a ^ 2 + b ^ 2) | First |
 
 ### Notes
 
@@ -96,34 +74,24 @@ Sometimes a calculation may need BASIC to do them in another order or the calcul
 
 ## Basic's Mathematical Functions
 
-{| align=center border=1
- ! Function
- ! Description
- |-
- | [ABS](ABS)(n) || returns the absolute (positive) value of n: ABS(-5) = 5
- |- 
- | [ATN](ATN)(angle*) || returns the arctangent of an angle in radians: π = 4 * ATN(1)
- |-
- | [COS](COS)(angle*) || returns the cosine of an angle in radians. (horizontal component)
- |-
- | [EXP](EXP)(n) || returns e<sup>x</sup>, **(n <= 88.02969)**: e = EXP(1) ' (e = 2.718281828459045)
- |-
- | [LOG](LOG)(n) || returns the base e natural logarithm of n. **(n > 0)**
- |-
- | [SGN](SGN)(n) || returns -1 if n < 0, 0 if n = 0, 1 if n > 0: SGN(-5) = -1
- |-
- | [SIN](SIN)(angle*) || returns the sine of an angle in radians. (vertical component)
- |-
- | [SQR](SQR)(n) || returns the square root of a number. **(n >= 0)**
- |-
- | [TAN](TAN)(angle*) ||  returns the tangent of an angle in radians
- |}
+| Function | Description |
+| -- | -- |
+| ABS(n) | returns the absolute (positive) value of n: ABS(-5) = 5 |
+| ATN(angle*) | returns the arctangent of an angle in radians: pi = 4 * ATN(1) |
+| COS(angle*) | returns the cosine of an angle in radians. (horizontal component) |
+| EXP(n) | returns e ^ x, (n <= 88.02969): e = EXP(1) ' (e = 2.718281828459045) |
+| LOG(n) | returns the base e natural logarithm of n. (n > 0) |
+| SGN(n) | returns -1 if n < 0, 0 if n = 0, 1 if n > 0: SGN(-5) = -1 |
+| SIN(angle*) | returns the sine of an angle in radians. (vertical component) |
+| SQR(n) | returns the square root of a number. (n >= 0) |
+| TAN(angle*) | returns the tangent of an angle in radians |
 
 *** angles measured in radians**
 
-```text
+Degree to Radian Conversion.
 
-                                **Degree to Radian Conversion:**
+```vb
+
 FUNCTION Radian (degrees)
 Radian = degrees * (4 * ATN(1)) / 180
 END FUNCTION
@@ -132,7 +100,12 @@ FUNCTION Degree (radians)
 Degree = radians * 180 / (4 * ATN(1))
 END FUNCTION
 
-                                    **Logarithm to base n**
+```
+
+Logarithm to base n.
+
+```vb
+
 FUNCTION LOGN (X, n)    
 IF n > 0 AND n <> 1 AND X > 0 THEN LOGN = LOG(X) / LOG(n) ELSE BEEP
 END FUNCTION
@@ -198,7 +171,8 @@ END FUNCTION
 FUNCTION TANH (x)  ' Hyperbolic Tangent or SINH(x) / COSH(x)
 IF 2 * x <= 88.02969 AND EXP(2 * x) + 1 <> 0 THEN 
      TANH = (EXP(2 * x) - 1) / (EXP(2 * x) + 1) 
-ELSE BEEP 
+  ELSE
+    BEEP
 END IF 
 END FUNCTION
 
@@ -213,21 +187,24 @@ END FUNCTION
 FUNCTION COTH (x)  ' Hyperbolic CoTangent or COSH(x) / SINH(x)
 IF 2 * x <= 88.02969 AND EXP(2 * x) - 1 <> 0 THEN 
      COTH = (EXP(2 * x) + 1) / (EXP(2 * x) - 1) 
-ELSE BEEP  
+  ELSE
+    BEEP
 END IF
 END FUNCTION
 
 FUNCTION ARCSINH (x)  ' Inverse Hyperbolic Sine 
 IF (x * x) + 1 >= 0 AND x + SQR((x * x) + 1) > 0 THEN 
 ARCSINH = LOG(x + SQR(x * x + 1)) 
-ELSE BEEP
+  ELSE
+    BEEP
 END IF
 END FUNCTION
 
 FUNCTION ARCCOSH (x)  ' Inverse Hyperbolic CoSine 
 IF x >= 1 AND x * x - 1 >= 0 AND x + SQR(x * x - 1) > 0 THEN 
 ARCCOSH = LOG(x + SQR(x * x - 1)) 
-ELSE BEEP
+  ELSE
+    BEEP
 END IF
 END FUNCTION
 
@@ -242,7 +219,8 @@ END FUNCTION
 FUNCTION ARCCSCH (x)  ' Inverse Hyperbolic CoSecant 
 IF x <> 0 AND x * x + 1 >= 0 AND (SGN(x) * SQR(x * x + 1) + 1) / x > 0 THEN 
      ARCCSCH = LOG((SGN(x) * SQR(x * x + 1) + 1) / x) 
-ELSE BEEP
+  ELSE
+    BEEP
 END IF
 END FUNCTION
 
@@ -253,7 +231,6 @@ END FUNCTION
 ```
 
 ```text
-
 
                            **Hyperbolic Function Relationships:**
 
@@ -275,7 +252,6 @@ END FUNCTION
 
                            (COSH(x) ^ 2) - (SINH(x) ^ 2) = 1
 
-
 ```
 
 [Microsoft's Derived BASIC Functions (KB 28249)](http://support.microsoft.com/kb/28249)
@@ -286,37 +262,49 @@ The following logical operators compare numerical values using bitwise operation
 
 **Truth table of the 6 BASIC Logical Operators**
 
+The results of the bitwise logical operations, where *A* and *B* are operands, and *T* and *F* indicate that a bit is set or not set:
+
+| A | B |   | [NOT](NOT) B | A [AND](AND) B | A [OR](OR) B | A [XOR](XOR) B | A [EQV](EQV) B | A [IMP](IMP) B |
+| - | - | - | - | - | - | - | - | - |
+| T | T |   | F | T | T | F | T | T |
+| T | F |   | T | F | T | T | F | F |
+| F | T |   | F | F | T | T | F | T |
+| F | F |   | T | F | F | F | T | T |
+
+**[Relational Operations](Relational-Operations) return negative one (-1, all bits set) and zero (0, no bits set) for *true* and *false*, respectively.**
+
+This allows relational tests to be inverted and combined using the bitwise logical operations.
+
 BASIC can accept any + or - value that is not 0 to be True when used in an evaluation.
 
 ## Relational Operators
 
 Relational Operations are used to compare values in a Conditional [IF...THEN](IF...THEN), [SELECT CASE](SELECT-CASE), [UNTIL](UNTIL) or [WHILE](WHILE) statement.
 
-MISSING: Relational Table
+**Relational Operators:**
+
+| Symbol | Condition | Example Usage |
+| -- | -- | -- |
+| = | Equal | IF a = b THEN |
+| <> | NOT equal | IF a <> b THEN |
+| < | Less than | IF a < b THEN |
+| > | Greater than | IF a > b THEN |
+| <= | Less than or equal | IF a <= b THEN |
+| >= | Greater than or equal | IF a >= b THEN |
 
 ## Basic's Rounding Functions
 
 > Rounding is used when the program needs a certain number value or type. There are 4 [INTEGER](INTEGER) or [LONG](LONG) Integer functions and one function each for closest [SINGLE](SINGLE) and closest [DOUBLE](DOUBLE) numerical types. Closest functions use "bankers" rounding which rounds up if the decimal point value is over one half. Variable types should match the return value.
 
-{| align=center border=1
-! Name
-! Description
-|-
-
-|[INT](INT)(n) || rounds down to lower Integer value whether positive or negative
-|-
-|[FIX](FIX)(n) || rounds positive values lower and negative to a less negative Integer value
-|-
-|[CINT](CINT)(n) ||rounds to closest Integer. Rounds up for decimal point values over one half.
-|-
-| [CLNG](CLNG)(n) || rounds Integer or Long values to closest value like CINT.(values over 32767)
-|-
-| [CSNG](CSNG)(n) || rounds Single values to closest last decimal point value.
-|-
-| [CDBL](CDBL)(n) || rounds Double values to closest last decimal point value.
-|-
-| [_ROUND](_ROUND) || rounds to closest numerical integer value in **QB64** only.
-|}
+| Name | Description |
+| -- | -- |
+| INT(n) | rounds down to lower Integer value whether positive or negative |
+| FIX(n) | rounds positive values lower and negative to a less negative Integer value |
+| CINT(n) | rounds to closest Integer. Rounds up for decimal point values over one half. |
+| CLNG(n) | rounds Integer or Long values to closest value like CINT.(values over 32767) |
+| CSNG(n) | rounds Single values to closest last decimal point value. |
+| CDBL(n) | rounds Double values to closest last decimal point value. |
+| _ROUND(n) | rounds to closest numerical integer value. |
 
 ### Note
 
@@ -325,7 +313,6 @@ MISSING: Relational Table
 ## Base Number Systems
 
 ```text
-
 
                    **Comparing the [INTEGER](INTEGER) Base Number Systems**
 
@@ -471,11 +458,10 @@ SLEEP
 SYSTEM 
 
 ```
-<sub>Code by Ted Weissgerber</sub>
 
 ## OFFSET
 
-[_OFFSET (function)](_OFFSET-(function)) returns the memory offset position as a flexible sized value for a designated variable. See [Using _OFFSET](Using--OFFSET).
+* [_OFFSET (function)](_OFFSET-(function)) returns the memory offset position as a flexible sized value for a designated variable. See [Using _OFFSET](Using--OFFSET).
 
 **Warning: [_OFFSET](_OFFSET) values cannot be reassigned to other variable [TYPE](TYPE).**
 

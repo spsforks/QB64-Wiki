@@ -29,11 +29,11 @@ The **PUT** graphics statement is used to place [GET (graphics statement)](GET-(
 * More than one image can be stored in the [INTEGER](INTEGER) array by indexing the [GET (graphics statement)](GET-(graphics-statement)) array offset. Be sure the index is not already used!
 * A [_DEST](_DEST) [handle](handle) can be set to PUT images elsewhere other than on the current screen. Use [_SOURCE](_SOURCE) to [GET (graphics statement)](GET-(graphics-statement)) images there.
 * If no color action is listed after the image array, the action will be assumed to be the default [XOR](XOR). 
-  - [XOR](XOR) may blend with background colors, but can be used to erase an image when placed a second time.
-  - [PSET](PSET) completely overwrites any background with the identical image.
-  - [PRESET](PRESET) creates a inverted coloring of the original image completely overwriting the background.
-  - [AND](AND) merges background colors with the black areas of the image where a white image mask is used.
-  - [OR](OR) blends the background and foreground colors together.
+  * [XOR](XOR) may blend with background colors, but can be used to erase an image when placed a second time.
+  * [PSET](PSET) completely overwrites any background with the identical image.
+  * [PRESET](PRESET) creates a inverted coloring of the original image completely overwriting the background.
+  * [AND](AND) merges background colors with the black areas of the image where a white image mask is used.
+  * [OR](OR) blends the background and foreground colors together.
 * In QB64 [_PUTIMAGE](_PUTIMAGE) is recommended over PUT as it can also do the [GET (graphics statement)](GET-(graphics-statement)) directly from the image source without requiring an array.
 * [PUT](PUT) and [GET](GET) file statements can also write and read image array data using [BINARY](BINARY) files instead of using [BSAVE](BSAVE) or [BLOAD](BLOAD).
 
@@ -45,7 +45,7 @@ How [GET](GET) and PUT can be used with images loaded with [_LOADIMAGE](_LOADIMA
 
 SCREEN _NEWIMAGE(640, 480, 256)
 _SCREENMOVE _MIDDLE
-image& = _LOADIMAGE("QB64.png")
+image& = _LOADIMAGE("QB64.png")  'replace with your own image
 
 wide& = _WIDTH(image&): deep& = _HEIGHT(image&)
 DIM Array(wide& * deep&) AS INTEGER
@@ -79,7 +79,6 @@ PRINT a$                        'display string data. Width = CHR$(10 * 8) = "P"
 PUT(100, 100), a$, PSET 
 
 ```
-<sub>Code by Galleon</sub>
 
 > *Explanation:* The header holds the [INTEGER](INTEGER) width and depth of the image area as 2 bytes each. Screen 13 width is multiplied by 8.
 

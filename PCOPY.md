@@ -13,7 +13,7 @@ The [PCOPY](PCOPY) statement copies one source screen page to a destination page
 * The [_DISPLAY (function)](_DISPLAY-(function)) return can be used a page number reference in **QB64** (See Example 1).
 * The **QB64** [_DISPLAY](_DISPLAY) statement can also be used to stop screen flicker without page flipping or [CLS](CLS) and **is the recommended practice**.
 
-## QBasic/QuickBASIC
+## QBasic
 
 * sourcePage% and destinationPage% numbers are limited by the SCREEN mode used. In **QB64**, the same limits don't apply.
 

@@ -12,7 +12,6 @@
 * Literal string ends are designated by quotation marks such as: "text". Use [CHR$](CHR$)(34) to add quotes to string values.
 * Variable suffix type definition is $ such as: text$.
 * STRING values are compared according to the [ASCII](ASCII) code values from left to right until one string code value exceeds the other.
-* **NOTE: Many QBasic keyword variable names CAN be used with a [STRING](STRING) suffix($) ONLY! You CANNOT use them without the suffix, use a numerical suffix or use [DIM](DIM), [REDIM](REDIM), [_DEFINE](_DEFINE), [BYVAL](BYVAL) or [TYPE](TYPE) variable [AS](AS) statements!**
 
 > **Creating a fixed length STRING variable**
 
@@ -27,7 +26,7 @@
 
 * A number after the string variable name $ suffix denotes the fixed string length: **X$2** denotes a 2 byte string.
 
-> **String [Concatenation](Concatenation) (addition)**
+  * **String [Concatenation](Concatenation) (addition)**
 
 > *Must be used when defining a string variable's literal value!*
 

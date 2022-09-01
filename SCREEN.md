@@ -58,7 +58,7 @@ The [SCREEN](SCREEN) statement sets the video display mode and size of the progr
 
 ## Legacy Screen Modes
 
-* **[SCREEN](SCREEN) 0** (default mode) is a **text only** screen mode. 64 (VGA) colors with hi-intensity(blinking) colors 16 to 31. ([DAC](DAC) attrib 6, 8 to 15). 8 Background colors intensities only(0 - 7). No graphics are possible! Normally runs in a window. ALT-Enter switches from a window to fullscreen. To automatically run in **QBasic** fullscreen, use another Screen mode before using [SCREEN (statement)](SCREEN-(statement)) 0.  Can use [PCOPY](PCOPY) with video pages 0 to 7. Text is 25, 43 or 50 rows by 40 or 80 columns. Default is 25 by 80. See [WIDTH](WIDTH).
+* **[SCREEN](SCREEN) 0** (default mode) is a **text only** screen mode. 64 (VGA) colors with hi-intensity(blinking) colors 16 to 31. ([DAC](DAC) attrib 6, 8 to 15). 8 Background colors intensities only(0 - 7). No graphics are possible! Normally runs in a window. ALT-Enter switches from a window to fullscreen. To automatically run in **QBasic** fullscreen, use another Screen mode before using SCREEN 0.  Can use PCOPY with video pages 0 to 7. Text is 25, 43 or 50 rows by 40 or 80 columns. Default is 25 by 80. See WIDTH.
 
 >  **Note:** Use [OUT](OUT) or [_PALETTECOLOR](_PALETTECOLOR) to create higher intensity color backgrounds than [COLOR](COLOR) , 7.  
 
@@ -66,21 +66,21 @@ The [SCREEN](SCREEN) statement sets the video display mode and size of the progr
 
 * **[SCREEN](SCREEN) 1** has 4 background color attributes. 0 = black, 1 = blue, 2 = green, 3 = grey. White foreground only. Text is 25 by 40. White graphics is 320 by 200. 
 
-* **[SCREEN](SCREEN) 2** is **monochrome** with black background and white foreground. Text is 25 by 80. White graphics 640 by 200. NO [COLOR](COLOR) keyword allowed.
+* **[SCREEN](SCREEN) 2** is **monochrome** with black background and white foreground. Text is 25 by 80. White graphics 640 by 200.          NO [COLOR](COLOR) keyword allowed.
  
 * **[SCREEN](SCREEN) 3 to 6 are no longer supported** on most computers! Using them will cause a video [ERROR Codes](ERROR-Codes)! 
 
-* **[SCREEN](SCREEN) 7** has 16 color attributes ([DAC](DAC) attrib. 8 to 15) with background colors. Text 25 rows by 40 columns. Graphics 320 columns by 200 rows. Video  pages 0 to 7 for flipping or [PCOPY](PCOPY).
+* **[SCREEN](SCREEN) 7** has 16 color attributes ([DAC](DAC) attrib. 8 to 15) with background colors. Text 25 rows by 40 columns. Graphics 320 columns by 200 rows. Video  pages 0 to 7 for flipping or PCOPY.
 
 * **[SCREEN](SCREEN) 8** has 16 color attributes with background. Text is 25 by 80. Graphics is 640 by 200. Video pages 0 to 3.
 
-* **[SCREEN](SCREEN) 9** has 64 DAC color hues for ([DAC](DAC) attrib. 6, 8 to 15) with background colors. Text is 25 by 80. Graphics is 640 by 350. Video pages 0 and 1 for flipping or [PCOPY](PCOPY). 
+* **[SCREEN](SCREEN) 9** has 64 DAC color hues for ([DAC](DAC) attrib. 6, 8 to 15) with background colors. Text is 25 by 80. Graphics is 640 by 350. Video pages 0 and 1 for flipping or PCOPY.
 
 * **[SCREEN](SCREEN) 10** has 4 gray scale color attributes with black background. 1 = normal white, 2 = blinking white and 3 = bright white. Text is 25 by 80. Graphics is 640 by 350.
 
-* **[SCREEN](SCREEN) 11** is **monochrome** with black background and white foreground. Text is 30 or 60 by 80 columns(see [WIDTH](WIDTH)). White graphics is 640 by 480. NO [COLOR](COLOR) keyword allowed.
+* **[SCREEN](SCREEN) 11** is **monochrome** with black background and white foreground. Text is 30 or 60 by 80 columns(see WIDTH). White graphics is 640 by 480. NO [COLOR](COLOR) keyword allowed.
 
-* **[SCREEN](SCREEN) 12** has 16 color attributes, black background. 256K possible color hues. Text is 30 or 60 by 80 columns(see [WIDTH](WIDTH)). Graphics 640 by 480. 
+* **[SCREEN](SCREEN) 12** has 16 color attributes, black background. 256K possible color hues. Text is 30 or 60 by 80 columns(see WIDTH). Graphics 640 by 480.
 
 * **[SCREEN](SCREEN) 13** has 256 color attributes, black background. 256K possible color hues. Text is 25 by 40. Graphics is 320 by 200. 
 
@@ -96,8 +96,8 @@ The [SCREEN](SCREEN) statement sets the video display mode and size of the progr
 
 * Are a minimum of 1 and the values given above are the maximums. [LOCATE](LOCATE) 1, 1 is the top left [SCREEN](SCREEN) text position.
 * Text characters occupy a certain sized pixel box adjusted by [WIDTH](WIDTH) in some screen modes.
-* Text [PRINT](PRINT) cursor positions can be read by [CSRLIN](CSRLIN) and [POS](POS) to [LOCATE](LOCATE) text [PRINT](PRINT)s.
-* [VIEW PRINT](VIEW PRINT) can be used to designate a text view port area.
+* Text [PRINT](PRINT) cursor positions can be read by CSRLIN and POS(0) to [LOCATE](LOCATE) text [PRINT](PRINT)s.
+* [VIEW PRINT](VIEW-PRINT) can be used to designate a text view port area.
 * In **QB64** the [_WIDTH (function)](_WIDTH-(function)) and [_HEIGHT](_HEIGHT) functions will return the text dimensions in SCREEN 0 only.
 
 > **Graphic Coordinates:**
@@ -122,7 +122,7 @@ The [SCREEN](SCREEN) statement sets the video display mode and size of the progr
 
 ## Example(s)
 
-> Shows an example of each legacy screen mode available to QBasic and QB64.
+> *Example 1:* Shows an example of each legacy screen mode available to QBasic and QB64.
 
 ```vb
 
@@ -152,7 +152,7 @@ This is SCREEN 0 - only text is allowed!
 
 ```
 
-> Displays each [SCREEN (statement)](SCREEN-(statement)) mode one at a time with a [CIRCLE](CIRCLE) (except for [SCREEN (statement)](SCREEN-(statement)) 0)
+> Displays each SCREEN mode one at a time with a CIRCLE (except for SCREEN 0)
 
 ## See Example(s)
 
@@ -171,7 +171,7 @@ This is SCREEN 0 - only text is allowed!
 * [_SCREENHIDE](_SCREENHIDE), [_SCREENSHOW](_SCREENSHOW), [_SCREENICON](_SCREENICON)
 * [PALETTE](PALETTE), [OUT](OUT), [PCOPY](PCOPY), 
 * [GET (graphics statement)](GET-(graphics-statement)), [PUT (graphics statement)](PUT-(graphics-statement)) (graphics)
-* [VIEW](VIEW), [WINDOW](WINDOW)-(graphic-viewport), [VIEW PRINT](VIEW-PRINT) (text view port)
+* [VIEW](VIEW), [WINDOW](WINDOW) (graphic viewport), [VIEW PRINT](VIEW-PRINT) (text view port)
 * [SCREEN (function)](SCREEN-(function)) (text only), [POINT](POINT) (graphic pixel colors)
 * [Screen Memory](Screen-Memory), [Screen Saver Programs](Screen-Saver-Programs)
 * [_CONSOLE](_CONSOLE)

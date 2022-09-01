@@ -1,6 +1,5 @@
 The RTRIM$ function removes trailing space characters from a STRING value.
 
-
 ## Syntax
 
 > return$ = RTRIM$(value$)

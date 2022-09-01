@@ -180,6 +180,6 @@ Default  Name
 
 ### Extra reference
 
-* [Windows_Libraries#File_Dialog_Boxes](Windows-Libraries#File_Dialog_Boxes)
-* [C_Libraries#Console_Window](C-Libraries#Console_Window)
+* [Windows Libraries](Windows-Libraries)
+* [C Libraries](C-Libraries)
 * [Windows Printer Settings](Windows-Printer-Settings)

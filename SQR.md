@@ -8,7 +8,7 @@ The [SQR](SQR) function returns the square root of a numerical value.
 
 * The *square root* returned is normally a [SINGLE](SINGLE) or [DOUBLE](DOUBLE) numerical value.
 * The *value* parameter can be any **positive** numerical type. **Negative parameter values will not work!**
-* Other exponential root functions can use fractional exponents([^](^)) enclosed in **parenthesis only**. EX: green
+* Other exponential root functions can use fractional exponents([^](^)) enclosed in **parenthesis only**. EX: root = c ^ (a / b)
 
 ## Example(s)
 

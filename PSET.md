@@ -1,4 +1,4 @@
-The **PSET** grahics [SCREEN (statement)](SCREEN-(statement)) statement sets a pixel to a coordinate with a default or designated color attribute.
+The **PSET** graphics [SCREEN (statement)](SCREEN-(statement)) statement sets a pixel to a coordinate with a default or designated color attribute.
 
 ## Syntax
 
@@ -152,7 +152,6 @@ SUB rectangle (x1 AS INTEGER, y1 AS INTEGER, x2 AS INTEGER, y2 AS INTEGER)
 END SUB
 
 ```
-<sub>Code by Codeguy</sub>
 
 > *Notes:* Left click, to zoom in on the rectangle. Right click, to zoom out. Up arrow makes the rectangle bigger and down arrow makes the rectangle smaller. 
 

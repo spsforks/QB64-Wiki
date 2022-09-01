@@ -13,8 +13,6 @@ A **SUB** procedure is a procedure within a program that can calculate and retur
 * Parameters passed after the procedure call must match the variable types in the SUB parameters in order.
 * If there are no *parameter*s passed or they are [SHARED](SHARED) the parameters and parenthesis are not required in the procedure.
 * Parameter [Variable](Variable) names in the procedure do not have to match the names used in the [CALL](CALL), just the value types.
-* To pass parameter variables [BYVAL](BYVAL) to protect the value in a call, parenthesis can be placed around each variable name also.
-* To pass [arrays](arrays) to a sub-procedure use empty brackets after the name or indicate the index in the call.
 
 ## Description
 

@@ -10,7 +10,7 @@ The **new keywords** add some **new features** such as playing **music or sound*
 
 QB is an abbreviation for **QBasic** or **QuickBASIC** which is an easy to learn language that grew very popular in the 90's. It uses simple syntax but holds great potential as there are methods to achieve nearly anything. **QBasic is more alive than ever with QB64!**
 
-[Keywords currently not supported by QB64](Keywords-currently-not-supported-by-QB64)
+[Keywords currently not supported](Keywords-currently-not-supported-by-QB64)
 
 ## Q: Does it have modern features? Do they HAVE to be used?
 
@@ -82,7 +82,7 @@ Executable programs are portable between like systems by copying the executable 
 > *To help launch executables without a console, a file called *programname_start.command* is created along with the program.
 **Note: Some QB64 keywords and procedures are not available for macOS.**
 
-[Keywords currently not supported](Keywords_currently_not_supported_by_QB64)
+[Keywords currently not supported](Keywords-currently-not-supported-by-QB64)
 
 ----
 
@@ -102,13 +102,13 @@ See: [Keywords currently not supported by QB64](Keywords_currently_not_supported
 
 You should be careful with **CPU usage**. QB64 is a lot faster than QBasic was and it does not have many of the size limitations that confined QBasic programming abilities. Having said that, **care must be taken to assure that programs do not hog resources.** To do that, use speed limits when possible to keep the resources used to a minimum. Also, **Monitor Task Manager** when your programs are running, as it can tell you how much or system resources are being used in different parts of a program. The following keywords can lower the impact of your programs on those resources by releasing them to other programs:
 
-> ::::*[_LIMIT](_LIMIT): Limits the loops per second in any loop and thus lowers the overall CPU usage.
+> [_LIMIT](_LIMIT): Limits the loops per second in any loop and thus lowers the overall CPU usage.
 
-> ::::*[_DELAY](_DELAY): Pauses a procedure and releases unused resources for other programs.
+> [_DELAY](_DELAY): Pauses a procedure and releases unused resources for other programs.
 
-> ::::*[SLEEP](SLEEP): Stops or delays program procedures and shares resources.
+> [SLEEP](SLEEP): Stops or delays program procedures and shares resources.
 
-> ::::*[INPUT](INPUT) and [INPUT$](INPUT$) stop program procedures until an entry or key press is given.
+> [INPUT](INPUT) and [INPUT$](INPUT$) stop program procedures until an entry or key press is given.
 
 QB64 can be fast when you need it to be, but take the time to consider the impact of your program on other programs as people seldom have only one program running and the OS has tasks it must do too. 
 
@@ -122,13 +122,13 @@ A: If the libraries are pure QB 4.5 code then yes, otherwise no. QLB files are n
 
 [DECLARE LIBRARY](DECLARE-LIBRARY) allows users to reference C, Windows, OpenGL and other DLL libraries. If you find some functions that you like please share them with us at the forum! The following pages list working functions our members have found and tested:
 
-[C Libraries](C Libraries), [DLL Libraries](DLL Libraries), [Windows Libraries](Windows Libraries)
+[C Libraries](C-Libraries), [DLL Libraries](DLL-Libraries), [Windows Libraries](Windows-Libraries)
 
 ## Q: I can't get my QB 4.5 source code to work in QB64! Why?
 
 A: QB64 is 99% compatible with QB4.5 programs. The commands that haven't been implemented are either obsolete or are too obscure and have been replaced by modern functionality. 
 
-See: [Keywords currently not supported by QB64](Keywords currently not supported by QB64)
+See: [Keywords currently not supported](Keywords-currently-not-supported-by-QB64)
 
 ## Q: What files are required to run my QB64 compiled program in my Operating System?
 
@@ -138,7 +138,9 @@ A: Programs compiled by QB64 (version 1.000 and up) are stand-alone so no extern
 
 A: Yes! Just type QB64 -? at the command prompt to see a list of available options.
 
-> Note: The **-c** and **-x** option do just compile a program without running it.
+* **QB64 -c yourfile.BAS**
+* **QB64 -x yourfile.BAS** *(compiles using the console only)*
+* **QB64 -c yourfile.BAS -o destination_path\destination executable_name.exe** *(compiles the .BAS file and outputs the executable to a separate folder)*
 
 > The **-z** option does not even create an executable file, it performs the first compile pass only (syntax checking and generate C code).
 
@@ -191,9 +193,9 @@ A: Yes, they are emulated to use the soundcard.
 
 Capabilities include:
 
-#Multiple sound tracks
-#Volume and speaker control
-#Background music
+* Multiple sound tracks
+* Volume and speaker control
+* Background music
 
 **Get started with [_SNDOPEN](_SNDOPEN):**
 
@@ -225,7 +227,7 @@ A: Not directly, but [_FLOAT](_FLOAT) currency values up to 4 decimal places can
 
 ## Q: Do you provide changelogs?
 
-We do.
+A: We do.  For all recent changelogs, check [QB64.com](https://qb64.com)
 
 *For all recent changelogs, check at [http://github.com/QB64Official/qb64/blob/development/CHANGELOG.md GitHub]
 

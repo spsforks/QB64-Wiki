@@ -1,4 +1,4 @@
-The [PRINT](PRINT) statement prints numeric or string expressions to the program screen. Typing shortcut **?**  will convert to PRINT.
+The PRINT statement prints numeric or string expressions to the program screen. Typing shortcut **?**  will convert to PRINT.
 
 ## Syntax
 
@@ -14,26 +14,26 @@ The [PRINT](PRINT) statement prints numeric or string expressions to the program
 * [STRING](STRING) values will eliminate leading and trailing quotation marks when printed to the screen. Use [CHR$](CHR$)(34) to add quotes to the [SCREEN](SCREEN).
 * PRINT with no parameters moves the print cursor to the next print row at column 1.
 * expression is a numeric or string expression to be printed.
-  - [SPACE$](SPACE$)(n%) or [SPC](SPC)(n%) - specifies that n% space characters will be printed.
-  - [TAB](TAB)(column%) - specifies that the print cursor is to move to column number column%. If the print cursor is already beyond that column, it is moved to the designated column on the next row.
+  * [SPACE$](SPACE$)(n%) or [SPC](SPC)(n%) - specifies that n% space characters will be printed.
+  * [TAB](TAB)(column%) - specifies that the print cursor is to move to column number column%. If the print cursor is already beyond that column, it is moved to the designated column on the next row.
 * A *separator* is used to separate multiple expressions and specifies how the print cursor is to be moved:
-  - [Semicolon](Semicolon)(;) - specifies that the print cursor stops at the end of the printed *expression* and may append later *expressions* or prints. PRINT ; or PRINT ""; will stop cursor movement and append later prints. Ending [semicolon](semicolon)s can also stop screen roll.
-  - [Comma](Comma)(,) - specifies that the print cursor is to move to the next 14-column tab-stop. If the print cursor is at column 56 or greater, it is moved to the next row at column 1. When used after an *expression* it may Tab-stop append later prints.
-  - [+](+)(+) uses [concatenation](concatenation) to add [STRING](STRING) expressions ONLY with no spacing. **Cannot combine  numerical *expression*s!**
-  - If a separator is not used at the end of the expression list, the print cursor moves to the next row at column 1.
-* When **printing numerical** *expressions* values, the following rules are used:
-  - If the value is positive, the number is prefixed with a space character, otherwise, the number is prefixed with a negative sign (-).
-  - If the value is an integer (whole number), no decimal point or fractional part will be printed.
-  - If the value is not an [INTEGER](INTEGER)(whole number) and has zero for a coefficient, no leading zero is printed. EX: -0.123 prints "-.123 "
-  - If the expression is in [scientific notation](scientific-notation), the number is also printed in scientific notation.
-  - The number is [PRINT](PRINT) with a space after it unless [STR$](STR$)(number) is used to convert it to string text.
-  - Numerical values MUST be added to a PRINT statement string using [comma](comma)s or [semicolon](semicolon)s on each side of the value or by using [STR$](STR$) to convert the value to a string to use [concatenation](concatenation) (+ string addition).
-* [VIEW PRINT](VIEW PRINT) can set up a viewport area for PRINTs. Text printed on the bottom view port row will scroll the text upward. 
+  * [Semicolon](Semicolon)(;) - specifies that the print cursor stops at the end of the printed *expression* and may append later *expressions* or prints. PRINT ; or PRINT ""; will stop cursor movement and append later prints. Ending [semicolon](semicolon)s can also stop screen roll.
+  * [Comma](Comma)(,) - specifies that the print cursor is to move to the next 14-column tab-stop. If the print cursor is at column 56 or greater, it is moved to the next row at column 1. When used after an *expression* it may Tab-stop append later prints.
+  * [+](+)(+) uses [concatenation](concatenation) to add [STRING](STRING) expressions ONLY with no spacing. **Cannot combine  numerical *expression*s!**
+  * If a separator is not used at the end of the expression list, the print cursor moves to the next row at column 1.
+* When **printing numerical'expressions* values, the following rules are used:
+  * If the value is positive, the number is prefixed with a space character, otherwise, the number is prefixed with a negative sign (-).
+  * If the value is an integer (whole number), no decimal point or fractional part will be printed.
+  * If the value is not an [INTEGER](INTEGER)(whole number) and has zero for a coefficient, no leading zero is printed. EX: -0.123 prints "-.123 "
+  * If the expression is in [scientific notation](scientific-notation), the number is also printed in scientific notation.
+  * The number is [PRINT](PRINT) with a space after it unless [STR$](STR$)(number) is used to convert it to string text.
+  * Numerical values MUST be added to a PRINT statement string using [comma](comma)s or [semicolon](semicolon)s on each side of the value or by using [STR$](STR$) to convert the value to a string to use [concatenation](concatenation) (+ string addition).
+* [VIEW PRINT](VIEW-PRINT) can set up a viewport area for PRINTs. Text printed on the bottom view port row will scroll the text upward.
 * Text to be printed can be a [STRING](STRING) variable or a literal value inside of quotation marks. 
 * Use [semicolon](semicolon) ends on bottom 2 rows of the SCREEN mode used or the PRINT will roll the screen up. 
-* **Quotes cannot be inside of a literal STRING! Use [CHR$](CHR$)(34) [concatenation](concatenation) to insert [quotation mark](quotation mark)s into a literal string.** 
-* To better format number and text data placement use [PRINT USING](PRINT USING).
-* Instead of typing PRINT you can just type a [question mark](question mark) (?). It will change to PRINT when enter is pressed in the IDE.
+* **Quotes cannot be inside of a literal STRING! Use [CHR$](CHR$)(34) [concatenation](concatenation) to insert [quotation mark](quotation-mark)s into a literal string.**
+* To better format number and text data placement use PRINT USING.
+* Instead of typing PRINT you can just type a [question mark](question-mark) (?). It will change to PRINT when enter is pressed in the IDE.
 * Use the [_PRINTMODE](_PRINTMODE) statement before a print to deal with the text background in **QB64**:
   - **1** _KEEPBACKGROUND: Text background transparent. Only the text is displayed over anything behind it.
   - **2** _ONLYBACKGROUND: Text background is only displayed. Text is transparent to anything behind it.

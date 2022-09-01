@@ -14,8 +14,8 @@ The **SCREEN** function returns the [ASCII](ASCII) code of a text character or t
 * The *code* value returned is the [ASCII](ASCII) code from 0 to 255. Returns 32([SPACE$](SPACE$)) when no character is found at a coordinate.
 * If the *colorflag* value is omitted or it is 0, the function returns the [ASCII](ASCII) code of the text character at the position designated.
 * When the *flag* value is greater than 0 in **SCREEN 0**, the function returns the foreground and background color attribute of text position.
-> * The foreground color(0 to 15) is the returned SCREEN color value AND 15: **green**
-> * The background color(0 to 7) is the returned SCREEN color value \ 16: **green**
+  * The foreground color(0 to 15) is the returned SCREEN color value AND 15: **FG = SCREEN(1, 1, 1) AND 15**
+  * The background color(0 to 7) is the returned SCREEN color value \ 16: **BG = SCREEN(1, 1, 1) \ 16**
 * **QB64** can return color values in screen modes other than [SCREEN](SCREEN) 0. QBasic returned the wrong color values in graphic screen modes!
 
 ## Example(s)
@@ -61,10 +61,7 @@ END
 
 ```text
 
-
          Hello
-
-
 
          ASCII: 72     COLOR: 9
 

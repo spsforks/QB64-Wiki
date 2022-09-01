@@ -146,8 +146,6 @@ END FUNCTION
 
 ```
 
-> *[Code provided by collaborator](https://github.com/NEONTEC75)*
-
 ## See Also
 
 * [PSET](PSET), [PRESET](PRESET)

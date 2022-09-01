@@ -20,10 +20,10 @@ Graphic Color syntax:
 Graphic cursor position syntax: 
 
 * The [INTEGER](INTEGER) position number can be 0 to 3 depending on the cursor position desired:
-  - POINT(0) returns the current graphic cursor [SCREEN](SCREEN) column pixel coordinate.
-  - POINT(1) returns the current graphic cursor [SCREEN](SCREEN) row pixel coordinate.
-  - POINT(2) returns the current graphic cursor [WINDOW](WINDOW) column position.
-  - POINT(3) returns the current graphic cursor [WINDOW](WINDOW) row position.
+  * POINT(0) returns the current graphic cursor [SCREEN](SCREEN) column pixel coordinate.
+  * POINT(1) returns the current graphic cursor [SCREEN](SCREEN) row pixel coordinate.
+  * POINT(2) returns the current graphic cursor [WINDOW](WINDOW) column position.
+  * POINT(3) returns the current graphic cursor [WINDOW](WINDOW) row position.
 * If a [WINDOW](WINDOW) view port has not been established, the coordinate returned will be the [SCREEN](SCREEN) cursor pixel position.
 * The return value is the current graphic cursor *column* or *row* pixel position on the [SCREEN](SCREEN) or [WINDOW](WINDOW).
 * Graphic cursor positions returned will be the last ones used in a graphic shape such as a [CIRCLE](CIRCLE) center point.
@@ -31,7 +31,7 @@ Graphic cursor position syntax:
 ## Usage
 
 * Use **[_SOURCE](_SOURCE)** first to set the image handle that POINT should read or QB64 will assume the current source image.
-> : **_SOURCE 0** 'sets POINT to read the current SCREEN image after reading a previous source image
+> **_SOURCE 0** 'sets POINT to read the current SCREEN image after reading a previous source image
 * **POINT cannot be used in SCREEN 0!** Use the [SCREEN (function)](SCREEN-(function)) function to point text character codes and colors in SCREEN 0.
 
 **POINT in QBasic Legacy Graphic SCREEN Modes:**
@@ -67,7 +67,8 @@ IF POINT(100, 100) = _RGB(255, 255, 255) THEN PRINT "_RGB OK"
 IF POINT(100, 100) = clr THEN PRINT "Type OK" 'will not print with a LONG variable type
 
 ```
-> **Note:** Change the [DIM](DIM) *clr* variable type to [LONG](LONG) to see how the last [IF](IF) statement doesn't [PRINT](PRINT) as shown in the output below:
+
+> **Note:** Change the DIM *clr* variable type to [LONG](LONG) to see how the last IF statement doesn't PRINT as shown in the output below:
 
 ```text
 
@@ -78,7 +79,7 @@ _RGB OK
 
 ```
 
-Using a [POINT](POINT) mouse routine to get the 32 bit color values of the image.
+Using a POINT mouse routine to get the 32 bit color values of an image.
 
 ```vb
 
@@ -86,7 +87,7 @@ SCREEN _NEWIMAGE(640, 480, 32)
 _TITLE "Mouse POINTer 32"
 
 'LINE INPUT "Enter an image file: ", image$  'use quotes around file names with spaces
-image$ = "QB64bee.png" 'any 24/32 bit image up to 320 X 240 with current _PUTIMAGE settings
+image$ = "QB64bee.png" 'up to 320 X 240 with current _PUTIMAGE settings
 i& = _LOADIMAGE(image$, 32)
 IF i& >= -1 THEN BEEP: PRINT "Could NOT load image!": END
 w& = _WIDTH(i&): h& = _HEIGHT(i&)
@@ -120,11 +121,10 @@ LOOP UNTIL INKEY$ > ""
 END 
 
 ```
-<sub>Code by Ted Weissgerber</sub>
 
 > *Explanation:* Use the mouse pointer to get the background RGB of the image to make it transparent with [_CLEARCOLOR](_CLEARCOLOR).
 
-*Snippet:* Creating an image mask to PUT an image over other colored backgrounds. See: [GET and PUT Demo](GET and PUT Demo) to run code.
+Creating an image mask to PUT an image over other colored backgrounds. See: [GET and PUT Demo](GET-and-PUT-Demo) to run code.
 
 ```vb
 
@@ -137,7 +137,7 @@ END
 
 ```
 
-> *Explanation:* In the procedure all black areas(background) are changed to white for a PUT using AND over other colored objects. The other image colors are changed to black for a PUT of the original image using XOR. The array images can be [BSAVE](BSAVE)d for later use. **QB64 can also** [PUT](PUT)** a full screen 12 image from an array directly into a** [BINARY](BINARY) **file.**
+> *Explanation:* In the procedure all black areas(background) are changed to white for a PUT using AND over other colored objects. The other image colors are changed to black for a PUT of the original image using XOR. The array images can be BSAVEd for later use. **QB64 can also** [PUT](PUT)** a full screen 12 image from an array directly into a** [BINARY](BINARY) **file.**
 
 ## See Example(s)
 

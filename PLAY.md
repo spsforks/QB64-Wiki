@@ -2,7 +2,7 @@
 
 ## Syntax
 
-> ***PLAY *commandstring$***
+> **PLAY** *commandstring$*
 
 ## Parameter(s)
 
@@ -54,7 +54,6 @@ LOOP UNTIL INKEY$ <> ""
 PLAY "v10l1c,l4egl2o5c,o4l4eg" 
 
 ```
-<sub>Code by Galleon</sub>
 
 Plays "Frosty the snowman". The lyric printing is not delayed by PLAY in QB64.
 
@@ -95,7 +94,6 @@ PLAY "t180g8g8g4g4g4a8g8g4g4g4g8g8g4a4b4o3c2c4p1"
 END
 
 ```
-<sub>Greg Rismoen 12/09/84</sub>
 
 Clicking on the grid enables various notes to be played simultaneously. 
 
@@ -185,7 +183,6 @@ NEXT y
 END SUB 
 
 ```
-<sub>Code by JP</sub>
 
 Play strings starting with MB allow program code to run while music plays in background.
 
@@ -298,7 +295,6 @@ glocate gposyp + 1, 1 'gposyp = gposyp + 1
 END SUB 
 
 ```
-<sub>Code by Mennonite</sub>
 
 This example uses [PRINT](PRINT) to good effect as string spacing is ignored by PLAY:
 
@@ -336,7 +332,6 @@ PRINT x$;
 PLAY x 
 
 ```
-<sub>Code by Luke</sub>
 
 ## See Also
 

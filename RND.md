@@ -7,7 +7,7 @@ The **RND** function returns a random number with a value between 0 (inclusive) 
 ## Parameter(s)
 
 * *n* is a [SINGLE](SINGLE) numeric value that defines the behavior of the RND function but is **NOT normally required**:
-    - :n parameter omitted: Returns next random number in the sequence.
+    - n parameter omitted: Returns next random number in the sequence.
     - n = 0: Return the last value returned.
     - n < 0: Always returns the same value for any given n
     - n > 0: the sequence of numbers generated will not change unless [RANDOMIZE](RANDOMIZE) is initiated. 
@@ -20,8 +20,8 @@ The **RND** function returns a random number with a value between 0 (inclusive) 
 * If you need an integer range of numbers, like a dice roll, round it down to an [INT](INT). Add 1 to the maximum number with [INT](INT).
 * The random sequence is 2 ^ 24 or 16,777,216 entries long, which can allow repeated patterns in some procedures.
 * Formulas for the [INT](INT) or [CINT](CINT) of ANY number range from *min%*(lowest value) to *max%*(greatest value): 
-> :* Using [INT](INT): randNum% = INT(RND * (max% - min% + 1)) + min%
-> :* Using [CINT](CINT): randNum% = CINT(RND * (max% - min%)) + min%
+  * Using [INT](INT): randNum% = INT(RND * (max% - min% + 1)) + min%
+  * Using [CINT](CINT): randNum% = CINT(RND * (max% - min%)) + min%
 * Use [RANDOMIZE](RANDOMIZE) [TIMER](TIMER) for different random number results each time a program is run. 
 * [RUN](RUN) should reset the [RANDOMIZE](RANDOMIZE) sequence to the starting [RND](RND) function value.(Not yet in QB64)
 
@@ -107,7 +107,6 @@ DO
 LOOP UNTIL INKEY$ <> "" 
 
 ```
-<sub>Code by Falcon</sub>
 
 ## See Also
 

@@ -23,5 +23,5 @@ The [SYSTEM](SYSTEM) statement immediately closes a program and returns control 
 ## See Also
 
 * [SHELL (function)](SHELL-(function))
-* [_SHELLHIDE](_SHELLHIDE)-(function)
+* [_SHELLHIDE](_SHELLHIDE) (function)
 * [_EXIT (function)](_EXIT-(function)), [END](END)

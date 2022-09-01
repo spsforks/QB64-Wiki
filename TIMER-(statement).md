@@ -1,10 +1,12 @@
 A [TIMER](TIMER) statement enables, turns off or stops timer event trapping. QBasic only uses the base timer, but **QB64** can run many.
 
-## QB Syntax
+## Syntax
  
+QB
+
 > TIMER {ON|STOP|OFF}
 
-## QB64 Syntax
+QB64
  
 > TIMER(*number%*) {ON|STOP|OFF|FREE}
 

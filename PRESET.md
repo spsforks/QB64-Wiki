@@ -135,7 +135,6 @@ NEXT
 END SUB
 
 ```
-<sub>Code by AlGoreIthm</sub>
 
 > *Explanation:* Using the [PUT (graphics statement)](PUT-(graphics-statement)) PRESET action highlights the menu selection in graphic screen modes by returning a negative image.
  

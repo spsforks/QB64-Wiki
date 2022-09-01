@@ -43,5 +43,5 @@ RETURN
 ## See Also
 
 * [ON STRIG(n)](ON-STRIG(n)) (event statement)
-* [STRIG](STRIG), [STICK](STICK)-(functions)
+* [STRIG](STRIG), [STICK](STICK) (functions)
 * [Single and Dual Stick Controllers](http://en.wikipedia.org/wiki/Analog_stick)

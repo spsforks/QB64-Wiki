@@ -6,10 +6,12 @@ The **PMAP** statement returns the physical or [WINDOW](WINDOW) view port coordi
 
 * The *coordinate* is the coordinate point to be mapped. 
 * The *function* can have one of four values:
-  - 0 = Maps view port coordinate to physical x screen coordinate
-  - 1 = Maps view port coordinate to physical y screen coordinate
-  - 2 = Maps physical screen coordinate to view port x coordinate
-  - 3 = Maps physical screen coordinate to view port y coordinate
+
+> 0 = Maps view port coordinate to physical x screen coordinate
+> 1 = Maps view port coordinate to physical y screen coordinate
+> 2 = Maps physical screen coordinate to view port x coordinate
+> 3 = Maps physical screen coordinate to view port y coordinate
+
 * The four PMAP functions allow the user to find equal point locations between the view coordinates created with the [WINDOW](WINDOW) statement and the physical screen coordinates of the viewport as defined by the [VIEW](VIEW) statement.
 * Mouse co-ordinates returned by [_MOUSEX](_MOUSEX) and [_MOUSEY](_MOUSEY) are the physical screen co-ordinates.
 

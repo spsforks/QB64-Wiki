@@ -15,7 +15,7 @@ The UNLOCK statement opens access to parts or all of a file to other programs an
 * For files opened in [BINARY](BINARY) mode, each record corresponds to a single byte.
 * [LOCK](LOCK) and UNLOCK statements are always used in pairs and each statement must match the other one.
 * Files must be unlocked before other programs can access them, and before the file is closed.
-* [Keywords_currently_not_supported_by_QB64#Keywords_Not_Supported_in_Linux_or_MAC_OSX_versions](Keywords-currently-not-supported-by-QB64#Keywords-Not-Supported-in-Linux-or-MAC-OSX-versions)
+* [Keywords currently not supported](Keywords-currently-not-supported-by-QB64)
 
 ## See Also
 
