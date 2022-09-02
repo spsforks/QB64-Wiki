@@ -135,7 +135,7 @@ See also: [Variable Types](Variable_Types) and  [Libraries#C.2B.2B_Variable_Type
 * [_FILEEXISTS](_FILEEXISTS) (function) returns -1 if the file name [STRING](STRING) parameter exists. Zero if it does not.
 * [_FINISHDROP](_FINISHDROP) (statement)  resets [_TOTALDROPPEDFILES](_TOTALDROPPEDFILES) and clears the [_DROPPEDFILE](_DROPPEDFILE) list of items (files/folders).
 * [_HIDE](_HIDE) (SHELL action) hides the DOS screen output during a shell.
-* [_LASTBUTTON](_LASTBUTTON) (function) returns the number of buttons available on a specified number device listed by [DEVICE$](DEVICE$). 
+* [_LASTBUTTON](_LASTBUTTON) (function) returns the number of buttons available on a specified number device listed by [_DEVICE$](_DEVICE$). 
 * [_OS$](_OS$) (function)  returns the QB64 compiler version in which the program was compiled as [WINDOWS], [LINUX] or [MACOSX] and [32BIT] or [64BIT].
 * [_SCREENCLICK](_SCREENCLICK)  simulates clicking the mouse at a position on the screen to get focus.
 * [_SCREENIMAGE](_SCREENIMAGE)  captures the current desktop screen image.
@@ -268,7 +268,7 @@ See the [ERROR Codes](ERROR_Codes) reference.
 * [_DEVICEINPUT](_DEVICEINPUT) (function) returns the [_DEVICES](_DEVICES) number of an [_AXIS](_AXIS), [_BUTTON](_BUTTON) or [_WHEEL](_WHEEL) event.
 * [_DEVICES](_DEVICES) (function) returns the number of input devices found on a computer system including the keyboard and mouse.
 * [_LASTAXIS](_LASTAXIS) (function) returns the number of axis available on a specified number device listed by [_DEVICE$](_DEVICE$).
-* [_LASTBUTTON](_LASTBUTTON) (function) returns the number of buttons available on a specified number device listed by [DEVICE$](DEVICE$). 
+* [_LASTBUTTON](_LASTBUTTON) (function) returns the number of buttons available on a specified number device listed by [_DEVICE$](_DEVICE$). 
 * [_LASTWHEEL](_LASTWHEEL) (function) returns the number of scroll wheels available on a specified number device listed by [_DEVICE$](_DEVICE$).
 * [_MOUSEMOVEMENTX](_MOUSEMOVEMENTX) (function) returns the relative horizontal position of the mouse cursor compared to the previous position.
 * [_MOUSEMOVEMENTY](_MOUSEMOVEMENTY) (function) returns the relative vertical position of the mouse cursor compared to the previous position.
@@ -468,7 +468,7 @@ See also: [Screen Memory](Screen_Memory) or [Using _OFFSET](Using_OFFSET)
 * [_DEVICES](_DEVICES) (function) returns the number of input devices found on a computer system. The mouse is normally device 2.
 * [_EXIT (function)](_EXIT-(function)) prevents a program user exit and indicates if a user has clicked the close X window button or CTRL + BREAK.
 * [_LASTAXIS](_LASTAXIS) (function) returns the number of axis available on a specified number device listed by [_DEVICE$](_DEVICE$).
-*[_LASTBUTTON](_LASTBUTTON) (function) returns the number of buttons available on a specified number device listed by [DEVICE$](DEVICE$). 
+*[_LASTBUTTON](_LASTBUTTON) (function) returns the number of buttons available on a specified number device listed by [_DEVICE$](_DEVICE$). 
 * [_LASTWHEEL](_LASTWHEEL) (function) returns the number of scroll wheels available on a specified number device listed by [_DEVICE$](_DEVICE$).
 * [_MOUSEBUTTON](_MOUSEBUTTON) (function) returns whether a specified mouse button number has been clicked. 3 is the mouse center or scroll button
 * [_MOUSEHIDE](_MOUSEHIDE) (statement) hides the OS mouse pointer from view.

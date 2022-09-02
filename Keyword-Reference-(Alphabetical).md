@@ -488,7 +488,7 @@ Keywords beginning with underscores are QB64 specific. **To use them without the
 
 * [$LET]($LET) (Pre-Compiler [Metacommand](Metacommand)) used to set a flag variable for the precompiler.
 * [_LASTAXIS](_LASTAXIS) (function) returns the number of axis available on a specified number device listed by [_DEVICE$](_DEVICE$).
-* [_LASTBUTTON](_LASTBUTTON) (function) returns the number of buttons available on a specified number device listed by [DEVICE$](DEVICE$). 
+* [_LASTBUTTON](_LASTBUTTON) (function) returns the number of buttons available on a specified number device listed by [_DEVICE$](_DEVICE$). 
 * [_LASTWHEEL](_LASTWHEEL) (function) returns the number of scroll wheels available on a specified number device listed by [_DEVICE$](_DEVICE$).
 * [_LIMIT](_LIMIT) (statement) sets the loops per second rate to slow down loops and limit CPU usage.
 * [_LOADFONT](_LOADFONT) (function) designates a [_FONT](_FONT) TTF file to load and returns a handle value.

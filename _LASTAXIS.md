@@ -8,7 +8,7 @@ The [_LASTAXIS](_LASTAXIS) function returns the number of axis a specified numbe
 
 * Returns the number of axis that can be read on a specified device number within the number of [_DEVICES](_DEVICES) found.
 * A valid number can be sent to the [_AXIS](_AXIS) function to find any relative axis movements.
-* The devices are listed in a numerical order determined by the OS and can be read by the [DEVICE$](DEVICE$) function.
+* The devices are listed in a numerical order determined by the OS and can be read by the [_DEVICE$](_DEVICE$) function.
 * **The [_DEVICES](_DEVICES) function must be read before using _LASTAXIS or an [ERROR Codes](ERROR-Codes) will occur.**
 * Devices include keyboard(1), mouse(2), joysticks, game pads and multiple stick game controllers.
 

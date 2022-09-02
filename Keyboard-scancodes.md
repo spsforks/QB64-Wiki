@@ -151,7 +151,7 @@ Example: **status = _KEYDOWN(CVI(CHR$(0) + "P"))**
 
 [INKEY$](INKEY$)
 
-## [DEVICES](DEVICES) Button
+## [_DEVICES](_DEVICES) Button
 
 
 * [_LASTBUTTON](_LASTBUTTON)(1) keyboards will normally return 512 buttons. One button is read per loop through all numbers.

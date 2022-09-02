@@ -7,7 +7,7 @@ The [_LASTBUTTON](_LASTBUTTON) function returns the number of buttons a specifie
 * Returns the number of buttons that can be read on a specified device number within the number of [_DEVICES](_DEVICES) found.
 * A valid number can be sent to the [_BUTTON](_BUTTON) or [_BUTTONCHANGE](_BUTTONCHANGE) function to find any button events.
 * The specific device name and functions can be found by the [_DEVICE$](_DEVICE$) function [STRING](STRING).
-* The devices are listed in a numerical order determined by the OS and can be read by the [DEVICE$](DEVICE$) function.
+* The devices are listed in a numerical order determined by the OS and can be read by the [_DEVICE$](_DEVICE$) function.
 * **The [_DEVICES](_DEVICES) function must be read before using _LASTBUTTON or an [ERROR Codes](ERROR-Codes) will occur.**
 * Devices include keyboard (reported as 1), mouse (reported as 2), joysticks, game pads and multiple stick game controllers.
 
