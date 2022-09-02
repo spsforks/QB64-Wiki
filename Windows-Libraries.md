@@ -43,9 +43,9 @@ LP or hwnd     Short or Long Pointer     ANY [INTEGER](INTEGER)       [_OFFSET](
 
 ```
 
-**[http://msdn.microsoft.com/en-us/library/aa383751(v=vs.85).aspx Windows Data Types]**
+- See [Windows Data Types](https://docs.microsoft.com/pt-pt/windows/win32/winprog/windows-data-types?redirectedfrom=MSDN)
 
-**[http://doc.pcsoft.fr/en-US/?6510001 Windows 32 API constant values]**
+- See [Windows 32 API constant values](http://doc.pcsoft.fr/en-US/?6510001)
 
 ## Computer Date/Time
 
