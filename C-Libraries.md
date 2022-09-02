@@ -3,10 +3,10 @@
 **Note: C++ Header files should be placed in the QB64 folder and are not required after a program is compiled.**
 
 
-**C++ Variable Types**
+## **C++ Variable Types**
 
 
-|**C Name**   |     Description         |          Size    |  QB64 Type** |
+| C Name   |     Description         |          Size    |  QB64 Type |
 | ----------- | ----------------------- | ----------------- | ------------ |
 |[_BYTE](_BYTE)    |     Character or small integer. |  1 byte  |    [_BYTE](_BYTE) |
 |[INTEGER](INTEGER) |   Short Integer(Word)     |      2 byte   |   [INTEGER](INTEGER)|
@@ -18,14 +18,12 @@
 |[DOUBLE](DOUBLE)   |    Double precision floating. |   8 byte   |   [DOUBLE](DOUBLE) |
 |[_FLOAT](_FLOAT) | Long double precision float | 10 byte  |    [_FLOAT](_FLOAT) |
 |[Unicode](Unicode)  |    Wide character([Unicode](Unicode))    |   2 or 4 |
-|[_OFFSET](_OFFSET)   |     void pointer(void *)      |     ANY    |    [_OFFSET](_OFFSET)|
+|[_OFFSET](_OFFSET)   |     void pointer(void *)      |    ANY   |    [_OFFSET](_OFFSET)|
 
-```text
-```
 
 ## C Functions and Subs
 
-```text
+```vb
 
 DECLARE LIBRARY
                            **'ctime.h**
@@ -100,7 +98,7 @@ END DECLARE
 
 ```
 
-How to use the SUB **memmove** to transfer [TYPE](TYPE) data when using Libraries.
+How to use the [SUB](SUB) **memmove** to transfer [TYPE](TYPE) data when using Libraries.
 
 ```vb
 
@@ -171,7 +169,7 @@ NEXT i
 
 Header file: *Cast.h*
 
-```text
+```cpp
 
 
 float bitcast(int t)
@@ -204,7 +202,7 @@ PRINT bitcast##(swap_endian(Value&))
 
 **Fastmath.h** header file. Library to speed up program calculations. Use with [DECLARE LIBRARY](DECLARE-LIBRARY) "Fastmath"
 
-```text
+```cpp
 
 using namespace std;
 unsigned long xrander=123456789, yrander=362436069, zrander = 521288629;
