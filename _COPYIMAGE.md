@@ -70,6 +70,6 @@ DO: _LIMIT 30: LOOP UNTIL INKEY$ <> ""
 * [_PUTIMAGE](_PUTIMAGE), [_MAPTRIANGLE](_MAPTRIANGLE)
 * [_SOURCE](_SOURCE), [_DEST](_DEST)
 * [_FREEIMAGE](_FREEIMAGE)
-* [_FILELIST$ (function)](_FILELIST$-(function)) (Demo of _COPYIMAGE)
+* [FILELIST$ (function)](FILELIST$-(function)) (Demo of _COPYIMAGE)
 * [_DISPLAYORDER](_DISPLAYORDER)
 * [Hardware images](Hardware-images)
