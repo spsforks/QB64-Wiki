@@ -33,17 +33,17 @@ Maximum Windows path: MAX_PATH = drive letter + ":\" + 256 + CHR$(0) = 260 chara
 | ---------------- | -------------------- | --- | -- |
 | bit          |   8 bits in one byte        |  1        |         [_BIT](_BIT) | 
 | nybble    |      2 nybbles in one byte  |     4         |        [_BIT](_BIT) * 4| 
-| byte       |     1 byte (2 nybbles)         8                [_BYTE](_BYTE)
-| Boolean    |     1 byte (signed/unsigned)   8                [_BYTE](_BYTE)
-| CharA(FunctA)|   [ASCII](ASCII) character   |          8([LEN](LEN)(buffer)) |   [_BYTE](_BYTE)
+| byte       |     1 byte (2 nybbles)     |     8          |       [_BYTE](_BYTE)| 
+| Boolean    |     1 byte (signed/unsigned) |   8       |          [_BYTE](_BYTE)| 
+| CharA(FunctA)|   [ASCII](ASCII) character   |          8 ([LEN](LEN)(buffer)) |   [_BYTE](_BYTE)
 | WORD        |    2 bytes              |      16         |        [INTEGER](INTEGER)| 
-| CharW(FunctW) |  [Unicode](Unicode) wide character |    16([LEN](LEN)(buffer)\2)|  [INTEGER](INTEGER)| 
+| CharW(FunctW) |  [Unicode](Unicode) wide character |    16 ([LEN](LEN)(buffer)\2)|  [INTEGER](INTEGER)| 
 | DWORD        |   4 bytes         |           32     |            [LONG](LONG)| 
 | QWORD     |      8 bytes         |           64      |           [_INTEGER64](_INTEGER64)| 
 | LP or hwnd  |    Short or Long Pointer  |    ANY [INTEGER](INTEGER)   |     [_OFFSET](_OFFSET)| 
 
                   
-**NOTE:** '*Void* _*_' in C code is also an [_OFFSET](_OFFSET)
+> **NOTE:** '*Void* _*_' in C code is also an [_OFFSET](_OFFSET)
 
 
 
@@ -326,7 +326,7 @@ Adapted from code by Jobert14
 
 **Converting 32 bit Dialog Box Color values for 4 or 8 BPP Screen modes**
 
-```text
+```vb
 
 SCREEN _NEWIMAGE(640, 480, 12) 'change from screen 12 to 32 to see the difference
 rgbresult& = &H8080FF 'Dialog box long color reverse HEX$ return value
@@ -717,9 +717,9 @@ Code courtesy of Jobert14
 
 > *Note:* The Open and Save Dialog boxes get user selections and do not actually open or create a file! Your program must do that.
 
-**[http://msdn.microsoft.com/en-us/library/aa155724(v=office.10).aspx Microsoft MSDN]**
+> **[Microsoft MSDN](http://msdn.microsoft.com/en-us/library/aa155724(v=office.10).aspx)**
 
-**[http://msdn.microsoft.com/en-us/library/aa259317(v=vs.60).aspx Common Dialog Flag Constants]**
+> **[Common Dialog Flag Constants](http://msdn.microsoft.com/en-us/library/aa259317(v=vs.60).aspx)**
 
 > In VB6, variable-length strings in user [TYPE](TYPE)s are actually pointer [_OFFSET](_OFFSET)s to those strings.
 
@@ -1163,7 +1163,7 @@ Code by Michael Calkins and Ted Weissgerber
 
 >  *Snippet:* Shows how to compare a Font Dialog Box request with [STRING](STRING) file data created by the [Windows Libraries](Windows-Libraries) below:
 
-```text
+```vb
 
 ' procedure assumes that all fonts have been loaded into an array as below:
 RegFont$(1) = "Times New Roman (TrueType) = TIMES.TTF" 'array simulates registry data from file
@@ -1194,7 +1194,7 @@ NEXT
 
 >  *Note:* The Font Dialog name will not normally have descriptions such as Regular, Bold, Italics or (TrueType) so it ignores them.
 
-**[http://www.functionx.com/win32/Lesson14.htm GDI Tools - Font Guidlines]**
+> **[GDI Tools Font Guidlines](http://www.functionx.com/win32/Lesson14.htm)**
 
 ## Registered Fonts
 
