@@ -8,27 +8,19 @@ Maximum Windows path: MAX_PATH = drive letter + ":\" + 256 + CHR$(0) = 260 chara
 
 **Your code contribution using the Windows Libraries could end up here!**
 
-{|class="wikitable" width="100%"
-!colspan="4"|Table of Contents
-|-
-|1 [#Computer Date/Time](#Computer Date/Time)||10 [#Focus](#Focus)||19 [#Open another Program](#Open another Program)||28 [#Window Focus](#Window Focus)
-|-
+
+ 
+|  **Table of Contents**  |   |   |
+| ---------------- | -------------------- | --- |
+|1 [Computer Date/Time](#Computer-datetime)  | 10 [#Focus](#Focus)  | 19 [#Open another Program](#Open another Program)   | 28 [#Window Focus](#Window Focus)
 |2 [#Borderless Window](#Borderless Window)||11 [#Folder Dialog Box](#Folder Dialog Box)||20 [#Play WAV Sounds](#Play WAV Sounds)||29 [#Windows Menu](#Windows Menu)
-|-
 |3 [#Color Dialog Box](#Color Dialog Box)||12 [#Font Dialog Box](#Font Dialog Box)||21 [#Run One Instance](#Run One Instance)||30 [#Windows Notification](#Windows Notification)
-|-
 |4 [#Desktop Size](#Desktop Size)||13 [#Registered Fonts](#Registered Fonts)||22 [#Send Keys](#Send Keys)||31 [#Windows Ports](#Windows Ports)
-|-
 |5 [#Directory Environment](#Directory Environment)||14 [#Game Pad](#Game Pad)||23 [#System Metrics](#System Metrics)||32 [#Windows Sounds](#Windows Sounds)
-|-
 |6 [#Disk Drives](#Disk Drives)||15 [#Hot Keys (maximize)](#Hot Keys (maximize))||24 [#Top Most Window](#Top Most Window)||33 [#Window Transparency](#Window Transparency)
-|-
 |7 [#File Attributes](#File Attributes)||16 [#Keyboard Lock Settings](#Keyboard Lock Settings)||25 [#Video File Player](#Video File Player)||34 [#Windows User](#Windows User)
-|-
 |8 [#File Open and Save Dialog](#File Open and Save Dialog)||17 [#Message Box](#Message Box)||26 [#Web Page Download](#Web Page Download)||35 [#Windows Version](#Windows Version)
-|-
-|9 [#File Times](#File Times)||18 [#Mouse Area](#Mouse Area)||27 [#Windows API](#Windows API)||36 [#Reference](#Reference)
-|}
+|9 [#File Times](#File Times) | 18 [#Mouse Area](#Mouse Area) | 27 [#Windows API](#Windows API) | 36 [#Reference](#Reference) |
 
 ```text
 
