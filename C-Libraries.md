@@ -2,23 +2,25 @@
 
 **Note: C++ Header files should be placed in the QB64 folder and are not required after a program is compiled.**
 
+
+**C++ Variable Types**
+
+
+|**C Name**   |     Description         |          Size    |  QB64 Type** |
+| ----------- | ----------------------- | ----------------- | ------------ |
+|[_BYTE](_BYTE)    |     Character or small integer. |  1 byte  |    [_BYTE](_BYTE) |
+|[INTEGER](INTEGER) |   Short Integer(Word)     |      2 byte   |   [INTEGER](INTEGER)|
+|[LONG](LONG)     |     Integer(Dword)         |       4 byte   |   [LONG](LONG) |
+|[LONG](LONG)   |  Int32, Long integer or Long |  4 byte    |  [LONG](LONG) |
+|[_INTEGER64](_INTEGER64)  |  Long long (Qword)    |         8 byte   |   [_INTEGER64](_INTEGER64) |
+|[Boolean](Boolean)    |     Boolean value true or false. | 1 byte   |   [_BYTE](_BYTE) |
+|[SINGLE](SINGLE)   |     Floating point number    |     4 byte   |   [SINGLE](SINGLE) |
+|[DOUBLE](DOUBLE)   |    Double precision floating. |   8 byte   |   [DOUBLE](DOUBLE) |
+|[_FLOAT](_FLOAT) | Long double precision float | 10 byte  |    [_FLOAT](_FLOAT) |
+|[Unicode](Unicode)  |    Wide character([Unicode](Unicode))    |   2 or 4 |
+|[_OFFSET](_OFFSET)   |     void pointer(void *)      |     ANY    |    [_OFFSET](_OFFSET)|
+
 ```text
-
-                        **C++ Variable Types**
-
-    **C Name        Description                   Size      QB64 Type**
-    [_BYTE](_BYTE)         Character or small integer.   1 byte      [_BYTE](_BYTE)
-    [INTEGER](INTEGER)    Short Integer(Word)           2 byte      [INTEGER](INTEGER)
-    [LONG](LONG)          Integer(Dword)                4 byte      [LONG](LONG)
-    [LONG](LONG)     Int32, Long integer or Long   4 byte      [LONG](LONG)
-    [_INTEGER64](_INTEGER64)    Long long (Qword)             8 byte      [_INTEGER64](_INTEGER64)
-    [Boolean](Boolean)         Boolean value true or false.  1 byte      [_BYTE](_BYTE)
-    [SINGLE](SINGLE)        Floating point number         4 byte      [SINGLE](SINGLE)
-    [DOUBLE](DOUBLE)       Double precision floating.    8 byte      [DOUBLE](DOUBLE)
-    [_FLOAT](_FLOAT)  Long double precision float  10 byte      [_FLOAT](_FLOAT)
-    [Unicode](Unicode)      Wide character([Unicode](Unicode))       2 or 4
-    [_OFFSET](_OFFSET)        void pointer(void *)           ANY        [_OFFSET](_OFFSET)
-
 ```
 
 ## C Functions and Subs
