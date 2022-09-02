@@ -23,25 +23,29 @@ Maximum Windows path: MAX_PATH = drive letter + ":\" + 256 + CHR$(0) = 260 chara
 |8 [File Open and Save Dialog](#File-Open-and-Save-Dialog)| 17 [Message Box](#Message-Box)| 26 [Web Page Download](#Web-Page-Download)| 35 [Windows -Version](#Windows-Version)
 |9 [File Times](#File-Times) | 18 [Mouse Area](#Mouse-Area) | 27 [Windows API](#Windows-API) | 36 [Reference](#Reference) |
 
-```text
 
-**                         Windows API Data Structures**
 
-**Name            Description             Bits             QB64 Type**
-bit            8 bits in one byte         1                [_BIT](_BIT)
-nybble         2 nybbles in one byte      4                [_BIT](_BIT) * 4
-byte           1 byte (2 nybbles)         8                [_BYTE](_BYTE)
-Boolean        1 byte (signed/unsigned)   8                [_BYTE](_BYTE)
-CharA(FunctA)  [ASCII](ASCII) character            8([LEN](LEN)(buffer))   [_BYTE](_BYTE)
-WORD           2 bytes                   16                [INTEGER](INTEGER)
-CharW(FunctW)  [Unicode](Unicode) wide character    16([LEN](LEN)(buffer)\2) [INTEGER](INTEGER)
-DWORD          4 bytes                   32                [LONG](LONG)
-QWORD          8 bytes                   64                [_INTEGER64](_INTEGER64)
-LP or hwnd     Short or Long Pointer     ANY [INTEGER](INTEGER)       [_OFFSET](_OFFSET)
 
-                  Void * in C code is also an [_OFFSET](_OFFSET)
+## **Windows API Data Structures**
 
-```
+
+|  Name         |    Description        |      Bits    |          QB64 Type | 
+| ---------------- | -------------------- | --- | -- |
+| bit          |   8 bits in one byte        |  1        |         [_BIT](_BIT) | 
+| nybble    |      2 nybbles in one byte  |     4         |        [_BIT](_BIT) * 4| 
+| byte       |     1 byte (2 nybbles)         8                [_BYTE](_BYTE)
+| Boolean    |     1 byte (signed/unsigned)   8                [_BYTE](_BYTE)
+| CharA(FunctA)|   [ASCII](ASCII) character   |          8([LEN](LEN)(buffer)) |   [_BYTE](_BYTE)
+| WORD        |    2 bytes              |      16         |        [INTEGER](INTEGER)| 
+| CharW(FunctW) |  [Unicode](Unicode) wide character |    16([LEN](LEN)(buffer)\2)|  [INTEGER](INTEGER)| 
+| DWORD        |   4 bytes         |           32     |            [LONG](LONG)| 
+| QWORD     |      8 bytes         |           64      |           [_INTEGER64](_INTEGER64)| 
+| LP or hwnd  |    Short or Long Pointer  |    ANY [INTEGER](INTEGER)   |     [_OFFSET](_OFFSET)| 
+
+                  
+**NOTE:** '*Void* _*_' in C code is also an [_OFFSET](_OFFSET)
+
+
 
 - See [Windows Data Types](https://docs.microsoft.com/pt-pt/windows/win32/winprog/windows-data-types?redirectedfrom=MSDN)
 
