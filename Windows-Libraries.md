@@ -1194,7 +1194,7 @@ NEXT
 
 >  *Note:* The Font Dialog name will not normally have descriptions such as Regular, Bold, Italics or (TrueType) so it ignores them.
 
-> **[GDI Tools Font Guidlines](http://www.functionx.com/win32/Lesson14.htm)**
+> **[GDI Tools Font Guidlines](https://docs.microsoft.com/en-us/windows/win32/gdi/fonts-and-text)**
 
 ## Registered Fonts
 
@@ -1408,7 +1408,7 @@ Code courtesy of Michael Calkins
 
 > Function *joyGetPosEx* allows for more buttons and dual analog multiple sticks
 
-```text
+```vb
 
 DECLARE DYNAMIC LIBRARY "winmm"
     FUNCTION joyGetNumDevs% () ' Number of joysticks supported on system
@@ -1452,7 +1452,7 @@ LOOP UNTIL INKEY$ <> ""
 ```
 Code courtesy of Unseenmachine
 
-```text
+```vb
 
 DECLARE DYNAMIC LIBRARY "winmm"
     FUNCTION joyGetNumDevs% () ' Number of joysticks supported on system
