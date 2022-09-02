@@ -66,7 +66,7 @@ END SUB * *
 
 **This SUB program can also be [$INCLUDE]($INCLUDE) with any program!**
 
-*SUB Explanation:* b$ and d$ assemble the entire string of data to create a bitmap file. Some of the bitmap header info is placed later using a [MID$ (statement)](MID$ (statement)) to add final header numerical data converted to [ASCII](ASCII) characters by [MKI$](MKI$) or [MKL$](MKL$). 
+*SUB Explanation:* b$ and d$ assemble the entire string of data to create a bitmap file. Some of the bitmap header info is placed later using a [MID$ (statement)](MID$-(statement)) to add final header numerical data converted to [ASCII](ASCII) characters by [MKI$](MKI$) or [MKL$](MKL$). 
 
 After the header, the [RGB](RGB) color settings are created using [ASCII](ASCII) characters read backwards as Blue, Green, Red and CHR$(0) as a spacer. [MKL$](MKL$) places the byte values in reverse order too. Bitmaps and icons require that format. [LEFT$](LEFT$) trims off the [_ALPHA](_ALPHA) byte.
 

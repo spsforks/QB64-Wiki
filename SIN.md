@@ -126,4 +126,4 @@ The value of 2 &pi; is used to determine the sec! multiplier that determines the
 * [ATN](ATN) (arctangent)
 * [TAN](TAN) (tangent)
 * [Mathematical Operations](Mathematical-Operations)
-* [Mathematical_Operations#Derived_Mathematical_Functions](Mathematical-Operations#Derived-Mathematical-Functions)
+* [Mathematical Operations](Mathematical-Operations)

@@ -795,7 +795,7 @@ To enable keyboard interrupts: OUT 33, 128.
 
 * [INP](INP), [OUT](OUT)
 
-* [Screen Memory](Screen Memory)
+* [Screen Memory](Screen-Memory)
 
 
 

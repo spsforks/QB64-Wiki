@@ -12,7 +12,7 @@ The keywords listed here are not supported in QB64. QB64 is meant to be compatib
 * FILEATTR
 * FRE
 * IOCTL, IOCTL$
-* [OPEN](OPEN) with devices like **LPT, CON, KBRD**, and other devices is not supported. [LPRINT](LPRINT) and [OPEN COM](OPEN COM) are supported.
+* [OPEN](OPEN) with devices like **LPT, CON, KBRD**, and other devices is not supported. [LPRINT](LPRINT) and [OPEN COM](OPEN-COM) are supported.
 * ON PEN, PEN (statement), PEN (function)
 * ON PLAY(n), PLAY(n) ON/OFF/STOP. ([PLAY](PLAY) music is supported.)
 * ON UEVENT
@@ -55,7 +55,7 @@ Printing:
 
 Port access:
 
-* [OPEN COM](OPEN COM)
+* [OPEN COM](OPEN-COM)
 
 File locking:
 
@@ -64,7 +64,7 @@ File locking:
 
 ## Reference
 
-* [QB64 FAQ](QB64_FAQ)
+* [QB64 FAQ](QB64-FAQ)
 
 
 

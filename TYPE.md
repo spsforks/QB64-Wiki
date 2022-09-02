@@ -226,4 +226,4 @@ GET (0, 0)-(BMPHead.PWidth - 1, BMPHead.PDepth - 1), Image(48) 'indexed for 4 BP
 * [GET](GET), [PUT](PUT), [BINARY](BINARY)
 * [GET (graphics statement)](GET-(graphics-statement)), [PUT (graphics statement)](PUT-(graphics-statement))
 * [LEN](LEN), [LOF](LOF), [EOF](EOF)
-* [Bitmaps](Bitmaps), [Creating_Icon_Bitmaps#Icon_to_Bitmap_Conversion_Function](Creating-Icon-Bitmaps#Icon-to-Bitmap-Conversion-Function)
+* [Bitmaps](Bitmaps), [Creating Icon Bitmaps](Creating-Icon-Bitmaps)

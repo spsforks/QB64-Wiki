@@ -819,7 +819,7 @@ Use your own existing file name and path in this procedure.
 
 ## Focus
 
->  **Sets Focus on program with *SetForegroundWindow* after maximizing a minimized program when Shift+A is pressed.** (See [Windows-Libraries#Top_Most_Window](Windows_Libraries#Top_Most_Window))
+>  **Sets Focus on program with *SetForegroundWindow* after maximizing a minimized program when Shift+A is pressed.** (See [Windows Libraries](Windows-Libraries))
 
 ```vb
 
@@ -874,7 +874,7 @@ LOOP
 ```
 Adapted by Ted Weissgerber from code by Dav
 
-The *[Windows_Libraries#Window Focus](Windows-Libraries#Window Focus)* function finds the process currently in focus. See: [Windows_Libraries#Hot_Keys_.28maximize.29](Windows-Libraries#Hot_Keys_.28maximize.29)
+The *[Windows Libraries](Windows-Libraries)* function finds the process currently in focus. See: [Windows Libraries](Windows-Libraries)
 
 >  **Always brings unfocused or minimized program to the top with focus when Shift+A hotkey combination is pressed.**
 
@@ -994,7 +994,7 @@ Code by Galleon
 
 ## Font Dialog Box
 
-This dialog box does not return the actual font file name. Refer to the [Windows_Libraries#Registered_Fonts](Windows-Libraries#Registered_Fonts) procedure below this one.
+This dialog box does not return the actual font file name. Refer to the [Windows Libraries](Windows-Libraries) procedure below this one.
 
 ```vb
 
@@ -1164,7 +1164,7 @@ Code by Michael Calkins and Ted Weissgerber
 
 **Warning! This dialog box may error for no apparent reason! See [http://msdn.microsoft.com/en-us/library/windows/desktop/ms646916(v=vs.85).aspx CommDlgExtendedError] for more info!**
 
->  *Snippet:* Shows how to compare a Font Dialog Box request with [STRING](STRING) file data created by the [Windows_Libraries#Registered_Fonts](Windows-Libraries#Registered_Fonts) below:
+>  *Snippet:* Shows how to compare a Font Dialog Box request with [STRING](STRING) file data created by the [Windows Libraries](Windows-Libraries) below:
 
 ```text
 
@@ -1401,11 +1401,11 @@ END FUNCTION
 ```
 Code courtesy of Michael Calkins
 
-> *Note:* The names used in a Font Dialog Box and the actual file names are saved to the *F0NTList.INF*(name uses zero) file to be compared with user entries. To check for *Bold* and *Italics* or combined types of font requests see [Windows_Libraries#Font_Dialog_Box](Windows-Libraries#Font_Dialog_Box) above.
+> *Note:* The names used in a Font Dialog Box and the actual file names are saved to the *F0NTList.INF*(name uses zero) file to be compared with user entries. To check for *Bold* and *Italics* or combined types of font requests see [Windows Libraries](Windows-Libraries) above.
 
 **Note: The above procedure only reads the Registry. Edit or alter the Registry at your own peril!**
 
-[Windows Registry Access](Windows Registry Access)
+[Windows Registry Access](Windows-Registry-Access)
 
 ## Game Pad
 
@@ -1715,7 +1715,7 @@ LOOP
 ```
 Code courtesy of Dav
 
-> **Note:** Virtual Hot keys can be used when a QB64 program is **not in focus** too! See **[Windows_Libraries#Focus](Windows_Libraries#Focus)** to bring a QB64 program into focus.
+> **Note:** Virtual Hot keys can be used when a QB64 program is **not in focus** too! See **[Windows Libraries](Windows-Libraries)** to bring a QB64 program into focus.
 
 ```text
 
@@ -1914,7 +1914,7 @@ END
 ```
 Code by Michael Calkins
 
-> *Note:* In QB64 the number pad lock does not affect the [INP](INP)(&H60) release code returns of the [extended keys](extended keys) like it did in QBasic.
+> *Note:* In QB64 the number pad lock does not affect the [INP](INP)(&H60) release code returns of the [extended keys](extended-keys) like it did in QBasic.
 
 ## Message Box
 
@@ -2325,7 +2325,7 @@ END FUNCTION
 
 ## Top Most Window
 
->  This Windows only procedure will make the program window always stay on top of other windows, but not always in focus. (See [Windows_Libraries#Focus](Windows-Libraries#Focus))
+>  This Windows only procedure will make the program window always stay on top of other windows, but not always in focus. (See [Windows Libraries](Windows-Libraries))
 
 ```vb
 
@@ -2394,7 +2394,7 @@ Adapted from code by Michael Calkins
 
 > When the window is moved to a position, [_SCREENCLICK](_SCREENCLICK) can be used to focus on the program window.
 
-***[Windows_Libraries#Focus](Windows_Libraries#Focus)* will not work with the *SetWindowPos*!**
+***[Windows Libraries](Windows-Libraries)* will not work with the *SetWindowPos*!**
 
 [http://msdn.microsoft.com/en-us/library/ms633545(v=vs.85) http://msdn.microsoft.com/en-us/library/ms633545(v=vs.85)]
 
@@ -2577,7 +2577,7 @@ Adapted from code by Michael Calkins
 
 > *Note:* [CHR$](CHR$)(0) could actually be added to the original title string and it wouldn't hurt anything. Compared values are [_OFFSET](_OFFSET)s.
 
-**See [Windows_Libraries#Focus](Windows-Libraries#Focus) on program.**
+**See [Windows Libraries](Windows-Libraries) on program.**
 
 ## Windows Menu
 
@@ -3185,6 +3185,6 @@ Code courtesy of Dav
 * [DECLARE LIBRARY](DECLARE-LIBRARY), [BYVAL](BYVAL), [ALIAS](ALIAS)
 * [_OFFSET](_OFFSET), [_OFFSET-(function)](_OFFSET-(function)) (lp, ptr and p names)
 * [SDL Libraries](SDL-Libraries), [DLL Libraries](DLL-Libraries), [C Libraries](C-Libraries)
-* [Libraries#C++_Variable_Types](Libraries#C++_Variable_Types)
+* [Libraries](Libraries)
 * [VB Script](VB-Script)
 * [Windows Printer Settings](Windows-Printer-Settings)

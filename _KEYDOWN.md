@@ -21,7 +21,7 @@ The **_KEYDOWN** function returns whether modifying keys like CTRL, ALT, SHIFT, 
 
          **0-255**: [ASCII](ASCII) values (Refer to [http://en.wikipedia.org/wiki/Code_page_437 CP437])
 
-         **256-65535**: [ASCII#Two Byte Codes](ASCII#Two Byte Codes) character codes (unaffected by SHIFT/ALT/CTRL modifiers)
+         **256-65535**: [ASCII](ASCII) character codes (unaffected by SHIFT/ALT/CTRL modifiers)
                   Use [CVI](CVI) to convert ASCII 2-byte codes to _KEYDOWN values.
 
 '                                **_KEYDOWN Keyboard Values**

@@ -179,4 +179,4 @@ END
 * [Libraries](Libraries)
 * [Windows Libraries](Windows-Libraries)
 * [Windows Registry Access](Windows-Registry-Access)
-* [Windows Libraries#Windows User](Windows-Libraries#Windows User)
+* [Windows Libraries](Windows-Libraries)

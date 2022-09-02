@@ -87,4 +87,4 @@ END SUB
 * [ATN](ATN) (arctangent)
 * [Mathematical Operations](Mathematical-Operations)
 * [Text Using Graphics](Text-Using-Graphics)
-* [Mathematical_Operations#Derived_Mathematical_Functions](Mathematical-Operations#Derived-Mathematical-Functions)
+* [Mathematical Operations](Mathematical-Operations)

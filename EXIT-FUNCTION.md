@@ -9,8 +9,8 @@ The **EXIT FUNCTION** statement can be used to exit the [FUNCTION](FUNCTION) bef
 
 ## See Also
  
-* [EXIT SUB](EXIT SUB)
-* [EXIT DO](EXIT DO), [EXIT FOR](EXIT FOR)
+* [EXIT SUB](EXIT-SUB)
+* [EXIT DO](EXIT-DO), [EXIT FOR](EXIT-FOR)
 
 
 

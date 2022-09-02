@@ -24,4 +24,4 @@
 * [GOSUB](GOSUB), [RETURN](RETURN)
 * [DATA](DATA), [RESTORE](RESTORE)
 * [ON ERROR](ON-ERROR), [RESUME](RESUME), [NEXT](NEXT)
-* [Line_number](Line_number)
+* [Line Number](Line-Number)

@@ -7,7 +7,7 @@ The **comma** is used to [TAB](TAB) the cursor after a [PRINT](PRINT) statement'
 * Commas in [PRINT](PRINT) statements [TAB](TAB) space values up to 15 column places with column 57 being the maximum per row. 
 * A comma following the prompt text in an [INPUT](INPUT) statement does not display a question mark. A [Semicolon](Semicolon) or no prompt does.
 * Commas are also used between [INPUT](INPUT) statement variables when more than one input is required.
-* [LINE INPUT](LINE-INPUT) can use a comma or [semicolon](semicolon) after the prompt text. Neither will display a [question mark](question mark).
+* [LINE INPUT](LINE-INPUT) can use a comma or [semicolon](semicolon) after the prompt text. Neither will display a [question mark](question-mark).
 * Commas are used as [argument](argument) separators in many kinds of QBasic statements and [SUB](SUB) or [FUNCTION](FUNCTION) parameter lists.
 * [WRITE](WRITE) statements use commas to separate values printed to the screen or sent to a file **without tab spacing them**.
 * **Literal numerical values entered into program code, [DATA](DATA), files or user [INPUT](INPUT) cannot contain comma separators!**

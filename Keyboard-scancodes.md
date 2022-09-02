@@ -30,14 +30,14 @@
 '  *    -   *           32              *   -   -    *    +75 +80 +77   +82       +83  13 
 '                                                                   *     48        46*
 '
-' **    *Italics* = LCase/NumLock On  [INKEY$#Two_Byte_Combinations](INKEY$#Two_Byte_Combinations),  + = 2 Byte: CHR$(0) + CHR$(code)**
+' **    *Italics* = LCase/NumLock On  [INKEY$](INKEY$),  + = 2 Byte: CHR$(0) + CHR$(code)**
 '
 
 ```
 
 
 GO TO: [Keyboard scancodes](Keyboard-scancodes), 
-[Keyboard_scancodes#ON_KEY_Events](Keyboard_scancodes#ON_KEY_Events),  [Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes](Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes), [Keyboard_scancodes#DEVICES_Button](Keyboard_scancodes#DEVICES_Button), [Keyboard_scancodes#Windows_Virtual_Codes](Keyboard_scancodes#Windows_Virtual_Codes)
+[Keyboard Scancodes](Keyboard-Scancodes),  [Keyboard Scancodes](Keyboard-Scancodes), [Keyboard Scancodes](Keyboard-Scancodes), [Keyboard Scancodes](Keyboard-Scancodes)
 
 ## INP and _CINP Scan Codes
 
@@ -73,7 +73,7 @@ GO TO: [Keyboard scancodes](Keyboard-scancodes),
 [http://www.quadibloc.com/comp/scan.htm Keyboard Scan Codes]........... [http://www.win.tue.nl/~aeb/linux/kbd/scancodes.html Other Keyboards]
 
 
-GO TO:[Keyboard_scancodes#INKEY.24_Codes](Keyboard_scancodes#INKEY.24_Codes), [Keyboard_scancodes#ON_KEY_Events](Keyboard_scancodes#ON_KEY_Events), [Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes](Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes), [Keyboard_scancodes#DEVICES_Button](Keyboard_scancodes#DEVICES_Button), [Keyboard_scancodes#Windows_Virtual_Codes](Keyboard_scancodes#Windows_Virtual_Codes)
+GO TO:[Keyboard Scancodes](Keyboard-Scancodes), [Keyboard Scancodes](Keyboard-Scancodes), [Keyboard Scancodes](Keyboard-Scancodes), [Keyboard Scancodes](Keyboard-Scancodes), [Keyboard Scancodes](Keyboard-Scancodes)
 
 ## ON KEY Events
 
@@ -109,7 +109,7 @@ GO TO:[Keyboard_scancodes#INKEY.24_Codes](Keyboard_scancodes#INKEY.24_Codes), [K
 ```
 
 
-GO TO:[Keyboard_scancodes#INKEY.24_Codes](Keyboard_scancodes#INKEY.24_Codes), [Keyboard scancodes](Keyboard-scancodes), [Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes](Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes), [Keyboard_scancodes#DEVICES_Button](Keyboard_scancodes#DEVICES_Button), [Keyboard_scancodes#Windows_Virtual_Codes](Keyboard_scancodes#Windows_Virtual_Codes)
+GO TO:[Keyboard Scancodes](Keyboard-Scancodes), [Keyboard scancodes](Keyboard-scancodes), [Keyboard Scancodes](Keyboard-Scancodes), [Keyboard Scancodes](Keyboard-Scancodes), [Keyboard Scancodes](Keyboard-Scancodes)
 
 ## KEYHIT and KEYDOWN Codes
 
@@ -144,12 +144,12 @@ GO TO:[Keyboard_scancodes#INKEY.24_Codes](Keyboard_scancodes#INKEY.24_Codes), [K
 ```
 
 
-GO TO: [Keyboard_scancodes#INKEY.24_Codes](Keyboard_scancodes#INKEY.24_Codes), [Keyboard scancodes](Keyboard-scancodes), [Keyboard_scancodes#ON_KEY_Events](Keyboard_scancodes#ON_KEY_Events), [Keyboard_scancodes#DEVICES_Button](Keyboard_scancodes#DEVICES_Button), [Keyboard_scancodes#Windows_Virtual_Codes](Keyboard_scancodes#Windows_Virtual_Codes)
+GO TO: [Keyboard Scancodes](Keyboard-Scancodes), [Keyboard scancodes](Keyboard-scancodes), [Keyboard Scancodes](Keyboard-Scancodes), [Keyboard Scancodes](Keyboard-Scancodes), [Keyboard Scancodes](Keyboard-Scancodes)
 
 >  Most keys use [ASCII](ASCII) key code values. Function key code values can be calculated using the [INKEY$](INKEY$), two byte values with [CVI](CVI).
 Example: **status = _KEYDOWN(CVI(CHR$(0) + "P"))**
 
-[INKEY$#Two_Byte_Combinations](INKEY$#Two_Byte_Combinations)
+[INKEY$](INKEY$)
 
 ## [DEVICES](DEVICES) Button
 
@@ -183,8 +183,8 @@ Example: **status = _KEYDOWN(CVI(CHR$(0) + "P"))**
 
 
 
-GO TO: [Keyboard_scancodes#INKEY.24_Codes](Keyboard_scancodes#INKEY.24_Codes), [Keyboard scancodes](Keyboard-scancodes), [Keyboard_scancodes#ON_KEY_Events](Keyboard_scancodes#ON_KEY_Events), [Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes](Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes), 
-[Keyboard_scancodes#Windows_Virtual_Codes](Keyboard_scancodes#Windows_Virtual_Codes)
+GO TO: [Keyboard Scancodes](Keyboard-Scancodes), [Keyboard scancodes](Keyboard-scancodes), [Keyboard Scancodes](Keyboard-Scancodes), [Keyboard Scancodes](Keyboard-Scancodes), 
+[Keyboard Scancodes](Keyboard-Scancodes)
 
 ## Windows Virtual Codes
 
@@ -219,7 +219,7 @@ GO TO: [Keyboard_scancodes#INKEY.24_Codes](Keyboard_scancodes#INKEY.24_Codes), [
 
 
 
-GO TO: [Keyboard_scancodes#INKEY.24_Codes](Keyboard_scancodes#INKEY.24_Codes), [Keyboard scancodes](Keyboard-scancodes), [Keyboard_scancodes#ON_KEY_Events](Keyboard_scancodes#ON_KEY_Events), [Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes](Keyboard_scancodes#KEYHIT_and_KEYDOWN_Codes), [Keyboard_scancodes#DEVICES_Button](Keyboard_scancodes#DEVICES_Button), 
+GO TO: [Keyboard Scancodes](Keyboard-Scancodes), [Keyboard scancodes](Keyboard-scancodes), [Keyboard Scancodes](Keyboard-Scancodes), [Keyboard Scancodes](Keyboard-Scancodes), [Keyboard Scancodes](Keyboard-Scancodes), 
 
 ## Example Code
 

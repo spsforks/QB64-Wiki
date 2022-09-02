@@ -90,7 +90,7 @@ The **&B&** prefix denotes that an integer value is expressed in a binary base 2
 
 ## Example(s)
 
-A Decimal to Binary [STRING](STIRNG) function that does not return leading zeroes.
+A Decimal to Binary [STRING](STRING) function that does not return leading zeroes.
 
 ```vb
 

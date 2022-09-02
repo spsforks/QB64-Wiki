@@ -6,7 +6,7 @@
 * COM and LPT *Inpout32.dll* [OUT](OUT): [Port Access Libraries](Port-Access-Libraries)
 * Setting Windows environment values and changing them in the Registry: [Windows Environment](Windows-Environment)
 * SFML sound library: [SFML Library](SFML-Library)
-* Windows program [Windows_Libraries#Focus](Windows-Libraries#Focus) and [Windows_Libraries#Hot_Keys_.28maximize.29](Windows-Libraries#Hot_Keys_.28maximize.29) that do not require focus of the program.
+* Windows program [Windows Libraries](Windows-Libraries) and [Windows Libraries](Windows-Libraries) that do not require focus of the program.
 * Windows Registry Library: [Windows_Registry_Access](Windows-Registry-Access)
 * Windows or Linux SQL Database Library: [SQL Client](SQL-Client)
 

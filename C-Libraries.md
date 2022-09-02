@@ -926,4 +926,4 @@ NEXT
 * [DECLARE LIBRARY](DECLARE-LIBRARY), [BYVAL](BYVAL)
 * [_OFFSET](_OFFSET), [_OFFSET (function)](_OFFSET-(function)) (lp, ptr and p names)
 * [DLL Libraries](DLL-Libraries), [Windows Libraries](Windows-Libraries)
-* [Libraries#C++_Variable_Types](Libraries#C++_Variable_Types)
+* [Libraries](Libraries)

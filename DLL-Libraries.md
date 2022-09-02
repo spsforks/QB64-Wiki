@@ -21,7 +21,7 @@ PRINT result
 * [DECLARE DYNAMIC LIBRARY](DECLARE-DYNAMIC-LIBRARY), [BYVAL](BYVAL)
 * [_OFFSET](_OFFSET), [_OFFSET (function)](_OFFSET-(function)) (lp, ptr and p names)
 * [C Libraries](C-Libraries), [SDL Libraries](SDL-Libraries), [Windows Libraries](Windows-Libraries)
-* [Libraries#C++_Variable_Types](Libraries#C++_Variable_Types)
+* [Libraries](Libraries)
 * [Port Access Libraries](Port-Access-Libraries) (COM or LPT)
 
 **Note: QB64 requires all DLL files to either be with the program or in the C:\WINDOWS\SYSTEM32 folder!**

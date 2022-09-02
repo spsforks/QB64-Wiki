@@ -16,7 +16,7 @@
 * When **variable length strings** are PUT into RANDOM files the record length must exceed the maximum string entry by: 
   - 2 bytes are reserved for recording variable string lengths up to 32767 bytes (LEN = longest + 2) 
   - 8 bytes are reserved for recording variable string lengths exceeding 32767 bytes (LEN = longest + 8)
-* A serial communication port can also be opened for RANDOM in an [OPEN COM](OPEN COM) statement.
+* A serial communication port can also be opened for RANDOM in an [OPEN COM](OPEN-COM) statement.
 
 ## Example(s)
 

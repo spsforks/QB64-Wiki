@@ -128,4 +128,4 @@ END SUB
 * [_DEVICES](_DEVICES), [_DEVICE$](_DEVICE$)
 * [_LASTBUTTON](_LASTBUTTON), [_OS$](_OS$)
 * [Windows Environment](Windows-Environment)
-* [Windows Libraries#Windows User](Windows-Libraries#Windows-User)
+* [Windows Libraries](Windows-Libraries)

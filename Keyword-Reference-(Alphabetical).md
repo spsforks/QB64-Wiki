@@ -10,7 +10,7 @@
 * [ALIAS](ALIAS) (QB64 [DECLARE LIBRARY](DECLARE-LIBRARY) statement) denotes the actual name of an imported [FUNCTION](FUNCTION) or [SUB](SUB) procedure.
 * [AND](AND) (logical operator) is used to compare two numerical values bitwise.
 * [AND (boolean)](AND-(boolean))  conditonal operator is used to include another evaluation in an [IF...THEN](IF...THEN) or [Boolean](Boolean) statement.
-* [APPEND](APPEND) (file mode) creates a new file or allows an existing file to have data added using [WRITE-(file-statement)](WRITE (file statement)) or [PRINT (file statement)](PRINT-(file-statement))
+* [APPEND](APPEND) (file mode) creates a new file or allows an existing file to have data added using [WRITE (file statement)](WRITE-(file-statement)) or [PRINT (file statement)](PRINT-(file-statement))
 * [AS](AS) is used to denote a variable type or file number.
 * [ASC](ASC) (function) returns the [ASCII](ASCII) code number of a text [STRING](STRING) character.
 * [ASC (statement)](ASC-(statement)) (QB64 only) sets the code value of an [ASCII](ASCII) text character at a designated [STRING](STRING) position.
@@ -59,7 +59,7 @@
 
 * [DATA](DATA) (statement) creates a line of fixed program information separated by commas.
 * [DATE$](DATE$) (function) returns the present Operating System date [STRING](STRING) formatted as mm-dd-yyyy.
-* [DATE$ (statement)](DATE$ (statement)) sets the date of the Operating System using a mm-dd-yyyy [STRING](STRING) format.
+* [DATE$ (statement)](DATE$-(statement)) sets the date of the Operating System using a mm-dd-yyyy [STRING](STRING) format.
 * DECLARE (BASIC statement) declares a [SUB](SUB) or [FUNCTION](FUNCTION) procedure at the start of a program. Not required in QB64.
 * [DECLARE LIBRARY](DECLARE-LIBRARY) declares a C++, SDL or Operating System [SUB](SUB) or [FUNCTION](FUNCTION) to be used.
 * [DECLARE DYNAMIC LIBRARY](DECLARE-DYNAMIC-LIBRARY) declares DYNAMIC, CUSTOMTYPE or STATIC  library(DLL) [SUB](SUB) or [FUNCTION](FUNCTION).
@@ -111,7 +111,7 @@
 ### G
 
 * [GET](GET) (file statement) reads a file sequencially or at a specific position and returns the value as the variable type used.
-* [GET (TCP/IP statement)](GET-(TCP/IP-statement)) reads a connection port to return a value.
+* [GET (TCP/IP statement)](GET-(TCP-IP-statement)) reads a connection port to return a value.
 * [GET (graphics statement)](GET-(graphics-statement)) maps an area the current [SCREEN](SCREEN) video information and places it in an [INTEGER](INTEGER) [arrays](arrays).
 * [GOSUB](GOSUB) (statement) sends the program to a designated line label procedure in the main program.
 * [GOTO](GOTO) (statement) sends the program to a designated line number or line label in a procedure.
@@ -219,7 +219,7 @@
 * [PCOPY](PCOPY) (statement) swaps two designated memory page images when page swapping is enabled in the [SCREEN](SCREEN) statement.
 * [PEEK](PEEK) (function) returns a numerical value from a specified segment address in memory. 
 * [PEN](PEN) (function) returns requested information about the lightpen device used.
-* [PEN (statement)](PEN (statement)) enables/disables or suspends event trapping of a lightpen device.
+* [PEN (statement)](PEN-(statement)) enables/disables or suspends event trapping of a lightpen device.
 * [PLAY(n)](PLAY(n)) (function) returns the number of notes currently in the background music queue.
 * [PLAY](PLAY) (statement) uses a special [STRING](STRING) format that can produce musical tones and effects.
 * [PMAP](PMAP) (function) returns the physical or WINDOW view graphic coordinates.
@@ -437,7 +437,7 @@ Keywords beginning with underscores are QB64 specific. **To use them without the
 * [_ERRORLINE](_ERRORLINE) (function) returns the source code line number that caused the most recent runtime error.
 * [_ERRORMESSAGE$](_ERRORMESSAGE$) (function) returns a human-readable message describing the most recent runtime error.
 * [$EXEICON]($EXEICON) (Pre-Compiler [Metacommand](Metacommand)) used with a .ICO icon file name to embed the image into the QB64 executable.
-* [_EXIT (function)](_EXIT (function)) prevents a user exit and indicates if a user has clicked the close X window button or CTRL + BREAK.
+* [_EXIT (function)](_EXIT-(function)) prevents a user exit and indicates if a user has clicked the close X window button or CTRL + BREAK.
 
 ### _F
 

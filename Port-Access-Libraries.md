@@ -424,4 +424,4 @@ This unused register can be Read and Written to. You can use it to hold data for
 
 * [DECLARE DYNAMIC LIBRARY](DECLARE-DYNAMIC-LIBRARY)
 * [INP](INP), [OUT](OUT)
-* [Windows_Libraries#Windows_Ports](Windows-Libraries#Windows_Ports)
+* [Windows Libraries](Windows-Libraries)

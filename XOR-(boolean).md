@@ -2,7 +2,7 @@
 
 ## Syntax
 
-> `condition [XOR (boolean)](XOR (boolean)) condition2`
+> `condition [XOR (boolean)](XOR-(boolean)) condition2`
 
 ## Description
 

@@ -9,7 +9,7 @@
 * [$DYNAMIC]($DYNAMIC) (metacommand) defines that all arrays are dynamic or changeable in size.
 * [ERASE](ERASE) (array statement) clears a [STATIC](STATIC) array of all values and totally removes a [$DYNAMIC]($DYNAMIC) array.
 * [LBOUND](LBOUND) (array function) returns the lowest valid index (lower boundary) of an [arrays](arrays).
-* [OPTION BASE](OPTION BASE) (statement) sets the default starting index of an array to 0 or 1.
+* [OPTION BASE](OPTION-BASE) (statement) sets the default starting index of an array to 0 or 1.
 * [REDIM](REDIM) (statement) re-dimensions the number of elements in a [$DYNAMIC]($DYNAMIC)(resizeable) [arrays](arrays) and defines the type.
 * [SHARED](SHARED) (statement) designates variable values that can be shared with sub-procedures without using parameters.
 * [STATIC](STATIC) (statement) defines a variable or list of variables that will retain their values after the sub-procedure is exited.
@@ -83,7 +83,7 @@
 * [AND (boolean)](AND (boolean)) returns True if all of the arguments are True.
 * [NOT](NOT) (boolean) returns the opposite condition of an argument.
 * [OR (boolean)](OR (boolean)) returns True if one of the arguments is True.
-* [XOR (boolean)](XOR (boolean)) returns True if only one of two arguments are True.
+* [XOR (boolean)](XOR-(boolean)) returns True if only one of two arguments are True.
 
 See also: [#Logical Bitwise Operations](#Logical_Bitwise_Operations) and [Relational Operations](Relational_Operations)
 
@@ -109,7 +109,7 @@ See also: [#Logical Bitwise Operations](#Logical_Bitwise_Operations) and [Relati
 * [DOUBLE](DOUBLE) {# numerical [TYPE](TYPE)) an 8 byte floating decimal variable type with numerical values up to 15 decimal places.
 * [INTEGER](INTEGER) {% numerical [TYPE](TYPE)) a two byte variable type with values from -32768 to 32767. [_UNSIGNED](_UNSIGNED) to 65535.
 * [LONG](LONG) {& numerical [TYPE](TYPE)) Integer values can be from -2147483648 to 2147483647. [_UNSIGNED](_UNSIGNED) values to 4294967295.
-* [OPTION BASE](OPTION BASE) (statement) sets the default starting index of an [arrays](arrays) to 0 or 1.
+* [OPTION BASE](OPTION-BASE) (statement) sets the default starting index of an [arrays](arrays) to 0 or 1.
 * [REDIM](REDIM) defines and sizes a [$DYNAMIC]($DYNAMIC)(changeable) array and can define the type of value returned.
 * [SHARED](SHARED) (statement) designates variable values that can be shared with sub-procedures without using [SUB](SUB) parameters.
 * [SINGLE](SINGLE) (! numerical [TYPE](TYPE)) a 4 byte floating decimal variable type with numerical values up to 7 decimal places.
@@ -171,7 +171,7 @@ The following table describes the error codes that are reported by the **QB64** 
 * [ERR](ERR) (function) returns the error code number of the last error to occur.
 * [ERROR](ERROR) (statement) simulates a program error based on the error code number used.
 * [ERL](ERL) (function) returns the closest line number before an error occurred if the program uses them.
-* [ON ERROR](ON ERROR) (statement) [GOTO](GOTO) sends the program to a line number or label when an error occurs. Use to avoid program errors.
+* [ON ERROR](ON-ERROR) (statement) [GOTO](GOTO) sends the program to a line number or label when an error occurs. Use to avoid program errors.
 * [RESUME](RESUME) (statement) error statement sends the program to the [NEXT](NEXT) code line or a designated line number or label .
 
 See the [ERROR Codes](ERROR_Codes) reference.
@@ -181,14 +181,14 @@ See the [ERROR Codes](ERROR_Codes) reference.
 * [_AUTODISPLAY](_AUTODISPLAY) (statement) enables the automatic display of the screen image changes previously disabled by [_DISPLAY](_DISPLAY).
 * [_DELAY](_DELAY) (statement) suspends program execution for a [SINGLE](SINGLE) value of seconds down to milliseconds.
 * [_DISPLAY](_DISPLAY) (statement) turns off automatic display while only displaying the screen changes when called.
-*[_EXIT (function)](_EXIT (function)) prevents a user exit and indicates if a user has clicked the close X window button or CTRL + BREAK.
+*[_EXIT (function)](_EXIT-(function)) prevents a user exit and indicates if a user has clicked the close X window button or CTRL + BREAK.
 *[_FREETIMER](_FREETIMER) (function) returns a free TIMER number for multiple [ON TIMER(n)](ON-TIMER(n)) events.
 * [_MOUSEINPUT](_MOUSEINPUT) (function) reports any changes to the mouse status and MUST be used to read those changes.
 * [_SHELLHIDE](_SHELLHIDE) (function) returns the code sent by a program exit using [END](END) or [SYSTEM](SYSTEM) followed by an [INTEGER](INTEGER) value.
 
 * [OFF](OFF) turns event checking off and does not remember subsequent events.
 * [ON](ON) turns event checking on.
-* [ON ERROR](ON ERROR) [GOTO](GOTO) (event statement) executes when a program error occurs
+* [ON ERROR](ON-ERROR) [GOTO](GOTO) (event statement) executes when a program error occurs
 * [ON KEY(n)](ON-KEY(n)) (event statement) executes when a keypress or keypress combination occurs.
 * [ON TIMER(n)](ON-TIMER(n)) (event statement) executes when a timed event occurs. QB64 can use multiple numbered timers.
 * [ON...GOSUB](ON...GOSUB) (event statement) branches to a line number or label according to a numerical ordered list of labels.
@@ -216,10 +216,10 @@ See the [ERROR Codes](ERROR_Codes) reference.
 * [FREEFILE](FREEFILE) (file function) returns a file access number that is currently not in use.
 * [GET](GET) (file I/O statement) reads file data by byte or record positions.
 * [INPUT (file mode)](INPUT (file mode)) only [OPEN](OPEN)s existing sequential files for program INPUT.
-* [INPUT (file statement)](INPUT (file statement)) reads sequential file data that was created using PRINT # or WRITE #. 
+* [INPUT (file statement)](INPUT-(file-statement)) reads sequential file data that was created using PRINT # or WRITE #. 
 * [INPUT$](INPUT$) (function) reads a specific number of bytes from random or binary files.
 * [KILL](KILL) (statement) deletes a specified file without asking for verification. Remove empty folders with [RMDIR](RMDIR).
-* [LINE INPUT (file statement)](LINE INPUT (file statement)) reads an entire text row of printed sequential file data.
+* [LINE INPUT (file statement)](LINE-INPUT-(file-statement)) reads an entire text row of printed sequential file data.
 * [LOC](LOC) (function) finds the current file location or size of a [COM](COM) port receive buffer.
 * [LOCK](LOCK) (statement) prevents access to a file.
 * [LOF](LOF) (file function) returns the size of a file in bytes.
@@ -256,7 +256,7 @@ See the [ERROR Codes](ERROR_Codes) reference.
 * [_PRINTSTRING](_PRINTSTRING) (statement) prints text or custom font strings using graphic column and row coordinate positions.
 * [_PRINTWIDTH](_PRINTWIDTH) (function) returns the width in pixels of the [_FONT](_FONT) or text [STRING](STRING) that a program will print.
 * [PRINT](PRINT) (statement) prints numeric or [STRING](STRING) expressions to the program screen.
-* [PRINT USING](PRINT USING) (statement) prints template formatted numeric or string values to the program screen.
+* [PRINT USING](PRINT-USING) (statement) prints template formatted numeric or string values to the program screen.
 * [WRITE](WRITE) (screen I/O statement) writes a comma-separated list of values to the screen.
 
 ## Game Controller Input (Joystick) 
@@ -339,7 +339,7 @@ See the [ERROR Codes](ERROR_Codes) reference.
 
 * [_CONTROLCHR](_CONTROLCHR) (statement) [OFF](OFF) allows the control characters to be used as text characters. [ON](ON)(default) can use them as commands.
 * [_CONTROLCHR (function)](_CONTROLCHR-(function))   returns the current state of _CONTROLCHR as 1 when OFF and 0 when ON.
-* [_EXIT (function)](_EXIT (function)) prevents a program user exit and indicates if a user has clicked the close X window button or CTRL + BREAK.
+* [_EXIT (function)](_EXIT-(function)) prevents a program user exit and indicates if a user has clicked the close X window button or CTRL + BREAK.
 * [_KEYDOWN](_KEYDOWN) (function) returns whether modifying keys like CTRL, ALT, SHIFT, and any other keys are pressed.
 * [_KEYHIT](_KEYHIT) (function) returns ASCII one and two byte, SDL Virtual Key and Unicode keyboard key press codes.
 * [_SCREENPRINT](_SCREENPRINT) (statement) simulates typing text into another OS program using the keyboard.
@@ -370,7 +370,7 @@ See also: [Keyboard scancodes](Keyboard_scancodes), [ASCII](ASCII) references or
 
 **QB64 also supports [$INCLUDE]($INCLUDE) text code file Libraries. QB64 does not support QLB Libraries or OBJ files.**
 
-See also: [Libraries#C++_Variable_Types](Libraries#C++_Variable_Types)
+See also: [Libraries](Libraries)
 
 ##  Logical Bitwise Operations 
 
@@ -466,7 +466,7 @@ See also: [Screen Memory](Screen_Memory) or [Using _OFFSET](Using_OFFSET)
 * [_DEVICE$](_DEVICE$) (function) returns a [STRING](STRING) expression listing device names and input types of system input devices.
 * [_DEVICEINPUT](_DEVICEINPUT) (function) returns the [_DEVICES](_DEVICES) number of an [_AXIS](_AXIS), [_BUTTON](_BUTTON) or [_WHEEL](_WHEEL) event. Mouse is normally _DEVICEINPUT(2).
 * [_DEVICES](_DEVICES) (function) returns the number of input devices found on a computer system. The mouse is normally device 2.
-* [_EXIT (function)](_EXIT (function)) prevents a program user exit and indicates if a user has clicked the close X window button or CTRL + BREAK.
+* [_EXIT (function)](_EXIT-(function)) prevents a program user exit and indicates if a user has clicked the close X window button or CTRL + BREAK.
 * [_LASTAXIS](_LASTAXIS) (function) returns the number of axis available on a specified number device listed by [_DEVICE$](_DEVICE$).
 *[_LASTBUTTON](_LASTBUTTON) (function) returns the number of buttons available on a specified number device listed by [DEVICE$](DEVICE$). 
 * [_LASTWHEEL](_LASTWHEEL) (function) returns the number of scroll wheels available on a specified number device listed by [_DEVICE$](_DEVICE$).
@@ -529,7 +529,7 @@ See also: [Screen Memory](Screen_Memory) or [Using _OFFSET](Using_OFFSET)
 * [LOC](LOC) (function) finds the current file location or size of a [COM](COM) port receive buffer.
 
 * [ON COM(n)](ON COM(n)) (event statement) branches to a line number or label when there is a value in the serial port specified.
-* [OPEN COM](OPEN COM) (statement) opens a computer serial COMmunications port.
+* [OPEN COM](OPEN-COM) (statement) opens a computer serial COMmunications port.
 * [OUT](OUT) (statement) sends values to register or port hardware addresses (emulated - limited access).
 
 * [PRINT (file statement)](PRINT_(file_statement)) writes text and numerical data to a port transmit buffer.
@@ -558,7 +558,7 @@ See also: [Screen Memory](Screen_Memory) or [Using _OFFSET](Using_OFFSET)
 * [_CONTINUE](_CONTINUE) (statement) skips the remaining lines in a control block (DO/LOOP, FOR/NEXT or WHILE/WEND)
 * [_DEST](_DEST) (statement) sets the current write image or page. All graphics will go to this image.
 * [_DEST (function)](_DEST-(function)) returns the current write destination image or page.
-* [_EXIT (function)](_EXIT (function)) prevents a user exit and indicates if a user has clicked the close X window button or CTRL + BREAK.
+* [_EXIT (function)](_EXIT-(function)) prevents a user exit and indicates if a user has clicked the close X window button or CTRL + BREAK.
 * [_SOURCE](_SOURCE) (statement) establishes the image SOURCE using a designated image handle
 * [_SOURCE (function)](_SOURCE-(function)) returns the present image _SOURCE handle value.
 * [_SHELLHIDE](_SHELLHIDE) (function) returns the code sent by a program exit using [END](END) or [SYSTEM](SYSTEM) followed by an [INTEGER](INTEGER) value.
@@ -630,7 +630,7 @@ See also: [Screen Memory](Screen_Memory) or [Using _OFFSET](Using_OFFSET)
 * [_CV](_CV) (function)  used to convert [_MK$](_MK$) [ASCII](ASCII) [STRING](STRING) values to numerical values.
 * [_MK$](_MK$) (function)  converts any numerical type into an [ASCII](ASCII) [STRING](STRING)  value that must be converted back using [_CV](_CV).
 
-* [ASC (statement)](ASC (statement)) allows a QB64 program to change a character at any position of a predefined STRING.
+* [ASC (statement)](ASC-(statement)) allows a QB64 program to change a character at any position of a predefined STRING.
 * [HEX$](HEX$) (function) returns the base 16 hexadecimal representation of an [INTEGER](INTEGER) value as a [STRING](STRING). 
 * [INSTR](INSTR) (function) searches for the first occurance of a search STRING within a string and returns the position.
 * [LCASE$](LCASE$) (function) changes the uppercase letters of a STRING to lowercase.
@@ -638,7 +638,7 @@ See also: [Screen Memory](Screen_Memory) or [Using _OFFSET](Using_OFFSET)
 * [LEN](LEN) (function) returns the number of bytes or characters in a [STRING](STRING) value.
 * [LSET](LSET) (statement) left-justifies a fixed length string expression based on the size of the STRING.
 * [LTRIM$](LTRIM$) (function) returns a string with all leading spaces removed.
-* [MID$ (statement)](MID$ (statement)) returns a portion of a string from the start position a designated number of characters.
+* [MID$ (statement)](MID$-(statement)) returns a portion of a string from the start position a designated number of characters.
 * [MKD$](MKD$) (function) converts a [DOUBLE](DOUBLE) numerical value into an 8 byte [ASCII](ASCII) [STRING](STRING) value.
 * [MKDMBF$](MKDMBF$) (function) converts a double-precision number to a string containing a value in Microsoft Binary format.
 * [MKI$](MKI$) (function) converts a numerical [INTEGER](INTEGER) value to a 2 byte [ASCII](ASCII) string value.
@@ -716,7 +716,7 @@ See also: [Downloading Files](Downloading_Files)
 * [LOCATE](LOCATE) (statement) locates the screen text row and column positions for a [PRINT](PRINT) or [INPUT](INPUT) procedure.
 * [POS](POS) (function) returns the current print cursor column position.
 * [PRINT](PRINT) (statement) prints numeric or [STRING](STRING) expressions to the program screen.
-* [PRINT USING](PRINT USING) (statement) prints template formatted numeric or string values to the program screen.
+* [PRINT USING](PRINT-USING) (statement) prints template formatted numeric or string values to the program screen.
 * [SCREEN](SCREEN) (statement) sets the screen mode of a program. No statement defaults the program to SCREEN 0 text mode.
 * [SCREEN (function)](SCREEN-(function)) returns the [ASCII](ASCII) code of a text character or the color attribute at a set text location on the screen.
 * [SPACE$](SPACE$) (function) returns a [STRING](STRING) consisting of a number of space characters.
@@ -786,7 +786,7 @@ See also: [Downloading Files](Downloading_Files)
 * [SCREEN](SCREEN) sets the screen mode of a program. No statement defaults the program to SCREEN 0 text mode.
 
 ## See Also
- [C_Libraries#Console_Window](C_Libraries#Console_Window),  [Windows Libraries](Windows-Libraries) or [Windows_Libraries#Focus](Windows_Libraries#Focus).
+ [C_Libraries#Console_Window](C_Libraries#Console_Window),  [Windows Libraries](Windows-Libraries) or [Windows Libraries](Windows-Libraries).
 
 ##  QB64 Programming Symbols 
 
@@ -856,6 +856,6 @@ See also: [Downloading Files](Downloading_Files)
 
 **Got a question about something?** 
 
-[QB64 FAQ](QB64_FAQ)
+[QB64 FAQ](QB64-FAQ)
 
 [Visit the QB64 Main Site](http://qb64.com)

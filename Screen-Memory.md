@@ -84,7 +84,7 @@ Byte offset:    0, 1               640     642     644     646     648     650  
 ## See Also
 
 * [PEEK](PEEK), [POKE](POKE)
-* [DEF SEG = 0](DEF SEG = 0)
+* [DEF SEG = 0](DEF-SEG-=-0)
 * [SCREEN](SCREEN)
 * [SCREEN (function)](SCREEN-(function))
 * [_NEWIMAGE](_NEWIMAGE) (screen pages)

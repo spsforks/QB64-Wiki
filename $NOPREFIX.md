@@ -19,5 +19,5 @@ The [$NOPREFIX]($NOPREFIX) metacommand allows all QB64 functions and statements 
 
 ## See Also
 
-* [Keyword Reference - Alphabetical](Keyword-Reference---Alphabetical)
+* [Keyword Reference - Alphabetical](Keyword-Reference-(Alphabetical)
 * [Metacommand](Metacommand)

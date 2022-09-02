@@ -26,7 +26,7 @@ cache-control: max-age=0
 ```
 
 >  Each row of text response sent is ended with a carriage return with the end of header having two. After that comes the file data.
->  It is recommended that data be loaded immediately by using a [GET (TCP/IP statement)](GET-(TCP/IP-statement)) loop so that connections are not dropped during a [_DELAY](_DELAY).
+>  It is recommended that data be loaded immediately by using a [GET (TCP/IP statement)](GET-(TCP-IP-statement)) loop so that connections are not dropped during a [_DELAY](_DELAY).
 
 >  **A "raw" Download function that downloads an image directly off of a web page using the image name on that page.**
 

@@ -1,4 +1,4 @@
-See [OPEN#File_Access_Modes](OPEN#File-Access-Modes).
+See [OPEN](OPEN).
 
 The [OUTPUT](OUTPUT) file mode is used in an [OPEN](OPEN) statement to send new data to files or ports.
 

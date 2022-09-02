@@ -98,7 +98,7 @@ QB64 currently supports Windows versions from XP to the latest version. Most Lin
 
 A: There are some things that QB64 cannot do, like direct hardware access, which makes older more advanced programs that make use of [CALL ABSOLUTE](CALL-ABSOLUTE), [INTERRUPT](INTERRUPT), [PEEK](PEEK), [POKE](POKE) and [OUT](OUT) not work properly. Although some older functionality is emulated, if your program doesn't use such statements you probably won't notice any difference between QB 4.5 and QB64 (and if you do, report it as a bug in the forums). You can expect the most common addresses for interrupts, etc. to be functioning. 
 
-See: [Keywords currently not supported by QB64](Keywords_currently_not_supported_by_QB64)
+See: [Keywords currently not supported](Keywords-currently-not-supported-by-QB64)
 
 You should be careful with **CPU usage**. QB64 is a lot faster than QBasic was and it does not have many of the size limitations that confined QBasic programming abilities. Having said that, **care must be taken to assure that programs do not hog resources.** To do that, use speed limits when possible to keep the resources used to a minimum. Also, **Monitor Task Manager** when your programs are running, as it can tell you how much or system resources are being used in different parts of a program. The following keywords can lower the impact of your programs on those resources by releasing them to other programs:
 

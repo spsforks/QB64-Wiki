@@ -126,11 +126,11 @@ CTRL + Y = CHR$(25) | ↓ | EndMedium   (EM)   | CTRL + Z = CHR$(26) | → | End
   * Character **31** designates a Unit Separator. Moves the print cursor one row down. Combination Ctrl + _
 * **QB64** can display all of the control characters without formatting the text using [_PRINTSTRING](_PRINTSTRING).
 * Characters **13** and **10** can be combined to create the **CrLf** carriage return used in files or printing. crlf$ = CHR$(13) + CHR$(10).
-* Character **16**, the data link escape(DLE) character, can designate that a control character is being sent from a [OPEN COM](OPEN COM).
+* Character **16**, the data link escape(DLE) character, can designate that a control character is being sent from a [OPEN COM](OPEN-COM).
   Example(s)
   (DLE) \<XON> \<DATA PACKET> (DLE) \<XOFF> or (DLE) \<STX> \<DATA PACKET> (DLE) \<ETX>
-* Character **17**, Device Control 1, is used with [OPEN COM](OPEN COM) to mark the start of a transmission as "XON". The character is read.
-* Character **19**, Device Control 3, is used with [OPEN COM](OPEN COM) to mark the end of a transmission as "XOFF". The character is NOT read.
+* Character **17**, Device Control 1, is used with [OPEN COM](OPEN-COM) to mark the start of a transmission as "XON". The character is read.
+* Character **19**, Device Control 3, is used with [OPEN COM](OPEN-COM) to mark the end of a transmission as "XOFF". The character is NOT read.
 * Character **26** can be used to designate the end of a file. See [EOF](EOF).
 * Character **27** **?** is returned when the **Escape** key is pressed.
 
@@ -220,7 +220,7 @@ LOOP UNTIL K$ = CHR$(27) 'escape key press exits
 * [INKEY$](INKEY$) returns both bytes when two byte keys or key combinations are pressed. The second byte = [RIGHT$](RIGHT$)(keypress$, 1)
 * If the character returned is a two byte code, [ASC](ASC) will return 0. **Warning:** ASC cannot read empty [INKEY$](INKEY$) string values!
 * In **QB64** only, [ASC](ASC)(keypress$, 2) can return the second byte code. Don't read empty string values!
-* String values returned can be compared in an [IF...THEN](IF...THEN) or [SELECT CASE](SELECT CASE) routine by using the actual string definitions such as:
+* String values returned can be compared in an [IF...THEN](IF...THEN) or [SELECT CASE](SELECT-CASE) routine by using the actual string definitions such as:
 
 > IF INKEY$ = CHR$(0) + CHR$(80) THEN row = row + 1 **or** IF INKEY$ = CHR$(0) + "P" THEN row = row + 1
 
@@ -409,7 +409,7 @@ Routine displays all keypress codes including Ctrl, Alt and Shift combinations. 
 * [_KEYHIT](_KEYHIT), [_KEYDOWN](_KEYDOWN)
 * [_MAPUNICODE](_MAPUNICODE), [_MAPUNICODE (function)](_MAPUNICODE-(function))
 * [Code Pages](Code-Pages) (Various Unicode Languages)
-* [ASC (statement)](ASC (statement)) (QB64 only)
+* [ASC (statement)](ASC-(statement)) (QB64 only)
 * [ASC](ASC), [INSTR](INSTR)
 * [CHR$](CHR$), [INKEY$](INKEY$)
 * [LEFT$](LEFT$), [MID$](MID$), [RIGHT$](RIGHT$)

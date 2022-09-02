@@ -18,4 +18,4 @@ The [MKDIR](MKDIR) statement creates a new folder (**dir**ectory) at a specified
 * [SHELL](SHELL), [CHDIR](CHDIR), [FILES](FILES)
 * [NAME](NAME), [KILL](KILL), [RMDIR](RMDIR)
 * [_DIREXISTS](_DIREXISTS)
-* [Windows_Libraries#File_Dialog_Boxes](Windows-Libraries#File-Dialog-Boxes)
+* [Windows Libraries](Windows-Libraries)

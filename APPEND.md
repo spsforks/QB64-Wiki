@@ -1,4 +1,4 @@
-See [OPEN#File_Access_Modes](OPEN#File-Access-Modes).
+See [OPEN](OPEN).
 
 [APPEND](APPEND) is used in an output type [OPEN](OPEN) statement to add data to the end of a file.
 

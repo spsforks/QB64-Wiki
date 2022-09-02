@@ -89,6 +89,6 @@ END FUNCTION
 * [RMDIR](RMDIR), [KILL](KILL)
 * [_CWD$](_CWD$), [_STARTDIR$](_STARTDIR$)
 * [_FILEEXISTS](_FILEEXISTS), [_DIREXISTS](_DIREXISTS)
-* [Windows_Libraries#File_Exist](Windows-Libraries#File-Exist)
-* [Windows_Libraries#File_Open_and_Save_Dialog](Windows-Libraries#File-Open-and-Save-Dialog)
+* [Windows Libraries](Windows-Libraries)
+* [Windows Libraries](Windows-Libraries)
 * [$CONSOLE]($CONSOLE)

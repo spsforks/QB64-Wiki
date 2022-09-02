@@ -151,8 +151,8 @@ LOOP UNTIL SC(1) = 1 ' main loop until [Esc] key (scan code 1) is pressed
 * [_KEYHIT](_KEYHIT), [_KEYDOWN](_KEYDOWN)
 * [ASC](ASC), [ASCII](ASCII)
 * [Keyboard scancodes](Keyboard-scancodes)
-* [Creating Sprite Masks](Creating-Sprite Masks)
-* [Windows_Libraries#Hot_Keys_.28maximize.29](Windows-Libraries#Hot_Keys_.28maximize.29)
+* [Creating Sprite Masks](Creating-Sprite-Masks)
+* [Windows Libraries](Windows-Libraries)
 
 ### External Links
 

@@ -6,7 +6,7 @@
 
 * **E** denotes [SINGLE](SINGLE) precision accuracy and **D** denotes [DOUBLE](DOUBLE) precision accuracy in QBasic. D and E are considered numbers!
 * To translate the notation, multiply the number preceding the letter by the value of 10 raised to the power following the letter. 
-* [PRINT USING](PRINT USING) can display the normal numerical values. You will have to use less digits than the real value.
+* [PRINT USING](PRINT-USING) can display the normal numerical values. You will have to use less digits than the real value.
 * **Note:** Naturally numerically calculating the value in QBasic would return the same value!
 * [INPUT](INPUT) WILL accept the letter E with [SINGLE](SINGLE) or [DOUBLE](DOUBLE) variables while D can only be used with [DOUBLE](DOUBLE) variables.
 

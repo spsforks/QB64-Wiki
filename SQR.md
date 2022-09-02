@@ -97,4 +97,4 @@ PRIME! How'd you find me?
 * [MOD](MOD) (integer remainder division)
 * [^](^) (exponential operator)
 * [Mathematical Operations](Mathematical-Operations)
-* [Mathematical_Operations#Derived_Mathematical_Functions](Mathematical-Operations#Derived-Mathematical-Functions)
+* [Mathematical Operations](Mathematical-Operations)

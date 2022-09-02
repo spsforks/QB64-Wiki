@@ -110,4 +110,4 @@ LOOP UNTIL INP(&H60) = 1 'escape exit
 * [ATN](ATN) (arctangent)
 * [TAN](TAN) (tangent)
 *[Mathematical Operations](Mathematical-Operations)
-* [Mathematical_Operations#Derived_Mathematical_Functions](Mathematical-Operations#Derived-Mathematical-Functions)
+* [Mathematical Operations](Mathematical-Operations)

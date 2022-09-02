@@ -1,4 +1,4 @@
-The **END SELECT** statement ends a [SELECT CASE](SELECT CASE) statement block.
+The **END SELECT** statement ends a [SELECT CASE](SELECT-CASE) statement block.
 
 ## Syntax
 

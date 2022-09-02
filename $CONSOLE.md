@@ -87,4 +87,4 @@ Max hex _INTEGER64 = FFFFFFFFFFFFFFFF with 16 digits =-1
 * [_CONSOLE](_CONSOLE)
 * [$SCREENHIDE]($SCREENHIDE), [$SCREENSHOW]($SCREENSHOW) (QB64 [Metacommand](Metacommand)s)
 * [_SCREENHIDE](_SCREENHIDE), [_SCREENSHOW](_SCREENSHOW)
-* [C_Libraries#Console_Window](C-Libraries#Console-Window)
+* [C Libraries](C-Libraries)

@@ -266,4 +266,4 @@ AND mask size: 64 bytes with a 16 bit padder.
 * [_ICON](_ICON)
 * [Creating Sprite Masks](Creating-Sprite-Masks)
 * [Bitmaps](Bitmaps), [GIF Images](GIF-Images)
-* [Resource_Table_extraction#Extract_Icon](Resource-Table-extraction#Extract_Icon)
+* [Resource Table Extraction](Resource-Table-Extraction)

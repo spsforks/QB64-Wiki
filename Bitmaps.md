@@ -365,5 +365,5 @@ The actual 4 bit or 8 bit image is read as [ASCII](ASCII) color attributes from 
 * [TYPE](TYPE), [_ICON](_ICON)
 * [Icons and Cursors](Icons-and-Cursors)
 * [GIF Images](GIF-Images)
-* [Resource_Table_extraction#Extract_Icon](Resource-Table-extraction#Extract_Icon)
+* [Resource Table Extraction](Resource-Table-Extraction)
 * [$EXEICON]($EXEICON) (Icons viewed in Windows Explorer)

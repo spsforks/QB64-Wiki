@@ -37,7 +37,7 @@ First we need to create a place in memory for the array. To do that we have to t
 
 How good are you at counting from zero? This might seem like a simple question, but think about this. How many elements would we have if they were numbered 0 through 10? If you said 11, then you were correct. Some people have problems counting when 0 is involved so Basic has an option to allow all arrays to start at 1. 
 
-[OPTION BASE](OPTION_BASE) 1 will cause all array dimensions to begin at 1, [OPTION BASE](OPTION_BASE) 0 will cause all dimensions to begin at 0. The default when just using the maximum array size is 0. Use whatever option you are comfortable with.
+[OPTION BASE](OPTION-BASE) 1 will cause all array dimensions to begin at 1, [OPTION BASE](OPTION-BASE) 0 will cause all dimensions to begin at 0. The default when just using the maximum array size is 0. Use whatever option you are comfortable with.
 
 Arrays in QuickBASIC 4.5 and QBasic are limited to 32767 elements, while arrays in **QB64** are limited to 2147483647 elements (over 2 billion). When the 64-bit version of QB64 is implemented 9223372036854775807 elements will be the limit (but only on 64-bit systems).
 
@@ -51,7 +51,7 @@ DIM Array(100) AS INTEGER
 
 ```
 
-An array starts at element 0 unless changed by [OPTION BASE](OPTION BASE) 1 (which can set the start at 1), you can also define the start and end area by [DIM](DIM)ensioning within a range.
+An array starts at element 0 unless changed by [OPTION BASE](OPTION-BASE) 1 (which can set the start at 1), you can also define the start and end area by [DIM](DIM)ensioning within a range.
 
 [DIM](DIM)ensioning with a range is possible also by using TO between the minimum and  highest elements. Arrays can start and end at any element(index) value up to 32767. **QB64** allows larger array sizes! 
 
@@ -132,7 +132,7 @@ The memory segment address of the array is defined in [DEF SEG](DEF-SEG).
 
 ```
 
-NOTE: If [OPTION BASE](OPTION BASE) 1 is used change the 0 to 1. The array start index can be changed when some other data is indexed in the array.
+NOTE: If [OPTION BASE](OPTION-BASE) 1 is used change the 0 to 1. The array start index can be changed when some other data is indexed in the array.
 
 ### Multi-Dimensional Arrays
 
@@ -225,7 +225,7 @@ Arrays can be sorted numerically or alphabetically using various sorting routine
 
 Since variables and arrays exist in memory, data is lost when a program closes. To preserve program data you must either create a permanent [DATA](DATA) field or save the data to files.
 
-The next time a program is used, it can [OPEN](OPEN) that file and quickly restore all of the array data using a loop or **QB64** can [GET](GET) the entire file's data in one GET. Use [LINE INPUT (file statement)](LINE INPUT (file statement)) # to set the array sizes by counting the number of data rows in a file if you used a [WRITE](WRITE) **CSV**(comma separated values) or a [PRINT (file statement)](PRINT-(file-statement)) # sequencial file. The number of records in a [TYPE](TYPE) or [FIELD](FIELD) defined [RANDOM](RANDOM) access file can be found by dividing the record size into the [LOF](LOF). You may want to make the array slightly larger for new entries.
+The next time a program is used, it can [OPEN](OPEN) that file and quickly restore all of the array data using a loop or **QB64** can [GET](GET) the entire file's data in one GET. Use [LINE INPUT (file statement)](LINE-INPUT-(file-statement)) # to set the array sizes by counting the number of data rows in a file if you used a [WRITE](WRITE) **CSV**(comma separated values) or a [PRINT (file statement)](PRINT-(file-statement)) # sequencial file. The number of records in a [TYPE](TYPE) or [FIELD](FIELD) defined [RANDOM](RANDOM) access file can be found by dividing the record size into the [LOF](LOF). You may want to make the array slightly larger for new entries.
 
 ### Image Arrays
 
@@ -249,7 +249,7 @@ END
 
 **Note: QB64 can [GET (graphics statement)](GET-(graphics-statement)) the entire SCREEN 12 area into one array!**
 
-See also: [Creating Sprite Masks](Creating_Sprite_Masks)
+See also: [Creating Sprite Masks](Creating-Sprite-Masks)
 
 ### SHARED Arrays
 

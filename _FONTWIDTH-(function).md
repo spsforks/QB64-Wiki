@@ -1,8 +1,8 @@
-The [_FONTWIDTH (function)](_FONTWIDTH (function)) function returns the point-size width of a monospace font.
+The [_FONTWIDTH (function)](_FONTWIDTH-(function)) function returns the point-size width of a monospace font.
 
 ## Syntax
 
-> *result&* = [_FONTWIDTH (function)](_FONTWIDTH (function))(fontHandle&)
+> *result&* = [_FONTWIDTH (function)](_FONTWIDTH-(function))(fontHandle&)
 
 ## Description
 
