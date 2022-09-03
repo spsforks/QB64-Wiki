@@ -23,7 +23,6 @@ QB64 is a modern extended BASIC programming language that retains QBasic / Quick
 
 ## Articles and Tutorials
 
-* [Terry Ritchie's QB64 Game Programming](http://www.qb64sourcecode.com)
 * [School Freeware series on QB64 (YouTube)](https://www.youtube.com/watch?v=hE-Voij5k5Q&list=PLF6199808BD4901E1)
 * [Arrays](Arrays)
 * [ASCII](ASCII)
