@@ -2,7 +2,7 @@ QB64 is a modern extended BASIC programming language that retains QBasic / Quick
 
 ## Getting started
 
-* Grab the latest version of QB64 from our active [GitHub repo](https://github.com/QB64Official/qb64/releases/latest).
+* Grab the latest version of QB64 from [QB64.com](https://qb64.com).
 
 ### FAQ
 
