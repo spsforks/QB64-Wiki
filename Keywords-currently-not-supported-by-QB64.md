@@ -1,7 +1,7 @@
 The keywords listed here are not supported in QB64. QB64 is meant to be compatible with **QB 4.5 or lower** versions. **PDS (7.1) is not supported**. Older code that uses these keywords won't generate errors, as these are ignored by the compiler.
 
 * [ALIAS](ALIAS) (supported in [DECLARE LIBRARY](DECLARE-LIBRARY) only)
-* [ANY](ANY)
+* ANY (See [DECLARE LIBRARY](DECLARE-LIBRARY))
 * [BYVAL](BYVAL) (supported in [DECLARE LIBRARY](DECLARE-LIBRARY) only)
 * CALLS
 * CDECL
@@ -65,7 +65,3 @@ File locking:
 ## Reference
 
 * [QB64 FAQ](QB64-FAQ)
-
-
-
-
