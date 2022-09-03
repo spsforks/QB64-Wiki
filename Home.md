@@ -8,44 +8,44 @@ QB64 is a modern extended BASIC programming language that retains QBasic / Quick
 
 * [QB64 FAQ](QB64-FAQ)
 
-### Get in touch
+### Get In Touch
 
-* [Official QB64 Discord Server Invitation](https://discord.gg/A3HmUe2mv8)
+* [Official Discord Server Invitation](https://discord.gg/A3HmUe2mv8)
 
 ## Keywords
 
 * [Keywords (Alphabetical)](Keyword-Reference---Alphabetical)
 * [Keyword Reference (By Usage)](Keyword-Reference---By-Usage)
 
-### Known issues
+### Known Issues
 
-* [Keywords currently not supported by QB64](Keywords-currently-not-supported-by-QB64)
+* [Keywords currently not supported](Keywords-currently-not-supported-by-QB64)
 
 ## Articles and Tutorials
 
-* [School Freeware series on QB64 (YouTube)](https://www.youtube.com/watch?v=hE-Voij5k5Q&list=PLF6199808BD4901E1)
+* [*School Freeware* Video Tutorial Series (youtube.com)](https://www.youtube.com/watch?v=hE-Voij5k5Q&list=PLF6199808BD4901E1)
 * [Arrays](Arrays)
 * [ASCII](ASCII)
 * [Binary](Binary)
 * [Boolean](Boolean)
 * [_CLIPBOARD$](_CLIPBOARD$)
-* [Converting Bytes to Bits](Converting-Bytes-to-Bits)
+* [Converting Bytes To Bits](Converting-Bytes-to-Bits)
 * [Console Window](Console-Window)
 * [Controller Devices](Controller-Devices) (Keyboard, Mouse, Joystick, Gamepad)
 * [Downloading Files](Downloading-Files) (TCP/IP)
 * [Windows Environment](Windows-Environment)
-* [Hardware images](Hardware-images)
+* [Hardware Images](Hardware-images)
 * [Images](Images)
-* [Keyboard scancodes](Keyboard-scancodes)
+* [Keyboard Scan Codes](Keyboard-Scancodes)
 * [Libraries](Libraries) ([C Libraries](C-Libraries), [Windows Libraries](Windows-Libraries), [DLL Libraries](DLL-Libraries))
 * [Mathematical Operations](Mathematical-Operations)
 * [PDS (7.1) Procedures](PDS-(7.1)-Procedures)
 * [Port Access Libraries](Port-Access-Libraries)
-* [QB 4.5 Library Ports For QB64](QB-4.5-Library-Ports-For-QB64)
+* [QB 4.5 Library Ports](QB-4.5-Library-Ports-For-QB64)
 * [Relational Operations](Relational-Operations)
-* [Line numbers](Line-numbers)
-* [Line number](Line-number)
-* [Resource Table extraction](Resource-Table-extraction)
+* [Line Numbers](Line-numbers)
+* [Easily Remove Line Numbers](Line-number)
+* [Resource Table Extraction](Resource-Table-extraction)
 * [Screen Memory](Screen-Memory)
 * [Text Using Graphics](Text-Using-Graphics)
 * [Variable Types](Variable-Types)
