@@ -889,7 +889,7 @@ See Also: [C Libraries](C-Libraries), [Windows Libraries](Windows-Libraries) or 
 
 ## QB64 Programming Symbols
 
-*[Note: All symbols below can also be used inside of literal quoted strings except for quotation marks.]*
+*Note: All symbols below can also be used inside of literal quoted strings except for quotation marks.*
 
 ### Print, Input or File Formatting
 
