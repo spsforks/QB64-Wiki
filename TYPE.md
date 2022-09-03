@@ -1,40 +1,36 @@
-**TYPE** definitions are used to create variables that can hold more than one element.
+**[TYPE](TYPE)** definitions are used to create variables that can hold more than one element.
 
 ## Syntax
 
-> **TYPE** typename
-> element-name1 AS type
-> element-name2 AS type
-> .
-> .
-> .
-> element-nameN AS type
-> **END TYPE**
+> **[TYPE](TYPE)** typename
+>>     element-name1 AS type
+>>     element-name2 AS type
+>>     .
+>>     element-nameN AS type
+> **[END](END) [TYPE](TYPE)**
 
-> **TYPE** typename
-> AS type element-list1
-> AS type element-list2
-> .
-> .
-> .
-> AS type element-listN
-> **END TYPE**
+> **[TYPE](TYPE)** typename
+>>     AS type element-list1
+>>     AS type element-list2
+>>     .
+>>     AS type element-listN
+> **[END](END) [TYPE](TYPE)**
 
 ## Description
 
 * Typename is an undefined type name holder as it can hold any variable types.
-* TYPE definitions are usually placed in the main module before the start of the program code execution.
-* TYPE definitions cam also be placed in [SUB](SUB) or [FUNCTION](FUNCTION) procedures.
-* TYPE definitions cannot contain Array variables. Arrays can be [DIM](DIM)ensioned as a TYPE definition.
-* TYPE definitions cannot be inside of another TYPE definition, but variables can be defined AS another type.(See Example 4)
-* TYPE definitions must be ended with [END TYPE](END-TYPE).
-* A TYPE variable must be assigned to the type after it is defined. Array variables are allowed.
-* Type variables must be defined in every SUB or FUNCTION unless the type variable is [DIM](DIM)ensioned as [SHARED](SHARED).
-* Type variables use DOT variable names to read or write specific values. They do not use type suffixes as they can hold ANY variable type values! The name before the dot is the one you defined after the type definition and the name after is the variable name used inside of the TYPE. The name of the dimensioned type variable alone can be used to [PUT](PUT) # or [GET](GET) # all of the data at once!
+* [TYPE](TYPE) definitions are usually placed in the main module before the start of the program code execution.
+* [TYPE](TYPE) definitions cam also be placed in [SUB](SUB) or [FUNCTION](FUNCTION) procedures.
+* [TYPE](TYPE) definitions cannot contain Array variables. Arrays can be [DIMensioned](DIM) as a TYPE definition.
+* [TYPE](TYPE) definitions cannot be inside of another [TYPE](TYPE) definition, but variables can be defined AS another type.(See Example 4)
+* [TYPE](TYPE) definitions must be ended with [END](END) [TYPE](TYPE).
+* A [TYPE](TYPE) variable must be assigned to the type after it is defined. Array variables are allowed.
+* Type variables must be defined in every SUB or FUNCTION unless the type variable is [DIMensioned](DIM) as [SHARED](SHARED).
+* Type variables use DOT variable names to read or write specific values. They do not use type suffixes as they can hold ANY variable type values! The name before the dot is the one you defined after the type definition and the name after is the variable name used inside of the [TYPE](TYPE). The name of the dimensioned type variable alone can be used to [PUT](PUT) # or [GET](GET) # all of the data at once!
 * Once the TYPE variable is created you can find the record or byte size by using [LEN](LEN)(typevariable).
-* TYPE definitions can also be placed in [$INCLUDE]($INCLUDE) .BI text files such as [QB.BI](QB.BI) is used by [INTERRUPT](INTERRUPT) and [INTERRUPTX](INTERRUPTX).
-* You can mix the **element-name AS type** syntax with the **AS type element-list** syntax in the same TYPE block.
-* **[_BIT](_BIT) is not supported in User Defined [TYPE](TYPE)s**.
+* TYPE definitions can also be placed in [$INCLUDE]($INCLUDE) .BI text files such as [QB.BI](QB) is used by [INTERRUPT](INTERRUPT.html) and [INTERRUPTX](INTERRUPTX).
+* You can mix the **element-name AS type** syntax with the **AS type element-list** syntax in the same [TYPE](TYPE) block.
+* **[_BIT](BIT) is not supported in User Defined TYPEs.**
 
 ### Numerical Types
 
@@ -71,7 +67,7 @@
 
 ## Examples
 
-Creating a mouse [INTERRUPT](INTERRUPT) TYPE definition. Each [INTEGER](INTEGER) value is 2 bytes.
+*Example 1:* Creating a mouse [INTERRUPT](INTERRUPT) [TYPE](TYPE) definition. Each [INTEGER](INTEGER) value is 2 bytes.
 
 ```vb
 
@@ -98,13 +94,13 @@ column% = OutRegs.CX ' returns the current mouse column position
 
 ```
 
-> *Explanation:* InRegs and OutRegs become the DOT variable prefix name for the TYPE definition's variables.
+*Explanation*: InRegs and OutRegs become the DOT variable prefix name for the [TYPE](TYPE) definition's variables.
 
-> Each TYPE variable is designated as the DOT variable's suffix.
+Each [TYPE](TYPE) variable is designated as the DOT variable's suffix.
 
-*** Note: Omitting variables in the RegType definition can change other program variable values.**
+**Note: Omitting variables in the RegType definition can change other program variable values.**
 
-Simplifying the TYPE from Example 1 using the alternative TYPE syntax.
+*Example 2*: Simplifying the [TYPE](TYPE) from Example 1 using the alternative [TYPE](TYPE) syntax.
 
 ```vb
 
@@ -114,9 +110,9 @@ END TYPE
 
 ```
 
-> *Explanation:* By using **AS type element-list** you reduce typing in your TYPE definition, while achieving the same results.
+*Explanation*: By using **AS type element-list** you reduce typing in your [TYPE](TYPE) definition, while achieving the same results.
 
-Creating an addressbook database for a [RANDOM](RANDOM) file.
+*Example 3*: Creating an addressbook database for a [RANDOM](RANDOM) file.
 
 ```vb
 
@@ -141,9 +137,9 @@ PUT #1, 5, Contact  'place contact info into fifth record position
 
 ```
 
-> *Explanation:* Use the assigned type variable to find the RANDOM record length which is 118 bytes.
+*Explanation*: Use the assigned type variable to find the RANDOM record length which is 118 bytes.
 
-Defining a TYPE variable as another variable type from a previous TYPE definition in QB64.
+*Example 4*: Defining a [TYPE](TYPE) variable as another variable type from a previous [TYPE](TYPE) definition in QB64.
 
 ```vb
 
@@ -165,14 +161,14 @@ END
 
 ```
 
-A bitmap header information TYPE [$INCLUDE]($INCLUDE) File.
+*Example 5*: A bitmap header information [TYPE](TYPE) [$INCLUDE]($INCLUDE) File.
 
-```text
+```vb
 
 ' ********
 'Bitmap.BI can be included at start of program
 
- TYPE BMPHeaderType        ' Description                  Bytes      **QB64**
+TYPE BMPHeaderType        ' Description                  Bytes      QB64 
   ID AS STRING * 2        ' File ID is "BM"                2 
   Size AS LONG            ' Size of the data file          4 
   Res1 AS INTEGER         ' Reserved 1 should be 0         2 
@@ -203,11 +199,11 @@ GET #1, , BMPHead  'get the entire bitmap header information
 
 ```
 
-> *Explanation:* Use one [GET](GET) to read all of the header information from the start of the bitmap file opened AS [BINARY](BINARY). It reads all 54 bytes as [STRING](STRING), [INTEGER](INTEGER) and [LONG](LONG) type DOT variable values.
+*Explanation*: Use one [GET](GET) to read all of the header information from the start of the bitmap file opened AS [BINARY](BINARY). It reads all 54 bytes as [STRING](STRING), [INTEGER](INTEGER) and [LONG](LONG) type DOT variable values.
 
-> NOTE: BPP returns 4(16 colors), 8(256 colors) or 24(16 million colors) bits per pixel in QBasic. 24 bit can only be in greyscale.
+NOTE: BPP returns 4(16 colors), 8(256 colors) or 24(16 million colors) bits per pixel in QBasic. 24 bit can only be in greyscale.
 
-> Then use the DOT variable name values like this [GET (graphics statement)](GET-(graphics-statement)) after you load the bitmap image to the screen:
+Then use the DOT variable name values like this [GET (graphics statement)](GET-(graphics-statement)) after you load the bitmap image to the screen:
 
 ```vb
 
@@ -215,7 +211,7 @@ GET (0, 0)-(BMPHead.PWidth - 1, BMPHead.PDepth - 1), Image(48) 'indexed for 4 BP
 
 ```
 
-> The bitmap image is now stored in an array to BSAVE to a file. The RGB color information follows the file header as [ASCII](ASCII) character values read using ASC. The color values could be indexed at the start of the Array with the image being offset to: index = NumberOfColors * 3. As determined by the SCREEN mode used. In SCREEN 13(256 colors) the index would be 768.
+The bitmap image is now stored in an [array](Arrays) to [BSAVE](BSAVE) to a file. The RGB color information follows the file header as [ASCII](ASCII) character values read using [ASC](ASC). The color values could be indexed at the start of the Array with the image being offset to: index = NumberOfColors * 3. As determined by the [SCREEN](SCREEN-(statement)) mode used. In SCREEN 13(256 colors) the index would be 768.
 
 ## See Also
 
@@ -223,7 +219,7 @@ GET (0, 0)-(BMPHead.PWidth - 1, BMPHead.PDepth - 1), Image(48) 'indexed for 4 BP
 * [INTEGER](INTEGER), [SINGLE](SINGLE), [DOUBLE](DOUBLE)
 * [LONG](LONG), [_INTEGER64](_INTEGER64), [_FLOAT](_FLOAT)
 * [STRING](STRING), [_BYTE](_BYTE), [_BIT](_BIT), [_OFFSET](_OFFSET)
-* [GET](GET), [PUT](PUT), [BINARY](BINARY)
+* [GET #](GET), [PUT #](PUT), [BINARY](BINARY-2)
 * [GET (graphics statement)](GET-(graphics-statement)), [PUT (graphics statement)](PUT-(graphics-statement))
 * [LEN](LEN), [LOF](LOF), [EOF](EOF)
-* [Bitmaps](Bitmaps), [Creating Icon Bitmaps](Creating-Icon-Bitmaps)
+* [Bitmaps](Bitmaps), [Icon to Bitmap Conversion Function](Creating-Icon-Bitmaps)
