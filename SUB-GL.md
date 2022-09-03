@@ -42,5 +42,5 @@ END SUB
 
 ## See Also
 
-* [Keyword Reference - Alphabetical#glA](Keyword-Reference-(Alphabetical)#glA)
+* [Keywords (Alphabetical)](Keyword-Reference---Alphabetical)
 * [SUB](SUB)
