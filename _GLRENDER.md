@@ -1,6 +1,6 @@
 ## Syntax
 
-> **_GLRENDER ***mode*
+> **[_GLRENDER](_GLRENDER)** *mode*
 
 ## Parameters
 
