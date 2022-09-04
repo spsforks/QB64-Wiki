@@ -3,12 +3,19 @@
 ## Syntax
 
 > **SELECT** [EVERY]**CASE** testExpression
+>
 >   **CASE** expressionList1
+>
 >     [statement-block1]
+>
 >   [**CASE** expressionList2
+>
 >     [statement-block2]]...
+>
 >   [**CASE ELSE**
+>
 >     [statementblock-n]]
+>
 > **END SELECT** 
 
 ## Description
