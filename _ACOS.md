@@ -52,4 +52,4 @@ Notice, A is the Angle in Radians.  If we convert it to degrees, we discover the
 * [_ACOSH](_ACOSH) (arc hyperbolic  cosine), [_ASINH](_ASINH) (arc hyperbolic  sine), [_ATANH](_ATANH) (arc hyperbolic  tangent)
 * [_ATAN2](_ATAN2) (Compute arc tangent with two parameters)
 * [_HYPOT](_HYPOT) (hypotenuse)
-*[Mathematical Operations](Mathematical-Operations)
+* [Mathematical Operations](Mathematical-Operations)
