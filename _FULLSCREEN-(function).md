@@ -2,7 +2,7 @@ The [_FULLSCREEN](_FULLSCREEN) function returns the present full screen mode set
 
 ## Syntax
 
-> full% = [_FULLSCREEN (function)](_FULLSCREEN-(function))
+> full% = [_FULLSCREEN](_FULLSCREEN-(function))
 
 ## Description
 
