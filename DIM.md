@@ -10,7 +10,7 @@ The [DIM](DIM) statement is used to declare a variable or a list of variables as
 >
 > [DIM](DIM) [SHARED] *array([lowest% TO] highest%])*[{suffix| AS [_UNSIGNED] *type*}] [, *variable2*...]
 >
- 'QB64** Alternative Syntax:*
+ QB64 *Alternative Syntax:*
 >
 > [DIM](DIM) [SHARED] AS [_UNSIGNED] *typevariable*  [, *variable2*...]
 >
