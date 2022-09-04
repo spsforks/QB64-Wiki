@@ -3,6 +3,7 @@ The [_ERRORMESSAGE$](_ERRORMESSAGE$) function returns a human-readable descripti
 ## Syntax
 
 > e$ = [_ERRORMESSAGE$](_ERRORMESSAGE$)
+>
 > e$ = [_ERRORMESSAGE$](_ERRORMESSAGE$)(errorCode%)
 
 ## Description
