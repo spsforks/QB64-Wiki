@@ -3,10 +3,11 @@
 ## Syntax
 
 > DECLARE [DYNAMIC|CUSTOMTYPE|STATIC] LIBRARY [*"DLL_Library_file"*, "other_library..."]
+>
 > {SUB|FUNCTION} [*procedure_name* ALIAS] *library_procedure* (BYVAL *parameter(s)*,...)
-> .
-> . 'other Library sub-procedures for named *DLL*
-> .
+>
+> ... 'other Library sub-procedures for named *DLL*
+>
 > END DECLARE
 
 ## Description
