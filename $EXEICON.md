@@ -6,7 +6,7 @@
 
 ## Parameter(s)
 
-* 'iconfile.ico' is a valid [https://en.wikipedia.org/wiki/ICO_(file_format) ICO file]
+* 'iconfile.ico' is a valid [ICO file format](https://en.wikipedia.org/wiki/ICO)
 
 ## Description
 
