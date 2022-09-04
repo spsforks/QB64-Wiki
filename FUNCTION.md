@@ -3,10 +3,15 @@ A [FUNCTION](FUNCTION) block statement is used to create a function procedure to
 ## Syntax
 
 > **FUNCTION procedureName**[type-suffix] [(*parameters*)]
+>
 >   *{code}*
+>
 >   'variable definitions and procedure statements
+>
 >   ⋮
+>
 >   procedureName = returnValue
+>
 > **END FUNCTION**
 
 ## Description
