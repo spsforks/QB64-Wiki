@@ -2,7 +2,7 @@ The [_PRESERVE](_PRESERVE) [REDIM](REDIM) action preserves the current contents 
 
 ## Syntax
  
-> [REDIM](REDIM) [_PRESERVE](_PRESERVE) array(newLowerIndex& [TO newUpperIndex&]) [AS variabletype]
+> [REDIM](REDIM) [_PRESERVE](_PRESERVE) array(newLowerIndex& [[TO](TO) newUpperIndex&]) [[AS](AS) variabletype]
 
 ## Description
 
