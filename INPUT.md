@@ -3,6 +3,7 @@ The [INPUT](INPUT) statement requests a [STRING](STRING) or numerical keyboard e
 ## Syntax
 
 >  [INPUT](INPUT) [;] "[Question or statement text]"{,|;} variable[, ...]
+>
 >  [INPUT](INPUT) ; variable[, ...]
 
 ## Parameter(s)
