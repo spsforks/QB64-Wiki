@@ -9,14 +9,15 @@ The [ON KEY(n)](ON-KEY(n)) statement defines a line number or label to go to (or
 
 * Predefined and user defined KEY event number assignments to use with ON KEY(n): 
 
-```text
+> **1 to 10**.............Reserved **F1 to F10** function keys only.
+>
+> **11, 12, 13 and 14**...Reserved **Up, Left, Right and Down** numeric keypad arrows only
+>
+> **15 to 29**............**user-defined keys** using value: [CHR$](CHR$)(keyflag) + [CHR$](CHR$)([Keyboard scancodes](Keyboard-scancodes))
+>
+> **30 and 31**...........Reserved **F11 and F12** function keys only.
 
-     **1 to 10**.............Reserved **F1 to F10** function keys only.
-     **11, 12, 13 and 14**...Reserved **Up, Left, Right and Down** numeric keypad arrows only
-     **15 to 29**............**user-defined keys** using value: [CHR$](CHR$)(keyflag) + [CHR$](CHR$)([Keyboard scancodes](Keyboard-scancodes))
-     **30 and 31**...........Reserved **F11 and F12** function keys only.
 
-```
 
 * See the [KEY n](KEY-n) page for user defined key or key combination presses and F function softkey assignments.
 * [GOSUB](GOSUB) with a linelabel or linenumber  or a [SUB](SUB) procedure (without the [CALL](CALL) keyword) can be triggered in **QB64**.
