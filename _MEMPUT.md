@@ -2,7 +2,7 @@ The [_MEMPUT](_MEMPUT) statement writes data to a portion of a designated memory
 
 ## Syntax
 
-> [_MEMPUT](_MEMPUT) memoryBlock, bytePosition, sourceVariable [AS type]
+> [_MEMPUT](_MEMPUT) memoryBlock, bytePosition, sourceVariable [[AS](AS) type]
 
 ## Parameter(s)
 
