@@ -2,7 +2,7 @@ The [_WIDTH (function)](_WIDTH-(function)) function returns the width of an imag
 
 ## Syntax
 
-> columns& = _WIDTH[(imageHandle&)]
+> columns& = [_WIDTH](_WIDTH-(function))[(imageHandle&)]
 
 ## Description
 
