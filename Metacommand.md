@@ -1,6 +1,6 @@
 **Metacommands** are program wide commands that start with $.
 
-## Legacy metacommands (QBasic/QuickBASIC)
+##  QBasic/QuickBASIC - Legacy metacommands
 
 ### Syntax
 
@@ -35,7 +35,11 @@
  
 > [$ERROR]($ERROR)
 
-> [$LET]($LET)
+> [$EXEICON]($EXEICON):'iconfile.ico' 'embeds an .ICO file into the final executable (Windows only)
+
+> [$IF]($IF) ... [$ELSEIF]($IF) ... [$ELSE]($IF) ... [$END IF]($END-IF) 'precompiler directive
+
+> [$LET]($LET) variable = expression
 
 > [$RESIZE]($RESIZE):{ON|OFF} 'determines if re-sizing of the program screen by the user is allowed(no spaces)
 
@@ -43,11 +47,10 @@
 
 > [$SCREENSHOW]($SCREENSHOW) 'displays the main QB64 program window
 
-> [$EXEICON]($EXEICON):'iconfile.ico' 'embeds an .ICO file into the final executable (Windows only)
-
 > [$VERSIONINFO]($VERSIONINFO):key=value 'embeds version info metadata into the final executable (Windows only)
 
-> [$IF]($IF) ... [$ELSEIF]($IF) ... [$ELSE]($IF) ... [$END IF]($END-IF) 'precompiler directive
+> [$VIRTUALKEYBOARD]($VIRTUALKEYBOARD)
+
 
 ### Description
 
