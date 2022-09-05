@@ -4,17 +4,17 @@ The [DIM](DIM) statement is used to declare a variable or a list of variables as
 
  *To declare variables:*
 >
-> [DIM](DIM) [SHARED] *variable*[{suffix| AS [_UNSIGNED] *type*}] [, *variable2*...]]
+> [DIM](DIM) [SHARED] *variable*[{suffix| [AS](AS) [[_UNSIGNED](_UNSIGNED)] *type*}] [, *variable2*...]]
 >
  *To declare arrays:*
 >
-> [DIM](DIM) [SHARED] *array([lowest% TO] highest%])*[{suffix| AS [_UNSIGNED] *type*}] [, *variable2*...]
+> [DIM](DIM) [SHARED] *array([lowest% [TO](TO)] highest%])*[{suffix| [AS](AS) [[_UNSIGNED](_UNSIGNED)] *type*}] [, *variable2*...]
 >
  QB64 *Alternative Syntax:*
 >
-> [DIM](DIM) [SHARED] AS [_UNSIGNED] *typevariable*  [, *variable2*...]
+> [DIM](DIM) [SHARED] [AS](AS) [[_UNSIGNED](_UNSIGNED)] *typevariable*  [, *variable2*...]
 >
-> [DIM](DIM) [SHARED] AS [_UNSIGNED] *typearray([lowest% TO] highest%])* [, *array2(elements)*...]
+> [DIM](DIM) [SHARED] [AS](AS) [[_UNSIGNED](_UNSIGNED)] *typearray([lowest% [TO](TO)] highest%])* [, *array2(elements)*...]
 
 ## Description
 
@@ -33,9 +33,9 @@ The [DIM](DIM) statement is used to declare a variable or a list of variables as
   * [_INTEGER64](_INTEGER64) (or use variable suffix **&&**)
   * [_FLOAT](_FLOAT) (or use variable suffix **##**)
   * [_OFFSET](_OFFSET) (or use variable suffix **%&**)
-  * DIM AS [_MEM](_MEM) (the _MEM type has no type suffix).
+  * DIM [AS](AS) [_MEM](_MEM) (the _MEM type has no type suffix).
 * **Note: When a variable has not been defined or has no type suffix, the type defaults to [SINGLE](SINGLE).**
-* When using the **AS type variable-list** syntax, type symbols cannot be used.
+* When using the **[AS](AS) type variable-list** syntax, type symbols cannot be used.
 * When the [$DYNAMIC]($DYNAMIC) metacommand or [REDIM](REDIM) is used, array element sizes are changeable (not [$STATIC]($STATIC)).
 * Use [REDIM](REDIM) instead of DIM to dimension arrays as dynamic without the $DYNAMIC metacommand.
 * Use [REDIM](REDIM) [_PRESERVE](_PRESERVE) in **QB64** to retain previous array values when changing the size of an array. 
