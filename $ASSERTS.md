@@ -3,11 +3,12 @@ The [$ASSERTS]($ASSERTS) metacommand enables debug tests with the [_ASSERT](_ASS
 ## Syntax
 
 > [$ASSERTS]($ASSERTS)
+
 > [$ASSERTS]($ASSERTS):CONSOLE
 
 ## Description
 
-* If an error message is passed to the [_ASSERT](_ASSERT) statement, it is displayed in the console window if [$ASSERTS]($ASSERTS) is used.
+* If an error message is passed to the [_ASSERT](_ASSERT) statement, it is displayed in the console window if [$ASSERTS]($ASSERTS):CONSOLE is used.
 
 ## Availability
 
