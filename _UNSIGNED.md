@@ -1,15 +1,15 @@
-[_UNSIGNED](_UNSIGNED) defines a numerical value as being only positive.
+[_UNSIGNED]([_UNSIGNED](_UNSIGNED) defines a numerical value as being only positive.
 
 ## Syntax
  
-> [DIM](DIM) variable [AS](AS) [_UNSIGNED] datatype
+> [DIM](DIM) variable [AS](AS) [[_UNSIGNED](_UNSIGNED)] datatype
 
-> [_DEFINE](_DEFINE) letterRange [AS](AS) [_UNSIGNED] datatype
+> [_DEFINE](_DEFINE) letterRange [AS](AS) [[_UNSIGNED](_UNSIGNED)] datatype
 
 ## Description
 
 * Datatype can be any of the following: [INTEGER](INTEGER), [LONG](LONG), [_BIT](_BIT), [_BYTE](_BYTE), [_INTEGER64](_INTEGER64), [_OFFSET](_OFFSET)
-***[SINGLE](SINGLE), [DOUBLE](DOUBLE) and [_FLOAT](_FLOAT) variable types cannot be _UNSIGNED.**
+***[SINGLE](SINGLE), [DOUBLE](DOUBLE) and [_FLOAT](_FLOAT) variable types cannot be [_UNSIGNED](_UNSIGNED).**
 * [_UNSIGNED](_UNSIGNED) can be used in a [_DEFINE](_DEFINE) statement to set undefined variable name first letters as all positive-only values.
 * Can also be used in [DIM](DIM) statements or subprocedure parameter definitions following [AS](AS).
 * [_UNSIGNED](_UNSIGNED) allows larger positive numerical variable value limits than signed ones.
