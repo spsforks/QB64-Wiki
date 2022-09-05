@@ -37,7 +37,7 @@
 
 > [$VERSIONINFO]($VERSIONINFO):key=value 'embeds version info metadata into the final executable (Windows only)
 
-> [$IF]($IF)...[$END IF]($END-IF) 'precompiler directive
+> [$IF]($IF) ... [$ELSEIF]($IF) ... [$ELSE]($IF) ... [$END IF]($END-IF) 'precompiler directive
 
 ### Description
 
@@ -46,7 +46,7 @@
 * [$CONSOLE]($CONSOLE) creates a console window which can be turned off later with [_CONSOLE](_CONSOLE) OFF.
 * [$RESIZE]($RESIZE):ON allows a user to resize the program window. OFF is default.
 * [$SCREENHIDE]($SCREENHIDE) hides the QB64 program window throughout the program until [$SCREENSHOW]($SCREENSHOW) is used.
-* [$IF]($IF)...[$END IF]($END-IF) allows selective inclusion of code in the final program.
+* [$IF]($IF) ... [$ELSEIF]($IF) ... [$ELSE]($IF) ... [$END IF]($END-IF) allows selective inclusion of code in the final program.
 * **Do not comment out with ' or [REM](REM) QB64-specific metacommands.**
 
 ## See Also
