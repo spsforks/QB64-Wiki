@@ -23,7 +23,7 @@
 
 ### Syntax
 
-> [$ASSERTS]($ASSERTS)
+> [$ASSERTS]($ASSERTS):CONSOLE
 
 > [$CHECKING]($CHECKING){OFF|ON} 'disables QB64 C++ event and error checking (no spaces)
 
@@ -49,11 +49,12 @@
 
 > [$VERSIONINFO]($VERSIONINFO):key=value 'embeds version info metadata into the final executable (Windows only)
 
-> [$VIRTUALKEYBOARD]($VIRTUALKEYBOARD)
+> [$VIRTUALKEYBOARD]($VIRTUALKEYBOARD):{ON|OFF} 'DEPRECATED keyword 
 
 
 ### Description
 
+* [$ASSERTS]($ASSERTS):CONSOLE enables debug tests with the [_ASSERT](_ASSERT) macro.
 * [$INCLUDE]($INCLUDE) can be used at the beginning or at the end of program SUB procedures.
 * [$CHECKING]($CHECKING):OFF should only be used with **errorless** code where every CPU cycle counts! Use **ON** to re-enable event checking. Event checking can be turned OFF or ON throughout a program.
 * [$COLOR]($COLOR)  adds named color [CONST](CONST)antes to a program.
