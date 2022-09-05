@@ -25,8 +25,10 @@
 
 > [$CHECKING]($CHECKING){OFF|ON} 'disables QB64 C++ event and error checking (no spaces)
 
-> [$CONSOLE]($CONSOLE) 'creates a QB64 console window throughout the program
+> [$COLOR]($COLOR)    'adds named color [CONST](CONST)antes to a program
 
+> [$CONSOLE]($CONSOLE) 'creates a QB64 console window throughout the program
+ 
 > [$RESIZE]($RESIZE):{ON|OFF} 'determines if re-sizing of the program screen by the user is allowed(no spaces)
 
 > [$SCREENHIDE]($SCREENHIDE) 'hides the QB64 program window throughout the program
@@ -43,6 +45,7 @@
 
 * [$INCLUDE]($INCLUDE) can be used at the beginning or at the end of program SUB procedures.
 * [$CHECKING]($CHECKING):OFF should only be used with **errorless** code where every CPU cycle counts! Use **ON** to re-enable event checking. Event checking can be turned OFF or ON throughout a program.
+* [$COLOR]($COLOR)  adds named color [CONST](CONST)antes to a program.
 * [$CONSOLE]($CONSOLE) creates a console window which can be turned off later with [_CONSOLE](_CONSOLE) OFF.
 * [$RESIZE]($RESIZE):ON allows a user to resize the program window. OFF is default.
 * [$SCREENHIDE]($SCREENHIDE) hides the QB64 program window throughout the program until [$SCREENSHOW]($SCREENSHOW) is used.
