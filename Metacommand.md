@@ -23,12 +23,20 @@
 
 ### Syntax
 
+> [$ASSERTS]($ASSERTS)
+
 > [$CHECKING]($CHECKING){OFF|ON} 'disables QB64 C++ event and error checking (no spaces)
 
 > [$COLOR]($COLOR)    'adds named color [CONST](CONST)antes to a program
 
 > [$CONSOLE]($CONSOLE) 'creates a QB64 console window throughout the program
+
+> [$DEBUG]($DEBUG) 
  
+> [$ERROR]($ERROR)
+
+> [$LET]($LET)
+
 > [$RESIZE]($RESIZE):{ON|OFF} 'determines if re-sizing of the program screen by the user is allowed(no spaces)
 
 > [$SCREENHIDE]($SCREENHIDE) 'hides the QB64 program window throughout the program
