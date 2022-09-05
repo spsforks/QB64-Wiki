@@ -4,11 +4,11 @@ The [_MAPTRIANGLE](_MAPTRIANGLE) statement maps a triangular portion of an image
 
 ### 2D drawing
 
-> [_MAPTRIANGLE](_MAPTRIANGLE) [{_SEAMLESS}] **(** sx1 **,** sy1 **)-(** sx2 **,** sy2 **)-(** sx3 **,** sy3 **),** source& **[TO](TO) (** dx1 **,** dy1 **)-(** dx2 **,** dy2 **)-(** dx3 **,** dy3 **)**[, destination&][{_SMOOTH|_SMOOTHSHRUNK|_SMOOTHSTRETCHED}]]
+> [_MAPTRIANGLE](_MAPTRIANGLE) [{**_SEAMLESS}**] **(** sx1 **,** sy1 **)-(** sx2 **,** sy2 **)-(** sx3 **,** sy3 **),** source& [TO](TO) **(** dx1 **,** dy1 **)-(** dx2 **,** dy2 **)-(** dx3 **,** dy3 **)**[, destination&][{**_SMOOTH**|**_SMOOTHSHRUNK**|**_SMOOTHSTRETCHED**}]]
 
 ### 3D drawing (hardware images only)
 
-> [_MAPTRIANGLE](_MAPTRIANGLE) [{_CLOCKWISE|_ANTICLOCKWISE}] [{_SEAMLESS}] **(** sx1 **,** sy1 **)-(** sx2 **,** sy2 **)-(** sx3 **,** sy3 **),** source& **[TO](TO) (** dx1 **,** dy1 **,** dz1 **)-(** dx2 **,** dy2 **,** dz2 **)-(** dx3 **,** dy3 **,** dz3 **)** [, destination&][{_SMOOTH|_SMOOTHSHRUNK|_SMOOTHSTRETCHED}]]
+> [_MAPTRIANGLE](_MAPTRIANGLE) [{**_CLOCKWISE**|**_ANTICLOCKWISE**}] [{**_SEAMLESS**}] **(** sx1 **,** sy1 **)-(** sx2 **,** sy2 **)-(** sx3 **,** sy3 **),** source& [TO](TO) **(** dx1 **,** dy1 **,** dz1 **)-(** dx2 **,** dy2 **,** dz2 **)-(** dx3 **,** dy3 **,** dz3 **)** [, destination&][{**_SMOOTH**|**_SMOOTHSHRUNK**|**_SMOOTHSTRETCHED**}]]
 
 ## Parameter(s)
 
