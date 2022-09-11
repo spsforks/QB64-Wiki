@@ -10,7 +10,7 @@ The [$NOPREFIX]($NOPREFIX) metacommand allows all QB64 functions and statements 
 * The convention exists in order to allow older code to be loaded and compiled in QB64 without naming conflicts with existing variables or constants.
 * If you are writing new code with QB64, and not importing code from QBasic/QuickBASIC 4.5, [$NOPREFIX]($NOPREFIX) allows you to reduce typing by not having to use underscores in modern keywords.
 * **SUB _GL** still must be prefixed.
-* When [$NOPREFIX]($NOPREFIX) is used, QB64 keywords can be used both with or without the leading underscore, so that both [_DISPLAY](_DISPLAY) and [_DISPLAY](_DISPLAY) are valid in the same program, for example.
+* When [$NOPREFIX]($NOPREFIX) is used, QB64 keywords can be used both with or without the leading underscore, so that both [_DISPLAY](_DISPLAY) and [DISPLAY](_DISPLAY) are valid in the same program, for example.
 * [$NOPREFIX]($NOPREFIX) can be placed anywhere in a program.
 
 ## Availability
