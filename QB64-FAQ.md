@@ -58,7 +58,7 @@ A: See below for specific install instructions.
 
 > **2)** Unpack the package contents to any location on your computer. Avoid unpacking to Program Files or other system folders that may require administrative privileges, as QB64 requires full write permissions to its own folder.
 
-> *Executable programs are portable between like systems by copying the stand-alone executable file.
+Executable programs are portable between like systems by copying the executable file.
 
 ----
 
@@ -71,6 +71,7 @@ A: See below for specific install instructions.
 > Note:  Most dependencies should be automatically downloaded by the setup script, but these are the ones you should look for, if compilation fails: OpenGL developement libraries, ALSA development libraries, GNU C++ Compiler (g++)
 
 Executable programs are portable between like systems by copying the executable file.
+
 **Note: Some QB64 keywords and procedures are not available for Linux.**               
 
 ----
@@ -84,8 +85,10 @@ Executable programs are portable between like systems by copying the executable 
 
 **After installation, you should run **./qb64** or **./qb64_start_osx.command** to start qb64.**
 
-> *Executable programs are portable between macOS systems by copying the executable file.
-> *To help launch executables without a console, a file called *programname_start.command* is created along with the program.
+Executable programs are portable between macOS systems by copying the executable file.
+
+To help launch executables without a console, a file called *programname_start.command* is created along with the program.
+
 **Note: Some QB64 keywords and procedures are not available for macOS.**
 
 [Keywords currently not supported](Keywords-currently-not-supported-by-QB64)
