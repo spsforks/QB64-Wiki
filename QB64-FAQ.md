@@ -236,7 +236,7 @@ A: Not directly, but [_FLOAT](_FLOAT) currency values up to 4 decimal places can
 
 ## Q: Do you provide changelogs?
 
-A: We do.  For all recent changelogs, check [QB64.com](https://qb64.com) or [http://github.com/QB64Official/qb64/blob/development/CHANGELOG.md GitHub]
+A: We do.  For all recent changelogs, check [QB64.com](https://qb64.com) or [GitHub](https://github.com/QB64Official/qb64/blob/master/CHANGELOG.md).
 
 ## Q: Where I can view the C++ code before it gets compiled?
 
