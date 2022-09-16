@@ -68,7 +68,7 @@ Executable programs are portable between like systems by copying the executable 
 
 > **2)** After extracting the downloaded package, run the installation batch/script titled *./setup_lnx.sh* in the main *qb64* folder to set up QB64.
 
-> Note:  Most dependencies should be automatically downloaded by the setup script, but these are the ones you should look for, if compilation fails: OpenGL developement libraries, ALSA development libraries, GNU C++ Compiler (g++)
+Note:  Most dependencies should be automatically downloaded by the setup script, but these are the ones you should look for, if compilation fails: OpenGL developement libraries, ALSA development libraries, GNU C++ Compiler (g++)
 
 Executable programs are portable between like systems by copying the executable file.
 
@@ -78,16 +78,14 @@ Executable programs are portable between like systems by copying the executable 
 **macOS**
 
 > **1)** You must install Apple's **Xcode command line tools** for C++ compilation from their website. The simplest way to do so is by opening a terminal window and typing the following command: **xcode-select --install** (more info here: [http://developer.apple.com/technologies/tools/xcode.html Xcode download])
->     (you won't be using the Xcode interface, QB64 just needs to have access to the C++ compiler and libraries it installs)
+>     (You won't be using the Xcode interface, QB64 just needs to have access to the C++ compiler and libraries it installs.)
 
-> **2)** Download the appropriate package from [GitHub](http://github.com/QB64Official/qb64/releases)
+> **2)** Download the appropriate package from [GitHub](http://github.com/QB64Official/qb64/releases).
 >     Extract the downloaded package and run *./setup_osx.command*, found in the QB64 folder to install the QB64 compiler.
 
 **After installation, you should run **./qb64** or **./qb64_start_osx.command** to start qb64.**
 
-Executable programs are portable between macOS systems by copying the executable file.
-
-To help launch executables without a console, a file called *programname_start.command* is created along with the program.
+Executable programs are portable between macOS systems by copying the executable file. To help launch executables without a console, a file called *programname_start.command* is created along with the program.
 
 **Note: Some QB64 keywords and procedures are not available for macOS.**
 
