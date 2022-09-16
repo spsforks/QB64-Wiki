@@ -55,6 +55,7 @@ A: See below for specific install instructions.
 **Windows NT (XP), Windows Vista, Windows 7, 8 and 10:**
 
 > **1)** Download the appropriate package, specific to your OS, from [GitHub](http://github.com/QB64Official/qb64/releases)
+
 > **2)** Unpack the package contents to any location on your computer. Avoid unpacking to Program Files or other system folders that may require administrative privileges, as QB64 requires full write permissions to its own folder.
 
 > *Executable programs are portable between like systems by copying the stand-alone executable file.
@@ -64,7 +65,9 @@ A: See below for specific install instructions.
 **Most distributions of Linux, both 32- and 64-bit**
 
 > **1)** Download the appropriate package, specific to your OS, from [GitHub](http://github.com/QB64Official/qb64/releases)
+
 > **2)** After extracting the downloaded package, run the installation batch/script titled *./setup_lnx.sh* in the main *qb64* folder to set up QB64.
+
 > **3)**  Most dependencies should be automatically downloaded by the setup script, but these are the ones you should look for, if compilation fails: OpenGL developement libraries, ALSA development libraries, GNU C++ Compiler (g++)
 
 Executable programs are portable between like systems by copying the executable file.
@@ -75,6 +78,7 @@ Executable programs are portable between like systems by copying the executable 
 
 > **1)** You must install Apple's **Xcode command line tools** for C++ compilation from their website. The simplest way to do so is by opening a terminal window and typing the following command: **xcode-select --install** (more info here: [http://developer.apple.com/technologies/tools/xcode.html Xcode download])
 >     (you won't be using the Xcode interface, QB64 just needs to have access to the C++ compiler and libraries it installs)
+
 > **2)** Download the appropriate package from [GitHub](http://github.com/QB64Official/qb64/releases)
 >     Extract the downloaded package and run *./setup_osx.command*, found in the QB64 folder to install the QB64 compiler.
 
