@@ -31,9 +31,9 @@
 
 > [$CONSOLE]($CONSOLE) 'creates a QB64 console window throughout the program
 
-> [$DEBUG]($DEBUG) 
+> [$DEBUG]($DEBUG) enables debugging features, allowing you to step through your code line by line
  
-> [$ERROR]($ERROR)
+> [$ERROR]($ERROR) _MESSAGE_ triggers a compilation error MESSAGE.
 
 > [$EXEICON]($EXEICON):'iconfile.ico' 'embeds an .ICO file into the final executable (Windows only)
 
@@ -54,11 +54,12 @@
 
 ### Description
 
-* [$ASSERTS]($ASSERTS):CONSOLE enables debug tests with the [_ASSERT](_ASSERT) macro.
-* [$INCLUDE]($INCLUDE) can be used at the beginning or at the end of program SUB procedures.
-* [$CHECKING]($CHECKING):OFF should only be used with **errorless** code where every CPU cycle counts! Use **ON** to re-enable event checking. Event checking can be turned OFF or ON throughout a program.
+* [$ASSERTS]($ASSERTS)_:CONSOLE_ Enables debug tests with the [_ASSERT](_ASSERT) macro.
+* [$CHECKING]($CHECKING)_{OFF|ON}_ Should only be used with **errorless** code where every CPU cycle counts! Use **ON** to re-enable event checking. Event checking can be turned OFF or ON throughout a program.
 * [$COLOR]($COLOR)  adds named color [CONST](CONST)antes to a program.
 * [$CONSOLE]($CONSOLE) creates a console window which can be turned off later with [_CONSOLE](_CONSOLE) OFF.
+* [$DEBUG]($DEBUG) enables debugging features, allowing you to step through your code line by line.
+* [$ERROR]($ERROR) _MESSAGE_ triggers a error MESSAGE only during your program compilation.
 * [$IF]($IF) ... [$ELSEIF]($IF) ... [$ELSE]($IF) ... [$END IF]($END-IF) allows selective inclusion of code in the final program.
 * [$LET]($LET) _variable = expression_ sets a precompiler variable to a value.
 * [$RESIZE]($RESIZE):{ON|OFF|STRETCH|SMOOTH} allows a user to resize the program window. OFF is default.
