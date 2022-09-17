@@ -41,7 +41,7 @@
 
 > [$LET]($LET) variable = expression
 
-> [$RESIZE]($RESIZE):{ON|OFF} 'determines if re-sizing of the program screen by the user is allowed(no spaces)
+> [$RESIZE]($RESIZE):{ON|OFF|STRETCH|SMOOTH} 'determines if re-sizing of the program screen by the user is allowed
 
 > [$SCREENHIDE]($SCREENHIDE) 'hides the QB64 program window throughout the program
 
