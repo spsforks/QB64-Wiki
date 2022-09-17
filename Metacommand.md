@@ -59,9 +59,12 @@
 * [$CHECKING]($CHECKING):OFF should only be used with **errorless** code where every CPU cycle counts! Use **ON** to re-enable event checking. Event checking can be turned OFF or ON throughout a program.
 * [$COLOR]($COLOR)  adds named color [CONST](CONST)antes to a program.
 * [$CONSOLE]($CONSOLE) creates a console window which can be turned off later with [_CONSOLE](_CONSOLE) OFF.
-* [$RESIZE]($RESIZE):ON allows a user to resize the program window. OFF is default.
-* [$SCREENHIDE]($SCREENHIDE) hides the QB64 program window throughout the program until [$SCREENSHOW]($SCREENSHOW) is used.
 * [$IF]($IF) ... [$ELSEIF]($IF) ... [$ELSE]($IF) ... [$END IF]($END-IF) allows selective inclusion of code in the final program.
+* [$LET]($LET) _variable = expression_ sets a precompiler variable to a value.
+* [$RESIZE]($RESIZE):{ON|OFF|STRETCH|SMOOTH} allows a user to resize the program window. OFF is default.
+* [$SCREENHIDE]($SCREENHIDE) hides the QB64 program window throughout the program until [$SCREENSHOW]($SCREENSHOW) is used.
+* [$VERSIONINFO]($VERSIONINFO):_key=value_ embeds version info metadata into the final executable (Windows only).
+
 * **Do not comment out with ' or [REM](REM) QB64-specific metacommands.**
 
 ## See Also
