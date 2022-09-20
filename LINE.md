@@ -2,7 +2,7 @@ The [LINE](LINE) statement is used in graphic [SCREEN (statement)](SCREEN-(state
 
 ## Syntax
 
-> [LINE](LINE) [STEP] [**(***column1***,** *row1***)**]**-**[STEP] **(***column2*, *row2***),** *color*[, [{B|BF}], style%]
+> [LINE](LINE) [**STEP**] [**(**_column1_**,** _row1_**)**]-**[STEP]** **(** _column2_, _row2_ **),** _color_[, [{B|BF}], style%]
 
 ## Parameter(s)
 
