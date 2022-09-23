@@ -881,6 +881,7 @@ See also: [Fonts and Unicode](#fonts_and_unicode) or [ASCII](ASCII)
 * [_SCREENX](_SCREENX) (function) returns the current program window's upper left corner column position on the desktop.
 * [_SCREENY](_SCREENY) (function) returns the current program window's upper left corner row position on the desktop.
 * [_TITLE](_TITLE) (statement) sets the program name [STRING](STRING) in the title bar of the program window.
+* [_TITLE$](_TITLE$) (function) gets the program title [STRING](STRING) value.
 * [_WIDTH (function)](_WIDTH-(function)) returns the width of a [_SCREENIMAGE](_SCREENIMAGE) handle to get the desktop resolution.
 
 * [SCREEN](SCREEN) sets the screen mode of a program. No statement defaults the program to SCREEN 0 text mode.
