@@ -2,8 +2,8 @@
 
 ## Syntax
 
->  [$COLOR]($COLOR):0
->  [$COLOR]($COLOR):32
+>  [$COLOR]($COLOR):{0|32}
+
 
 ## Description
 
