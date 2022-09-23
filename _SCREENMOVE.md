@@ -2,7 +2,9 @@ The [_SCREENMOVE](_SCREENMOVE) statement positions the program window on the des
 
 ## Syntax
 
-> [_SCREENMOVE](_SCREENMOVE) {column&, row&|_MIDDLE}
+> [_SCREENMOVE](_SCREENMOVE) {column&, row&}
+>
+> [_SCREENMOVE _MIDDLE](_SCREENMOVE)
 
 ## Parameter(s)
 
