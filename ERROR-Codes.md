@@ -33,6 +33,7 @@ These errors can be triggered in QB64, and may be caught by an [ON ERROR](ON-ERR
 | 64 | Bad file name | You either can't create of this name, or containing certain haracters. This varies from operating system to operating system. See File Error below. |
 | 68 | Device unavailable | A serial port (COM device) failed to behave as expected. |
 | 70 | Permission denied | You do not have sufficient permission to read a particular file or to create a file under another username or a directory you do bot have write access. See File Error below. |
+| 73 | Feature Unavailable |
 | 75 | Path/File access error | Path to file is invalid. See File Error below. |
 | 76 | Path not found | Path name specified does not exist, See File Error below |
 | 258 | Invalid handle | A handle used for an image, sound, font etc. was invalid. Be sure to check the return values of functions like [_LOADFONT](_LOADFONT) and [_LOADIMAGE](_LOADIMAGE).
