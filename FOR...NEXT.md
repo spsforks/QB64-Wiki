@@ -2,10 +2,15 @@ The [FOR](FOR) statement creates a counter loop using specified start and stop n
 
 ## Syntax
  
-> [FOR](FOR) counterVariable = startValue [TO](TO) stopValue [STEP increment]
->   *{code}*
->   ⋮
-> [NEXT](NEXT) [counterVariable]
+>[FOR](FOR) counterVariable = startValue [TO](TO) stopValue [STEP increment]
+>
+>>.
+>>
+>>{code}
+>>
+>>.
+>> 
+>[NEXT](NEXT) [counterVariable]
 
 ## Parameter(s)
 
