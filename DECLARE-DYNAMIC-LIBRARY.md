@@ -2,9 +2,9 @@
 
 ## Syntax
 
-> **DECLARE** [**DYNAMIC**|**CUSTOMTYPE**|**STATIC**] **LIBRARY** [*"DLL_Library_file"*, "other_library..."]
+> **DECLARE** [**DYNAMIC**|**CUSTOMTYPE**|**STATIC**] **LIBRARY** [*"Library_file"*]
 >
->> {[SUB](SUB)|[FUNCTION](FUNCTION)} [*procedure_name* **ALIAS**] *library_procedure* (**BYVAL** *parameter(s)*,...)
+>> {[SUB](SUB)|[FUNCTION](FUNCTION)} [*procedure_name* **ALIAS**] *library_procedure* (**BYVAL** *parameter(s)* [AS](AS) varType,...)
 >>
 >> ... 'other Library sub-procedures for named *DLL*
 >
@@ -13,8 +13,8 @@
 ## Description
 
 * The dynamic library file can be located in the QB64 folder (alongside your programs '.EXE'), in Windows' system32 folder, or in a relative/absolute path specified along with the library name.
-* **Declarations must be made at the program start and only one *.DLL* file can be specified in each declaration block.**
-* *Library_file* is the *DLL* file's name with a specified path when not in the QB64 or the WINDOWS\SYSTEM32 folder. Don't add a file extension.
+* **Declarations must be made at the program start and only one file can be specified in each declaration block.**
+* *Library_file* is the *library* file's name with a specified path when not in the QB64 or in the WINDOWS\SYSTEM32 folder. **Don't add the file extension**.
 * *Library filename*s can be listed to combine more than one DLL or Header file name or path into one DECLARE LIBRARY block.
 * *Procedure_name* is any procedure name you want to designate by using [ALIAS](ALIAS) with the *Library_procedure* name following. 
 * *Parameters* used by the Library procedure must be passed by value ([BYVAL](BYVAL)) except for [STRING](STRING) values.
