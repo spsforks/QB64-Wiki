@@ -19,7 +19,7 @@
 | | Logical Bitwise Operations
 | | Mathematical Functions and Operations
 | | Memory Handling and Clipboard
-| | Functions and statements using QB64's emulated 16 bit memory
+| | Functions/statements using QB64's emulated 16 bit memory
 | | Metacommands
 | | Mouse Input
 | | Numerical Manipulation and Conversion
