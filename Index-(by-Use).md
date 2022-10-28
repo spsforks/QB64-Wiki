@@ -12,3 +12,17 @@ Relational Operations
 
 Definitions and Variable Types
 
+External Disk and API calls
+
+Error Codes
+
+Error Trapping
+
+Event Trapping
+
+File Input and Output
+
+Fonts
+
+Game Controller Input (Joystick)
+
