@@ -7,8 +7,7 @@
 [Console Window](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage/Console_Window)
 
 Conditional Operations
-
-Relational Operations
+* Relational Operations
 
 Definitions and Variable Types
 
