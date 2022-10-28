@@ -4,9 +4,9 @@
 
 > **DECLARE** [**DYNAMIC**|**CUSTOMTYPE**|**STATIC**] **LIBRARY** [*"DLL_Library_file"*, "other_library..."]
 >
-> {[SUB](SUB)|[FUNCTION](FUNCTION)} [*procedure_name* **ALIAS**] *library_procedure* (**BYVAL** *parameter(s)*,...)
->
-> ... 'other Library sub-procedures for named *DLL*
+>> {[SUB](SUB)|[FUNCTION](FUNCTION)} [*procedure_name* **ALIAS**] *library_procedure* (**BYVAL** *parameter(s)*,...)
+>>
+>> ... 'other Library sub-procedures for named *DLL*
 >
 > **END DECLARE**
 
