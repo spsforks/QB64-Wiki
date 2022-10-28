@@ -1,5 +1,3 @@
-# Index (by Use)
-
 #### Arrays and Data Storage
 * [Arrays](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage/_edit#arrays)
 * [Fixed Program DATA](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage/_edit#fixed-program-data)
