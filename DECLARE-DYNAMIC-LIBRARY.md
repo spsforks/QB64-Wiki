@@ -1,4 +1,4 @@
-**DECLARE DYNAMIC LIBRARY** allows you to dynamically link your program to functions in dynamically linkable libraries. At present, only *.DLL* files are supported (support for *.so* will be added soon). These libraries are loaded when your program begins.
+**DECLARE DYNAMIC LIBRARY** allows you to dynamically link your program to functions in dynamically linkable libraries. At present, '**.dll**' , '**.so**' and '**.dylib**' files are supported. These libraries are loaded when your program begins. For **STATIC** library's '**.lib**', '**.h**', '**.hpp**', '**.a**', '**.o**' and '**.dylib**' files are also supported.
 
 ## Syntax
 
