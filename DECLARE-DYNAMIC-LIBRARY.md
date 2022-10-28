@@ -2,7 +2,7 @@
 
 ## Syntax
 
-> **DECLARE** [**DYNAMIC**|**CUSTOMTYPE**|**STATIC**] **LIBRARY** [*"Library_file"*]
+> **DECLARE** [**DYNAMIC**|**CUSTOMTYPE**|**STATIC**] **LIBRARY** [*"Library_file"*,_"other_lib_files"_]
 >
 >> {[SUB](SUB)|[FUNCTION](FUNCTION)} [*procedure_name* **ALIAS**] *library_procedure* (**BYVAL** *parameter(s)* [AS](AS) varType,...)
 >>
