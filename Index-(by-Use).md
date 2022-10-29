@@ -2,7 +2,7 @@
 |------|--|
 | | [**Arrays and Data Storage**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#arrays-and-data-storage) |
 | | [**Color and Transparency**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#color-and-transparency) |
-| | [**Console Window**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage/Console_Window) |
+| | [**Console Window**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#console-window) |
 | | [**Conditional Operations**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage/_edit#conditional-operations) |
 | | [**Definitions and Variable Types**]() | 
 | | [**External Disk and API calls**]() | 
