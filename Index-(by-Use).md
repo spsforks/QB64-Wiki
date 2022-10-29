@@ -18,7 +18,7 @@
 | 13| [**Graphic Commands**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#graphic-commands)
 | 14| [**Graphics and Imaging**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#graphics-and-imaging)
 | 15| [**Keyboard Input**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#keyboard-input)
-| 16| [**Libraries**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage/Libraries)
+| 16| [**Libraries**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#libraries)
 | 17| Logical Bitwise Operations
 | 18| Mathematical Functions and Operations
 | 19| Memory Handling and Clipboard
