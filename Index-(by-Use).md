@@ -13,12 +13,12 @@
 | 8| [**Error Trapping**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#error-trapping) | 
 | 9| [**Event Trapping**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#event-trapping) | 
 | 10| [**File Input and Output**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#file-input-and-output)
-| 11| [**Fonts**]()
-| 12| [**Game Controller Input (Joystick)**]()
-| 13| [**Graphic Commands**]()
-| 14| [**Graphics and Imaging**]()
-| 15| [**Keyboard Input**]()
-| 16| [Libraries](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage/Libraries)
+| 11| [**Fonts**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#fonts)
+| 12| [**Game Controller Input (Joystick)**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#game-controller-input-joystick)
+| 13| [**Graphic Commands**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#graphic-commands)
+| 14| [**Graphics and Imaging**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#graphics-and-imaging)
+| 15| [**Keyboard Input**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#keyboard-input)
+| 16| [**Libraries**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage/Libraries)
 | 17| Logical Bitwise Operations
 | 18| Mathematical Functions and Operations
 | 19| Memory Handling and Clipboard
