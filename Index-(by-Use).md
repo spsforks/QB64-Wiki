@@ -1,6 +1,6 @@
 | | INDEX | 
 |:----:|--|
-| 1| [**Arrays and Data Storage**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#arrays-and-data-storage) |
+| 1| [**Arrays and Data Storage**](Keyword-Reference---By-Usage#arrays-and-data-storage) |
 | | . . . [_Arrays_](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#arrays)
 | | . . . [_Fixed Program DATA_](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#fixed-program-data)
 | 2| [**Color and Transparency**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#color-and-transparency) |
