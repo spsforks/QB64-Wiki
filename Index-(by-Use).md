@@ -12,7 +12,7 @@
 | 7| [**Error Codes**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#error-codes) | 
 | 8| [**Error Trapping**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#error-trapping) | 
 | 9| [**Event Trapping**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#event-trapping) | 
-| 10| [**File Input and Output**]()
+| 10| [**File Input and Output**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#file-input-and-output)
 | 11| [**Fonts**]()
 | 12| [**Game Controller Input (Joystick)**]()
 | 13| [**Graphic Commands**]()
