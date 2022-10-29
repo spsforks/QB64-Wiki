@@ -19,25 +19,25 @@
 | 14| [**Graphics and Imaging**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#graphics-and-imaging)
 | 15| [**Keyboard Input**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#keyboard-input)
 | 16| [**Libraries**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#libraries)
-| 17| Logical Bitwise Operations
-| 18| Mathematical Functions and Operations
-| 19| Memory Handling and Clipboard
-| 20| Functions/statements using QB64's emulated 16 bit memory
-| 21| Metacommands
-| 22| Mouse Input
-| 23| Numerical Manipulation and Conversion
-| 24| Port Input and Output (COM and LPT)
-| 25| Print formatting
-| 26| **Printer Output (LPT and USB)**
-| 27| **Program Flow and Loops**
-| 28| **Sounds and Music**
-| 29| **String Text Manipulation and Conversion**
-| 30| **Sub procedures and Functions**
-| 31| **TCP/IP Networking and Email**
-| 32| **Text on Screen**
-| 33| **Time, Date and Timing**
-| 34| **Window and Desktop**
-| 35| **QB64 Programming Symbols**
+| 17| [**Logical Bitwise Operations**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#logical-bitwise-operations)
+| 18| [**Mathematical Functions and Operations**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#mathematical-functions-and-operations)
+| 19| [**Memory Handling and Clipboard**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#memory-handling-and-clipboard)
+| 20| [**Functions/Statements using QB64's emulated 16 bit memory**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#functions-and-statements-using-qb64s-emulated-16-bit-memory)
+| 21| [**Metacommands**]()
+| 22| [**Mouse Input**]()
+| 23| [**Numerical Manipulation and Conversion**]()
+| 24| [**Port Input and Output (COM and LPT)**]()
+| 25| [**Print formatting**]()
+| 26| [**Printer Output (LPT and USB)**]()
+| 27| [**Program Flow and Loops**]()
+| 28| [**Sounds and Music**]()
+| 29| [**String Text Manipulation and Conversion**]()
+| 30| [**Sub procedures and Functions**]()
+| 31| [**TCP/IP Networking and Email**]()
+| 32| [**Text on Screen**]()
+| 33| [**Time, Date and Timing**]()
+| 34| [**Window and Desktop**]()
+| 35| [**QB64 Programming Symbols**]()
 | | . . . _Print, Input or File Formatting_
 | | . . .  _Program Code Markers_
 | | . . . _Variable Name Type Suffixes_
