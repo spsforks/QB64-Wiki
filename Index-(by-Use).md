@@ -1,16 +1,18 @@
 | | INDEX | 
-|------|--|
-| | [**Arrays and Data Storage**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#arrays-and-data-storage) |
-| | [**Color and Transparency**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#color-and-transparency) |
-| | [**Console Window**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#console-window) |
-| | [**Conditional Operations**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage/#conditional-operations) |
-| | [**Definitions and Variable Types**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#definitions-and-variable-types) | 
-| | [**External Disk and API calls**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#external-disk-and-api-calls) | 
-| | [**Error Codes**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#error-codes) | 
-| | [**Error Trapping**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#error-trapping) | 
-| | [**Event Trapping**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#event-trapping) | 
-| | [**File Input and Output**]()
-| | [**Fonts**]()
+|:----:|--|
+| 1| [**Arrays and Data Storage**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#arrays-and-data-storage) |
+| | . . . [Arrays](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#arrays)
+| | . . . [Fixed Program DATA](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#fixed-program-data)
+| 2| [**Color and Transparency**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#color-and-transparency) |
+| 3| [**Console Window**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#console-window) |
+| 4| [**Conditional Operations**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage/#conditional-operations) |
+| 5| [**Definitions and Variable Types**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#definitions-and-variable-types) | 
+| 6| [**External Disk and API calls**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#external-disk-and-api-calls) | 
+| 7| [**Error Codes**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#error-codes) | 
+| 8| [**Error Trapping**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#error-trapping) | 
+| 9| [**Event Trapping**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#event-trapping) | 
+| 10| [**File Input and Output**]()
+| 11| [**Fonts**]()
 | | [**Game Controller Input (Joystick)**]()
 | | [**Graphic Commands**]()
 | | [**Graphics and Imaging**]()
