@@ -38,10 +38,10 @@
 | 33| [**Time, Date and Timing**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#time-date-and-timing)
 | 34| [**Window and Desktop**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#window-and-desktop)
 | 35| [**QB64 Programming Symbols**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#qb64-programming-symbols)
-| | . . . _Print, Input or File Formatting_
-| | . . .  _Program Code Markers_
-| | . . . _Variable Name Type Suffixes_
-| | . . .  _Numerical Base Prefixes_
+| | . . . [_Print, Input or File Formatting_](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#print-input-or-file-formatting)
+| | . . .  [_Program Code Markers_](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#program-code-markers)
+| | . . . [_Variable Name Type Suffixes_](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#variable-name-type-suffixes)
+| | . . .  [_Numerical Base Prefixes_](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#numerical-base-prefixes)
 | | . . . [_Mathematical Operations_](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage/Mathematical-Operations)
 | | . . . [_Relational Operations_](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage/Relational-Operations)
 | 36| [**QB64 Programming References**]()
