@@ -4,11 +4,11 @@
 | | [**Color and Transparency**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#color-and-transparency) |
 | | [**Console Window**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#console-window) |
 | | [**Conditional Operations**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage/#conditional-operations) |
-| | [**Definitions and Variable Types**]() | 
-| | [**External Disk and API calls**]() | 
-| | [**Error Codes**]() | 
-| | [**Error Trapping**]() | 
-| | [**Event Trapping**]() | 
+| | [**Definitions and Variable Types**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#definitions-and-variable-types) | 
+| | [**External Disk and API calls**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#external-disk-and-api-calls) | 
+| | [**Error Codes**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#error-codes) | 
+| | [**Error Trapping**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#error-trapping) | 
+| | [**Event Trapping**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#event-trapping) | 
 | | [**File Input and Output**]()
 | | [**Fonts**]()
 | | [**Game Controller Input (Joystick)**]()
