@@ -46,9 +46,8 @@
 | | . . . [_Relational Operations_](Keyword-Reference---By-Usage/Relational-Operations)
 | 36| [**QB64 Programming References**](Keyword-Reference---By-Usage#qb64-programming-references)
 
+
 ***
-
-
 
 ## [Arrays](Arrays) and Data Storage
 
