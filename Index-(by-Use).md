@@ -30,14 +30,14 @@
 | 25| [**Print formatting**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#print-formatting)
 | 26| [**Printer Output (LPT and USB)**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#printer-output-lpt-and-usb)
 | 27| [**Program Flow and Loops**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#program-flow-and-loops)
-| 28| [**Sounds and Music**]()
-| 29| [**String Text Manipulation and Conversion**]()
-| 30| [**Sub procedures and Functions**]()
-| 31| [**TCP/IP Networking and Email**]()
-| 32| [**Text on Screen**]()
-| 33| [**Time, Date and Timing**]()
-| 34| [**Window and Desktop**]()
-| 35| [**QB64 Programming Symbols**]()
+| 28| [**Sounds and Music**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#sounds-and-music)
+| 29| [**String Text Manipulation and Conversion**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#string-text-manipulation-and-conversion)
+| 30| [**Sub procedures and Functions**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#sub-procedures-and-functions)
+| 31| [**TCP/IP Networking and Email**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#tcpip-networking-and-email)
+| 32| [**Text on Screen**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#text-on-screen)
+| 33| [**Time, Date and Timing**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#time-date-and-timing)
+| 34| [**Window and Desktop**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#window-and-desktop)
+| 35| [**QB64 Programming Symbols**](https://github.com/QB64Official/qb64/wiki/Keyword-Reference---By-Usage#qb64-programming-symbols)
 | | . . . _Print, Input or File Formatting_
 | | . . .  _Program Code Markers_
 | | . . . _Variable Name Type Suffixes_
