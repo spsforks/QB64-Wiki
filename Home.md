@@ -49,3 +49,7 @@ QB64 is a modern extended BASIC programming language that retains QBasic / Quick
 * [Screen Memory](Screen-Memory)
 * [Text Using Graphics](Text-Using-Graphics)
 * [Variable Types](Variable-Types)
+
+## Online/Free Books
+
+* [Qbasic/QB64 WikiBook](https://en.wikibooks.org/wiki/QBasic)
