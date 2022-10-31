@@ -6,5 +6,5 @@ Navigation
 * [Keywords (Unsupported)](Keywords-currently-not-supported-by-QB64)
 * [List of ERROR Codes](ERROR-Codes)
 * [Known Issues](Known-Issues)
-* [Articles and Tutorials](wiki#articles-and-tutorials)
-* [Online/Free Books](wiki#onlinefree-books)
+* [Articles and Tutorials](https://wiki#articles-and-tutorials)
+* [Online/Free Books](https://wiki#onlinefree-books)
