@@ -2,20 +2,22 @@ A **SUB** procedure is a procedure within a program that can calculate and retur
 
 ## Syntax
 
-> **SUB Procedure_name** [(*parameter*[, *list*...])]
-> ...
-> ... 'procedure variable definitions and statements
-> ...
-> **END SUB**
+> **SUB Procedure_name** [(*parameter*[, *list*...])] [[STATIC](STATIC)]
+> 
+>  'procedure variable definitions and statements
+> 
+> **[END](END) SUB**
 
 ## Parameter(s)
 
 * Parameters passed after the procedure call must match the variable types in the SUB parameters in order.
 * If there are no *parameter*s passed or they are [SHARED](SHARED) the parameters and parenthesis are not required in the procedure.
 * Parameter [Variable](Variable) names in the procedure do not have to match the names used in the [CALL](CALL), just the value types.
+* All parameters/variables are internally passed by Reference, this is, the adress is 
 
 ## Description
 
+* [STATIC](STATIC) can be used after the procedure name to force all variables to retain their values between calls.
 * All [$DYNAMIC]($DYNAMIC) [variable](variable) values return to 0 or null strings when the procedure is exited except for [STATIC](STATIC) variable values.
 * SUB procedures can return multiple values through the parameters unlike functions.
 * SUB procedures return to the next code statement after the call in the main or other procedures.
