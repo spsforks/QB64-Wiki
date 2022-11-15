@@ -52,5 +52,6 @@ QB64 is a modern extended BASIC programming language that retains QBasic / Quick
 
 ## Online/Free Books
 
+* [BASIC Techniques and Utilities (By Ethan Winer, 2019 Online Edition)](https://web.archive.org/web/20220525041727/http://annex.retroarchive.org/crescent/BTU_BOOK.PDF)
 * [Qbasic/QB64 WikiBook](https://en.wikibooks.org/wiki/QBasic)
 * [Programmed Lessons in QBasic](https://chortle.ccsu.edu/QBasic/index.html)
