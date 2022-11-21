@@ -3,6 +3,7 @@ The **SHARED** statement allows variables to be passed automatically to any [SUB
 ## Syntax
 
 > DIM SHARED Qt AS STRING * 1
+
 > DIM SHARED AS STRING * 1 Qt
 
 * [DIM](DIM)ensioned variables are shared with all procedures in the program module.
