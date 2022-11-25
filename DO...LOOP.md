@@ -3,16 +3,20 @@
 ## Syntax
 
 *Syntax 1:*
-> **[DO](DO)** [{WHILE|UNTIL} condition]
->   *{code}*
->   ⋮
+> **[DO](DO)** [{**WHILE**|**UNTIL**} condition]
+>>   *{code}*
+>>
+>>   ⋮
+>>
 > **[LOOP](LOOP)** 
 
 *Syntax 2:*
 > **[DO](DO)**
->   *{code}*
->   ⋮
-> **[LOOP](LOOP)** [{WHILE|UNTIL} condition]
+>>   *{code}*
+>>
+>>   ⋮
+>
+> **[LOOP](LOOP)** [{**WHILE**|**UNTIL**} condition]
 
 ## Description
 
