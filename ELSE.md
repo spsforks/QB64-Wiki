@@ -7,14 +7,20 @@
 
 *Block syntax:*
 > [IF](IF) condition [THEN](THEN)
->   *{code}*
->   ⋮
+>>   *{code}*
+>>
+>> ⋮
+>>
 > [ELSEIF](ELSEIF) condition2 [THEN](THEN)
->   *{code}*
->   ⋮
+>>   *{code}*
+>>
+>>   ⋮
+>>
 > [ELSE](ELSE)
->   *{alternative-code}*
->   ⋮
+>>   *{alternative-code}*
+>>
+>>   ⋮
+>
 > [END IF](END-IF)
 
 ## Description
