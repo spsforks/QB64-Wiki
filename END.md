@@ -4,17 +4,17 @@ The [END](END) statement terminates a program without an immediate exit or ends 
 
 >  [END](END) [returnCode%]
 >
-> [END](END) [IF...THEN](IF...THEN)
+> [END](END) [IF](IF...THEN)
 >
 >  [END](END) [TYPE](TYPE)
 >
->  [END](END) [SELECT CASE](SELECT-CASE)
+>  [END](END) [SELECT](SELECT-CASE)
 >
 >  [END](END) [SUB](SUB)
 >
 >  [END](END) [FUNCTION](FUNCTION)
 >
-> END [DECLARE LIBRARY](DECLARE-LIBRARY)
+>  [END DECLARE](DECLARE-LIBRARY)
 
 ## Description
 
