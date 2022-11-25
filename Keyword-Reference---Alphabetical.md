@@ -12,9 +12,10 @@
 
 |  |  |   |   |   |   |   |   |   |   |   |   |   |  
 | -- | -- | -- |  -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
-| _A | _B | _C | _D | _E | _F | _G | _H | _I | _J | _K | _L | _M |
-| _N | _O | _P | _Q | _R | _S | _T | _U | _V | _W | _X | _Y | _Z |
+| _A | _B | _C | _D | _E | _F | _G | _H | _I | _J. | _K | _L | _M |
+| _N | _O | _P | _Q. | _R | _S | _T | _U | _V | _W | _X. | _Y. | _Z. |
 
+## OpenGL specific keywords
 
 ***
 
@@ -603,7 +604,7 @@ Keywords beginning with underscores are QB64 specific. **To use them without the
 
 * [_SCREENCLICK](_SCREENCLICK) (statement) simulates clicking on a point on the desktop screen with the left mouse button.
 * [_SCREENEXISTS](_SCREENEXISTS) (function) returns a -1 value once a screen has been created.
-* [$SCREENHIDE]($SCREENHIDE) ([QB64 [Metacommand]]) hides the program window from view.
+* [$SCREENHIDE]($SCREENHIDE) QB64 [Metacommand](Metacommand) hides the program window from view.
 * [_SCREENHIDE](_SCREENHIDE) (statement) hides the program window from view.
 * [_SCREENICON (function)](_SCREENICON-(function)) returns -1 or 0 to indicate if the window has been minimized to an icon on the taskbar. 
 * [_SCREENICON](_SCREENICON) (statement) minimizes the program window to an icon on the taskbar. 
