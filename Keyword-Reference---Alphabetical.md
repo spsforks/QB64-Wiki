@@ -5,18 +5,18 @@
 
 | [A](Keyword-Reference---Alphabetical#a) | [B](Keyword-Reference---Alphabetical#b) | [C](Keyword-Reference---Alphabetical#c) | [D](Keyword-Reference---Alphabetical#d) | [E](Keyword-Reference---Alphabetical#e) | [F](Keyword-Reference---Alphabetical#f) | [G](Keyword-Reference---Alphabetical#g) | [H](Keyword-Reference---Alphabetical#h) | [I](Keyword-Reference---Alphabetical#i) | J | [K](Keyword-Reference---Alphabetical#k) | [L](Keyword-Reference---Alphabetical#l) | [M](Keyword-Reference---Alphabetical#m) | 
 | -- | -- | -- |  -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | 
-| [N](Keyword-Reference---Alphabetical#n) | [O](Keyword-Reference---Alphabetical#o) | [P](Keyword-Reference---Alphabetical#p) | Q | [R](Keyword-Reference---Alphabetical#r) | [S](Keyword-Reference---Alphabetical#s) | [T](Keyword-Reference---Alphabetical#t) | [U](Keyword-Reference---Alphabetical#u) | [V](Keyword-Reference---Alphabetical#v) | [W](Keyword-Reference---Alphabetical#w) | [X](Keyword-Reference---Alphabetical#x) | Y | Z |
+| [**N**](Keyword-Reference---Alphabetical#n) | [**O**](Keyword-Reference---Alphabetical#o) | [**P**](Keyword-Reference---Alphabetical#p) | **Q** | [**R**](Keyword-Reference---Alphabetical#r) | [**S**](Keyword-Reference---Alphabetical#s) | [**T**](Keyword-Reference---Alphabetical#t) | [**U**](Keyword-Reference---Alphabetical#u) | [**V**](Keyword-Reference---Alphabetical#v) | [**W**](Keyword-Reference---Alphabetical#w) | [**X**](Keyword-Reference---Alphabetical#x) | **Y** | **Z** |
 
 ##  QB64 specific keywords
 
 | [_A](Keyword-Reference---Alphabetical#_a) | [_B](Keyword-Reference---Alphabetical#_b) | [_C](Keyword-Reference---Alphabetical#_c) | [_D](Keyword-Reference---Alphabetical#_d) | [_E](Keyword-Reference---Alphabetical#_e) | [_F](Keyword-Reference---Alphabetical#_f) | [_G](Keyword-Reference---Alphabetical#_g) | [_H](Keyword-Reference---Alphabetical#_h) | [_I](Keyword-Reference---Alphabetical#_i) | _J | [_K](Keyword-Reference---Alphabetical#_k) | [_L](Keyword-Reference---Alphabetical#_l) | [_M](Keyword-Reference---Alphabetical#_m) |
 | -- | -- | -- |  -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
-| [_N](Keyword-Reference---Alphabetical#_n) | [_O](Keyword-Reference---Alphabetical#_o) | [_P](Keyword-Reference---Alphabetical#_p) | _Q | [_R](Keyword-Reference---Alphabetical#_r) | [_S](Keyword-Reference---Alphabetical#_s) | [_T](Keyword-Reference---Alphabetical#_t) | [_U](Keyword-Reference---Alphabetical#_t) | [_V](Keyword-Reference---Alphabetical#_v) | [_W](Keyword-Reference---Alphabetical#_w) | _X | _Y | _Z |
+| [**_N**](Keyword-Reference---Alphabetical#_n) | [**_O**](Keyword-Reference---Alphabetical#_o) | [**_P**](Keyword-Reference---Alphabetical#_p) | **_Q** | [**_R**](Keyword-Reference---Alphabetical#_r) | [**_S**](Keyword-Reference---Alphabetical#_s) | [**_T**](Keyword-Reference---Alphabetical#_t) | [**_U**](Keyword-Reference---Alphabetical#_t) | [**_V**](Keyword-Reference---Alphabetical#_v) | [**_W**](Keyword-Reference---Alphabetical#_w) | **_X** | **_Y** | **_Z** |
 
 ## OpenGL specific keywords
 | _glA | _glB | _glC | _glD | _glE | _glF | _glG | _glH | _glI | _glJ. | _glK. | _glL | _glM |
 | -- | -- | -- |  -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
-| _glN | _glO | _glP | _glQ. | _glR | _glS | _glT | _glU. | _glV | _glW. | _glX. | _glY. | _glZ. |
+| **_glN** | **_glO** | **_glP** | **_glQ.** | **_glR** | **_glS** | **_glT** | **_glU.** | **_glV** | **_glW.** | **_glX.** | **_glY.** | **_glZ.** |
 
 ***
 
