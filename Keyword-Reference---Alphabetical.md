@@ -16,7 +16,10 @@
 | _N | _O | _P | _Q. | _R | _S | _T | _U | _V | _W | _X. | _Y. | _Z. |
 
 ## OpenGL specific keywords
-
+|  |  |   |   |   |   |   |   |   |   |   |   |   |  
+| -- | -- | -- |  -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
+| _glA | _glB | _glC | _glD | _glE | _glF | _glG | _glH | _glI | _glJ. | _glK. | _glL | _glM |
+| _glN | _glO | _glP | _glQ. | _glR | _glS | _glT | _glU. | _glV | _glW. | _glX. | _glY. | _glZ. |
 ***
 
 ##
