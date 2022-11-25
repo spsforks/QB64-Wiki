@@ -1,18 +1,25 @@
+#
 # INDEX
 
+
 ### Original QBasic keywords
+
 |  |  |   |   |   |   |   |   |   |   |   |   |   |  
 | -- | -- | -- |  -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | 
 | A | B | C | D | E | F | G | H | I | J | K | L | M |
 | N | O | P | Q | R | S | T | U | V | W | X | Y | Z |
 
-### QB64 specific keywords
+###  QB64 specific keywords
+
 |  |  |   |   |   |   |   |   |   |   |   |   |   |  
 | -- | -- | -- |  -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
 | _A | _B | _C | _D | _E | _F | _G | _H | _I | _J | _K | _L | _M |
 | _N | _O | _P | _Q | _R | _S | _T | _U | _V | _W | _X | _Y | _Z |
 
+
 ***
+
+##
 
 
 ## Original QBasic keywords:
