@@ -2,7 +2,7 @@ The logical [AND](AND) numerical operator compares two values in respect of thei
 
 ## Syntax
 
-> result = firstvalue **AND** secondvalue
+> result = firstvalue **[AND](AND)** secondvalue
 
 ## Description
 
