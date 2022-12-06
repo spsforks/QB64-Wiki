@@ -2,9 +2,9 @@ The **SHARED** statement allows variables to be passed automatically to any [SUB
 
 ## Syntax
 
-> DIM SHARED Qt AS STRING * 1
+> [**DIM**](DIM) **SHARED** Qt [**AS**](AS) [**STRING**](STRING) * 1
 
-> DIM SHARED AS STRING * 1 Qt
+> [**DIM**](DIM) **SHARED** [**AS**](AS) [**STRING**](STRING)* 1 Qt
 
 * [DIM](DIM)ensioned variables are shared with all procedures in the program module.
 * When used with [DIM](DIM) in the main module, it eliminates the need to pass a parameter variable to a [SUB](SUB) or [FUNCTION](FUNCTION). 
