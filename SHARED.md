@@ -6,6 +6,8 @@ The **SHARED** statement allows variables to be passed automatically to any [SUB
 
 > [**DIM**](DIM) **SHARED** [**AS**](AS) [**STRING**](STRING) * 1 Qt
 
+
+## Description
 * [DIM](DIM)ensioned variables are shared with all procedures in the program module.
 * When used with [DIM](DIM) in the main module, it eliminates the need to pass a parameter variable to a [SUB](SUB) or [FUNCTION](FUNCTION). 
 * Use [COMMON SHARED](COMMON-SHARED) to share a list of variable values with sub-procedures or other modules. See also: [COMMON](COMMON)
