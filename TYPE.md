@@ -23,7 +23,7 @@
 >> (...)
 >>
 >>
->> AS type element-listN
+>> [**AS**](AS) type element-listN
 >>
 > **END TYPE**
 
