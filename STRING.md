@@ -2,7 +2,7 @@
 
 ## Syntax
 
-> DIM variable AS STRING [* byte_length]
+> [**DIM**](DIM) variable [**AS**](AS) **STRING** [* byte_length]
 
 * *Byte length* is optional in [DIM](DIM) statements, but is required in [TYPE](TYPE) definitions as a literal or [CONST](CONST) [INTEGER](INTEGER) value.
 * Literal strings are defined by quotation marks on each end. The quotes will not [PRINT](PRINT) to the screen.
