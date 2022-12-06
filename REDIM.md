@@ -2,8 +2,9 @@ A REDIM statement can re-dimension one [$DYNAMIC]($DYNAMIC)(flexible) [Arrays](A
 
 ## Syntax
 
-> [REDIM](REDIM) [_PRESERVE] [SHARED] ArrayName[*typesuffix*] ({*max_element*|low_element[TO *upper_element*, ...]}) [AS Type]
-> [REDIM](REDIM) [_PRESERVE] [SHARED] [AS Type] ArrayName({*max_element*|low_element[TO *upper_element*, ...]})
+> [REDIM](REDIM) [**_PRESERVE**] [**SHARED**] ArrayName[*typesuffix*] ({*max_element* | low_element[[**TO**](TO) *upper_element*, ...]}) [[**AS**](AS) Type]
+>
+> [REDIM](REDIM) [**_PRESERVE**] [**SHARED**] [[**AS**](AS) Type] ArrayName({*max_element* | low_element[[**TO**](TO) *upper_element*, ...]})
 
 ## Description
 
