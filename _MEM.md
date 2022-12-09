@@ -6,11 +6,15 @@ The [_MEM](_MEM) variable type can be used when working with memory blocks. It h
 
 ## Description
 
-*Variable TYPE:*
+* The _MEM type contains the following **read-only** elements where *name* is the _MEM variable name:
+  * *name***.OFFSET** is the current start position in the memory block AS [_OFFSET](_OFFSET). Add bytes to change position.
+  * *name***.SIZE** is the remaining size of the block at current position in bytes AS [_OFFSET](_OFFSET)
+  * *name***.TYPE** is the type (represented as bits combined to form a value) AS [LONG](LONG):
 
 * Memory DOT values are actually part of the built in memory variable [Variable Types](Variable-Types) in QB64. The following [TYPE](TYPE) is built in:
 
-```text
+
+```vb
 
 TYPE memory_type
   OFFSET AS _OFFSET       'start location of block(changes with byte position)
@@ -20,19 +24,13 @@ TYPE memory_type
   IMAGE AS LONG           'the image handle used when _MEMIMAGE(handle) is used
   SOUND AS LONG           'the sound handle used when _MEMSOUND(handle) is used
 END TYPE
+```
 
 The above [TYPE](TYPE) is for clarification purposes only. It **doesn't need** to be pasted in a program to use _MEM.
 
-*IMPORTANT NOTE: As of Build 20170802/57 onward, mem.TYPE has been changed to be an _OFFSET, just as mem.SIZE and mem.ELEMENTSIZE.*
+**IMPORTANT NOTE:** As of Build 20170802/57 onward, _mem.TYPE_ has been changed to be an [_OFFSET](_OFFSET), just as _mem.SIZE_ and _mem.ELEMENTSIZE_.
 
-```
 
-### Usage
-
-* The _MEM type contains the following **read-only** elements where *name* is the _MEM variable name:
-  * *name***.OFFSET** is the current start position in the memory block AS [_OFFSET](_OFFSET). Add bytes to change position.
-  * *name***.SIZE** is the remaining size of the block at current position in bytes AS [_OFFSET](_OFFSET)
-  * *name***.TYPE** is the type (represented as bits combined to form a value) AS [LONG](LONG):
     
 #### TYPE values (version 1.000 and up)
       
