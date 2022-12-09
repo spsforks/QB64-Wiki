@@ -7,9 +7,9 @@ The [_MEM](_MEM) variable type can be used when working with memory blocks. It h
 ## Description
 
 * The _MEM type contains the following **read-only** elements where *name* is the _MEM variable name:
-  * *name***.OFFSET** is the current start position in the memory block AS [_OFFSET](_OFFSET). Add bytes to change position.
-  * *name***.SIZE** is the remaining size of the block at current position in bytes AS [_OFFSET](_OFFSET)
-  * *name***.TYPE** is the type (represented as bits combined to form a value) AS [LONG](LONG):
+  * *name*.**OFFSET** is the current start position in the memory block AS [_OFFSET](_OFFSET). Add bytes to change position.
+  * *name*.**SIZE** is the remaining size of the block at current position in bytes AS [_OFFSET](_OFFSET)
+  * *name*.**TYPE** is the type (represented as bits combined to form a value) AS [LONG](LONG):
 
 * Memory DOT values are actually part of the built in memory variable [Variable Types](Variable-Types) in QB64. The following [TYPE](TYPE) is built in:
 
@@ -30,9 +30,8 @@ The above [TYPE](TYPE) is for clarification purposes only. It **doesn't need** t
 
 **IMPORTANT NOTE:** As of Build 20170802/57 onward, _mem.TYPE_ has been changed to be an [_OFFSET](_OFFSET), just as _mem.SIZE_ and _mem.ELEMENTSIZE_.
 
-
     
-#### TYPE values (version 1.000 and up)
+### TYPE values (version 1.000 and up)
       
 * 0 = UDT ([TYPE](TYPE)) or memory created by [_MEMNEW](_MEMNEW)
 * 1 = 1 bit   ELEMENT.SIZE=1   * Only used along with specific types (currently integers or floats)
@@ -53,7 +52,7 @@ The above [TYPE](TYPE) is for clarification purposes only. It **doesn't need** t
 
 *Note: If a future integer, float or other type doesn't have a size that is 1,2,4,8,16,32,64,128 or 256 it won't have a size-bit set.*
 
-#### Versions prior to 1.000
+### Versions prior to 1.000
      
 * 1 = Integer types such as [_BYTE](_BYTE), [INTEGER](INTEGER), [LONG](LONG), [_INTEGER64](_INTEGER64) or [_OFFSET](_OFFSET)
 * 2 = [_UNSIGNED](_UNSIGNED) variable types. Value must be added to the variable type value.(2 cannot be used by itself)
