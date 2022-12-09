@@ -7,9 +7,9 @@ The [_MEM](_MEM) variable type can be used when working with memory blocks. It h
 ## Description
 
 * The _MEM type contains the following **read-only** elements where *name* is the _MEM variable name:
-  * *name*.**OFFSET** is the current start position in the memory block AS [_OFFSET](_OFFSET). Add bytes to change position.
-  * *name*.**SIZE** is the remaining size of the block at current position in bytes AS [_OFFSET](_OFFSET)
-  * *name*.**TYPE** is the type (represented as bits combined to form a value) AS [LONG](LONG):
+  * *name*.**OFFSET** is the current start position in the memory block [AS](AS) [_OFFSET](_OFFSET). Add bytes to change position.
+  * *name*.**SIZE** is the remaining size of the block at current position in bytes [AS](AS) [_OFFSET](_OFFSET)
+  * *name*.**TYPE** is the type (represented as bits combined to form a value) [AS](AS) [LONG](LONG):
 
 * Memory DOT values are actually part of the built in memory variable [Variable Types](Variable-Types) in QB64. The following [TYPE](TYPE) is built in:
 
