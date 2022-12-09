@@ -174,7 +174,7 @@ END
 
 A bitmap header information TYPE [$INCLUDE]($INCLUDE) File.
 
-```text
+```vb
 
 ' ********
 'Bitmap.BI can be included at start of program
