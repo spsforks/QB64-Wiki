@@ -7,9 +7,9 @@ The [_PRINTMODE](_PRINTMODE) statement sets the text or [_FONT](_FONT) printing 
 ## Parameter(s)
 
 * One of 3 mode keywords is mandatory when using this statement to deal with the text background.
-  * **_KEEPBACKGROUND* (mode 1): Text background transparent. Only the text is displayed over anything behind it.
-  * **_ONLYBACKGROUND* (mode 2): Text background only is displayed. Text is transparent to anything behind it.
-  * **_FILLBACKGROUND* (mode 3): Text and background block anything behind them like a normal [PRINT](PRINT). **Default setting.**
+  * *_KEEPBACKGROUND* (mode 1): Text background transparent. Only the text is displayed over anything behind it.
+  * *_ONLYBACKGROUND* (mode 2): Text background only is displayed. Text is transparent to anything behind it.
+  * *_FILLBACKGROUND* (mode 3): Text and background block anything behind them like a normal [PRINT](PRINT). **Default setting.**
 * If the optional imageHandle& is omitted or = 0) it will use the current [_DEST](_DEST) image background.
 
 ## Description
